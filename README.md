@@ -14,42 +14,53 @@ This community sample repository aims to cover all these cases, and is organized
 
 These samples are written in .NET Core, and may include those written using Microsoft Visual Studio and those using command line tools and a text editor such as Visual Studio Code. 
 
-| Subfolder | Description |
+Each sample is in a folder named with a prefix as follows:
+
+| Prefix | Description |
 | --- | --- |
-| teams-bots | These are simple bots, intended to show a single capability or pattern |
-| teams-curation | These are programs that run outside of Microsoft Teams and add, access, or update Teams content and administrative settings |
-| teams-full-app | These are samples of apps that have multiple features such as a tab and a bot |
-| teams-messaging-extensions | These are simple messaging extensions, intended to show a single capability or pattern |
+| app- | These are samples of apps that have multiple features such as a tab and a bot |
+| bot- | These are simple bots, intended to show a single capability or pattern |
+| msgext- | These are simple messaging extensions, intended to show a single capability or pattern |
 
 ## /samples/lowcode
 
-These samples are written using low-code technologies such as Power Apps, Power Automate, and solutions based on SharePoint pages.
+These samples are written using low-code technologies such as Power Apps and Power Automate.
 
-| Subfolder | Description |
+Each sample is in a folder named with a prefix as follows:
+
+| Prefix | Description |
 | --- | --- |
-| teams-full-app | These are samples of apps that have multiple features such as a Power App and Flow |
-| teams-powerapps | These are simple tabs built with Microsoft Power Apps, intended to show a single capability, pattern, or scenario |
-| teams-powerautomate | These are sample Flows, intended to show a single capability, pattern, or scenario |
+| flow- | These are sample Power Automate flows |
+| powerapp- | These are simple tabs built with Microsoft Power Apps |
 
 ## /samples/node
 
 These samples are written in node.js, and may include those written in JavaScript or TypeScript. 
 
-| Subfolder | Description |
+Each sample is in a folder named with a prefix as follows:
+
+| Prefix | Description |
 | --- | --- |
-| teams-bots | These are simple bots, intended to show a single capability or pattern |
-| teams-curation | These are programs that run outside of Microsoft Teams and add, access, or update Teams content and administrative settings |
-| teams-full-app | These are samples of apps that have multiple features such as a tab and a bot |
-| teams-messaging-extensions | These are simple messaging extensions, intended to show a single capability or pattern |
+| app- | These are samples of apps that have multiple features such as a tab and a bot |
+| bot- | These are simple bots, intended to show a single capability or pattern |
+| msgext- | These are simple messaging extensions, intended to show a single capability or pattern |
 
 ## /samples/tabs
 
 These samples are single-page applications intended for use as tabs in Microsoft Teams. 
 
-| Subfolder | Description |
+Each sample is in a folder named with a prefix as follows:
+
+| Prefix | Description |
 | --- | --- |
-| spa | These are single-page applications for general use in web-based applications |
-| spfx | These are SharePoint Framework web parts intended for use as Teams tabs |
+| spa- | These are single-page applications for general use in web-based applications |
+| spfx- | These are SharePoint Framework web parts intended for use as Teams tabs |
+
+The complete folder name should include the UI framework or library in use, such as angular, react, or js (for no framework). For example,
+
+    spfx-react-field-visit-demo
+
+is a Teams tab implemented using SharePoint framework and React called "field visit demo".
 
 Additional folders will be added as needed for other development frameworks
 
