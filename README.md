@@ -20,7 +20,6 @@ These samples are written in .NET Core, and may include those written using Micr
 | teams-curation | These are programs that run outside of Microsoft Teams and add, access, or update Teams content and administrative settings |
 | teams-full-app | These are samples of apps that have multiple features such as a tab and a bot |
 | teams-messaging-extensions | These are simple messaging extensions, intended to show a single capability or pattern |
-| teams-tabs | These are simple tabs, intended to show a single capability or pattern |
 
 ## /samples/lowcode
 
@@ -42,7 +41,15 @@ These samples are written in node.js, and may include those written in JavaScrip
 | teams-curation | These are programs that run outside of Microsoft Teams and add, access, or update Teams content and administrative settings |
 | teams-full-app | These are samples of apps that have multiple features such as a tab and a bot |
 | teams-messaging-extensions | These are simple messaging extensions, intended to show a single capability or pattern |
-| teams-tabs | These are simple tabs, intended to show a single capability or pattern |
+
+## /samples/tabs
+
+These samples are single-page applications intended for use as tabs in Microsoft Teams. 
+
+| Subfolder | Description |
+| --- | --- |
+| spa | These are single-page applications for general use in web-based applications |
+| spfx | These are SharePoint Framework web parts intended for use as Teams tabs |
 
 Additional folders will be added as needed for other development frameworks
 
@@ -63,58 +70,16 @@ If you have issues with the libraries, SDKs, services, or tools used to develop 
 ## Additional resources
 
 
-* [Overview of the SharePoint Framework](http://dev.office.com/sharepoint/docs/spfx/sharepoint-framework-overview)
-* [SharePoint Framework development tools and libraries](http://dev.office.com/sharepoint/docs/spfx/tools-and-libraries)
-* [SharePoint Framework Reference](http://aka.ms/spfx-reference)
-* [Visual Studio Extension for SharePoint Framework projects](https://github.com/SharePoint/sp-dev-fx-vs-extension)
+* [Teams something](#)
 
 ## Using the samples
 
-Due to the diversity of the samples and technologies, there are no fixed instructions for building or using the samples. Each sample
-To build and start using these projects, you'll need to clone and build the projects.
+Due to the diversity of the samples and technologies, there are no fixed instructions for building or using the samples. Each sample should include a readme file with build instructions.
 
-Clone this repository by executing the following command in your console:
-
-```shell
-git clone https://github.com/SharePoint/sp-dev-fx-webparts.git
-```
-
-Navigate to the cloned repository folder which should be the same as the repository name:
-
-```shell
-cd sp-dev-fx-webparts
-```
-
-To access the samples use the following command, where you replace `sample-folder-name` with the name of the sample you want to access.
-
-```shell
-cd samples
-cd sample-folder-name
-```
-
-and for the tutorials, use the following command:
-
-```shell
-cd tutorials
-```
-
-Now run the following command to install the npm packages:
-
-```shell
-npm install
-```
-
-This will install the required npm packages and dependencies to build and run the client-side project.
-
-Once the npm packages are installed, run the following command to preview your web parts in SharePoint Workbench:
-
-```shell
-gulp serve
-```
 
 ## Contributions
 
-These samples are direct from the feature teams, SharePoint PnP core team (http://aka.ms/SharePointPnP) or shared by the community. We welcome your input on issues and suggestions for new samples. We do also welcome community contributions around the client-side web parts. If there's any questions around that, just let us know.
+These samples are from the Microsoft 365 developer community. We welcome your samples and suggestions for new samples. 
 
 Please have a look on our [Contribution Guidance](./.github/CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Thx.
 
