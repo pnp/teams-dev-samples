@@ -77,11 +77,49 @@ If you have issues with the libraries, SDKs, services, or tools used to develop 
 | Microsoft Teams JavaScript SDK | |
 | SharePoint Framework with Teams | [sp-dev-docs repository issue list](https://github.com/SharePoint/sp-dev-docs/issues) |
 
+## More Samples
+
+### Bot SDK 4.6+
+
+* [App Templates for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates): These open source, production-ready applications are also great samples showing how to build robust Teams applications complete with Resource Manager templates for easy deployment in Azure
+
+* [ButBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples): Dozens of simple samples showing how to do various things in Bot Builder SDK, including some Teams examples
+
+### Bot SDK 4.0-4.5
+
+* [Contoso HR Sample](https://github.com/OfficeDev/msteams-sample-contoso-hr-talent-app): HR recruiting sample for hands-on lab experience. Uses Bot Framework 4.4 with Teams-specific operations hard-coded; needs update to 4.6+ to follow best practices.
+
+* [Microsoft Teams FAQ Plus Plus](https://github.com/OfficeDev/microsoft-teams-faqplusplus-app/tree/master/Source)
+
+### Bot Builder SDK 3.x
+
+* Microsoft Teams Sample Complete ([C#](https://github.com/OfficeDev/microsoft-teams-sample-complete-csharp), [Node](https://github.com/OfficeDev/microsoft-teams-sample-complete-node)): This Bot sample uses v3 of the Bot Builder SDK which is now obsolete 
+
 
 ## Additional resources
 
+### Teams applications
 
-* [Teams something](#)
+* [Teams Platform Overview](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
+
+
+### Bots
+
+* Azure Bot Service: [main page](https://azure.microsoft.com/en-us/services/bot-service/)
+* Azure Bot SDK: [main page](https://dev.botframework.com/), [repo](https://github.com/microsoft/botframework-sdk)
+* Azure Cognitive Services: 
+    * [QnA Maker](https://www.qnamaker.ai/) finds answers to questions
+    * [LUIS](https://www.luis.ai)  predicts user's intent and enties
+    * [QnA Maker and LUIS together](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/tutorials/integrate-qnamaker-luis)
+* [Bots in Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots)
+* Tutorials: 
+    * [5-minute quickstarts](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0#5-minute-quickstarts)
+    * Quickstarts: [.NET Core](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/57.teams-conversation-bot)
+    * [Create a bot for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams)
+
+### Tabs
+
+* [Microsoft Teams JavaScript Library](https://github.com/OfficeDev/BotBuilder-MicrosoftTeams): This library is used in Teams tabs to allow JavaScript running on the tab's web page to interact with Microsoft Teams
 
 ## Using the samples
 
