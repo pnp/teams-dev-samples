@@ -10,7 +10,7 @@ Application samples include multiple Teams extensions, such as a bot and a tab o
 
 Title|Language|Contains|Description|Preview| Frameworks
 ----|----|-------|------|-----|------
-Consulting Bot<br/>[dotnetcore/app-consulting-bot](#) | C# | <ul><li>Bot</li><li>Messaging Extension</li></ul>|This sample demonstrates a bot to be used by consultants. It allows users to add a person to a project (using adaptive cards), and to charge time to a project (using natural language conversation). Messaging extensions display a project and add a person to a project. Data is mocked, and is not updated, but the bot does show use of LUIS, QnA Maker, adaptive cards, and dialogs.|![node/bot-state](https://raw.githubusercontent.com/SharePoint/sp-dev-fx-webparts/master/samples/react-youtube/assets/Preview.gif)|![Bot SDK 4.6](https://img.shields.io/badge/Bot&nbsp;SDK-4.6-green.svg)
+Consulting Bot<br/>[dotnetcore/app-consulting-bot](#) | C# | <ul><li>Bot</li><li>Messaging Extension</li></ul>|This sample demonstrates a bot to be used by consultants. It allows users to add a person to a project (using adaptive cards), and to charge time to a project (using natural language conversation). Messaging extensions display a project and add a person to a project. Data is mocked, and is not updated, but the bot does show use of LUIS, QnA Maker, adaptive cards, and dialogs.|![dotnetcore/app-consulting-bot](dotnetcore/app-consulting-bot/assets/using-bot2.png)|![Bot SDK 4.6](https://img.shields.io/badge/Bot&nbsp;SDK-4.6-green.svg)
 
 ### Bots
 

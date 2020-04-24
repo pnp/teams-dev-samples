@@ -4,15 +4,16 @@
 
 Short summary on functionality and used technologies.
 
-[picture of the web part in action]
+[picture of the app in action]
 
-## Used SharePoint Framework Version
+## Used Bot Framework Version
 
-![drop](https://img.shields.io/badge/version-GA-green.svg)
+![drop](https://img.shields.io/badge/Bot&nbsp;Framework-4.6-green.svg)
 
 ## Applies to
 
-* [SharePoint Framework](https:/dev.office.com/sharepoint)
+* [Azure Bot Framework 4.0+](#)
+* [.NET Core 2.1 or greater](#)
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
 
 > Update accordingly as needed.
