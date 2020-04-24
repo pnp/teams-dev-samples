@@ -1,0 +1,42 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "New project assignment for {personName}",
+      "weight": "bolder",
+      "size": "large",
+      "spacing": "None"
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Client: ",
+          "value": "{clientName}"
+        },
+        {
+          "title": "Project: ",
+          "value": "{projectName}"
+        },
+        {
+          "title": "Role: ",
+          "value": "{role}"
+        },
+        {
+          "title": "{monthZero} forecast: ",
+          "value": "{forecastZero}"
+        },
+        {
+          "title": "{monthOne} forecast: ",
+          "value": "{forecastOne}"
+        },
+        {
+          "title": "{monthTwo} forecast: ",
+          "value": "{forecastTwo}"
+        }
+      ]
+    }
+  ]
+}

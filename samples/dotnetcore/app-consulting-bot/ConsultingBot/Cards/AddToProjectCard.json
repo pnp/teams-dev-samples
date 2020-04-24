@@ -1,0 +1,162 @@
+{
+  "type": "AdaptiveCard",
+  "version": "1.0",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Project assignment",
+              "weight": "bolder",
+              "size": "large",
+              "spacing": "None"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Consultant name",
+              "wrap": true
+            },
+            {
+              "type": "Input.ChoiceSet",
+              "id": "personName",
+              "value": "{possiblePersons[0].name}",
+              "choices": [
+                {
+                  "$data": "{possiblePersons}",
+                  "title": "{name}",
+                  "value": "{name}"
+                }
+              ]
+            },
+            {
+              "type": "TextBlock",
+              "text": "Client name",
+              "wrap": true
+            },
+            {
+              "type": "Input.Text",
+              "id": "clientName",
+              "value": "{possibleProjects[0].Client.Name}"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Project name",
+              "wrap": true
+            },
+            {
+              "type": "Input.ChoiceSet",
+              "id": "projectName",
+              "value": "{possibleProjects[0].Name}",
+              "choices": [
+                {
+                  "$data": "{possibleProjects}",
+                  "title": "{Name}",
+                  "value": "{Name}"
+                }
+              ]
+            },
+            {
+              "type": "TextBlock",
+              "text": "Role",
+              "wrap": true
+            },
+            {
+              "type": "Input.ChoiceSet",
+              "id": "role",
+              "choices": [
+                {
+                  "title": "Architect",
+                  "value": "Architect"
+                },
+                {
+                  "title": "Designer",
+                  "value": "Designer"
+                },
+                {
+                  "title": "Developer",
+                  "value": "Developer"
+                },
+                {
+                  "title": "Project Manager",
+                  "value": "Project Manager"
+                }
+              ]
+            }
+
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "url": "{possibleProjects[0].Client.LogoUrl}",
+              "size": "large"
+            },
+            {
+              "type": "TextBlock",
+              "text": "Forecast hours",
+              "wrap": true
+            },
+            {
+              "type": "Input.Text",
+              "placeholder": "{monthZero}",
+              "style": "text",
+              "id": "forecastZero"
+            },
+            {
+              "type": "Input.Text",
+              "placeholder": "{monthOne}",
+              "style": "text",
+              "id": "forecastOne"
+            },
+            {
+              "type": "Input.Text",
+              "placeholder": "{monthTwo}",
+              "style": "text",
+              "id": "forecastTwo"
+            }
+          ],
+          "width": "auto"
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Submit",
+      "data": {
+        "msteams": {
+          "type": "invoke",
+          "value": {
+            "submissionId": "AddToProjectSubmit",
+            "command": "submit",
+            "monthZero": "{monthZero}",
+            "monthOne": "{monthOne}",
+            "monthTwo":  "{monthTwo}"
+          }
+        }
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Cancel",
+      "data": {
+        "msteams": {
+          "type": "invoke",
+          "value": {
+            "submissionId": "AddToProjectSubmit",
+            "command": "cancel"
+          }
+        }
+      }
+    }
+
+  ]
+}

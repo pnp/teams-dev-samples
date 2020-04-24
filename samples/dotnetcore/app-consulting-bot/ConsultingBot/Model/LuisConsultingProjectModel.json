@@ -1,0 +1,328 @@
+{
+  "luis_schema_version": "4.0.0",
+  "versionId": "0.2",
+  "name": "ConsultingBot",
+  "desc": "A LUIS model that uses intent and entities.",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "AddPersonToProject"
+    },
+    {
+      "name": "BillToProject"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "projectName",
+      "subLists": [
+        {
+          "canonicalForm": "contoso",
+          "list": []
+        },
+        {
+          "canonicalForm": "consolidated messenger",
+          "list": [
+            "cm",
+            "consolidated"
+          ]
+        },
+        {
+          "canonicalForm": "forth coffee",
+          "list": [
+            "forth",
+            "coffee",
+            "coffee company"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": [
+        "day worked",
+        "time worked"
+      ]
+    },
+    {
+      "name": "personName",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "3 hours today on contoso",
+      "intent": "BillToProject",
+      "entities": []
+    },
+    {
+      "text": "3 hrs contoso today",
+      "intent": "BillToProject",
+      "entities": []
+    },
+    {
+      "text": "5 minutes contoso yesterday",
+      "intent": "BillToProject",
+      "entities": []
+    },
+    {
+      "text": "add sally to forth coffee",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "add sarah to forth coffee",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "add to contoso",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "add tony to the contoso delivery team",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "add tony to the contoso project",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "assign tony",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "assign tony to contoso",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "bill 3 hours for today on the contoso project",
+      "intent": "BillToProject",
+      "entities": []
+    },
+    {
+      "text": "bill contoso for 2 hours today",
+      "intent": "BillToProject",
+      "entities": []
+    },
+    {
+      "text": "charge contoso for 2 hours yesterday",
+      "intent": "BillToProject",
+      "entities": [
+        {
+          "entity": "datetimeV2",
+          "role": "time worked",
+          "startPos": 19,
+          "endPos": 25
+        },
+        {
+          "entity": "datetimeV2",
+          "role": "day worked",
+          "startPos": 27,
+          "endPos": 35
+        }
+      ]
+    },
+    {
+      "text": "charge forth for 1 hr today",
+      "intent": "BillToProject",
+      "entities": [
+        {
+          "entity": "datetimeV2",
+          "role": "time worked",
+          "startPos": 17,
+          "endPos": 20
+        },
+        {
+          "entity": "datetimeV2",
+          "role": "day worked",
+          "startPos": 22,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "contoso 3 hours today",
+      "intent": "BillToProject",
+      "entities": []
+    },
+    {
+      "text": "i did 3 hours on contoso today",
+      "intent": "BillToProject",
+      "entities": [
+        {
+          "entity": "datetimeV2",
+          "role": "time worked",
+          "startPos": 6,
+          "endPos": 12
+        },
+        {
+          "entity": "datetimeV2",
+          "role": "day worked",
+          "startPos": 25,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "i hate projects",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "i worked on contoso 3 hours today",
+      "intent": "BillToProject",
+      "entities": [
+        {
+          "entity": "datetimeV2",
+          "role": "time worked",
+          "startPos": 20,
+          "endPos": 26
+        },
+        {
+          "entity": "datetimeV2",
+          "role": "day worked",
+          "startPos": 28,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "john is joining consolidated messenger",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "put me down for 3 hours today on the contoso project",
+      "intent": "BillToProject",
+      "entities": [
+        {
+          "entity": "datetimeV2",
+          "role": "time worked",
+          "startPos": 16,
+          "endPos": 22
+        },
+        {
+          "entity": "datetimeV2",
+          "role": "day worked",
+          "startPos": 24,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "put tony on contoso",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "put tony on the contoso team",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "spent 3 hours on contoso today",
+      "intent": "BillToProject",
+      "entities": [
+        {
+          "entity": "datetimeV2",
+          "role": "time worked",
+          "startPos": 6,
+          "endPos": 12
+        },
+        {
+          "entity": "datetimeV2",
+          "role": "day worked",
+          "startPos": 25,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "teams rocks",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "today contoso 3 hours",
+      "intent": "BillToProject",
+      "entities": []
+    },
+    {
+      "text": "today i worked 3 hours on contoso",
+      "intent": "BillToProject",
+      "entities": [
+        {
+          "entity": "datetimeV2",
+          "role": "day worked",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "datetimeV2",
+          "role": "time worked",
+          "startPos": 15,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "today is a good day to work on contoso for 3 hours",
+      "intent": "BillToProject",
+      "entities": [
+        {
+          "entity": "datetimeV2",
+          "role": "day worked",
+          "startPos": 0,
+          "endPos": 4
+        },
+        {
+          "entity": "datetimeV2",
+          "role": "time worked",
+          "startPos": 43,
+          "endPos": 49
+        }
+      ]
+    },
+    {
+      "text": "tony is great",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "tony will be working on contoso",
+      "intent": "AddPersonToProject",
+      "entities": []
+    },
+    {
+      "text": "vacation tomorrow",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "zebras run amok",
+      "intent": "None",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
