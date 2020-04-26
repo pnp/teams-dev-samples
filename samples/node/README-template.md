@@ -13,7 +13,7 @@ Short summary on functionality and used technologies.
 ## Applies to
 
 * [Azure Bot Framework 4.0+](#)
-* [.NET Core 2.1 or greater](#)
+* [NodeJS](https://nodejs.org/en/)
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
 
 > Update accordingly as needed.
@@ -21,6 +21,13 @@ Short summary on functionality and used technologies.
 ## Prerequisites
 
 > Any special pre-requisites?
+
+- [Node.js](https://nodejs.org) version 10.14.1 or higher
+
+    ```bash
+    # determine node version
+    node --version
+    ```
 
 ## Solution
 
@@ -46,14 +53,31 @@ Version|Date|Comments
 * Clone this repository
 * in the command line run:
   * `npm install`
-  * `gulp serve`
+  * `npm start`
+
+### Testing the bot using Bot Framework Emulator
+
+[Bot Framework Emulator](https://github.com/microsoft/botframework-emulator) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
+
+- Install the Bot Framework Emulator version 4.3.0 or greater from [here](https://github.com/Microsoft/BotFramework-Emulator/releases)
+
+#### Connect to the bot using Bot Framework Emulator
+
+- Launch Bot Framework Emulator
+- File -> Open Bot
+- Enter a Bot URL of `http://localhost:3978/api/messages`
+
+### Deploy the bot to Azure
+
+To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
 
 > Include any additional steps as needed.
 
 ## Features
 
-Description of the web part with possible additional details than in short summary. 
-This Web Part illustrates the following concepts on top of the SharePoint Framework:
+Description of the project with possible additional details than in short summary. 
+
+This project illustrates the following concepts:
 
 * topic 1
 * topic 2
