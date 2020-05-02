@@ -1,3 +1,18 @@
+---
+page_type: sample
+products:
+- teams
+languages:
+- javascript
+- typescript
+extensions:
+  contentType: samples
+  technologies:
+  - Microsoft Teams
+  - SPA
+  - SPFx
+  createdDate: 5/1/2019 12:00:00 AM
+---
 # title of the sample
 
 ## Summary

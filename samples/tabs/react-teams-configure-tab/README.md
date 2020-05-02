@@ -1,3 +1,16 @@
+---
+page_type: sample
+products:
+- teams
+languages:
+- typescript
+extensions:
+  contentType: samples
+  technologies:
+  - Microsoft Teams
+  - SPFx
+  createdDate: 5/1/2019 12:00:00 AM
+---
 ## Teams Configuration Tab
 
 This web part makes a modern SharePoint page into a Teams tab configuration page for use in a Teams application. This allows low-code developers to create Teams applications containing configurable tabs without the need to code a custom configuration page. Using this tool, along with Microsoft Teams App Studio, low-code developers can build Teams applications entirely from modern SharePoint pages.

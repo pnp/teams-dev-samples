@@ -1,3 +1,17 @@
+---
+page_type: sample
+products:
+- teams
+languages:
+- javascript
+- typescript
+- csharp
+extensions:
+  contentType: samples
+  technologies:
+  - Microsoft Teams
+  createdDate: 5/1/2019 12:00:00 AM
+---
 # Microsoft Teams Development Samples
 
 These samples demonstrate different capabilities of Microsoft Teams applications. Some illustrate specific capabilities, while others are complete demonstration apps. They are samples, not complete or production-ready solutions. Each sample has its own dedicated readme file to explain setup instructions and demonstrated capability.

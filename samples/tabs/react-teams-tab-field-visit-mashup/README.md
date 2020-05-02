@@ -1,3 +1,16 @@
+---
+page_type: sample
+products:
+- teams
+languages:
+- typescript
+extensions:
+  contentType: samples
+  technologies:
+  - Microsoft Teams
+  - SPFx
+  createdDate: 5/1/2019 12:00:00 AM
+---
 # Teams Tab - Field Visit Demo (Mashup)
 
 ## Summary

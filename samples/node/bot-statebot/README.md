@@ -1,3 +1,16 @@
+---
+page_type: sample
+products:
+- teams
+languages:
+- javascript
+extensions:
+  contentType: samples
+  technologies:
+  - Microsoft Teams
+  - Bot Framework
+  createdDate: 5/1/2019 12:00:00 AM
+---
 # StateBot
 
 ## Summary
