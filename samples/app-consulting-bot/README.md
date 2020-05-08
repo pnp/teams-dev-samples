@@ -1,15 +1,18 @@
 ---
-page_type: sample
+page_type: sample
 products:
-- teams
+- teams
 languages:
 - csharp
 extensions:
-  contentType: samples
-  technologies:
-  - Microsoft Teams
-  - BotFramework
-  createdDate: 5/1/2019 12:00:00 AM
+  contentType: samples
+  technologies:
+  - Microsoft Teams
+  - Bot Framework
+  - Adaptive Cards
+  platforms:
+  - ASP.NET Core MVC
+  createdDate: 5/1/2019 12:00:00 AM
 ---
 # Consulting Bot
 

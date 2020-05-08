@@ -1,17 +1,24 @@
 ---
-page_type: sample
+page_type: sample
 products:
-- teams
+- teams
 languages:
 - javascript
-- typescript
+- typescript
 extensions:
-  contentType: samples
-  technologies:
-  - Microsoft Teams
-  - SPA
+  contentType: samples
+  app_features:
+  - Tab
+  technologies:
+  - AngularJS
+  - Angular
+  - React
+  - VueJS
+  platforms:
   - SPFx
-  createdDate: 5/1/2019 12:00:00 AM
+  origin:
+  - Community
+createdDate: 5/1/2019 12:00:00 AM
 ---
 # title of the sample
 

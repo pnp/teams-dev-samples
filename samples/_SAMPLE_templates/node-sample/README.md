@@ -1,3 +1,32 @@
+---
+page_type: sample
+products:
+- teams
+languages:
+- javascript
+- typescript
+extensions:
+  contentType: samples
+  app_features:
+  - Bot
+  - Connector
+  - Messaging Extension
+  - Tab
+  - Task Module
+  technologies:
+  - AngularJS
+  - Angular
+  - Bot Framework SDK v3
+  - Bot Framework SDK v4
+  - React
+  - VueJS
+  platforms:
+  - Express
+  - Restify
+  origin:
+  - Community
+createdDate: 5/1/2019 12:00:00 AM
+---
 # title of the sample
 
 ## Summary

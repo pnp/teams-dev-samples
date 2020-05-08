@@ -1,15 +1,16 @@
 ---
-page_type: sample
+page_type: sample
 products:
-- teams
+- teams
 languages:
 - javascript
 extensions:
-  contentType: samples
-  technologies:
-  - Microsoft Teams
-  - Bot Framework
-  createdDate: 5/1/2019 12:00:00 AM
+  contentType: samples
+  technologies:
+  - Bot Framework SDK
+  platforms:
+  - Restify
+createdDate: 5/1/2019 12:00:00 AM
 ---
 # StateBot
 
