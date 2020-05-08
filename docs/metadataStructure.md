@@ -30,6 +30,8 @@ extensions:
   - Angular
   - Bot Framework SDK v3
   - Bot Framework SDK v4
+  - jQuery
+  - Knockout
   - React
   - VueJS
   platforms:

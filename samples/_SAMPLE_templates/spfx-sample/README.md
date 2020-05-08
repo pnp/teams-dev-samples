@@ -12,6 +12,8 @@ extensions:
   technologies:
   - AngularJS
   - Angular
+  - jQuery
+  - Knockout
   - React
   - VueJS
   platforms:

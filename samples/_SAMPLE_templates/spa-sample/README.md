@@ -16,6 +16,7 @@ extensions:
   - VueJS
   platforms:
   - Express
+  - jQuery
   - None
   - Restify
   origin:
