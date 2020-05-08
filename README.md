@@ -8,11 +8,7 @@ This repository contains community samples that demonstrate different usage patt
 
 Microsoft Teams is highly extensible, allowing 3rd party and custom applications to run alongside the many Office 365 services already included in Teams. Just as you can add a Word tab or the Who bot in Teams, you can write your own tabs and bots. You can also write applications that run outside the Teams UI and use the Microsoft Graph API to access and curate Teams content.
 
-This community sample repository aims to cover all these cases, and is organized as follows:
-
-## /samples/dotnetcore
-
-These samples are written in .NET Core, and may include those written using Microsoft Visual Studio and those using command line tools and a text editor such as Visual Studio Code. 
+The best way to navigate the samples is to use the [Sample Navigator](https://pnp.github.io/sp-dev-fx-webparts/). It will allow you to dial in the Teams app features, language, and other technologies you want samples for.
 
 Each sample is in a folder named with a prefix as follows:
 
@@ -21,61 +17,33 @@ Each sample is in a folder named with a prefix as follows:
 | app- | These are samples of apps that have multiple features such as a tab and a bot |
 | bot- | These are simple bots, intended to show a single capability or pattern |
 | msgext- | These are simple messaging extensions, intended to show a single capability or pattern |
-
-## /samples/lowcode
-
-These samples are written using low-code technologies such as Power Apps and Power Automate.
-
-Each sample is in a folder named with a prefix as follows:
-
-| Prefix | Description |
-| --- | --- |
-| flow- | These are sample Power Automate flows |
-| powerapp- | These are simple tabs built with Microsoft Power Apps |
-
-## /samples/node
-
-These samples are written in node.js, and may include those written in JavaScript or TypeScript. 
-
-Each sample is in a folder named with a prefix as follows:
-
-| Prefix | Description |
-| --- | --- |
-| app- | These are samples of apps that have multiple features such as a tab and a bot |
-| bot- | These are simple bots, intended to show a single capability or pattern |
-| msgext- | These are simple messaging extensions, intended to show a single capability or pattern |
-
-## /samples/tabs
-
-These samples are single-page applications intended for use as tabs in Microsoft Teams. 
-
-Each sample is in a folder named with a prefix as follows:
-
-| Prefix | Description |
-| --- | --- |
-| spa- | These are single-page applications for general use in web-based applications |
-| spfx- | These are SharePoint Framework web parts intended for use as Teams tabs |
-
-The complete folder name should include the UI framework or library in use, such as angular, react, or js (for no framework). For example,
-
-    spfx-react-field-visit-demo
-
-is a Teams tab implemented using SharePoint framework and React called "field visit demo".
-
-Additional folders will be added as needed for other development frameworks
+| tabs- | These are simple tabs, intended to show a single capability or pattern |
 
 ## Have issues or questions?
 
 If you have issues or questions on a specific sample, please use [the issues list in this repository](#).
+
 If you have issues with the libraries, SDKs, services, or tools used to develop your applications, please file them in the appropriate location for that technology.
 
 | Technology | Location for issues/questions |
 | --- | --- |
-| Azure Bot Framework | |
-| Bot Builder SDK |  |
-| Microsoft Graph SDK | |
-| Microsoft Teams JavaScript SDK | |
+| Bot Framework SDK | [Bot Framework resources](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-resources-links-help?view=azure-bot-service-4.0) |
+| Microsoft Graph | [Microsoft Graph Support](https://developer.microsoft.com/en-us/graph/support)  |
+| Microsoft Teams JavaScript SDK | Use the feedback link at the footer of the [docs page](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest) |
 | SharePoint Framework with Teams | [sp-dev-docs repository issue list](https://github.com/SharePoint/sp-dev-docs/issues) |
+
+## Using the samples
+
+Due to the diversity of the samples and technologies, there are no fixed instructions for building or using the samples. Each sample should include a readme file with build instructions.
+
+
+## Contributions
+
+These samples are from the Microsoft 365 developer community. We welcome your samples and suggestions for new samples. 
+
+Please have a look on our [Contribution Guidance](./.github/CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Thx.
+
+> Sharing is caring!
 
 ## More Samples
 
@@ -120,16 +88,3 @@ If you have issues with the libraries, SDKs, services, or tools used to develop 
 ### Tabs
 
 * [Microsoft Teams JavaScript Library](https://github.com/OfficeDev/BotBuilder-MicrosoftTeams): This library is used in Teams tabs to allow JavaScript running on the tab's web page to interact with Microsoft Teams
-
-## Using the samples
-
-Due to the diversity of the samples and technologies, there are no fixed instructions for building or using the samples. Each sample should include a readme file with build instructions.
-
-
-## Contributions
-
-These samples are from the Microsoft 365 developer community. We welcome your samples and suggestions for new samples. 
-
-Please have a look on our [Contribution Guidance](./.github/CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Thx.
-
-> Sharing is caring!
