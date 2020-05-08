@@ -51,7 +51,7 @@ Please have a look on our [Contribution Guidance](./.github/CONTRIBUTING.md) bef
 
 * [App Templates for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates): These open source, production-ready applications are also great samples showing how to build robust Teams applications complete with Resource Manager templates for easy deployment in Azure
 
-* [ButBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples): Dozens of simple samples showing how to do various things in Bot Builder SDK, including some Teams examples
+* [BotBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples): Dozens of simple samples showing how to do various things in Bot Builder SDK, including some Teams examples
 
 ### Bot SDK 4.0-4.5
 
