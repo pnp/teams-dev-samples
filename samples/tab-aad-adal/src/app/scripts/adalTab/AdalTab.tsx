@@ -130,7 +130,7 @@ export class AdalTab extends TeamsBaseComponent<IAdalTabProps, IAdalTabState> {
         }
 
         this.msGraphClient
-            .api("me/messages")
+            .api("me/mailFolders/inbox/messages")
             .select(["receivedDateTime", "subject"])
             .top(15)
             .get(async (error: any, rawMessages: any, rawResponse?: any) => {
