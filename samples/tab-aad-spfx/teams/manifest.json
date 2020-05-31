@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.2/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "packageName": "AAD SPFx Tab",
+  "id": "0329c1a1-d76b-4be6-b160-778055d6c2c3",
+  "version": "1.0",
+  "developer": {
+    "name": "Bob German",
+    "websiteUrl": "https://products.office.com/en-us/sharepoint/collaboration",
+    "privacyUrl": "https://privacy.microsoft.com/en-us/privacystatement",
+    "termsOfUseUrl": "https://www.microsoft.com/en-us/servicesagreement"
+  },
+  "name": {
+    "short": "AADGraphSPFx"
+  },
+  "description": {
+    "short": "Displays first 10 entries in user's inbox",
+    "full": "Demonstrates use of Graph client in SPFx tab"
+  },
+  "icons": {
+    "outline": "f8ac387c-aa04-4eb9-9f39-3d9655e3c41a_outline.png",
+    "color": "f8ac387c-aa04-4eb9-9f39-3d9655e3c41a_color.png"
+  },
+  "accentColor": "#004578",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=f8ac387c-aa04-4eb9-9f39-3d9655e3c41a",
+      "canUpdateConfiguration": false,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "*.sharepoint-df.com",
+    "spoppe-a.akamaihd.net",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net",
+    "msft.spoppe.com"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}
