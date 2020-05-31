@@ -124,8 +124,6 @@ class MainDialog extends LogoutDialog {
                 headers: {
                     "accept": "application/json",
                     "authorization": "bearer " + token,
-                    // mode: 'cors',
-                    // cache: 'default'
                 }
             });
 
