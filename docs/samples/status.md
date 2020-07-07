@@ -1,10 +1,10 @@
 # Samples by Status
 
-As the SharePoint Framework evolves, some features are deprecated to make room for new ones, which may affect the working status of our samples.
+As Teams evolves, some features are deprecated to make room for new ones, which may affect the working status of our samples.
 
 Use the filters to find samples by working status.
 
-If you encounter any issues with the samples, [create an issue](https://github.com/SharePoint/teams-dev-samples/issues) so that we can notify the original authors.
+If you encounter any issues with the samples, [create an issue](https://github.com/pnp/teams-dev-samples/issues) so that we can notify the original authors.
 
  <div class="well">
   <div class="button-group filters-button-group">
