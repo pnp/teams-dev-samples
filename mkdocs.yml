@@ -51,6 +51,17 @@ extra:
       link: 'https://aka.ms/sppnp'
   samples:
     - botframework: 4.6
+      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
+      type: app
+      language: powerapps, es6
+      name: microsoft-teams-apps-attendance
+      title: Attendance App Template
+      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
+      author: Microsoft
+      summary: Attendance app is a Power Apps based solution to take attendance in educational tenant.
+      modifiedtext: May 14, 2020
+      modified: 2020-05-14
+    - botframework: 4.6
       url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_es6/01.browser-echo
       type: bot
       language: javascript_es6
@@ -61,6 +72,7 @@ extra:
       summary: The example shows the use of the botbuilder-js SDKs for the browser using the BotFramework-WebChat and a custom WebChatAdapter.
       modifiedtext: July 19, 2019
       modified: 2019-07-19
+      keyword: your text goes here
     - botframework: 4.6
       url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/01.console-echo
       type: bot

@@ -7,12 +7,13 @@ To learn more about how to use these samples, please refer to our [getting start
  <div class="well">
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
-    <button class="button" data-filter="[data-language='netcore']">.NET Core</button>
-    <button class="button" data-filter="[data-language='javascript']">JavaScript</button>
-    <button class="button" data-filter="[data-language='netwebapi']">.NET Web API</button>
-    <button class="button" data-filter="[data-language='javascript_es6']">JavaScript (ES6)</button>
-    <button class="button" data-filter="[data-language='typescript']">TypeScript</button>
-    <button class="button" data-filter="[data-language='python']">Python</button>
+    <button class="button" data-filter="[data-language*='netcore']">.NET Core</button>
+    <button class="button" data-filter="[data-language*='javascript']">JavaScript</button>
+    <button class="button" data-filter="[data-language*='netwebapi']">.NET Web API</button>
+    <button class="button" data-filter="[data-language*='es6']">JavaScript (ES6)</button>
+    <button class="button" data-filter="[data-language*='typescript']">TypeScript</button>
+    <button class="button" data-filter="[data-language*='python']">Python</button>
+<button class="button" data-filter="[data-language*='powerapps']">Power Apps</button>
   </div>
 </div>
 
