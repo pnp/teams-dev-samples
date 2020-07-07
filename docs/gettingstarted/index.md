@@ -1,6 +1,6 @@
 # Getting Started
 
-These samples were created by the PnP community. They demonstrate different usage patterns for writing solutions for Microsoft Teams.
+These samples were created by the PnP community. They demonstrate different usage patterns for writing developing on Microsoft Teams as a platform.
 
 The easiest way to get started with using these samples is to watch our video:
 [![Preview of getting started on consuming SharePoint development community sample solutions](http://img.youtube.com/vi/EH5voQlRd-4/0.jpg)](http://www.youtube.com/watch?v=EH5voQlRd-4 "Getting Started Using PnP Samples")
