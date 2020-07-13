@@ -29,7 +29,7 @@ To learn more about how to use these samples, please refer to our [getting start
         href="{{sample.url}}"
         title="{{sample.summary}}">
         <picture>
-          <img src="thumbnails/{{ sample.name }}.png" width="302" alt="{{sample.name}}" data-fullsize="{{sample.thumbnail}}" data-orig="https://pnp.github.io/teams-dev-samples/img/thumbnails/{{ sample.name }}.png"/>
+          <img src="../../img/thumbnails/{{ sample.name }}.png" width="302" alt="{{sample.name}}" data-fullsize="{{sample.thumbnail}}" data-orig="../../img/thumbnails/{{ sample.name }}.png"/>
         </picture>
       </a>
     </div>

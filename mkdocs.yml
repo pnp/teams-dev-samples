@@ -1,5 +1,40 @@
 # teams-dev-samples
-# Author: Hugo Bernier
+# Author: Hugo Bernier, updates by Bob German
+#
+# Each sample has an entry as show below
+# 
+# (ORIGINAL)
+#    - name: microsoft-teams-apps-attendance
+#      title: Attendance App Template
+#      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
+#      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
+#      author: Microsoft
+#      botframework: 4.6
+#      type: app
+#      language: powerapps, es6
+#      summary: Attendance app is a Power Apps based solution to take attendance in educational tenant.
+#      modifiedtext: May 14, 2020
+#      modified: 2020-05-14
+#
+# (NEW)
+#    - name: microsoft-teams-apps-attendance
+#      title: Attendance App Template
+#      type: apptemplate, barebones, demo, solution
+#      features: bot, msgext, tab, taskmodule
+#      summary: Attendance app is a Power Apps based solution to take attendance in educational tenant.
+#      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
+#      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
+#      author: Microsoft
+#      client_language: typescript, javascript, powerapps, powerautomate
+#      client_platform: spa, spfx, powerapps, powerautomate
+#      client_ui: react, angularjs, angular, knockout, jquery, vueJS
+#      server_language: csharp, typescript, javascript, python, java
+#      server_platform: netcore, express, restify
+#      server_framework: bot3.x, bot4.x
+#      modifiedtext: May 14, 2020
+#      modified: 2020-05-14
+#
+
 site_name: Microsoft Teams Development Community Samples
 plugins:
     - search
@@ -84,12 +119,12 @@ extra:
       summary: This sample shows a simple echo bot and demonstrates the bot working as a console app using a sample console adapter.
       modifiedtext: December 19, 2019
       modified: 2019-12-19
-    - botframework: 4.6
+    - name: nodejsconsole-echo
+      title: Node.js Console Echo
       url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/01.console-echo
       type: bot
+      botframework: 4.6
       language: typescript
-      name: nodejsconsole-echo
-      title: Node.js Console Echo
       thumbnail: 
       author: Microsoft
       summary: This sample shows a simple echo bot and demonstrates the bot working as a console app using a sample console adapter.
