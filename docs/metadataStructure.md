@@ -1,6 +1,6 @@
 # Metadata Structure
 
-There are too many variations in Teams samples to easily find them through simple navigation. The intention is for people to locate the sample they need through the [Teams Sample Navigator](#)
+There are too many variations in Teams samples to easily find them through simple navigation. The intention is for people to locate the sample they need through the [Teams Sample Navigator](https://pnp.github.io/teams-dev-samples)
 
 The current solution is driven by a [single YAML file](https://github.com/pnp/teams-dev-samples/blob/Docs/docs/metadataStructure.md) that is maintained manually. Entries in this file are as follows:
 
