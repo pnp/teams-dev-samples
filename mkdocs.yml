@@ -212,5 +212,5 @@ edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
 site_favicon: favicon.ico
 
-dev_addr: '192.168.24.50:8000'
+# dev_addr: '192.168.24.50:8000'
 # dev_addr: '127.0.0.1:443'
