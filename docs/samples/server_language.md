@@ -47,4 +47,4 @@ To learn more about how to use these samples, please refer to our [getting start
     {% endfor %}
 </div>
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/docs/samples/language" />
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/docs/samples/server_language" />

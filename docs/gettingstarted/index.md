@@ -1,6 +1,6 @@
 # Getting Started
 
-These samples were created by the PnP community. They demonstrate different usage patterns for writing developing on Microsoft Teams as a platform.
+Many of these samples were created by the PnP community. They demonstrate different usage patterns for writing developing on Microsoft Teams as a platform. We have also included samples provided by Microsoft.
 
 The easiest way to get started with using these samples is to watch our video:
 [![Preview of getting started on consuming SharePoint development community sample solutions](http://img.youtube.com/vi/EH5voQlRd-4/0.jpg)](http://www.youtube.com/watch?v=EH5voQlRd-4 "Getting Started Using PnP Samples")
@@ -30,24 +30,6 @@ cd samples
 cd sample-folder-name
 ```
 
-and for the tutorials, use the following command:
-
-```shell
-cd tutorials
-```
-
-Now run the following command to install the npm packages:
-
-```shell
-npm install
-```
-
-This will install the required npm packages and dependencies to build and run the client-side project.
-
-Once the npm packages are installed, run the following command to preview your web parts in SharePoint Workbench:
-
-```shell
-gulp serve
-```
+Now follow the instructions in the Readme for the sample.
 
 <img src="https://telemetry.sharepointpnp.com/teams-dev-samples/docs/gettingstarted" />
