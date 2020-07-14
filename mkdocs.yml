@@ -25,11 +25,11 @@
 #      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
 #      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
 #      author: Microsoft
-#      client_language: typescript, javascript, powerapps, powerautomate
-#      client_platform: spa, spfx, powerapps, powerautomate
-#      client_ui: react, angularjs, angular, knockout, jquery, vueJS
-#      server_language: csharp, typescript, javascript, python, java
-#      server_platform: netcore, express, restify
+#      client_language: typescript, javascript, powerapps
+#      client_platform: spa, spfx, powerapps
+#      client_ui: react, angularjs, angular, knockout, jquery, vuejs
+#      server_language: csharp, typescript, javascript, python, java, powerautomate
+#      server_platform: netcore, express, restify, powerautomate
 #      server_framework: bot3.x, bot4.x
 #      modifiedtext: May 14, 2020
 #      modified: 2020-05-14
@@ -43,7 +43,12 @@ plugins:
 nav:
   - Samples:
     - By Type: index.md
-    - By Language: samples/language.md
+    - By Client Language: samples/client_language.md
+    - By Client Platform: samples/client_platform.md
+    - By Client UI: samples/client_ui.md
+    - By Server Framework: samples/server_framework.md
+    - By Server Language: samples/server_language.md
+    - By Server Platform: samples/server_platform.md
     - By Year: samples/year.md
     - By Author: samples/author.md
     - By Keyword: samples/keyword.md
@@ -95,11 +100,11 @@ extra:
       thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
       url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
       author: Microsoft
-      client_language: powerapps, powerautomate
-      client_platform: powerapps, powerautomate
+      client_language: powerapps, 
+      client_platform: powerapps
       client_ui:
-      server_language:
-      server_platform:
+      server_language: powerautomate
+      server_platform: powerautomate
       server_framework:
       modifiedtext: May 14, 2020
       modified: 2020-05-14
