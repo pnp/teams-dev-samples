@@ -17,11 +17,11 @@
 #      modified: 2020-05-14
 #
 # (NEW)
-#    - name: microsoft-teams-apps-attendance
-#      title: Attendance App Template
+#    - name: some-unique-name
+#      title: 
 #      type: apptemplate, barebones, demo, solution
 #      features: bot, msgext, tab, taskmodule
-#      summary: Attendance app is a Power Apps based solution to take attendance in educational tenant.
+#      summary: 
 #      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
 #      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
 #      author: Microsoft
@@ -35,7 +35,7 @@
 #      modified: 2020-05-14
 #
 
-site_name: Microsoft Teams Development Community Samples
+site_name: Microsoft Teams Development Samples
 plugins:
     - search
     - macros
@@ -85,128 +85,133 @@ extra:
     - type: 'link'
       link: 'https://aka.ms/sppnp'
   samples:
-    - botframework: 4.6
-      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
-      type: app
-      language: powerapps, es6
-      name: microsoft-teams-apps-attendance
+
+# Attendance app template
+    - name: microsoft-teams-apps-attendance
       title: Attendance App Template
-      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
-      author: Microsoft
+      type: apptemplate
+      features: tab
       summary: Attendance app is a Power Apps based solution to take attendance in educational tenant.
+      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
+      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
+      author: Microsoft
+      client_language: powerapps, powerautomate
+      client_platform: powerapps, powerautomate
+      client_ui:
+      server_language:
+      server_platform:
+      server_framework:
       modifiedtext: May 14, 2020
       modified: 2020-05-14
-    - botframework: 4.6
-      url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_es6/01.browser-echo
-      type: bot
-      language: javascript_es6
-      name: javascript_es6-browser-echo
-      title: JavaScript ES6 Browser Echo
+
+# HR Talent App
+    - name: app-contoso-hr-talent-app
+      title: HR Talent App demo/lab
+      type: demo
+      features: bot, msgext, tab, taskmodule
+      summary: This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)
       thumbnail: 
+      url: https://github.com/OfficeDev/msteams-sample-contoso-hr-talent-app
       author: Microsoft
-      summary: The example shows the use of the botbuilder-js SDKs for the browser using the BotFramework-WebChat and a custom WebChatAdapter.
-      modifiedtext: July 19, 2019
-      modified: 2019-07-19
-      keyword: your text goes here
-    - botframework: 4.6
-      url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/01.console-echo
-      type: bot
-      language: python
-      name: pythonconsole-echo
-      title: Python Console Echo
+      client_language: typescript, javascript
+      client_platform: spa, spfx
+      client_ui: jquery
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot3.x, bot4.x
+      modifiedtext: October 4, 2019
+      modified: 2019-10-04
+
+# Teams Auth Bot (C#)
+    - name: bot-teams-auth-csharp
+      title: Teams Auth Bot (C#)
+      type: barebones
+      features: bot
+      summary: Simple bot demonstrates how to log in a user so you can call APIs on their behalf
       thumbnail: 
+      url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth
       author: Microsoft
-      summary: This sample shows a simple echo bot and demonstrates the bot working as a console app using a sample console adapter.
-      modifiedtext: December 19, 2019
-      modified: 2019-12-19
-    - name: nodejsconsole-echo
-      title: Node.js Console Echo
-      url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/01.console-echo
-      type: bot
-      botframework: 4.6
-      language: typescript
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot4.x
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+# Teams Auth Bot (NodeJS)
+    - name: bot-teams-auth-nodejs
+      title: Teams Auth Bot (NodeJS)
+      type: barebones
+      features: bot
+      summary: Simple bot demonstrates how to log in a user so you can call APIs on their behalf
       thumbnail: 
+      url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth
       author: Microsoft
-      summary: This sample shows a simple echo bot and demonstrates the bot working as a console app using a sample console adapter.
-      modifiedtext: May 2, 2019
-      modified: 2019-05-02
-    - botframework: 4.6
-      url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/01.console-echo
-      type: bot
-      language: netcore
-      name: cshapconsole-echo
-      title: .NET Core Console Echo 
-      thumbnail: 
-      author: Microsoft
-      summary: This sample shows a simple echo bot and demonstrates the bot working as a console app using a sample console adapter.
-      modifiedtext: May 2, 2019
-      modified: 2019-05-02      
-    - botframework: 4.6
-      url: https://github.com/pnp/teams-dev-samples/tree/master/microsoft/app-contoso-hr-talent-app
-      type: app
-      language: netcore
-      name: app-contoso-hr-talent-app
-      title: HR Talent App
-      thumbnail: 
-      author: Microsoft
-      summary: This is the lab for the Microsoft Teams Development Bootcamp
-      modifiedtext: April 13, 2020
-      modified: 2020-04-13
-    - botframework: 4.6
-      language: netcore
-      url: https://github.com/pnp/teams-dev-samples/tree/master/microsoft/bot-teams-auth-csharp
-      type: bot
-      name: bot-teams-auth-csharp
-      title: C# Teams Auth Bot
-      thumbnail: 
-      author: Microsoft
-      summary: This sample shows how to use an Auth Dialog to authenticate the user of a Teams bot and obtain an access token to act on the user's behalf when calling Azure AD secured services such as Microsoft Graph.
-      modifiedtext: Jul 10, 2019
-      modified: 2019-07-10
-    - botframework: 4.6
-      language: typescript
-      url: https://github.com/pnp/teams-dev-samples/tree/master/microsoft/bot-teams-auth-nodejs
-      type: bot
-      name: bot-teams-auth-nodejs
-      title: Node.js Teams Auth Bot
-      thumbnail: 
-      author: Microsoft
-      summary: This sample shows how to use an Auth Dialog to authenticate the user of a Teams bot and obtain an access token to act on the user's behalf when calling Azure AD secured services such as Microsoft Graph.
-      modifiedtext: Jul 10, 2019
-      modified: 2019-07-10
-    - botframework: 4.6
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/app-consulting-bot
-      type: app
-      language: netcore
-      name: app-consulting-bot
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: javascript
+      server_platform: restify
+      server_framework: bot4.x
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+# Consulting Bot
+    - name: app-consulting-bot
       title: Consulting Bot
-      thumbnail: https://github.com/pnp/teams-dev-samples/raw/master/samples/app-consulting-bot/assets/using-bot2-detail.png
-      author: Bob German
+      type: demo
+      features: bot, msgext, taskmodule
       summary: This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/app-consulting-bot
+      author: Bob German
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot4.x
       modifiedtext: April 23, 2020
       modified: 2020-04-23
-    - botframework: 4.8
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-statebot
-      type: bot
-      name: bot-statebot
-      language: typescript
+
+# Statebot
+    - name: bot-statebot
       title: StateBot
-      thumbnail: 
-      author: Bob German
+      type: barebones
+      features: bot
       summary: This simple bot demonstrates conversation state and user state in Bot Framework v4
+      thumbnail: 
+      url: 
+      author: Bob German
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: javascript
+      server_platform: restify
+      server_framework: bot4.x
       modifiedtext: August 12, 2019
       modified: 2019-08-12
-    - spfx: 1.8.0
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-spfx-field-visit
-      language: typescript
-      type: tab
-      name: tab-spfx-field-visit
-      title: Teams Tab - Field Visit Demo (Mashup)
-      thumbnail: https://github.com/pnp/teams-dev-samples/raw/master/samples/tab-spfx-field-visit/documentation/FieldVisitDemo.png
-      author: Bob German
+
+# Field visit mashup
+    - name: tab-spfx-field-visit
+      title: Field visit mashup
+      type: demo
+      features: tab
       summary: A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits. 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-spfx-field-visit
+      url: 
+      author: Bob German
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      server_framework:
       modifiedtext: April 20, 2019
       modified: 2019-04-20
+
   authors:
     - Bob German
     - Microsoft
@@ -214,4 +219,6 @@ repo_url: https://github.com/pnp/teams-dev-samples
 edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
 site_favicon: favicon.ico
+
+dev_addr: '192.168.24.50:8000'
 # dev_addr: '127.0.0.1:443'
