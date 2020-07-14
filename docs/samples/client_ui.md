@@ -7,12 +7,12 @@ To learn more about how to use these samples, please refer to our [getting start
  <div class="well">
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
-    <button class="button" data-filter="[data-clientui*='angular']">Angular</button>
-    <button class="button" data-filter="[data-clientui*='angularjs']">AngularJS</button>
-    <button class="button" data-filter="[data-clientui*='jquery']">jQuery</button>
-    <button class="button" data-filter="[data-clientui*='knockout']">Knockout</button>
-    <button class="button" data-filter="[data-clientui*='react']">React</button>
-    <button class="button" data-filter="[data-clientui*='vuejs']">VueJS</button>
+    <button class="button" data-filter="[data-facet*='angular']" title="Web UI built in Angular 2.0 or greater">Angular</button>
+    <button class="button" data-filter="[data-facet*='angularjs']" title="Web UI built using Angular JS 1.x">AngularJS</button>
+    <button class="button" data-filter="[data-facet*='jquery']" title="Web UI built using jQuery">jQuery</button>
+    <button class="button" data-filter="[data-facet*='knockout']" title="Web UI built using Knockout">Knockout</button>
+    <button class="button" data-filter="[data-facet*='react']" title="Web UI built using React">React</button>
+    <button class="button" data-filter="[data-facet*='vuejs']" title="Web UI built using Vue">VueJS</button>
   </div>
 </div>
 
@@ -20,7 +20,7 @@ To learn more about how to use these samples, please refer to our [getting start
 
 {% for sample in samples|sort(attribute='modified', reverse=True) %}
 
-<div class="sample-item" data-clientui="{{sample.client_ui}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
+<div class="sample-item" data-facet="{{sample.client_ui}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
   <div class="sample">
     <div class="sample-video"><i class="ms-Icon ms-Icon--VideoSolid" aria-hidden="true"></i></div>
     <div class="sample-img">

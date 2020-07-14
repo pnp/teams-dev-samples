@@ -1,4 +1,4 @@
-# Samples by Client Language
+# Samples by Server Language
 
 You can build Teams solutions using many of the programming languages you're already familiar with. For solutions that have server-side code (bots, messaging extensions, and tabs or task modules that have a back-end service), you can select the language you're interested in.
 
@@ -6,12 +6,12 @@ To learn more about how to use these samples, please refer to our [getting start
 
  <div class="well">
   <div class="button-group filters-button-group">
-    <button class="button" data-filter="[data-clientlanguage*='csharp']">C#</button>
     <button class="button is-checked" data-filter="*">All</button>
-    <button class="button" data-filter="[data-clientlanguage*='javascript']">JavaScript</button>
-    <button class="button" data-filter="[data-clientlanguage*='powerautomate']">Power Automate</button>
-    <button class="button" data-filter="[data-clientlanguage*='python']">Python</button>
-    <button class="button" data-filter="[data-clientlanguage*='typescript']">TypeScript</button>
+    <button class="button" data-filter="[data-facet*='csharp']" title="Server code written in C#">C#</button>
+    <button class="button" data-filter="[data-facet*='javascript']" title="Server code written in JavaScript/ECMAScript for NodeJS">JavaScript</button>
+    <button class="button" data-filter="[data-facet*='powerautomate']" title="Back-end using Power Automate workflow(s)">Power Automate</button>
+    <button class="button" data-filter="[data-facet*='python']" title="Server code written in Python">Python</button>
+    <button class="button" data-filter="[data-facet*='typescript']" title="Server code written in TypeScript for NodeJS">TypeScript</button>
   </div>
 </div>
 
@@ -19,7 +19,7 @@ To learn more about how to use these samples, please refer to our [getting start
 
 {% for sample in samples|sort(attribute='modified', reverse=True) %}
 
-<div class="sample-item" data-clientlanguage="{{sample.server_language}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
+<div class="sample-item" data-facet="{{sample.server_language}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
   <div class="sample">
     <div class="sample-video"><i class="ms-Icon ms-Icon--VideoSolid" aria-hidden="true"></i></div>
     <div class="sample-img">

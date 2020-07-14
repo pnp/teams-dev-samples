@@ -1,19 +1,16 @@
-# Samples by Language
+# Samples by Feature
 
-You can build Teams solutions using many of the programming languages you're already familiar with. Use the filters below to find samples by language.
+Teams applications can include one or more features such as tabs and bots.
 
 To learn more about how to use these samples, please refer to our [getting started](../gettingstarted/index.md) section.
 
  <div class="well">
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
-    <button class="button" data-filter="[data-language*='netcore']">.NET Core</button>
-    <button class="button" data-filter="[data-language*='javascript']">JavaScript</button>
-    <button class="button" data-filter="[data-language*='netwebapi']">.NET Web API</button>
-    <button class="button" data-filter="[data-language*='es6']">JavaScript (ES6)</button>
-    <button class="button" data-filter="[data-language*='typescript']">TypeScript</button>
-    <button class="button" data-filter="[data-language*='python']">Python</button>
-<button class="button" data-filter="[data-language*='powerapps']">Power Apps</button>
+    <button class="button" data-filter="[data-facet*='bot']" title="Solution contains a chatbot">Bot</button>
+    <button class="button" data-filter="[data-facet*='msgext']" title="Solution contains one or more messaging extensions">Messaging Extension</button>
+    <button class="button" data-filter="[data-facet*='tab']" title="Solution contains one or more tabs">Tab</button>
+    <button class="button" data-filter="[data-facet*='taskmodule']" title="Solution contains one or more taks modules">Task Module</button>
   </div>
 </div>
 
@@ -21,7 +18,7 @@ To learn more about how to use these samples, please refer to our [getting start
 
 {% for sample in samples|sort(attribute='modified', reverse=True) %}
 
-<div class="sample-item" data-language="{{sample.language}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
+<div class="sample-item" data-facet="{{sample.features}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
   <div class="sample">
     <div class="sample-video"><i class="ms-Icon ms-Icon--VideoSolid" aria-hidden="true"></i></div>
     <div class="sample-img">

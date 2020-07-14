@@ -7,10 +7,10 @@ To learn more about how to use these samples, please refer to our [getting start
  <div class="well">
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
-    <button class="button" data-filter="[data-serverPlatform*='netcore']">ASP.NET Core</button>
-    <button class="button" data-filter="[data-serverPlatform*='express']">Express (Node)</button>
-    <button class="button" data-filter="[data-serverPlatform*='powerautomate']">Power Automate</button>
-    <button class="button" data-filter="[data-serverPlatform*='restify']">Restify (Node)</button>
+    <button class="button" data-filter="[data-facet*='netcore']" title="Web server is ASP.NET Core">ASP.NET Core</button>
+    <button class="button" data-filter="[data-facet*='express']" title="Web server is Node with Express">Express (Node)</button>
+    <button class="button" data-filter="[data-facet*='powerautomate']" title="Server features provided by Power Automate workflow(s)">Power Automate</button>
+    <button class="button" data-filter="[data-facet*='restify']" title="Web server is Node with Restify">Restify (Node)</button>
   </div>
 </div>
 
@@ -18,7 +18,7 @@ To learn more about how to use these samples, please refer to our [getting start
 
 {% for sample in samples|sort(attribute='modified', reverse=True) %}
 
-<div class="sample-item" data-serverPlatform="{{sample.server_platform}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
+<div class="sample-item" data-facet="{{sample.server_platform}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
   <div class="sample">
     <div class="sample-video"><i class="ms-Icon ms-Icon--VideoSolid" aria-hidden="true"></i></div>
     <div class="sample-img">

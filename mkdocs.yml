@@ -1,22 +1,8 @@
 # teams-dev-samples
 # Author: Hugo Bernier, updates by Bob German
 #
-# Each sample has an entry as show below
+# Each sample has an entry as show below:
 # 
-# (ORIGINAL)
-#    - name: microsoft-teams-apps-attendance
-#      title: Attendance App Template
-#      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
-#      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
-#      author: Microsoft
-#      botframework: 4.6
-#      type: app
-#      language: powerapps, es6
-#      summary: Attendance app is a Power Apps based solution to take attendance in educational tenant.
-#      modifiedtext: May 14, 2020
-#      modified: 2020-05-14
-#
-# (NEW)
 #    - name: some-unique-name
 #      title: 
 #      type: apptemplate, barebones, demo, solution
@@ -43,6 +29,7 @@ plugins:
 nav:
   - Samples:
     - By Type: index.md
+    - By Feature: samples/features.md
     - By Client Language: samples/client_language.md
     - By Client Platform: samples/client_platform.md
     - By Client UI: samples/client_ui.md

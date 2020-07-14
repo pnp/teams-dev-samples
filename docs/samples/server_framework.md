@@ -9,8 +9,8 @@ To learn more about how to use these samples, please refer to our [getting start
  <div class="well">
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
-    <button class="button" data-filter="[data-clientui*='bot4.x']">Bot Framework 4.x</button>
-    <button class="button" data-filter="[data-clientui*='bot3.x']">Bot Framework 3.x</button>
+    <button class="button" data-filter="[data-facet*='bot4.x']" title="Uses Bot Framework 4.x">Bot Framework 4.x</button>
+    <button class="button" data-filter="[data-facet*='bot3.x']" title="Uses Bot Framework 3.x">Bot Framework 3.x</button>
   </div>
 </div>
 
@@ -18,7 +18,7 @@ To learn more about how to use these samples, please refer to our [getting start
 
 {% for sample in samples|sort(attribute='modified', reverse=True) %}
 
-<div class="sample-item" data-clientui="{{sample.server_framework}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
+<div class="sample-item" data-facet="{{sample.server_framework}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
   <div class="sample">
     <div class="sample-video"><i class="ms-Icon ms-Icon--VideoSolid" aria-hidden="true"></i></div>
     <div class="sample-img">

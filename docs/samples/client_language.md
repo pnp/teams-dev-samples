@@ -7,9 +7,9 @@ To learn more about how to use these samples, please refer to our [getting start
  <div class="well">
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
-    <button class="button" data-filter="[data-clientlanguage*='javascript']">JavaScript</button>
-    <button class="button" data-filter="[data-clientlanguage*='powerapps']">Power Apps</button>
-    <button class="button" data-filter="[data-clientlanguage*='typescript']">TypeScript</button>
+    <button class="button" data-filter="[data-facet*='javascript']" title="Browser code written in JavaScript or ECMAScript">JavaScript</button>
+    <button class="button" data-filter="[data-facet*='powerapps']" title="Tab(s) created with Power Apps">Power Apps</button>
+    <button class="button" data-filter="[data-facet*='typescript']" title="Browser code written in Typescript">TypeScript</button>
   </div>
 </div>
 
@@ -17,7 +17,7 @@ To learn more about how to use these samples, please refer to our [getting start
 
 {% for sample in samples|sort(attribute='modified', reverse=True) %}
 
-<div class="sample-item" data-clientlanguage="{{sample.client_language}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
+<div class="sample-item" data-facet="{{sample.client_language}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
   <div class="sample">
     <div class="sample-video"><i class="ms-Icon ms-Icon--VideoSolid" aria-hidden="true"></i></div>
     <div class="sample-img">

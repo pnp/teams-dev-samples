@@ -7,9 +7,9 @@ To learn more about how to use these samples, please refer to our [getting start
  <div class="well">
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
-    <button class="button" data-filter="[data-clientplatform*='powerapps']">Power Apps</button>
-    <button class="button" data-filter="[data-clientplatform*='spa']">Single Page App</button>
-    <button class="button" data-filter="[data-clientplatform*='spfx']">SharePoint Framework</button>
+    <button class="button" data-filter="[data-facet*='powerapps']" title="Tab(s) built using Power Apps">Power Apps</button>
+    <button class="button" data-filter="[data-facet*='spa']" title="Tab(s) and/or task modules built as single-page applications">Single Page App</button>
+    <button class="button" data-filter="[data-facet*='spfx']" title="Tab(s) built using SharePoint Framework (SPFx)">SharePoint Framework</button>
   </div>
 </div>
 
@@ -17,7 +17,7 @@ To learn more about how to use these samples, please refer to our [getting start
 
 {% for sample in samples|sort(attribute='modified', reverse=True) %}
 
-<div class="sample-item" data-clientplatform="{{sample.client_platform}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
+<div class="sample-item" data-facet="{{sample.client_platform}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
   <div class="sample">
     <div class="sample-video"><i class="ms-Icon ms-Icon--VideoSolid" aria-hidden="true"></i></div>
     <div class="sample-img">
@@ -45,4 +45,4 @@ To learn more about how to use these samples, please refer to our [getting start
     {% endfor %}
 </div>
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/docs/samples/language" />
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/docs/samples/facet" />
