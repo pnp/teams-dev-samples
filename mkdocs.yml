@@ -481,6 +481,133 @@ extra:
       modifiedtext: July 9, 2020
       modified: 2020-07-09
 
+# Scrums for Channels app template
+    - name: microsoft-teams-apps-scrums-for-channels
+      title: Scrums for Channels App Template
+      type: apptemplate
+      features: bot
+      summary: Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-channels-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+# Scrums for Group Chat app template
+    - name: microsoft-teams-apps-scrums-for-group-chat
+      title: Scrums for Channels App Template
+      type: apptemplate
+      features: bot
+      summary: Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-group-chat-
+      author: Microsoft
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot4beta
+      modifiedtext: June 10, 2020
+      modified: 2020-06-10
+
+
+# Share Now app template
+    - name: microsoft-teams-apps-share-now
+      title: Share Now App Template
+      type: apptemplate
+      features: bot, msgext, tab
+      summary: The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#share-now-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot4bbot46eta
+      modifiedtext: June 10, 2020
+      modified: 2020-06-10
+
+# SharePoint List Search app template
+    - name: microsoft-teams-apps-splist-search
+      title: SharePoint List Search App Template
+      type: apptemplate
+      features: msgext
+      summary: The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#sharepoint-list-search
+      author: Microsoft
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: csharp
+      server_platform: netframework
+      server_framework: bot3
+      modifiedtext: April 30, 2020
+      modified: 2020-04-30
+
+# Staff Check-ins app template
+    - name: microsoft-teams-apps-staff-checkins
+      title: Staff Check-ins App Template
+      type: apptemplate
+      features: tab
+      summary: Staff Check-ins enables oversight communication between your business and field personnel.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#staff-check-ins-
+      author: Microsoft
+      client_language: powerapps
+      client_platform: powerapps
+      client_ui:
+      server_language: powerautomate
+      server_platform: powerautomate
+      server_framework:
+      modifiedtext: July 1, 2020
+      modified: 2020-07-01
+
+# Visitor Management app template
+    - name: microsoft-teams-apps-visitor-management
+      title: Visitor Management App Template
+      type: apptemplate
+      features: msgext
+      summary: The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#visitor-management-
+      author: Microsoft
+      client_language: powerapps
+      client_platform: powerapps
+      client_ui:
+      server_language: powerautomate
+      server_platform: powerautomate
+      server_framework:
+      modifiedtext: July 2, 2020
+      modified: 2020-07-02
+
+# Workplace Awards app template
+    - name: microsoft-teams-apps-workplace-awards
+      title: Workplace Awards App Template
+      type: apptemplate
+      features: bot, msgext, tab
+      summary: The app enables you to setup and manage an employee rewards and recognition (R&R) program where employees can easily nominate and endorse colleagues and your R&R leader can view submitted nominations, grant awards, and announce recipients
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#workplace-awards-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: July 2, 2020
+      modified: 2020-07-02
+
 
 #################################
 # COMMUNITY SAMPLES
@@ -602,5 +729,5 @@ edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
 site_favicon: favicon.ico
 
-dev_addr: '192.168.24.50:8000'
+# dev_addr: '192.168.24.50:8000'
 # dev_addr: '127.0.0.1:443'
