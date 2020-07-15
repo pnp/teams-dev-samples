@@ -1,4 +1,5 @@
-# Samples by Type
+# Microsoft Teams Development Samples
+## Browse by type
 
 Microsoft Teams is highly extensible, allowing 3rd party and custom applications to run alongside the many Office 365 services already included in Teams. Just as you can add a Word tab or the Who bot in Teams, you can write your own tabs and bots. You can also write applications that run outside the Teams UI and use the Microsoft Graph API to access and curate Teams content.
 

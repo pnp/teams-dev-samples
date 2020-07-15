@@ -5,8 +5,8 @@ $(document).ready(function () {
   var $grid = $('.grid').isotope({
     itemSelector: '.sample-item',
     layoutMode: 'fitRows',
-    sortAscending: false,
-    sortBy: 'modified',
+    sortAscending: true,
+    sortBy: 'title',
     getSortData: {
       title: '[data-title]',
       // number: '.number parseInt',

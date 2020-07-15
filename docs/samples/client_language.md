@@ -1,4 +1,5 @@
-# Samples by Client Language
+# Microsoft Teams Development Samples
+## Browse by Client Language
 
 You can build Teams solutions using many of the programming languages you're already familiar with. For solutions that have client-side code (tabs, some task modules), you can select the language you're interested in.
 
