@@ -1,4 +1,5 @@
-# Samples by Feature
+# Microsoft Teams Development Samples
+## Browse by Feature
 
 Teams applications can include one or more features such as tabs and bots.
 

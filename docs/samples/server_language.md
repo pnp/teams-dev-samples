@@ -1,4 +1,5 @@
-# Samples by Server Language
+# Microsoft Teams Development Samples
+## Browse by Server Language
 
 You can build Teams solutions using many of the programming languages you're already familiar with. For solutions that have server-side code (bots, messaging extensions, and tabs or task modules that have a back-end service), you can select the language you're interested in.
 

@@ -1,4 +1,5 @@
-# Samples by Year
+# Microsoft Teams Development Samples
+## Browse by Year
 
 The SharePoint Framework is constantly evolving. Use the filters below to see how the samples have changed over the years.
 

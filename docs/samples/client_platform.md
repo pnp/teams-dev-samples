@@ -1,4 +1,5 @@
-# Samples by Client Platform
+# Microsoft Teams Development Samples
+## Browse by Client Platform
 
 You can build Teams solutions using many of the development platforms you're already familiar with. For solutions that have client-side code (tabs, some task modules), you can select the development platform you're interested in.
 

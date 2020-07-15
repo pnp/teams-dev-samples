@@ -1,4 +1,5 @@
-# Samples by Author
+# Microsoft Teams Development Samples
+## Browse by Author
 
 Our samples were created by the feature teams, or shared by the community. Use the filter below to find samples by author.
 

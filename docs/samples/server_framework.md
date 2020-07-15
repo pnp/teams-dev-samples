@@ -1,4 +1,5 @@
-# Samples by Server Framework
+# Microsoft Teams Development Samples
+## Browse by Server Framework
 
 Teams bots often use the Bot Framework SDK. Note that version 4 is not backward compatible with version 3, which is no longer supported. Therefore it is strongly
 recommended to use v4. Beginning with Bot Framework SDK 4.6, the SDK understands

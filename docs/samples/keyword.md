@@ -1,4 +1,5 @@
-# Samples by Keyword
+# Microsoft Teams Development Samples
+## Browse by Keyword
 
 Use the filter below to find samples by keywords in the title or description.
 
