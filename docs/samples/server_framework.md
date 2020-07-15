@@ -1,17 +1,24 @@
 # Microsoft Teams Development Samples
-## Browse by Server Framework
+## Browse by Bot Framework Version
 
-Teams bots often use the Bot Framework SDK. Note that version 4 is not backward compatible with version 3, which is no longer supported. Therefore it is strongly
-recommended to use v4. Beginning with Bot Framework SDK 4.6, the SDK understands
-Teams-specific messages.
+Teams bots generally use the Bot Framework SDK (the alternative is to handle all the REST calls to the Bot Channel Service in your code).
+
+Note that **Bot Framework SDK v4 is not backward compatible with v3**, which is no longer supported. Because of these breaking changes, the bot samples are tagged as follows:
+
+ * __Bot Framework 4.6+:__ Bot uses Bot Framework SDK 4.6 or greater, which provides supported access to Teams bot activities (strongly recommended)
+ * __Bot Framework 4.0-4.5:__ Bot uses Bot Framework SDK 4.0-4.5, before it officially supported Teams, so Teams messages are handled directly in the code
+ * __Bot Framework 4 Beta:__ Bot uses Bot Framework SDK 4.0-4.5 with a deprecated beta of early Teams support. This may work but is not recommended
+ * __Bot Framework 3.x:__ Bot uses the previous Bot Framework SDK which is not forward compatible with the current version. These bots should continue to work because the underlying REST calls did not change, but the SDK is no longer supported and is not recommended for new projects
 
 To learn more about how to use these samples, please refer to our [getting started](../gettingstarted/index.md) section.
 
  <div class="well">
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
-    <button class="button" data-filter="[data-facet*='bot4.x']" title="Uses Bot Framework 4.x">Bot Framework 4.x</button>
-    <button class="button" data-filter="[data-facet*='bot3.x']" title="Uses Bot Framework 3.x">Bot Framework 3.x</button>
+    <button class="button" data-filter="[data-facet*='bot46']" title="Uses Bot Framework 4.x (recommended)">Bot Framework 4.6+</button>
+    <button class="button" data-filter="[data-facet*='bot40']" title="Uses early Bot Framework 4.x before Teams was supported">Bot Framework 4.0-4.5</button>
+    <button class="button" data-filter="[data-facet*='bot4beta']" title="Uses early Bot Framework 4.x with deprecated Teams beta SDK">Bot Framework 4 Beta</button>
+    <button class="button" data-filter="[data-facet*='bot3']" title="Uses Bot Framework 3.x">Bot Framework 3.x</button>
   </div>
 </div>
 

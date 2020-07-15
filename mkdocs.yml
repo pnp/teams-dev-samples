@@ -30,15 +30,18 @@ nav:
   - Samples:
     - By Type: index.md
     - By Feature: samples/features.md
+    - By Keyword: samples/keyword.md
+    - CLIENT SIDE CODE: samples/client_language.md
     - By Client Language: samples/client_language.md
     - By Client Platform: samples/client_platform.md
-    - By Client UI: samples/client_ui.md
-    - By Server Framework: samples/server_framework.md
+    - By Client UI Framework: samples/client_ui.md
+    - SERVER CODE: samples/server_framework.md
+    - By Bot Framework Version: samples/server_framework.md
     - By Server Language: samples/server_language.md
     - By Server Platform: samples/server_platform.md
-    - By Year: samples/year.md
+    - ORIGIN: samples/author.md
     - By Author: samples/author.md
-    - By Keyword: samples/keyword.md
+    - By Year: samples/year.md
     - All: samples/all.md
   - Getting Started:
     - Using the Samples: gettingstarted/index.md
@@ -78,16 +81,38 @@ extra:
       link: 'https://aka.ms/sppnp'
   samples:
 
+#################################
+# TEAMS APP TEMPLATES
+#################################
+
+# Associate Insights app template
+    - name: microsoft-teams-apps-associate-insights
+      title: Associate Insights App Template
+      type: apptemplate
+      features: tab
+      summary: Associate insights is a Power Apps template that empowers firstline workers to directly capture and submit customer opinion, sentiment, and perception.
+      thumbnail: https://docs.microsoft.com/en-us/microsoftteams/platform/assets/images/associate-insights-app.png
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#associate-insights
+      author: Microsoft
+      client_language: powerapps
+      client_platform: powerapps
+      client_ui:
+      server_language:
+      server_platform:
+      server_framework:
+      modifiedtext: April 30, 2020
+      modified: 2020-04-30
+
 # Attendance app template
     - name: microsoft-teams-apps-attendance
       title: Attendance App Template
       type: apptemplate
       features: tab
       summary: Attendance app is a Power Apps based solution to take attendance in educational tenant.
-      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
-      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
+      thumbnail:
+      url: https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#attendance
       author: Microsoft
-      client_language: powerapps, 
+      client_language: powerapps
       client_platform: powerapps
       client_ui:
       server_language: powerautomate
@@ -95,6 +120,156 @@ extra:
       server_framework:
       modifiedtext: May 14, 2020
       modified: 2020-05-14
+
+# Book a room app template
+    - name: microsoft-teams-apps-book-a-room
+      title: Book-a-room App Template
+      type: apptemplate
+      features: bot, taskmodule
+      summary: Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#book-a-room
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: July 13, 2020
+      modified: 2020-07-13
+
+# Celebrations app template
+    - name: microsoft-teams-apps-celebrate
+      title: Celebrate App Template
+      type: apptemplate
+      features: bot, tab
+      summary: Celebrations is a Teams app that helps team members celebrate each others’ birthdays, anniversaries, and other recurring events.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations
+      author: Microsoft
+      client_language: javascript
+      client_platform: spa
+      client_ui: jquery
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot3
+      modifiedtext: October 8, 2019
+      modified: 2019-10-08
+
+# Company Communicator app template
+    - name: microsoft-teams-apps-company-communicator
+      title: Company Communicator App Template
+      type: apptemplate
+      features: bot, tab, taskmodule
+      summary: The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot4beta
+      modifiedtext: April 30, 2020
+      modified: 2020-04-30
+
+# Contact Group Lookup app template
+    - name: microsoft-teams-apps-contact-group-lookup
+      title: Contact Group App Template
+      type: apptemplate
+      features: tab
+      summary: The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization's contact groups (formerly known as distribution lists or communication groups). 
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#contact-group-lookup-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework:
+      modifiedtext: July 13, 2020
+      modified: 2020-07-13
+
+# Crowd sourcer app template
+    - name: microsoft-teams-apps-crowd-sourcer
+      title: Crowd Sourcer App Template
+      type: apptemplate
+      features: bot, msgext
+      summary: CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#crowdsourcer
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot40
+      modifiedtext: July 13, 2020
+      modified: 2020-07-13
+
+# Custom stickers app template
+    - name: microsoft-teams-apps-custom-stickers
+      title: Custom Stickers App Template
+      type: apptemplate
+      features:  msgext
+      summary: This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers
+      author: Microsoft
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot40
+      modifiedtext: May 26, 2020
+      modified: 2020-05-26
+
+# Expert Finder app template
+    - name: microsoft-teams-apps-expert-finder
+      title: Expert Finder App Template
+      type: apptemplate
+      features:  bot, msgext, taskmodule
+      summary: Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: May 26, 2020
+      modified: 2020-05-26
+
+# FAQ Plus app template
+    - name: microsoft-teams-apps-faq-plus
+      title: FAQ Plus App Template
+      type: apptemplate
+      features: bot, msgext, tab
+      summary: FAQ Plus is a friendly Q&A bot that brings a human in the loop when it is unable to help.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#faq-plus
+      author: Microsoft
+      client_language: javascript
+      client_platform:
+      client_ui: jquery
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot40
+      modifiedtext: July 2, 2020
+      modified: 2020-07-02
+
+
+
+#################################
+# COMMUNITY SAMPLES
+#################################
 
 # HR Talent App
     - name: app-contoso-hr-talent-app
@@ -110,7 +285,7 @@ extra:
       client_ui: jquery
       server_language: csharp
       server_platform: netcore
-      server_framework: bot3.x, bot4.x
+      server_framework: bot3, bot40
       modifiedtext: October 4, 2019
       modified: 2019-10-04
 
@@ -128,7 +303,7 @@ extra:
       client_ui:
       server_language: csharp
       server_platform: netcore
-      server_framework: bot4.x
+      server_framework: bot46
       modifiedtext: July 9, 2020
       modified: 2020-07-09
 
@@ -146,7 +321,7 @@ extra:
       client_ui:
       server_language: javascript
       server_platform: restify
-      server_framework: bot4.x
+      server_framework: bot46
       modifiedtext: July 9, 2020
       modified: 2020-07-09
 
@@ -164,7 +339,7 @@ extra:
       client_ui:
       server_language: csharp
       server_platform: netcore
-      server_framework: bot4.x
+      server_framework: bot46
       modifiedtext: April 23, 2020
       modified: 2020-04-23
 
@@ -182,7 +357,7 @@ extra:
       client_ui:
       server_language: javascript
       server_platform: restify
-      server_framework: bot4.x
+      server_framework: bot46
       modifiedtext: August 12, 2019
       modified: 2019-08-12
 
@@ -212,5 +387,5 @@ edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
 site_favicon: favicon.ico
 
-# dev_addr: '192.168.24.50:8000'
+dev_addr: '192.168.24.50:8000'
 # dev_addr: '127.0.0.1:443'
