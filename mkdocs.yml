@@ -15,8 +15,8 @@
 #      client_platform: spa, spfx, powerapps
 #      client_ui: react, angularjs, angular, knockout, jquery, vuejs
 #      server_language: csharp, typescript, javascript, python, java, powerautomate
-#      server_platform: netcore, express, restify, powerautomate
-#      server_framework: bot3.x, bot4.x
+#      server_platform: netcore, netframework, express, restify, powerautomate
+#      server_framework: bot3, bot4beta, bot40, bot46
 #      modifiedtext: May 14, 2020
 #      modified: 2020-05-14
 #
@@ -265,6 +265,221 @@ extra:
       modifiedtext: July 2, 2020
       modified: 2020-07-02
 
+# Goal Tracker app template
+    - name: microsoft-teams-apps-goal-tracker
+      title: Goal Tracker App Template
+      type: apptemplate
+      features: bot, msgext, tab
+      summary:  Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#goal-tracker-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: July 2, 2020
+      modified: 2020-07-02
+
+# Great Ideas app template
+    - name: microsoft-teams-apps-great-ideas
+      title: Great Ideas App Template
+      type: apptemplate
+      features: bot, msgext, tab
+      summary:  The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: July 8, 2020
+      modified: 2020-07-08
+
+# Group Activities app template
+    - name: microsoft-teams-apps-group-activities
+      title: Group Activities App Template
+      type: apptemplate
+      features: bot, msgext
+      summary:  Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-
+      author: Microsoft
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: April 30, 2020
+      modified: 2020-04-30
+
+# Grow Your Skills app template
+    - name: microsoft-teams-apps-grow-your-skills
+      title: Grow Your Skills App Template
+      type: apptemplate
+      features: bot, msgext, tabs
+      summary:  The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#grow-your-skills-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: April 30, 2020
+      modified: 2020-04-30
+
+# HR Support app template
+    - name: microsoft-teams-apps-hr-support
+      title: HR Support App Template
+      type: apptemplate
+      features: bot, msgext, tabs
+      summary:  HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support
+      author: Microsoft
+      client_language: javascript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot4beta
+      modifiedtext: April 30, 2020
+      modified: 2020-04-30
+
+# Icebreaker app template
+    - name: microsoft-teams-apps-icebreaker
+      title: Icebreaker App Template
+      type: apptemplate
+      features: bot
+      summary:  Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support
+      author: Microsoft
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: csharp
+      server_platform: netframework
+      server_framework: bot3
+      modifiedtext: April 30, 2020
+      modified: 2020-04-30
+
+# Incentives app template
+    - name: microsoft-teams-apps-incentives
+      title: Incentives App Template
+      type: apptemplate
+      features: bot
+      summary:  Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incentives
+      author: Microsoft
+      client_language: powerapps
+      client_platform: powerapps
+      client_ui:
+      server_language: 
+      server_platform: 
+      server_framework: 
+      modifiedtext: April 30, 2020
+      modified: 2020-04-30
+
+# Incident Reporter app template
+    - name: microsoft-teams-apps-incident-reporter
+      title: Incident Reporter App Template
+      type: apptemplate
+      features: bot, msgext, taskmodule
+      summary:  The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: April 16, 2020
+      modified: 2020-04-16
+
+# Open Badges app template
+    - name: microsoft-teams-apps-open-badges
+      title: Open Badges App Template
+      type: apptemplate
+      features: bot, msgext, taskmodule
+      summary:  Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: March 23, 2020
+      modified: 2020-03-23
+
+# Quick Responses app template
+    - name: microsoft-teams-apps-quick-responses
+      title: Quick Responses App Template
+      type: apptemplate
+      features: bot, msgext, taskmodule
+      summary:  Quick Responses is a Microsoft Teams app that answering users' frequently asked questions (FAQs) using a messaging extension.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#quick-responses
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: March 23, 2020
+      modified: 2020-03-23
+
+# Remote Support app template
+    - name: microsoft-teams-apps-remote-support
+      title: Remote Support App Template
+      type: apptemplate
+      features: bot, msgext, taskmodule
+      summary:  Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#remote-support-
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      server_framework: bot46
+      modifiedtext: March 23, 2020
+      modified: 2020-03-23
+
+# Request-a-team app template
+    - name: microsoft-teams-apps-request-a-team
+      title: Request-a-team App Template
+      type: apptemplate
+      features: bot, msgext, taskmodule
+      summary: Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#request-a-team-
+      author: Microsoft
+      client_language: powerapps
+      client_platform: powerapps
+      client_ui: 
+      server_language: powerautomate
+      server_platform: powerautomate
+      server_framework: 
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
 
 
 #################################
