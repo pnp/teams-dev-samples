@@ -8,7 +8,7 @@
 #    - name: some-unique-name
 #      title: 
 #      type: apptemplate, barebones, demo, solution
-#      features: bot, connector, msgext, tab, taskmodule
+#      features: bot, connector, msgext, tab, taskmodule, webhook
 #      summary: 
 #      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
 #      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
@@ -808,6 +808,244 @@ extra:
       bot_framework: bot46
       modifiedtext: July 9, 2020
       modified: 2020-07-09
+
+    - name: microsoft-teams-bb-search-msgext-csharp
+      title: Search messaging extension using C#/ASP.NET Core
+      type: barebones
+      features: msgext
+      summary: Simple messaging extension with a Search command
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-search-msgext-node
+      title: Search messaging extension using NodeJS
+      type: barebones
+      features: msgext
+      summary: Simple messaging extension with a Search command
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: javascript
+      server_platform: restify
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-search-msgext-python
+      title: Search messaging extension using Python
+      type: barebones
+      features: msgext
+      summary: Simple messaging extension with a Search command
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: python
+      server_platform: request
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-search-auth-msgext-csharp
+      title: Search messaging extension w/Auth using C#/ASP.NET Core
+      type: barebones
+      features: msgext
+      summary: Messaging extension with a Search command, authentication, and configuration
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-search-auth-msgext-node
+      title: Search messaging extension w/Auth using NodeJS
+      type: barebones
+      features: msgext
+      summary: Messaging extension with a Search command, authentication, and configuration
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: javascript
+      server_platform: restify
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-search-msgext-auth-python
+      title: Search messaging extension w/Auth using Python
+      type: barebones
+      features: msgext
+      summary: Messaging extension with a Search command, authentication, and configuration
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: python
+      server_platform: request
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-action-msgext-csharp
+      title: Action messaging extension using C#/ASP.NET Core
+      type: barebones
+      features: msgext
+      summary: Simple messaging extension with a action command. Response inserted into the compose message area.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-action-msgext-node
+      title: Simple action messaging extension using NodeJS
+      type: barebones
+      features: msgext
+      summary: Simple messaging extension with a action command. Response inserted into the compose message area.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: javascript
+      server_platform: restify
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-action-msgext-python
+      title: Action messaging extension using Python
+      type: barebones
+      features: msgext, bot
+      summary: Messaging extension with a action command. Response inserted into the compose message area.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: python
+      server_platform: request
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-action-bot-msgext-csharp
+      title: Action messaging extension with bot response using C#/ASP.NET Core
+      type: barebones
+      features: msgext, bot
+      summary: Messaging extension with a action command. Response inserted into the conversation by the bot.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-action-bot-msgext-node
+      title: Simple action messaging extension with bot response using NodeJS
+      type: barebones
+      features: msgext
+      summary: Messaging extension with a action command. Response inserted into the conversation by the bot.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: javascript
+      server_platform: restify
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-action-bot-msgext-python
+      title: Simple action messaging extension with bot response using Python
+      type: barebones
+      features: msgext, bot
+      summary: Messaging extension with a action command. Response inserted into the conversation by the bot.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: python
+      server_platform: request
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-outgoing-webhook-csharp
+      title: Outgoing webhook using C#/ASP.NET Core
+      type: barebones
+      features: webhook
+      summary: Illustrates how to create an Outgoing Webhook for Microsoft Teams in C#/.NET.
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#outgoing-webhooks
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: csharp
+      server_platform: netframework
+      bot_framework:
+      modifiedtext: March 13, 2017
+      modified: 2017-03-13
+
+    - name: microsoft-teams-bb-outgoing-webhook-bot-node
+      title: Outgoing webhook using NodeJS
+      type: barebones
+      features: webhook
+      summary: Illustrates how to create a simple Outgoing Webhook for Microsoft Teams in ~50 lines of Node.js code
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#outgoing-webhooks
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: javascript
+      server_platform:
+      bot_framework:
+      modifiedtext: Dec 5, 2017
+      modified: 2017-12-05
 
 
 #################################
