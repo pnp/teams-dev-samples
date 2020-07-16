@@ -10,8 +10,9 @@ To learn more about how to use these samples, please refer to our [getting start
     <button class="button is-checked" data-filter="*">All</button>
     <button class="button" data-filter="[data-facet*='bot']" title="Solution contains a chatbot">Bot</button>
     <button class="button" data-filter="[data-facet*='msgext']" title="Solution contains one or more messaging extensions">Messaging Extension</button>
+    <button class="button" data-filter="[data-facet*='webhook']" title="Solution consumes an outgoing webhook">Outgoing Webhook</button>
     <button class="button" data-filter="[data-facet*='tab']" title="Solution contains one or more tabs">Tab</button>
-    <button class="button" data-filter="[data-facet*='taskmodule']" title="Solution contains one or more taks modules">Task Module</button>
+    <button class="button" data-filter="[data-facet*='taskmodule']" title="Solution contains one or more task modules">Task Module</button>
   </div>
 </div>
 

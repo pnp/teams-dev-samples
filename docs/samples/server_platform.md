@@ -13,6 +13,7 @@ To learn more about how to use these samples, please refer to our [getting start
     <button class="button" data-filter="[data-facet*='express']" title="Web server is Node with Express">Express (Node)</button>
     <button class="button" data-filter="[data-facet*='powerautomate']" title="Server features provided by Power Automate workflow(s)">Power Automate</button>
     <button class="button" data-filter="[data-facet*='restify']" title="Web server is Node with Restify">Restify (Node)</button>
+    <button class="button" data-filter="[data-facet*='requests']" title="Web server is Python with Requests">Requests (Python)</button>
   </div>
 </div>
 
