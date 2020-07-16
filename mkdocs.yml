@@ -1,12 +1,14 @@
 # teams-dev-samples
 # Author: Hugo Bernier, updates by Bob German
 #
+#region Sample entry (install region folding for VS Code add-in to make regions collapsable)
+#
 # Each sample has an entry as show below:
 # 
 #    - name: some-unique-name
 #      title: 
 #      type: apptemplate, barebones, demo, solution
-#      features: bot, msgext, tab, taskmodule
+#      features: bot, connector, msgext, tab, taskmodule
 #      summary: 
 #      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
 #      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
@@ -15,12 +17,14 @@
 #      client_platform: spa, spfx, powerapps
 #      client_ui: react, angularjs, angular, knockout, jquery, vuejs
 #      server_language: csharp, typescript, javascript, python, java, powerautomate
-#      server_platform: netcore, netframework, express, restify, powerautomate
-#      server_framework: bot3, bot4beta, bot40, bot46
+#      server_platform: netcore, netframework, express, restify, powerautomate, requests
+#      bot_framework: bot3, bot4beta, bot40, bot46
 #      modifiedtext: May 14, 2020
 #      modified: 2020-05-14
 #
+#endregion
 
+#region MKDocs App settings
 site_name: Microsoft Teams Development Samples
 plugins:
     - search
@@ -35,8 +39,8 @@ nav:
     - By Client Language: samples/client_language.md
     - By Client Platform: samples/client_platform.md
     - By Client UI Framework: samples/client_ui.md
-    - SERVER CODE: samples/server_framework.md
-    - By Bot Framework Version: samples/server_framework.md
+    - SERVER CODE: samples/bot_framework.md
+    - By Bot Framework Version: samples/bot_framework.md
     - By Server Language: samples/server_language.md
     - By Server Platform: samples/server_platform.md
     - ORIGIN: samples/author.md
@@ -79,10 +83,13 @@ extra:
       link: 'https://www.youtube.com/playlist?list=PLR9nK3mnD-OXgMjDBdjWUTRia89oixBhx'
     - type: 'link'
       link: 'https://aka.ms/sppnp'
+
+#endregion
+
   samples:
 
 #################################
-# TEAMS APP TEMPLATES
+#region TEAMS APP TEMPLATES
 #################################
 
 # Associate Insights app template
@@ -99,7 +106,7 @@ extra:
       client_ui:
       server_language:
       server_platform:
-      server_framework:
+      bot_framework:
       modifiedtext: April 30, 2020
       modified: 2020-04-30
 
@@ -117,7 +124,7 @@ extra:
       client_ui:
       server_language: powerautomate
       server_platform: powerautomate
-      server_framework:
+      bot_framework:
       modifiedtext: May 14, 2020
       modified: 2020-05-14
 
@@ -135,7 +142,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: July 13, 2020
       modified: 2020-07-13
 
@@ -153,7 +160,7 @@ extra:
       client_ui: jquery
       server_language: csharp
       server_platform: netcore
-      server_framework: bot3
+      bot_framework: bot3
       modifiedtext: October 8, 2019
       modified: 2019-10-08
 
@@ -171,7 +178,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot4beta
+      bot_framework: bot4beta
       modifiedtext: April 30, 2020
       modified: 2020-04-30
 
@@ -189,7 +196,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework:
+      bot_framework:
       modifiedtext: July 13, 2020
       modified: 2020-07-13
 
@@ -207,7 +214,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot40
+      bot_framework: bot40
       modifiedtext: July 13, 2020
       modified: 2020-07-13
 
@@ -225,7 +232,7 @@ extra:
       client_ui:
       server_language: csharp
       server_platform: netcore
-      server_framework: bot40
+      bot_framework: bot40
       modifiedtext: May 26, 2020
       modified: 2020-05-26
 
@@ -243,7 +250,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: May 26, 2020
       modified: 2020-05-26
 
@@ -261,7 +268,7 @@ extra:
       client_ui: jquery
       server_language: csharp
       server_platform: netcore
-      server_framework: bot40
+      bot_framework: bot40
       modifiedtext: July 2, 2020
       modified: 2020-07-02
 
@@ -279,7 +286,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: July 2, 2020
       modified: 2020-07-02
 
@@ -297,7 +304,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: July 8, 2020
       modified: 2020-07-08
 
@@ -315,7 +322,7 @@ extra:
       client_ui:
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: April 30, 2020
       modified: 2020-04-30
 
@@ -333,7 +340,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: April 30, 2020
       modified: 2020-04-30
 
@@ -351,7 +358,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot4beta
+      bot_framework: bot4beta
       modifiedtext: April 30, 2020
       modified: 2020-04-30
 
@@ -369,7 +376,7 @@ extra:
       client_ui:
       server_language: csharp
       server_platform: netframework
-      server_framework: bot3
+      bot_framework: bot3
       modifiedtext: April 30, 2020
       modified: 2020-04-30
 
@@ -387,7 +394,7 @@ extra:
       client_ui:
       server_language: 
       server_platform: 
-      server_framework: 
+      bot_framework: 
       modifiedtext: April 30, 2020
       modified: 2020-04-30
 
@@ -405,7 +412,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: April 16, 2020
       modified: 2020-04-16
 
@@ -423,7 +430,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: March 23, 2020
       modified: 2020-03-23
 
@@ -441,7 +448,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: March 23, 2020
       modified: 2020-03-23
 
@@ -459,7 +466,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: March 23, 2020
       modified: 2020-03-23
 
@@ -477,7 +484,7 @@ extra:
       client_ui: 
       server_language: powerautomate
       server_platform: powerautomate
-      server_framework: 
+      bot_framework: 
       modifiedtext: July 9, 2020
       modified: 2020-07-09
 
@@ -495,7 +502,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: July 9, 2020
       modified: 2020-07-09
 
@@ -513,7 +520,7 @@ extra:
       client_ui:
       server_language: csharp
       server_platform: netcore
-      server_framework: bot4beta
+      bot_framework: bot4beta
       modifiedtext: June 10, 2020
       modified: 2020-06-10
 
@@ -532,7 +539,7 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot4bbot46eta
+      bot_framework: bot4bbot46eta
       modifiedtext: June 10, 2020
       modified: 2020-06-10
 
@@ -550,7 +557,7 @@ extra:
       client_ui:
       server_language: csharp
       server_platform: netframework
-      server_framework: bot3
+      bot_framework: bot3
       modifiedtext: April 30, 2020
       modified: 2020-04-30
 
@@ -568,7 +575,7 @@ extra:
       client_ui:
       server_language: powerautomate
       server_platform: powerautomate
-      server_framework:
+      bot_framework:
       modifiedtext: July 1, 2020
       modified: 2020-07-01
 
@@ -586,7 +593,7 @@ extra:
       client_ui:
       server_language: powerautomate
       server_platform: powerautomate
-      server_framework:
+      bot_framework:
       modifiedtext: July 2, 2020
       modified: 2020-07-02
 
@@ -604,68 +611,212 @@ extra:
       client_ui: react
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: July 2, 2020
       modified: 2020-07-02
-
-
 #################################
-# COMMUNITY SAMPLES
+#endregion APP TEMPLATES
 #################################
 
-# HR Talent App
-    - name: app-contoso-hr-talent-app
-      title: HR Talent App demo/lab
-      type: demo
-      features: bot, msgext, tab, taskmodule
-      summary: This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)
-      thumbnail: 
-      url: https://github.com/OfficeDev/msteams-sample-contoso-hr-talent-app
+#################################
+#region DOCS SAMPLES
+#################################
+
+    - name: microsoft-teams-bb-connector-node
+      title: Simple connector using NodeJS
+      type: barebones
+      features: connector
+      summary: 
+      thumbnail: /img/thumbnails/_nopreview.png
+      url: https://docs.microsoft.com/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#connectors
       author: Microsoft
-      client_language: typescript, javascript
-      client_platform: spa, spfx
-      client_ui: jquery
-      server_language: csharp
-      server_platform: netcore
-      server_framework: bot3, bot40
-      modifiedtext: October 4, 2019
-      modified: 2019-10-04
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: javascript
+      server_platform: express
+      bot_framework:
+      modifiedtext: June 4, 2020
+      modified: 2020-06-04
 
-# Teams Auth Bot (C#)
-    - name: bot-teams-auth-csharp
-      title: Teams Auth Bot (C#)
+    - name: microsoft-teams-bb-connector-dotnet
+      title: Simple connector using ASP.NET
+      type: barebones
+      features: connector
+      summary: Simple example of a connector 
+      thumbnail:
+      url: https://docs.microsoft.com/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#connectors
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: csharp
+      server_platform: netframework
+      bot_framework:
+      modifiedtext: June 4, 2020
+      modified: 2020-06-04
+
+    - name: microsoft-teams-bb-simple-message-bot-dotnet
+      title: Simple message bot using C#/ASP.NET Core
       type: barebones
       features: bot
-      summary: Simple bot demonstrates how to log in a user so you can call APIs on their behalf
-      thumbnail: 
-      url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/46.teams-auth
+      summary: Simple example of a bot that responds to messages based on regex matching 
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
       author: Microsoft
-      client_language:
-      client_platform:
-      client_ui:
+      client_language: 
+      client_platform: 
+      client_ui: 
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: July 9, 2020
       modified: 2020-07-09
 
-# Teams Auth Bot (NodeJS)
-    - name: bot-teams-auth-nodejs
-      title: Teams Auth Bot (NodeJS)
+    - name: microsoft-teams-bb-simple-message-bot-node
+      title: Simple message bot using NodeJS
       type: barebones
       features: bot
-      summary: Simple bot demonstrates how to log in a user so you can call APIs on their behalf
-      thumbnail: 
-      url: https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth
+      summary: Simple example of a bot that responds to messages based on regex matching 
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
       author: Microsoft
-      client_language:
-      client_platform:
-      client_ui:
+      client_language: 
+      client_platform: 
+      client_ui: 
       server_language: javascript
       server_platform: restify
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: July 9, 2020
       modified: 2020-07-09
+
+    - name: microsoft-teams-bb-simple-message-bot-python
+      title: Simple message bot using Python
+      type: barebones
+      features: bot
+      summary: Simple example of a bot that responds to messages based on regex matching 
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: python
+      server_platform: requests
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-authenticate-bot-csharp
+      title: OAuth Bot using C#/ASP.NET Core
+      type: barebones
+      features: bot
+      summary: Bot authenticates user with Azure AD to allow calling back-end service on user's behalf
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-authenticate-bot-node
+      title: OAuth Bot using NodeJS
+      type: barebones
+      features: bot
+      summary: Bot authenticates user with Azure AD to allow calling back-end service on user's behalf
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: javascript
+      server_platform: restify
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-authenticate-bot-python
+      title: OAuth Bot using Python
+      type: barebones
+      features: bot
+      summary: Bot authenticates user with Azure AD to allow calling back-end service on user's behalf
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: python
+      server_platform: requests
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-file-upload-bot-csharp
+      title: File Upload Bot using C#/ASP.NET Core
+      type: barebones
+      features: bot
+      summary: Bot uploads a file from the user
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-file-upload-bot-node
+      title: File Upload Bot using NodeJS
+      type: barebones
+      features: bot
+      summary: Bot uploads a file from the user
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: javascript
+      server_platform: restify
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+    - name: microsoft-teams-bb-file-upload-bot-python
+      title: File Upload Bot using Python
+      type: barebones
+      features: bot
+      summary: Bot uploads a file from the user
+      thumbnail:
+      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
+      author: Microsoft
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: python
+      server_platform: requests
+      bot_framework: bot46
+      modifiedtext: July 9, 2020
+      modified: 2020-07-09
+
+
+#################################
+#endregion DOCS SAMPLES
+#################################
+
+#################################
+#region COMMUNITY SAMPLES
+#################################
 
 # Consulting Bot
     - name: app-consulting-bot
@@ -681,7 +832,7 @@ extra:
       client_ui:
       server_language: csharp
       server_platform: netcore
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: April 23, 2020
       modified: 2020-04-23
 
@@ -699,7 +850,7 @@ extra:
       client_ui:
       server_language: javascript
       server_platform: restify
-      server_framework: bot46
+      bot_framework: bot46
       modifiedtext: August 12, 2019
       modified: 2019-08-12
 
@@ -717,11 +868,44 @@ extra:
       client_ui: react
       server_language:
       server_platform:
-      server_framework:
+      bot_framework:
       modifiedtext: April 20, 2019
       modified: 2019-04-20
 
-  authors:
+#################################
+#endregion COMMUNITY SAMPLES
+#################################
+
+#################################
+#region OTHER MICROSOFT SAMPLES
+#################################
+
+# HR Talent App
+    - name: app-contoso-hr-talent-app
+      title: HR Talent App demo/lab
+      type: demo
+      features: bot, msgext, tab, taskmodule
+      summary: This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)
+      thumbnail: 
+      url: https://github.com/OfficeDev/msteams-sample-contoso-hr-talent-app
+      author: Microsoft
+      client_language: typescript, javascript
+      client_platform: spa, spfx
+      client_ui: jquery
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot3, bot40
+      modifiedtext: October 4, 2019
+      modified: 2019-10-04
+
+#################################
+#endregion
+#################################
+
+
+#region Authors and URLs
+
+authors:
     - Bob German
     - Microsoft
 repo_url: https://github.com/pnp/teams-dev-samples
@@ -729,5 +913,9 @@ edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
 site_favicon: favicon.ico
 
-# dev_addr: '192.168.24.50:8000'
+#endregion
+
+# Uncomment during testing if you need to change the default web server settings
+
+dev_addr: '192.168.24.50:8000'  # BG
 # dev_addr: '127.0.0.1:443'

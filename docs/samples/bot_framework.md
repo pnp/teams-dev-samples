@@ -26,7 +26,7 @@ To learn more about how to use these samples, please refer to our [getting start
 
 {% for sample in samples|sort(attribute='modified', reverse=True) %}
 
-<div class="sample-item" data-facet="{{sample.server_framework}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
+<div class="sample-item" data-facet="{{sample.bot_framework}}" data-modified="{{sample.modified}}" data-title="{{ sample.title }}"  data-thumbnail="{{sample.thumbnail}}">
   <div class="sample">
     <div class="sample-video"><i class="ms-Icon ms-Icon--VideoSolid" aria-hidden="true"></i></div>
     <div class="sample-img">
