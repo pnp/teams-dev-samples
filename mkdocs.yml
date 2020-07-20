@@ -14,7 +14,7 @@
 #      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
 #      author: Microsoft
 #      client_language: typescript, javascript, powerapps
-#      client_platform: spa, spfx, powerapps
+#      client_platform: spa, spfx, powerapps, netcore, sharepoint
 #      client_ui: react, angularjs, angular, knockout, jquery, vuejs
 #      server_language: csharp, typescript, javascript, python, java, powerautomate
 #      server_platform: netcore, netframework, express, restify, powerautomate, requests
@@ -614,8 +614,50 @@ extra:
       bot_framework: bot46
       modifiedtext: July 2, 2020
       modified: 2020-07-02
+
 #################################
 #endregion APP TEMPLATES
+#################################
+
+#################################
+#region MSFT-TEAMS SAMPLES
+#################################
+    - name: learning-pathways-solution
+      title: Get Started (Learning Pathways)
+      type: solution
+      features: tab
+      summary: Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL's prior to installation.
+      thumbnail:
+      url: https://github.com/msft-teams/tools/tree/master/M365%20Learning%20Pathways
+      author: Karuana Gatimu
+      client_language:
+      client_platform: sharepoint
+      client_ui:
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: July 16, 2020
+      modified: 2020-07-16
+      
+    - name: teams-home-app
+      title: HOME App
+      type: demo
+      features: tab
+      summary: The HOME app is a personal-branded landing experience that is pinned to the Teams mobile app, allowing your organization to provide consolidated information and the functionality of important first-party and line-of-business apps to firstline worker employees. HOME can leverage multiple technologies and capabilities such as the SharePoint Framework in Teams (SPFx), Microsoft Graph APIs, PowerApps, Web Apps/HTML/JavaScript, and mobile app pinning to highlight a branded experience for any user.
+      thumbnail:
+      url: https://github.com/msft-teams/tools/tree/master/HOMEapp
+      author: Microsoft
+      client_language: javascript
+      client_platform: netcore
+      client_ui: jquery
+      server_language: csharp
+      server_platform: netcore
+      bot_framework:
+      modifiedtext: July 15, 2020
+      modified: 2020-07-15
+
+#################################
+#endregion MSFT-TEAMS SAMPLES
 #################################
 
 #################################
@@ -1053,7 +1095,7 @@ extra:
 #################################
 
 #################################
-#region COMMUNITY SAMPLES
+#region PNP COMMUNITY SAMPLES
 #################################
 
 # Consulting Bot
