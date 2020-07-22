@@ -1,0 +1,33 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+.boxContentExplorer {
+  body{
+    background-color: #0061d5;
+  }
+  .login {
+    margin: auto;
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+  }
+  .loginParagraph{
+    font-family: "Lato,Helvetica Neue,Helvetica,Arial,sans-serif";
+  }
+  .loginContainer {
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid darkgray;
+    height: 180px;
+    width: 400px;
+    padding: 15px;
+  }
+  .loginButton {
+    margin-top: 30px;
+  }
+  .loadingImage{
+    position: fixed; /* or absolute */
+    top: 40%;
+    left: 40%;
+  }
+}
