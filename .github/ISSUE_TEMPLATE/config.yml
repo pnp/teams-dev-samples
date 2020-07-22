@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: SharePoint Developer Documentation
-    url: https://github.com/pnp/sp-dev-docs/issues/new
+    url: https://github.com/sharepoint/sp-dev-docs/issues/new
     about: 📚 Issue related to the SharePoint Framework or its documentation? Submit an issue here.
   - name: SharePoint StackExchange
     url: http://sharepoint.stackexchange.com/
