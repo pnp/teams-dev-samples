@@ -1,6 +1,6 @@
 # Metadata Structure
 
-There are too many variations in Teams samples to easily find them through simple navigation. The intention is for people to locate the sample they need through the [Teams Sample Navigator](#)
+There are too many variations in Teams samples to easily find them through simple navigation. The intention is for people to locate the sample they need through the [Teams Sample Navigator](http://aka.ms/pnpteams)
 
 This page describes the metadata that makes the Sample Navigator work. Each sample should be in its own folder with a README.md file that begins with the metadata in YAML format. Here is the entire YAML structure, with all the value options shown. Simply paste it to the top of your README.md file and delete the options that don't apply.
 
