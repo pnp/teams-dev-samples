@@ -1,76 +1,44 @@
----
-page_type: sample
-products:
-- teams
-languages:
-- javascript
-- typescript
-extensions:
-  contentType: samples
-  app_features:
-  - Bot
-  - Connector
-  - Messaging Extension
-  - Tab
-  - Task Module
-  technologies:
-  - AngularJS
-  - Angular
-  - Bot Framework SDK v3
-  - Bot Framework SDK v4
-  - jQuery
-  - React
-  - VueJS
-  platforms:
-  - Express
-  - Restify
-  origin:
-  - Community
-createdDate: 5/1/2019 12:00:00 AM
----
 # title of the sample
+
+_Thank you for using this template. Please edit the file as needed, following the structure as much as possible so the samples are consistent._
+
+_Notes to the submitter (you) are in italics; please delete them before submitting._
+
+_Thanks! Sharing is caring!_
 
 ## Summary
 
 Short summary on functionality and used technologies.
 
-[picture of the app in action]
+![picture of the app in action](#)
 
-## Used Bot Framework Version
+## Frameworks
 
-![drop](https://img.shields.io/badge/Bot&nbsp;Framework-x.x-green.svg)
+_If you use the Bot framework SDK, please replace x.y in the URL below to indicate the version_
 
-## Applies to
+![drop](https://img.shields.io/badge/Bot&nbsp;Framework-x.y-green.svg)
 
-* [Azure Bot Framework 4.0+](#)
-* [NodeJS](https://nodejs.org/en/)
-* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+_If you use .NET Core, please replace x.y in the URL below to indicate the version. If you use .NET Framework, also replace "Core" with "Framework"._
 
-> Update accordingly as needed.
+![drop](https://img.shields.io/badge/.NET&nbsp;Core-x.y-green.svg)
 
 ## Prerequisites
 
-> Any special pre-requisites?
-
-- [Node.js](https://nodejs.org) version 10.14.1 or higher
+* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+* [Node.js](https://nodejs.org) version 10.14.1 or higher
 
     ```bash
     # determine node version
     node --version
     ```
 
-## Solution
-
-Solution|Author(s)
---------|---------
-folder name | Author details
+_Update with your required Node version and any special pre-requisites needed to make your sample work. Do you require ngrok? Do you recommend using the Bot Framework Emulator?_
 
 ## Version history
 
-Version|Date|Comments
--------|----|--------
-1.1|September 2, 2025|Update comment
-1.0|August 29, 2025|Initial release
+Version|Date|Author|Comments
+-------|----|----|--------
+1.0|August 29, 2025|PnP Phil|Initial release
 
 ## Disclaimer
 
@@ -80,37 +48,25 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome
 
+_Include consise instructions to set up and run the sample. These are just an example!_
+
 * Clone this repository
+* Start ngrok? Note the URL and update it where?
+* Register a bot or Azure AD application? (how?)
+* Update the manifest (how?) and upload to Teams
 * in the command line run:
   * `npm install`
-  * `npm start`
-
-### Testing the bot using Bot Framework Emulator
-
-[Bot Framework Emulator](https://github.com/microsoft/botframework-emulator) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel.
-
-- Install the Bot Framework Emulator version 4.3.0 or greater from [here](https://github.com/Microsoft/BotFramework-Emulator/releases)
-
-#### Connect to the bot using Bot Framework Emulator
-
-- Launch Bot Framework Emulator
-- File -> Open Bot
-- Enter a Bot URL of `http://localhost:3978/api/messages`
-
-### Deploy the bot to Azure
-
-To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
-
-> Include any additional steps as needed.
+  * `gulp serve`
 
 ## Features
 
-Description of the project with possible additional details than in short summary. 
-
-This project illustrates the following concepts:
+Description of the web part with possible additional details than in short summary. 
+This Web Part illustrates the following concepts on top of the SharePoint Framework:
 
 * topic 1
 * topic 2
 * topic 3
+
+_Below there is a clear image used for telemetry. Please change "readme-template" to your sample name._
 
 <img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/readme-template" />

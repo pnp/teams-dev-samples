@@ -14,20 +14,19 @@ Short summary on functionality and used technologies.
 
 ## Frameworks
 
-_Please indicate the SPFx version required_
+_If you use the Bot framework SDK, please replace x.y in the URL below to indicate the version_
 
-![SPFx 1.x.0](https://img.shields.io/badge/SPFx-1.x.0-green.svg)
+![drop](https://img.shields.io/badge/Bot&nbsp;Framework-x.y-green.svg)
 
-_If you use a UI framework or library, please x.y in the URL below to indicate the version, and if you didn't use React, change that as well in the URL. Note that spaces in the framework name should be HTML encoded as &amp;nbsp;_
+_If you use .NET Core, please replace x.y in the URL below to indicate the version. If you use .NET Framework, also replace "Core" with "Framework"._
 
-![drop](https://img.shields.io/badge/React-x.y-green.svg)
+![drop](https://img.shields.io/badge/.NET&nbsp;Core-x.y-green.svg)
 
 ## Prerequisites
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
-* [SPFx Development environment](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
 
-_Please add any special pre-requisites needed to make your sample work._
+_Update with any special pre-requisites needed to make your sample work. Do you require ngrok? Do you recommend using the Bot Framework Emulator?_
 
 ## Version history
 
@@ -46,11 +45,12 @@ Version|Date|Author|Comments
 _Include consise instructions to set up and run the sample. These are just an example!_
 
 * Clone this repository
-* In the command line run:
-  * `npm install`
-  * `gulp serve`
-
-_Does your sample work in the offline workbench? In the SharePoint workbench? Are any API permissions required that would need to be approved in the SharePoint admin center?"
+* in the command line run:
+  * `dotnet restore`
+  * `dotnet run`
+* Start ngrok? Note the URL and update it where?
+* Register a bot or Azure AD application? (how?)
+* Update the manifest (how?) and upload to Teams
 
 ## Features
 

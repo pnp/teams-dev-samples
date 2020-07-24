@@ -44,29 +44,35 @@ Your sample folder should contain a `README.md` file for your contribution. Plea
 
 | If your sample is | use this template |
 | --- | --- |
-| a Single Page application | [README.md]() |
-| a Power App | [README.md]() |
-| a SharePoint Framework solution | [README.md]() |
-| a Web service based on .NET | [README.md]() |
-| a Web service based on nodeJS | [README.md]() |
-| something else | please modify one of the above that seems close to your scenario |
+| a Single Page application | [README.md](/samples/_SAMPLE_templates/spa-sample/README.md) |
+| a Power App | [README.md](/samples/_SAMPLE_templates/powerapp-sample/README.md) |
+| a SharePoint Framework solution | [README.md](/samples/_SAMPLE_templates/spfx-sample/README.md) |
+| a Web service based on .NET | [README.md](/samples/_SAMPLE_templates/dotnet-sample/README.md) |
+| a Web service based on nodeJS | [README.md](/samples/_SAMPLE_templates/node-sample/README.md) |
+| something else | [README.md](/samples/_SAMPLE_templates/any-sample/README.md) |
 
 Please copy the template to your project and update it accordingly. Your `README.md` must be named exactly `README.md` -- with capital letters -- as this is the information we use to make your sample public.
 
 Each README.md file must contain detailed build and use instructions.
 
-### 3. Screen shot
+### 3. .gitignore
+
+Since the samples run on many different platforms it is not possible to have a global .gitignore file that will work with all of them. Please include a .gitignore file in your sample folder that will ignore any packages and other files that will be created in your solution.
+
+This is also a good time to check to make sure you have removed any secrets or tenant-specific settings from your sample such as application IDs and secrets. Consider adding files that contain secrets (.env, appSettings.json, etc.) to your .gitignore, and providing sample files instead with instructions to copy and fill them in. That way you'll prevent others from accidentally checking in their secrets as well.
+
+### 4. Screen shot
 
 You will need to have a screenshot picture of your sample in action in the `README.md` file ("pics or it didn't happen"). The preview image must be located in the `/assets/` folder in the root your you solution. Even if it's a simple bot sending a single chat message, please include a screen shot!
 
-### 4. Teams manifest
+### 5. Teams manifest
 
 Your sample should include a folder called "Manifest" containing a Teams `manifest.json` file and well-formed Teams application icons. 
 
  * If the manifest works as-is, you may optionally include an installable Teams application package (zip archive containing these files).
  * If the `manifest.json` requires modification before use, please do not include a zip archive. Instead, include instructions in your `README.md` file explaining how to modify the manifest and create the Teams application package
 
-### 5. Telemetry
+### 6. Telemetry
 
 The `README` template contains a specific tracking image at the bottom of the file with an `img` tag, where the `src` attribute points to `https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/readme-template`. This is a transparent image which is used to track viewership of individual samples in GitHub.
 
