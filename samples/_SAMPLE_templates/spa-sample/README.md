@@ -1,67 +1,42 @@
----
-page_type: sample
-products:
-- teams
-languages:
-- javascript
-- typescript
-extensions:
-  contentType: samples
-  app_features:
-  - Tab
-  technologies:
-  - AngularJS
-  - Angular
-  - React
-  - VueJS
-  platforms:
-  - Express
-  - jQuery
-  - None
-  - Restify
-  origin:
-  - Community
-createdDate: 5/1/2019 12:00:00 AM
----
 # title of the sample
+
+_Thank you for using this template. Please edit the file as needed, following the structure as much as possible so the samples are consistent._
+
+_Notes to the submitter (you) are in italics; please delete them before submitting._
+
+_Thanks! Sharing is caring!_
 
 ## Summary
 
 Short summary on functionality and used technologies.
 
-[picture of the tab in action]
+![picture of the app in action](#)
 
-## Used Framework(s)
+## Frameworks
 
-For Single Page Application use UI framework or library such as:
-![Angular 9.1.3](https://img.shields.io/badge/Angular-9.1.3-green.svg)
+_If you use a UI framework or library, please x.y in the URL below to indicate the version, and if you didn't use React, change that as well in the URL. Note that spaces in the framework name should be HTML encoded as &amp;nbsp;_
 
-For SharePoint Framework:
-![SPFx 1.8.0](https://img.shields.io/badge/SPFx-1.8.0-green.svg)
-
-## Applies to
-
-* [SharePoint Framework](https:/dev.office.com/sharepoint)
-* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
-
-> Update accordingly as needed.
+![drop](https://img.shields.io/badge/React-x.y-green.svg)
 
 ## Prerequisites
 
-> Any special pre-requisites?
+* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+* [Node.js](https://nodejs.org) version 10.14.1 or higher
 
-## Solution
+    ```bash
+    # determine node version
+    node --version
+    ```
 
-Solution|Author(s)
---------|---------
-folder name | Author details
+_If you use NodeJS in your build chain, update with your required Node version; otherwise remove it._
+
+_Please add any special pre-requisites needed to make your sample work._
 
 ## Version history
 
-Version|Date|Comments
--------|----|--------
-1.1|September 2, 2025|Update comment
-1.0|August 29, 2025|Initial release
+Version|Date|Author|Comments
+-------|----|----|--------
+1.0|August 29, 2025|PnP Phil|Initial release
 
 ## Disclaimer
 
@@ -71,12 +46,15 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome
 
+_Include consise instructions to set up and run the sample. These are just an example!_
+
 * Clone this repository
+* Register a bot or Azure AD application? (how?)
+* Update the manifest (how?) and upload to Teams
 * in the command line run:
   * `npm install`
-  * `gulp serve`
-
-> Include any additional steps as needed.
+  * `npm build`
+  * `npm run`
 
 ## Features
 
@@ -86,5 +64,7 @@ This Web Part illustrates the following concepts on top of the SharePoint Framew
 * topic 1
 * topic 2
 * topic 3
+
+_Below there is a clear image used for telemetry. Please change "readme-template" to your sample name._
 
 <img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/readme-template" />

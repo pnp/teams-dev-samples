@@ -12,22 +12,19 @@ Short summary on functionality and used technologies.
 
 ![picture of the app in action](#)
 
-## Frameworks
+## Connectors
 
-_Please indicate the SPFx version required_
-
-![SPFx 1.x.0](https://img.shields.io/badge/SPFx-1.x.0-green.svg)
-
-_If you use a UI framework or library, please x.y in the URL below to indicate the version, and if you didn't use React, change that as well in the URL. Note that spaces in the framework name should be HTML encoded as &amp;nbsp;_
-
-![drop](https://img.shields.io/badge/React-x.y-green.svg)
+_Please list the connectors used in your sample_
 
 ## Prerequisites
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
-* [SPFx Development environment](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
+* [Power Apps](https://powerapps.microsoft.com/en-us/)
+* [Power Automate](https://flow.microsoft.com/en-us/)
 
-_Please add any special pre-requisites needed to make your sample work._
+Sign up for the free [Power Apps Community Plan](https://powerapps.microsoft.com/en-us/communityplan/) for free single-user access to Power Apps and Power Automate.
+
+_Please list any additional tools required to run te sample, along with download links_
 
 ## Version history
 
@@ -46,11 +43,9 @@ Version|Date|Author|Comments
 _Include consise instructions to set up and run the sample. These are just an example!_
 
 * Clone this repository
-* In the command line run:
-  * `npm install`
-  * `gulp serve`
-
-_Does your sample work in the offline workbench? In the SharePoint workbench? Are any API permissions required that would need to be approved in the SharePoint admin center?"
+* Import the PowerApp (how?)
+* Set up connectors (how?)
+* Add to Teams (how?)
 
 ## Features
 
