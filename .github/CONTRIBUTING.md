@@ -57,7 +57,16 @@ Each README.md file must contain detailed build and use instructions.
 
 ### 3. .gitignore
 
-Since the samples run on many different platforms it is not possible to have a global .gitignore file that will work with all of them. Please include a .gitignore file in your sample folder that will ignore any packages and other files that will be created in your solution.
+The [.gitignore](https://git-scm.com/docs/gitignore) file controls which files are ignored, to prevent checking in files that are part of packages and other files generated at build time. Since the samples run on many different platforms it is not possible to have a global .gitignore file that will work with all of them. Please include a .gitignore file in your sample folder that will ignore any packages and other files that will be created in your solution.
+
+| If your sample is | sample gitignore |
+| --- | --- |
+| a Single Page application | You may find [these samples](https://github.com/github/gitignore) to be helpful |
+| a Power App | usually not required |
+| a SharePoint Framework solution | [.gitignore](/samples/_SAMPLE_templates/spfx-sample/.gitignore) |
+| a Web service based on .NET | [.gitignore](/samples/_SAMPLE_templates/dotnet-sample/.gitignore) |
+| a Web service based on nodeJS | [.gitignore](/samples/_SAMPLE_templates/node-sample/.gitignore) |
+| something else | You may find [these samples](https://github.com/github/gitignore) to be helpful |
 
 This is also a good time to check to make sure you have removed any secrets or tenant-specific settings from your sample such as application IDs and secrets. Consider adding files that contain secrets (.env, appSettings.json, etc.) to your .gitignore, and providing sample files instead with instructions to copy and fill them in. That way you'll prevent others from accidentally checking in their secrets as well.
 
