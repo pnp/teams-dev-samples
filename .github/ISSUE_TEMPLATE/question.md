@@ -16,7 +16,6 @@ Thank you for asking a question! Use the sections below to submit a question ONL
 - If you have multiple questions please submit them separately so we can track resolution.
 - Screenshots are always helpful (just paste any images right here in the question)
 
-
 | Technology | Location for issues/questions |
 | --- | --- |
 | General Teams development questions | [Stack Overflow for Teams](https://appsource.microsoft.com/en-us/product/office/WA200000739) |
