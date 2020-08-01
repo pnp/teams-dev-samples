@@ -17,6 +17,7 @@ This sample shows how you can implement OAuth 2.0 authorization code flow using 
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
 * [SPFx Development environment](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
+* ![drop](https://img.shields.io/badge/React-16.8.5-green.svg)
 
 ## Version history
 
