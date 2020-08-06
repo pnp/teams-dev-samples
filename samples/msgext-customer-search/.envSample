@@ -1,0 +1,43 @@
+######## Settings required by this solution ########
+
+# The domain name of where you host your application
+HOSTNAME=yourdomainhere.ngrok.io
+
+# App Id and App Password ofr the Bot Framework bot
+MICROSOFT_APP_ID=00000000-0000-0000-0000-000000000000
+MICROSOFT_APP_PASSWORD=
+
+# Port for local debugging
+PORT=3007
+
+# Environment
+# ENVIRONMENT=mock
+ENVIRONMENT=real
+
+# Bing Maps key - free at https://www.bingmapsportal.com/Account/Register
+BING_MAPS_KEY=Ai2OjfYSMtNka6gauq4GNelCabmjXeOzPTS2ZJdWSZRjr081vezzCXKf37EresAQ
+
+
+######## Additional settings for use with yo teams ########
+
+# Security token for the default outgoing webhook
+SECURITY_TOKEN=
+
+# ID of the Outlook Connector
+CONNECTOR_ID=
+
+# Application Insights instrumentation key
+APPINSIGHTS_INSTRUMENTATIONKEY=
+
+# NGROK configuration for development
+# NGROK authentication token (leave empty for anonymous)
+NGROK_AUTH=
+# NGROK sub domain. ex "myapp" or  (leave empty for random)
+NGROK_SUBDOMAIN=
+# NGROK region. (us, eu, au, ap - default is us)
+NGROK_REGION=
+
+# Debug settings, default logging "msteams"
+DEBUG=msteams
+
+MICROSOFT_APP_ID=00000000-0000-0000-0000-000000000000
