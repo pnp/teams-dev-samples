@@ -10,7 +10,7 @@ Users can search the Northwind database when composing a message ...
 ... and an adaptive card with customer information is inserted into the conversation
 ![picture of the result](docs/MsgExt2.png)
 
-For further details ses the [Yo Teams wiki for the project structure](https://github.com/PnP/generator-teams/wiki/Project-Structure)
+For further details see the [Yo Teams wiki for the project structure](https://github.com/PnP/generator-teams/wiki/Project-Structure)
 
 ## Frameworks
 
@@ -49,10 +49,10 @@ Version|Date|Author|Comments
     git clone https://github.com/PnP/teams-dev-samples.git
     ```
 
-- In a console, navigate to `samples/bot-call-graph-as-user`
+- In a console, navigate to `samples/msgext-customer-search`
 
     ```bash
-    cd samples/bot-call-graph-as-user
+    cd samples/msgext-customer-search
     ```
 
 - Install modules
