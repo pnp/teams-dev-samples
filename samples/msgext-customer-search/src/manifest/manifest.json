@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "id": "d6756140-a823-11ea-94d9-ddbe638eaf6b",
+  "version": "0.0.1",
+  "packageName": "customersearch",
+  "developer": {
+    "name": "NorthwindTraders",
+    "websiteUrl": "https://{{HOSTNAME}}",
+    "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "Northwind Customers",
+    "full": "Access customers in the Northwind database"
+  },
+  "description": {
+    "short": "Customers from the classic Northwind database",
+    "full": "Uses the public OData Northwind database"
+  },
+  "icons": {
+    "outline": "Northwind32.png",
+    "color": "Northwind192.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "{{MICROSOFT_APP_ID}}",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "customerSearchMessageExtension",
+          "title": "Customers",
+          "description": "Northwind Traders customers",
+          "initialRun": true,
+          "parameters": [
+            {
+              "name": "companyNameQuery",
+              "description": "Query for customer's company name",
+              "title": "Company name"
+            }
+          ],
+          "type": "query"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{HOSTNAME}}"
+  ]
+}
