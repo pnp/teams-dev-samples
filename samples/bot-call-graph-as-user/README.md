@@ -52,7 +52,7 @@ Version|Date|Author|Comments
     git clone https://github.com/PnP/teams-dev-samples.git
     ```
 
-- In a console, navigate to `samples/jascripvat_nodejs/46.teams-auth`
+- In a console, navigate to `samples/bot-call-graph-as-user`
 
     ```bash
     cd samples/bot-call-graph-as-user

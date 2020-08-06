@@ -1,42 +1,96 @@
-# CustomerSearch - Microsoft Teams App
+# Customer Search Messaging Extension
 
-Generate a Microsoft Teams application.
+## Summary
 
-TODO: Add your documentation here
+This sample is a Search messaging extension created using the Teams Yeoman Generator as featured in [this video](https://www.youtube.com/watch?v=S1eANUbqaRs&list=PLR9nK3mnD-OUeDoawdmYJJsTlRHd6p5DB&index=7&t=7s). It inserts information about Northwind customers into the compose box.
 
-## Getting started with Microsoft Teams Apps development
+Users can search the Northwind database when composing a message ...
+![picture of searching for a customer](docs/MsgExt1.png)
 
-Head on over to [Microsoft Teams official documentation](https://developer.microsoft.com/en-us/microsoft-teams) to learn how to build Microsoft Teams Tabs or the [Microsoft Teams Yeoman generator Wiki](https://github.com/PnP/generator-teams/wiki) for details on how this solution is set up.
+... and an adaptive card with customer information is inserted into the conversation
+![picture of the result](docs/MsgExt2.png)
 
-## Project setup
+For further details ses the [Yo Teams wiki for the project structure](https://github.com/PnP/generator-teams/wiki/Project-Structure)
 
-All required source code are located in the `./src` folder - split into two parts
+## Frameworks
 
-* `app` for the application
-* `manifest` for the Microsoft Teams app manifest
+![drop](https://img.shields.io/badge/Bot&nbsp;Framework-4.7-green.svg)
 
-For further details se the [Yo Teams wiki for the project structure](https://github.com/PnP/generator-teams/wiki/Project-Structure)
+## Prerequisites
 
-## Building the app
+* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+* [Node.js](https://nodejs.org) version 10.14.1 or higher
+* [ngrok](https://ngrok.com) or similar tunneling application is required for local testing
 
-The application is built using the `build` Gulp task.
+    ```bash
+    # determine node version
+    node --version
+    ```
 
-``` bash
-npm i -g gulp gulp-cli
-gulp build
-```
 
-## Building the manifest
 
-To create the Microsoft Teams Apps manifest, run the `manifest` Gulp task. This will generate and validate the package and finally create the package (a zip file) in the `package` folder. The manifest will be validated against the schema and dynamically populated with values from the `.env` file.
+## Version history
 
-``` bash
-gulp manifest
-```
+Version|Date|Author|Comments
+-------|----|----|--------
+1.0|August 6, 2020|Bob German|Initial release
 
-## Configuration
+## Disclaimer
 
-Configuration is stored in the `.env` file. 
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+---
+
+## Minimal Path to Awesome
+
+- Clone the repository
+
+    ```bash
+    git clone https://github.com/PnP/teams-dev-samples.git
+    ```
+
+- In a console, navigate to `samples/bot-call-graph-as-user`
+
+    ```bash
+    cd samples/bot-call-graph-as-user
+    ```
+
+- Install modules
+
+    ```bash
+    npm install
+    ```
+
+- Run ngrok - point to port 3978
+
+    ```bash
+    ngrok http -host-header=rewrite 3978
+    ```
+
+- Since messaging extensions utilize the Azure Bot Framework, you will need to register a new bot. 
+[These instructions](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams#register-your-web-service-with-the-bot-framework) provide options for registering with or without an Azure subscription. 
+  - Be sure to enable the Microsoft Teams bot channel so your solution can communicate with Microsoft Teams
+  - For local testing, set the messaging endpoint to the https URL returned by ngrok plus "/api/messages"
+  - Note the bot's Application ID and password (also called the Client Secret) assigned to your bot during the registration process. In the Azure portal this is under the Bot Registration settings; in the legacy portal it's in the Settings tab. Click Manage to go to Azure AD to obtain the Client Secret. You may need to create a new Application Secret in order to have an opportunity to copy it out of the Azure portal. 
+
+- Update the `.env` configuration for the bot to use the Microsoft App Id and App Password (aka Client Secret) from the previous step.
+
+- Generate and upload the application package
+  ```bash
+  gulp manifest
+  ```
+  Upload the resulting zip file into Teams [using these instructions](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
+
+- Run the bot locally
+    ```bash
+    gulp serve
+    ```
+
+- Test in Microsoft Teams by clicking the ... beneath the compose box in a Team where the application has been installed.
+
+## Features
+
+This is a simple Search messaging extension
 
 ## Debug and test locally
 
@@ -116,3 +170,5 @@ SET DEBUG=msteams
 ```
 
 If you are using Microsoft Azure to host your Microsoft Teams app, then you can add `DEBUG` as an Application Setting with the value of `msteams`.
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-customer-search" />
