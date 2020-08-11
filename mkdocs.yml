@@ -1140,8 +1140,7 @@ extra:
       type: demo
       features: tab
       summary: A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits. 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-spfx-field-visit
-      url: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tab-field-visit-mashup
       author: Bob German
       client_language: typescript
       client_platform: spfx
