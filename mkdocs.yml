@@ -1151,6 +1151,23 @@ extra:
       modifiedtext: April 20, 2019
       modified: 2019-04-20
 
+# Customer search messaging extensions
+    - name: msgext-customer-search
+      title: Customer search messaging extension
+      type: demo
+      features: msgext
+      summary: A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-customer-search
+      author: Bob German
+      client_language: 
+      client_platform: 
+      client_ui:
+      server_language: typescript
+      server_platform: express
+      bot_framework: bot46
+      modifiedtext: August 6, 2020
+      modified: 2020-08-06
+
 #################################
 #endregion COMMUNITY SAMPLES
 #################################
