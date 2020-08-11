@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "box-content-explorer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/boxContentExplorer/BoxContentExplorerWebPart.js",
+          "manifest": "./src/webparts/boxContentExplorer/BoxContentExplorerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "BoxContentExplorerWebPartStrings": "lib/webparts/boxContentExplorer/loc/{locale}.js"
+  }
+}
