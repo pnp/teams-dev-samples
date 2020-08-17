@@ -6,9 +6,9 @@
     "packageName": "io.github.pnp.sample.tab-aad-msal2",
     "developer": {
         "name": "Bob German",
-        "websiteUrl": "{baseUrl0}",
-        "privacyUrl": "{baseUrl0}/privacy",
-        "termsOfUseUrl": "{baseUrl0}/termsofuse"
+        "websiteUrl": "{baseUrl1}",
+        "privacyUrl": "{baseUrl1}/privacy",
+        "termsOfUseUrl": "{baseUrl1}/termsofuse"
     },
     "icons": {
         "color": "color.png",
