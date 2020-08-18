@@ -3,9 +3,6 @@ import * as microsoftTeams from "@microsoft/teams-js";
 
 import AuthService from "../services/AuthService";
 
-/**
- * The tab UI used when running in Teams
- */
 class TeamsAuthPopup extends React.Component {
 
   componentDidMount() {

@@ -70,12 +70,6 @@ class App extends React.Component {
           </Router>
         );
       }
-
-      // // Error when the Microsoft Teams SDK is not found
-      // // in the project.
-      // return (
-      //   <h3>Microsoft Teams SDK not found.</h3>
-      // );
     }
   }
 }
