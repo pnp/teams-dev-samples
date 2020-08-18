@@ -70,7 +70,10 @@ class AuthService {
     }
 
     // Call this to log the user in
-    login() {
+    login(scopes) {
+        if (scopes) {
+            this.request.scopes = scopes;
+        }
         try {
             this.msalClient.loginRedirect(this.request);
         }

@@ -10,26 +10,12 @@ class Tab extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            context: {},
             username: "",
             token: ""
         }
     }
 
-    componentDidMount() {
-        // Get the user context from Teams and set it in the state
-        if (microsoftTeams) {
-            microsoftTeams.getContext((context, error) => {
-                this.setState({
-                    context: context
-                });
-            });
-        }
-    }
-
     render() {
-
-        let userName = Object.keys(this.state.context).length > 0 ? this.state.context['upn'] : "";
 
         return (
             <div>
