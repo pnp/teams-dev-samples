@@ -23,22 +23,12 @@
         "full": "Bare bones sample on tab authentication to Azure AD with no server side logic using MSAL 2.0 / Auth Code PKCE flow"
     },
     "accentColor": "#FFFFFF",
-    "configurableTabs": [
-        {
-            "configurationUrl": "{baseUrl1}/config",
-            "canUpdateConfiguration": true,
-            "scopes": [
-                "team",
-                "groupchat"
-            ]
-        }
-    ],
     "staticTabs": [
         {
             "entityId": "index",
             "name": "AAD MSAL Tab Sample",
-            "contentUrl": "{baseUrl1}/tab",
-            "websiteUrl": "{baseUrl1}/web",
+            "contentUrl": "{baseUrl1}/#tab",
+            "websiteUrl": "{baseUrl1}/#web",
             "scopes": [
                 "personal"
             ]

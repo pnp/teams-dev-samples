@@ -4,6 +4,7 @@
 import React from 'react';
 import './App.css';
 import * as microsoftTeams from "@microsoft/teams-js";
+import TeamsAuthService from '../services/TeamsAuthService';
 
 /**
  * The 'PersonalTab' component renders the main tab content
@@ -13,20 +14,21 @@ class Tab extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      context: {}
+      context: {},
+      username: "",
+      token: ""
     }
   }
 
-  //React lifecycle method that gets called once a component has finished mounting
-  //Learn more: https://reactjs.org/docs/react-component.html#componentdidmount
   componentDidMount(){
     // Get the user context from Teams and set it in the state
-    microsoftTeams.getContext((context, error) => {
-      this.setState({
-        context: context
+    if (microsoftTeams) {
+      microsoftTeams.getContext((context, error) => {
+        this.setState({
+          context: context
+        });
       });
-    });
-    // Next steps: Error handling using the error object
+    }  
   }
 
   render() {
@@ -35,9 +37,26 @@ class Tab extends React.Component {
 
       return (
       <div>
-        <h1>Congratulations {userName}!</h1> <h3>This is the tab you made :-)</h3>
+        <h1>Congratulations {userName}!</h1> <h3>This is your new tab! :-)</h3>
+        <button onClick={this.handleGetProfile.bind(this)}>Get My Profile</button>
+        <p>Username: {TeamsAuthService.getUsername()}</p>
+        <p>Access token: {this.state.token}</p>
       </div>
       );
+  }
+
+  handleGetProfile() {
+    // if (AuthService.isLoggedIn()) {
+        TeamsAuthService.getAccessToken(["User.Read", "Mail.Read"], microsoftTeams)
+      .then((token) => {
+        this.setState({
+          token: token
+        })
+      })
+      .catch((error) => { console.log(error); });
+    // } else {
+    //   AuthService.login();
+    // }
   }
 }
 export default Tab;

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@azure/msal-browser": "^2.0.1",
     "@microsoft/teams-js": "^1.6.0",
     "@fluentui/react-northstar": "^0.49.0",
     "react": "^16.13.1",
