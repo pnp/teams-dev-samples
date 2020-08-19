@@ -6,9 +6,9 @@
     "packageName": "io.github.pnp.sample.tab-aad-msal2",
     "developer": {
         "name": "Bob German",
-        "websiteUrl": "{baseUrl1}",
-        "privacyUrl": "{baseUrl1}/privacy",
-        "termsOfUseUrl": "{baseUrl1}/termsofuse"
+        "websiteUrl": "{baseUrl0}",
+        "privacyUrl": "{baseUrl0}/privacy",
+        "termsOfUseUrl": "{baseUrl0}/termsofuse"
     },
     "icons": {
         "color": "color.png",
@@ -27,8 +27,8 @@
         {
             "entityId": "index",
             "name": "AAD MSAL Tab Sample",
-            "contentUrl": "{baseUrl1}/#tab",
-            "websiteUrl": "{baseUrl1}/#web",
+            "contentUrl": "{baseUrl0}/#tab",
+            "websiteUrl": "{baseUrl0}/#web",
             "scopes": [
                 "personal"
             ]
