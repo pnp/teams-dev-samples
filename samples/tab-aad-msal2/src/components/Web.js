@@ -16,13 +16,13 @@ class Web extends React.Component {
   }
 
   componentWillMount() {
-    this.msGraphClient = MicrosoftGraphClient.Client.init({
-      authProvider: async (done) => {
-        if (!this.state.accessToken) {
-          if (!AuthService.isLoggedIn()) {
-            // Will redirect the browser and not return; will redirect back if successful
-            AuthService.login();
-          } else {
+    if (!AuthService.isLoggedIn()) {
+      // Will redirect the browser and not return; will redirect back if successful
+      AuthService.login(["User.Read", "Mail.Read"]);
+    } else {
+      this.msGraphClient = MicrosoftGraphClient.Client.init({
+        authProvider: async (done) => {
+          if (!this.state.accessToken) {
             // Might redirect the browser and not return; will redirect back if successful
             const token = await AuthService.getAccessToken(["User.Read", "Mail.Read"]);
             this.setState({
@@ -31,8 +31,8 @@ class Web extends React.Component {
           }
           done(null, this.state.accessToken);
         }
-      }
-    });
+      });
+    }
   }
 
   render() {

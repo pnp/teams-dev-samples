@@ -40,7 +40,7 @@ class App extends React.Component {
       if (!this.state.authInitialized) {
 
         // Wait for Auth Service to initialize
-        return (<p>Authorizing...</p>);
+        return (<div className="App"><p>Authorizing...</p></div>);
 
       } else {
 
@@ -54,7 +54,6 @@ class App extends React.Component {
                 <Route exact path="/privacy" component={Privacy} />
                 <Route exact path="/termsofuse" component={TermsOfUse} />
                 <Route exact path="/tab" component={Web} />
-                <Route exact path="/" component={Web} />
                 <Route exact path="/web" component={Web} />
                 <Route exact path="/teamsauthpopup" component={TeamsAuthPopup} />
               </Router>
