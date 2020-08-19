@@ -50,13 +50,15 @@ class App extends React.Component {
         // Home page.
         if (window.parent === window.self) {
           return (
-            <Router>
-              <Route exact path="/privacy" component={Privacy} />
-              <Route exact path="/termsofuse" component={TermsOfUse} />
-              <Route exact path="/tab" component={TeamsHostError} />
-              <Route exact path="/web" component={Web} />
-              <Route exact path="/teamsauthpopup" component={TeamsAuthPopup} />
-            </Router>
+            <div className="App">
+              <Router>
+                <Route exact path="/privacy" component={Privacy} />
+                <Route exact path="/termsofuse" component={TermsOfUse} />
+                <Route exact path="/tab" component={TeamsHostError} />
+                <Route exact path="/web" component={Web} />
+                <Route exact path="/teamsauthpopup" component={TeamsAuthPopup} />
+              </Router>
+            </div>
           );
         }
 
