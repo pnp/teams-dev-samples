@@ -1,0 +1,32 @@
+﻿{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "New Planner task",
+          "size": "Medium",
+          "weight": "Bolder"
+        }
+      ],
+      "bleed": true,
+      "spacing": "None"
+    },
+    {
+      "type": "TextBlock",
+      "text": "I created a new task \"**ReplaceTitel**\" for in your selected Planner plan. You can open the task by clicking the button below!",
+      "wrap": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.OpenUrl",
+      "title": "Open task",
+      "url": "replaceUrl"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2"
+}

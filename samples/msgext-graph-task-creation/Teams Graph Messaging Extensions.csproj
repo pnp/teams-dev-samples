@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>Bot.Builder.Community.Samples.Teams</RootNamespace>
+  </PropertyGroup>
+
+  <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+    <ItemGroup>
+      <ReferencePath Condition="'%(FileName)' == 'Microsoft.Graph.Beta'">
+        <Aliases>BetaLib</Aliases>
+      </ReferencePath>
+    </ItemGroup>
+  </Target>
+  
+  <ItemGroup>
+    <PackageReference Include="AdaptiveCards" Version="1.2.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Bot.Builder" Version="4.9.1" />
+    <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.9.1" />
+    <PackageReference Include="Microsoft.Graph" Version="3.6.0" />
+    <PackageReference Include="Microsoft.Graph.Beta" Version="0.18.0-preview">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Microsoft.Graph.Beta.dll</HintPath>
+      <Aliases>BetaLib</Aliases>
+    </PackageReference>
+  </ItemGroup>
+
+    <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
