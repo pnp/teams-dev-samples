@@ -4,7 +4,7 @@
 
 This Teams messaging extension lets you create To Do or Planner tasks directly within a Teams conversation (1:1, group or teams conversation)!
 
-![picture of the app in action](docs/MsgExt0.png)
+![picture of the app in action](Docs/msgExt0.png)
 
 A complete step-by-step walkthrough of this sample is provided [here](https://bisser.io/bot-framework-teams-messaging-extensions-walkthrough/).
 This sample was originally taken from the [Bot Builder Community repo](https://github.com/BotBuilderCommunity/botbuilder-community-dotnet).
@@ -59,31 +59,31 @@ This messaging extension lets you create a task for the fowolling services direc
 
 The first thing we need is to setup a new Azure AD app registration, as we want to use the [Microsoft Graph](https://docs.microsoft.com/en-us/graph/overview) to handle the task management processing. Therefore we need to go over to our Azure portal and create a new Azure AD App registration (like shown [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal#create-an-azure-active-directory-application)):
 
-![Create AAD app registation](docs/msgExt1.png)
+![Create AAD app registation](Docs/msgExt1.png)
 
 While creating your app registration you need to provied the url `https://token.botframework.com/.auth/web/redirect` as a redirect URI to establish a conncetion to the Bot Framework for grabbing your authentication token.
 
 Next up, we need to add some API permissions to our app to make sure we can use the Graph to perform certain tasks (don't forget to grant admin consent for those permissions after adding them):
 
-![Add app permissions](docs/msgExt2.png)
+![Add app permissions](Docs/msgExt2.png)
 
 ## Create Azure Bot Channels Registration
 
 After the Azure AD App Registration has been created, you can create a new Bot Channels Registration in the Azure portal (make sure to insert your ngrok URL as messaging endpoint in the format `https://yourngrokURL/api/messages`):
 
-![Create BCR](docs/msgExt3.png)
+![Create BCR](Docs/msgExt3.png)
 
 After it has been created, you need to add our previously created app registration to the OAuth Connection Settings of your bot:
 
-![Add OAuth settings](docs/msgExt4.png)
+![Add OAuth settings](Docs/msgExt4.png)
 
 From here you need to provide the following details:
 
-![Add OAuth settings](docs/msgExt5.png)
+![Add OAuth settings](Docs/msgExt5.png)
 
 After saving you can validate your service provider connection setting to see if you can connect to your AAD app registration and get a token from there:
 
-![Test OAuth settings](docs/msgExt6.png)
+![Test OAuth settings](Docs/msgExt6.png)
 
 The last thing you need to grab is the Microsoft App ID and App secret for the Bot Channels Registration which can be found from the Azure AD App Registration pane as well.
 
@@ -101,4 +101,4 @@ Update the appsettings.json with the correct values:
 }
 ```
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-graph-task-creation" />
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgExt-graph-task-creation" />
