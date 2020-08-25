@@ -1,0 +1,52 @@
+﻿{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "width": 20,
+              "type": "Column",
+              "items": [
+                {
+                  "type": "Image",
+                  "url": "https://microsoft.github.io/botframework-solutions/assets/images/icons/virtual-assistant.png",
+                  "spacing": "None",
+                  "size": "Medium"
+                }
+              ],
+              "spacing": "None"
+            },
+            {
+              "width": 80,
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "text": "Before we can continue you need to install this bot in the conversation. Click the button below to continue...",
+                  "wrap": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Install",
+      "data": {
+        "msteams": {
+          "justInTimeInstall": true
+        }
+      }
+    }
+  ],
+  "version": "1.2",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json"
+}
