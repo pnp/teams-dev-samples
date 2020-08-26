@@ -6,6 +6,12 @@
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Mail.Read"
+      }
+    ],
     "isDomainIsolated": false,
     "developer": {
       "name": "",
