@@ -2,37 +2,26 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+This sample shows how to write a Teams tab using SharePoint Framework, and to call the Graph API from that tab. The web part is bare bones; all it does is display recent emails in the logged-in user's inbox.
 
-[picture of the solution in action, if possible]
+![picture of the app in action](docs/images/tab-aad-spfx.png)
 
-## Used SharePoint Framework Version
+## Frameworks
 
-![version](https://img.shields.io/badge/version-1.11-green.svg)
+_Please indicate the SPFx version required_
 
-## Applies to
-
-- [SharePoint Framework](https://aka.ms/spfx)
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
+![SPFx 1.x.0](https://img.shields.io/badge/SPFx-1.11.1-green.svg)
 
 ## Prerequisites
 
-> Any special pre-requisites?
-
-## Solution
-
-Solution|Author(s)
---------|---------
-folder name | Author details (name, company, twitter alias with link)
+* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+* [SPFx Development environment](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
 
 ## Version history
 
-Version|Date|Comments
--------|----|--------
-1.1|March 10, 2021|Update comment
-1.0|January 29, 2021|Initial release
+Version|Date|Author|Comments
+-------|----|----|--------
+1.0|August 25, 2020|Bob German|Initial release
 
 ## Disclaimer
 
@@ -42,32 +31,50 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome
 
-- Clone this repository
-- Ensure that you are at the solution folder
-- in the command-line run:
-  - **npm install**
-  - **gulp serve**
+* Clone this repository
+* In the command line run:
+  * `npm install`
+  * `gulp serve`
 
-> Include any additional steps as needed.
+_Does your sample work in the offline workbench? In the SharePoint workbench? Are any API permissions required that would need to be approved in the SharePoint admin center?"
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
+Description of the web part with possible additional details than in short summary. 
+This Web Part illustrates the following concepts on top of the SharePoint Framework:
 
-This extension illustrates the following concepts:
+* topic 1
+* topic 2
+* topic 3
 
-- topic 1
-- topic 2
-- topic 3
+_Below there is a clear image used for telemetry. Please change "readme-template" to your sample name._
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
+<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/readme-template" />
 
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
 
-## References
+## tab-aad-spfx
 
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-- [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
-- [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
-- [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
-- [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+This is where you include your WebPart documentation.
+
+### Building the code
+
+```bash
+git clone the repo
+npm i
+npm i -g gulp
+gulp
+```
+
+This package produces the following:
+
+* lib/* - intermediate-stage commonjs build artifacts
+* dist/* - the bundled script, along with other resources
+* deploy/* - all resources which should be uploaded to a CDN.
+
+### Build options
+
+gulp clean - TODO
+gulp test - TODO
+gulp serve - TODO
+gulp bundle - TODO
+gulp package-solution - TODO
