@@ -24,10 +24,10 @@ createdDate: 8/26/2020 09:45:00 AM
 
 This sample is a search based messaging extension created using the Teams Yeoman Generator as featured in [this video](https://www.youtube.com/watch?v=S1eANUbqaRs&list=PLR9nK3mnD-OUeDoawdmYJJsTlRHd6p5DB&index=7&t=7s). It authenticates against Microsoft Graph and recieves doduments due for review.
 
-![Result: Documents for review](docs/00appfunctionality.png)
+![Result: Documents for review](docs/00appFunctionality.png)
 
 ... and an adaptive card with document details is inserted into the conversation
-![Document Adaptive Card](docs/06yoteams_msgext_actioncard.png)
+![Document Adaptive Card](docs/06yoteams_MsgExt_ActionCard.png)
 and the review can be directly confirmed as an action from within the card
 
 For further details see the [Yo Teams wiki for the project structure](https://github.com/PnP/generator-teams/wiki/Project-Structure)
