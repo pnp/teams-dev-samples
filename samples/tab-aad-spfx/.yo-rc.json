@@ -2,11 +2,11 @@
   "@microsoft/generator-sharepoint": {
     "isCreatingSolution": true,
     "environment": "spo",
-    "version": "1.9.1",
+    "version": "1.11.0",
     "libraryName": "tab-aad-spfx",
-    "libraryId": "dce2a455-9ba2-4de7-847c-81084ce6e5a4",
+    "libraryId": "d11f8791-e1b8-4216-9a6f-74ea1d93ab3f",
     "packageManager": "npm",
-    "isDomainIsolated": true,
+    "isDomainIsolated": false,
     "componentType": "webpart"
   }
 }

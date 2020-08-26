@@ -2,17 +2,18 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "tab-aad-spfx-client-side-solution",
-    "id": "dce2a455-9ba2-4de7-847c-81084ce6e5a4",
+    "id": "d11f8791-e1b8-4216-9a6f-74ea1d93ab3f",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
-    "webApiPermissionRequests": [
-      {
-        "resource": "Microsoft Graph",
-        "scope": "Mail.Read"
-      }
-    ],
-    "isDomainIsolated": false
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    }
   },
   "paths": {
     "zippedPackage": "solution/tab-aad-spfx.sppkg"
