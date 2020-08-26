@@ -1,10 +1,10 @@
-# teams-auth bot
+# Teams bot using Microsoft Graph
+
+This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to get started with building a bot for Teams which calls the Microsoft Graph.
 
 ## Summary
 
-Bot Framework v4 bot using Teams authentication
-
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to get started with building a bot for Teams which calls the Microsoft Graph.
+This is a bare-bones demo that displays recent email for the logged in user. It's intended to demonstrate how to call the Microsoft Graph from a Bot with user delegated permission.
 
 ![Bot calling Graph](docs/images/BotCallsGraph.png)
 
@@ -16,7 +16,7 @@ The sample uses the bot authentication capabilities in [Azure Bot Service](https
 
 Note: The Teams manifest.json should include validDomains: [ "token.botframework.com" ]  See [install-and-test-the-bot-in-teams](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/authentication/add-authentication#install-and-test-the-bot-in-teams)
 
-##Frameworks
+## Frameworks
 
 ![drop](https://img.shields.io/badge/Bot&nbsp;Framework-4.7-green.svg)
 
@@ -45,6 +45,10 @@ Version|Date|Author|Comments
 ---
 
 ## Minimal Path to Awesome
+
+You can safely skip these instructions and follow the Bot Framework documentation [Add Authentication to a bot](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-authentication). This sample is based on theirs, and follows the same instructions.
+
+Here are the high-level instructions again:
 
 - Clone the repository
 
@@ -84,10 +88,9 @@ Version|Date|Author|Comments
     ```bash
     node index.js
     ```
+## Features
 
-## Authentication
-
-This sample uses bot authentication capabilities in Azure Bot Service.  Azure Bot Service provides features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, etc. These updates also take steps towards an improved user experience by eliminating the magic code verification for some clients.
+This sample demonstrates bot authentication capabilities in Azure Bot Service.  Azure Bot Service provides features to make it easier to develop a bot that authenticates users to various identity providers such as Azure AD (Azure Active Directory), GitHub, Uber, etc. These updates also take steps towards an improved user experience by eliminating the magic code verification for some clients.
 
 ## Interacting with the bot in Teams
 
@@ -96,10 +99,6 @@ This sample uses bot authentication capabilities in Azure Bot Service.  Azure Bo
 You can interact with this bot by sending it a message. The bot will respond by requesting you to login to AAD, then making a call to the Graph API on your behalf and returning the results.
 
 In this version of the bot, following login you will be prompted to choose to call the Graph or view the access token. If you choose to call the Graph, the bot will retrieve the first 10 email messages in your inbox and display a little information about them.
-
-## Deploy the bot to Azure
-
-To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](https://aka.ms/azuredeployment) for a complete list of deployment instructions.
 
 ## Deploy the bot to Azure
 
