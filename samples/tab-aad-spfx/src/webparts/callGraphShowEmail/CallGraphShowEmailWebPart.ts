@@ -1,20 +1,20 @@
 import { Version } from '@microsoft/sp-core-library';
 import {
-  BaseClientSideWebPart,
   IPropertyPaneConfiguration,
   PropertyPaneTextField
-} from '@microsoft/sp-webpart-base';
+} from '@microsoft/sp-property-pane';
+import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
-import styles from './CallGraphWebPart.module.scss';
-import * as strings from 'CallGraphWebPartStrings';
+import styles from './CallGraphShowEmailWebPart.module.scss';
+import * as strings from 'CallGraphShowEmailWebPartStrings';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
 
-export interface ICallGraphWebPartProps {
+export interface ICallGraphShowEmailWebPartProps {
   description: string;
 }
 
-export default class CallGraphWebPart extends BaseClientSideWebPart<ICallGraphWebPartProps> {
+export default class CallGraphShowEmailWebPart extends BaseClientSideWebPart<ICallGraphShowEmailWebPartProps> {
 
   private mailboxHtml: string = "";
   private errorMessage: string = "";
@@ -59,7 +59,7 @@ export default class CallGraphWebPart extends BaseClientSideWebPart<ICallGraphWe
     }
 
     this.domElement.innerHTML = `
-      <div class="${ styles.callGraph }">
+      <div class="${ styles.callGraphShowEmail }">
         <div class="${ styles.container }">
           <div class="${ styles.row }">
             <div class="${ styles.column }">

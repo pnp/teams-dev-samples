@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "call-graph-web-part": {
+    "call-graph-show-email-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/callGraph/CallGraphWebPart.js",
-          "manifest": "./src/webparts/callGraph/CallGraphWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/callGraphShowEmail/CallGraphShowEmailWebPart.js",
+          "manifest": "./src/webparts/callGraphShowEmail/CallGraphShowEmailWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "CallGraphWebPartStrings": "lib/webparts/callGraph/loc/{locale}.js"
+    "CallGraphShowEmailWebPartStrings": "lib/webparts/callGraphShowEmail/loc/{locale}.js"
   }
 }

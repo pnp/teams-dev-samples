@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "c6680d7b-2679-4c21-84c3-ed7454317489",
+  "alias": "CallGraphShowEmailWebPart",
+  "componentType": "WebPart",
+
+  "version": "*",
+  "manifestVersion": 2,
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["TeamsTab", "TeamsPersonalApp"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "CallGraphShowEmail" },
+    "description": { "default": "Simple, bare bones solution to display data from Microsoft Graph in a Teams tab" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "CallGraphShowEmail"
+    }
+  }]
+}
