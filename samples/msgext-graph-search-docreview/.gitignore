@@ -1,0 +1,9 @@
+# do not include the node modules in Git
+node_modules
+
+# do not include the package in Git
+package
+
+# do not include dist files
+dist
+
