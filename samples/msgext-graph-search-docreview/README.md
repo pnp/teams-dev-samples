@@ -15,7 +15,7 @@ extensions:
   - Express
   origin:
   - Community
-createdDate: 8/15/2020 12:00:00 AM
+createdDate: 8/26/2020 09:45:00 AM
 ---
 
 # Document Review Search Messaging Extension
@@ -56,7 +56,7 @@ The example is documented in
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|August 6, 2020|Markus Moeller|Initial release
+1.0|August 26, 2020|Markus Moeller|Initial release
 
 ## Disclaimer
 
