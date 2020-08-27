@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema https://raw.githubusercontent.com/OfficeDev/PnP-Provisioning-Schema/master/OfficeDevPnP.ProvisioningSchema/ProvisioningSchema-2019-09.xsd">
+  <pnp:Preferences Author="Markus Moeller" Version="1.0">
+    <pnp:Parameters>
+      <pnp:Parameter Key="DocumentsUrl">Freigegebene Dokumente</pnp:Parameter>      
+      <pnp:Parameter Key="DocumentsTitle">Dokumente</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Templates ID="CONTAINER-TEMPLATE-3DE6372F3EBB4867963ACF2BC3D0F04C">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-3DE6372F3EBB4867963ACF2BC3D0F04C" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">     
+      <pnp:SiteFields>
+        <Field ID="{92f14062-99b3-43b8-b9b2-fbfaee3513b0}" Name="LastReviewed" DisplayName="Last Reviewed" FriendlyDisplayFormat="Disabled" Format="DateOnly" Title="LastReviewed" Type="DateTime" StaticName="LastReviewed" ColName="datetime2" RowOrdinal="0" CustomFormatter="" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" CalType="0" Group="MM" />
+        <Field ID="{8f479876-d60a-4e26-a530-d123d006a825}" Name="NextReview" Type="DateTime" DisplayName="Next Review" Required="FALSE" Indexed="TRUE" Format="DateOnly" FriendlyDisplayFormat="Disabled" StaticName="NextReview" ColName="datetime1" RowOrdinal="0" CustomFormatter="" CalType="0" Group="MM" />
+        <Field ID="{530a7853-60da-4964-8e10-ede075a458e0}" Name="DocDescription" Type="Note" DisplayName="Description" Required="FALSE" NumLines="4" Sortable="FALSE" StaticName="DocDescription" ColName="ntext4" RowOrdinal="0" Group="MM" />
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0101007FDF3507342ED449A5EC3AE335D2CE55" Name="MMDocument" Description="A custom document content type." Group="MM">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="{92f14062-99b3-43b8-b9b2-fbfaee3513b0}" Name="LastReviewed" Required="false" UpdateChildren="true" />
+            <pnp:FieldRef ID="{8f479876-d60a-4e26-a530-d123d006a825}" Name="NextReview" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="{530a7853-60da-4964-8e10-ede075a458e0}" Name="DocDescription" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="{parameter:DocumentsTitle}" Description="" OnQuickLaunch="true" TemplateType="101" Url="{parameter:DocumentsUrl}" ContentTypesEnabled="true" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" ListExperience="NewExperience" ImageUrl="/_layouts/15/images/itdl.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101007FDF3507342ED449A5EC3AE335D2CE55" Default="true"/>
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{774801CD-4390-4F11-B79E-1CBB9AD1E012}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All {parameter:DocumentsTitle}" Url="{site}/{parameter:DocumentsUrl}/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+                <FieldRef Name="LastReviewed" />
+                <FieldRef Name="NextReview" />
+                <FieldRef Name="DocDescription" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>        
+      </pnp:Lists>     
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
