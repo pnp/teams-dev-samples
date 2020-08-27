@@ -640,12 +640,12 @@ extra:
       modified: 2020-07-16
       
     - name: teams-home-app
-      title: HOME App
+      title: Microsoft Teams Sample Hub
       type: demo
       features: tab
-      summary: The HOME app is a personal-branded landing experience that is pinned to the Teams mobile app, allowing your organization to provide consolidated information and the functionality of important first-party and line-of-business apps to firstline worker employees. HOME can leverage multiple technologies and capabilities such as the SharePoint Framework in Teams (SPFx), Microsoft Graph APIs, PowerApps, Web Apps/HTML/JavaScript, and mobile app pinning to highlight a branded experience for any user.
+      summary: The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the "art of the possible" by showcasing the Teams platform and articulating the value that it can deliver.
       thumbnail:
-      url: https://github.com/msft-teams/tools/tree/master/HOMEapp
+      url: https://github.com/msft-teams/tools/tree/master/TeamsSampleHub
       author: Microsoft
       client_language: javascript
       client_platform: netcore
@@ -653,8 +653,8 @@ extra:
       server_language: csharp
       server_platform: netcore
       bot_framework:
-      modifiedtext: July 15, 2020
-      modified: 2020-07-15
+      modifiedtext: August 25, 2020
+      modified: 2020-08-25
 
 #################################
 #endregion MSFT-TEAMS SAMPLES
