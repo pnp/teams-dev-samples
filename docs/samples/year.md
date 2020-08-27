@@ -10,9 +10,6 @@ To learn more about how to use these samples, please refer to our [getting start
    <button class="button is-checked" data-filter="*">All</button>
   <button class="button" data-filter="[data-modified^='2020-']">2020</button>
   <button class="button" data-filter="[data-modified^='2019-']">2019</button>
-  <button class="button" data-filter="[data-modified^='2018-']">2018</button>
-  <button class="button" data-filter="[data-modified^='2017-']">2017</button>
-  <button class="button" data-filter="[data-modified^='2016-']">2016</button>
   </div>
 </div>
 

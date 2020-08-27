@@ -1069,8 +1069,8 @@ extra:
       server_language: csharp
       server_platform: netframework
       bot_framework:
-      modifiedtext: March 13, 2017
-      modified: 2017-03-13
+      modifiedtext: July 19, 2019
+      modified: 2019-07-19
 
     - name: microsoft-teams-bb-outgoing-webhook-bot-node
       title: Outgoing webhook using NodeJS
@@ -1086,8 +1086,8 @@ extra:
       server_language: javascript
       server_platform:
       bot_framework:
-      modifiedtext: Dec 5, 2017
-      modified: 2017-12-05
+      modifiedtext: July 19, 2019
+      modified: 2019-07-19
 
 
 #################################
