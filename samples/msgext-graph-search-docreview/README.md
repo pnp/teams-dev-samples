@@ -22,7 +22,7 @@ createdDate: 8/26/2020 09:45:00 AM
 
 ## Summary
 
-This sample is a search based messaging extension created using the Teams Yeoman Generator as featured in [this video](https://www.youtube.com/watch?v=S1eANUbqaRs&list=PLR9nK3mnD-OUeDoawdmYJJsTlRHd6p5DB&index=7&t=7s). It authenticates against Microsoft Graph and recieves doduments due for review.
+This sample is a search-based messaging extension created using the Teams Yeoman Generator as featured in [this video](https://www.youtube.com/watch?v=S1eANUbqaRs&list=PLR9nK3mnD-OUeDoawdmYJJsTlRHd6p5DB&index=7&t=7s). It authenticates against Microsoft Graph and receives documents due for review.
 
 ![Result: Documents for review](docs/00appFunctionality.png)
 
@@ -37,7 +37,7 @@ The example is documented in
 
 ## Frameworks
 
-![drop](https://img.shields.io/badge/Bot&nbsp;Framework-4.7-green.svg)
+![Bot Framework 4.7](https://img.shields.io/badge/Bot&nbsp;Framework-4.7-green.svg)
 
 ## Prerequisites
 
