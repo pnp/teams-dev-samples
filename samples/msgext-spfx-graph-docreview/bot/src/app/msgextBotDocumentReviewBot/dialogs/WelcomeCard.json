@@ -1,0 +1,36 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.2",
+    "body": [
+      {
+        "type": "TextBlock",
+        "spacing": "medium",
+        "size": "default",
+        "weight": "bolder",
+        "text": "Welcome to Msgext Bot Document Review",
+        "wrap": true,
+        "maxLines": 0
+      },
+      {
+        "type": "TextBlock",
+        "size": "default",
+        "isSubtle": true,
+        "text": "Hello, nice to meet you!",
+        "wrap": true,
+        "maxLines": 0
+      }
+    ],
+    "actions": [
+      {
+        "type": "Action.OpenUrl",
+        "title": "Learn more about Yo Teams",
+        "url": "https://aka.ms/yoteams"
+      },
+      {
+        "type": "Action.OpenUrl",
+        "title": "Msgext Bot Document Review",
+        "url": "https://5a204033d78f.ngrok.io"
+      }
+    ]
+  }
