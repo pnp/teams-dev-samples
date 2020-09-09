@@ -1,0 +1,72 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.6",
+  "packageName": "{packageName}",
+  "id": "5ca3d74e-1ea3-4d1e-8bc7-9070ff5d1c15",
+  "version": "0.1",
+  "developer": {
+    "name": "PnP Developer",
+    "websiteUrl": "https://{your-company-url}",
+    "privacyUrl": "https://{your-company-url}/privacystatement",
+    "termsOfUseUrl": "https://{your-company-url}/servicesagreement"
+  },
+  "name": {
+    "short": "{Short Name}"
+  },
+  "description": {
+    "short": "{Short description}",
+    "full": "{Full description}"
+  },
+  "icons": {
+    "outline": "5ca3d74e-1ea3-4d1e-8bc7-9070ff5d1c15_outline.png",
+    "color": "5ca3d74e-1ea3-4d1e-8bc7-9070ff5d1c15_color.png"
+  },
+  "accentColor": "#004578",
+  "bots": [
+    {
+      "botId": "{{Bot-AppID}}",
+      "needsChannelSelector": false,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "composeExtensions": [
+    {
+      "botId": "{{Bot-AppID}}",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "docReview",
+          "type": "action",
+          "title": "Doc Review Action Extension",
+          "description": "Select documents for review",
+          "initialRun": false,
+          "fetchTask": false,
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "taskInfo": {
+            "title": "Select documents to review",
+            "width": "1100",
+            "height": "500",
+            "url": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamstaskhostedapp.aspx%3Fteams%26personal%26componentId=5ca3d74e-1ea3-4d1e-8bc7-9070ff5d1c157%26forceLocale={locale}"
+          }
+        }
+      ]
+    }
+  ],
+  "validDomains": [
+    "*.login.microsoftonline.com",
+    "*.sharepoint.com",
+    "spoprod-a.akamaihd.net",
+    "resourceseng.blob.core.windows.net"
+  ],
+  "webApplicationInfo": {
+    "resource": "https://{teamSiteDomain}",
+    "id": "00000003-0000-0ff1-ce00-000000000000"
+  }
+}
