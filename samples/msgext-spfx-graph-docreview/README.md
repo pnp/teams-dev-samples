@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Document Review SPFx Messaging Extension
 ---
 page_type: sample
@@ -20,6 +21,9 @@ extensions:
   - Community
 createdDate: 09/09/2020 16:45:00 AM
 ---
+=======
+# msgext-spfx-graph-docreview
+>>>>>>> be254ab... Initial commit
 
 ## Summary
 
@@ -126,5 +130,8 @@ This extension illustrates the following concepts:
 - [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+<<<<<<< HEAD
 
 <img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-spfx-graph-docreview" />
+=======
+>>>>>>> be254ab... Initial commit
