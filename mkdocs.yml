@@ -1123,7 +1123,7 @@ extra:
       features: bot
       summary: This simple bot demonstrates conversation state and user state in Bot Framework v4
       thumbnail: 
-      url: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-statebot
       author: Bob German
       client_language:
       client_platform:
