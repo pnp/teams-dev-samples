@@ -1,4 +1,25 @@
-# msgext-spfx-graph-docreview
+# Document Review SPFx Messaging Extension
+---
+page_type: sample
+products:
+- teams
+- sharepoint
+languages:
+- typescript
+extensions:
+  contentType: samples
+  app_features:
+  - Messaging Extension
+  technologies:
+  - SPFx
+  - Bot Framework SDK v4
+  - React
+  platforms:
+  - Express
+  origin:
+  - Community
+createdDate: 09/09/2020 16:45:00 AM
+---
 
 ## Summary
 
@@ -105,3 +126,5 @@ This extension illustrates the following concepts:
 - [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-spfx-graph-docreview" />
