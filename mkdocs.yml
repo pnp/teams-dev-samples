@@ -1534,6 +1534,25 @@ extra:
       modifiedtext: August 28, 2020
       modified: 2020-08-28
 
+# Action based messaging extension calls Graph API
+    - name: msgext-action-jit
+      title: Action messaging extension with Just In Time installer
+      type: demo
+      features: msgext
+      source: pnp
+      summary: Sample of an Action messaging extension that shows a Just-In-Time installer to install the app into Teams/Personal/Group Chat, and how to post an adaptive card response directly into a conversation
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-graph-action-docreview
+      author: Rajesh Sitaraman
+      client_language:
+      client_platform:
+      client_ui: 
+      server_language: typescript
+      server_platform: express
+      bot_framework: bot40
+      modifiedtext: August 28, 2020
+      modified: 2020-09-10
+
 
 
 
@@ -1579,6 +1598,7 @@ authors:
     - Luis Mañez
     - Markus Moeller
     - Microsoft
+    - Rajesh Sitaraman
     - Ramin Ahmadi
     - Siddharth Vaghasia
     - Stephan Bisser
