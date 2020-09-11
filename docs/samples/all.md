@@ -7,7 +7,8 @@ To learn more about how to use these samples, please refer to our [getting start
         <tr>
             <th>Title</th>
             <th>Author</th>
-            <th>Language</th>
+            <th>Client Language</th>
+            <th>Server Language</th>
             <th>Preview</th>
         </tr>
     </thead>
@@ -17,18 +18,29 @@ To learn more about how to use these samples, please refer to our [getting start
         <td><a href="{{ sample.url }}" target="_blank" title="{{sample.summary}}">{{ sample.title }}</a></td>
         <td>{{ sample.author }}</td>
         <td>
-        {% if sample.language == "netcore" %}
+        {% if sample.clientLanguage == "csharp" %}
             .NET Core
-        {% elif sample.language == "python" %}
-            Python
-        {% elif sample.language == "javascript" %}
+        {% elif sample.clientLanguage == "powerapps" %}
+            Power Apps
+        {% elif sample.clientLanguage == "javascript" %}
             JavaScript
-        {% elif sample.language == "javascript_es6" %}
+        {% elif sample.clientLanguage == "javascript_es6" %}
             JavaScript ES6
-        {% elif sample.language == "typescript" %}
+        {% elif sample.clientLanguage == "typescript" %}
             TypeScript
-        {% elif sample.language == "netwebapi" %}
-            .NET Web API
+        {% endif %}
+        </td>
+        <td>
+        {% if sample.serverLanguage == "csharp" %}
+            C#
+        {% elif sample.serverLanguage == "python" %}
+            Python
+        {% elif sample.serverLanguage == "powerautomate" %}
+            Power Automate
+        {% elif sample.serverLanguage == "javascript" %}
+            JavaScript
+        {% elif sample.serverLanguage == "typescript" %}
+            TypeScript
         {% endif %}
         </td>
         <td><div class="sample-img">

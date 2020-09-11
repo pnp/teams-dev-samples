@@ -84,7 +84,7 @@
     position: relative;
     float: left;
     width: 220px;
-    height: 280px;
+    height: 440px;
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
@@ -146,21 +146,33 @@
   .sample-item .author {
     color:#323130;
     font-size:12px;
-    font-weight: 600;
+    font-weight: bold;
   }
 
-  .sample-item h2 {
+  .sample-item .name
+  {
+    margin: 0 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    max-height: 43px;
+    padding: 0 0 0 0;
+    vertical-align: middle;
+    color: #323130;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sample-item h2
+  {
     /*max-height: 16px;*/
     margin: 0 0 0 0;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: bold;
     padding-top: 8px;
     padding-right: 12px;
-    padding-bottom: 8px;
+    padding-bottom: 0;
     padding-left: 12px;
     vertical-align: middle;
-    height: 38px;
-    line-height: 21px;
     color: #323130;
     width: 220px;
     white-space: nowrap;
@@ -175,12 +187,19 @@
 
   }
 
+  .sample-item .summary {
+    font-size: 12px;
+    height: 100px;
+    overflow-y: scroll;
+  }
+
   .sample-img {
     min-height: 148px;
     max-height: 148px;
     overflow-y: hidden;
+    padding: 2px;
     background-color: #FAF9F8;
-    border-bottom: 1px solid #edebe9;;
+    border: 1px solid black;
   }
 
   #samplestable .sample-img { 

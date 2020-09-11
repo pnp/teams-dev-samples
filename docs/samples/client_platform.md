@@ -31,15 +31,19 @@ To learn more about how to use these samples, please refer to our [getting start
       </a>
     </div>
   </div>
-      <a href="{{sample.url}}"
-      title="{{ sample.summary }}">
-<span class="location" title="Framework: {{sample.framework}}">{{ sample.framework }}</span>
-  <h2 class="name">
-      {{sample.title}}</h2>
-      <div class="sample-activity">
-  <span class="author" title="{{ sample.author }}">{{ sample.author }}</span>
-  <span class="modified">Modified {{ sample.modifiedtext }}</span>
-  </div>
+  <a href="{{sample.url}}"
+     title="{{ sample.summary }}">
+    <div class="sample-activity">
+      <div class="name">{{sample.title}}</div>
+      <span class="author" title="{{ sample.author }}">{{ sample.author }}</span>
+      <div class="summary">{{ sample.summary }}</div>
+      <span class="modified">Type: {{ sample.type }}</span>
+      <span class="modified">Features: {{ sample.features }}</span>
+      <span class="modified">Client language: {{ sample.client_language}}</span>
+      <span class="modified">Server language: {{ sample.server_language}}</span>
+      <span class="modified">Sample source: {{ sample.source}}</span>
+      <span class="modified">Modified {{ sample.modifiedtext }}</span>
+    </div>
   </a>
 
 </div>
