@@ -1230,6 +1230,199 @@ extra:
       modifiedtext: August 6, 2020
       modified: 2020-08-06
 
+# Teams Creator Web Part
+    - name: other-teams-creator-web-part
+      title: Teams Creator web part
+      type: demo
+      features: other
+      source: pnp
+      summary: This is a SharePoint web part that creates Teams
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-team-creator
+      author: Alex Terentiev
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: November 19, 2018
+      modified: 2018-11-19
+
+# Tab configuration using SharePoint
+    - name: tab-config-using-sharepoint
+      title: Configurable tabs with SharePoint
+      type: demo
+      features: tab
+      source: pnp
+      summary: This is a SharePoint web part that creates Teams
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-configure-tab
+      author: Bob German
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: January 6, 2020
+      modified: 2020-01-06
+
+# Send Message Web Part
+    - name: other-send-message-web-part
+      title: SharePoint web part sends to Teams
+      type: demo
+      features: other
+      source: pnp
+      summary: This is a SharePoint web part that displays the user's Teams and sends messages to channele
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-message
+      author: Siddharth Vaghasia
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: May 23, 2020
+      modified: 2020-05-23
+
+# SPFx personal tab settings
+    - name: tab-personal-app-settings
+      title: SPFx personal tab with property pane editing
+      type: demo
+      features: tab
+      source: pnp
+      summary: Shows how to expose the web part editing of an SPFx personal tab
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-personal-app-settings
+      author: Alex Terentiev
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: April 24, 2020
+      modified: 2020-04-24
+
+# Suggested members tab
+    - name: tab-suggested-members
+      title: Suggested members tab
+      type: demo
+      features: tab
+      source: pnp
+      summary: SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tab-suggested-members
+      author: Luis Mañez Manez
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: November 18, 2018
+      modified: 2018-11-18
+
+# Tab tags Teams using a TermSet with Graph Extensions
+    - name: tab-tag-teams-graph-ext
+      title: Web part to tag a Team
+      type: demo
+      features: other
+      source: pnp
+      summary: Web part to tag a Team using managed metadata and Graph extension
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tagging
+      author: Federico Porceddu
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: April 18, 2019
+      modified: 2019-04-18
+
+# Tab tags Teams using a TermSet with Graph Extensions
+    - name: tab-tag-teams-graph-ext
+      title: Web part to tag a Team
+      type: demo
+      features: tab
+      source: pnp
+      summary: Web part to tag a Team using managed metadata and Graph extension
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tagging
+      author: Federico Porceddu
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: April 18, 2019
+      modified: 2019-04-18
+
+# Tab or web part shows public teams I'm not a member of
+    - name: tab-public-teams-not-member-of
+      title: Tab or web part to show Teams to join
+      type: demo
+      features: tab
+      source: pnp
+      summary: Tab or web part shows Teams the user is not a member of, with an opportunity to join
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tagging
+      author: Laura Kokkarinen
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: February 5, 2019
+      modified: 2019-02-05
+
+# Web part shows my Teams
+    - name: other-webpart-show-my-teams
+      title: Web part to show my Teams
+      type: demo
+      features: other
+      source: pnp
+      summary: Web part shows Teams the user belongs to with links to each Team
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-my-teams
+      author: Joel Rodrigues
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: February 26, 2019
+      modified: 2019-02-26
+
+# Outlook add-in saves emails to Teams or OneDrive folders
+    - name: other-outlook-addin-save-to-teams
+      title: Outlook add-in saves email to Teams
+      type: demo
+      features: other
+      source: pnp
+      summary: Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-outlook-copy2teams
+      author: Markus Moeller
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: January 29, 2020
+      modified: 2020-01-29
+
+
+
+
 #################################
 #endregion COMMUNITY SAMPLES
 #################################
@@ -1265,8 +1458,14 @@ extra:
 #region Authors and URLs
 
 authors:
+    - Alex Terentiev
     - Bob German
+    - Federico Porceddu
+    - Laura Kokkarinen
+    - Luis Mañez
+    - Markus Moeller
     - Microsoft
+    - Siddharth Vaghasia
 repo_url: https://github.com/pnp/teams-dev-samples
 edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
