@@ -9,6 +9,7 @@
 #      title: 
 #      type: apptemplate, barebones, demo, solution
 #      features: bot, connector, msgext, tab, taskmodule, webhook
+#      source: appTemplate, botBuilder, msftTeams, officeDev, pnp
 #      summary: 
 #      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
 #      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
@@ -34,6 +35,7 @@ nav:
   - Samples:
     - By Type: index.md
     - By Feature: samples/features.md
+    - By Source: samples/source.md
     - By Keyword: samples/keyword.md
     - CLIENT SIDE CODE: samples/client_language.md
     - By Client Language: samples/client_language.md
@@ -97,6 +99,7 @@ extra:
       title: Associate Insights App Template
       type: apptemplate
       features: tab
+      source: appTemplate
       summary: Associate insights is a Power Apps template that empowers firstline workers to directly capture and submit customer opinion, sentiment, and perception.
       thumbnail: https://docs.microsoft.com/en-us/microsoftteams/platform/assets/images/associate-insights-app.png
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#associate-insights
@@ -115,6 +118,7 @@ extra:
       title: Attendance App Template
       type: apptemplate
       features: tab
+      source: appTemplate
       summary: Attendance app is a Power Apps based solution to take attendance in educational tenant.
       thumbnail:
       url: https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#attendance
@@ -133,6 +137,7 @@ extra:
       title: Book-a-room App Template
       type: apptemplate
       features: bot, taskmodule
+      source: appTemplate
       summary: Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#book-a-room
@@ -151,6 +156,7 @@ extra:
       title: Celebrate App Template
       type: apptemplate
       features: bot, tab
+      source: appTemplate
       summary: Celebrations is a Teams app that helps team members celebrate each others’ birthdays, anniversaries, and other recurring events.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations
@@ -169,6 +175,7 @@ extra:
       title: Company Communicator App Template
       type: apptemplate
       features: bot, tab, taskmodule
+      source: appTemplate
       summary: The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations
@@ -187,6 +194,7 @@ extra:
       title: Contact Group App Template
       type: apptemplate
       features: tab
+      source: appTemplate
       summary: The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization's contact groups (formerly known as distribution lists or communication groups). 
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#contact-group-lookup-
@@ -205,6 +213,7 @@ extra:
       title: Crowd Sourcer App Template
       type: apptemplate
       features: bot, msgext
+      source: appTemplate
       summary: CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#crowdsourcer
@@ -223,6 +232,7 @@ extra:
       title: Custom Stickers App Template
       type: apptemplate
       features:  msgext
+      source: appTemplate
       summary: This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers
@@ -241,6 +251,7 @@ extra:
       title: Expert Finder App Template
       type: apptemplate
       features:  bot, msgext, taskmodule
+      source: appTemplate
       summary: Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers
@@ -259,6 +270,7 @@ extra:
       title: FAQ Plus App Template
       type: apptemplate
       features: bot, msgext, tab
+      source: appTemplate
       summary: FAQ Plus is a friendly Q&A bot that brings a human in the loop when it is unable to help.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#faq-plus
@@ -277,6 +289,7 @@ extra:
       title: Goal Tracker App Template
       type: apptemplate
       features: bot, msgext, tab
+      source: appTemplate
       summary:  Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#goal-tracker-
@@ -295,6 +308,7 @@ extra:
       title: Great Ideas App Template
       type: apptemplate
       features: bot, msgext, tab
+      source: appTemplate
       summary:  The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-
@@ -313,6 +327,7 @@ extra:
       title: Group Activities App Template
       type: apptemplate
       features: bot, msgext
+      source: appTemplate
       summary:  Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-
@@ -331,6 +346,7 @@ extra:
       title: Grow Your Skills App Template
       type: apptemplate
       features: bot, msgext, tabs
+      source: appTemplate
       summary:  The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#grow-your-skills-
@@ -349,6 +365,7 @@ extra:
       title: HR Support App Template
       type: apptemplate
       features: bot, msgext, tabs
+      source: appTemplate
       summary:  HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support
@@ -367,6 +384,7 @@ extra:
       title: Icebreaker App Template
       type: apptemplate
       features: bot
+      source: appTemplate
       summary:  Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support
@@ -385,6 +403,7 @@ extra:
       title: Incentives App Template
       type: apptemplate
       features: bot
+      source: appTemplate
       summary:  Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incentives
@@ -403,6 +422,7 @@ extra:
       title: Incident Reporter App Template
       type: apptemplate
       features: bot, msgext, taskmodule
+      source: appTemplate
       summary:  The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-
@@ -421,6 +441,7 @@ extra:
       title: Open Badges App Template
       type: apptemplate
       features: bot, msgext, taskmodule
+      source: appTemplate
       summary:  Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-
@@ -439,6 +460,7 @@ extra:
       title: Quick Responses App Template
       type: apptemplate
       features: bot, msgext, taskmodule
+      source: appTemplate
       summary:  Quick Responses is a Microsoft Teams app that answering users' frequently asked questions (FAQs) using a messaging extension.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#quick-responses
@@ -457,6 +479,7 @@ extra:
       title: Remote Support App Template
       type: apptemplate
       features: bot, msgext, taskmodule
+      source: appTemplate
       summary:  Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#remote-support-
@@ -475,6 +498,7 @@ extra:
       title: Request-a-team App Template
       type: apptemplate
       features: bot, msgext, taskmodule
+      source: appTemplate
       summary: Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#request-a-team-
@@ -493,6 +517,7 @@ extra:
       title: Scrums for Channels App Template
       type: apptemplate
       features: bot
+      source: appTemplate
       summary: Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-channels-
@@ -511,6 +536,7 @@ extra:
       title: Scrums for Channels App Template
       type: apptemplate
       features: bot
+      source: appTemplate
       summary: Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-group-chat-
@@ -530,6 +556,7 @@ extra:
       title: Share Now App Template
       type: apptemplate
       features: bot, msgext, tab
+      source: appTemplate
       summary: The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#share-now-
@@ -548,6 +575,7 @@ extra:
       title: SharePoint List Search App Template
       type: apptemplate
       features: msgext
+      source: appTemplate
       summary: The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#sharepoint-list-search
@@ -566,6 +594,7 @@ extra:
       title: Staff Check-ins App Template
       type: apptemplate
       features: tab
+      source: appTemplate
       summary: Staff Check-ins enables oversight communication between your business and field personnel.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#staff-check-ins-
@@ -584,6 +613,7 @@ extra:
       title: Visitor Management App Template
       type: apptemplate
       features: msgext
+      source: appTemplate
       summary: The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#visitor-management-
@@ -602,6 +632,7 @@ extra:
       title: Workplace Awards App Template
       type: apptemplate
       features: bot, msgext, tab
+      source: appTemplate
       summary: The app enables you to setup and manage an employee rewards and recognition (R&R) program where employees can easily nominate and endorse colleagues and your R&R leader can view submitted nominations, grant awards, and announce recipients
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#workplace-awards-
@@ -626,6 +657,7 @@ extra:
       title: Get Started (Learning Pathways)
       type: solution
       features: tab
+      source: msftTeams
       summary: Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL's prior to installation.
       thumbnail:
       url: https://github.com/msft-teams/tools/tree/master/M365%20Learning%20Pathways
@@ -643,6 +675,7 @@ extra:
       title: Microsoft Teams Sample Hub
       type: demo
       features: tab
+      source: msftTeams
       summary: The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the "art of the possible" by showcasing the Teams platform and articulating the value that it can deliver.
       thumbnail:
       url: https://github.com/msft-teams/tools/tree/master/TeamsSampleHub
@@ -668,6 +701,7 @@ extra:
       title: Simple connector using NodeJS
       type: barebones
       features: connector
+      source: officeDev
       summary: 
       thumbnail: /img/thumbnails/_nopreview.png
       url: https://docs.microsoft.com/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#connectors
@@ -685,6 +719,7 @@ extra:
       title: Simple connector using ASP.NET
       type: barebones
       features: connector
+      source: officeDev
       summary: Simple example of a connector 
       thumbnail:
       url: https://docs.microsoft.com/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#connectors
@@ -702,6 +737,7 @@ extra:
       title: Simple message bot using C#/ASP.NET Core
       type: barebones
       features: bot
+      source: botBuilder
       summary: Simple example of a bot that responds to messages based on regex matching 
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -719,6 +755,7 @@ extra:
       title: Simple message bot using NodeJS
       type: barebones
       features: bot
+      source: botBuilder
       summary: Simple example of a bot that responds to messages based on regex matching 
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -736,6 +773,7 @@ extra:
       title: Simple message bot using Python
       type: barebones
       features: bot
+      source: botBuilder
       summary: Simple example of a bot that responds to messages based on regex matching 
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -753,6 +791,7 @@ extra:
       title: OAuth Bot using C#/ASP.NET Core
       type: barebones
       features: bot
+      source: botBuilder
       summary: Bot authenticates user with Azure AD to allow calling back-end service on user's behalf
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -770,6 +809,7 @@ extra:
       title: OAuth Bot using NodeJS
       type: barebones
       features: bot
+      source: botBuilder
       summary: Bot authenticates user with Azure AD to allow calling back-end service on user's behalf
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -787,6 +827,7 @@ extra:
       title: OAuth Bot using Python
       type: barebones
       features: bot
+      source: botBuilder
       summary: Bot authenticates user with Azure AD to allow calling back-end service on user's behalf
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -804,6 +845,7 @@ extra:
       title: File Upload Bot using C#/ASP.NET Core
       type: barebones
       features: bot
+      source: botBuilder
       summary: Bot uploads a file from the user
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -821,6 +863,7 @@ extra:
       title: File Upload Bot using NodeJS
       type: barebones
       features: bot
+      source: botBuilder
       summary: Bot uploads a file from the user
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -838,6 +881,7 @@ extra:
       title: File Upload Bot using Python
       type: barebones
       features: bot
+      source: botBuilder
       summary: Bot uploads a file from the user
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -855,6 +899,7 @@ extra:
       title: Search messaging extension using C#/ASP.NET Core
       type: barebones
       features: msgext
+      source: botBuilder
       summary: Simple messaging extension with a Search command
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -872,6 +917,7 @@ extra:
       title: Search messaging extension using NodeJS
       type: barebones
       features: msgext
+      source: botBuilder
       summary: Simple messaging extension with a Search command
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -889,6 +935,7 @@ extra:
       title: Search messaging extension using Python
       type: barebones
       features: msgext
+      source: botBuilder
       summary: Simple messaging extension with a Search command
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -906,6 +953,7 @@ extra:
       title: Search messaging extension w/Auth using C#/ASP.NET Core
       type: barebones
       features: msgext
+      source: botBuilder
       summary: Messaging extension with a Search command, authentication, and configuration
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -923,6 +971,7 @@ extra:
       title: Search messaging extension w/Auth using NodeJS
       type: barebones
       features: msgext
+      source: botBuilder
       summary: Messaging extension with a Search command, authentication, and configuration
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -940,6 +989,7 @@ extra:
       title: Search messaging extension w/Auth using Python
       type: barebones
       features: msgext
+      source: botBuilder
       summary: Messaging extension with a Search command, authentication, and configuration
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -957,6 +1007,7 @@ extra:
       title: Action messaging extension using C#/ASP.NET Core
       type: barebones
       features: msgext
+      source: botBuilder
       summary: Simple messaging extension with a action command. Response inserted into the compose message area.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -974,6 +1025,7 @@ extra:
       title: Simple action messaging extension using NodeJS
       type: barebones
       features: msgext
+      source: botBuilder
       summary: Simple messaging extension with a action command. Response inserted into the compose message area.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -991,6 +1043,7 @@ extra:
       title: Action messaging extension using Python
       type: barebones
       features: msgext, bot
+      source: botBuilder
       summary: Messaging extension with a action command. Response inserted into the compose message area.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -1008,6 +1061,7 @@ extra:
       title: Action messaging extension with bot response using C#/ASP.NET Core
       type: barebones
       features: msgext, bot
+      source: botBuilder
       summary: Messaging extension with a action command. Response inserted into the conversation by the bot.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -1025,6 +1079,7 @@ extra:
       title: Simple action messaging extension with bot response using NodeJS
       type: barebones
       features: msgext
+      source: botBuilder
       summary: Messaging extension with a action command. Response inserted into the conversation by the bot.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -1042,6 +1097,7 @@ extra:
       title: Simple action messaging extension with bot response using Python
       type: barebones
       features: msgext, bot
+      source: botBuilder
       summary: Messaging extension with a action command. Response inserted into the conversation by the bot.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples
@@ -1059,6 +1115,7 @@ extra:
       title: Outgoing webhook using C#/ASP.NET Core
       type: barebones
       features: webhook
+      source: officeDev
       summary: Illustrates how to create an Outgoing Webhook for Microsoft Teams in C#/.NET.
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#outgoing-webhooks
@@ -1076,6 +1133,7 @@ extra:
       title: Outgoing webhook using NodeJS
       type: barebones
       features: webhook
+      source: officeDev
       summary: Illustrates how to create a simple Outgoing Webhook for Microsoft Teams in ~50 lines of Node.js code
       thumbnail:
       url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#outgoing-webhooks
@@ -1103,6 +1161,7 @@ extra:
       title: Consulting Bot
       type: demo
       features: bot, msgext, taskmodule
+      source: pnp
       summary: This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)
       thumbnail: 
       url: https://github.com/pnp/teams-dev-samples/tree/master/samples/app-consulting-bot
@@ -1121,6 +1180,7 @@ extra:
       title: StateBot
       type: barebones
       features: bot
+      source: pnp
       summary: This simple bot demonstrates conversation state and user state in Bot Framework v4
       thumbnail: 
       url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-statebot
@@ -1139,6 +1199,7 @@ extra:
       title: Field visit mashup
       type: demo
       features: tab
+      source: pnp
       summary: A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits. 
       url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tab-field-visit-mashup
       author: Bob German
@@ -1156,6 +1217,7 @@ extra:
       title: Customer search messaging extension
       type: demo
       features: msgext
+      source: pnp
       summary: A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation
       url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-customer-search
       author: Bob German
@@ -1181,6 +1243,7 @@ extra:
       title: HR Talent App demo/lab
       type: demo
       features: bot, msgext, tab, taskmodule
+      source: officeDev
       summary: This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)
       thumbnail: 
       url: https://github.com/OfficeDev/msteams-sample-contoso-hr-talent-app
