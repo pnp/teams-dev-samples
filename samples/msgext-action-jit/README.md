@@ -8,16 +8,16 @@ This sample is an Action messaging extension created using the [Teams Yeoman Gen
  2. How to use Just In Time Installer with an adaptive card to install an app to teams/personal/group chat.
 
 It checks whether the app is installed first, if not then prompts for installation with an adaptive card with just in time installer.
-![picture of JIT in adaptive card](assets/image1.png)
+![picture of JIT in adaptive card](assets/pic1.png)
 
 ... on continue installs the app
-![picture of the form](assets/image2.png)
+![picture of the form](assets/pic2.png)
 
 ... when invoked after install, shows adaptive card action form
-![picture of the form](assets/image3.png)
+![picture of the form](assets/pic3.png)
 
 ... adaptive card response posted directly in the conversation. If not JIT, you might get an error "This bot is not part of the conversation roster"
-![picture of the conversation](assets/image4.png)
+![picture of the conversation](assets/pic4.png)
 
 For project structure see the [Yo Teams wiki for the project structure](https://github.com/PnP/generator-teams/wiki/Project-Structure)
 
@@ -87,7 +87,7 @@ For project structure see the [Yo Teams wiki for the project structure](https://
 
 - Test in Microsoft Teams by clicking the ... beneath the compose box in a Team
 
-    <img src="assets/image6.png" alt="Rajesh Sitaraman Teams Sample" height=450 />
+    <img src="assets/pic6.png" alt="Rajesh Sitaraman Teams Sample" height=450 />
 
 ## Features
 
