@@ -1,118 +1,106 @@
-# msgext-action-jit - Microsoft Teams App
+# Messaging Extension with Just in time installer
 
-Generate a Microsoft Teams application.
+## Summary
 
-TODO: Add your documentation here
+This sample is an Action messaging extension created using the [Teams Yeoman Generator](https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/get-started-yeoman).
 
-## Getting started with Microsoft Teams Apps development
+ 1. How to post an adaptive card response directly into the conversation
+ 2. How to use Just In Time Installer with an adaptive card to install an app to teams/personal/group chat.
 
-Head on over to [Microsoft Teams official documentation](https://developer.microsoft.com/en-us/microsoft-teams) to learn how to build Microsoft Teams Tabs or the [Microsoft Teams Yeoman generator Wiki](https://github.com/PnP/generator-teams/wiki) for details on how this solution is set up.
+It checks whether the app is installed first, if not then prompts for installation with an adaptive card with just in time installer.
+![picture of JIT in adaptive card](assets/image1.png)
 
-## Project setup
+... on continue installs the app
+![picture of the form](assets/image2.png)
 
-All required source code are located in the `./src` folder - split into two parts
+... when invoked after install, shows adaptive card action form
+![picture of the form](assets/image3.png)
 
-* `app` for the application
-* `manifest` for the Microsoft Teams app manifest
+... adaptive card response posted directly in the conversation. If not JIT, you might get an error "This bot is not part of the conversation roster"
+![picture of the conversation](assets/image4.png)
 
-For further details se the [Yo Teams wiki for the project structure](https://github.com/PnP/generator-teams/wiki/Project-Structure)
+For project structure see the [Yo Teams wiki for the project structure](https://github.com/PnP/generator-teams/wiki/Project-Structure)
 
-## Building the app
+## Frameworks
 
-The application is built using the `build` Gulp task.
+![drop](https://img.shields.io/badge/Bot&nbsp;Framework-4.10-green.svg)
 
-``` bash
-npm i -g gulp gulp-cli
-gulp build
-```
+## Prerequisites
 
-## Building the manifest
+* [Office 365 tenant](https://github.com/pnp/generator-teams/wiki/Setup-Tenant)
+* [Node.js](https://nodejs.org) version 10.14.1 or higher
+* [ngrok](https://ngrok.com) or similar tunneling application is required for local testing
 
-To create the Microsoft Teams Apps manifest, run the `manifest` Gulp task. This will generate and validate the package and finally create the package (a zip file) in the `package` folder. The manifest will be validated against the schema and dynamically populated with values from the `.env` file.
+    ```bash
+    # determine node version
+    node --version
+    ```
+---
 
-``` bash
-gulp manifest
-```
+## Minimal Path to Awesome
 
-## Configuration
+- Clone the repository
 
-Configuration is stored in the `.env` file. 
+    ```bash
+    git clone https://github.com/PnP/teams-dev-samples.git
+    ```
 
-## Debug and test locally
+- In a console, navigate to `samples/msgext-action-jit`
 
-To debug and test the solution locally you use the `serve` Gulp task. This will first build the app and then start a local web server on port 3007, where you can test your Tabs, Bots or other extensions. Also this command will rebuild the App if you change any file in the `/src` directory.
+    ```bash
+    cd samples/msgext-action-jit
+    ```
 
-``` bash
-gulp serve
-```
+- Install modules
 
-To debug the code you can append the argument `debug` to the `serve` command as follows. This allows you to step through your code using your preferred code editor.
+    ```bash
+    npm install
+    ```
 
-``` bash
-gulp serve --debug
-```
+    or
 
-To step through code in Visual Studio Code you need to add the following snippet in the `./.vscode/launch.json` file. Once done, you can easily attach to the node process after running the `gulp server --debug` command.
+    ```bash
+    yarn
+    ```
 
-``` json
-{
-    "type": "node",
-    "request": "attach",
-    "name": "Attach",
-    "port": 5858,
-    "sourceMaps": true,
-    "outFiles": [
-        "${workspaceRoot}/dist/**/*.js"
-    ],
-    "remoteRoot": "${workspaceRoot}/src/"
-},
-```
+- Run ngrok - point to port 3007
 
-### Using ngrok for local development and hosting
+    ```bash
+    ngrok http -host-header=rewrite 3007
+    ```
 
-In order to make development locally a great experience it is recommended to use [ngrok](https://ngrok.io), which allows you to publish the localhost on a public DNS, so that you can consume the bot and the other resources in Microsoft Teams. 
+- Since messaging extensions utilize the Azure Bot Framework, you will need to register a new bot.
+[These instructions](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams#register-your-web-service-with-the-bot-framework) provide options for registering with or without an Azure subscription. 
+  - Be sure to enable the Microsoft Teams bot channel so your solution can communicate with Microsoft Teams
+  - For local testing, set the messaging endpoint to the https URL returned by ngrok plus "/api/messages"
+  - Note the bot's Application ID and password (also called the Client Secret) assigned to your bot during the registration process. In the Azure portal this is under the Bot Registration settings; in the legacy portal it's in the Settings tab. Click Manage to go to Azure AD to obtain the Client Secret. You may need to create a new Application Secret in order to have an opportunity to copy it out of the Azure portal.
 
-To use ngrok, it is recommended to use the `gulp ngrok-serve` command, which will read your ngrok settings from the `.env` file and automatically create a correct manifest file and finally start a local development server using the ngrok settings.
+- Update the `.env`(create from `.env.development`) configuration for the bot to use the Microsoft App Id and App Password (aka Client Secret) from the previous step. Hostname with the ngrok returned hostname like `071b0791d531.ngrok.io`
 
-### Additional build options
+- Run the bot locally
+    ```bash
+    gulp dev-serve
+    ```
 
-You can use the following flags for the `serve`, `ngrok-serve` and build commands:
+- Upload the application package (./package folder)
+  Upload the resulting zip file into Teams [using these instructions](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload).
 
-* `--no-linting` - skips the linting of Typescript during build to improve build times
-* `--debug` - builds in debug mode
+- Test in Microsoft Teams by clicking the ... beneath the compose box in a Team
 
-## Deploying to Azure using Git
+    <img src="assets/image6.png" alt="Rajesh Sitaraman Teams Sample" height=450 />
 
-If you want to deploy to Azure using Git follow these steps.
+## Features
 
-This will automatically deploy your files to Azure, download the npm pacakges, build the solution and start the web server using Express.
+This is a simple Action messaging extension
 
-1. Log into [the Azure Portal](https://portal.azure.com)
-2. Create a new *Resource Group* or use an existing one
-3. Create a new *Web App* with Windows App Service Plan and give it the name of your tab, the same you used when asked for URL in the Yeoman generator. In your case https://msgextactionjit.azurewebsites.net.
-4. Add the following keys in the *Configuration* -> *Application Settings*; Name = `WEBSITE_NODE_DEFAULT_VERSION`, Value = `8.10.0` and Name = `SCM_COMMAND_IDLE_TIMEOUT`,  Value = `1800`. Click Save.
-5. Go to *Deployment Center*
-6. Choose *Local Git* as source and *App Service build service* as the Build Provider 
-7. Click on *Deployment Credentials* and store the App Credentials securely
-8. In your tab folder initialize a Git repository using `git init`
-9. Build the solution using `gulp build` to make sure you don't have any errors
-10. Commit all your files using `git add -A && git commit -m "Initial commit"`
-11. Run the following command to set up the remote repository: `git remote add azure https://<username>@msgextactionjit.scm.azurewebsites.net:443/msgextactionjit.git`. You need to replace <username> with the username of the App Credentials you retrieved in _Deployment Credentials_. You can also copy the URL from *Options* in the Azure Web App.
-12. To push your code use to Azure use the following command: `git push azure master`, you will be asked for your credentials the first time, insert the Password for the App Credential. Note that you should update the Azure Web Site application setting before pushing the code as the settings are needed when building the application.
-13. Wait until the deployment is completed and navigate to https://msgextactionjit.azurewebsites.net/privacy.html to test that the web application is running
-14. Done
-15. Repeat step 11 for every commit you do and want to deploy
 
-> NOTE: The `.env` file is excluded from source control and will not be pushed to the web site so you need to ensure that all the settings present in the `.env` file are added as application settings to your Azure Web site (except the `PORT` variable which is used for local debugging).
+## Version history
 
-## Logging
+Version|Date|Author|Comments
+-------|----|----|--------
+1.0|Sep 10, 2020|Rajesh Sitaraman|Initial release
 
-To enable logging for the solution you need to add `msteams` to the `DEBUG` environment variable. See the [debug package](https://www.npmjs.com/package/debug) for more information. By default this setting is turned on in the `.env` file.
 
-Example for Windows command line:
+## Disclaimer
 
-``` bash
-SET DEBUG=msteams
-```
-
-If you are using Microsoft Azure to host your Microsoft Teams app, then you can add `DEBUG` as an Application Setting with the value of `msteams`.
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
