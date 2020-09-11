@@ -1344,25 +1344,6 @@ extra:
       modifiedtext: April 18, 2019
       modified: 2019-04-18
 
-# Tab tags Teams using a TermSet with Graph Extensions
-    - name: tab-tag-teams-graph-ext
-      title: Web part to tag a Team
-      type: demo
-      features: tab
-      source: pnp
-      summary: Web part to tag a Team using managed metadata and Graph extension
-      thumbnail: 
-      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tagging
-      author: Federico Porceddu
-      client_language: typescript
-      client_platform: spfx
-      client_ui: react
-      server_language:
-      server_platform:
-      bot_framework:
-      modifiedtext: April 18, 2019
-      modified: 2019-04-18
-
 # Tab or web part shows public teams I'm not a member of
     - name: tab-public-teams-not-member-of
       title: Tab or web part to show Teams to join
@@ -1420,6 +1401,139 @@ extra:
       modifiedtext: January 29, 2020
       modified: 2020-01-29
 
+# Outlook add-in saves emails to Teams or OneDrive folders
+    - name: other-outlook-addin-save-to-teams
+      title: Outlook add-in saves email to Teams
+      type: demo
+      features: other
+      source: pnp
+      summary: Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)
+      thumbnail: 
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-outlook-copy2teams
+      author: Markus Moeller
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: January 29, 2020
+      modified: 2020-01-29
+
+# Bot calls Microsoft Graph
+    - name: bot-call-graph-as-user
+      title: Bot calls Graph as a user
+      type: barebones
+      features: bot
+      source: pnp
+      summary: Simple Bot calls Graph and displays recent emails from the user's inbox
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-call-graph-as-user
+      author: Bob German
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: javascript
+      server_platform: restify
+      bot_framework: bot40
+      modifiedtext: January 29, 2020
+      modified: 2020-01-29
+
+# Document review Search messaging extension
+    - name: msgext-graph-search-docreview
+      title: Document review Search messaging extension
+      type: demo
+      features: msgext
+      source: pnp
+      summary: Search-based messaging extension queries Graph API to find documents needing review
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-graph-search-docreview
+      author: Markus Moeller
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: typescript
+      server_platform: express
+      bot_framework: bot40
+      modifiedtext: August 26, 2020
+      modified: 2020-08-26
+
+# Document review Search messaging extension
+    - name: msgext-graph-task-creation
+      title: Task creation messaging extension
+      type: demo
+      features: msgext
+      source: pnp
+      summary: Teams messaging extension uses Microsoft Graph to create tasks in ToDo or Planner
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-graph-task-creation
+      author: Stephan Bisser
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot40
+      modifiedtext: August 24, 2020
+      modified: 2020-08-24
+
+# Tab uses MSAL 2.0 auth and calls Graph API
+    - name: tab-aad-msal2
+      title: Tab uses MSAL 2.0 and calls Graph API
+      type: barebones
+      features: tab
+      source: pnp
+      summary: Tab uses MSAL 2.0 in a pop-up and calls Graph API. Shows authorization using auth code PKCE from a static web site.
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-aad-msal2
+      author: Bob German
+      client_language: javascript
+      client_platform: spa
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: August 25, 2020
+      modified: 2020-08-25
+
+# Tab uses SPFx to call Graph API
+    - name: tab-aad-spfx
+      title: Tab uses SharePoint Framework to call Graph API
+      type: barebones
+      features: tab
+      source: pnp
+      summary: Tab uses SPFx and Graph to display recent email
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-aad-spfx
+      author: Bob German
+      client_language: javascript
+      client_platform: spfx
+      client_ui: 
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: August 25, 2020
+      modified: 2020-08-25
+
+# Tab uses SPFx to call Graph API
+    - name: tab-spfx-oauth2
+      title: SPFx tab uses OAuth 2.0 to call 3rd party service (Box)
+      type: demo
+      features: tab
+      source: pnp
+      summary: Tab uses OAuth 2.0 in a pop-up, calls the Box API and displays Box Content Explorer
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-spfx-oauth2
+      author: Ramin Ahmadi
+      client_language: javascript
+      client_platform: spfx
+      client_ui: 
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: August 25, 2020
+      modified: 2020-08-25
+
 
 
 
@@ -1465,7 +1579,9 @@ authors:
     - Luis Mañez
     - Markus Moeller
     - Microsoft
+    - Ramin Ahmadi
     - Siddharth Vaghasia
+    - Stephan Bisser
 repo_url: https://github.com/pnp/teams-dev-samples
 edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
