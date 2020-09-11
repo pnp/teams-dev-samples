@@ -1515,6 +1515,25 @@ extra:
       modifiedtext: August 25, 2020
       modified: 2020-08-25
 
+# Action based messaging extension calls Graph API
+    - name: msgext-graph-action-docreview
+      title: Action messaging extension calls Graph
+      type: demo
+      features: msgext
+      source: pnp
+      summary: Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review.
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-graph-action-docreview
+      author: Markus Moeller
+      client_language:
+      client_platform:
+      client_ui: 
+      server_language: typescript
+      server_platform: express
+      bot_framework: bot40
+      modifiedtext: August 28, 2020
+      modified: 2020-08-28
+
 
 
 
