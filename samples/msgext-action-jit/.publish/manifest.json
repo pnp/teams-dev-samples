@@ -1,0 +1,57 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.6/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.6",
+    "id": "936d2b10-f3ca-11ea-a1bf-cdcca3fcd0dc",
+    "version": "{version}",
+    "packageName": "msgextactionjit",
+    "developer": {
+        "name": "rjesh",
+        "websiteUrl": "{baseUrl0}",
+        "privacyUrl": "{baseUrl0}/privacy.html",
+        "termsOfUseUrl": "{baseUrl0}/tou.html"
+    },
+    "name": {
+        "short": "{appname}",
+        "full": "{fullappname}"
+    },
+    "description": {
+        "short": "TODO: add short description here",
+        "full": "TODO: add full description here"
+    },
+    "icons": {
+        "outline": "icon-outline.png",
+        "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "configurableTabs": [],
+    "staticTabs": [],
+    "bots": [],
+    "connectors": [],
+    "composeExtensions": [
+        {
+            "botId": "{botId0}",
+            "canUpdateConfiguration": false,
+            "commands": [
+                {
+                    "id": "helloMessageExtension",
+                    "title": "Hello",
+                    "description": "Add a clever description here",
+                    "initialRun": true,
+                    "type": "action",
+                    "context": [
+                        "compose",
+                        "commandBox",
+                        "message"
+                    ],
+                    "fetchTask": true
+                }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [],
+    "showLoadingIndicator": false
+}
