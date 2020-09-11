@@ -1401,25 +1401,6 @@ extra:
       modifiedtext: January 29, 2020
       modified: 2020-01-29
 
-# Outlook add-in saves emails to Teams or OneDrive folders
-    - name: other-outlook-addin-save-to-teams
-      title: Outlook add-in saves email to Teams
-      type: demo
-      features: other
-      source: pnp
-      summary: Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)
-      thumbnail: 
-      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-outlook-copy2teams
-      author: Markus Moeller
-      client_language: typescript
-      client_platform: spfx
-      client_ui: react
-      server_language:
-      server_platform:
-      bot_framework:
-      modifiedtext: January 29, 2020
-      modified: 2020-01-29
-
 # Bot calls Microsoft Graph
     - name: bot-call-graph-as-user
       title: Bot calls Graph as a user
@@ -1458,7 +1439,7 @@ extra:
       modifiedtext: August 26, 2020
       modified: 2020-08-26
 
-# Document review Search messaging extension
+# Task creation messaging extension
     - name: msgext-graph-task-creation
       title: Task creation messaging extension
       type: demo
