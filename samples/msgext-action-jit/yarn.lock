@@ -14,6 +14,20 @@
     uuid "^3.2.1"
     xml2js "^0.4.19"
 
+"@azure/ms-rest-js@1.8.15":
+  version "1.8.15"
+  resolved "https://registry.yarnpkg.com/@azure/ms-rest-js/-/ms-rest-js-1.8.15.tgz#4267b6b8c00d85301791fe0cf347e0455a807338"
+  integrity sha512-kIB71V3DcrA4iysBbOsYcxd4WWlOE7OFtCUYNfflPODM0lbIR23A236QeTn5iAeYwcHmMjR/TAKp5KQQh/WqoQ==
+  dependencies:
+    "@types/tunnel" "0.0.0"
+    axios "^0.19.0"
+    form-data "^2.3.2"
+    tough-cookie "^2.4.3"
+    tslib "^1.9.2"
+    tunnel "0.0.6"
+    uuid "^3.2.1"
+    xml2js "^0.4.19"
+
 "@babel/code-frame@^7.0.0":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -255,7 +269,7 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.10.0.tgz#15815dff82c8dc30827f6b1286f865902945095a"
   integrity sha512-SOIyrdADB4cq6eY1F+9iU48iIomFAPltu11LCvA9PKcyEwHadjCFzNVPotAR+oEJA0bCP4Xvvgy+vwu1ZjVh8g==
 
-"@types/node@^10.12.18":
+"@types/node@^10.12.18", "@types/node@^10.17.27":
   version "10.17.31"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.31.tgz#fd3578fed25e5946372b06dab43eae49248367fa"
   integrity sha512-AiazLSnsm7GfTxr08GrqeqMxygR/yV78RDk5gaw+S7pOP70BIqUbTFl9vZRyUC/XubcwIqkiiHxbJNFAGvSoOw==
@@ -297,6 +311,13 @@
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@types/tough-cookie/-/tough-cookie-4.0.0.tgz#fef1904e4668b6e5ecee60c52cc6a078ffa6697d"
   integrity sha512-I99sngh224D0M7XgW1s120zxCt3VYQ3IQsuw3P3jbq5GG4yc79+ZjyKznyOGIQrflfylLgcfekeZW/vk0yng6A==
+
+"@types/tunnel@0.0.0":
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/@types/tunnel/-/tunnel-0.0.0.tgz#c2a42943ee63c90652a5557b8c4e56cda77f944e"
+  integrity sha512-FGDp0iBRiBdPjOgjJmn1NH0KDLN+Z8fRmo+9J7XGBhubq1DPrGrbmG4UTlGzrpbCpesMqD0sWkzi27EYkOMHyg==
+  dependencies:
+    "@types/node" "*"
 
 "@types/ws@^6.0.3":
   version "6.0.4"
@@ -1092,6 +1113,14 @@ body-parser@1.18.3:
     raw-body "2.3.3"
     type-is "~1.6.16"
 
+botbuilder-core@4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/botbuilder-core/-/botbuilder-core-4.10.0.tgz#e5b56d59011161e458a8fa81c35c9f58fb9e5777"
+  integrity sha512-pRj3STTivYiwpXazMNKyYSo8RfoFiPNvbwKeoVoeTfMveugbljHvWyydbDe9D0yM5iJGm8SkN4r8rIa1aDO8iQ==
+  dependencies:
+    assert "^1.4.1"
+    botframework-schema "4.10.0"
+
 botbuilder-core@4.7.1:
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/botbuilder-core/-/botbuilder-core-4.7.1.tgz#8b9198aa91b1e85f2116e79a178d43dbaf8aec82"
@@ -1120,6 +1149,21 @@ botbuilder-teams-messagingextensions@1.6.0, botbuilder-teams-messagingextensions
   dependencies:
     debug "4.1.1"
 
+botbuilder@4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/botbuilder/-/botbuilder-4.10.0.tgz#77560439c0c3bace195975a8d360acca037d0ff8"
+  integrity sha512-A80shB/vmAS6omhqZ8tY6IkBvzVzvCTEE6PeRm07uhrnDRdqAEklxXqkAxzko/oCNQ1/WUljtf92R0fpi4WQiw==
+  dependencies:
+    "@azure/ms-rest-js" "1.8.15"
+    "@types/node" "^10.17.27"
+    axios "^0.19.0"
+    botbuilder-core "4.10.0"
+    botframework-connector "4.10.0"
+    botframework-streaming "4.10.0"
+    filenamify "^4.1.0"
+    fs-extra "^7.0.1"
+    moment-timezone "^0.5.28"
+
 botbuilder@4.7.1:
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/botbuilder/-/botbuilder-4.7.1.tgz#11584d42adc7af8f2e7f60a7d54fddab2502651a"
@@ -1133,6 +1177,22 @@ botbuilder@4.7.1:
     botframework-streaming "4.7.1"
     filenamify "^4.1.0"
     fs-extra "^7.0.1"
+
+botframework-connector@4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/botframework-connector/-/botframework-connector-4.10.0.tgz#3f33d261e7f7e727dfba12b26dc2ecd069a5f8ee"
+  integrity sha512-xjqeBo4bp1hLtYAjCawj4byRSRhtn6eM1U+bphKn9GVey813/sROEGhACrqjAJ4wXSVjW04/caWj/qDUNCN2Vg==
+  dependencies:
+    "@azure/ms-rest-js" "1.8.15"
+    "@types/jsonwebtoken" "7.2.8"
+    "@types/node" "^10.17.27"
+    adal-node "0.2.1"
+    base64url "^3.0.0"
+    botframework-schema "4.10.0"
+    form-data "^2.3.3"
+    jsonwebtoken "8.0.1"
+    node-fetch "^2.6.0"
+    rsa-pem-from-mod-exp "^0.8.4"
 
 botframework-connector@4.7.1:
   version "4.7.1"
@@ -1150,10 +1210,24 @@ botframework-connector@4.7.1:
     node-fetch "^2.2.1"
     rsa-pem-from-mod-exp "^0.8.4"
 
+botframework-schema@4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/botframework-schema/-/botframework-schema-4.10.0.tgz#b4eea18cf61a49d3da10efd10270c4307ea93ddd"
+  integrity sha512-Llix9JsmeRDL2vHKPdtOoZ1Na69TR5uqAInTpkuudYexEu5Q0zb8L97stWpxEDLNsMdkT/FyZJKCXnFpaNK9ug==
+
 botframework-schema@4.7.1:
   version "4.7.1"
   resolved "https://registry.yarnpkg.com/botframework-schema/-/botframework-schema-4.7.1.tgz#73097a326e72305aeb3cb328a64739059df2d626"
   integrity sha512-HBUjCwLEL292kkBEm7KRwz+Mb57weww1XXnhuX4AfZHW4L3hXDigILct5OrSf9LEq8U9xtKJ+YfdY7i2dJzn9g==
+
+botframework-streaming@4.10.0:
+  version "4.10.0"
+  resolved "https://registry.yarnpkg.com/botframework-streaming/-/botframework-streaming-4.10.0.tgz#a7407ddf2de76719eed2238b9040bf8aade5b1d6"
+  integrity sha512-+fpEqL/3JbCRE7+/mJVI3U1L4jeL76V0YQkOnfzJ5eW0tK0En2rix5potkpYRev/N2lg8WriP5Qeyz2yJz9uew==
+  dependencies:
+    "@types/ws" "^6.0.3"
+    uuid "^3.4.0"
+    ws "^7.1.2"
 
 botframework-streaming@4.7.1:
   version "4.7.1"
@@ -4806,6 +4880,18 @@ mkpath@^0.1.0:
   resolved "https://registry.yarnpkg.com/mkpath/-/mkpath-0.1.0.tgz#7554a6f8d871834cc97b5462b122c4c124d6de91"
   integrity sha1-dVSm+Nhxg0zJe1RisSLEwSTW3pE=
 
+moment-timezone@^0.5.28:
+  version "0.5.31"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.31.tgz#9c40d8c5026f0c7ab46eda3d63e49c155148de05"
+  integrity sha512-+GgHNg8xRhMXfEbv81iDtrVeTcWt0kWmTEY1XQK14dICTXnWJnT0dxdlPspwqF3keKMVPXwayEsk1DI0AA/jdA==
+  dependencies:
+    moment ">= 2.9.0"
+
+"moment@>= 2.9.0":
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
+  integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
+
 morgan@1.9.1:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/morgan/-/morgan-1.9.1.tgz#0a8d16734a1d9afbc824b99df87e738e58e2da59"
@@ -4903,7 +4989,7 @@ ngrok@^3.1.1:
     request-promise-native "^1.0.7"
     uuid "^3.3.2"
 
-node-fetch@^2.2.1:
+node-fetch@^2.2.1, node-fetch@^2.6.0:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
   integrity sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
@@ -7087,6 +7173,11 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
+tunnel@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/tunnel/-/tunnel-0.0.6.tgz#72f1314b34a5b192db012324df2cc587ca47f92c"
+  integrity sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==
+
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
@@ -7314,7 +7405,7 @@ utils-merge@1.0.1:
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
 
-uuid@^3.1.0, uuid@^3.2.1, uuid@^3.3.2:
+uuid@^3.1.0, uuid@^3.2.1, uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==

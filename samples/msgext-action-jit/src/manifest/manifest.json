@@ -5,7 +5,7 @@
   "version": "{{VERSION}}",
   "packageName": "{{PACKAGE_NAME}}",
   "developer": {
-    "name": "rjesh",
+    "name": "Rajesh Sitaraman - rjesh.com",
     "websiteUrl": "https://{{HOSTNAME}}",
     "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
     "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
@@ -25,7 +25,16 @@
   "accentColor": "#D85028",
   "configurableTabs": [],
   "staticTabs": [],
-  "bots": [],
+  "bots": [
+    {
+      "botId": "{{MICROSOFT_APP_ID}}",
+      "scopes": [
+        "team",
+        "personal",
+        "groupchat"
+      ]
+    }
+  ],
   "connectors": [],
   "composeExtensions": [
     {
@@ -35,7 +44,7 @@
         {
           "id": "helloMessageExtension",
           "title": "Hello",
-          "description": "Add a clever description here",
+          "description": "PNP Teams dev samples - just in time installer",
           "initialRun": true,
           "type": "action",
           "context": [

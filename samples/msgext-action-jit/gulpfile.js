@@ -380,3 +380,5 @@ task('serve', series('nuke', 'build', 'nodemon', 'watch'));
 task('manifest', series('validate-manifest', 'zip'));
 
 task('ngrok-serve', series('start-ngrok', 'manifest', 'serve'));
+
+task('dev-serve',series('manifest', 'serve'));
