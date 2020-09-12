@@ -26,15 +26,15 @@ createdDate: 09/09/2020 16:45:00 AM
 This sample is a **action** based messaging extension created mainly using SPFx Yeoman Generator and partially using the Teams Yeoman Generator.
 It uses the new SPFx capability to be [exposed as a Messaging extension](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-expose-webparts-teams#expose-web-part-as-microsoft-teams-messaging-extension)
 
-![Result: Documents for review](docs/05messagingextensionselecttaskmodule.png)
+![Result: Documents for review](docs/05MessagingExtensionSelectTaskModule.png)
 
 ... and an AdaptiveCard with document details is inserted into the conversation...
 
-![Document Thumbnail Card](docs/06messagingextensiondocadaptivecard.png?w=666)
+![Document Thumbnail Card](docs/06MessagingExtensionDocAdaptiveCard.png)
 
 ...finally another task module to mark the document as "Reviewed"
 
-![Task module for Review](docs/07messagingextensionreviewedtaskmodule.png)
+![Task module for Review](docs/07MessagingExtensionReviewedTaskModule.png)
 
 This example is fully documented in the author's [blog post](https://mmsharepoint.wordpress.com/2020/09/03/use-spfx-for-task-modules-in-teams-messaging-extensions-and-access-microsoft-graph/)
 
@@ -64,7 +64,7 @@ Version|Date|Author|Comments
 - Clone this repository
 - Ensure that you are at the solution folder
 - in the command-line run at two windows:
-  - for webpart folder **and** bot folder
+  - inside webpart folder **and** inside bot folder
   - **npm install** 
 
 - Since messaging extensions utilize the Azure Bot Framework, you will need to register a new bot. 
