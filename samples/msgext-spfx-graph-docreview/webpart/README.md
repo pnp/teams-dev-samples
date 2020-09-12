@@ -1,5 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Document Review SPFx Messaging Extension
+=======
+>>>>>>> fc2b564... Fixed README Header
 ---
 page_type: sample
 products:
@@ -24,6 +27,8 @@ createdDate: 09/09/2020 16:45:00 AM
 =======
 # msgext-spfx-graph-docreview
 >>>>>>> be254ab... Initial commit
+
+# Document Review SPFx Messaging Extension
 
 ## Summary
 
