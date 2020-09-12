@@ -1,4 +1,3 @@
-# Document Review SPFx Messaging Extension
 ---
 page_type: sample
 products:
@@ -20,6 +19,8 @@ extensions:
   - Community
 createdDate: 09/09/2020 16:45:00 AM
 ---
+
+# Document Review SPFx Messaging Extension
 
 ## Summary
 
