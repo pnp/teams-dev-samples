@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Document Review SPFx Messaging Extension
-=======
->>>>>>> fc2b564... Fixed README Header
-=======
->>>>>>> fc2b5645b4e763f29c39873e35f90072ef8d5877
 ---
 page_type: sample
 products:
@@ -27,12 +19,6 @@ extensions:
   - Community
 createdDate: 09/09/2020 16:45:00 AM
 ---
-<<<<<<< HEAD
-=======
-# msgext-spfx-graph-docreview
->>>>>>> be254ab... Initial commit
-=======
->>>>>>> fc2b5645b4e763f29c39873e35f90072ef8d5877
 
 # Document Review SPFx Messaging Extension
 
