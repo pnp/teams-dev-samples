@@ -1,0 +1,30 @@
+{
+  "name": "msteams-httpstatuscats",
+  "version": "1.0.0",
+  "description": "HTTP Status Cats app for MS Teams.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "botbuilder": "^4.10.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": ""
+  },
+  "license": "MIT",
+  "keywords": [
+    "microsoft",
+    "bot",
+    "teams",
+    "httpstatuscats"
+  ],
+  "devDependencies": {
+    "eslint": "^7.8.1"
+  }
+}

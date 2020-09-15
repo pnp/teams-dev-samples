@@ -1,0 +1,26 @@
+node_modules
+npm-debug.log
+package-lock.json
+test
+temp*
+
+.env
+
+### https://raw.github.com/github/gitignore/b304edf487ce607174e188712225b5269d43f279/Global/OSX.gitignore
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### IDE Settings (EditorConfig/Sublime)
+.editorconfig
+
+### IDE Settings (VSCode)
+.vscode
+.eslintrc
+.nvmrc
+
+### Azure
+.deployment
+
+### App Settings
