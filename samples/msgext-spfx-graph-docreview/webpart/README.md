@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Document Review SPFx Messaging Extension
 =======
 >>>>>>> fc2b564... Fixed README Header
+=======
+>>>>>>> fc2b5645b4e763f29c39873e35f90072ef8d5877
 ---
 page_type: sample
 products:
@@ -24,9 +27,12 @@ extensions:
   - Community
 createdDate: 09/09/2020 16:45:00 AM
 ---
+<<<<<<< HEAD
 =======
 # msgext-spfx-graph-docreview
 >>>>>>> be254ab... Initial commit
+=======
+>>>>>>> fc2b5645b4e763f29c39873e35f90072ef8d5877
 
 # Document Review SPFx Messaging Extension
 
@@ -136,7 +142,12 @@ This extension illustrates the following concepts:
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-spfx-graph-docreview" />
 =======
 >>>>>>> be254ab... Initial commit
+=======
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-spfx-graph-docreview" />
+>>>>>>> fc2b5645b4e763f29c39873e35f90072ef8d5877
