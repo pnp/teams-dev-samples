@@ -8,7 +8,7 @@ This repository contains community samples that demonstrate different usage patt
 
 Microsoft Teams is highly extensible, allowing 3rd party and custom applications to run alongside the many Office 365 services already included in Teams. Just as you can add a Word tab or the Who bot in Teams, you can write your own tabs and bots. You can also write applications that run outside the Teams UI and use the Microsoft Graph API to access and curate Teams content.
 
-The best way to navigate the samples is to use the [Sample Navigator](https://pnp.github.io/sp-dev-fx-webparts/). It will allow you to dial in the Teams app features, language, and other technologies you want samples for.
+The best way to navigate the samples is to use the [Sample Navigator](https://pnp.github.io/teams-dev-samples/). It will allow you to dial in the Teams app features, language, and other technologies you want samples for.
 
 The samples folder contains a folder for each sample, named with a prefix as follows:
 
