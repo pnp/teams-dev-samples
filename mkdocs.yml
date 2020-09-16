@@ -1422,7 +1422,7 @@ extra:
 
 # Document review Search messaging extension
     - name: msgext-graph-search-docreview
-      title: Document review Search messaging extension
+      title: Document Review - Search messaging extension calls Graph
       type: demo
       features: msgext
       source: pnp
@@ -1517,7 +1517,7 @@ extra:
 
 # Action based messaging extension calls Graph API
     - name: msgext-graph-action-docreview
-      title: Action messaging extension calls Graph
+      title: Document Review - Action messaging extension calls Graph
       type: demo
       features: msgext
       source: pnp
@@ -1533,6 +1533,25 @@ extra:
       bot_framework: bot40
       modifiedtext: August 28, 2020
       modified: 2020-08-28
+
+# Action based messaging extension with SPFx Task Module
+    - name: msgext-spfx-graph-docreview
+      title: Document Review - Action messaging extension with SPFx Task Module
+      type: demo
+      features: msgext
+      source: pnp
+      summary: Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review. Task module uses SPFx.
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-spfx-graph-docreview
+      author: Markus Moeller
+      client_language: typescript
+      client_platform: spfx
+      client_ui:  react
+      server_language: typescript
+      server_platform: express
+      bot_framework: bot40
+      modifiedtext: September 15, 2020
+      modified: 2020-09-15
 
 # Action based messaging extension calls Graph API
     - name: msgext-action-jit
@@ -1553,8 +1572,24 @@ extra:
       modifiedtext: August 28, 2020
       modified: 2020-09-10
 
-
-
+# HTTP Status Lookup messaging extension with cats
+    - name: msgext-httpstatuscats
+      title: HTTP Status Lookup messaging extension with cats
+      type: demo
+      features: msgext
+      source: pnp
+      summary: This is a small sample code to build a messaging extension with Node.js and Bot Framework
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-httpstatuscats
+      author: Tomomi Imura
+      client_language:
+      client_platform:
+      client_ui: 
+      server_language: javascript
+      server_platform: express
+      bot_framework: bot40
+      modifiedtext: September 11, 2020
+      modified: 2020-09-11
 
 #################################
 #endregion COMMUNITY SAMPLES
@@ -1602,6 +1637,7 @@ authors:
     - Ramin Ahmadi
     - Siddharth Vaghasia
     - Stephan Bisser
+    - Tomomi Imura
 repo_url: https://github.com/pnp/teams-dev-samples
 edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
