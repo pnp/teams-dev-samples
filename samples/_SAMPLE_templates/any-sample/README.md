@@ -33,7 +33,7 @@ _Please list any portions of the toolchain required to build and use the sample,
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|August 29, 2025|PnP Phil|Initial release
+1.0|August 29, 2025|Parker PnP|Initial release
 
 ## Disclaimer
 
