@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.7",
+  "version": "1.0.0",
+  "id": "56b24a68-6d28-48e6-b158-ad843d777531",
+  "packageName": "com.tomomi.httpcats",
+  "developer": {
+    "name": "Tomomi Imura",
+    "websiteUrl": "https://girliemac.com",
+    "privacyUrl": "https://girliemac.com",
+    "termsOfUseUrl": "https://girliemac.com"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "HTTP Status Cats",
+    "full": ""
+  },
+  "description": {
+    "short": "Look up an HTTP status code",
+    "full": "Enter a code (e.g. 404) to search the description in cats"
+  },
+  "accentColor": "#FFFFFF",
+  "composeExtensions": [
+    {
+      "botId": "YOUR-BOT-ID",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "httpLookup",
+          "type": "query",
+          "title": "HTTP Status Cats",
+          "description": "",
+          "initialRun": false,
+          "fetchTask": false,
+          "context": [
+            "commandBox",
+            "compose"
+          ],
+          "parameters": [
+            {
+              "name": "statusCode",
+              "title": "Status Code",
+              "description": "Enter an HTTP status code, such as 404",
+              "inputType": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": []
+}
