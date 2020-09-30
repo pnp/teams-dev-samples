@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "dca8c248-738d-49cf-9c53-2d7556d52ee9",
+  "alias": "ContentExplorer",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsTab"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "Content Explorer" },
+    "description": { "default": "Displays all lists for a give SharePoint Hub or Site Collection" },
+    "officeFabricIconFontName": "GroupList",
+    "properties": {
+      "siteURL": "",
+      "includeDocLibraries": true,
+      "includeEventLists": true,
+      "includeCustomLists": true,
+      "includeSystemLibraries": false,
+      "includeSubsites": true,
+      "openLinksInTeams": true,
+      "displayLayout": "flat"
+    }
+  }]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "content-explorer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/myListsApp/MyListsAppWebPart.js",
+          "manifest": "./src/webparts/myListsApp/MyListsAppWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MyListsAppWebPartStrings": "lib/webparts/myListsApp/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
