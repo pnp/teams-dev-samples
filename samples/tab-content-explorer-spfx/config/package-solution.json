@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "content-explorer",
+    "id": "066530ad-0f19-4b75-b698-dcdaa54f86f2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true, 
+    "iconPath": "images/ContentsExplorer96.png",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.Read.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/content-explorer.sppkg"
+  }
+}

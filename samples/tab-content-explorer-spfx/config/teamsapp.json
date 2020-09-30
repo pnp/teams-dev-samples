@@ -1,0 +1,59 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "packageName": "ContentExplorer",
+    "id": "dca8c248-738d-49cf-9c53-2d7556d52ee9",
+    "version": "0.1",
+    "developer": {
+      "name": "Cloudspark",
+      "websiteUrl": "https://creospark.com/",
+      "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+      "termsOfUseUrl": "https://www.microsoft.com/servicesagreement",
+      "mpnId": "4966693"
+
+    },
+    "name": {
+      "short": "Displays all lists of a site collection, sub site or Hub"
+    },
+    "description": {
+      "short": "Displays all lists within a site",
+      "full": "Displays all lists of a site collection, sub site or Hub"
+    },
+    "icons": {
+      "outline": "dca8c248-738d-49cf-9c53-2d7556d52ee9_outline.png",
+      "color": "dca8c248-738d-49cf-9c53-2d7556d52ee9_color.png"
+    },
+    "accentColor": "#28367e",
+    "staticTabs": [
+      {
+        "entityId": "com.contoso.personaltab.spfx",
+        "name": "My Lists",
+        "contentUrl": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=dca8c248-738d-49cf-9c53-2d7556d52ee9%26forceLocale={locale}",
+        "scopes": [
+          "personal"
+        ]
+      }
+    ],
+    "configurableTabs": [
+      {
+        "configurationUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=dca8c248-738d-49cf-9c53-2d7556d52ee9%26forceLocale={locale}",
+        "canUpdateConfiguration": true,
+        "scopes": [
+          "team"
+        ]
+      }
+    ],
+    "validDomains": [
+      "*.login.microsoftonline.com",
+      "*.sharepoint.com",
+      "*.sharepoint-df.com",
+      "spoppe-a.akamaihd.net",
+      "spoprod-a.akamaihd.net",
+      "resourceseng.blob.core.windows.net",
+      "msft.spoppe.com"
+    ],
+    "webApplicationInfo": {
+      "resource": "https://{teamSiteDomain}",
+      "id": "00000003-0000-0ff1-ce00-000000000000"
+    }
+  }

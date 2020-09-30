@@ -1,0 +1,14 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.siteSelection {
+  background-color: transparent;
+
+  .dropDown {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+    :global(.ms-Label) {
+      font-weight: 600;
+    }
+  }
+}
