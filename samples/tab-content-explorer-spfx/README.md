@@ -24,7 +24,7 @@ createdDate: 08/01/2020 12:00:00 AM
 
 Content Explorer app allows users to surface all the libraries, lists, sub-sites and hub associated sites by pointing to any SharePoint Online or SharePoint On Premis site collection URL within a Tab in any of your Microsoft Teams. It does the work of searching and navigating documents from multiple SharePoint sources and pulls them into one easy-to-access list.
 
-![Interface](imagesForOpenSource/change-to-grouped-layout.gif)
+![Interface](/samples/tab-content-explorer-spfx/imagesForOpenSource/change-to-grouped-layout.gif)
 
 ## Frameworks
 
@@ -62,7 +62,7 @@ Version|Date|Author|Comments
 ### 1. Deploy the SPFX package to the Tenant App catalog​
 
 * Navigate to App Catalog​
-![Interface](imagesForOpenSource/content-explorer-appcatalog.png)
+![Interface](/samples/tab-content-explorer-spfx/imagesForOpenSource/content-explorer-appcatalog.png)
 
 * Upload the APP SPFX package​
 
@@ -83,7 +83,7 @@ Version|Date|Author|Comments
 * Upload Custom App​
 
   * Click the 'Upload a custom app'​
-  ![Interface](imagesForOpenSource/content-explorer-teams.png)
+  ![Interface](/samples/tab-content-explorer-spfx/imagesForOpenSource/content-explorer-teams.png)
 
   * Select the MS Teams App package [zip file](/samples/tab-content-explorer-spfx/teams/ContentExplorer.zip)
 
@@ -109,12 +109,12 @@ The following describes the currently implemented features. We are looking to ex
 
 * Content Explorer is accessible to the user via a Team Tab that can be configured on any Teams channel. ​ A simple interface is presented within the window frame. An arrow button on the tab will allow team admin to configure the Settings.
 
-![Interface](imagesForOpenSource/content-explorer-settings.png)
+![Interface](/samples/tab-content-explorer-spfx/imagesForOpenSource/content-explorer-settings.png)
 
 * Once Content Explorer is configured to connect to a SharePoint Hub or Site Collection, Content Explorer will automatically pull and display all document libraries from that source in the Library Hub. This can include anything that was configured in Content Explorer settings, from Documents, to Calendars and Events, and more
 
 * Content Explorer can be used in SharePoint alone. Deploying the SPFX package to the Tenant App Catalog will make Content Explorer web part avaialble for use within SharePoint Pages​.
 
-![Interface](imagesForOpenSource/content-explorer-sharePoint.png)
+![Interface](/samples/tab-content-explorer-spfx/imagesForOpenSource/content-explorer-sharePoint.png)
 
 <img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-content-explorer-spfx" />
