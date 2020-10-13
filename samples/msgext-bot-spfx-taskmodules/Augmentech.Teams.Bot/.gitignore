@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/Augmentech.Teams.Bot
+/Augmentech.Teams.Bot/bin
+/Augmentech.Teams.Bot/obj
+/Augmentech.Teams.Bot/Properties/PublishProfiles
+/Augmentech.Teams.Bot/Properties/ServiceDependencies/teamsspfxgraphdemo - Web Deploy
+/Augmentech.Teams.Notify/bin/Debug/netcoreapp3.1
+/Augmentech.Teams.Notify/obj
