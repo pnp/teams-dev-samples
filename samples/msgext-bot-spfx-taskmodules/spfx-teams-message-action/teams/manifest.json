@@ -1,0 +1,92 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "version": "1.0.1",
+    "id": "1231d33d-a751-40c5-8181-3b9334340aef",
+    "packageName": "uk.co.augmentech.teams.messages",
+    "developer": {
+        "name": "Vardhaman Deshpande",
+        "websiteUrl": "https://www.vrdmn.com/",
+        "privacyUrl": "https://www.vrdmn.com/",
+        "termsOfUseUrl": "https://www.vrdmn.com/"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "SPFx Teams messages",
+        "full": "Use SPFx webparts in Teams messages"
+    },
+    "description": {
+        "short": "Use SPFx webparts for Teams messages",
+        "full": "Demo app for using SPFx webparts for Teams messages"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "12348ddb-94f6-4870-af38-d9c14e0073ba",
+            "scopes": [
+                "personal",
+                "team"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false
+        }
+    ],
+    "composeExtensions": [
+        {
+            "botId": "12348ddb-94f6-4870-af38-d9c14e0073ba",
+            "canUpdateConfiguration": false,
+            "commands": [
+                {
+                    "id": "augOpenSPFxWebpart",
+                    "type": "action",
+                    "title": "Invoke Static SPFx action",
+                    "description": "",
+                    "initialRun": false,
+                    "fetchTask": false,
+                    "context": [
+                        "message",
+                        "compose"
+                    ],
+                    "taskInfo": {
+                        "title": "SPFx web part",
+                        "height": "500",
+                        "width": "800",
+                        "url": "https://{teamSiteDomain}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamstaskhostedapp.aspx%3Fteams%26personal%26componentId=919277ea-54da-451b-a5eb-de94fc14dd39%26forceLocale={locale}"
+                      }
+                },
+                {
+                    "id": "augOpenSPFxWebpartDyn",
+                    "type": "action",
+                    "title": "Invoke Dynamic SPFx action",
+                    "description": "",
+                    "initialRun": false,
+                    "fetchTask": true,
+                    "context": [
+                        "message"
+                    ]
+                }
+            ]
+        }
+    ],
+    "validDomains": [
+        "*.sharepoint-df.com",
+        "*.sharepoint.com",
+        "msft.spoppe.com",
+        "resourceseng.blob.core.windows.net",
+        "spoprod-a.akamaihd.net",
+        "spoppe-a.akamaihd.net",
+        "*.login.microsoftonline.com",
+        "token.botframework.com"
+    ],
+    "webApplicationInfo": {
+        "id": "00000003-0000-0ff1-ce00-000000000000",
+        "resource": "https://{teamSiteDomain}"
+    },
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ]
+}
