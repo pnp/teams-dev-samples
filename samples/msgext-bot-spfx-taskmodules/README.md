@@ -6,11 +6,11 @@ The sample solution in this repository demonstrates how to use SharePoint Framew
 
 1) Task modules can be used in Microsoft Teams messaging extentions as show in this blog post: [Microsoft Teams messaging extensions using SPFx: Getting the message data with Microsoft Graph](https://www.vrdmn.com/2020/09/microsoft-teams-messaging-extensions.html)
 
-![Microsoft Teams message action using SPFx](/assets/msgextspfx.gif)
+![Microsoft Teams message action using SPFx](./assets/msgextspfx.gif)
 
 2) Task modules can also be presented to the user from Adaptive Cards posted by a bot. The code for this is included in this repository:
 
-![Microsoft Teams task modules from bots and adaptive cards using SPFx](/assets/botspfx.gif)
+![Microsoft Teams task modules from bots and adaptive cards using SPFx](./assets/botspfx.gif)
 
 
 ## Used SharePoint Framework Version
@@ -65,3 +65,5 @@ Version|Date|Comments
 - [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-bot-spfx-taskmodules" />
