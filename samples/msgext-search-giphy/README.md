@@ -26,19 +26,12 @@ Search based *Messaging extensions* allow users to interact with your web servic
 
 This sample is a search-based messaging extension created using the [Microsoft Teams Toolkit](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension).
 This app will allow searching a GIF based on a search keyword and can tap on an item to add it into the message composing area.
-This is the same functionlity as GIPHY app, although the search api can be more regulated. IT could also decide if the app needs to be installed in certain Teams or not.
+This is the same functionlity as GIPHY app, although the search api can be more regulated.
 
-Find the app and invoke it, then search 
+See it working 
 
-![Result: search something](docs/000-app.png)
+![working](docs/002-app-gif.gif)
 
-...compose message with the selected GIF
-
-![Compose](docs/001-compose.png)
-
-Finally the card and the message that is sent.
-
-![Message sent](docs/003-sent.png)
 
 
 ## Frameworks
