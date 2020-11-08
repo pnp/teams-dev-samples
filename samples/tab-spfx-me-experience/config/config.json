@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "planning-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/planning/PlanningWebPart.js",
+          "manifest": "./src/webparts/planning/PlanningWebPart.manifest.json"
+        }
+      ]
+    },
+    "insights-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/insights/InsightsWebPart.js",
+          "manifest": "./src/webparts/insights/InsightsWebPart.manifest.json"
+        }
+      ]
+    },
+    "settings-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/settings/SettingsWebPart.js",
+          "manifest": "./src/webparts/settings/SettingsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PlanningWebPartStrings": "lib/webparts/planning/loc/{locale}.js",
+    "InsightsWebPartStrings": "lib/webparts/insights/loc/{locale}.js",
+    "SettingsWebPartStrings": "lib/webparts/settings/loc/{locale}.js"
+  }
+}
