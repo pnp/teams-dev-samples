@@ -1,0 +1,36 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import "../../../common/themeColors.module.scss";
+.button{margin-top: 10px;
+}
+
+  [data-theme="default"] {
+    .text{
+      color:$default-color;
+    }
+    .button {
+      background-color: $default-button-background !important;
+      color: $default-button-color !important;
+    }     
+  }
+  
+  [data-theme="dark"] {
+    .text{
+      color:$dark-color;
+    }
+    .button {
+      background-color: $dark-button-background !important;
+      color: $dark-button-color !important;
+    }
+ 
+  }
+
+  [data-theme="contrast"] {
+    .text{
+      color:$contrast-color;
+    }
+    .button {
+      background-color: $contrast-button-background !important;
+      color: $contrast-button-color !important;
+    }
+   
+  }
