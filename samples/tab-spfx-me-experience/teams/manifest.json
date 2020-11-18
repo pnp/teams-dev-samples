@@ -26,7 +26,7 @@
       {
         "entityId": "com.contoso.personaltab.planning",
         "name": "Planning",
-        "contentUrl": "https://m365x952797.sharepoint.com/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=f9797723-a393-4f3a-9a98-3f2cdb3e7525%26forceLocale={locale}",
+        "contentUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=f9797723-a393-4f3a-9a98-3f2cdb3e7525%26forceLocale={locale}",
         "scopes": [
           "personal"
         ]
@@ -34,7 +34,7 @@
       {
         "entityId": "com.contoso.personaltab.insights",
         "name": "Insights",
-        "contentUrl": "https://m365x952797.sharepoint.com/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=eb958e51-9a32-46d6-aa5f-5c40336ff99d%26forceLocale={locale}",
+        "contentUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=eb958e51-9a32-46d6-aa5f-5c40336ff99d%26forceLocale={locale}",
         "scopes": [
           "personal"
         ]
@@ -42,7 +42,7 @@
       {
         "entityId": "com.contoso.personaltab.settings",
         "name": "Settings",
-        "contentUrl": "https://m365x952797.sharepoint.com/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=521f7042-b360-4632-9c2f-8daff6d85788%26forceLocale={locale}",
+        "contentUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=521f7042-b360-4632-9c2f-8daff6d85788%26forceLocale={locale}",
         "scopes": [
           "personal"
         ]
@@ -58,7 +58,7 @@
       "msft.spoppe.com"
     ],
     "webApplicationInfo": {
-      "resource": "https://m365x952797.sharepoint.com",
+      "resource": "https://{teamSiteDomain}",
       "id": "00000003-0000-0ff1-ce00-000000000000"
     }
   }
