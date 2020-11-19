@@ -77,14 +77,7 @@ gulp package-solution --ship
 
 - Download the `Me.zip` file from the folder [./teams](./teams)
 
-- Extract the files 
-
-- **Update the tenant urls in the manifest.json file**: Go ahead and update the `staticTabs` urls to 👉🏽  
-https://[yourtenant].sharepoint.com 
-
-- Import  the zip file to [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview/?WT.mc_id=m365-10079-rwilliams) in your Microsoft Teams.
-
-- In App studio, under Finish > Test and distribute and test the app!
+- Upload it in your Teams (provided you have access, or send it to the IT admin who will be able to upload it for you)
 
 
 ## Kudos 👏🏽
