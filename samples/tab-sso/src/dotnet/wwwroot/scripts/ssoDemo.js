@@ -56,7 +56,7 @@
                         if (responseJson.error) {
                             reject(responseJson.error);
                         }
-                        else if("unauthorized_client" === responseJson) {
+                        else if ("unauthorized_client" === responseJson || "invalid_grant" === responseJson) {
                             reject(responseJson);
                         } else {
                             const serverSideToken = responseJson;
@@ -100,13 +100,14 @@
     function requestConsent() {
         return new Promise((resolve, reject) => {
             microsoftTeams.authentication.authenticate({
-                url: window.location.origin + "/auth/auth-start",
+                url: window.location.origin + "/auth/authPopup",
                 width: 600,
                 height: 535,
                 successCallback: (result) => {
-                    let data = localStorage.getItem(result);
-                    localStorage.removeItem(result);
-                    resolve(data);
+                    //let data = localStorage.getItem(result);
+                    //localStorage.removeItem(result);
+                    //resolve(data);
+                    resolve(result);
                 },
                 failureCallback: (reason) => {
                     reject(JSON.stringify(reason));
@@ -118,12 +119,14 @@
     // Add text to the display in a <p> or other HTML element
     function display(text, elementTag) {
         var logDiv = document.getElementById('logs');
-        var p = document.createElement(elementTag ? elementTag : "p");
-        p.innerText = text;
-        logDiv.append(p);
+        var newElement = document.createElement(elementTag ? elementTag : "p");
+        newElement.innerText = text;
+        logDiv.append(newElement);
         console.log("ssoDemo: " + text);
-        return p;
+        return newElement;
     }
+
+    microsoftTeams.initialize();
 
     // In-line code
     getClientSideToken()
@@ -142,7 +145,7 @@
                     requestConsent()
                         .then((result) => {
                             // Consent succeeded - use the token we got back
-                            let accessToken = JSON.parse(result).accessToken;
+                            let accessToken = result.accessToken;
                             display(`Received access token ${accessToken}`);
                             useServerSideToken(accessToken);
                         })
@@ -159,5 +162,22 @@
                 display(`Error from web service: ${error}`);
             }
         });
+
+    // Use the current user's theme
+    microsoftTeams.getContext(function (context) {
+        setTheme(context.theme);
+    });
+
+    // Handle theme changes
+    microsoftTeams.registerOnThemeChangeHandler(function (theme) {
+        setTheme(theme);
+    });
+
+    // Set the desired theme
+    function setTheme(theme) {
+        if (theme) {
+            document.body.className = 'theme-' + (theme === 'default' ? 'light' : theme);
+        }
+    }
 
 })();

@@ -26,5 +26,9 @@ namespace msteams_tabs_sso_sample.Controllers
         public IActionResult authEnd()
             => View();
 
+        //[Route("auth/authPopup")]
+        public IActionResult authPopup()
+            => View();
+
     }
 }
