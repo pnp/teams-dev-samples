@@ -54,15 +54,15 @@ Version|Date|Author|Comments
 
 ## Minimal Path to Awesome
 
-1. Clone this repository
+#### 1. Clone this repository
 
 tbd...
 
-2. Register Azure AD application
+#### 2. Register Azure AD application
 
 tbd...
 
-3. Update app configuration & run the web application
+#### 3. Update app configuration & run the web application
 
 **Dotnet Version**
 
@@ -72,11 +72,11 @@ tbd...
 
 * See [`node`](src/node) folder
 
-4. Update & package the Teams app manifest
+#### 4. Update & package the Teams app manifest
 
 tbd...
 
-5. Upload the manifest to Teams
+#### 5. Upload the manifest to Teams
 
 tbd...
 
