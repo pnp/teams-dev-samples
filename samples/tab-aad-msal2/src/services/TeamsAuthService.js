@@ -27,7 +27,7 @@ class TeamsAuthService {
 
         return new Promise((resolve, reject) => {
             microsoftTeams.authentication.authenticate({
-                url: window.location.origin + "/TeamClock/#teamsauthpopup",
+                url: window.location.origin + "/#teamsauthpopup",
                 width: 600,
                 height: 535,
                 successCallback: (response) => {
