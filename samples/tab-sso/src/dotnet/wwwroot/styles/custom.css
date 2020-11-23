@@ -6,3 +6,7 @@
 div.panel {
     padding: 15px;
 }
+
+div.logContainer div {
+    padding-left: 15px;
+}

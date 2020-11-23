@@ -26,13 +26,13 @@
     "staticTabs": [{
         "entityId": "com.contoso.teamsssosample.static",
         "name": "Sso Sample Tab",
-        "contentUrl": "https://ee009977211c.ngrok.io/ssoDemo",
+        "contentUrl": "https://18b28832c3a9.ngrok.io/ssoDemo",
         "scopes": [
             "personal"
         ]
     }],
     "configurableTabs": [{
-        "configurationUrl": "https://ee009977211c.ngrok.io/configure",
+        "configurationUrl": "https://18b28832c3a9.ngrok.io/configure",
         "canUpdateConfiguration": true,
         "scopes": [
             "team"
@@ -42,6 +42,6 @@
     "validDomains": [],
     "webApplicationInfo": {
         "id": "ebd50ba5-b9ea-4b61-bf46-75757b86e1cd",
-        "resource": "api://ee009977211c.ngrok.io/ebd50ba5-b9ea-4b61-bf46-75757b86e1cd"
+        "resource": "api://18b28832c3a9.ngrok.io/ebd50ba5-b9ea-4b61-bf46-75757b86e1cd"
     }
 }

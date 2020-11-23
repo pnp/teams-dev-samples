@@ -11,7 +11,16 @@
 
             microsoftTeams.authentication.getAuthToken({
                 successCallback: (result) => {
-                    display(result)
+                    display(result);
+
+                    let decodedToken = jwt_decode(result);
+
+                    display("Let's use the token's data:", "div");
+                    display("name: " + decodedToken.name, "div");
+                    display("aadObjectId: " + decodedToken.oid, "div");
+                    display("upn: " + decodedToken.upn, "div");
+                    display("tenantId: " + decodedToken.tid, "div");
+
                     resolve(result);
                 },
                 failureCallback: function (error) {
