@@ -6,7 +6,7 @@ This sample shows how to create a tab for Teams that uses the built-in [Single S
 
 Please note that using SSO does *not* eliminate the user seeing authentication popups - these are still required in order to ensure the application has approval to access the user's information. To avoid these popups, read [here](https://docs.microsoft.com/en-gb/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#tenant-admin-consent) on how to have an administrator pre-consent on behalf of all the users in the organisation.
 
-Below is a screenshot of the SSO tab in action 
+Below is a screenshot of the SSO tab in action:
 
 ![picture of the app in action](assets/images/TabScreenshot.png)
 
