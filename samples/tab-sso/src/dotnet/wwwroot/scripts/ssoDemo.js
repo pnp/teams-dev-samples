@@ -15,11 +15,13 @@
 
                     let decodedToken = jwt_decode(result);
 
-                    display("Let's use the token's data:", "div");
+                    display("Now let's use the token's data:", "div");
                     display("name: " + decodedToken.name, "div");
                     display("aadObjectId: " + decodedToken.oid, "div");
                     display("upn: " + decodedToken.upn, "div");
                     display("tenantId: " + decodedToken.tid, "div");
+
+                    display("We can also exchange the token for a server-side 'on-behalf-of' token, in order to call the Graph on the user's behalf:");
 
                     resolve(result);
                 },
