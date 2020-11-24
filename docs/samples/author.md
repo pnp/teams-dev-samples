@@ -5,6 +5,8 @@ Our samples were created by the feature teams, or shared by the community. Use t
 
 To learn more about how to use these samples, please refer to our [getting started](../gettingstarted/index.md) section.
 
+NOTE: The search is case sensitive so normally you'll want to capitalize the first letter of the author's name.
+
 <div class="well">
 
 <input list="authors" name="author" class="form-control" placeholder="Type to search by author" id="author" />

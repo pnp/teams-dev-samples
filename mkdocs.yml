@@ -1591,6 +1591,63 @@ extra:
       modifiedtext: September 11, 2020
       modified: 2020-09-11
 
+# SPFx Task Module with Bot and Messaging Extension
+    - name: msgext-bot-spfx-taskmodules
+      title: SharePoint Framework task module with Bot and Messaging Extension
+      type: barebones
+      features: bot, taskmodule
+      source: pnp
+      summary: Demonstrates how to use SharePoint Framework powered Task modules in Microsoft Teams applications
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-bot-spfx-taskmodules
+      author: Vardhaman Deshpande
+      client_language: typescript
+      client_platform: spfx
+      client_ui: 
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: September 11, 2020
+      modified: 2020-09-11
+
+# Me experience
+    - name: tab-spfx-me-experience
+      title: Me experience demonstrates use of Microsoft Graph Toolkit React Extensions in an SPFx web part in Teams
+      type: demo
+      features: tab
+      source: pnp
+      summary: A Teams app where users can start their day and see their personal information using Microsoft Graph Toolkit React components
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-spfx-me-experience
+      author: Rabia Williams
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: November 8, 2020
+      modified: 2020-11-08
+
+# Giphy Search Messaging Extension
+    - name: msgext-search-giphy
+      title: Giphy Search Messaging Extension
+      type: demo
+      features: msgext
+      source: pnp
+      summary: Search based Messaging extension allows users to find and insert gify's into a Microsoft Teams message
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-search-giphy
+      author: Rabia Williams
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: javascript
+      server_platform: express
+      bot_framework: bot46
+      modifiedtext: October 29, 2020
+      modified: 2020-10-29
+
 #################################
 #endregion COMMUNITY SAMPLES
 #################################
@@ -1633,11 +1690,13 @@ authors:
     - Luis Mañez
     - Markus Moeller
     - Microsoft
+    - Rabia Williams
     - Rajesh Sitaraman
     - Ramin Ahmadi
     - Siddharth Vaghasia
     - Stephan Bisser
     - Tomomi Imura
+    - Vardhaman Deshpande
 repo_url: https://github.com/pnp/teams-dev-samples
 edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
