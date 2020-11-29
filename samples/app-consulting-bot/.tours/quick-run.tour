@@ -1,0 +1,56 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Slot Filling",
+  "steps": [
+    {
+      "file": "ConsultingBot/Startup.cs",
+      "line": 40,
+      "description": "Startup class creates the Bot Framework Adapter as a singleton"
+    },
+    {
+      "file": "ConsultingBot/Controllers/BotController.cs",
+      "line": 34,
+      "description": "WebAPI controller calls the Bot Framework SDK adapter"
+    },
+    {
+      "file": "ConsultingBot/Bots/DialogBot.cs",
+      "line": 44,
+      "description": "Bot handles turns, saving state and running the main dialog for all message activities"
+    },
+    {
+      "file": "ConsultingBot/Dialogs/MainDialog.cs",
+      "line": 62,
+      "description": "Main dialog calls LUIS to get as much info as it can from the utterance"
+    },
+    {
+      "file": "ConsultingBot/Dialogs/BillProjectDialog.cs",
+      "line": 43,
+      "description": "Bill to Project dialog step 1 - ensure we have a project"
+    },
+    {
+      "file": "ConsultingBot/Dialogs/BillProjectDialog.cs",
+      "line": 67,
+      "description": "Bill to Project dialog step 2 - disambiguate the project"
+    },
+    {
+      "file": "ConsultingBot/Dialogs/BillProjectDialog.cs",
+      "line": 107,
+      "description": "Bill to Project dialog step 3 - ensure we have duration"
+    },
+    {
+      "file": "ConsultingBot/Dialogs/BillProjectDialog.cs",
+      "line": 131,
+      "description": "Bill to Project dialog step 4 - ensure we have a work date"
+    },
+    {
+      "file": "ConsultingBot/Dialogs/BillProjectDialog.cs",
+      "line": 150,
+      "description": "Bill to Project dialog step 5 - confirmation"
+    },
+    {
+      "file": "ConsultingBot/Dialogs/BillProjectDialog.cs",
+      "line": 164,
+      "description": "Bill to Project dialog step 6 - Update database and end"
+    }
+  ]
+}
