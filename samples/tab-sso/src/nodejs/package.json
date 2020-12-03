@@ -1,31 +1,36 @@
 {
-  "name": "msteams-nodejs-hello-world",
-  "version": "1.0.0",
-  "description": "Microsoft Teams Node.js Hello World App. Start here to build your first app on the Teams platform.",
-  "scripts": {
-    "start": "node src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OfficeDev/msteams-samples-hello-world-nodejs.git"
-  },
-  "author": "Microsoft Corp.",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/OfficeDev/msteams-samples-hello-world-nodejs/issues"
-  },
-  "homepage": "https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-nodejs",
-  "dependencies": {
-    "config": "^1.28.1",
-    "express": "^4.16.2",
-    "node-fetch": "^2.1.2",
-    "faker": "^4.1.0",
-    "pug": "^2.0.0-rc.4"
-  },
-  "devDependencies": {
-    "del": "^3.0.0",
-    "gulp": "^4.0.2",
-    "gulp-zip": "^4.0.0"
-  }
+    "name": "microsoft-teams-ext",
+    "version": "0.1.0",
+    "msteams": {
+        "teamsAppId": "{Teams App Id}"
+    },
+    "private": true,
+    "dependencies": {
+        "@fluentui/react-northstar": "^0.51.3",
+        "@microsoft/teams-js": "^1.6.0",
+        "crypto": "^1.0.1",
+        "jwt-decode": "^3.1.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-router-dom": "^5.1.2",
+        "react-scripts": "^4.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "eject": "react-scripts eject"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "proxy": "http://localhost:5000"
 }
