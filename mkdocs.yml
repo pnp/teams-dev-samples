@@ -1648,6 +1648,25 @@ extra:
       modifiedtext: October 29, 2020
       modified: 2020-10-29
 
+# Tab SSO Graph upload as PDF
+    - name: tab-sso-graph-upload-as-pdf
+      title: Upload as PDF tab
+      type: demo
+      features: tab
+      source: pnp
+      summary: Tab allows uploading documents; they are converted to PDF and saved to the current channel
+      thumbnail: ./img/thumbnails/tab-sso-graph-upload-as-pdf.gif
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-sso-graph-upload-as-pdf
+      author: Markus Moeller
+      client_language: typescript
+      client_platform: spa
+      client_ui: react
+      server_language: typescript
+      server_platform: express
+      bot_framework:
+      modifiedtext: November 30, 2020
+      modified: 2020-11-30
+
 #################################
 #endregion COMMUNITY SAMPLES
 #################################
