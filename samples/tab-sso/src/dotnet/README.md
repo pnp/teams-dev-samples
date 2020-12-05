@@ -16,7 +16,7 @@ Version|Date|Author|Comments
 
 ## Minimal Path to Awesome
 
-1. Refer initially to the overall sample [readme](../../readme.md) which includes details on setting up the Azure Ad Application.
+1. Refer initially to the overall sample [readme](..\..\readme.md) which includes details on setting up the Azure Ad Application.
 
 2. Modify the [`appsettings.Development.json`](appsettings.Development.json) file by inserting a value for the `{AppId}`, being the Application Id of the Azure Application created earlier, and the `{AppPassword}`, being the client secret from the same application.
 
