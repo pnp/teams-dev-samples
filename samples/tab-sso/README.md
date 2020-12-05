@@ -10,7 +10,7 @@ Below is a screenshot of the SSO tab in action:
 
 ![picture of the app in action](assets/images/TabScreenshot.png)
 
-**Please note** that this sample actually contains two separate, alternate projects: a dotnet version and a Node.js version. In addition, the dotnet version uses a more 'vanilla JS' approach, in order to show how SSO can be implemented in such a scenario, and the node.js version uses a React front end, in order to demonstrate SSO using a front end framework.
+**Please note** that this sample actually contains two separate, alternate projects: a .NET version and a Node.js version. In addition, the .NET version uses a more 'vanilla JS' approach, in order to show how SSO can be implemented in such a scenario, and the Node.js version uses a React front end, in order to demonstrate SSO using a front end framework.
 
 ## Frameworks
 
@@ -20,13 +20,13 @@ Below is a screenshot of the SSO tab in action:
 
 **Node.js Version**
 
-![drop](https://img.shields.io/badge/Node.Js-1.1-green.svg)
-![drop](https://img.shields.io/badge/React-1.1-green.svg)
+![drop](https://img.shields.io/badge/Node.Js-12.6.1-green.svg)
+![drop](https://img.shields.io/badge/React-16.13.1-green.svg)
 
 ## Prerequisites
 
 **Node.js Version**
-* [Node.js](https://nodejs.org) version 10.14.1 or higher
+* [Node.js](https://nodejs.org) version 12.6.1 or higher
 
     ```bash
     # determine node version
@@ -44,7 +44,7 @@ Below is a screenshot of the SSO tab in action:
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|November 25, 2020|Hilton Giesenow|Initial release
+1.0|December 05, 2020|Hilton Giesenow|Initial release
 
 ## Disclaimer
 
@@ -56,7 +56,9 @@ Version|Date|Author|Comments
 
 #### 1. Clone this repository
 
-tbd...
+    ```bash
+    git clone https://github.com/pnp/teams-dev-samples.git
+    ```
 
 #### 2. Register Azure AD application
 
