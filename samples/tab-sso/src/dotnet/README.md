@@ -18,7 +18,7 @@ Version|Date|Author|Comments
 
 1. Refer initially to the overall sample readme which includes details on setting up the Azure Ad Application.
 
-2. Modify the [`appsettings.Development.json`](appsettings.Development.json) file by inserting a value for the `{AppId}`, being the Application Id of the Azure Application created earlier, and the `{AppPassword}`, being the client secret from the same application.
+2. Open the `msteams-tabs-sso-sample.sln` file in Visual Studio (or the project folder in Visual Studio Code). Modify the [`appsettings.Development.json`](appsettings.Development.json) file by inserting a value for the `{AppId}`, being the Application Id of the Azure Application created earlier, and the `{AppPassword}`, being the client secret from the same application.
 
 Note also that the value of the `Authority` setting can either be your tenant id, for building an internal-only application, or can be set to `organizations` for a multi-tenant application.
 
@@ -26,4 +26,10 @@ Note further that the `RedirectUriRelativePath` can be used if you want to redir
 
 3. Compile and run the application (e.g. by pushing F5 in Visual Studio)
 
-4. Complete the remaining steps in the main readme file.
+4. Start Ngrok (or a similar tunneling tool), using the following command:
+
+```shell
+ngrok http https://localhost:44329/ -host-header="localhost:44329"
+```
+
+5. Complete the remaining steps in the main readme file.

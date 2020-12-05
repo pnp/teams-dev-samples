@@ -1,43 +1,51 @@
-# Tabs
+# Teams Tab Single Sign-on (SSO) Sample - .NET
 
-Tabs are Teams-aware webpages embedded in Microsoft Teams. Personal tabs are scoped to a single user. They can be pinned to the left navigation bar for easy access.
+This SSO sample includes both a .NET and a Node.js version. This readme is specific to the .NET version, so please see [here](../../) for the overall readme details, and then come back here for the dotnet-specific setup steps.
 
-## Prerequisites
--  [NodeJS](https://nodejs.org/en/)
+## Version history
 
--  [ngrok](https://ngrok.com/)
+Version|Date|Author|Comments
+-------|----|----|--------
+1.0|December055, 2020|Hilton Giesenow|Initial release
 
--  [M365 developer account](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant) or access to a Teams account with the appropriate permissions to install an app.
+## Disclaimer
 
--  [Create an Azure App registration to support SSO and the User.Read Graph API](https://aka.ms/teams-toolkit-sso-appreg)
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-## ngrok
+---
 
-Teams needs to access your tab from a publically accessible URL. If you are running your app in localhost, you will need to use a tunneling service like ngrok. Run ngrok and point it to localhost.
-  `ngrok http https://localhost:3000`
+## Microsoft Teams Toolkit
 
-Note: It may be worth purchasing a basic subscription to ngrok so you can get a fixed subdomain ( see the --subdomain ngrok parameter)
+Please note that this sample has been built using the Microsoft Teams Toolkit, which enables you to create custom Teams apps directly within the [Visual Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-overview) or [Visual Studio Code](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-code-overview) IDE. In particular, the December 2020 release of this toolkit provides improved support for [creating SSO Tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-code-tab-sso). This sample starts with a Teams Toolkit project and adds a few additional capabilities, particularly for working with the SSO token.
 
-**IMPORTANT**: If you don't have a paid subscription to ngrok, you will need to update your Azure app registration application ID URI and redirect URL ( See steps 5 and 13 [here](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#steps) ) everytime you restart ngrok.
+## Minimal Path to Awesome
 
-## Build and Run
+1. Refer initially to the overall sample readme which includes details on setting up the Azure Ad Application.
 
-In the root directory, execute:
+2. Modify the [`.env`](.env) file by inserting a value for the `{AAD App Registration Id}`, being the Application Id of the Azure Application created earlier.
 
-`npm install`
+3. Modify the [`.env`](/api-server/.env) file in the `api-server` subfolder, for the backend api that does the token exchange, by inserting a value for the `{AAD App Registration Id}`, being the Application Id of the Azure Application created earlier, and the `{AAD App Password}`, being the client secret from the same application.
 
-`npm start`
+Note also that the value of the `Authority` setting can either be your tenant id, for building an internal-only application, or can be set to `organizations` for a multi-tenant application.
 
-## Deploy to Teams
-Start debugging the project by hitting the `F5` key or click the debug icon in Visual Studio Code and click the `Start Debugging` green arrow button.
+4. Within this `nodejs` directory, run
 
-### NOTE: First time debug step
-On the first time running and debugging your app you need allow the localhost certificate.  After starting debugging when Chrome is launched and you have installed your app it will fail to load.
+```shell
+npm install
+```
 
-- Open a new tab `in the same browser window that was opened`
-- Navigate to `https://localhost:3000/tab`
-- Click the `Advanced` button
-- Select the `Continue to localhost`
+to install the needed npm packages.
 
-### NOTE: Debugging
-Ensure you have the Debugger for Chrome/Edge extension installed for Visual Studio Code from the marketplace.
+5. Run the application, as follows:
+
+```shell
+npm run start
+```
+
+6. Start Ngrok (or a similar tunneling tool), using the following command:
+
+```shell
+ngrok http https://localhost:3000/ -host-header="localhost:3000"
+```
+
+7. Complete the remaining steps in the main readme file.

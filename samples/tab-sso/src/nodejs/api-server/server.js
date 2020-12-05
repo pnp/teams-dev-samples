@@ -8,6 +8,7 @@ require('dotenv').config();
 const app = express();
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
+const authority = process.env.AUTHORITY;
 const graphScopes = 'https://graph.microsoft.com/User.Read';
 
 let handleQueryError = function (err) {
@@ -21,7 +22,12 @@ let handleQueryError = function (err) {
 app.get('/getGraphAccessToken', async (req,res) => {
 
 	let tenantId = jwt_decode(req.query.ssoToken)['tid']; //Get the tenant ID from the decoded token
-	tenantId = "organizations";
+	
+	// if the Authority setting is set, use it instead (e.g. for a multi-tenant app)
+	if (authority) {
+		tenantId = authority;
+	}
+
     let accessTokenEndpoint = `https://login.microsoftonline.com/${tenantId}/oauth2/v2.0/token`;
 
     //Create your access token query parameters
