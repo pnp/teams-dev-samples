@@ -6,7 +6,7 @@ This sample shows how to create a tab for Teams that uses the built-in [Single S
 
 Please note that using SSO does *not* eliminate the user seeing consent popups - these are still required in order to ensure the application has approval to access the user's information. To assist in this, read [here](https://docs.microsoft.com/en-gb/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#tenant-admin-consent) on how to have an administrator pre-consent on behalf of all the users in the organisation.
 
-Below is a screenshot of the SSO tab in action:
+Below is a screenshot of the SSO tab in action (this is for the .NET version - the Node.js version shows the same information but in a slightly different way).
 
 ![picture of the app in action](assets/images/TabScreenshot.png)
 
@@ -20,7 +20,7 @@ Below is a screenshot of the SSO tab in action:
 
 **Node.js Version**
 
-![drop](https://img.shields.io/badge/Node.Js-12.6.1-green.svg)
+![drop](https://img.shields.io/badge/Node.js-12.6.1-green.svg)
 ![drop](https://img.shields.io/badge/React-16.13.1-green.svg)
 
 ## Prerequisites
@@ -28,10 +28,10 @@ Below is a screenshot of the SSO tab in action:
 **Node.js Version**
 * [Node.js](https://nodejs.org) version 12.6.1 or higher
 
-    ```bash
+```bash
     # determine node version
     node --version
-    ```
+```
 
 **Dotnet Version**
 * [Dotnet Core](https://dotnet.microsoft.com/) version 3.1 or higher
@@ -44,7 +44,8 @@ Below is a screenshot of the SSO tab in action:
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|December 05, 2020|Hilton Giesenow|Initial release
+1.0|November 25, 2020|Hilton Giesenow|Initial release
+1.1|December 05, 2020|Hilton Giesenow|Node.js version added
 
 ## Disclaimer
 
@@ -54,33 +55,44 @@ Version|Date|Author|Comments
 
 ## Minimal Path to Awesome
 
-#### 1. Clone this repository
+### 1. Clone this repository
 
-    ```bash
+```bash
     git clone https://github.com/pnp/teams-dev-samples.git
-    ```
+```
 
-#### 2. Register Azure AD application
+### 2. Register Azure AD application
 
-tbd...
+For detailed steps on how to do this, read [Registering your app through the Azure Active Directory portal in-depth](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#registering-your-app-through-the-azure-active-directory-portal-in-depth).
 
-#### 3. Update app configuration & run the web application
+### 3. Update app configuration & run the web application
 
 **Dotnet Version**
 
-* See [`dotnet`](src/dotnet) folder
+* See the [`dotnet`](src/dotnet) folder inside this sample's `src` folder
 
 **Node.js Version**
 
-* See [`node`](src/node) folder
+* See [`node`](src/node) folder inside this sample's `src` folder
 
-#### 4. Update & package the Teams app manifest
+### 4. Update & package the Teams app manifest
 
-tbd...
+Inside the [`src`](src) folder for this sample is a [`manifest.json`](src/manifest.json) file. The following needs to be changed in this file:
 
-#### 5. Upload the manifest to Teams
+1. The `"id"` value must be populated with a new Guid value. You can do this in various ways depending on your platform of choice, but a simple PowerShell command is: 
+```powershell
+New-Guid
+```
 
-tbd...
+2. The `{appId}` values (near the bottom of the manifest) must be replaced with the Azure Application ID you generated in step 2 above, when generating the new Azure AD application.
+
+3. The `{ngrokSubdomain}` value must be replaced with whatever ngrok subdomain you are using. If you are using another tunneling tool, you might need to replace the entire `{ngrokSubdomain}.ngrok.io` value, and when you create a Production version of your application you will similarly need to supply a complete production URL.
+
+4. From within the [`src`](src) folder, in the command line, run the `gulp` command (you will need the [gulp.js](https://gulpjs.com/) task runner installed to do this). This will generate a .zip manifest file that can be easily uploaded to Microsoft Teams.
+
+### 5. Upload the manifest to Teams
+
+There are a few possible options to do this, depending on your development tools and platform. The easiest is simple to use Teams' [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview) tool, in particular the [`manifest editor`](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview#manifest-editor) tab which allows you to import a manifest (i.e. the one you created in step 4 above) and immediately install it.
 
 ## Features
 
