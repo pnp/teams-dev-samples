@@ -32,4 +32,6 @@ Note further that the `RedirectUriRelativePath` can be used if you want to redir
 ngrok http https://localhost:44329/ -host-header="localhost:44329"
 ```
 
-5. Complete the remaining steps in the main readme file.
+5. For the Redirect URI in the 'Authentication' page in your Azure AD Application, enter https://{yourNgrokDomain}.ngrok.io/auth/authPopup
+
+6. Complete the remaining steps in the main readme file.

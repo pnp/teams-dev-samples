@@ -18,15 +18,6 @@ namespace msteams_tabs_sso_sample.Controllers
             _logger = logger;
         }
 
-        [Route("auth/auth-start")]
-        public IActionResult authStart()
-            => View();
-
-        [Route("auth/auth-end")]
-        public IActionResult authEnd()
-            => View();
-
-        //[Route("auth/authPopup")]
         public IActionResult authPopup()
             => View();
 
