@@ -1667,6 +1667,44 @@ extra:
       modifiedtext: November 30, 2020
       modified: 2020-11-30
 
+# Tab SSO with .NET Core and Node back-ends
+    - name: tab-sso
+      title: Tab SSO with .NET Core and Node back-ends
+      type: barebones
+      features: tab
+      source: pnp
+      summary: Two samples in one, with .NET Core and Node implementations
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-sso
+      author: Hilton Giesenow
+      client_language: javascript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      bot_framework:
+      modifiedtext: December 5, 2020
+      modified: 2020-12-05
+
+# Tab SSO with .NET Core MVC
+    - name: tab-sso-teamsclientsdk
+      title: Tab SSO with .NET Core MVC
+      type: barebones
+      features: tab
+      source: pnp
+      summary: Tab SSO with .NET Core MVC
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-sso-teamsclientsdk
+      author: Abtin Amini and Arun Kumar Anaparthi
+      client_language: javascript
+      client_platform: spa
+      client_ui: jquery
+      server_language: csharp
+      server_platform: netcore
+      bot_framework:
+      modifiedtext: December 3, 2020
+      modified: 2020-12-03
+
 #################################
 #endregion COMMUNITY SAMPLES
 #################################
@@ -1702,7 +1740,9 @@ extra:
 #region Authors and URLs
 
 authors:
+    - Abtin Amini
     - Alex Terentiev
+    - Arun Kumar Anaparthi
     - Bob German
     - Federico Porceddu
     - Laura Kokkarinen
