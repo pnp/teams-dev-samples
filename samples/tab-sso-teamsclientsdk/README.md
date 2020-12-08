@@ -12,7 +12,7 @@ This sample shows you how to implement AZURE AD single-sign-on support for Teams
 
 ## Prerequisites
 
-* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+* [Office 365 tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
 
 * To test locally, you'll need Ngrok installed on your development machine. Make sure you've downloaded and installed Ngrok on your local machine. ngrok will tunnel requests from the Internet to your local computer and terminate the SSL connection from Teams.
 
@@ -24,7 +24,7 @@ This sample shows you how to implement AZURE AD single-sign-on support for Teams
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|December 03, 2020|Abtin Amini|Initial release
+1.0|December 03, 2020|Abtin Amini <br />Arun Kumar Anaparthi|Initial release
 
 ## Disclaimer
 
