@@ -162,7 +162,7 @@ App structure
 2. /GetUserAccessToken does not render anything but instead is the server-side route for initiating the [on-behalf-of flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow).
    - It takes the token it receives from the auth.js file and attempts to exchange it for a new token that has elevated permissions to access the profile Graph API (which is usually used to retrieve the users profile photo).
    - If it fails (because the user hasn't granted permission to access the profile API), it returns an error to the /Index view. This error is used to display the "Consent" button which uses the Teams SDK to open the /Start view in a pop-up window.
-3./Start and /End routes are used if the user needs to grant further permissions. This experience happens in a separate window.
+3. /Start and /End routes are used if the user needs to grant further permissions. This experience happens in a separate window.
     - The /Start view merely creates a valid AAD authorization endpoint and redirects to that AAD consent page.
     - Once the user has consented to the permissions, AAD redirects the user back to /End. This view is responsible for returning the results back to the /Start view by calling the notifySuccess API.
     - This workflow is only necessary if you want authorization to use additional Graph APIs. Most apps will find this flow unnecessary if all they want to do is authenticate the user.
