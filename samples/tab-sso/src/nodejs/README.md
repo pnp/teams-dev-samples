@@ -28,7 +28,7 @@ Please note that this sample has been built using the Microsoft Teams Toolkit, w
 
 Note also that the value of the `Authority` setting can either be your tenant id, for building an internal-only application, or can be set to `organizations` for a multi-tenant application.
 
-4. Within this `nodejs` directory, run
+4. Within both the `nodejs` directory and the `api-server` subdirectory, run
 
 ```shell
 npm install
@@ -36,7 +36,7 @@ npm install
 
 to install the needed npm packages.
 
-5. Run the application, as follows:
+5. Run the application, using 2 terminal sessions, run the following in the `nodejs` directory and the `api-server` subdirectory:
 
 ```shell
 npm run start
