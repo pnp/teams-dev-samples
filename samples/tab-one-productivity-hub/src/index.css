@@ -1,0 +1,48 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Agenda Component Styling */
+mgt-agenda {
+  --event-margin: 0px 10px 14px 0px;
+  --event-subject-font-size: 16px;
+  --agenda-header-font-size: 20px;
+  --agenda-header-margin: 20px 10px 14px 0px;
+  margin: 0;
+  --event-background-color: none;
+}
+
+/* To-Do Component Styling */
+mgt-todo {
+  --tasks-background-color: none;
+  --task-background: none;
+  --tasks-padding: none;
+  --task-complete-background: none;
+  background-color: transparent;
+  --task-margin: 0px 10px 14px 0px;
+  --background-color-sub1: transparent;
+  --task-border: 2px solid var(--input-border);
+}
+
+/* Person Component Styling */
+mgt-person {
+  --avatar-size-s: 24px;
+  margin-right: 4px;
+  display: inline-block;
+  color: var(--icon-color);
+}
+
+/* Login Component Styling */
+mgt-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Theme Handling */
+.component-title {
+  color: var(--color);
+}
