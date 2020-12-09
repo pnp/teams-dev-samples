@@ -1705,6 +1705,25 @@ extra:
       modifiedtext: December 3, 2020
       modified: 2020-12-03
 
+# Tab sends notifications to Teams users
+    - name: react-teams-send-notification
+      title: Send notifications in Teams
+      type: barebones
+      features: tab
+      source: pnp
+      summary: Tab sends notifications to Teams users
+      thumbnail:
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-send-notification
+      author: Luis Mañez
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: December 4, 2020
+      modified: 2020-12-04
+
 #################################
 #endregion COMMUNITY SAMPLES
 #################################
