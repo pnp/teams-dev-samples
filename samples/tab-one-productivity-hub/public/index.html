@@ -17,13 +17,41 @@
 
     <mgt-teams-provider
       client-id="%REACT_APP_CLIENT_ID%"
-      scopes="User.Read,User.Read.All,User.ReadBasic.All,People.Read,People.Read.All,Contacts.Read,Calendars.Read,Presence.Read,Presence.Read.All,Tasks.ReadWrite,Tasks.Read,Mail.Read,Mail.ReadWrite,Sites.Read.All"
+      scopes="
+        User.Read,
+        User.Read.All,
+        User.ReadBasic.All,
+        People.Read,
+        People.Read.All,
+        Contacts.Read,
+        Calendars.Read,
+        Presence.Read,
+        Presence.Read.All,
+        Tasks.ReadWrite,
+        Tasks.Read,
+        Mail.Read,
+        Mail.ReadWrite,
+        Sites.Read.All"
       auth-popup-url="/auth.html">
     </mgt-teams-provider>
 
     <mgt-msal-provider
       client-id="%REACT_APP_CLIENT_ID%"
-      scopes="User.Read,User.Read.All,User.ReadBasic.All,People.Read,People.Read.All,Contacts.Read,Calendars.Read,Presence.Read,Presence.Read.All,Tasks.ReadWrite,Tasks.Read,Mail.Read,Mail.ReadWrite,Sites.Read.All"
+      scopes="
+        User.Read,
+        User.Read.All,
+        User.ReadBasic.All,
+        People.Read,
+        People.Read.All,
+        Contacts.Read,
+        Calendars.Read,
+        Presence.Read,
+        Presence.Read.All,
+        Tasks.ReadWrite,
+        Tasks.Read,
+        Mail.Read,
+        Mail.ReadWrite,
+        Sites.Read.All"     
       redirect-uri="%REACT_APP_PUBLIC_URL%"
       depends-on="mgt-teams-provider"
     ></mgt-msal-provider>
