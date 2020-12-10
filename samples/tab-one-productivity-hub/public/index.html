@@ -30,6 +30,7 @@
         Tasks.ReadWrite,
         Tasks.Read,
         Mail.Read,
+        Mail.ReadBasic,
         Mail.ReadWrite,
         Sites.Read.All"
       auth-popup-url="/auth.html">
@@ -50,6 +51,7 @@
         Tasks.ReadWrite,
         Tasks.Read,
         Mail.Read,
+        Mail.ReadBasic,
         Mail.ReadWrite,
         Sites.Read.All"     
       redirect-uri="%REACT_APP_PUBLIC_URL%"
@@ -84,9 +86,7 @@
             <template>
               <div class="mgt-email" data-for="email in value">
                 <div class="header">                
-                  <h4>
-                    <mgt-person person-query="{{email.sender.emailAddress.address}}" view="oneline" person-card="hover" />
-                  </h4>
+                  <mgt-person person-query="{{email.sender.emailAddress.address}}" view="oneline" person-card="hover" />
                   <span class="command-bar">
                     <div class="command-bar-action">
                         <a href="#" data-props="@click: deleteClick" onclick="return false;">
