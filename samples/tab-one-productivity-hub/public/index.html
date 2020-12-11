@@ -85,8 +85,10 @@
           <mgt-get id="mgt-email" resource="/me/mailFolders/Inbox/messages" scopes="Mail.Read, Mail.ReadWrite" max-pages="1" cache-enabled="true">
             <template>
               <div class="mgt-email" data-for="email in value">
-                <div class="header">                
-                  <mgt-person person-query="{{email.sender.emailAddress.address}}" view="oneline" person-card="hover" />
+                <div class="header">     
+                  <div>
+                    <mgt-person person-query="{{email.sender.emailAddress.address}}" view="oneline" person-card="hover" />
+                  </div>           
                   <span class="command-bar">
                     <div class="command-bar-action">
                         <a href="#" data-props="@click: deleteClick" onclick="return false;">
