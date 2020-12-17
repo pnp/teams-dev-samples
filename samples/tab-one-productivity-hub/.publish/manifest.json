@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "version": "1.0.0",
+  "id": "df66506f-f9f0-4077-9300-dfa08bd5d69b",
+  "packageName": "com.microsoft.teams.oneproductivityhub",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "https://www.contoso.com",
+    "privacyUrl": "https://www.contoso.com/privacy",
+    "termsOfUseUrl": "https://www.contoso.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "OneProductivityHub",
+    "full": "OneProductivityHub for Microsoft Teams"
+  },
+  "description": {
+    "short": "OneProductivityHub",
+    "full": "OneProductivityHub"
+  },
+  "accentColor": "#FFFFFF",
+  "staticTabs": [
+    {
+      "entityId": "index",
+      "name": "My Hub",
+      "contentUrl": "https://localhost:3000/tab",
+      "websiteUrl": "https://localhost:3000/tab",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": []
+}
