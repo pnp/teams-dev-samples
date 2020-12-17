@@ -15,7 +15,7 @@
 #      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
 #      author: Microsoft
 #      client_language: typescript, javascript, powerapps
-#      client_platform: spa, spfx, powerapps, netcore, sharepoint
+#      client_platform: spa, spfx, mgt, powerapps, netcore, sharepoint
 #      client_ui: react, angularjs, angular, knockout, jquery, vuejs
 #      server_language: csharp, typescript, javascript, python, java, powerautomate
 #      server_platform: netcore, netframework, express, restify, powerautomate, requests
@@ -1724,6 +1724,25 @@ extra:
       modifiedtext: December 4, 2020
       modified: 2020-12-04
 
+# Tab "One Productivity Hub"
+    - name: tab-one-productivity-hub
+      title: One Productivity Hub
+      type: solution
+      features: tab
+      source: pnp
+      summary: Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-one-productivity-hub
+      author: Sébastien Levert
+      client_language: javascript
+      client_platform: mgt
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: December 17, 2020
+      modified: 2020-12-17
+
 #################################
 #endregion COMMUNITY SAMPLES
 #################################
@@ -1751,6 +1770,83 @@ extra:
       modifiedtext: October 4, 2019
       modified: 2019-10-04
 
+# Teams Emergency Response
+    - name: app-emergency-response
+      title: Teams Emergency Response solution with SharePoint
+      type: demo
+      features: tab, taskmodule
+      source: officeDev
+      summary: Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint
+      thumbnail: 
+      url: https://github.com/OfficeDev/M365Bootcamp-TeamsEmergencyResponse
+      author: Microsoft
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: October 16, 2020
+      modified: 2020-10-16
+
+# Teams Emergency Response
+    - name: app-emergency-response
+      title: Teams Emergency Response solution with SharePoint
+      type: solution
+      features: tab, taskmodule
+      source: officeDev
+      summary: Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint
+      thumbnail: 
+      url: https://github.com/OfficeDev/M365Bootcamp-TeamsEmergencyResponse
+      author: Microsoft
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: October 16, 2020
+      modified: 2020-10-16
+
+# Teams One Productivity Hub Workshop
+    - name: tab-one-productivity-hub-workshop
+      title: One Productivity Hub workshop
+      type: demo
+      features: tab
+      source: officeDev
+      summary: Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email
+      thumbnail: 
+      url: https://github.com/OfficeDev/M365Bootcamp-TeamsOneProductivityHub
+      author: Microsoft
+      client_language: javascript
+      client_platform: mgt
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: October 16, 2020
+      modified: 2020-10-16
+
+# Teams Customer Order Demo
+    - name: app-customer-orders
+      title: Angular SPA grows into a full Teams app with bot
+      type: demo
+      features: tab, bot
+      source: officeDev
+      summary: From the Learn Together event of December 15, 2020
+      thumbnail: 
+      url: https://github.com/microsoft/DevAppsForTeams
+      author: Microsoft
+      client_language: typescript
+      client_platform: spa
+      client_ui: angular
+      server_language: javascript
+      server_platform: express
+      bot_framework: bot40
+      modifiedtext: December 14, 2020
+      modified: 2020-12-14
+
+
 #################################
 #endregion
 #################################
@@ -1771,6 +1867,7 @@ authors:
     - Rabia Williams
     - Rajesh Sitaraman
     - Ramin Ahmadi
+    - Sébastien Levert
     - Siddharth Vaghasia
     - Stephan Bisser
     - Tomomi Imura

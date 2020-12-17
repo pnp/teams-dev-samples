@@ -8,6 +8,7 @@ To learn more about how to use these samples, please refer to our [getting start
  <div class="well">
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
+    <button class="button" data-filter="[data-facet*='mgt']" title="Tab(s) built using Microsoft Graph Toolkit">Microsoft Graph Toolkit</button>
     <button class="button" data-filter="[data-facet*='powerapps']" title="Tab(s) built using Power Apps">Power Apps</button>
     <button class="button" data-filter="[data-facet*='spa']" title="Tab(s) and/or task modules built as single-page applications">Single Page App</button>
     <button class="button" data-filter="[data-facet*='spfx']" title="Tab(s) built using SharePoint Framework (SPFx)">SharePoint Framework</button>
