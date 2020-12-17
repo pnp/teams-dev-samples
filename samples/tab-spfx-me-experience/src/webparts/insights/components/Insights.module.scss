@@ -1,6 +1,7 @@
 @import '~office-ui-fabric-react/dist/sass/References.scss';
 @import "../../../common/themeColors.module.scss";
 .insights {
+  font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
   display: flex;
   //width: max-content;
   padding: var(--tasks-padding, 12px);
