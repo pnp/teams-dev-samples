@@ -4,7 +4,7 @@
 
 This sample shows you how to implement AZURE AD single-sign-on support for Teams tabs. Samples are generally not production-ready or an out-of-the-box solution but are intended to show developers specific patterns for use in their applications. The functionality is bare bone, all it does is to call a web service, get the right access token then retrieves a user’s profile.
 
-<img src="https://github.com/Saikrishna-MSFT/teams-dev-samples/blob/master/samples/tab-sso-teamsclientsdk/Docs/Images/user-profile.png" alt="SSO" style="width: 100%;">
+<img src="./Docs/Images/user-profile.png" alt="SSO" style="width: 100%;">
 
 ## Frameworks
 
@@ -127,30 +127,30 @@ Step 5: Trying out the app
 2. Follow the onscreen prompts. The authentication flow will print the output to your screen.
    - The first time you run the app it should get an access token from Microsoft Teams, but it will not be able to get one from the server unless the user or an administrator consent. If this is necessary, you will see a consent button.
 
-<img src="https://github.com/Saikrishna-MSFT/teams-dev-samples/blob/master/samples/tab-sso-teamsclientsdk/Docs/Images/consent-button.png" alt="SSO" style="width: 100%;">
+<img src="./Docs/Images/consent-button.png" alt="SSO" style="width: 100%;">
 
    - Click the consent button and a pop-up window will display the consent dialog from Azure AD.
 
-<img src="https://github.com/Saikrishna-MSFT/teams-dev-samples/blob/master/samples/tab-sso-teamsclientsdk/Docs/Images/consent-pop-up.png" alt="SSO" style="width: 100%;">
+<img src="./Docs/Images/consent-pop-up.png" alt="SSO" style="width: 100%;">
 
    - Once you've granted all the permissions, the page will use the access token it received to make a Graph API call.
 
-<img src="https://github.com/Saikrishna-MSFT/teams-dev-samples/blob/master/samples/tab-sso-teamsclientsdk/Docs/Images/user-profile.png" alt="SSO" style="width: 100%;">
+<img src="./Docs/Images/user-profile.png" alt="SSO" style="width: 100%;">
 
    - Once you've granted all the permissions, you can revisit this tab and you will notice that you will automatically be logged in.
 
-<img src="https://github.com/Saikrishna-MSFT/teams-dev-samples/blob/master/samples/tab-sso-teamsclientsdk/Docs/Images/user-profile.png" alt="SSO" style="width: 100%;">
+<img src="./Docs/Images/user-profile.png" alt="SSO" style="width: 100%;">
 
    - The SSO even works on mobile devices.
 
-<img src="https://github.com/Saikrishna-MSFT/teams-dev-samples/blob/master/samples/tab-sso-teamsclientsdk/Docs/Images/user-profile-mobile.png" alt="SSO" style="width: 100%;">
+<img src="./Docs/Images/user-profile-mobile.png" alt="SSO" style="width: 100%;">
 
 Step 6: Testing the consent process
 ====================================
 
 If you need to remove all consents for the application for test purposes, simply delete its service principal in the Azure AD portal. It may take a few minutes for cached values to time out. The service principal is created automatically the first time someone consents. 
 
-<img src="https://github.com/Saikrishna-MSFT/teams-dev-samples/blob/master/samples/tab-sso-teamsclientsdk/Docs/Images/remove-consents.png" alt="SSO" style="width: 100%;">
+<img src="./Docs/Images/remove-consents.png" alt="SSO" style="width: 100%;">
 
 App structure
 =============
@@ -162,11 +162,10 @@ App structure
 2. /GetUserAccessToken does not render anything but instead is the server-side route for initiating the [on-behalf-of flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow).
    - It takes the token it receives from the auth.js file and attempts to exchange it for a new token that has elevated permissions to access the profile Graph API (which is usually used to retrieve the users profile photo).
    - If it fails (because the user hasn't granted permission to access the profile API), it returns an error to the /Index view. This error is used to display the "Consent" button which uses the Teams SDK to open the /Start view in a pop-up window.
-3./Start and /End routes are used if the user needs to grant further permissions. This experience happens in a separate window.
+3. /Start and /End routes are used if the user needs to grant further permissions. This experience happens in a separate window.
     - The /Start view merely creates a valid AAD authorization endpoint and redirects to that AAD consent page.
     - Once the user has consented to the permissions, AAD redirects the user back to /End. This view is responsible for returning the results back to the /Start view by calling the notifySuccess API.
     - This workflow is only necessary if you want authorization to use additional Graph APIs. Most apps will find this flow unnecessary if all they want to do is authenticate the user.
     - This workflow is the same as our standard [web-based authentication flow](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-tab-aad#navigate-to-the-authorization-page-from-your-popup-page) that we've always had in Teams before we had single sign-on support. It just so happens that it's a great way to request additional permissions from the user, so it's left in this sample as an illustration of what that flow looks like.
-
 
 <img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/tab-sso-teamsclientsdk" />
