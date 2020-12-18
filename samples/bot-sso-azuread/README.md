@@ -178,4 +178,4 @@ Step 6: Trying out the app
 
 <img src="./Docs/Images/UserProfile.png" alt="User Profile" style="width: 100%;">
 
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/tab-sso-teamsclientsdk" />
+<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/bot-sso-azuread" />
