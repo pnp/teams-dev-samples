@@ -1,0 +1,59 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import "../themeColors.module.scss";
+.recentlyUsedDocuments {
+  
+    //min-width: 390px;
+  .document {
+    margin-bottom: 15px;
+  }
+
+  .documentPreview {
+    min-width: 144px;
+  }
+
+  .documentDetails {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .noDocs {
+    @include ms-font-m;
+  }
+
+  .error {
+    @include ms-font-m;
+    color: $ms-color-alert;
+  }
+}
+
+[data-theme="default"] {
+  .recentlyUsedDocuments{
+    color:$default-color;     
+  }
+    
+}
+
+[data-theme="dark"] {
+  .recentlyUsedDocuments{
+    color:$dark-color;
+    .documentDetails{
+    background-color:$dark-item-background !important ;
+    }
+  }
+  
+
+}
+
+[data-theme="contrast"] {
+  .recentlyUsedDocuments{
+    color:$contrast-color;
+    .documentDetails{
+      background-color:$contrast-item-background !important ;
+    }
+ 
+  }
+  
+ 
+}

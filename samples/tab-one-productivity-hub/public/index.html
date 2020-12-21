@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%REACT_APP_PUBLIC_URL%/favicon.ico" />
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+    <title>One Productivity Hub</title>
+    
+    <!-- Microsoft Teams SDK -->
+    <script src="https://unpkg.com/@microsoft/teams-js/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+    
+    <!-- Microsoft Graph Toolkit -->
+    <script src="https://unpkg.com/@microsoft/mgt@2.0.0/dist/bundle/mgt-loader.js"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <mgt-teams-provider
+      client-id="%REACT_APP_CLIENT_ID%"
+      scopes="
+        User.Read,
+        User.Read.All,
+        User.ReadBasic.All,
+        People.Read,
+        People.Read.All,
+        Contacts.Read,
+        Calendars.Read,
+        Presence.Read,
+        Presence.Read.All,
+        Tasks.ReadWrite,
+        Tasks.Read,
+        Mail.Read,
+        Mail.ReadBasic,
+        Mail.ReadWrite,
+        Sites.Read.All"
+      auth-popup-url="/auth.html">
+    </mgt-teams-provider>
+
+    <mgt-msal-provider
+      client-id="%REACT_APP_CLIENT_ID%"
+      scopes="
+        User.Read,
+        User.Read.All,
+        User.ReadBasic.All,
+        People.Read,
+        People.Read.All,
+        Contacts.Read,
+        Calendars.Read,
+        Presence.Read,
+        Presence.Read.All,
+        Tasks.ReadWrite,
+        Tasks.Read,
+        Mail.Read,
+        Mail.ReadBasic,
+        Mail.ReadWrite,
+        Sites.Read.All"     
+      redirect-uri="%REACT_APP_PUBLIC_URL%"
+      depends-on="mgt-teams-provider"
+    ></mgt-msal-provider>
+
+    <div class="ms-Grid" dir="ltr">
+      <div class="ms-Grid-row">
+        <div class="ms-Grid-col ms-md12 ms-xl12">
+          <!-- Login -->
+          <mgt-login id="mgt-login" class="login"></mgt-login>
+        </div>
+      </div>
+      
+      <div class="ms-Grid-row">
+        <!-- My Agenda -->
+        <div class="ms-Grid-col ms-sm12 ms-md12 ms-xl4">
+          <h3 class="component-title">My Agenda</h3>
+          <mgt-agenda show-max="7" days="10"></mgt-agenda>
+        </div>
+        
+        <!-- My Tasks -->
+        <div class="ms-Grid-col ms-sm12 ms-md12 ms-xl4">
+          <h3 class="component-title">My Tasks</h3>
+          <mgt-todo></mgt-todo>
+        </div>
+        
+        <!-- My Emails -->
+        <div class="ms-Grid-col ms-sm12 ms-md12 ms-xl4">
+          <h3 class="component-title">My Emails</h3>
+          <mgt-get id="mgt-email" resource="/me/mailFolders/Inbox/messages" scopes="Mail.Read, Mail.ReadWrite" max-pages="1" cache-enabled="true">
+            <template>
+              <div class="mgt-email" data-for="email in value">
+                <div class="header">     
+                  <div>
+                    <mgt-person person-query="{{email.sender.emailAddress.address}}" view="oneline" person-card="hover" />
+                  </div>           
+                  <span class="command-bar">
+                    <div class="command-bar-action">
+                        <a href="#" data-props="@click: deleteClick" onclick="return false;">
+                          <span class="ms-Icon--Delete" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                  </span>       
+                </div>
+                <div class="title">
+                  <a href="{{ email.webLink }}" data-props="@click: emailClick" onclick="return false;">
+                    <h3>{{ email.subject }}</h3>
+                  </a>
+                  <span class="date">
+                    {{ getFormattedDate(email.receivedDateTime) }}
+                  </span>
+                </div>
+                <div data-if="email.bodyPreview" class="preview" innerHtml>{{email.bodyPreview}}</div>
+                <div data-else class="preview empty-body">
+                  ...
+                </div>
+              </div>
+            </template>
+  
+            <template data-type="loading">
+              Loading...
+            </template>
+  
+            <template data-type="error">
+              {{ this }}
+            </template>
+          </mgt-get>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

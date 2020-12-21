@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Microsoft Teams SSO Sample App</title>
+    <link rel="stylesheet" href="~/styles/msteams-16.css" />
+    <link rel="stylesheet" href="~/styles/custom.css" />
+
+    <script src="https://statics.teams.cdn.office.net/sdk/v1.8.0/js/MicrosoftTeams.min.js" integrity="sha384-5ilKjPffKMvf1YelNqWjOhy5WJC9rkHpgF9pASMY/eRFlb619wOrCGMVIg/a/71o" crossorigin="anonymous"></script>
+
+</head>
+<body class="theme-light">
+    <div class="surface">
+        <div class="panel">
+            @RenderBody()
+        </div>
+    </div>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "packageName": "MeExperience",
+    "id": "f9797723-a393-4f3a-9a98-3f2cdb3e7525",
+    "version": "0.1",
+    "developer": {
+      "name": "Rabia Williams",
+      "websiteUrl": "https://products.office.com/sharepoint/collaboration",
+      "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+      "termsOfUseUrl": "https://www.microsoft.com/servicesagreement"
+    },
+    "name": {
+      "short": "Me Experience"
+    },
+    "description": {
+      "short": "Me Experience short description",
+      "full": "Me Experience long description"
+    },
+    "icons": {
+      "outline": "outline.png",
+      "color": "color.png"
+    },
+    "accentColor": "#004578",
+    "staticTabs": [
+      {
+        "entityId": "com.contoso.personaltab.planning",
+        "name": "Planning",
+        "contentUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=f9797723-a393-4f3a-9a98-3f2cdb3e7525%26forceLocale={locale}",
+        "scopes": [
+          "personal"
+        ]
+      },
+      {
+        "entityId": "com.contoso.personaltab.insights",
+        "name": "Insights",
+        "contentUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=eb958e51-9a32-46d6-aa5f-5c40336ff99d%26forceLocale={locale}",
+        "scopes": [
+          "personal"
+        ]
+      },
+      {
+        "entityId": "com.contoso.personaltab.settings",
+        "name": "Settings",
+        "contentUrl": "https://{teamSiteDomain}{teamSitePath}/_layouts/15/TeamsLogon.aspx?SPFX=true&dest={teamSitePath}/_layouts/15/teamshostedapp.aspx%3Fteams%26personal%26componentId=521f7042-b360-4632-9c2f-8daff6d85788%26forceLocale={locale}",
+        "scopes": [
+          "personal"
+        ]
+      }
+    ],    
+    "validDomains": [
+      "*.login.microsoftonline.com",
+      "*.sharepoint.com",
+      "*.sharepoint-df.com",
+      "spoppe-a.akamaihd.net",
+      "spoprod-a.akamaihd.net",
+      "resourceseng.blob.core.windows.net",
+      "msft.spoppe.com"
+    ],
+    "webApplicationInfo": {
+      "resource": "https://{teamSiteDomain}",
+      "id": "00000003-0000-0ff1-ce00-000000000000"
+    }
+  }

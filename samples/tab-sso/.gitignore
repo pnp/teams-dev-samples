@@ -1,0 +1,6 @@
+node_modules
+src/dotnet/.vs
+src/dotnet/bin
+src/dotnet/obj
+src/dotnet/msteams-tabs-sso-sample.csproj.user
+publish

@@ -1,0 +1,11 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Markus Moeller",
+      "unitTestsEnabled": false,
+      "useAzureAppInsights": false
+    },
+    "libraryName": "ms600TeamsSsoTab",
+    "generator-version": "2.16.0"
+  }
+}

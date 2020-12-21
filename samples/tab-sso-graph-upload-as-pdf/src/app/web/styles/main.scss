@@ -1,0 +1,81 @@
+body {
+	font-family: sans-serif;
+
+	max-width: 80vw;
+	margin: 0 auto;
+}
+
+.l-header {
+	display: flex;
+
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 5em;
+	padding: 1em;
+
+	align-content: space-between;
+	align-items: stretch;
+	justify-content: space-between;
+
+	h1 {
+		box-sizing: border-box;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+
+	}
+}
+
+.l-article {
+	margin: 3em 2em;
+}
+
+.l-title {
+	flex-grow: 1;
+}
+
+img.logo {
+	width: 100%;
+	min-width: 76px;
+	height: auto;
+}
+
+.dropZoneBG {
+	position: relative;
+  width: 400px;
+	height: 200px;
+	margin: 15px;
+  .pdfLogo {
+    position: absolute;
+    top: 45%;
+    left: 45%;          
+	}
+	.loader {
+	  position: absolute;
+    top: 35%;
+	  left: 15%;
+	  text-align: center;  
+	}
+	.result {
+		position: absolute;
+    top: 35%;
+    left: 12%;
+    .icon {
+      margin-left: 6px;
+      cursor: pointer;
+    }
+	}
+}
+
+.dropZone {
+	position: absolute;
+    top: 10;
+    border: 1px solid black;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.dropZoneHighlight {
+	background-color: rgba(211, 211, 211, 0.5);
+}
