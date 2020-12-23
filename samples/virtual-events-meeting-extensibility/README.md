@@ -94,6 +94,7 @@ Step 2: Configure AAD app
  		- TeamsAppInstallation.ReadWriteForChat
  		- TeamsTab.Create
  		- Notes.ReadWrite.All
+		- People.Read
 		
 	* Select Microsoft Graph -> Application permissions
  		- Notes.ReadWrite.All
