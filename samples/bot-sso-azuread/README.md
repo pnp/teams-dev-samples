@@ -9,7 +9,7 @@ This sample shows you how to implement AZURE AD single-sign-on support for Teams
 ## Frameworks
 
 ![drop](https://img.shields.io/badge/.NET&nbsp;Core-3.1-green.svg)
-![drop](https://img.shields.io/badge/Bot&nbsp;Framework-3.0.y-green.svg)
+![drop](https://img.shields.io/badge/Bot&nbsp;Framework-3.0-green.svg)
 
 ## Prerequisites
 
