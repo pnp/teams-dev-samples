@@ -158,6 +158,9 @@ Once you have installed the app, Please open the Virtual event app.
 
 Scenario 1: Create calendar event : App allows creation of Teams meeting based on meeting parameters provided in the Tab. It allows users to choose meeting participants and date/time. 
 
+Make sure to sign in, in order to get the people picker working.
+<img src="./Docs/Images/SignInToToolkit.png" alt="Sign In To Toolkit" style="width: 100%;">
+
 <img src="./Docs/Images/CreateCalendarEvent.png" alt="Create calendar event" style="width: 100%;">
 
 Scenario 2: Bot initiating call to the participants: At the scheduled time, the Calling & Meeting bot initiates a call to all the attendees of the event. The attendees may choose to accept / reject the call. 
