@@ -126,7 +126,7 @@ Step 3: Run the app locally
 2. If you are using Visual Studio
  	- Launch Visual Studio
  	- File -> Open -> Project/Solution
- 	- Navigate to samples/virtual-events-meeting-extensibility/Source folder.
+ 	- Navigate to samples/virtual-events-meeting-extensibility/Source/VirtualMeetingExtensibility folder.
  	- Select VirtualMeetingExtensibility.csproj file.
 
 3. Run Ngrok to expose your local web server via a public URL. Make sure to point it to your Ngrok URI. For example, if you're using port 3333 locally, run:
