@@ -1,4 +1,4 @@
-# Create a Microsoft Teams Meeting with Calling & Meeting Bot, and add a custom app to the meeting programmatically- Sample code.  
+# Create Microsoft Teams Meeting with Calling & Meeting Bot, and add a custom app to the meeting programmatically- Sample code.  
 
 ## Summary
 
@@ -70,12 +70,11 @@ Step 2: Configure AAD app
 2. Click "Add a scope"
 	* access_as_user as the Scope name.
 	* Set Who can consent? to Admins and users.
-	* Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope. 
-		* Suggestions:
-			* Admin consent title: Teams can access the user’s profile.
-			* Admin consent description: Allows Teams to call the app’s web APIs as the current user.
-			* User consent title: Teams can access your user profile and make requests on your behalf.
-			* User consent description: Enable Teams to call this app’s APIs with the same rights that you have 
+	* Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope. Suggestions:
+		* Admin consent title: Teams can access the user’s profile.
+		* Admin consent description: Allows Teams to call the app’s web APIs as the current user.
+		* User consent title: Teams can access your user profile and make requests on your behalf.
+		* User consent description: Enable Teams to call this app’s APIs with the same rights that you have 
 	* Ensure that State is set to Enabled.
 	* Select Add scope (Note: The domain part of the Scope name displayed just below the text field should automatically match the Application ID URI set in the previous step, with /access_as_user appended to the end).
 3. Authorize client applications.
@@ -160,6 +159,7 @@ Open the virtual event app and follow the scenarios.
 1: Create calendar event : App allows creation of Teams meeting based on meeting parameters provided in the Tab. It allows users to choose meeting participants and date/time. 
 
 Make sure to sign in, in order to get the people picker working.
+
 <img src="./Docs/Images/SignInToToolkit.png" alt="Sign In To Toolkit" style="width: 100%;">
 
 <img src="./Docs/Images/CreateCalendarEvent.png" alt="Create calendar event" style="width: 100%;">
