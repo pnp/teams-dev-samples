@@ -51,8 +51,8 @@ Step 1: Setup bot in Service
       
 <img src="./Docs/Images/RegisterAnApplication.png" alt="Register An Application" style="width: 100%;">      
       
-5. Create Client Secret
-      *	Navigate to the "Certificates & secrets" blade and add a client secret by clicking "New Client Secret"      
+5. Create Client Secret.
+      *	Navigate to the "Certificates & secrets" blade and add a client secret by clicking "New Client Secret".
       *	Copy and paste the secret somewhere safe. You will need it in a future step.
 
 <img src="./Docs/Images/NewClientSecret.png" alt="New Client Secret" style="width: 100%;">
@@ -75,13 +75,14 @@ Step 2: Configure AAD app
 <img src="./Docs/Images/ApplicationIDURL.png" alt="Application ID URL" style="width: 100%;">
 
 2. Click "Add a scope"
-      -   access_as_user as the Scope name.
-      -   Set Who can consent? to Admins and users.
-      -   Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope. Suggestions:
-              Admin consent title: Teams can access the user’s profile
-              Admin consent description: Allows Teams to call the app’s web APIs as the current user.
-              User consent title: Teams can access your user profile and make requests on your behalf
-      -   User consent description: Enable Teams to call this app’s APIs with the same rights that you have 
+      - access_as_user as the Scope name.
+      - Set Who can consent? to Admins and users.
+      - Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope.
+      	* Suggestions:
+      		-   Admin consent title: Teams can access the user’s profile
+      		-   Admin consent description: Allows Teams to call the app’s web APIs as the current user.
+      		-   User consent title: Teams can access your user profile and make requests on your behalf
+      		-   User consent description: Enable Teams to call this app’s APIs with the same rights that you have 
       -   Ensure that State is set to Enabled.
       -	Select Add scope (Note: The domain part of the Scope name displayed just below the text field should automatically match the Application ID URI set in the previous step, with /access_as_user appended to the end).
 
