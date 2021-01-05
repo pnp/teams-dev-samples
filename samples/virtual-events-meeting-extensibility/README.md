@@ -1,8 +1,8 @@
-# Createing online meeting and Adding Meeting Extensibility app into meeting.  
+# Create a Microsoft Teams Meeting with Calling & Meeting Bot, and add a custom app to the meeting programmatically- Sample code.  
 
 ## Summary
 
-The Virtual event app with meeting extensibility enables you to showcase teams’ platform online meeting graph API and new meeting extensibility features.  Virtual event app will helps you to create online meeting requests using graph API.  The Calling & Meeting bot will initiate the call on behalf of users based on the call parameters used for schedule request. 
+This sample code shows you how to create virtual event app with Teams platform online meeting graph API and new meeting extensibility features. Samples are generally not production-ready or an out-of-the-box solution but are intended to show developers specific patterns for use in their applications. The functionality is bare bone, all it does is to initiate a Calling & Meeting bot on behalf of users and enables the meeting organizers to programmatically add a custom app, in this example “Share Notes”, to the meeting.
 
 <img src="./Docs/Images/VirtualEventMeetingExtE2EFlow.gif" alt="Virtual Event Meeting Ext E2E Flow" style="width: 100%;">
 
@@ -70,11 +70,12 @@ Step 2: Configure AAD app
 2. Click "Add a scope"
 	* access_as_user as the Scope name.
 	* Set Who can consent? to Admins and users.
-	* Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope. Suggestions:
-		Admin consent title: Teams can access the user’s profile
-		Admin consent description: Allows Teams to call the app’s web APIs as the current user.
-		User consent title: Teams can access your user profile and make requests on your behalf
-	* User consent description: Enable Teams to call this app’s APIs with the same rights that you have 
+	* Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope. 
+		* Suggestions:
+			* Admin consent title: Teams can access the user’s profile.
+			* Admin consent description: Allows Teams to call the app’s web APIs as the current user.
+			* User consent title: Teams can access your user profile and make requests on your behalf.
+			* User consent description: Enable Teams to call this app’s APIs with the same rights that you have 
 	* Ensure that State is set to Enabled.
 	* Select Add scope (Note: The domain part of the Scope name displayed just below the text field should automatically match the Application ID URI set in the previous step, with /access_as_user appended to the end).
 3. Authorize client applications.
@@ -151,63 +152,63 @@ Step 4: Packaging and installing your app to Teams
 Make sure the required values such ap App id, content URL of Static tab, configuration url of configurable tab and web application info sections are populated in the manifest, Zip the manifest with the profile images and install it in Teams.
 
 
-Step 5: Trying out the app
+Step 5: Try out the app
 ==================================================
 
-Once you have installed the app, Please open the Virtual event app.
+Open the virtual event app and follow the scenarios.
 
-Scenario 1: Create calendar event : App allows creation of Teams meeting based on meeting parameters provided in the Tab. It allows users to choose meeting participants and date/time. 
+1: Create calendar event : App allows creation of Teams meeting based on meeting parameters provided in the Tab. It allows users to choose meeting participants and date/time. 
 
 Make sure to sign in, in order to get the people picker working.
 <img src="./Docs/Images/SignInToToolkit.png" alt="Sign In To Toolkit" style="width: 100%;">
 
 <img src="./Docs/Images/CreateCalendarEvent.png" alt="Create calendar event" style="width: 100%;">
 
-Scenario 2: Bot initiating call to the participants: At the scheduled time, the Calling & Meeting bot initiates a call to all the attendees of the event. The attendees may choose to accept / reject the call. 
+2: Bot initiating call to the participants: At the scheduled time, the Calling & Meeting bot initiates a call to all the attendees of the event. The attendees may choose to accept / reject the call. 
 
 <img src="./Docs/Images/BotCalling.png" alt="Bot Calling" style="width: 100%;">
 
-Scenario 3 : Meeting stage view: The bot is also present as a participant in the meeting. The bot has access to participants information, video and audio stream. 
+3 : Meeting stage view: The bot is also present as a participant in the meeting. The bot has access to participants information, video and audio stream. 
 
 <img src="./Docs/Images/MeetingStage.png" alt="Meeting Stage" style="width: 100%;">
 
-Scenario 4: Existing app has been installed dynamically: As meeting event gets created, the app also gets added to the meeting automatically using Graph API.
+4: Existing app has been installed programmatically: As meeting event gets created, the app also gets added to the meeting automatically using Graph API.
 
 <img src="./Docs/Images/AppInstallationToTeamsMeeting.png" alt="App Installation To Teams Meeting" style="width: 100%;">
 
-Scenario 5: Tab got added to the meeting dynamically: Dynamically adding an app to meeting based on a custom logic allows flexibility and control over determining meeting experience based on business requirements
+5: Tab got added to the meeting programmatically: Programmatically  adding an app to meeting based on a custom logic allows flexibility and control over determining meeting experience based on business requirements
 
 <img src="./Docs/Images/TabAddedToTeamsMeeting.png" alt="Tab Added To Teams Meeting" style="width: 100%;">
 
-Scenario 6: Meeting side panel: As an in-meeting experience, the app allows users to take notes during the call in the meeting’s side panel. 
+6: Meeting side panel: As an in-meeting experience, the app allows users to take notes during the call in the meeting’s side panel. 
 
 <img src="./Docs/Images/MeetingSidePanel.png" alt="Meeting Side Panel" style="width: 100%;">
 
-Scenario 7: Posting the meeting notes from the meeting side panel: Each attendee may take their own notes during the meeting. At the end of the meeting, the attendees can share the notes they have taken to collate.
+7: Posting the meeting notes from the meeting side panel: Each attendee may take their own notes during the meeting. At the end of the meeting, the attendees can share the notes they have taken to collate.
 
 <img src="./Docs/Images/NotesFromSidePanel.png" alt="Notes From Side Panel" style="width: 100%;">
 
-Scenario 8: Notes in the Notebook page with the username who has shared the notes: Collated meeting notes across team is consolidated into one single page and section automatically created for the specific meeting.
+8: Notes in the Notebook page with the username who has shared the notes: Collated meeting notes across team is consolidated into one single page and section automatically created for the specific meeting.
 
 <img src="./Docs/Images/NotesInNotebookPage.png" alt="Notes In Notebook Page" style="width: 100%;">
 
-Scenario 9: Participants /Attendees information: List of attendees who participated in the meeting are collected at regular intervals (every 3 seconds) and stored in Cosmos DB. This can be used for further analysis and reporting at various levels of aggregation. 
+9: Participants /Attendees information: List of attendees who participated in the meeting are collected at regular intervals (every 3 seconds) and stored in Cosmos DB. This can be used for further analysis and reporting at various levels of aggregation. 
 
 <img src="./Docs/Images/ListOfAttendees.png" alt="List Of Attendees" style="width: 100%;">
 
-## Features
+## Important features in the sample code:
 
 Virtual Event and online meeting:
 
-1. Creating Online event: A calendar event will be created for the given schedule and participants.
+1. [Creating Online event](https://docs.microsoft.com/en-us/graph/api/user-post-events?view=graph-rest-1.0&tabs=http): A calendar event will be created for the given schedule and participants.
 2. Virtual Event Bot: Bot will initiate the call at the scheduled time to the mentioned participants.
-3. List of Participants: Actual attendees’ information would be retrieved periodically and gets stored into cosmos DB, using which the list of participants can be known.
+3. [List of Participants](https://docs.microsoft.com/en-us/graph/api/call-list-participants?view=graph-rest-1.0&tabs=http): Actual attendees’ information would be retrieved periodically and gets stored into cosmos DB, using which the list of participants can be known.
 
-Meeting Extensibility App:
+[Meeting Extensibility App](https://docs.microsoft.com/en-us/microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings):
 
-1. Adding app into Meeting: Extending the Virtual Event app to allow installing the existing applications into the meeting as part of the event creation and allowing to include the app as part of the meeting.
-2. Creating OneNote notebook: OneNote notebook, section and page will be created for the event. Meeting notes from different user would get stored into the notebook page.
-3. Updating OneNote notebook from the meeting: Attendees can make use of meeting side panel to take notes during the meeting and share their notes. The notes taken during the meeting will be consolidated in one single page in the OneNote per meeting. 
+1. [Programmatically adding app in Teams meetings](https://docs.microsoft.com/en-us/graph/api/chat-post-installedapps?view=graph-rest-beta&tabs=http): Extending the Virtual Event app to allow installing the existing applications into the meeting as part of the event creation and allowing to include the app as part of the meeting.
+2. [Creating OneNote notebook](https://docs.microsoft.com/en-us/graph/api/onenote-post-notebooks?view=graph-rest-1.0&tabs=http): OneNote notebook, section and page will be created for the event. Meeting notes from different user would get stored into the notebook page.
+3. [Updating OneNote notebook from the meeting](https://docs.microsoft.com/en-us/graph/api/page-update?view=graph-rest-1.0&tabs=http): Attendees can make use of meeting side panel to take notes during the meeting and share their notes. The notes taken during the meeting will be consolidated in one single page in the OneNote per meeting. 
 
 ## Take it Further
 
