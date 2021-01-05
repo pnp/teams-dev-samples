@@ -78,10 +78,10 @@ Step 2: Configure AAD app
       - access_as_user as the Scope name.
       - Set Who can consent? to Admins and users.
       - Fill in the fields for configuring the admin and user consent prompts with values that are appropriate for the access_as_user scope. Suggestions:
-      	  	-   Admin consent title: Teams can access the user’s profile
-      		-   Admin consent description: Allows Teams to call the app’s web APIs as the current user.
-      		-   User consent title: Teams can access your user profile and make requests on your behalf
-      		-   User consent description: Enable Teams to call this app’s APIs with the same rights that you have 
+      	  -   Admin consent title: Teams can access the user’s profile
+      	  -   Admin consent description: Allows Teams to call the app’s web APIs as the current user.
+      	  -   User consent title: Teams can access your user profile and make requests on your behalf
+      	  -   User consent description: Enable Teams to call this app’s APIs with the same rights that you have 
       -   Ensure that State is set to Enabled.
       -	Select Add scope (Note: The domain part of the Scope name displayed just below the text field should automatically match the Application ID URI set in the previous step, with /access_as_user appended to the end).
 
