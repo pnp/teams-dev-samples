@@ -1743,6 +1743,46 @@ extra:
       modifiedtext: December 17, 2020
       modified: 2020-12-17
 
+# Bot SSO with .NET Core MVC
+    - name: bot-sso-azuread
+      title: Bot Single Sign-on
+      type: barebones
+      features: bot
+      source: pnp
+      summary: This sample shows how to implement Azure AD Single Sign-on for a Bot in Microsoft Teams
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-sso-azuread
+      author: Abtin Amini and Arun Kumar Anaparthi
+      client_language: 
+      client_platform: 
+      client_ui: 
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: December 18, 2020
+      modified: 2020-12-18
+
+# Virtual events meeting extensibility
+    - name: app-virtual-events-meeting-extensibility
+      title: Virtual events meeting extensibility
+      type: demo
+      features: bot, tab
+      source: pnp
+      summary: Shows how to create an app with a bot that calls users into a meeting with a custom event
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/app-virtual-events-meeting-extensibility
+      author: Abtin Amini and Arun Kumar Anaparthi
+      client_language: javascript
+      client_platform: spa
+      client_ui: jquery
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: December 18, 2020
+      modified: 2020-12-18
+
+
+
 #################################
 #endregion COMMUNITY SAMPLES
 #################################
