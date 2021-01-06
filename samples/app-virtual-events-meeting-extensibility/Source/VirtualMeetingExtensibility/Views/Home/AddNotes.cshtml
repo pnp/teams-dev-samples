@@ -1,0 +1,76 @@
+﻿@{ ViewData["Title"] = "Add notes Page"; }
+@section Styles {
+    <link href="~/css/addNotes.css" rel="stylesheet" />
+}
+<button onclick="homeLogin()" id="login" style="display:none;">Login</button>
+<div id="loading"></div>
+<div class="">
+    <div class="accordion" id="acad">
+        <div class="card cc">
+            <div class="card-header ch" id="note">
+                <div class="text-left" data-toggle="collapse" data-target="#notes" aria-expanded="true"
+                     aria-controls="notes">
+                    Notes
+                    <i class="fa float-right" aria-hidden="true"></i>
+                </div>
+            </div>
+
+            <div id="notes" class="collapse show" aria-labelledby="note" data-parent="#acad">
+                <div class="card-body cb">
+                    <textarea name="Add notes" id="txtNotes" class="w-100 px-3 pt-2 resize" rows="15"
+                              placeholder="Add notes"></textarea>
+                </div>
+                <div>
+                    <button class="share" onclick="updatePage()">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="card cc">
+            <div class="card-header ch" id="todo">
+                <div class="text-left collapsed" data-toggle="collapse" data-target="#todos" aria-expanded="false"
+                     aria-controls="todos">
+                    Add to Do's
+                    <i class="fa float-right" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="todos" class="collapse" aria-labelledby="todo" data-parent="#acad">
+                <div class="card-body cb">
+                    <div class="custom-control custom-radio radio-data">
+                        <input type="radio" id="1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="1">Revice case study for next class</label>
+                        <i class="fa fa-clock-o float-right" aria-hidden="true"></i>
+                    </div>
+                    <div class="custom-control custom-radio radio-data">
+                        <input type="radio" id="2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="2">Form groups for project submission</label>
+                        <i class="fa fa-clock-o float-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="add" onClick="add()"> + </button>
+    <div class="mt4" id="add-card">
+        <div class="card add-cc">
+            <label for="title">Select Member</label>
+            <select class="custom-select mb-2" id="member">
+                <option selected>Choose Member</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+            <label for="title">Title</label>
+            <input type="text" id="title">
+            <label for="date">Due Date</label>
+            <input type="date" id="date">
+            <div class="add-cc-btns">
+                <button class="discard" id="discard" onClick="discard()">Discard</button>
+                <button class="add-cc-add">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/js/addnotes.js"></script>
+}

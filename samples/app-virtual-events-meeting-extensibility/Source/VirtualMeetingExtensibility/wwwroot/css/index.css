@@ -1,0 +1,114 @@
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url('../Images/Preloader_2.gif') no-repeat center center;
+    z-index: 9999;
+}
+
+ul#pills-tab {
+    left: 50%;
+    margin-top: 3%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background-color: white;
+}
+
+div#pills-tabContent {
+    padding-top: 5rem;
+}
+
+.head {
+    background-color: #00407a;
+    height: 48px;
+    width: auto;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.ms-logo {
+    max-width: 200px;
+    max-height: 48px;
+    border-style: none !important;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #e9ecef;
+}
+
+.btn-primary {
+    background-color: #00407a;
+}
+
+ul#pills-tab {
+    z-index: 999 !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #00407a;
+}
+
+.select2 {
+    width: 100% !important;
+}
+
+.table td, .table th {
+    text-align: center
+}
+
+.fa {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.select2-container {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding-left: 2px;
+}
+
+.select2-container--default .select2-selection--single {
+    border: none !important;
+    border-radius: none !important;
+}
+
+    .select2-container--default .select2-selection--single:focus {
+        outline: none !important;
+    }
+
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow
+    b {
+        margin-top: 4px;
+    }
+
+.files {
+    border: 1px solid lightgray;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0.2rem 0.1rem;
+}
+
+.edit-modal {
+    padding: 0 2rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.form-group, .title {
+    margin-bottom: 0.8rem;
+}
