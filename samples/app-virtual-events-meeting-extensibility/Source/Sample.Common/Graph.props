@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Import Project=".\Graph.internal.props" Condition="Exists('.\Graph.internal.props')" />
+  <PropertyGroup>
+    <RootDir>$(MSBuildThisFileDirectory)</RootDir>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.csproj' Or '$(MSBuildProjectExtension)' == '.ccproj' ">
+    <!--Binding redirects fix issues with incorrect versions of nuget packages. These lines autogenerate them.-->
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(MSBuildProjectExtension)' == '.csproj' ">
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <CodeAnalysisRuleSet>$(RootDir)stylecop.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>Full</DebugType>
+
+    <!-- Package details -->
+    <PackageTags>$(MSBuildProjectName.Replace('.', ' '))</PackageTags>
+    <Company>Microsoft Corporation</Company>
+    <Authors>Microsoft Communications Platform</Authors>
+    <Description>$(MSBuildProjectName.Replace('.', ' '))</Description>
+    <Copyright>Copyright (c) Microsoft Corporation. All rights reserved.</Copyright>
+
+    <!-- Assembly details -->
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <DocumentationFile>bin\$(Platforms.Replace('AnyCPU', ''))\$(Configuration)\$(TargetFramework)\$(RuntimeIdentifier)\$(MSBuildProjectName).xml</DocumentationFile>
+    <DelaySign>true</DelaySign>
+    <Version>1.0.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(MSBuildProjectExtension)' == '.csproj'">
+    <AdditionalFiles Include="$(RootDir)stylecop.json" Link="stylecop.json" Visible="false" />
+
+    <!--Include packages in all projects-->
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta009">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="AsyncUsageAnalyzers" Version="1.0.0-alpha003">
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>
