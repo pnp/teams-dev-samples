@@ -1,0 +1,36 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "version": "1.0.0",
+    "id": "{new unique GUID for this Teams app - NOT the Azure AD App ID}",
+    "packageName": "com.contoso.ProativeMessagingSample",
+    "developer": {
+        "name": "Proative Messaging Sample",
+        "websiteUrl": "https://www.microsoft.com",
+        "privacyUrl": "https://www.microsoft.com/privacy",
+        "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+    },
+    "name": {
+        "short": "Proative Messaging Sample",
+        "full": "Proative Messaging sample app for Microsoft Teams"
+    },
+    "description": {
+        "short": "Proative Messaging sample for Microsoft Teams",
+        "full": "This sample app provides a very simple sample of how to implement Proactive Messaging for Microsoft Teams."
+    },
+    "icons": {
+        "outline": "contoso20x20.png",
+        "color": "contoso96x96.png"
+    },
+    "accentColor": "#60A18E",
+    "staticTabs": [{
+        "entityId": "proactiveTabEntityId",
+        "name": "Proative Messaging Sample Tab",
+        "contentUrl": "https://{ngrokSubdomain}.ngrok.io/tab",
+        "scopes": [
+            "personal"
+        ]
+    }],
+    "permissions": [],
+    "validDomains": []
+}
