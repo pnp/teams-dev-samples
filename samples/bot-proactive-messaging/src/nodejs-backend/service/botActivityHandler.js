@@ -24,37 +24,41 @@ class BotActivityHandler extends TeamsActivityHandler {
         */
         // Registers an activity event handler for the message event, emitted for every incoming message activity.
         this.onMessage(async (context, next) => {
-            TurnContext.removeRecipientMention(context.activity);
-            switch (context.activity.text.trim()) {
-            case 'Hello':
-                await this.mentionActivityAsync(context);
-				break;
-			case 'GetInfo':
-				await this.sendProactiveInfoAsync(context);
-				break;
-            default:
-                // By default for unknown activity sent by user show
-                // a card with the available actions.
-                const value = { count: 0 };
-                const card = CardFactory.heroCard(
-                    'Lets talk...',
-                    null,
-                    [{
-                        type: ActionTypes.MessageBack,
-                        title: 'Say Hello',
-                        value: value,
-                        text: 'Hello'
-                    }]);
-                await context.sendActivity({ attachments: [card] });
-                break;
-            }
+			
+			TurnContext.removeRecipientMention(context.activity);
+			
+			switch (context.activity.text.trim()) {
+				case 'Hello':
+					await this.mentionActivityAsync(context);
+					break;
+					
+				case 'GetInfo':
+					await this.sendProactiveInfoAsync(context);
+					break;
+
+				default:
+					// By default for unknown activity sent by user show
+					// a card with the available actions.
+					const value = { count: 0 };
+					const card = CardFactory.heroCard(
+						'Lets talk...',
+						null,
+						[{
+							type: ActionTypes.MessageBack,
+							title: 'Say Hello',
+							value: value,
+							text: 'Hello'
+						}]);
+					await context.sendActivity({ attachments: [card] });
+					break;
+			}
+			
             await next();
 		});
 		
 		this.onMembersAdded(async (context, next) => {
 			// Iterate over all new members added to the conversation
 
-			
 			for (const idx in context.activity.membersAdded) {
 				// Greet anyone that was not the target (recipient) of this message.
 				// Since the bot is the recipient for events from the channel,
