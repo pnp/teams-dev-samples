@@ -1,16 +1,26 @@
-# Teams Tab Single Sign-on (SSO) Sample
+# Teams Proactive Bot Messaging Sample
 
 ## Summary
 
-This sample shows how to create a tab for Teams that uses the built-in [Single Sign-On (SSO)](https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso) capabilities to get a secure token containing important user information like user display name, Azure AD Object Id, UPN and Tenant ID. The sample also shows how to create a web service to enable exchange for an [On-Behalf-Of](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow) token that can be used to call another service, such as the Microsoft Graph, to access additional capabilities.
+Bot interaction typically starts with the user messaging the Bot, with the Bot then processing the message and replying. At times, however, we want the Bot to *start* the conversation, something known as [Pro-active messaging](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/conversations/send-proactive-messages?tabs=dotnet). More on this topic can be found in the Further Reading section at the bottom of this document. 
 
-Please note that using SSO does *not* eliminate the user seeing consent popups - these are still required in order to ensure the application has approval to access the user's information. To assist in this, read [here](https://docs.microsoft.com/en-gb/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#tenant-admin-consent) on how to have an administrator pre-consent on behalf of all the users in the organisation.
+The purpose of this particular sample is to show (a) how to gather the minimum information required to send a proactive messaging, and then (b) to show how to do the actual sending. The sample consists of three aspects:
 
-Below is a screenshot of the SSO tab in action (this is for the .NET version - the Node.js version shows the same information but in a slightly different way).
+1. A Bot that captures the required conversation properties (this sample contains both a .NET and a Node.js version of this Bot)
+2. A Tab that acts as a basic user interface to call the backend API, to send the actual Proactive message
+3. A backend API to, on demand, send the Proactive message (this sample contains both a .NET and a Node.js version of this API). Note that, while this API lives in the same project as the Bot, in both the .Net and Node.js examples, this is merely for convenience - it is entirely possible for this Proactive message sending to take place in another backend entirely, e.g. inside an Azure Function triggered on a daily schedule.
 
-![picture of the app in action](assets/images/TabScreenshot.png)
+Below is a screenshot of the Tab hosting the UI, and the resulting Proactive message sent to the user.
 
-**Please note** that this sample actually contains two separate, alternate projects: a .NET version and a Node.js version. In addition, the .NET version uses a more 'vanilla JS' approach, in order to show how SSO can be implemented in such a scenario, and the Node.js version uses a React front end, in order to demonstrate SSO using a front end framework.
+![picture of the tab](assets/images/TabScreenshot.png)
+
+![picture of the proactive message](assets/images/ProactiveMessageInBot.png)
+
+**React note** that this sample actually contains three separate projects:
+
+1. A react front end, in the form of a Teams tab, as shown in the screenshot above. This can be found inside [`tab-frontend`](src/tab-frontend) folder inside this sample's `src` folder.
+2. A Node.Js version of the backend, which hosts both the Bot and an API that the tab calls to send the actual Proactive message, which can found inside [`nodejs-backend`](src/nodejs-backend) folder inside this sample's `src` folder.
+3. A .NET version of the backend, which can found inside [`dotnet-backend`](src/dotnet-backend) folder inside this sample's `src` folder.
 
 ## Frameworks
 
@@ -20,8 +30,12 @@ Below is a screenshot of the SSO tab in action (this is for the .NET version - t
 
 **Node.js Version**
 
-![drop](https://img.shields.io/badge/Node.js-12.6.1-green.svg)
-![drop](https://img.shields.io/badge/React-16.13.1-green.svg)
+![drop](https://img.shields.io/badge/Node.js->=12.6.1-green.svg)
+
+**React Tab**
+
+![drop](https://img.shields.io/badge/Node.js->=12.6.1-green.svg)
+![drop](https://img.shields.io/badge/React->=16.13.1-green.svg)
 
 ## Prerequisites
 
@@ -66,6 +80,9 @@ For detailed steps on how to do this, read [Registering your app through the Azu
 
 ### 3. Update app configuration & run the web application
 
+
+
+
 **Dotnet Version**
 
 * See the [`dotnet`](src/dotnet) folder inside this sample's `src` folder
@@ -100,6 +117,5 @@ This sample demonstrates how to create a tab for Teams that uses Single-Sign-On 
 ## Further Reading
 
 * [What Are Tabs (Overview of Tabs in Teams)](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/what-are-tabs)
-* [Tab Authentication](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab)
-* [Single Sign-On (SSO) For Tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)
-* [Microsoft Authentication Library (MSAL) 2.0](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
+* [What Are Tabs (Overview of Tabs in Teams)](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/what-are-tabs)
+* [What Are Tabs (Overview of Tabs in Teams)](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/what-are-tabs)
