@@ -88,7 +88,7 @@ You can do this in various ways depending on your platform of choice, but a simp
 You need to run two projects at the same time - one to host the bot itself, and one for the tab that you can use to send a pro-active test. To do this in NGrok, you need to supply a yaml file indicating both endpoints you want to tunnel at the same time. A sample yaml file is included in this sample in the [pnpBotProactiveSample.yml](src/pnpBotProactiveSample.yml) file, and a sample command to start NGrok using it is supplied below (update to match the relevant path on your workstation):
 
 ```
-    ngrok.exe start --config C:\Dev\GitHub\teams-dev-samples\samples\bot-proactive-messaging\src\pnpBotProactiveSample.yml --all
+    ngrok.exe start --config C:\Dev\teams-dev-samples\samples\bot-proactive-messaging\src\pnpBotProactiveSample.yml --all
 ```
 
 ### 5. Update React front end configuration & run the application

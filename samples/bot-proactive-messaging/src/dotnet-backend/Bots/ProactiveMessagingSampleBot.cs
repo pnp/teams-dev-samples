@@ -74,14 +74,17 @@ namespace Microsoft.BotBuilderSamples.Bots
         {
             var conversationId = turnContext.Activity.Conversation.Id;
             var serviceUrl = turnContext.Activity.ServiceUrl;
+            var aadObjectId = turnContext.Activity.From.AadObjectId;
             var teamsAppId = Configuration["TeamsAppId"];
             var tabEntityId = Configuration["ProactiveTabEntityId"];
             var subEntityIdEncoded = conversationId + "|" + serviceUrl;
             var encodedContext = WebUtility.UrlEncode("{\"subEntityId\": \"" + subEntityIdEncoded + "\"}");
             var deepLinkUrl = $"https://teams.microsoft.com/l/entity/{teamsAppId}/{tabEntityId}?&context={encodedContext}";
 
-            await turnContext.SendActivityAsync(MessageFactory.Text($"The conversationId for this conversation is: **{conversationId}**"), cancellationToken);
             await turnContext.SendActivityAsync(MessageFactory.Text($"The serviceUrl for this conversation is: **{serviceUrl}**"), cancellationToken);
+            await turnContext.SendActivityAsync(MessageFactory.Text($"The conversationId for this conversation is: **{conversationId}**"), cancellationToken);
+            await turnContext.SendActivityAsync(MessageFactory.Text($"The aadObjectId for this user is: **{aadObjectId}**"), cancellationToken);
+            await turnContext.SendActivityAsync(MessageFactory.Text("You should store the conversationId and serviceUrl in your data store, perhaps using the aadObjectId as a key for the record"), cancellationToken);
             await turnContext.SendActivityAsync(MessageFactory.Text($"Click **[here]({deepLinkUrl})** to go to the tab for this app, where you can send a test pro-active message."), cancellationToken);
         }
 

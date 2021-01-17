@@ -108,6 +108,7 @@ class BotActivityHandler extends TeamsActivityHandler {
 
 		let conversationId = context.activity.conversation.id;
 		let serviceUrl = context.activity.serviceUrl;
+		var aadObjectId = context.activity.from.aadObjectId;
 		let teamsAppId = process.env.TeamsAppId;
 		let tabEntityId = process.env.ProactiveTabEntityId;
 		var subEntityIdEncoded = conversationId + "|" + serviceUrl;
@@ -116,6 +117,8 @@ class BotActivityHandler extends TeamsActivityHandler {
 
         await context.sendActivity(`The conversationId for this conversation is: **${conversationId}**`);
 		await context.sendActivity(`The serviceUrl for this conversation is: **${serviceUrl}**`);
+		await context.sendActivity(`The aadObjectId for this user is: **${aadObjectId}**`);
+		await context.sendActivity(`You should store the conversationId and serviceUrl in your data store, perhaps using the aadObjectId as a key for the record`);
 		await context.sendActivity(`Click **[here](${deepLinkUrl})** to go to the tab for this app, where you can send a test pro-active message.`);
     }
     /* Conversation Bot */
