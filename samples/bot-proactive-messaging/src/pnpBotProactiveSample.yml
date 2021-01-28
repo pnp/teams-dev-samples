@@ -1,0 +1,12 @@
+web_addr: localhost:4040
+tunnels:
+  azurefuncs:
+    proto: http
+    addr: 7071
+    bind_tls: true
+    host_header: "localhost:7071"
+  mainweb:
+    proto: http
+    addr: 3000
+    bind_tls: true
+    host_header: "localhost:3978"
