@@ -1781,6 +1781,44 @@ extra:
       modifiedtext: December 18, 2020
       modified: 2020-12-18
 
+# Bot - Proactive Messaging (NodeJS)
+    - name: bot-proactive-messaging-node
+      title: Teams Proactive Bot Messaging 
+      type: barebones
+      features: bot
+      source: pnp
+      summary: Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-proactive-messaging
+      author: Hilton Giesenow
+      client_language: javascript
+      client_platform: spa
+      client_ui: react
+      server_language: javascript
+      server_platform: express
+      bot_framework: bot46
+      modifiedtext: January 28, 2021
+      modified: 2021-01-28
+
+# Bot - Proactive Messaging (.NET Core)
+    - name: bot-proactive-messaging-netcore
+      title: Teams Proactive Bot Messaging 
+      type: barebones
+      features: bot
+      source: pnp
+      summary: Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-proactive-messaging
+      author: Hilton Giesenow
+      client_language: javascript
+      client_platform: spa
+      client_ui: react
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: January 28, 2021
+      modified: 2021-01-28
+
 
 
 #################################
