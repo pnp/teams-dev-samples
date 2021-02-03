@@ -66,7 +66,8 @@ Step 2: Configure AAD app
 ====================================
 1. Expose API endpoint.
 	* Click "Expose an API" in the left rail
-		 Update your application ID URL to include your bot id - api://botid-<your_bot_id>, where <your_bot_id> is the id of the bot that will be making the SSO request and found in your Teams Application Manifest.
+		* Select the Set link to generate the Application ID URI in the form of api://{AppID}. Insert your fully qualified domain name (with a forward slash "/" appended to the end) between the double forward slashes and the GUID. The entire ID should have the form of: api://fully-qualified-domain-name/{AppID}.
+			 * ex: `api://subdomain.ngrok.io/00000000-0000-0000-0000-000000000000`.
 2. Click "Add a scope"
 	* access_as_user as the Scope name.
 	* Set Who can consent? to Admins and users.
@@ -109,7 +110,8 @@ Step 2: Configure AAD app
 5. Redirect URI
  	- Select Add a platform.
  	- Select web.
- 	- Enter the redirect URI for your app:	https://subdomain.ngrok.io/End, https://subdomain.ngrok.io/auth
+ 	- Enter the redirect URI for your app.
+	    * ex: `https://subdomain.ngrok.io/End, https://subdomain.ngrok.io/auth`.
 
     Next, Enable implicit grant by checking the following boxes:  
     ✔ ID Token  
