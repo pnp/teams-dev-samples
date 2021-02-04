@@ -1,6 +1,6 @@
 # Teams Tab Single Sign-on (SSO) Sample - .NET
 
-This SSO sample includes both a .NET and a Node.js version. This readme is specific to the .NET version, so please see [here](../../) for the overall readme details, and then come back here for the dotnet-specific setup steps.
+This SSO sample includes both a .NET and a Node.js version. This readme is specific to the Node.js version, so please see [here](../../) for the overall readme details, and then come back here for the dotnet-specific setup steps.
 
 ## Version history
 
@@ -16,7 +16,11 @@ Version|Date|Author|Comments
 
 ## Microsoft Teams Toolkit
 
-Please note that this sample has been built using the Microsoft Teams Toolkit, which enables you to create custom Teams apps directly within the [Visual Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-overview) or [Visual Studio Code](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-code-overview) IDE. In particular, the December 2020 release of this toolkit provides improved support for [creating SSO Tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/toolkit/visual-studio-code-tab-sso). This sample starts with a Teams Toolkit project and adds a few additional capabilities, particularly for working with the SSO token.
+Please note that this sample has been built using the Microsoft Teams Toolkit, which enables you to create custom Teams apps directly within the [Visual Studio](https://docs.microsoft.com/microsoftteams/platform/toolkit/visual-studio-overview) or [Visual Studio Code](https://docs.microsoft.com/microsoftteams/platform/toolkit/visual-studio-code-overview) IDE. In particular, the December 2020 release of this toolkit provides improved support for [creating SSO Tabs](https://docs.microsoft.com/microsoftteams/platform/toolkit/visual-studio-code-tab-sso). This sample starts with a Teams Toolkit project and adds a few additional capabilities, particularly for working with the SSO token.
+
+## Microsoft identity platform
+
+This sample is secured with [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/). It uses Microsoft [Authentication Library for JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js) (MSAL.js) to implement acquisition of access tokens. In particular, the front-end React project uses [Microsoft Authentication Library for React (Preview)](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-react) (MSAL React), while the the `api-server` uses [Microsoft Authentication Library for Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) (MSAL Node).
 
 ## Minimal Path to Awesome
 

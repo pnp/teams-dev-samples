@@ -2,166 +2,161 @@
 // Licensed under the MIT License.
 
 import React from 'react';
-import './App.css';
 import * as microsoftTeams from "@microsoft/teams-js";
-import { Avatar, Button, Loader } from '@fluentui/react-northstar'
-import jwt_decode from 'jwt-decode';
+import { Loader } from '@fluentui/react-northstar';
+import { withMsal } from '@azure/msal-react';
+
+import './App.css';
 
 /**
- * The 'PersonalTab' component renders the main tab content
- * of your app.
+ * The 'PersonalTab' component renders the main tab content of your app.
  */
 class Tab extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props)
+
     this.state = {
       context: {},
-	  ssoToken: "",
-	  name: "",
-	  aadObjectId: "",
-	  upn: "",
-	  tenantId: "",
+      ssoToken: "",
       consentRequired: false,
       consentProvided: false,
       graphAccessToken: "",
-      photo: "",
+      profile: null,
       error: false
     }
-
-    //Bind any functions that need to be passed as callbacks or used to React components
-    this.ssoLoginSuccess = this.ssoLoginSuccess.bind(this);
-    this.ssoLoginFailure = this.ssoLoginFailure.bind(this);
-    this.consentSuccess = this.consentSuccess.bind(this);
-    this.consentFailure = this.consentFailure.bind(this);
-    this.unhandledFetchError = this.unhandledFetchError.bind(this);
-    this.callGraphFromClient = this.callGraphFromClient.bind(this);
-    this.showConsentDialog = this.showConsentDialog.bind(this);
   }
 
-  //React lifecycle method that gets called once a component has finished mounting
-  //Learn more: https://reactjs.org/docs/react-component.html#componentdidmount
-  componentDidMount(){
+  // React lifecycle method that gets called once a component has finished mounting
+  // Learn more: https://reactjs.org/docs/react-component.html#componentdidmount
+  componentDidMount() {
+
     // Initialize the Microsoft Teams SDK
     microsoftTeams.initialize();
 
     // Get the user context from Teams and set it in the state
     microsoftTeams.getContext((context, error) => {
+      console.log(context);
       this.setState({context:context});
     });
 
-    //Perform single sign-on authentication
+    // Perform single sign-on authentication
     let authTokenRequestOptions = {
-      successCallback: (result) => { this.ssoLoginSuccess(result) }, //The result variable is the SSO token.
+      successCallback: (result) => {this.ssoLoginSuccess(result)},
       failureCallback: (error) => {this.ssoLoginFailure(error)}
     };
 
     microsoftTeams.authentication.getAuthToken(authTokenRequestOptions);
-  }  
-
-  ssoLoginSuccess = async (token) => {
-	this.setState({ssoToken:token});
-	let decodedToken = jwt_decode(token);
-	this.setState({
-		name: decodedToken.name,
-		aadObjectId: decodedToken.oid,
-		upn: decodedToken.upn,
-		tenantId: decodedToken.tid
-	});
-    this.exchangeClientTokenForServerToken(token);
   }
 
-  ssoLoginFailure(error){
-    console.error("SSO failed: ",error);
-    this.setState({error:true});
+  ssoLoginSuccess = async (result) => {
+    this.setState({ssoToken: result});
+
+    // The result variable is the SSO token
+    this.exchangeClientTokenForServerToken(result);
   }
 
-  //Exchange the SSO access token for a Graph access token
-  //Learn more: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow
+  ssoLoginFailure = (error) => {
+    console.error("SSO failed: ", error);
+    this.setState({error: true});
+  }
+
+  // Exchange the SSO access token for a Graph access token
+  // Learn more: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow
   exchangeClientTokenForServerToken = async (token) => {
 
-    let response = await fetch('/getGraphAccessToken?ssoToken='+token).catch(this.unhandledFetchError); //This calls getGraphAccessToken route in /api-server/app.js
+    let serverURL = `/getGraphAccessToken?ssoToken=${token}`;
+    let response = await fetch(serverURL).catch(this.unhandledFetchError); //This calls getGraphAccessToken route in /api-server/app.js
     let data = await response.json().catch(this.unhandledFetchError);
 
-    if(!response.ok && data.error==='consent_required'){
-      //A consent_required error means it's the first time a user is logging into to the app, so they must consent to sharing their Graph data with the app.
-      //They may also see this error if MFA is required. Proceed to show the consent dialogue.
-      this.setState({consentRequired:true}); //This displays the consent button.
+    // Show a popup dialogue prompting the user to consent to the required API permissions.
+    // Learn more: https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-tab-aad#initiate-authentication-flow
+    if (!response.ok && data.subError === 'consent_required') {
+
+      // A consent_required error means it's the first time a user is logging into to the app, so they must 
+      // consent to sharing their Graph data with the app. They may also see this error if MFA is required.
+      this.setState({consentRequired: true});
+      
+      try {
+
+        // Access token acquisition. Visit: 
+        // https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/acquire-token.md
+        const response = await this.props.msalContext.instance.acquireTokenPopup({
+          scopes: ["user.read"]
+        });
+
+        console.log(response);
+        this.consentSuccess(response.accessToken);
+
+      } catch (error) {
+        console.log(error);
+        this.consentFailure(error);
+      }
+      
     } else if (!response.ok) {
-      //Unknown error
+      
+      // Unknown error
       console.error(data);
       this.setState({error:true});
     } else {
-      //Server side token exchange worked. Save the access_token to state, so that it can be picked up and used by the componentDidMount lifecycle method.
-      this.setState({graphAccessToken:data['access_token']});
+
+      // Server side token exchange worked. Save the access_token to state, 
+      // so that it can be picked up and used by the componentDidMount lifecycle method.
+      this.setState({graphAccessToken: data['accessToken']});
     }
   }
 
-  //Show a popup dialogue prompting the user to consent to the required API permissions. This opens ConsentPopup.js.
-  //Learn more: https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-tab-aad#initiate-authentication-flow
-  showConsentDialog(){ 
+  // React lifecycle method that gets called after a component's state or props updates
+  // Learn more: https://reactjs.org/docs/react-component.html#componentdidupdate
+  componentDidUpdate = async (prevProps, prevState) => {
+    
+    // Check to see if a Graph access token is now in state AND that it didn't exist previously
+    if ((prevState.graphAccessToken === "") && (this.state.graphAccessToken !== "")) {
+      this.callGraphFromClient();
+    }
+  }  
 
-    microsoftTeams.authentication.authenticate({
-      url: window.location.origin + "/auth-start",
-      width: 600,
-      height: 535,
-      successCallback: (result) => {this.consentSuccess(result)},
-      failureCallback: (reason) => {this.consentFailure(reason)}
-    });
-  }
-
-  //Callback function for a successful authorization
-  consentSuccess(result){
-    //Save the Graph access token in state
+  // Callback function for a successful authorization
+  consentSuccess = (result) => {
+    // Save the Graph access token in state
     this.setState({
       graphAccessToken: result,
       consentProvided: true
     });
   }
 
-  consentFailure(reason){
-    console.error("Consent failed: ",reason);
-    this.setState({error:true});
-  }  
-
-  //React lifecycle method that gets called after a component's state or props updates
-  //Learn more: https://reactjs.org/docs/react-component.html#componentdidupdate
-  componentDidUpdate = async (prevProps, prevState) => {
-    
-    //Check to see if a Graph access token is now in state AND that it didn't exist previously
-    if((prevState.graphAccessToken === "") && (this.state.graphAccessToken !== "")){
-      this.callGraphFromClient();
-    }
-  }  
+  consentFailure = (reason) => {
+    console.error("Consent failed: ", reason);
+    this.setState({error: true});
+  }
 
   // Fetch the user's profile photo from Graph using the access token retrieved either from the server 
   // or microsoftTeams.authentication.authenticate
   callGraphFromClient = async () => {
     let upn = this.state.context['upn'];
-    let graphPhotoEndpoint = `https://graph.microsoft.com/v1.0/users/${upn}/photo/$value`;
+
+    let graphPhotoEndpoint = `https://graph.microsoft.com/v1.0/users/${upn}`;
+
     let graphRequestParams = {
       method: 'GET',
       headers: {
-        'Content-Type': 'image/jpg',
-        "authorization": "bearer " + this.state.graphAccessToken
+        "authorization": `bearer ${this.state.graphAccessToken}`
       }
     }
 
-    let response = await fetch(graphPhotoEndpoint,graphRequestParams).catch(this.unhandledFetchError);
-    if(!response.ok){
+    let response = await fetch(graphPhotoEndpoint, graphRequestParams).catch(this.unhandledFetchError);
+
+    if(!response.ok) {
       console.error("ERROR: ", response);
-      this.setState({error:true});
+      this.setState({error: true});
     }
     
-    let imageBlog = await response.blob().catch(this.unhandledFetchError); //Get image data as raw binary data
-
-    this.setState({
-      photo: URL.createObjectURL(imageBlog) //Convert binary data to an image URL and set the url in state
-    })
+    let profileData = await response.json().catch(this.unhandledFetchError); 
+    this.setState({profile: profileData})
   }
 
-  //Generic error handler ( avoids having to do async fetch in try/catch block )
-  unhandledFetchError(err){
-    console.error("Unhandled fetch error: ",err);
+  // Generic error handler (avoids having to do async fetch in try/catch block)
+  unhandledFetchError = (err) => {
+    console.error("Unhandled fetch error: ", err);
     this.setState({error:true});
   }
 
@@ -170,46 +165,27 @@ class Tab extends React.Component {
       let title = Object.keys(this.state.context).length > 0 ?
         'Congratulations ' + this.state.context['upn'] + '! This is your tab' : <Loader/>;
 
-	  let ssoMessage = this.state.ssoToken === "" ?
-		<Loader label='Performing single sign-on authentication...'/>
-		: null;
-	  
-	  let ssoOutput = this.state.ssoToken === "" ?
-		  null
-		  : <>
-				<p>Token: {this.state.ssoToken}</p>
-				<p>Now let's use the token's data:</p>
-				<p>
-					name: <span>{this.state.name}</span><br/>
-					aadObjectId: <span>{this.state.aadObjectId}</span><br/>
-					upn: <span>{this.state.upn}</span><br/>
-					tenantId: <span>{this.state.tenantId}</span><br/>
-				</p>
-			</>;
-
-      let serverExchangeMessage = (this.state.ssoToken !== "") && (!this.state.consentRequired) && (this.state.photo==="") ?
+      let ssoMessage = this.state.ssoToken === "" ?
+        <Loader label='Performing Azure AD single sign-on authentication...'/>: null;
+      
+      let serverExchangeMessage = (this.state.ssoToken !== "") && (!this.state.consentRequired) && (!this.state.profile) ?
         <Loader label='Exchanging SSO access token for Graph access token...'/> : null;
 
-      let consentButton = (this.state.consentRequired && !this.state.consentProvided) ?
-        <Button content="Consent required" onClick={this.showConsentDialog}/> : null;
+      let consentMessage = (this.state.consentRequired && !this.state.consentProvided) ?
+        <Loader label='Consent required.'/> : null;
 
-      let avatar = this.state.photo !== "" ?
-        <Avatar image={this.state.photo} size='largest'/> : null;
+      let profile = this.state.profile ? JSON.stringify(this.state.profile) : null;
 
-      let content;
-      if(this.state.error){
-        content = <h1>ERROR</h1>	
-      } else {
-        content =
-          <div style={{color: "white"}}>
-            <h1>{title}</h1>
-            <h3>{ssoMessage}</h3>
-            <h3>{ssoOutput}</h3>
-            <h3>{serverExchangeMessage}</h3>          
-            <h3>{consentButton}</h3>
-            <h1>{avatar}</h1>
-          </div>
-      }
+      let content = this.state.error ? 
+        <h1>ERROR: Please ensure pop-ups are allowed for this website and retry</h1> 
+        : 
+        <div>
+          <h1>{title}</h1>
+          <h3>{ssoMessage}</h3>
+          <h3>{serverExchangeMessage}</h3>          
+          <h3>{consentMessage}</h3>
+          <pre>{profile}</pre>
+        </div>
       
       return (
         <div>
@@ -218,4 +194,7 @@ class Tab extends React.Component {
       );
   }
 }
-export default Tab;
+
+// Wrap your class component in withMsal HOC to access authentication state and perform other actions. 
+// Visit: https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-react/docs/class-components.md
+export default Tab = withMsal(Tab);

@@ -2,10 +2,12 @@
     "name": "microsoft-teams-ext",
     "version": "0.1.0",
     "msteams": {
-        "teamsAppId": "{Teams App Id}"
+        "teamsAppId": "Enter_Teams_App_Id"
     },
     "private": true,
     "dependencies": {
+        "@azure/msal-browser": "^2.11.0",
+        "@azure/msal-react": "^1.0.0-alpha.4",
         "@fluentui/react-northstar": "^0.51.3",
         "@microsoft/teams-js": "^1.6.0",
         "crypto": "^1.0.1",

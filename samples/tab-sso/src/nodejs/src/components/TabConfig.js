@@ -2,8 +2,9 @@
 // Licensed under the MIT License.
 
 import React from 'react';
-import './App.css';
 import * as microsoftTeams from "@microsoft/teams-js";
+
+import './App.css';
 
 /**
  * The 'Config' component is used to display your group tabs
