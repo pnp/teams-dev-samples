@@ -36,8 +36,6 @@ validateAccessToken = async(accessToken) => {
         throw new Error('Token cannot be verified');
     }
 
-    console.log(verifiedToken);
-
     /**
      * Validates the token against issuer, audience, scope
      * and timestamp, though implementation and extent vary. For more information, visit:
@@ -51,8 +49,6 @@ validateAccessToken = async(accessToken) => {
     const checkScope = verifiedToken['scp'] === process.env.CLIENT_ID ? true : false;
 
     if (checkTimestamp && checkAudience && checkScope) {
-
-        // token claims will be available in the request for the controller
         return true;
     }
     return false;

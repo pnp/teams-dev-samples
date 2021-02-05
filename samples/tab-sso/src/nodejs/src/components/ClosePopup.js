@@ -25,11 +25,12 @@ class ClosePopup extends React.Component {
 
         // This will be run on component mount
         const callbackId = this.props.msalContext.instance.addEventCallback((message) => {
+
             // This will be run every time an event is emitted after registering this callback
             if (message.eventType === EventType.LOGIN_SUCCESS) {
                 const result = message.payload;    
                 console.log(result);
-                return microsoftTeams.authentication.notifySuccess(result);
+                return microsoftTeams.authentication.notifySuccess(result.accessToken);
             }
 
             if (message.eventType === EventType.LOGIN_FAILURE) {
@@ -40,9 +41,6 @@ class ClosePopup extends React.Component {
         });
 
         this.setState({callbackId: callbackId});
-    }
-
-    componentDidUpdate(prevState, nextState) {
     }
 
     componentWillUnmount() {

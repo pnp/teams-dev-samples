@@ -4,33 +4,20 @@
 import React from 'react';
 import * as microsoftTeams from "@microsoft/teams-js";
 import { withMsal } from '@azure/msal-react';
-import { EventType } from '@azure/msal-browser';
 
 /**
  * This component is used to redirect the user to the Azure authorization endpoint from a popup
  */
 class ConsentPopup extends React.Component {
 
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
 
         // Initialize the Microsoft Teams SDK
         microsoftTeams.initialize();
-        
-        this.props.msalContext.instance.loginRedirect();
-    }
 
-    componentDidUpdate(prevState, nextState) {
-    }
-
-    componentWillUnmount() {
-        // This will be run on component unmount
-        if (this.state.callbackId) {
-            this.props.msalContext.instance.removeEventCallback(this.state.callbackId);
-        }
+        this.props.msalContext.instance.loginRedirect({
+            scopes: ["User.Read"]
+        });
     }
 
     render() {

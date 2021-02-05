@@ -27,6 +27,7 @@ const msalConfig = {
         clientId: process.env.REACT_APP_AZURE_APP_REGISTRATION_ID,
         authority: `https://login.microsoftonline.com/${process.env.REACT_APP_TENANT_INFO}`,
         redirectUri: `${process.env.REACT_APP_BASE_URL}/auth-end`,
+        navigateToLoginRequestUrl: false,
     }
 }
 

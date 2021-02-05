@@ -174,8 +174,6 @@ class Tab extends React.Component {
             <Button content="Consent" onClick={this.showConsentDialog} /> : null;
 
         let profile = this.state.profile ? JSON.stringify(this.state.profile) : null;
-
-        console.log(this.state.error);
         
         let content = this.state.error ?
             <h1>ERROR: Please ensure pop-ups are allowed for this website and retry</h1>
