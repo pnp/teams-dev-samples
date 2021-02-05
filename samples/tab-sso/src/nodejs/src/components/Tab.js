@@ -4,6 +4,7 @@
 import React from 'react';
 import * as microsoftTeams from "@microsoft/teams-js";
 import { Loader, Button } from '@fluentui/react-northstar';
+import { withMsal } from '@azure/msal-react';
 
 import './App.css';
 
@@ -198,4 +199,4 @@ class Tab extends React.Component {
 
 // Wrap your class component in withMsal HOC to access authentication state and perform other actions. 
 // Visit: https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-react/docs/class-components.md
-export default Tab;
+export default Tab = withMsal(Tab);

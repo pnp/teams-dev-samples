@@ -5,37 +5,51 @@ import React from 'react';
 import './App.css';
 import * as microsoftTeams from "@microsoft/teams-js";
 import { withMsal } from '@azure/msal-react';
+import { EventType } from '@azure/msal-browser';
 
 /**
  * This component is loaded when the Azure implicit grant flow has completed.
  */
 class ClosePopup extends React.Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            callbackId: null,
+        }
+    }
+
     componentDidMount() {
-        console.log('component mount');
         microsoftTeams.initialize();
-        
-        this.props.msalContext.instance.handleRedirectPromise().then((tokenResponse) => {
 
-            console.log(tokenResponse);
-
-            // Check if the tokenResponse is null
-            // If the tokenResponse !== null, then you are coming back from a successful authentication redirect. 
-            // If the tokenResponse === null, you are not coming back from an auth redirect.
-            if (tokenResponse !== null) {
-                return microsoftTeams.authentication.notifySuccess(tokenResponse);
-            } else {
-                return microsoftTeams.authentication.notifyFailure("No token response.");
+        // This will be run on component mount
+        const callbackId = this.props.msalContext.instance.addEventCallback((message) => {
+            // This will be run every time an event is emitted after registering this callback
+            if (message.eventType === EventType.LOGIN_SUCCESS) {
+                const result = message.payload;    
+                console.log(result);
+                return microsoftTeams.authentication.notifySuccess(result);
             }
-        }).catch((error) => {
-            // handle error, either in the library or coming back from the server
-            console.log(error);
-            microsoftTeams.authentication.notifyFailure(error);
+
+            if (message.eventType === EventType.LOGIN_FAILURE) {
+                const result = message.payload;    
+                console.log(result);
+                return microsoftTeams.authentication.notifyFailure(result);
+            }
         });
+
+        this.setState({callbackId: callbackId});
     }
 
     componentDidUpdate(prevState, nextState) {
-        console.log('component update');
+    }
+
+    componentWillUnmount() {
+        // This will be run on component unmount
+        if (this.state.callbackId) {
+            this.props.msalContext.instance.removeEventCallback(this.state.callbackId);
+        }
     }
 
     render() {
@@ -47,4 +61,6 @@ class ClosePopup extends React.Component {
     }
 }
 
+// Wrap your class component in withMsal HOC to access authentication state and perform other actions. 
+// Visit: https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-react/docs/class-components.md
 export default ClosePopup = withMsal(ClosePopup);
