@@ -12,6 +12,9 @@ coverage/
 build/
 
 # misc
+.env
+api-server/.env
+.eslintcache
 .DS_Store
 .env.local
 .env.development.local

@@ -58,7 +58,6 @@ validateAccessToken = async(accessToken) => {
     return false;
 };
 
-
 /**
  * Fetches signing keys of an access token 
  * from the authority discovery endpoint

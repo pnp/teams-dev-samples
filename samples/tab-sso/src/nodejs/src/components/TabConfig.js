@@ -14,32 +14,32 @@ import './App.css';
  */
 class TabConfig extends React.Component {
     render() {
-      /**
-       * The content url for the tab is a required value that must be set.
-       * The url value is the source url for your configured tab.
-       * This allows for the addition of query string parameters based on
-       * the settings selected by the user.
-       */
-      microsoftTeams.settings.setSettings({"contentUrl": "https://localhost:3000/tab"});
-  
-      /**
-       * After verifying that the settings for your tab are correctly
-       * filled in by the user you need to set the state of the dialog
-       * to be valid.  This will enable the save button in the configuration
-       * dialog.
-       */
-      microsoftTeams.settings.setValidityState(true);
-  
-      return (
-        <div>
-          <h1>Tab Configuration</h1>
-          <div>
-            This is where you will add your tab configuration options the user
-            can choose when the tab is added to your team/group chat.            
-          </div>
-        </div>
-      );
-    }
-  }
+        /**
+         * The content url for the tab is a required value that must be set.
+         * The url value is the source url for your configured tab.
+         * This allows for the addition of query string parameters based on
+         * the settings selected by the user.
+         */
+        microsoftTeams.settings.setSettings({ "contentUrl": "https://localhost:3000/tab" });
 
-  export default TabConfig;
+        /**
+         * After verifying that the settings for your tab are correctly
+         * filled in by the user you need to set the state of the dialog
+         * to be valid.  This will enable the save button in the configuration
+         * dialog.
+         */
+        microsoftTeams.settings.setValidityState(true);
+
+        return (
+            <div>
+                <h1>Tab Configuration</h1>
+                <div>
+                    This is where you will add your tab configuration options the user
+                    can choose when the tab is added to your team/group chat.
+          </div>
+            </div>
+        );
+    }
+}
+
+export default TabConfig;
