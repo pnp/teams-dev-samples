@@ -1,12 +1,13 @@
-# Teams Tab Single Sign-on (SSO) Sample - .NET
+# Teams Tab Single Sign-on (SSO) Sample - Node.js
 
-This SSO sample includes both a .NET and a Node.js version. This readme is specific to the Node.js version, so please see [here](../../) for the overall readme details, and then come back here for the dotnet-specific setup steps.
+This SSO sample includes both a .NET and a Node.js version. This readme is specific to the Node.js version, so please see [here](../../) for the overall readme details, and then come back here for the Node-specific setup steps.
 
 ## Version history
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|December055, 2020|Hilton Giesenow|Initial release
+1.0|December 05, 2020|Hilton Giesenow|Initial release
+2.0|February 09, 2021|Doğan Erişen|Added MSAL.js support
 
 ## Disclaimer
 
@@ -24,13 +25,20 @@ This sample is secured with [Microsoft identity platform](https://docs.microsoft
 
 ## Minimal Path to Awesome
 
-1. Refer initially to the overall sample readme which includes details on setting up the Azure Ad Application.
+1. Refer initially to the [overall sample readme](../../) which includes details on setting up the Azure AD Application.
 
-2. Modify the [`.env`](.env) file by inserting a value for the `{AAD App Registration Id}`, being the Application Id of the Azure Application created earlier.
+2. Modify the [`.env`](./.env) file by inserting a value for the `CLIENT_ID`, being the Application Id of the Azure Application created earlier.
 
-3. Modify the [`.env`](/api-server/.env) file in the `api-server` subfolder, for the backend api that does the token exchange, by inserting a value for the `{AAD App Registration Id}`, being the Application Id of the Azure Application created earlier, and the `{AAD App Password}`, being the client secret from the same application.
+3. Modify the [`.env`](./api-server/.env) file in the `api-server` subfolder, for the backend web API that does the token exchange, by inserting a value for:
+    - `CLIENT_ID`, being the Application Id of the Azure Application created earlier, and,
+    - `CLIENT_SECRET`, being the client secret from the same application,
+    - `EXPECTED_SCOPES`, being the scopes for the exposed API endpoint from the same application.
 
-Note also that the value of the `Authority` setting can either be your tenant id, for building an internal-only application, or can be set to `organizations` for a multi-tenant application.
+Note also that the value of the `TENANT_INFO` in setting for steps **(2)** and **(3)** can be:
+
+- your tenant Id, for building an internal-only application,
+- `organizations`, for a multi-tenant application,
+- `common`, for authenticating users with any type of account from any tenant.
 
 4. Within both the `nodejs` directory and the `api-server` subdirectory, run
 
@@ -38,7 +46,7 @@ Note also that the value of the `Authority` setting can either be your tenant id
 npm install
 ```
 
-to install the needed npm packages.
+to install the needed NPM packages.
 
 5. Run the application, using 2 terminal sessions, run the following in the `nodejs` directory and the `api-server` subdirectory:
 

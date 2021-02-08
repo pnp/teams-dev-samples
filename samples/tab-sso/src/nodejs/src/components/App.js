@@ -6,7 +6,7 @@ import './App.css';
 import * as microsoftTeams from "@microsoft/teams-js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import { PublicClientApplication } from "@azure/msal-browser";
+import { PublicClientApplication, BrowserCacheLocation } from "@azure/msal-browser";
 import { MsalProvider } from "@azure/msal-react";
 
 import Privacy from "./Privacy";
@@ -26,8 +26,11 @@ const msalConfig = {
     auth: {
         clientId: process.env.REACT_APP_AZURE_APP_REGISTRATION_ID,
         authority: `https://login.microsoftonline.com/${process.env.REACT_APP_TENANT_INFO}`,
-        redirectUri: `${process.env.REACT_APP_BASE_URL}/auth-end`,
+        redirectUri: `${window.location.origin}/auth-end`,
         navigateToLoginRequestUrl: false,
+    },
+    cache: {
+        cacheLocation: BrowserCacheLocation.LocalStorage // Ensure cache is shared between windows/tabs
     }
 }
 

@@ -61,7 +61,7 @@ validateAccessToken = async(accessToken) => {
 getSigningKeys = async(header) => {
 
     // In single-tenant apps, discovery keys endpoint will be specific to your tenant
-    const jwksUri =`https://login.microsoftonline.com/common/discovery/v2.0/keys`
+    const jwksUri =`https://login.microsoftonline.com/${process.env.TENANT_INFO}/discovery/v2.0/keys`
 
     const client = jwksClient({
         jwksUri: jwksUri

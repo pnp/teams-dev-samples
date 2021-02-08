@@ -27,13 +27,13 @@ class ClosePopup extends React.Component {
         const callbackId = this.props.msalContext.instance.addEventCallback((message) => {
 
             // This will be run every time an event is emitted after registering this callback
-            if (message.eventType === EventType.LOGIN_SUCCESS) {
+            if (message.eventType === EventType.LOGIN_SUCCESS || message.eventType === EventType.ACQUIRE_TOKEN_SUCCESS) {
                 const result = message.payload;    
                 console.log(result);
                 return microsoftTeams.authentication.notifySuccess(result.accessToken);
             }
 
-            if (message.eventType === EventType.LOGIN_FAILURE) {
+            if (message.eventType === EventType.LOGIN_FAILURE || message.eventType === EventType.ACQUIRE_TOKEN_FAILURE) {
                 const result = message.payload;    
                 console.log(result);
                 return microsoftTeams.authentication.notifyFailure(result);
