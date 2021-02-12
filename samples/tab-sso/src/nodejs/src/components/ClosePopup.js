@@ -4,45 +4,61 @@
 import React from 'react';
 import './App.css';
 import * as microsoftTeams from "@microsoft/teams-js";
+import { withMsal } from '@azure/msal-react';
+import { EventType } from '@azure/msal-browser';
 
 /**
  * This component is loaded when the Azure implicit grant flow has completed.
  */
 class ClosePopup extends React.Component {
 
-    componentDidMount(){
+    constructor(props) {
+        super(props);
 
-      microsoftTeams.initialize();
-
-      //The Azure implicit grant flow injects the result into the window.location.hash object. Parse it to find the results.
-      let hashParams = this.getHashParameters();
-
-      //If consent has been successfully granted, the Graph access token should be present as a field in the dictionary.
-      if (hashParams["access_token"]){
-        //Notifify the showConsentDialogue function in Tab.js that authorization succeeded. The success callback should fire. 
-        microsoftTeams.authentication.notifySuccess(hashParams["access_token"]);
-      } else {
-        microsoftTeams.authentication.notifyFailure("Consent failed");
-      }
+        this.state = {
+            callbackId: null,
+        }
     }
 
-    //Helper function that converts window.location.hash into a dictionary
-    getHashParameters() {
-      let hashParams = {};
-      window.location.hash.substr(1).split("&").forEach(function(item) {
-        let [key,value] = item.split('=');
-        hashParams[key] = decodeURIComponent(value);
-      });
-      return hashParams;
-  }    
+    componentDidMount() {
+        microsoftTeams.initialize();
+
+        // This will be run on component mount
+        const callbackId = this.props.msalContext.instance.addEventCallback((message) => {
+
+            // This will be run every time an event is emitted after registering this callback
+            if (message.eventType === EventType.LOGIN_SUCCESS || message.eventType === EventType.ACQUIRE_TOKEN_SUCCESS) {
+                const result = message.payload;    
+                console.log(result);
+                return microsoftTeams.authentication.notifySuccess(result.accessToken);
+            }
+
+            if (message.eventType === EventType.LOGIN_FAILURE || message.eventType === EventType.ACQUIRE_TOKEN_FAILURE) {
+                const result = message.payload;    
+                console.log(result);
+                return microsoftTeams.authentication.notifyFailure(result);
+            }
+        });
+
+        this.setState({callbackId: callbackId});
+    }
+
+    componentWillUnmount() {
+        // This will be run on component unmount
+        if (this.state.callbackId) {
+            this.props.msalContext.instance.removeEventCallback(this.state.callbackId);
+        }
+    }
 
     render() {
-      return (
-        <div>
-          <h1>Consent flow complete.</h1>
-        </div>
-      );
+        return (
+            <div>
+                <h1>Consent flow complete.</h1>
+            </div>
+        );
     }
 }
 
-export default ClosePopup;
+// Wrap your class component in withMsal HOC to access authentication state and perform other actions. 
+// Visit: https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-react/docs/class-components.md
+export default ClosePopup = withMsal(ClosePopup);
