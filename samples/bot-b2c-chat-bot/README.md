@@ -193,12 +193,10 @@ There is multiple real-world scenarios across different industries that can be b
 <table>
 <tbody>
 <tr>
-<td>
 <td class="col-md-8" style="color:black;" align="center"><b>Industry</b></td>
 <td class="col-md-8" style="color:black;" align="center"><b>Scenario Description</b></td>
 <td class="col-md-8" style="color:black;" align="center"><b>Citizen end user</b></td>
 <td class="col-md-8" style="color:black;" align="center"><b>Business SME</b></td>
-</td>
 </tr>
 <tr>
 <td>Finance & Banking</td>
