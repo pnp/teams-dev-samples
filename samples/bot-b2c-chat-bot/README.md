@@ -38,20 +38,54 @@ Version|Date|Author|Comments
 Step 1: Setup bot in Service
 ====================================
 1. Create new bot channel registration resource in Azure.
+
+<img src="./Docs/Images/BotChannelReg.png" alt="Bot Channel Reg" style="width: 100%;">
+
+	* Remember the bot handle, you will need it while updating the index.cshtml file.
+
 2. Create New Microsoft App ID and Password.
+
+<img src="./Docs/Images/CreateNewMicrosoftAppId.png" alt="Create New Microsoft App Id" style="width: 100%;">
+
 3. Go to App registrations and create a new app registration in a different tab.
 4. Register an application.
 	* Fill out name and select third option for supported account type and click "Register".
+
+<img src="./Docs/Images/RegisterAnApplication.png" alt="Register An Application" style="width: 100%;">
+
+	* Copy and paste the App Id and Tenant ID somewhere safe. You will need it in a future step.
+
 5. Create Client Secret.
-	* Navigate to the "Certificates & secrets" blade and add a client secret by clicking "New Client Secret"
-	* Copy and paste the secret somewhere safe. You will need it in a future step. Paste the App Id and password in the respective blocks and click on OK.
-	* Click on Create on the Bot Channel registration
-    * Go to the created resource, navigate to channels and add "Microsoft Teams" and “Web chat” channels.
-6. Add any necessary API permissions for downstream calls in the App registration.
-    •	Navigate to "API permissions" blade on the left-hand side.
-    •	Add following permissions to the application
-            * Application permissions - Calendars.ReadWrite
-            * Delegated permissions - User.Read (enabled by default)
+   * Navigate to the "Certificates & secrets" blade and add a client secret by clicking "New Client Secret".
+
+<img src="./Docs/Images/CertificatesAndSecrets.png" alt="Certificates And Secrets" style="width: 100%;">
+
+	* Copy and paste the secret somewhere safe. You will need it in a future step.
+	
+   * Paste the App Id and password in the respective blocks and click on OK.
+
+<img src="./Docs/Images/PopulateAppIdANdSecret.png" alt="Populate App Id And Secret" style="width: 100%;">
+
+   * Click on Create on the Bot Channel registration.
+   
+6. Go to the created resource, navigate to channels and add "Microsoft Teams" and “Web chat” channels.
+
+<img src="./Docs/Images/BotChannels.png" alt="Bot Channels" style="width: 100%;">
+
+7. Edit Web chat, click on the show under secret keys section in the right panel.
+
+<img src="./Docs/Images/BotWebChatSecretKey.png" alt="Bot Web Chat Secret Key" style="width: 100%;">
+
+	* copy the secret, you will need it while updating the index.cshtml file.	
+
+8. Add any necessary API permissions for downstream calls in the App registration.
+	* Navigate to "API permissions" blade on the left-hand side.
+	* Add following permissions to the application.
+		* Application permissions - Calendars.ReadWrite, Files.ReadWrite.All
+		* Delegated permissions - User.Read (enabled by default)
+
+<img src="./Docs/Images/APIPermissions.png" alt="API Permissions" style="width: 100%;">
+
 
 Step 2: Run the app locally 
 ====================================
@@ -62,26 +96,32 @@ Step 2: Run the app locally
 2. If you are using Visual Studio
  	- Launch Visual Studio
  	- File -> Open -> Project/Solution
- 	- Navigate to samples/app-virtual-events-meeting-extensibility/Source/VirtualMeetingExtensibility folder.
- 	- Select VirtualMeetingExtensibility.csproj file.
+ 	- Navigate to samples/bot-b2c-chat-bot/Source folder.
+ 	- Select B2CChatBot.csproj file.
 
-3. The Azure Cosmos DB Emulator need to be runnning before starting the service. To start the Azure Cosmos DB Emulator on Windows, select the Start button or press the Windows key. Begin typing Azure Cosmos DB Emulator, and select the emulator from the list of applications.When the emulator has started, you'll see an icon in the Windows taskbar notification area. It automatically opens the Azure Cosmos data explorer in your browser at this URL https://localhost:8081/_explorer/index.html URL. Make sure to copy the URI and Primary key values from the data explorer, update the same in the appsettings.json file. Cosmos Database and collection names can be anything of your choice. For more information, see the [Azure Cosmos DB Emulator reference](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=cli%2Cssl-netstd21) article.
+3. The Azure Cosmos DB Emulator must be runnning before starting the service. To start the Azure Cosmos DB Emulator on Windows, select the Start button or press the Windows key. Begin typing Azure Cosmos DB Emulator, and select the emulator from the list of applications.When the emulator has started, you'll see an icon in the Windows taskbar notification area. It automatically opens the Azure Cosmos data explorer in your browser at this URL https://localhost:8081/_explorer/index.html URL. Make sure to copy the URI and Primary key values from the data explorer, update the same in the appsettings.json file. Cosmos Database and collection names can be anything of your choice. For more information, see the [Azure Cosmos DB Emulator reference](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=cli%2Cssl-netstd21) article.
 
 4. Update the index.cshtml and appsettings.json files. 
+
+<img src="./Docs/Images/UpdateIndexCshtmlWithBotHandleNameAndSecret.png" alt="Update Index.cshtml" style="width: 100%;">
+
+<img src="./Docs/Images/UpdateAppsettings.PNG" alt="Update Appsettings" style="width: 100%;">
 
 5. Run Ngrok to expose your local web server via a public URL. Make sure to point it to your Ngrok URI. For example, if you're using port 3333 locally, run:
 
 		Win: ./ngrok http 3333 -host-header=localhost:3333 -subdomain="contoso"
 		Mac: /ngrok http 3333 -host-header=localhost:3333 -subdomain="contoso".
 
-6. Update messaging endpoint in the Azure Bots Channel Registration-Settings to the endpoint that will bot app will be listening on Navigate to "Settings" blade on the left-hand side.
+6. Update messaging endpoint in the Azure Bots Channel Registration. Open the Bot channel registration, click on Configuration/Settings on the left pane, whichever is available and update the messaging endpoint to the endpoint that bot app will be listening on. Update the ngrok URL in the below format for the messaging endpoint.
 
-7. Update the ngrok URL in the below format for the messaging endpoint.
+		ex: https://<subdomain>.ngrok.io/api/messages.
+
+<img src="./Docs/Images/BotConfiguration.png" alt="Bot Configuration" style="width: 100%;">
 
 Step 3: Packaging and installing your app to Teams 
 ==================================================
 
-Make sure the required values such ap App id, content URL of Static tab, configuration url of configurable tab and web application info sections are populated in the manifest, Zip the manifest with the profile images and install it in Teams.
+Make sure the required values such ap App id, bot ids are populated in the manifest, Zip the manifest with the profile images and install/add it in Teams.
 
 Step 4: Try out the app
 ==================================================
