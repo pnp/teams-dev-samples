@@ -11,11 +11,11 @@
     "termsOfUseUrl": "https://www.microsoft.com/en-us/legal/intellectualproperty/copyright/default.aspx"
   },
   "name": {
-    "short": "Web chat bot",
-    "full": "Hello World App for Microsoft Teams"
+    "short": "Chat bot (B2C)",
+    "full": "Chat bot (B2C) App for Microsoft Teams"
   },
   "description": {
-    "short": "Hello World App for Microsoft Teams",
+    "short": "Chat bot (B2C) App for Microsoft Teams",
     "full": "This sample app provides a very simple app for Microsoft Teams. You can extend this to add more content and capabilities."
   },
   "icons": {
@@ -28,15 +28,9 @@
       "botId": "{{botID}}",
       "needsChannelSelector": false,
       "isNotificationOnly": false,
-      "scopes": [
-        "team",
-        "personal",
-        "groupchat"
-      ]
+      "scopes": ["team"]
     }
   ],
-  "permissions": [
-    "identity", "messageTeamMembers"
-  ],
-  "validDomains": [ "*.ngrok.io" ]
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["*.ngrok.io"]
 }
