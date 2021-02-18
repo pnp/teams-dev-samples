@@ -25,7 +25,7 @@ Samples are generally not production-ready or an out-of-the-box solution but are
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|Feb 18, 2021|Abtin Amini <br/>Sathya Raveendran <br/> Saikrishna Neeli <br/>|Initial release
+1.0|Feb 18, 2021|Abtin Amini <br/>Sathya Raveendran <br/> Saikrishna Neeli <br/> Arun Kumar Anaparthi <br/>|Initial release
 
 ## Disclaimer
 
