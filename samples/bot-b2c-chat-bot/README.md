@@ -1,9 +1,9 @@
-# Create External Org Communication chat bot(B2c) - Sample code.  
+# Create external organization communication Chatbot (B2C) - Sample code.  
 
 ## Summary
 
 This sample code shows External org communication chat bot, as the name suggests allows citizen end users get in touch with an SME / Support Agent belonging to a business entity to discuss and address an issue. It allows business users with a Teams license on one side chat with an external customer who Doesn't have or cannot use Teams clients for any reason. <br/><br/>
-Samples are generally not production-ready or an out-of-the-box solution but are intended to show developers specific patterns for use in their applications. The functionality is bare bone, all it does is to initiate a Calling & Meeting bot on behalf of users and enables the meeting organizers to programmatically add a custom app, in this example “Share Notes”, to the meeting. <br/><br/>
+Samples are generally not production-ready or an out-of-the-box solution but are intended to show developers specific patterns for use in their applications. The functionality is bare bone sample code. <br/><br/>
 <img src="./Docs/Images/B2CBot-E2E.gif" alt="B2CBot E2E Flow" style="width: 100%;">
 
 ## Frameworks
