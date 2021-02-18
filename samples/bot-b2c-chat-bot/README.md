@@ -2,14 +2,14 @@
 
 ## Summary
 
-This sample code shows External org communication chat bot, as the name suggests allows citizen end users get in touch with an SME / Support Agent belonging to a business entity to discuss and address an issue. It allows business users with a Teams license on one side chat with an external customer who Doesn't have or cannot use Teams clients for any reason. <br/>
-Samples are generally not production-ready or an out-of-the-box solution but are intended to show developers specific patterns for use in their applications. The functionality is bare bone, all it does is to initiate a Calling & Meeting bot on behalf of users and enables the meeting organizers to programmatically add a custom app, in this example “Share Notes”, to the meeting. <br/>
+This sample code shows External org communication chat bot, as the name suggests allows citizen end users get in touch with an SME / Support Agent belonging to a business entity to discuss and address an issue. It allows business users with a Teams license on one side chat with an external customer who Doesn't have or cannot use Teams clients for any reason. <br/><br/>
+Samples are generally not production-ready or an out-of-the-box solution but are intended to show developers specific patterns for use in their applications. The functionality is bare bone, all it does is to initiate a Calling & Meeting bot on behalf of users and enables the meeting organizers to programmatically add a custom app, in this example “Share Notes”, to the meeting. <br/><br/>
 <img src="./Docs/Images/B2CBot-E2E.gif" alt="B2CBot E2E Flow" style="width: 100%;">
 
 ## Frameworks
 
 ![drop](https://img.shields.io/badge/.NET&nbsp;Core-3.1-green.svg)
-![drop](https://img.shields.io/badge/Bot&nbsp;Framework-3.0-green.svg)
+![drop](https://img.shields.io/badge/Bot&nbsp;Framework-4.0-green.svg)
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ Samples are generally not production-ready or an out-of-the-box solution but are
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|Feb 18, 2021|Abtin Amini <br />Arun Kumar Anaparthi <br/> Sathya Raveendran|Initial release
+1.0|Feb 18, 2021|Abtin Amini <br/>Sathya Raveendran <br/> Saikrishna Neeli <br/>|Initial release
 
 ## Disclaimer
 
