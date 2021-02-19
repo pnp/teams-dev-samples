@@ -4,7 +4,7 @@
 
 This sample code shows External org communication chat bot, as the name suggests allows citizen end users get in touch with an SME / Support Agent belonging to a business entity to discuss and address an issue. It allows business users with a Teams license on one side chat with an external customer who Doesn't have or cannot use Teams clients for any reason. <br/><br/>
 Samples are generally not production-ready or an out-of-the-box solution but are intended to show developers specific patterns for use in their applications. The functionality is bare bone sample code. <br/><br/>
-<img src="./Docs/Images/B2CBot-E2E.gif" alt="B2CBot E2E Flow" style="width: 100%;">
+<img src="./Docs/Images/B2CBot-E2E.gif" alt="B2CBot E2E Flow" width="700" height="400">
 
 ## Frameworks
 
@@ -39,42 +39,42 @@ Step 1: Setup bot in Service
 ====================================
 1. Create new bot channel registration resource in Azure.
 
-<img src="./Docs/Images/BotChannelReg.png" alt="Bot Channel Reg" style="width: 100%;">
+<img src="./Docs/Images/BotChannelReg.png" alt="Bot Channel Reg" width="700" height="400">
 
 	* Remember the bot handle, you will need it while updating the index.cshtml file.
 
 2. Create New Microsoft App ID and Password.
 
-<img src="./Docs/Images/CreateNewMicrosoftAppId.png" alt="Create New Microsoft App Id" style="width: 100%;">
+<img src="./Docs/Images/CreateNewMicrosoftAppId.png" alt="Create New Microsoft App Id" width="700" height="400">
 
 3. Go to App registrations and create a new app registration in a different tab.
 4. Register an application.
 	* Fill out name and select third option for supported account type and click "Register".
 
-<img src="./Docs/Images/RegisterAnApplication.png" alt="Register An Application" style="width: 100%;">
+<img src="./Docs/Images/RegisterAnApplication.png" alt="Register An Application" width="700" height="400">
 
 	* Copy and paste the App Id and Tenant ID somewhere safe. You will need it in a future step.
 
 5. Create Client Secret.
    * Navigate to the "Certificates & secrets" blade and add a client secret by clicking "New Client Secret".
 
-<img src="./Docs/Images/CertificatesAndSecrets.png" alt="Certificates And Secrets" style="width: 100%;">
+<img src="./Docs/Images/CertificatesAndSecrets.png" alt="Certificates And Secrets" width="700" height="400">
 
 	* Copy and paste the secret somewhere safe. You will need it in a future step.
 	
    * Paste the App Id and password in the respective blocks and click on OK.
 
-<img src="./Docs/Images/PopulateAppIdANdSecret.png" alt="Populate App Id And Secret" style="width: 100%;">
+<img src="./Docs/Images/PopulateAppIdANdSecret.png" alt="Populate App Id And Secret" width="700" height="400">
 
    * Click on Create on the Bot Channel registration.
    
 6. Go to the created resource, navigate to channels and add "Microsoft Teams" and “Web chat” channels.
 
-<img src="./Docs/Images/BotChannels.png" alt="Bot Channels" style="width: 100%;">
+<img src="./Docs/Images/BotChannels.png" alt="Bot Channels" width="700" height="400">
 
 7. Edit Web chat, click on the show under secret keys section in the right panel.
 
-<img src="./Docs/Images/BotWebChatSecretKey.png" alt="Bot Web Chat Secret Key" style="width: 100%;">
+<img src="./Docs/Images/BotWebChatSecretKey.png" alt="Bot Web Chat Secret Key" width="700" height="400">
 
 	* copy the secret, you will need it while updating the index.cshtml file.	
 
@@ -84,7 +84,7 @@ Step 1: Setup bot in Service
 		* Application permissions - Calendars.ReadWrite, Files.ReadWrite.All
 		* Delegated permissions - User.Read (enabled by default)
 
-<img src="./Docs/Images/APIPermissions.png" alt="API Permissions" style="width: 100%;">
+<img src="./Docs/Images/APIPermissions.png" alt="API Permissions" width="700" height="400">
 
 
 Step 2: Run the app locally 
@@ -116,7 +116,7 @@ Step 2: Run the app locally
 
 		ex: https://<subdomain>.ngrok.io/api/messages.
 
-<img src="./Docs/Images/BotConfiguration.png" alt="Bot Configuration" style="width: 100%;">
+<img src="./Docs/Images/BotConfiguration.png" alt="Bot Configuration" width="700" height="400">
 
 Step 3: Packaging and installing your app to Teams 
 ==================================================
@@ -128,27 +128,27 @@ Step 4: Try out the app
 
 1: Citizen end users can raise a request to get in touch with an SME / support agent on Teams using bot interface on website. The users are asked to submit basic contact information, query details to aid in triage 
 
-<img src="./Docs/Images/1.gif" alt="raise request" style="width: 100%;">
+<img src="./Docs/Images/1.gif" alt="raise request" width="700" height="400">
 
 2: Agents may assign the incoming consumer requests to themselves and start chatting with the consumers.   
 
-<img src="./Docs/Images/2.gif" alt="assign" style="width: 100%;">
+<img src="./Docs/Images/2.gif" alt="assign" width="700" height="400">
 
 3. Real time chat between the citizen user and Teams user . The app shows the name of the citizen user on the bot name to add more clarity
  
- <img src="./Docs/Images/3.gif" alt="teamuser" style="width: 100%;">
+ <img src="./Docs/Images/3.gif" alt="teamuser" width="700" height="400">
 
 4: The citizen user may also share documents in the chat that will be sent to Teams user and stored in a well-defined directory structure. The app creates a directory for each chat session.
 
-<img src="./Docs/Images/4.gif" alt="teamuser" style="width: 100%;">
+<img src="./Docs/Images/4.gif" alt="teamuser" width="700" height="400">
 
 5: If both parties require, they may also get on a call initiated by the Teams user. This is useful in cases where chat is not adequate, and a video / audio communication is required for the scenario.  
 
-<img src="./Docs/Images/5.gif" alt="teammeeting" style="width: 100%;">
+<img src="./Docs/Images/5.gif" alt="teammeeting" width="700" height="400">
 
 6: A single Teams user may chat with more than one citizen user at a time. Each request is posted as a conversation thread allowing Teams user to have multiple parallel conversations.   
 
-<img src="./Docs/Images/6.gif" alt="Meeting Side Panel" style="width: 100%;">
+<img src="./Docs/Images/6.gif" alt="Meeting Side Panel" width="700" height="400">
 
 ## Take it Further
 
