@@ -1,10 +1,16 @@
-# Create external organization communication Chatbot (B2C) - Sample code.  
+# Business to Citizen Consumer Communication Bot - Sample code.  
 
 ## Summary
 
-This sample code shows External org communication chat bot, as the name suggests allows citizen end users get in touch with an SME / Support Agent belonging to a business entity to discuss and address an issue. It allows business users with a Teams license on one side chat with an external customer who Doesn't have or cannot use Teams clients for any reason. <br/><br/>
+Business to Citizen Consumer Communication Bot as the name suggests allows citizen end users get in touch with an SME / Support Agent belonging to a business entity to discuss and address an issue. It allows business users with a Teams license on one side, chat with a citizen   consumer who doesn’t have a Teams license / login.<br/><br/>
 Samples are generally not production-ready or an out-of-the-box solution but are intended to show developers specific patterns for use in their applications. The functionality is bare bone sample code. <br/><br/>
 <img src="./Docs/Images/B2CBot-E2E.gif" alt="B2CBot E2E Flow" width="700" height="400">
+
+## Architecture
+
+<img src="./Docs/Images/artec.png" alt="B2CBot E2E Flow" width="700" height="400">
+Note: This sample app demonstrates only the bot interface on a website as the communication channel for citizen user. 
+Business Outreach / Communication channels:  The citizen consumer user may use a bot interface on website (as showcased by this sample app) as a communication channel and interact seamlessly, in real time with a user on Teams. If required, the app can also be customized to have a bot inside native mobile app or use any other popular consumer communication channels as a way of reaching out to user on Teams. To configure your bot to connect to any other consumer facing channels refer to the documentation here. 
 
 ## Frameworks
 
