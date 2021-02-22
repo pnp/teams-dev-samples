@@ -6,7 +6,7 @@ Business to Citizen Consumer Communication Bot as the name suggests allows citiz
 Samples are generally not production-ready or an out-of-the-box solution but are intended to show developers specific patterns for use in their applications. The functionality is bare bone sample code. <br/><br/>
 <img src="./Docs/Images/B2CBot-E2E.gif" alt="B2CBot E2E Flow" width="700" height="400">
 
-## Architecture
+## Business to Citizen Communication Overview
 
 <img src="./Docs/Images/artec.png" alt="B2CBot E2E Flow" width="700" height="400">
 Note: This sample app demonstrates only the bot interface on a website as the communication channel for citizen user. <br/><br/>
