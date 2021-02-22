@@ -27,7 +27,7 @@ validateAccessToken = async(accessToken) => {
     let keys;
 
     try {
-        keys = await getSigningKeys(decodedToken.header);        
+        keys = await getSigningKeys(decodedToken.header, decodedToken.payload.tid);        
     } catch (error) {
         console.log('Signing keys cannot be obtained');
         console.log(error);
@@ -57,10 +57,7 @@ validateAccessToken = async(accessToken) => {
     const checkAudience = verifiedToken['aud'] === process.env.CLIENT_ID || verifiedToken['aud'] === 'api://' + process.env.CLIENT_ID ? true : false;
     const checkScope = verifiedToken['scp'] === process.env.EXPECTED_SCOPES ? true : false;
 
-    // TODO: discuss
-    const checkIssuer = verifiedToken["iss"].includes(verifiedToken["tid"]) ? true : false;
-
-    if (checkTimestamp && checkAudience && checkScope && checkIssuer) {
+    if (checkTimestamp && checkAudience && checkScope) {
         return true;
     }
     return false;
@@ -70,10 +67,10 @@ validateAccessToken = async(accessToken) => {
  * Fetches signing keys of an access token 
  * from the authority discovery endpoint
  */
-getSigningKeys = async(header) => {
+getSigningKeys = async(header, tid) => {
 
-    // In single-tenant apps, discovery keys endpoint will be specific to your tenant
-    const jwksUri =`https://login.microsoftonline.com/${process.env.TENANT_INFO}/discovery/v2.0/keys`
+    // discovery keys endpoint will be specific to your tenant
+    const jwksUri =`https://login.microsoftonline.com/${tid}/discovery/v2.0/keys`
 
     const client = jwksClient({
         jwksUri: jwksUri
