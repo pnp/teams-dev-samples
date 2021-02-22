@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken')
+const jwt = require('jsonwebtoken');
 const jwksClient = require('jwks-rsa');
 
 /**
@@ -13,10 +13,14 @@ validateAccessToken = async(accessToken) => {
     }
 
     // we will first decode to get kid parameter in header
-    const decodedToken = jwt.decode(accessToken, {complete: true});
+    let decodedToken; 
     
-    if (!decodedToken) {
-        throw new Error('Token cannot be decoded')
+    try {
+        decodedToken = jwt.decode(accessToken, {complete: true});
+    } catch (error) {
+        console.log('Token cannot be decoded');
+        console.log(error);
+        return false;
     }
 
     // obtains signing keys from discovery endpoint
@@ -27,13 +31,18 @@ validateAccessToken = async(accessToken) => {
     } catch (error) {
         console.log('Signing keys cannot be obtained');
         console.log(error);
+        return false;
     }
 
     // verify the signature at header section using keys
-    const verifiedToken = jwt.verify(accessToken, keys);
+    let verifiedToken;
 
-    if (!verifiedToken) {
-        throw new Error('Token cannot be verified');
+    try {
+        verifiedToken = jwt.verify(accessToken, keys);
+    } catch(error) {
+        console.log('Token cannot be verified');
+        console.log(error);
+        return false;
     }
 
     /**
@@ -46,9 +55,12 @@ validateAccessToken = async(accessToken) => {
 
     const checkTimestamp = verifiedToken["iat"] <= now && verifiedToken["exp"] >= now ? true : false;
     const checkAudience = verifiedToken['aud'] === process.env.CLIENT_ID || verifiedToken['aud'] === 'api://' + process.env.CLIENT_ID ? true : false;
-    const checkScope = verifiedToken['scp'] === process.env.CLIENT_ID ? true : false;
+    const checkScope = verifiedToken['scp'] === process.env.EXPECTED_SCOPES ? true : false;
 
-    if (checkTimestamp && checkAudience && checkScope) {
+    // TODO: discuss
+    const checkIssuer = verifiedToken["iss"].includes(verifiedToken["tid"]) ? true : false;
+
+    if (checkTimestamp && checkAudience && checkScope && checkIssuer) {
         return true;
     }
     return false;

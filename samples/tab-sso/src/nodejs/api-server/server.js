@@ -19,11 +19,15 @@ const cca = new msal.ConfidentialClientApplication(config);
 
 app.get('/getGraphAccessToken', async (req, res) => {
 
+    // the access token the user sent via auth bearer
+    const userToken = req.get('authorization');
+    const [bearer, tokenValue] = userToken.split(' ');
+
     // Ensure that the token is valid
-    if (validateAccessToken(req.query.ssoToken)) {
+    if (validateAccessToken(tokenValue)) {
 
         const oboRequest = {
-            oboAssertion: req.query.ssoToken,
+            oboAssertion: tokenValue,
             scopes: [process.env.GRAPH_SCOPES],
         }
 

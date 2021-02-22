@@ -9,14 +9,17 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "@azure/msal-node": "^1.0.0-beta.5",
+        "@azure/msal-node": "^1.0.0",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
         "jwks-rsa": "^1.12.2",
-        "jwt-decode": "^2.2.0",
-        "node-fetch": "^2.6.1"
+        "morgan": "^1.10.0",
+        "node-fetch": "^2.6.1",
+        "passport": "^0.4.1",
+        "passport-azure-ad": "^4.3.0"
     },
     "msteams": {
-        "teamsAppId": "{Teams App Id}"
+        "teamsAppId": "4d20f89f-6c61-4f97-97f0-b4744bacc4de"
     }
 }

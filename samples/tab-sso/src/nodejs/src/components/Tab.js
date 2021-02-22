@@ -73,8 +73,18 @@ class Tab extends React.Component {
     // Learn more: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow
     exchangeClientTokenForServerToken = async (token) => {
 
-        let serverURL = `/getGraphAccessToken?ssoToken=${token}`;
-        let response = await fetch(serverURL).catch(this.unhandledFetchError); //This calls getGraphAccessToken route in /api-server/app.js
+        const headers = new Headers();
+        const bearer = `Bearer ${token}`;
+    
+        headers.append("Authorization", bearer);
+    
+        const options = {
+            method: "GET",
+            headers: headers
+        };
+
+        let serverURL = `/getGraphAccessToken`;
+        let response = await fetch(serverURL, options).catch(this.unhandledFetchError); //This calls getGraphAccessToken route in /api-server/app.js
         let data = await response.json().catch(this.unhandledFetchError);
 
         // Show a popup dialogue prompting the user to consent to the required API permissions.

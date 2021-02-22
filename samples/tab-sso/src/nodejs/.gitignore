@@ -2,6 +2,7 @@
 
 # dependencies
 node_modules/
+package-lock.json
 .pnp
 .pnp.js
 
@@ -25,5 +26,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# VS Code cache
+.vscode/
+
+# ESLINT cache
 .eslintcache
 
