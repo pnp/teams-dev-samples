@@ -1819,7 +1819,24 @@ extra:
       modifiedtext: January 28, 2021
       modified: 2021-01-28
 
-
+# B2C Chat bot connects consumers with Teams chat
+    - name: bot-b2c-chat-bot
+      title: Business to Citizen Consumer Communication Bot
+      type: barebones
+      features: bot
+      source: pnp
+      summary: Allows citizen end users get in touch with an SME / Support Agent working in Teams
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-b2c-chat-bot
+      author: Abtin Amini, Sathya Raveendran, Saikrishna Neeli, Arun Kumar Anaparthi
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: csharp
+      server_platform: netcore
+      bot_framework: bot46
+      modifiedtext: February 18, 2021
+      modified: 2021-02-18
 
 #################################
 #endregion COMMUNITY SAMPLES
@@ -1945,6 +1962,8 @@ authors:
     - Rabia Williams
     - Rajesh Sitaraman
     - Ramin Ahmadi
+    - Saikrishna Neeli
+    - Sathya Raveendran
     - Sébastien Levert
     - Siddharth Vaghasia
     - Stephan Bisser
