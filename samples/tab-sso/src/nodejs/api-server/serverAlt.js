@@ -47,10 +47,23 @@ app.get(
         console.log('user token: ', userToken);
 
         try {
-            // request new token and use it to call resource API on user's behalf
-            let tokenObj = await getNewAccessToken(userToken);
-            console.log(tokenObj);
-            return res.send(tokenObj);   
+            let tokenResponse = await getNewAccessToken(userToken);
+
+            if (tokenResponse['errorMessage']) {
+                /**
+                 * Conditional access MFA requirement throws an AADSTS50076 error.
+                 * If the user has not enrolled in MFA, an AADSTS50079 error will be thrown instead.
+                 * If the user has not consented to required scopes, an AADSTS65001 error will be thrown instead.
+                 * In either case, sample middle-tier API will propagate the error back to the client.
+                 * For more, visit: https://docs.microsoft.com/azure/active-directory/develop/v2-conditional-access-dev-guide
+                 */
+                if (tokenResponse['errorMessage'].includes(50076) || tokenResponse['errorMessage'].includes(50079) || tokenResponse['errorMessage'].includes(65001)) {
+                    return res.status(401).send(tokenResponse);
+                }
+            }
+            
+            let resourceResponse = await callResourceEndpoint(tokenResponse.accessToken, "https://graph.microsoft.com/v1.0/me");
+            return res.send(resourceResponse);  
         } catch (error) {
             console.log(error)
             return res.send(error);
@@ -82,6 +95,24 @@ async function getNewAccessToken(userToken) {
 
     let response = await fetch(tokenEndpoint, options);
     let json = response.json();
+    return json;
+}
+
+/**
+ * Makes an authorization bearer token request 
+ * to given resource endpoint.
+ */
+callResourceEndpoint = async(newTokenValue, resourceURI) => {
+    let options = {
+        method: 'GET',
+        headers: {
+            'Authorization': `Bearer ${newTokenValue}`,
+            'Content-type': 'application/json',
+        },
+    };
+    
+    let response = await fetch(resourceURI, options);
+	let json = await response.json();
     return json;
 }
 
