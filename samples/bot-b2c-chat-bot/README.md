@@ -9,7 +9,9 @@ Samples are generally not production-ready or an out-of-the-box solution but are
 ## Business to Citizen Communication Overview
 
 <img src="./Docs/Images/artec.png" alt="B2CBot E2E Flow" width="700" height="400">
-Note: This sample app demonstrates only the bot interface on a website as the communication channel for citizen user. <br/><br/>
+Note: This sample app demonstrates only the bot interface on a website as the communication channel for citizen user.
+
+
 Business Outreach / Communication channels:  The citizen consumer user may use a bot interface on website (as showcased by this sample app) as a communication channel and interact seamlessly, in real time with a user on Teams. If required, the app can also be customized to have a bot inside native mobile app or use any other popular consumer communication channels as a way of reaching out to user on Teams. To configure your bot to connect to any other consumer facing channels refer to the documentation [here](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0). 
 
 ## Frameworks
