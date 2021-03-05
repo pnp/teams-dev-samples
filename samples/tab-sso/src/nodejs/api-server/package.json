@@ -15,9 +15,7 @@
         "jsonwebtoken": "^8.5.1",
         "jwks-rsa": "^1.12.2",
         "morgan": "^1.10.0",
-        "node-fetch": "^2.6.1",
-        "passport": "^0.4.1",
-        "passport-azure-ad": "^4.3.0"
+        "node-fetch": "^2.6.1"
     },
     "msteams": {
         "teamsAppId": "{Teams App Id}"
