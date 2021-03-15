@@ -10,7 +10,9 @@ Below is a screenshot of the SSO tab in action (this is for the .NET version - t
 
 ![picture of the app in action](assets/images/TabScreenshot.png)
 
-**Please note** that this sample actually contains two separate, alternate projects: a .NET version and a Node.js version. In addition, the .NET version uses a more 'vanilla JS' approach, in order to show how SSO can be implemented in such a scenario, and the Node.js version uses a React front end, in order to demonstrate SSO using a front end framework.
+**Please note** that this sample actually contains two separate, alternate projects: a .NET version and a Node.js version.
+  * The .NET version uses a more 'vanilla JS' approach, in order to show how SSO can be implemented in such a scenario
+  * The Node.js version uses a React front end, in order to demonstrate SSO using a front end framework. It also has been updated with an alternative pattern that does Graph queries server-side rather than passing the access token back to the web browser. It also adds logic to verify the SSO token on the server side.
 
 ## Frameworks
 
@@ -46,6 +48,8 @@ Version|Date|Author|Comments
 -------|----|----|--------
 1.0|November 25, 2020|Hilton Giesenow|Initial release
 1.1|December 05, 2020|Hilton Giesenow|Node.js version added
+2.0|February 09, 2021|Doğan Erişen|Added MSAL.js support to Node version only
+2.1|March 05, 2021|Doğan Erişen|Added server-side token validation and moved Graph calls to server in Node version only
 
 ## Disclaimer
 
@@ -73,7 +77,7 @@ For detailed steps on how to do this, read [Registering your app through the Azu
 
 **Node.js Version**
 
-* See [`node`](src/node) folder inside this sample's `src` folder
+* See [`node`](src/nodejs) folder inside this sample's `src` folder
 
 ### 4. Update & package the Teams app manifest
 

@@ -20,7 +20,6 @@ class Tab extends React.Component {
             ssoToken: "",
             consentRequired: false,
             consentProvided: false,
-            graphAccessToken: "",
             profile: null,
             error: false
         }
@@ -51,9 +50,9 @@ class Tab extends React.Component {
     // Learn more: https://reactjs.org/docs/react-component.html#componentdidupdate
     componentDidUpdate = async (prevProps, prevState) => {
 
-        // Check to see if a Graph access token is now in state AND that it didn't exist previously
-        if ((prevState.graphAccessToken === "") && (this.state.graphAccessToken !== "")) {
-            this.callGraphFromClient();
+        // Check to see if is consentProvided
+        if ((prevState.consentProvided === false) && (this.state.consentProvided === true) && (this.state.ssoToken)) {
+            this.exchangeClientTokenForServerToken(this.state.ssoToken);
         }
     }
 
@@ -73,28 +72,44 @@ class Tab extends React.Component {
     // Learn more: https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow
     exchangeClientTokenForServerToken = async (token) => {
 
-        let serverURL = `/getGraphAccessToken?ssoToken=${token}`;
-        let response = await fetch(serverURL).catch(this.unhandledFetchError); //This calls getGraphAccessToken route in /api-server/app.js
+        const headers = new Headers();
+        const bearer = `Bearer ${token}`;
+    
+        headers.append("Authorization", bearer);
+    
+        const options = {
+            method: "GET",
+            headers: headers
+        };
+
+        let response = await fetch("/getGraphAccessToken", options).catch(this.unhandledFetchError); //This calls getGraphAccessToken route in /api-server/app.js
         let data = await response.json().catch(this.unhandledFetchError);
 
-        // Show a popup dialogue prompting the user to consent to the required API permissions.
-        // Learn more: https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-tab-aad#initiate-authentication-flow
-        if (data.subError === 'consent_required') {
-
-            // A consent_required error means it's the first time a user is logging into to the app, so they must 
-            // consent to sharing their Graph data with the app. They may also see this error if MFA is required.
-            this.setState({ consentRequired: true });
-
-        } else if (!response.ok) {
-
+        if (!response.ok) {
             // Unknown error
-            console.error(data);
             this.setState({ error: true });
-        } else {
+        } else if (response.ok && data['errorMessage']) {
+            /**
+             * Conditional access MFA requirement throws an AADSTS50076 error.
+             * If the user has not enrolled in MFA, an AADSTS50079 error will be thrown instead.
+             * If the user has not consented to required scopes, an AADSTS65001 error will be thrown instead.
+             * In either case, sample middle-tier API will propagate the error back to the client.
+             * For more, visit: https://docs.microsoft.com/azure/active-directory/develop/v2-conditional-access-dev-guide
+             */
 
+            if (data['errorMessage'].includes(50076) || data['errorMessage'].includes(50079) || data['errorMessage'].includes(65001)) {
+                
+                // Show a popup dialogue prompting the user to consent to the required API permissions.
+                // Learn more: https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-tab-aad#initiate-authentication-flow
+                this.setState({ consentRequired: true });
+            } else {
+                // Unknown error
+                this.setState({ error: true });
+            }
+        } else {
             // Server side token exchange worked. Save the access_token to state, 
             // so that it can be picked up and used by the componentDidMount lifecycle method.
-            this.setState({ graphAccessToken: data['accessToken'] });
+            this.setState({ profile: data })
         }
     }
 
@@ -115,7 +130,6 @@ class Tab extends React.Component {
     consentSuccess = (result) => {
         // Save the Graph access token in state
         this.setState({
-            graphAccessToken: result,
             consentProvided: true
         });
     }
@@ -123,31 +137,6 @@ class Tab extends React.Component {
     consentFailure = (reason) => {
         console.error("Consent failed: ", reason);
         this.setState({ error: true });
-    }
-
-    // Fetch the user's profile photo from Graph using the access token retrieved either from the server 
-    // or microsoftTeams.authentication.authenticate
-    callGraphFromClient = async () => {
-        let upn = this.state.context['upn'];
-
-        let graphPhotoEndpoint = `https://graph.microsoft.com/v1.0/users/${upn}`;
-
-        let graphRequestParams = {
-            method: 'GET',
-            headers: {
-                "authorization": `bearer ${this.state.graphAccessToken}`
-            }
-        }
-
-        let response = await fetch(graphPhotoEndpoint, graphRequestParams).catch(this.unhandledFetchError);
-
-        if (!response.ok) {
-            console.error("ERROR: ", response);
-            this.setState({ error: true });
-        }
-
-        let profileData = await response.json().catch(this.unhandledFetchError);
-        this.setState({ profile: profileData })
     }
 
     // Generic error handler (avoids having to do async fetch in try/catch block)
@@ -186,7 +175,6 @@ class Tab extends React.Component {
                 <h3>{consentButton}</h3>
                 <pre>{profile}</pre>
             </div>
-
         return (
             <div>
                 {content}

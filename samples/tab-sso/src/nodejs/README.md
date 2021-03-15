@@ -8,6 +8,7 @@ Version|Date|Author|Comments
 -------|----|----|--------
 1.0|December 05, 2020|Hilton Giesenow|Initial release
 2.0|February 09, 2021|Doğan Erişen|Added MSAL.js support
+2.1|March 05, 2021|Doğan Erişen|Added server-side token validation and moved Graph calls to server in Node version only
 
 ## Disclaimer
 
