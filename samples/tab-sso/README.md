@@ -73,7 +73,7 @@ For detailed steps on how to do this, read [Registering your app through the Azu
 
 **Node.js Version**
 
-* See [`node`](src/node) folder inside this sample's `src` folder
+* See [`node`](src/nodejs) folder inside this sample's `src` folder
 
 ### 4. Update & package the Teams app manifest
 
