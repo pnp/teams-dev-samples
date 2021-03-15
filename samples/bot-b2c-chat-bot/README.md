@@ -9,8 +9,10 @@ Samples are generally not production-ready or an out-of-the-box solution but are
 ## Business to Citizen Communication Overview
 
 <img src="./Docs/Images/artec.png" alt="B2CBot E2E Flow" width="700" height="400">
-Note: This sample app demonstrates only the bot interface on a website as the communication channel for citizen user. <br/><br/>
-Business Outreach / Communication channels:  The citizen consumer user may use a bot interface on website (as showcased by this sample app) as a communication channel and interact seamlessly, in real time with a user on Teams. If required, the app can also be customized to have a bot inside native mobile app or use any other popular consumer communication channels as a way of reaching out to user on Teams. To configure your bot to connect to any other consumer facing channels refer to the documentation here. 
+Note: This sample app demonstrates only the bot interface on a website as the communication channel for citizen user.
+
+
+Business Outreach / Communication channels:  The citizen consumer user may use a bot interface on website (as showcased by this sample app) as a communication channel and interact seamlessly, in real time with a user on Teams. If required, the app can also be customized to have a bot inside native mobile app or use any other popular consumer communication channels as a way of reaching out to user on Teams. To configure your bot to connect to any other consumer facing channels refer to the documentation [here](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-channels?view=azure-bot-service-4.0). 
 
 ## Frameworks
 
@@ -105,7 +107,7 @@ Step 2: Run the app locally
  	- Navigate to samples/bot-b2c-chat-bot/Source folder.
  	- Select B2CChatBot.csproj file.
 
-3. The Azure Cosmos DB Emulator must be runnning before starting the service. To start the Azure Cosmos DB Emulator on Windows, select the Start button or press the Windows key. Begin typing Azure Cosmos DB Emulator, and select the emulator from the list of applications.When the emulator has started, you'll see an icon in the Windows taskbar notification area. It automatically opens the Azure Cosmos data explorer in your browser at this URL https://localhost:8081/_explorer/index.html URL. Make sure to copy the URI and Primary key values from the data explorer, update the same in the appsettings.json file. Cosmos Database and collection names can be anything of your choice. For more information, see the [Azure Cosmos DB Emulator reference](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=cli%2Cssl-netstd21) article.
+3. The Azure Cosmos DB Emulator must be runnning before starting the service. To start the Azure Cosmos DB Emulator on Windows, select the Start button or press the Windows key. Begin typing Azure Cosmos DB Emulator, and select the emulator from the list of applications.When the emulator has started, you'll see an icon in the Windows taskbar notification area. It automatically opens the Azure Cosmos data explorer in your browser at this URL https://localhost:8081/_explorer/index.html URL. Make sure to copy the URI and Primary key values from the data explorer, update the same in the appsettings.json file. Cosmos Database and collection names can be anything of your choice. For more information, see the [Azure Cosmos DB Emulator reference](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=cli%2Cssl-netstd21) article. Values of the keys [GroupId](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?view=graph-rest-1.0&tabs=http), [ChannelId](https://docs.microsoft.com/en-us/graph/api/channel-list?view=graph-rest-1.0&tabs=http), [ChannelFilesFolderId](https://docs.microsoft.com/en-us/graph/api/channel-get-filesfolder?view=graph-rest-1.0&tabs=http) can be retrieved using the Graph explorer.
 
 4. Update the index.cshtml and appsettings.json files. 
 
