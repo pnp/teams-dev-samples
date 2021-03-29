@@ -8,7 +8,7 @@
 #    - name: some-unique-name
 #      title: 
 #      type: apptemplate, barebones, demo, solution
-#      features: bot, connector, msgext, tab, taskmodule, webhook
+#      features: bot, connector, meetings, msgext, tab, taskmodule, webhook
 #      source: appTemplate, botBuilder, msftTeams, officeDev, pnp
 #      summary: 
 #      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
@@ -1838,6 +1838,25 @@ extra:
       modifiedtext: February 18, 2021
       modified: 2021-02-18
 
+# Questionnaire Teams meeting app
+    - name: react-teams-meeting-app-questionnaire
+      title: Questionnaire Teams Meeting App
+      type: demo
+      features: meetings
+      source: pnp
+      summary: Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions
+      thumbnail:
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-meeting-app-questionnaire
+      author: Nanddeep Nachan
+      client_language: typescript
+      client_platform: spfx
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: March 22, 2021
+      modified: 2021-03-22
+
 #################################
 #endregion COMMUNITY SAMPLES
 #################################
@@ -1959,6 +1978,7 @@ authors:
     - Luis Mañez
     - Markus Moeller
     - Microsoft
+    - Nanddeep Nachan
     - Rabia Williams
     - Rajesh Sitaraman
     - Ramin Ahmadi
