@@ -9,6 +9,7 @@ To learn more about how to use these samples, please refer to our [getting start
   <div class="button-group filters-button-group">
     <button class="button is-checked" data-filter="*">All</button>
     <button class="button" data-filter="[data-facet*='bot']" title="Solution contains a chatbot">Bot</button>
+    <button class="button" data-filter="[data-facet*='meetings']" title="Solution contains a meetings application">Meetings</button>
     <button class="button" data-filter="[data-facet*='msgext']" title="Solution contains one or more messaging extensions">Messaging Extension</button>
     <button class="button" data-filter="[data-facet*='other']" title="Other solution (outside Teams UI)">Other</button>
     <button class="button" data-filter="[data-facet*='webhook']" title="Solution consumes an outgoing webhook">Outgoing Webhook</button>

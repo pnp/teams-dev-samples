@@ -9,7 +9,7 @@ The current solution is driven by a [single YAML file](https://github.com/pnp/te
     - name: microsoft-teams-apps-attendance
       title: Attendance App Template
       type: apptemplate, barebones, demo, solution
-      features: bot, msgext, tab, taskmodule
+      features: bot, connector, meetings, msgext, tab, taskmodule, webhook
       summary: Attendance app is a Power Apps based solution ...
       thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
       url: https://github.com/OfficeDev/microsoft-teams-apps-attendance

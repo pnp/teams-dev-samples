@@ -1766,7 +1766,7 @@ extra:
     - name: app-virtual-events-meeting-extensibility
       title: Virtual events meeting extensibility
       type: demo
-      features: bot, tab
+      features: bot, tab, meetings
       source: pnp
       summary: Shows how to create an app with a bot that calls users into a meeting with a custom event
       thumbnail:
