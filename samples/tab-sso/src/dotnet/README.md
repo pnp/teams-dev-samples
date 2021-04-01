@@ -18,19 +18,19 @@ Version|Date|Author|Comments
 
 1. Refer initially to the overall sample readme which includes details on setting up the Azure Ad Application.
 
-2. Open the `msteams-tabs-sso-sample.sln` file in Visual Studio (or the project folder in Visual Studio Code). Modify the [`appsettings.Development.json`](appsettings.Development.json) file by inserting a value for the `{AppId}`, being the Application Id of the Azure Application created earlier, and the `{AppPassword}`, being the client secret from the same application.
-
-Note also that the value of the `Authority` setting can either be your tenant id, for building an internal-only application, or can be set to `organizations` for a multi-tenant application.
-
-Note further that the `RedirectUriRelativePath` can be used if you want to redirect to a separate redirect page. In this example, both the initial auth popup and the redirect are handled in the same page.
+2. Open the `msteams-tabs-sso-sample.sln` file in Visual Studio (or the project folder in Visual Studio Code). Modify the [`appsettings.json`](appsettings.json) file as mentioned below:
+    - Find the app key `ClientId` and replace the existing value with the application ID (clientId) of the Azure Application created earlier.
+    - Find the app key `TenantId` and replace the existing value with your Azure AD tenant ID.
+    - Find the app key `Domain` and replace the existing value with your Azure AD tenant name.
+    - Find the app key `ClientSecret` and replace the existing value with the key you saved during the creation of the application, in the Azure portal.
 
 3. Compile and run the application (e.g. by pushing F5 in Visual Studio)
 
 4. Start Ngrok (or a similar tunneling tool), using the following command:
 
-```shell
-ngrok http https://localhost:44329/ -host-header="localhost:44329"
-```
+    ```shell
+    ngrok http https://localhost:44329/ -host-header="localhost:44329"
+    ```
 
 5. For the Redirect URI in the 'Authentication' page in your Azure AD Application, enter https://{yourNgrokDomain}.ngrok.io/auth/authPopup
 
