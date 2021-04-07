@@ -10,8 +10,9 @@ Below is a screenshot of the SSO tab in action (this is for the .NET version - t
 
 ![picture of the app in action](assets/images/TabScreenshot.png)
 
-**Please note** that this sample actually contains two separate, alternate projects: a .NET version and a Node.js version.
-  * The .NET version uses a more 'vanilla JS' approach, in order to show how SSO can be implemented in such a scenario
+**Please note** that this sample actually contains two separate, alternate projects: a .NET version and a Node.js version:
+
+  * The .NET version uses a more 'vanilla JS' approach, in order to show how SSO can be implemented in such a scenario. The .NET back-end is protected by [Microsoft.Identity.Web](https://github.com/AzureAD/microsoft-identity-web), which validates the SSO token and calls Graph using the Graph SDK.
   * The Node.js version uses a React front end, in order to demonstrate SSO using a front end framework. It also has been updated with an alternative pattern that does Graph queries server-side rather than passing the access token back to the web browser. It also adds logic to verify the SSO token on the server side.
 
 ## Frameworks
@@ -68,6 +69,8 @@ Version|Date|Author|Comments
 ### 2. Register Azure AD application
 
 For detailed steps on how to do this, read [Registering your app through the Azure Active Directory portal in-depth](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#registering-your-app-through-the-azure-active-directory-portal-in-depth).
+
+> :warning: During registration, make sure the Redirect URI is of type **Single-page application**, and not **Web**.
 
 ### 3. Update app configuration & run the web application
 

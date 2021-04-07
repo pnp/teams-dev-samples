@@ -16,7 +16,7 @@
     </p>
 
     <script src="https://statics.teams.cdn.office.net/sdk/v1.8.0/js/MicrosoftTeams.min.js" integrity="sha384-5ilKjPffKMvf1YelNqWjOhy5WJC9rkHpgF9pASMY/eRFlb619wOrCGMVIg/a/71o" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://alcdn.msauth.net/browser/2.7.0/js/msal-browser.min.js" integrity="sha384-isB7RsMD9bXfK4BK9pJHfTyTfQMM/KQ/1a58J/PVsDFbto29TgNxOP3ZyrhRyiTV" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://alcdn.msauth.net/browser/2.13.1/js/msal-browser.min.js" integrity="sha384-2Vr9MyareT7qv+wLp1zBt78ZWB4aljfCTMUrml3/cxm0W81ahmDOC6uyNmmn0Vrc" crossorigin="anonymous"></script>
 
     <script>
 
@@ -27,10 +27,9 @@
 
             const msalConfig = {
                 auth: {
-                    clientId: "@Configuration["ClientId"]",
-                    authority: "https://login.microsoftonline.com/@Configuration["Authority"]/",
-                    //redirectUri: window.location.origin + "@Configuration["RedirectUriRelativePath"]"
-                    redirectUri: document.location.href //redirect back to this page - it will handle the redirect back to complete the signin
+                    clientId: "@Configuration["AzureAd:ClientId"]",
+                    authority: "https://login.microsoftonline.com/common",
+                    redirectUri: window.location.origin + "@Configuration["AzureAd:RedirectUriRelativePath"]"
                 },
                 cache: {
                     cacheLocation: "sessionStorage", // This configures where your cache will be stored
@@ -38,87 +37,24 @@
                 }
             };
 
-            let request = {
-                scopes: ["User.Read"]
-            }
-
             const msalClient = new msal.PublicClientApplication(msalConfig);
 
             // Get the tab context, and use the information to navigate to Azure AD login page
             microsoftTeams.getContext((context) => {
-                debugger;
-
-                if (msalClient.interactionInProgress()) { // this will handle the redirect back to this page once consent is complete
-                    msalClient.handleRedirectPromise().then((tokenResponse) => {
+                msalClient.handleRedirectPromise().then((tokenResponse) => {
+                    if (tokenResponse) {
                         microsoftTeams.authentication.notifySuccess(tokenResponse);
-                    }).catch((error) => {
-                        console.log(error);
-                        microsoftTeams.authentication.notifyFailure("Unexpected failure");
-                    });
-                } else if (!isLoggedIn()) {
-                    login(["User.Read", "Mail.Read"]);
-                    // This call won't return - catch it on the redirect
-                } else {
-                    getAccessTokenEx(["User.Read", "Mail.Read"], context)
-                        .then((loginResult) => {
-                            if (loginResult.accessToken) {
-                                const response = JSON.stringify(loginResult)
-                                microsoftTeams.authentication.notifySuccess(response);
-                            } else {
-                                microsoftTeams.authentication.notifyFailure("Unexpected failure - null token received");
-                            }
-                        })
-                        .catch((error) => {
-                            console.log(error);
-                            microsoftTeams.microsoftTeams.notifyFailure(error);
-                        });
-                }
+                    }
+                }).catch((error) => {
+                    console.log(error);
+                    microsoftTeams.authentication.notifyFailure("Unexpected failure");
+                });
+
+                msalClient.loginRedirect({
+                    scopes: ["User.Read"],
+                    loginHint: context.loginHint
+                });
             });
-
-            function isLoggedIn() {
-                const accounts = msalClient.getAllAccounts();
-                return (accounts && accounts.length === 1);
-            }
-
-            function login(scopes) {
-                if (scopes) {
-                    request.scopes = scopes;
-                }
-                try {
-                    msalClient.loginRedirect(request);
-                }
-                catch (err) { console.log(err); }
-            }
-
-            // Call this to get the username, access token, and expiration date
-            async function getAccessTokenEx(scopes, context) {
-
-                request.account = msalClient.getAccountByUsername(context.loginHint);
-                if (scopes) {
-                    request.scopes = scopes;
-                }
-                try {
-                    let resp = await msalClient.acquireTokenSilent(request);
-                    if (resp && resp.accessToken) {
-                        return {
-                            username: context.loginHint,
-                            accessToken: resp.accessToken,
-                            expiresOn: (new Date(resp.expiresOn)).getTime()
-                        }
-                    } else {
-                        return null;
-                    }
-                }
-                catch (error) {
-                    if (error instanceof InteractionRequiredAuthError) {
-                        console.warn("Silent token acquisition failed; acquiring token using redirect");
-                        msalClient.acquireTokenRedirect(request);
-                    } else {
-                        throw (error);
-                    }
-                }
-            }
-
         })();
 
     </script>

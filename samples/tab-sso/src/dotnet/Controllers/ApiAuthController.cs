@@ -20,7 +20,7 @@ namespace msteams_tabs_sso_sample.Controllers
             Configuration = configuration;
             _tokenAcquisition = tokenAcquisition;
         }
-       
+
         [Route("auth/token")]
         [HttpGet]
         public async Task<string> GetUserData()
@@ -36,7 +36,7 @@ namespace msteams_tabs_sso_sample.Controllers
                 var user = await graphServiceClient.Me
                                 .Request()
                                 .GetAsync();
-                
+
                 return ($"DisplayName: { user.DisplayName},GivenName: {user.GivenName},Id: {user.Id},UserPrincipalName: {user.UserPrincipalName}");
             }
             catch (MicrosoftIdentityWebChallengeUserException msalEx)

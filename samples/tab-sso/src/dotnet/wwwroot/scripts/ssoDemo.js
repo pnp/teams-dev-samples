@@ -17,8 +17,8 @@
 
                     display("Now let's use the token's data:", "div");
                     display("name: " + decodedToken.name, "div");
-                    display("aadObjectId: " + decodedToken.oid, "div");
-                    display("upn: " + decodedToken.upn, "div");
+                    display("objectId: " + decodedToken.oid, "div");
+                    display("preferred_username: " + decodedToken.preferred_username, "div");
                     display("tenantId: " + decodedToken.tid, "div");
 
                     display("We will send the client side token to service. Service will validate the token and call Microsoft graph on behalf of user:");
@@ -35,7 +35,7 @@
     }
 
     // 2. Get users detail from Microsoft Graph
-    //    using the web service (see /auth/token handler in app.js)
+    // using the web service (see /auth/token handler in app.js)
     function getUserDataFromServer(clientSideToken) {
 
         display("2. Fetch data from Microsoft graph");
@@ -54,6 +54,7 @@
                 };
                 fetch('/auth/token', options)
                     .then((response) => {
+                        // console.log(response.json())
                         if (response.ok) {
                             return response.text();
                         } else {
@@ -67,6 +68,7 @@
                         else if ("unauthorized_client" === responseJson || "invalid_grant" === responseJson) {
                             reject(responseJson);
                         } else {
+                            console.log(responseJson);
                             const serverSideToken = responseJson.split(',');
                             serverSideToken.map(x=>display(x));
                             resolve(serverSideToken);
@@ -84,9 +86,6 @@
                 width: 600,
                 height: 535,
                 successCallback: (result) => {
-                    //let data = localStorage.getItem(result);
-                    //localStorage.removeItem(result);
-                    //resolve(data);
                     resolve(result);
                 },
                 failureCallback: (reason) => {
@@ -121,10 +120,11 @@
                 button.onclick = (() => {
                     requestConsent()
                         .then((result) => {
-                            // Consent succeeded - use the token we got back
-                            let accessToken = result.accessToken;
-                            display(`Received access token ${accessToken}`);
-                            useServerSideToken(accessToken);
+                            if (result) {
+                                // Consent succeeded - use the token we got back
+                                display(`Received access token ${result.accessToken}`);
+                                window.location.reload();
+                            }
                         })
                         .catch((error) => {
                             display(`ERROR ${error}`);
