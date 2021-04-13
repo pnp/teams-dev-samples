@@ -38,3 +38,5 @@ Version|Date|Author|Comments
 > :warning: Make sure the Redirect URI is of type **Single-page application**, and not **Web**.
 
 6. Complete the remaining steps in the main README file.
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-sso/dotnet" />
