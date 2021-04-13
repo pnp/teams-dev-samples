@@ -1,8 +1,11 @@
 ﻿﻿# SPUploader
 
-Bot Framework v4 SPListBot sample.
+This sample shows how to build a simple digital asset management system using a Microsoft Teams messaging extension and a SharePoint library. Users can upload new assets via an action messaging extension; a simple approval step is implemented using adaptive cards. Users can insert approved assets into the conversation using a search messaging extension.
 
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to create a simple bot that uses message extension search for the uploaded documents and action based to upload a document to sharepoint document library..
+This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to create a simple bot that uses message extension search for the uploaded documents and action based to upload a document to sharepoint document library.
+
+![image](SPUploader/wwwroot/Images/Capture2.PNG)
+![image](SPUploader/wwwroot/Images/Capture9.PNG)
 
 ## Prerequisites
 
