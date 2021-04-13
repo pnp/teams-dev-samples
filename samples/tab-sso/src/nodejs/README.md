@@ -64,3 +64,5 @@ ngrok http https://localhost:3000/ -host-header="localhost:3000"
 ```
 
 7. Complete the remaining steps in the main readme file.
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-sso/nodejs" />
