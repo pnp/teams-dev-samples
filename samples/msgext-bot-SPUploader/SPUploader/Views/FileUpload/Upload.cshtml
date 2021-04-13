@@ -1,0 +1,126 @@
+﻿@*@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers*@
+@using MeetingExtension_SP.Models
+@model FileUploaderViewModel
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<form enctype="multipart/form-data" asp-controller="FileUpload" asp-action="Upload"
+      method="post" class="mt-3" style="margin:25px;margin-top:10%!important">
+    <div class="form-group row">
+        <div class="col-sm-12">
+            @*<input asp-for="Title" class="form-control" placeholder="Title">*@
+            @Html.TextBoxFor(e => e.Title, htmlAttributes: new { @class= "form-control", @placeholder="Enter Title" })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-12">
+            @*<input asp-for="Description" class="form-control" placeholder="Description">*@
+            @Html.TextBoxFor(e => e.Description, htmlAttributes: new { @class = "form-control" , @placeholder = "Enter Description" })
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-12">
+           @Html.EditorFor(e=>e.File)
+        </div>
+    </div>
+    @*<div class="form-group row">
+            <div class="col-sm-12">
+                <div class="custom-file">
+                    <input asp-for="File" class="form-control custom-file-input">
+                    <label class="custom-file-label">Choose File...</label>
+                </div>
+            </div>
+        </div>*@
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" id="btnUpload" class="btn btn-primary" style="background-color:#5558AF;margin-left:100%;margin-top:5%">Upload</button>
+        </div>
+    </div>
+
+    @*This script is required to display the selected file in the file upload element*@
+
+    @section Scripts {
+        <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+        <script src="~/lib/jquery/jquery.js"></script>
+        <script src="https://statics.teams.microsoft.com/sdk/v1.4.2/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function () {
+                $('.custom-file-input').on("change", function () {
+                    var fileName = $(this).val().split("\\").pop();
+                    $(this).next('.custom-file-label').html(fileName);
+                });
+
+                $("#btnUpload").click(function () {
+                     microsoftTeams.initialize();
+            var newResourceInformation = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model,
+                                Newtonsoft.Json.Formatting.Indented));
+            microsoftTeams.tasks.submitTask(newResourceInformation);
+                });
+
+
+            });
+
+
+        </script>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            GetToken();
+        });
+
+        function GetToken() {
+             $.ajax({
+                url: '@Url.Action("GetToken", "FileUpload")',
+                type: "GET",
+                dataType: "json",               
+                success: function (response) {
+                    alert("Token generated successfully!");
+                    updateFileMetadata(response);
+                },
+                error: function (xhr, textStatus, errorThrown) {
+                    console.log("textStatus: " + textStatus + ", errorThrown:" + errorThrown);
+                },
+            });
+        }
+
+            function updateFileMetadata(accessToken) {
+            var def = jQuery.Deferred();
+            var restSource = "https://avadheshftc.sharepoint.com/DemoSiteNew/_api/Web/Lists/getByTitle('UserDocuments')/Items(2)";
+            var itemPayload = { "__metadata": { "type": "SP.Data.Shared_x0020_DocumentsItem" }, "Title": "Updated" };
+            var dfd = jQuery.Deferred();
+            $.ajax(
+                {
+                    url: restSource,
+                    method: "POST",
+                    beforeSend: function (request) {
+                        request.setRequestHeader("Authorization", "Bearer " + accessToken);
+                    },
+                    contentType: "application/json;odata=verbose",
+                    data: JSON.stringify(itemPayload),
+                    headers:
+                    {
+                        "Accept": "application/json;odata=verbose",
+                        "X-RequestDigest": $('#__REQUESTDIGEST').val(),
+                        "X-HTTP-Method": "MERGE",
+                        "If-Match": "*"
+
+                    },
+                    success: function (data) {
+                        alert("Success");
+                        dfd.resolve(data);
+                    },
+                    error: function (err) {
+                        dfd.reject(err);
+                        alert("Error");
+                    }
+                });
+            return dfd.promise();
+        }
+        </script>
+    }
+</form>
