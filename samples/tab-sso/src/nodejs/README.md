@@ -28,6 +28,8 @@ This sample is secured with [Microsoft identity platform](https://docs.microsoft
 
 1. Refer initially to the [overall sample readme](../../) which includes details on setting up the Azure AD Application.
 
+> :warning: During registration, make sure the Redirect URI is of type **Single-page application**, and not **Web**.
+
 2. Modify the [`.env`](./.env) file by inserting a value for the `CLIENT_ID`, being the Application Id of the Azure Application created earlier.
 
 3. Modify the [`.env`](./api-server/.env) file in the `api-server` subfolder, for the backend web API that does the token exchange, by inserting a value for:

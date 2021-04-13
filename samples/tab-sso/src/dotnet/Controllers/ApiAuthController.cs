@@ -1,64 +1,78 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using msteams_tabs_sso_sample.Models;
-using Newtonsoft.Json;
+using Microsoft.Graph;
+using System.Net.Http.Headers;
+using Microsoft.Identity.Web;
 
 namespace msteams_tabs_sso_sample.Controllers
 {
+    [Authorize]
     [ApiController]
     public class ApiAuthController : ControllerBase
     {
         private IConfiguration Configuration;
-        public ApiAuthController(IConfiguration configuration)
+        private ITokenAcquisition _tokenAcquisition;
+        public ApiAuthController(IConfiguration configuration, ITokenAcquisition tokenAcquisition)
         {
             Configuration = configuration;
+            _tokenAcquisition = tokenAcquisition;
         }
 
         [Route("auth/token")]
-        [HttpPost]
-        public async Task<string> token([FromBody] ServerTokenViewModel serverTokenViewModel)
+        [HttpGet]
+        public async Task<string> GetUserData()
         {
-            var scopes = new string[] { "https://graph.microsoft.com/User.Read" };
-
-            var url = $"https://login.microsoftonline.com/{serverTokenViewModel.tid}/oauth2/v2.0/token";
-
-            var httpClient = new HttpClient();
-            httpClient.DefaultRequestHeaders.Add("Accept", "application/json");
-
-            var values = new Dictionary<string, string>
-                {
-                    { "client_id", Configuration["ClientId"] },
-                    { "client_secret", Configuration["ClientPassword"]},
-                    { "grant_type", "urn:ietf:params:oauth:grant-type:jwt-bearer"},
-                    { "assertion", serverTokenViewModel.token},
-                    { "requested_token_use", "on_behalf_of"},
-                    { "scope", string.Join(' ', scopes)},
-                };
-
-            var formContent = new FormUrlEncodedContent(values);
-
-            var response = await httpClient.PostAsync(url, formContent);
-
-            var responseString = await response.Content.ReadAsStringAsync();
-
-            dynamic responseJsonObject = JsonConvert.DeserializeObject(responseString);
-
-            if (response.StatusCode == HttpStatusCode.OK)
+            string[] scopes = { Configuration["GraphAPI:Scope"] };
+            try
             {
-                return (string)responseJsonObject.access_token;
+                string accessToken = await _tokenAcquisition.GetAccessTokenForUserAsync(scopes);
+
+                GraphServiceClient graphServiceClient = GetGraphServiceClient(accessToken);
+
+                // Retrieve the signed-in user's profile from Microsoft Graph.
+                var user = await graphServiceClient.Me
+                                .Request()
+                                .GetAsync();
+
+                return ($"DisplayName: { user.DisplayName},GivenName: {user.GivenName},Id: {user.Id},UserPrincipalName: {user.UserPrincipalName}");
             }
-            else
+            catch (MicrosoftIdentityWebChallengeUserException msalEx)
             {
-                return (string)responseJsonObject.error;
+                return msalEx.MsalUiRequiredException.ErrorCode;
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
             }
         }
 
+        /// <summary>
+        /// Prepares the authenticated client.
+        /// </summary>
+        /// <param name="accessToken">The access token.</param>
+        private GraphServiceClient GetGraphServiceClient(string accessToken)
+        {
+            string graphEndpoint = Configuration["GraphAPI:Endpoint"];
+            try
+            {
+                GraphServiceClient graphServiceClient = new GraphServiceClient(graphEndpoint,
+                                                                     new DelegateAuthenticationProvider(
+                                                                         async (requestMessage) =>
+                                                                         {
+                                                                             await Task.Run(() =>
+                                                                             {
+                                                                                 requestMessage.Headers.Authorization = new AuthenticationHeaderValue("bearer", accessToken);
+                                                                             });
+                                                                         }));
+                return graphServiceClient;
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
     }
 }
