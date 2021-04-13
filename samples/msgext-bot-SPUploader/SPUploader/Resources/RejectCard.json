@@ -93,6 +93,11 @@
               "type": "Action.OpenUrl",
               "title": "View Asset",
               "url": "${url}"
+            },
+            {
+              "type": "Action.OpenUrl",
+              "title": "Chat with Requestor",
+              "Url": "${userChat}"
             }
           ]
         }

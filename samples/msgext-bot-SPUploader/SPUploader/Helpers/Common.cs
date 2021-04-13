@@ -1,31 +1,36 @@
-﻿using MeetingExtension_SP.Models;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
 using MeetingExtension_SP.Models.Sharepoint;
 using MeetingExtension_SP.Repositories;
 using MessageExtension_SP.Models;
 using Microsoft.Bot.Builder;
-using Microsoft.Bot.Builder.Teams;
 using Microsoft.Bot.Connector;
 using Microsoft.Bot.Connector.Authentication;
 using Microsoft.Bot.Schema;
 using Microsoft.Bot.Schema.Teams;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Graph;
 using Microsoft.Identity.Client;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Threading;
 using System.Threading.Tasks;
 using Attachment = Microsoft.Bot.Schema.Attachment;
 
 namespace MessageExtension_SP.Helpers
 {
+    /// <summary>
+    /// Common for channel and bot
+    /// </summary>
     public class Common
     {
+        /// <summary>
+        /// Send channel data
+        /// </summary>
+        /// <param name="card"></param>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
         public static async Task SendChannelData(Attachment card, IConfiguration configuration)
         {
             //Teams channel id in which to create the post.
@@ -54,6 +59,11 @@ namespace MessageExtension_SP.Helpers
             await connectorClient.Conversations.CreateConversationAsync(conversationParameters);
         }
 
+        /// <summary>
+        /// Get asset details
+        /// </summary>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
         public static async Task<AssetData> GetAssetDetails(IConfiguration configuration)
         {
             SharePointRepository repository = new SharePointRepository(configuration);
@@ -64,50 +74,28 @@ namespace MessageExtension_SP.Helpers
             var recentFile = data.ToList().Where(x => x.Name.ToLower().Contains(filename.ToLower())).FirstOrDefault();           
 
             string[] submitter= System.IO.File.ReadAllText(@"Temp/UserFile.txt").Split(',');
+            var submitterDetails= await GetUserDetails(configuration, submitter[1]);
             string ownerId = await GetManagerId(configuration);
             var approverName = await GetUserDetails(configuration, ownerId);
 
             AssetData data1 = new AssetData();
-            data1.ApproverName = approverName;
+            data1.ApproverName = approverName.displayName;
             data1.DateOfSubmission = recentFile.TimeLastModified;
             data1.NameOfDocument = recentFile.Name;
-            data1.SubmittedBy = submitter[0];
-            data1.SubitteTo = "User Documents";
+            data1.SubmittedBy = submitterDetails.displayName;
+            data1.SubitteTo = Constants.UploadDocuments;
             data1.DocName = filename;
             data1.url = configuration["BaseURL"] + recentFile.ServerRelativeUrl;
             data1.userMRI = ownerId;
-            data1.userChat = "https://teams.microsoft.com/l/chat/0/0?users="+submitter[1];
+            data1.userChat = "https://teams.microsoft.com/l/chat/0/0?users="+submitterDetails.mail;
             return data1;
         }
 
-
-        public static async Task<UserModel> GetMe(IConfiguration configuration)
-        {
-            string tenantId = configuration["TenantId"];
-            try
-            {
-                var token = await GetToken(tenantId, configuration);
-
-                GraphServiceClient graphClient = GetAuthenticatedClient(token.ToString());
-
-                var user = await graphClient.Me
-                    .Request()
-                    .GetAsync();
-
-                var result = new UserModel
-                {
-                    displayName = user.DisplayName,
-                    mail = user.Mail
-                };
-                return result;
-            }
-            catch(Exception ex)
-            {
-
-            }
-            return null;
-        }
-
+        /// <summary>
+        /// Get manager Id from graph api
+        /// </summary>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
         public static async Task<string> GetManagerId(IConfiguration configuration)
         {
             string tenantId = configuration["TenantId"];
@@ -132,7 +120,13 @@ namespace MessageExtension_SP.Helpers
 
         }
 
-        public static async Task<string> GetUserDetails(IConfiguration configuration,string userId)
+        /// <summary>
+        /// Get user details from graph api
+        /// </summary>
+        /// <param name="configuration"></param>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public static async Task<UserModel> GetUserDetails(IConfiguration configuration,string userId)
         {
             string tenantId = configuration["TenantId"];
 
@@ -144,18 +138,30 @@ namespace MessageExtension_SP.Helpers
                 var user = await graphClient.Users[userId]
                     .Request()
                     .GetAsync();
+
+                var details = new UserModel
+                {
+                    displayName = user.DisplayName,
+                    mail = user.Mail,
+                };
                
-                return user.DisplayName;
+                return details;
             }
             catch (Exception ex)
             {
 
             }
 
-            return string.Empty;
+            return null;
 
         }
 
+        /// <summary>
+        /// Get token
+        /// </summary>
+        /// <param name="tenantId"></param>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
         public static async Task<string> GetToken(string tenantId,IConfiguration configuration)
         {
 
@@ -172,6 +178,11 @@ namespace MessageExtension_SP.Helpers
             return result.AccessToken;
         }
 
+        /// <summary>
+        /// Get Auth client for Graph calls
+        /// </summary>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public static GraphServiceClient GetAuthenticatedClient(string token)
         {
             var graphClient = new GraphServiceClient(

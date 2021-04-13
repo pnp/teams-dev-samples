@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
 
 namespace MeetingExtension_SP.Models.Sharepoint
 {
+    /// <summary>
+    /// Doclibrary for sharepoint
+    /// </summary>
     public class DocumentLibrary : AssetCard
     {       
         /// <summary>

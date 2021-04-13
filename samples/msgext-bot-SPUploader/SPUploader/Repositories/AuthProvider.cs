@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+using MeetingExtension_SP.Models;
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
+using System;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json;
-using MeetingExtension_SP.Models;
-using Microsoft.Identity.Client;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace MeetingExtension_SP.Repositories
 {
@@ -33,6 +31,10 @@ namespace MeetingExtension_SP.Repositories
             this.url = configuration["AccessTokenUrl"];
         }
 
+        /// <summary>
+        /// Get access token
+        /// </summary>
+        /// <returns></returns>
         public async Task<string> GetAccessTokenAsync()
         {
             var accessToken = string.Empty;

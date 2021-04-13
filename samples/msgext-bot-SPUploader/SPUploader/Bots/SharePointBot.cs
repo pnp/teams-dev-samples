@@ -3,36 +3,28 @@
 //
 // Generated with Bot Builder V4 SDK Template for Visual Studio EchoBot v4.11.1
 
+using MeetingExtension_SP.Handlers;
+using MeetingExtension_SP.Helpers;
+using MeetingExtension_SP.Models;
+using MessageExtension_SP.Handlers;
+using MessageExtension_SP.Helpers;
+using MessageExtension_SP.Models;
 using Microsoft.Bot.Builder;
 using Microsoft.Bot.Builder.Teams;
 using Microsoft.Bot.Schema;
 using Microsoft.Bot.Schema.Teams;
 using Microsoft.Extensions.Configuration;
-using Newtonsoft.Json.Linq;
-using MeetingExtension_SP.Handlers;
-using MeetingExtension_SP.Repositories;
-using System;
+using Newtonsoft.Json;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Net.Http;
-using System.Net.Http.Headers;
 using System.Threading;
 using System.Threading.Tasks;
-using MeetingExtension_SP.Helpers;
-using Newtonsoft.Json;
-using MessageExtension_SP.Helpers;
-using MessageExtension_SP.Models;
-using MeetingExtension_SP.Models;
-using MessageExtension_SP.Handlers;
-using Microsoft.Bot.Connector.Authentication;
-using Microsoft.Bot.Connector;
-using System.Net;
-using AdaptiveCards;
-using Microsoft.Graph;
 
 namespace MeetingExtension_SP.Bots
 {
+    /// <summary>
+    /// ShsrepointBot with MessageExtension with Search and Action
+    /// </summary>
     public class SharePointBot : TeamsActivityHandler
     {
         private readonly IConfiguration configuration;
@@ -68,7 +60,6 @@ namespace MeetingExtension_SP.Bots
 
                 switch (cases.ToString())
                 {
-
                     case "approveRequest":
                         //Approve the request 
                         await handler.ApproveFileAsync(configuration);
@@ -81,9 +72,9 @@ namespace MeetingExtension_SP.Bots
 
                     case "cardRefresh":
                         string userId = turnContext.Activity.From.AadObjectId;
-                        string ownerId = await Common.GetManagerId(configuration);
-                        //get team owner id and give access to them
-                        if (userId == ownerId)
+                        string teamOwnerId = await Common.GetManagerId(configuration);
+                        //based on owner id show the approver card
+                        if (userId == teamOwnerId)
                         {
                             return GetStatusCard(MessageExtension_SP.Helpers.Constants.OwnerCard);
                         }
@@ -177,8 +168,12 @@ namespace MeetingExtension_SP.Bots
         }
 
         protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionFetchTaskAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionAction action, CancellationToken cancellationToken)
-        {           
-                var response = new MessagingExtensionActionResponse()
+        {
+            //get and store the user details in temp file
+            var tempFilePath = @"Temp/UserFile.txt";
+            System.IO.File.WriteAllText(tempFilePath, turnContext.Activity.From.Name + "," + turnContext.Activity.From.AadObjectId);
+
+            var response = new MessagingExtensionActionResponse()
                 {
                     Task = new TaskModuleContinueResponse()
                     {

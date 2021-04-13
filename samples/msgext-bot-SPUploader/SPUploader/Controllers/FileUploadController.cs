@@ -1,30 +1,20 @@
-﻿using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
 using MeetingExtension_SP.Models;
 using MeetingExtension_SP.Repositories;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-using MessageExtension_SP.Helpers;
-using System.Net.Http;
-using AdaptiveCards;
-using Microsoft.Win32.SafeHandles;
-using MeetingExtension_SP.Helpers;
-using Microsoft.Bot.Schema.Teams;
-using Microsoft.Bot.Schema;
-using Microsoft.Graph;
-using System.Net.Http.Headers;
-using Microsoft.Identity.Client;
-using MeetingExtension_SP.Models.Sharepoint;
 using MessageExtension_SP.Handlers;
-using MessageExtension_SP;
-using MessageExtension_SP.Models;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace MeetingExtension_SP.Controllers
 {
+    /// <summary>
+    /// File upload controller
+    /// </summary>
     public class FileUploadController : Controller
     {
         private readonly IConfiguration configuration;
@@ -38,18 +28,31 @@ namespace MeetingExtension_SP.Controllers
             this.hostingEnvironment = hostingEnvironment;
         }
       
+        /// <summary>
+        /// Index
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Index()
         {
             return View();
         }
 
+        /// <summary>
+        /// upload 
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Upload()
         {
             return View();
         }
 
+        /// <summary>
+        /// Upload file to sharepoint repo
+        /// </summary>
+        /// <param name="fileUpload"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> Upload(FileUploaderViewModel fileUpload)
         {
@@ -75,7 +78,7 @@ namespace MeetingExtension_SP.Controllers
 
                         //send the card to channel based on team member role                      
                         ChannelHandler channelHandler = new ChannelHandler();
-                        await channelHandler.SendConversation(configuration, false, fileUpload);
+                        await channelHandler.SendConversation(configuration);
                         return null;
                     }
                     else

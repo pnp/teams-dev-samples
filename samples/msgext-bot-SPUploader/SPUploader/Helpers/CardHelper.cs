@@ -1,23 +1,21 @@
-﻿using AdaptiveCards;
-using Microsoft.Bot.Schema;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+using AdaptiveCards;
+using AdaptiveCards.Templating;
 using MeetingExtension_SP.Models;
+using MessageExtension_SP.Helpers;
+using Microsoft.Bot.Schema;
+using Microsoft.Extensions.Configuration;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Configuration;
 using System.IO;
-using Newtonsoft.Json;
-using AdaptiveCards.Templating;
-using MessageExtension_SP.Models;
-using MeetingExtension_SP.Models.Sharepoint;
-using MeetingExtension_SP.Repositories;
-using MessageExtension_SP.Helpers;
-using Microsoft.MarkedNet;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace MeetingExtension_SP.Helpers
 {
+    /// <summary>
+    /// Adaptive card helper
+    /// </summary>
     public class CardHelper
     {
         public Attachment GetAssetCard(AssetCard data, string parent = null)

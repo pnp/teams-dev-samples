@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
 
 namespace MessageExtension_SP.Models
 {
+    /// <summary>
+    /// AsserData
+    /// </summary>
     public class AssetData
     {
         public string ApproverName { get; set; }

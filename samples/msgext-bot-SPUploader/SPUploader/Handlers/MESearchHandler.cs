@@ -1,17 +1,19 @@
-﻿using Microsoft.Bot.Schema;
-using Microsoft.Extensions.Configuration;
-using MeetingExtension_SP.Helpers;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
 using MeetingExtension_SP.Models;
 using MeetingExtension_SP.Models.Sharepoint;
 using MeetingExtension_SP.Repositories;
-using System;
+using MessageExtension_SP.Helpers;
+using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MessageExtension_SP.Helpers;
 
 namespace MeetingExtension_SP.Handlers
 {
+    /// <summary>
+    /// Search handler helps to search a file from a sharepoint library
+    /// </summary>
     public class MESearchHandler
     {
         public static async Task<List<AssetCard>> Search(string command, string assetTitle, IConfiguration configuration)

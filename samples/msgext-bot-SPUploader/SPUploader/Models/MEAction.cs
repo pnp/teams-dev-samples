@@ -1,17 +1,22 @@
-﻿using Microsoft.Bot.Schema.Teams;
-using System;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+using Microsoft.Bot.Schema.Teams;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MessageExtension_SP.Models
 {
+    /// <summary>
+    /// MEAction
+    /// </summary>
     public class MEAction
     {
         public string commandId { get; set; }
         public MessageActionsPayload MessagePayload { get; set; }
     }
 
+    /// <summary>
+    /// MESearch
+    /// </summary>
     public class MESearch
     {
         public string commandId { get; set; }

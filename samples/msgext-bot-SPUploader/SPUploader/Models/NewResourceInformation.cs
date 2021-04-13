@@ -1,8 +1,13 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
+using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 
 namespace MeetingExtension_SP.Models
 {
+    /// <summary>
+    /// NewResourceInformation
+    /// </summary>
     public class NewResourceInformation
     {       
         public string Title { get; set; }
@@ -14,6 +19,9 @@ namespace MeetingExtension_SP.Models
         public string SharePointFilePath { get; set; }
     }
 
+    /// <summary>
+    /// FileUploaderViewModel
+    /// </summary>
     public class FileUploaderViewModel : NewResourceInformation
     {
         [Required]

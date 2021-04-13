@@ -1,18 +1,17 @@
-﻿using MeetingExtension_SP.Models;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
 using MeetingExtension_SP.Models.Sharepoint;
 using MeetingExtension_SP.Repositories;
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Graph;
-using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Security.Policy;
 using System.Threading.Tasks;
 
 namespace MessageExtension_SP.Handlers
 {
+    /// <summary>
+    /// SPFileHandler will helps for approval and reject to upload
+    /// </summary>
     public class SPFileHandler
     {
         public async Task ApproveFileAsync(IConfiguration configuration)

@@ -1,17 +1,20 @@
-﻿using MeetingExtension_SP.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿// Copyright (c) Microsoft Corporation. All rights reserved.
+// Licensed under the MIT License.
 
 namespace MeetingExtension_SP.Models
 {
+    /// <summary>
+    /// Action type
+    /// </summary>
     public class ActionType
     {       
         public ActionTypes action { get; set; }
         public string data { get; set; }
     }
 
+    /// <summary>
+    /// SubmitNewResourceRequest
+    /// </summary>
     public class SubmitNewResourceRequest :ActionType
     {
         public string WebhookURL { get; set; }
@@ -19,6 +22,9 @@ namespace MeetingExtension_SP.Models
         public string AppId { get; set; }
     }
 
+    /// <summary>
+    /// ActionTypes
+    /// </summary>
     public class ActionTypes
     {
         public string type { get; set; }
