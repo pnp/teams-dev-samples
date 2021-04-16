@@ -697,42 +697,6 @@ extra:
 #region DOCS SAMPLES
 #################################
 
-    - name: microsoft-teams-bb-connector-node
-      title: Simple connector using NodeJS
-      type: barebones
-      features: connector
-      source: officeDev
-      summary: 
-      thumbnail: /img/thumbnails/_nopreview.png
-      url: https://docs.microsoft.com/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#connectors
-      author: Microsoft
-      client_language: 
-      client_platform: 
-      client_ui: 
-      server_language: javascript
-      server_platform: express
-      bot_framework:
-      modifiedtext: June 4, 2020
-      modified: 2020-06-04
-
-    - name: microsoft-teams-bb-connector-dotnet
-      title: Simple connector using ASP.NET
-      type: barebones
-      features: connector
-      source: officeDev
-      summary: Simple example of a connector 
-      thumbnail:
-      url: https://docs.microsoft.com/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#connectors
-      author: Microsoft
-      client_language: 
-      client_platform: 
-      client_ui: 
-      server_language: csharp
-      server_platform: netframework
-      bot_framework:
-      modifiedtext: June 4, 2020
-      modified: 2020-06-04
-
     - name: microsoft-teams-bb-simple-message-bot-dotnet
       title: Simple message bot using C#/ASP.NET Core
       type: barebones
@@ -1110,42 +1074,6 @@ extra:
       bot_framework: bot46
       modifiedtext: July 9, 2020
       modified: 2020-07-09
-
-    - name: microsoft-teams-bb-outgoing-webhook-csharp
-      title: Outgoing webhook using C#/ASP.NET Core
-      type: barebones
-      features: webhook
-      source: officeDev
-      summary: Illustrates how to create an Outgoing Webhook for Microsoft Teams in C#/.NET.
-      thumbnail:
-      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#outgoing-webhooks
-      author: Microsoft
-      client_language: 
-      client_platform: 
-      client_ui: 
-      server_language: csharp
-      server_platform: netframework
-      bot_framework:
-      modifiedtext: July 19, 2019
-      modified: 2019-07-19
-
-    - name: microsoft-teams-bb-outgoing-webhook-bot-node
-      title: Outgoing webhook using NodeJS
-      type: barebones
-      features: webhook
-      source: officeDev
-      summary: Illustrates how to create a simple Outgoing Webhook for Microsoft Teams in ~50 lines of Node.js code
-      thumbnail:
-      url: https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#outgoing-webhooks
-      author: Microsoft
-      client_language: 
-      client_platform: 
-      client_ui: 
-      server_language: javascript
-      server_platform:
-      bot_framework:
-      modifiedtext: July 19, 2019
-      modified: 2019-07-19
 
 
 #################################
@@ -1673,7 +1601,7 @@ extra:
       type: barebones
       features: tab
       source: pnp
-      summary: Two samples in one, with .NET Core and Node implementations
+      summary: Two samples in one, with .NET Core and Node implementations; now makes Graph calls from the back end rather than pass the Graph access token to the browser.
       thumbnail:
       url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-sso
       author: Hilton Giesenow
