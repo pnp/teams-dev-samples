@@ -20,8 +20,7 @@ namespace MessageExtension_SP.Handlers
             if (System.IO.File.Exists(readFileFromTemp))
             {
                 SharePointRepository repository = new SharePointRepository(configuration);                
-               await repository.UploadFileToSPAsync(readFileFromTemp,  false);
-                System.IO.File.Delete(readFileFromTemp);                
+               await repository.UploadFileToSPAsync(readFileFromTemp,  false);                            
             }            
         }
 
@@ -31,10 +30,9 @@ namespace MessageExtension_SP.Handlers
             if (System.IO.File.Exists(readFileFromTemp))
             {
                 SharePointRepository repository = new SharePointRepository(configuration);
-                var data = await repository.GetAllItemsAsync<DocumentLibrary>("UserDocuments");
+                var data = await repository.GetAllItemsAsync<DocumentLibrary>(configuration["StaggingFolder"]);
                 string filename = Path.GetFileName(readFileFromTemp).Split('_')[1];
-                var recentFile = data.ToList().Where(x => x.Name.ToLower().Contains(filename.ToLower())).FirstOrDefault();
-                System.IO.File.Delete(readFileFromTemp);               
+                var recentFile = data.ToList().Where(x => x.Name.ToLower().Contains(filename.ToLower())).FirstOrDefault();                              
             }           
         }
     }

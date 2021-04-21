@@ -20,7 +20,7 @@ namespace MeetingExtension_SP.Handlers
         {
             List<DocumentLibrary> assetCards=new List<DocumentLibrary>();
             SharePointRepository repository = new SharePointRepository(configuration);
-            var data = await repository.GetAllItemsAsync<DocumentLibrary>("UploadedDocuments");
+            var data = await repository.GetAllItemsAsync<DocumentLibrary>(configuration["ApprovedFolder"]);
 
             var filteredData = data.ToList().Where(x => x.Name.ToLower().Contains(assetTitle)).ToList();
 

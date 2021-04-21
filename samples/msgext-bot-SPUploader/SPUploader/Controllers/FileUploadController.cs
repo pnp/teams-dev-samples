@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
 using System.Threading.Tasks;
+using MessageExtension_SP.Models.ViewModels;
 
 namespace MeetingExtension_SP.Controllers
 {
@@ -19,9 +20,9 @@ namespace MeetingExtension_SP.Controllers
     {
         private readonly IConfiguration configuration;
         //private readonly ISharepointRepository repository;
-        private readonly IHostingEnvironment hostingEnvironment;
+        private readonly IWebHostEnvironment hostingEnvironment;
 
-        public FileUploadController(IHostingEnvironment hostingEnvironment, IConfiguration configuration)
+        public FileUploadController(IWebHostEnvironment hostingEnvironment, IConfiguration configuration)
         {
             // this.repository = repository;
             this.configuration = configuration;
@@ -54,7 +55,7 @@ namespace MeetingExtension_SP.Controllers
         /// <param name="fileUpload"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<IActionResult> Upload(FileUploaderViewModel fileUpload)
+        public async Task<IActionResult> Upload(FileUploadViewModel fileUpload)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +80,8 @@ namespace MeetingExtension_SP.Controllers
                         //send the card to channel based on team member role                      
                         ChannelHandler channelHandler = new ChannelHandler();
                         await channelHandler.SendConversation(configuration);
-                        return null;
+                        
+                        return View("Create");
                     }
                     else
                     {

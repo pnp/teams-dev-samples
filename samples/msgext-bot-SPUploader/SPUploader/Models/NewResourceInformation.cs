@@ -18,13 +18,4 @@ namespace MeetingExtension_SP.Models
 
         public string SharePointFilePath { get; set; }
     }
-
-    /// <summary>
-    /// FileUploaderViewModel
-    /// </summary>
-    public class FileUploaderViewModel : NewResourceInformation
-    {
-        [Required]
-        public IFormFile File { get; set; }
-    }
 }

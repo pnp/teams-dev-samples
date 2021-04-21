@@ -92,11 +92,11 @@ namespace MeetingExtension_SP.Repositories
             string filename = Path.GetFileName(fileLocation).Split('_')[1];
             string endPointUrl = "";
             if (!isTemp) {
-                endPointUrl = this.sharePointSiteBaseUrl + "/_api/web/GetFolderByServerRelativeUrl('UploadedDocuments')/files/add(url='" + filename + "',overwrite =true)";
+                endPointUrl = this.sharePointSiteBaseUrl + "/_api/web/GetFolderByServerRelativeUrl('" + configuration["ApprovedFolder"] + "')/files/add(url='" + filename + "',overwrite =true)";
             }
             else
             {
-                endPointUrl = this.sharePointSiteBaseUrl + "/_api/web/GetFolderByServerRelativeUrl('UserDocuments')/files/add(url='" + filename + "',overwrite =true)";
+                endPointUrl = this.sharePointSiteBaseUrl + "/_api/web/GetFolderByServerRelativeUrl('" + configuration["StagingFolder"] + "')/files/add(url='" + filename + "',overwrite =true)";
             }
            
             AuthProvider authProvider = new AuthProvider(configuration);

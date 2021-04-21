@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace MeetingExtension_SP.Helpers
 {
@@ -92,14 +93,16 @@ namespace MeetingExtension_SP.Helpers
                 assetListCard.Actions.Add(openUrlAction1);
             }
 
-            string fileType = data.Title.Split('.')[1];
-            
-            var action1 = this.AddCardAction(fileType, data.ServerRelativeUrl);
-            if (action1 != null)
+            var fileType = data.Title.Split('.');
+            if (fileType.Count() > 1)
             {
-                assetListCard.Actions.Add(action1);
-            }
 
+                var action1 = this.AddCardAction(fileType[1].ToString(), data.ServerRelativeUrl);
+                if (action1 != null)
+                {
+                    assetListCard.Actions.Add(action1);
+                }
+            }
             return new Attachment()
             {
                 ContentType = AdaptiveCard.ContentType,
@@ -177,12 +180,11 @@ namespace MeetingExtension_SP.Helpers
                 submittedTo = assetDetails.Result.SubitteTo,
                 docName = assetDetails.Result.DocName,
                 url = assetDetails.Result.url,
-                userMRI=assetDetails.Result.userMRI,
-                userChat=assetDetails.Result.userChat
-               
+                userMRI = assetDetails.Result.userMRI,
+                userChat = assetDetails.Result.userChat
             };
 
-            // "Expand" the template - this generates the final Adaptive Card payload
+            //"Expand" the template -this generates the final Adaptive Card payload
             string cardJson = template.Expand(payloadData);
 
             var adaptiveCardAttachmnt = new Attachment()

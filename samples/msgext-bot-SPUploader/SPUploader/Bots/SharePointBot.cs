@@ -63,27 +63,39 @@ namespace MeetingExtension_SP.Bots
                     case "approveRequest":
                         //Approve the request 
                         await handler.ApproveFileAsync(configuration);
-                        return GetStatusCard(MessageExtension_SP.Helpers.Constants.ApprovedCard);
-
+                        Microsoft.Bot.Schema.Attachment card = CardHelper.CreateAdaptiveCardAttachment(MessageExtension_SP.Helpers.Constants.ApprovedCard, configuration);
+                        var activity = MessageFactory.Attachment(card);
+                        activity.Id = turnContext.Activity.ReplyToId;
+                        await turnContext.UpdateActivityAsync(activity, cancellationToken);
+                        break;
                     case "rejectRequest":
                         // reject the request                        
-                        await handler.RejectFileAsync(configuration);
-                        return GetStatusCard(MessageExtension_SP.Helpers.Constants.RejectedCard);
+                        await handler.RejectFileAsync(configuration); 
+                        Microsoft.Bot.Schema.Attachment card1 = CardHelper.CreateAdaptiveCardAttachment(MessageExtension_SP.Helpers.Constants.RejectedCard, configuration);
+                        var activities = MessageFactory.Attachment(card1);
+                        activities.Id = turnContext.Activity.ReplyToId;
+                        await turnContext.UpdateActivityAsync(activities, cancellationToken);
+                        break;
 
                     case "cardRefresh":
-                        string userId = turnContext.Activity.From.AadObjectId;
-                        string teamOwnerId = await Common.GetManagerId(configuration);
-                        //based on owner id show the approver card
-                        if (userId == teamOwnerId)
+                        //read conversation id from text file
+                        string conversationId = System.IO.File.ReadAllText(@"Temp/ConversationFile.txt");
+                        if (turnContext.Activity.Conversation.Id == conversationId)
                         {
-                            return GetStatusCard(MessageExtension_SP.Helpers.Constants.OwnerCard);
+                            string userId = turnContext.Activity.From.AadObjectId;
+                            string teamOwnerId = await Common.GetManagerId(configuration);
+                            //based on owner id show the approver card
+                            if (userId == teamOwnerId)
+                            {
+                                return GetStatusCard(MessageExtension_SP.Helpers.Constants.OwnerCard);
+                            }
                         }
-                        break;
+                        return GetStatusCard(null);
                 }
 
             }
 
-            return CreateInvokeResponse();
+            return GetStatusCard(null);
         }
       
         protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
@@ -171,7 +183,7 @@ namespace MeetingExtension_SP.Bots
         {
             //get and store the user details in temp file
             var tempFilePath = @"Temp/UserFile.txt";
-            System.IO.File.WriteAllText(tempFilePath, turnContext.Activity.From.Name + "," + turnContext.Activity.From.AadObjectId);
+            System.IO.File.WriteAllText(tempFilePath, turnContext.Activity.From.Name + "," + turnContext.Activity.From.AadObjectId + "," + turnContext.Activity.From.Id);
 
             var response = new MessagingExtensionActionResponse()
                 {
@@ -194,16 +206,30 @@ namespace MeetingExtension_SP.Bots
 
         private InvokeResponse GetStatusCard(string cardType)
         {
-            Microsoft.Bot.Schema.Attachment card2 = CardHelper.CreateAdaptiveCardAttachment(cardType, configuration);
+            if (!string.IsNullOrEmpty(cardType))
+            {
+                Microsoft.Bot.Schema.Attachment card2 = CardHelper.CreateAdaptiveCardAttachment(cardType, configuration);
 
-            InvokeResponseBody response2 = new InvokeResponseBody();
-            response2.statusCode = 200;
-            response2.type = "application/vnd.microsoft.card.adaptive";
-            response2.value = card2.Content;
-            InvokeResponse invokeResponse2 = new InvokeResponse();
-            invokeResponse2.Body = response2;
-            invokeResponse2.Status = 200;
-            return invokeResponse2;
+                InvokeResponseBody response2 = new InvokeResponseBody();
+                response2.statusCode = 200;
+                response2.type = "application/vnd.microsoft.card.adaptive";
+                response2.value = card2.Content;
+                InvokeResponse invokeResponse2 = new InvokeResponse();
+                invokeResponse2.Body = response2;
+                invokeResponse2.Status = 200;
+                return invokeResponse2;
+            }
+            else
+            {
+                InvokeResponseBody response2 = new InvokeResponseBody();
+                response2.statusCode = 200;
+                response2.type = "application/vnd.microsoft.activity.message";
+                response2.value = "message";
+                InvokeResponse invokeResponse2 = new InvokeResponse();
+                invokeResponse2.Body = response2;
+                invokeResponse2.Status = 200;
+                return invokeResponse2;
+            }
         }
     }
 }

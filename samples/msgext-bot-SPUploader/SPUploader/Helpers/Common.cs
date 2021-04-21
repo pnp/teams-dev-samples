@@ -56,7 +56,14 @@ namespace MessageExtension_SP.Helpers
                 Activity = (Activity)topLevelMessageActivity
             };
 
-            await connectorClient.Conversations.CreateConversationAsync(conversationParameters);
+           var conversationResource = await connectorClient.Conversations.CreateConversationAsync(conversationParameters);
+            var replyMessage = Activity.CreateMessageActivity();
+            replyMessage.Conversation = new ConversationAccount(id: conversationResource.Id.ToString());
+
+            //get and store the user details in temp file
+            var tempFilePath = @"Temp/ConversationFile.txt";
+            System.IO.File.WriteAllText(tempFilePath,replyMessage.Conversation.Id.ToString() );
+
         }
 
         /// <summary>
@@ -67,7 +74,7 @@ namespace MessageExtension_SP.Helpers
         public static async Task<AssetData> GetAssetDetails(IConfiguration configuration)
         {
             SharePointRepository repository = new SharePointRepository(configuration);
-            var data = await repository.GetAllItemsAsync<DocumentLibrary>("UserDocuments");
+            var data = await repository.GetAllItemsAsync<DocumentLibrary>(configuration["StagingFolder"]);
             string readFileFromTemp = System.IO.File.ReadAllText(@"Temp/TempFile.txt");
             string filename = Path.GetFileName(readFileFromTemp).Split('_')[1];
 
@@ -78,17 +85,17 @@ namespace MessageExtension_SP.Helpers
             string ownerId = await GetManagerId(configuration);
             var approverName = await GetUserDetails(configuration, ownerId);
 
-            AssetData data1 = new AssetData();
-            data1.ApproverName = approverName.displayName;
-            data1.DateOfSubmission = recentFile.TimeLastModified;
-            data1.NameOfDocument = recentFile.Name;
-            data1.SubmittedBy = submitterDetails.displayName;
-            data1.SubitteTo = Constants.UploadDocuments;
-            data1.DocName = filename;
-            data1.url = configuration["BaseURL"] + recentFile.ServerRelativeUrl;
-            data1.userMRI = ownerId;
-            data1.userChat = "https://teams.microsoft.com/l/chat/0/0?users="+submitterDetails.mail;
-            return data1;
+            AssetData assetData = new AssetData();
+            assetData.ApproverName = approverName.displayName;
+            assetData.DateOfSubmission = recentFile.TimeLastModified;
+            assetData.NameOfDocument = recentFile.Name;
+            assetData.SubmittedBy = submitterDetails.displayName;
+            assetData.SubitteTo = configuration["ApprovedFolder"];
+            assetData.DocName = filename;
+            assetData.url = configuration["BaseURL"] + recentFile.ServerRelativeUrl;
+            assetData.userMRI = ownerId;
+            assetData.userChat = "https://teams.microsoft.com/l/chat/0/0?users="+submitterDetails.mail;
+            return assetData;
         }
 
         /// <summary>

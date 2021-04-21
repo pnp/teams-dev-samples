@@ -133,15 +133,6 @@
     }
   ],
   "msteams": {
-    "entities": [
-      {
-        "type": "mention",
-        "text": "<at>Varaprasad</at>",
-        "mentioned": {
-          "id": "29:1qUR4ULd6q14zVmOEnKsqqo8JldompiotJxHDhZEorbDQc3CoS9H6SJkyAJ0jnIJw_rfDTyrp7f025d1Wj6TTFw",
-          "name": "Varaprasad"
-        }
-      }
-    ]
+    "width": "Full"
   }
 }

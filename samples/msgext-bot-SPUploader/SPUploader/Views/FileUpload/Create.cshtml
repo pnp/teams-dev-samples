@@ -1,6 +1,4 @@
-﻿@using MeetingExtension_SP.Models
-@model SubmitNewResourceRequest
-@{
+﻿@{
     ViewData["Title"] = "Create";
 }
 
@@ -9,10 +7,8 @@
     <script src="https://statics.teams.microsoft.com/sdk/v1.4.2/js/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            microsoftTeams.initialize();
-            var newResourceInformation = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model,
-                                Newtonsoft.Json.Formatting.Indented));
-            microsoftTeams.tasks.submitTask(newResourceInformation);
+            microsoftTeams.initialize();          
+            microsoftTeams.tasks.submitTask();
         });
     </script>
 }

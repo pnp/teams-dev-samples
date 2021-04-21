@@ -1,6 +1,5 @@
-﻿@*@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers*@
-@using MeetingExtension_SP.Models
-@model FileUploaderViewModel
+﻿@using MessageExtension_SP.Models
+@model MessageExtension_SP.Models.ViewModels.FileUploadViewModel
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -11,17 +10,17 @@
       method="post" class="mt-3" style="margin:25px;margin-top:10%!important">
     <div class="form-group row">
         <div class="col-sm-12">
-            @Html.TextBoxFor(e => e.Title, htmlAttributes: new { @class= "form-control", @placeholder="Enter Title" })
+            @Html.TextBoxFor(e => e.Title, htmlAttributes: new { @class = "form-control", @placeholder = "Enter Title" })
         </div>
     </div>
     <div class="form-group row">
         <div class="col-sm-12">
-            @Html.TextBoxFor(e => e.Description, htmlAttributes: new { @class = "form-control" , @placeholder = "Enter Description" })
+            @Html.TextBoxFor(e => e.Description, htmlAttributes: new { @class = "form-control", @placeholder = "Enter Description" })
         </div>
     </div>
     <div class="form-group row">
         <div class="col-sm-12">
-           @Html.EditorFor(e=>e.File)
+            @Html.EditorFor(e => e.File)
         </div>
     </div>
 
@@ -45,16 +44,7 @@
                     var fileName = $(this).val().split("\\").pop();
                     $(this).next('.custom-file-label').html(fileName);
                 });
-
-                $("#btnUpload").click(function () {
-                     microsoftTeams.initialize();
-            var newResourceInformation = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model,
-                                Newtonsoft.Json.Formatting.Indented));
-            microsoftTeams.tasks.submitTask(newResourceInformation);
-                });
-
-
             });
-        </script>      
+        </script>
     }
 </form>

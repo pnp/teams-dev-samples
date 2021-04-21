@@ -9,6 +9,7 @@ namespace MessageExtension_SP.Models
     public class AssetData
     {
         public string ApproverName { get; set; }
+        public string approverId { get; set; }
         public string SubmittedBy { get; set; }
         public string DateOfSubmission { get; set; }
         public string SubitteTo { get; set; }
