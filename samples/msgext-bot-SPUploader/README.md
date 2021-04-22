@@ -14,10 +14,6 @@ Document manager sample app provides basis for building a digital asset / docume
 
 <img src="./Docs/Images/ApproveRequest.gif" width="1000" height="500">
 
-This sample app allows users to perform the above functionalities using Teams platform.
-
-The app assumes that the asset library / document repository is maintained as a SharePoint document library. 
-
 ## Frameworks
 
 ![drop](https://img.shields.io/badge/.NET&nbsp;Core-3.1-green.svg)
@@ -170,6 +166,8 @@ Make sure the required values such ap App id, bot ids are populated in the manif
 
 Step 5: Try out the app
 ==================================================
+
+This sample app allows users to perform the above functionalities using Teams platform. The app assumes that the asset library / document repository is maintained as a SharePoint document library. 
 
 * Searching to find assets and sharing of those assets is facilitated by search based messaging extension 
 
