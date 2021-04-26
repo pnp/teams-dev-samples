@@ -21,7 +21,7 @@ export function useGraphService(): [
   const _getInstalledApp = async (appId: string): Promise<TeamsApp | undefined> => {
     const results = await client?.api(`/appCatalogs/teamsApps?$filter=externalId eq '${appId}'`).get();
 
-    return results && results.value && results.value.length == 1 ? (results.value[0] as TeamsApp) : undefined;
+    return results && results.value && results.value.length === 1 ? (results.value[0] as TeamsApp) : undefined;
   };
 
   const sendNotification = async (

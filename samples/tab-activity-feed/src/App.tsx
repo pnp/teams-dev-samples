@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import './App.css';
 import { TeamsProvider } from '@microsoft/mgt-teams-provider';
 import { Providers } from '@microsoft/mgt-element';
@@ -9,20 +9,8 @@ import {
   Flex,
   FlexItem,
   Text,
-  Form,
-  FormButton,
-  FormCheckbox,
-  FormInput,
-  Input,
-  Label,
   Provider,
   Segment,
-  teamsDarkTheme,
-  teamsHighContrastTheme,
-  teamsTheme,
-  ThemePrepared,
-  ComponentEventHandler,
-  InputProps,
   TextArea,
   Dropdown,
   Dialog,
@@ -59,12 +47,12 @@ export const App: React.FunctionComponent = () => {
         'TeamsAppInstallation.ReadForUser',
       ],
     });
-  }, []);
+  }, [config.clientId]);
 
   React.useEffect(() => {
-    if (themeString == 'default') {
+    if (themeString === 'default') {
       setMgtTheme('mgt-light');
-    } else if (themeString == 'dark') {
+    } else if (themeString === 'dark') {
       setMgtTheme('mgt-dark');
     }
   }, [themeString]);

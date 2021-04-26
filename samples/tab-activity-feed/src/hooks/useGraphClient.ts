@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Providers, ProviderState } from '@microsoft/mgt-element';
+import { Providers } from '@microsoft/mgt-element';
 import { Client } from '@microsoft/microsoft-graph-client';
 import { useIsSignedIn } from './useIsSignedIn';
 
@@ -13,7 +13,7 @@ export function useGraphClient(): [client: Client | undefined] {
         setClient(Providers.globalProvider.graph.client);
       }
     }
-  }, [isSignedIn, Providers.globalProvider]);
+  }, [isSignedIn]);
 
   return [client];
 }

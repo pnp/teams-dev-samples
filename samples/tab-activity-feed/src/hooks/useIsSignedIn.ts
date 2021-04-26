@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Providers, ProviderState } from '@microsoft/mgt-element';
-import { LoginChangedEvent } from '@microsoft/mgt-element';
 
 export function useIsSignedIn(): [boolean] {
   const [isSignedIn, setIsSignedIn] = useState<boolean>(false);
