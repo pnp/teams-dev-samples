@@ -38,7 +38,7 @@ _Update with your required Node version and any special pre-requisites needed to
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|August 29, 2025|PnP Phil|Initial release
+1.0|August 29, 2025|Parker PnP|Initial release
 
 ## Disclaimer
 

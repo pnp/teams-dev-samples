@@ -33,7 +33,7 @@ _Please add any special pre-requisites needed to make your sample work._
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|August 29, 2025|PnP Phil|Initial release
+1.0|August 29, 2025|Parker PnP|Initial release
 
 ## Disclaimer
 

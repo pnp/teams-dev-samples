@@ -102,7 +102,7 @@ namespace ConsultingBot.Dialogs
 
         }
 
-        // Step 2: Save the project name and ensure we have a duration
+        // Step 3: Save the project name and ensure we have a duration
         // Result is the duration from LUIS or from a user prompt
         private async Task<DialogTurnResult> TimeWorkedAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
@@ -125,7 +125,7 @@ namespace ConsultingBot.Dialogs
             }
         }
 
-        // Step 3: Save the work duration and ensure we have work date
+        // Step 4: Save the work duration and ensure we have work date
         // Result is the work date from LUIS or from a user prompt
 
         private async Task<DialogTurnResult> DeliveryDateAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
@@ -146,7 +146,7 @@ namespace ConsultingBot.Dialogs
             }
         }
 
-        // Step 4: Save the work date and confirm
+        // Step 5: Save the work date and confirm
         private async Task<DialogTurnResult> ConfirmStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             var requestDetails = stepContext.Options is ConsultingRequestDetails
@@ -160,7 +160,7 @@ namespace ConsultingBot.Dialogs
             return await stepContext.PromptAsync(nameof(ConfirmPrompt), new PromptOptions { Prompt = MessageFactory.Text(msg) }, cancellationToken);
         }
 
-        // Step 5: End the dialog
+        // Step 6: End the dialog
         private async Task<DialogTurnResult> FinalStepAsync(WaterfallStepContext stepContext, CancellationToken cancellationToken)
         {
             if ((bool)stepContext.Result)

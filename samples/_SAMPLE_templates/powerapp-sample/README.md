@@ -30,7 +30,7 @@ _Please list any additional tools required to run te sample, along with download
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|August 29, 2025|PnP Phil|Initial release
+1.0|August 29, 2025|Parker PnP|Initial release
 
 ## Disclaimer
 
