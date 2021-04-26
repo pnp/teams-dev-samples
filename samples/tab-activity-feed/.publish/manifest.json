@@ -29,17 +29,12 @@
       "name": "Kudos",
       "contentUrl": "https://localhost:3000/tab",
       "websiteUrl": "https://localhost:3000/tab",
-      "scopes": [
-        "personal"
-      ]
+      "scopes": ["personal"]
     }
   ],
-  "permissions": [
-    "identity",
-    "messageTeamMembers"
-  ],
+  "permissions": ["identity", "messageTeamMembers"],
   "webApplicationInfo": {
-    "id": "e2c3a0e0-9bb1-46b4-907d-f9197614b8a1",
+    "id": "b4b9c71b-3303-4973-bc94-bfbcec86ed89",
     "resource": "https://localhost:3000"
   },
   "activities": {
@@ -47,7 +42,7 @@
       {
         "type": "sendKudosToUser",
         "description": "Sending Kudos to a user",
-        "templateText": "{actor} sent you a Kudos for {kudosReason}"
+        "templateText": "{actor} sent you a Kudos!"
       }
     ]
   }
