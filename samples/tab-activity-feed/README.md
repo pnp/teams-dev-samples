@@ -42,6 +42,7 @@ Version|Date|Author|Comments
   * `npm install`
   * `npm run package`
   * [Upload and install the app to Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#upload-your-package-into-a-team-or-conversation-using-the-store)
+  * Install the app for every user involved in your scenario (Every user involved needs to have the app installed)
   * `npm start`
 
 ### First time debug step
