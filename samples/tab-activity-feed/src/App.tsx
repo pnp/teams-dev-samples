@@ -3,7 +3,7 @@ import './App.css';
 import { TeamsProvider } from '@microsoft/mgt-teams-provider';
 import { Providers } from '@microsoft/mgt-element';
 import * as microsoftTeams from '@microsoft/teams-js';
-import { IDynamicPerson, Login, PeoplePicker } from '@microsoft/mgt-react';
+import { IDynamicPerson, Login, PeoplePicker, PersonType } from '@microsoft/mgt-react';
 import {
   Button,
   Flex,
@@ -111,6 +111,7 @@ export const App: React.FunctionComponent = () => {
                   <Flex column>
                     <Text content="Use this form to send Kudos to your colleagues!" styles={formStyles} />
                     <PeoplePicker
+                      type={PersonType.person}
                       selectionMode="single"
                       placeholder="Search for a colleague"
                       selectionChanged={_onPeopleChanged}
