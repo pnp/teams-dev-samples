@@ -17,11 +17,11 @@
 
                     display("Now let's use the token's data:", "div");
                     display("name: " + decodedToken.name, "div");
-                    display("aadObjectId: " + decodedToken.oid, "div");
-                    display("upn: " + decodedToken.upn, "div");
+                    display("objectId: " + decodedToken.oid, "div");
+                    display("preferred_username: " + decodedToken.preferred_username, "div");
                     display("tenantId: " + decodedToken.tid, "div");
 
-                    display("We can also exchange the token for a server-side 'on-behalf-of' token, in order to call the Graph on the user's behalf:");
+                    display("We will send the client side token to service. Service will validate the token and call Microsoft graph on behalf of user:");
 
                     resolve(result);
                 },
@@ -34,29 +34,27 @@
 
     }
 
-    // 2. Exchange that token for a token with the required permissions
-    //    using the web service (see /auth/token handler in app.js)
-    function getServerSideToken(clientSideToken) {
+    // 2. Get users detail from Microsoft Graph
+    // using the web service (see /auth/token handler in app.js)
+    function getUserDataFromServer(clientSideToken) {
 
-        display("2. Exchange for server-side token");
+        display("2. Fetch data from Microsoft graph");
 
         return new Promise((resolve, reject) => {
 
             microsoftTeams.getContext((context) => {
+                const headers = new Headers();
+                const bearer = `Bearer ${clientSideToken}`;
 
-                fetch('/auth/token', {
-                    method: 'post',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        'tid': context.tid,
-                        'token': clientSideToken
-                    }),
-                    mode: 'cors',
-                    cache: 'default'
-                })
+                headers.append("Authorization", bearer);
+
+                const options = {
+                    method: "GET",
+                    headers: headers
+                };
+                fetch('/auth/token', options)
                     .then((response) => {
+                        // console.log(response.json())
                         if (response.ok) {
                             return response.text();
                         } else {
@@ -70,41 +68,14 @@
                         else if ("unauthorized_client" === responseJson || "invalid_grant" === responseJson) {
                             reject(responseJson);
                         } else {
-                            const serverSideToken = responseJson;
-                            display(serverSideToken);
+                            console.log(responseJson);
+                            const serverSideToken = responseJson.split(',');
+                            serverSideToken.map(x=>display(x));
                             resolve(serverSideToken);
                         }
                     });
             });
         });
-    }
-
-    // 3. Get the server side token and use it to call the Graph API
-    function useServerSideToken(data) {
-
-        display("3. Call https://graph.microsoft.com/v1.0/me/ with the server side token");
-
-        return fetch("https://graph.microsoft.com/v1.0/me/",
-            {
-                method: 'GET',
-                headers: {
-                    "accept": "application/json",
-                    "authorization": "bearer " + data
-                },
-                mode: 'cors',
-                cache: 'default'
-            })
-            .then((response) => {
-                if (response.ok) {
-                    return response.json();
-                } else {
-                    throw (`Error ${response.status}: ${response.statusText}`);
-                }
-            })
-            .then((profile) => {
-                display(JSON.stringify(profile, undefined, 4), 'pre');
-            });
-
     }
 
     // Show the consent pop-up
@@ -115,9 +86,6 @@
                 width: 600,
                 height: 535,
                 successCallback: (result) => {
-                    //let data = localStorage.getItem(result);
-                    //localStorage.removeItem(result);
-                    //resolve(data);
                     resolve(result);
                 },
                 failureCallback: (reason) => {
@@ -142,10 +110,7 @@
     // In-line code
     getClientSideToken()
         .then((clientSideToken) => {
-            return getServerSideToken(clientSideToken);
-        })
-        .then((serverSideToken) => {
-            return useServerSideToken(serverSideToken);
+            return getUserDataFromServer(clientSideToken);
         })
         .catch((error) => {
             if ("unauthorized_client" === error || "invalid_grant" === error) {
@@ -155,10 +120,11 @@
                 button.onclick = (() => {
                     requestConsent()
                         .then((result) => {
-                            // Consent succeeded - use the token we got back
-                            let accessToken = result.accessToken;
-                            display(`Received access token ${accessToken}`);
-                            useServerSideToken(accessToken);
+                            if (result) {
+                                // Consent succeeded - use the token we got back
+                                display(`Received access token ${result.accessToken}`);
+                                window.location.reload();
+                            }
                         })
                         .catch((error) => {
                             display(`ERROR ${error}`);

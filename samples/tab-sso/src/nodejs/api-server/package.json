@@ -9,10 +9,13 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@azure/msal-node": "^1.0.0",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
-        "jwt-decode": "^2.2.0",
-        "node-fetch": "^2.6.0"
+        "jsonwebtoken": "^8.5.1",
+        "jwks-rsa": "^1.12.2",
+        "morgan": "^1.10.0",
+        "node-fetch": "^2.6.1"
     },
     "msteams": {
         "teamsAppId": "{Teams App Id}"

@@ -1,17 +1,21 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
+node_modules/
+package-lock.json
+.pnp
 .pnp.js
 
 # testing
-/coverage
+coverage/
 
 # production
-/build
+build/
 
 # misc
+.env
+api-server/.env
+.eslintcache
 .DS_Store
 .env.local
 .env.development.local
@@ -22,5 +26,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# VS Code cache
+.vscode/
+
+# ESLINT cache
 .eslintcache
 

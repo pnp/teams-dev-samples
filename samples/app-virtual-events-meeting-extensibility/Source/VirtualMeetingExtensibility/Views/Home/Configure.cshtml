@@ -1,0 +1,14 @@
+﻿@{ ViewData["Title"] = "Configure Page"; }
+<div class="font-semibold font-title">Configure your app here</div>
+<p>
+    <div>
+        <label for="tabChoice">Select the tab you would like to see: </label>
+        <select id="tabChoice" name="tabChoice">
+            <option value="" selected="selected">(Select a tab)</option>
+            <option value="addnotes">AddNotes</option>
+        </select>
+    </div>
+</p>
+@section scripts {
+    <script src="~/js/teamsapp.js"></script>
+}

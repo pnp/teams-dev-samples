@@ -10,7 +10,10 @@ Below is a screenshot of the SSO tab in action (this is for the .NET version - t
 
 ![picture of the app in action](assets/images/TabScreenshot.png)
 
-**Please note** that this sample actually contains two separate, alternate projects: a .NET version and a Node.js version. In addition, the .NET version uses a more 'vanilla JS' approach, in order to show how SSO can be implemented in such a scenario, and the Node.js version uses a React front end, in order to demonstrate SSO using a front end framework.
+**Please note** that this sample actually contains two separate, alternate projects: a .NET version and a Node.js version:
+
+  * The .NET version uses a more 'vanilla JS' approach, in order to show how SSO can be implemented in such a scenario. The .NET back-end is protected by [Microsoft.Identity.Web](https://github.com/AzureAD/microsoft-identity-web), which validates the SSO token and calls Graph using the Graph SDK.
+  * The Node.js version uses a React front end, in order to demonstrate SSO using a front end framework. It also has been updated with an alternative pattern that does Graph queries server-side rather than passing the access token back to the web browser. It also adds logic to verify the SSO token on the server side.
 
 ## Frameworks
 
@@ -46,6 +49,8 @@ Version|Date|Author|Comments
 -------|----|----|--------
 1.0|November 25, 2020|Hilton Giesenow|Initial release
 1.1|December 05, 2020|Hilton Giesenow|Node.js version added
+2.0|February 09, 2021|Doğan Erişen|Added MSAL.js support to Node version only
+2.1|March 05, 2021|Doğan Erişen|Added server-side token validation and moved Graph calls to server in Node version only
 
 ## Disclaimer
 
@@ -65,6 +70,8 @@ Version|Date|Author|Comments
 
 For detailed steps on how to do this, read [Registering your app through the Azure Active Directory portal in-depth](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#registering-your-app-through-the-azure-active-directory-portal-in-depth).
 
+> :warning: During registration, make sure the Redirect URI is of type **Single-page application**, and not **Web**.
+
 ### 3. Update app configuration & run the web application
 
 **Dotnet Version**
@@ -73,7 +80,7 @@ For detailed steps on how to do this, read [Registering your app through the Azu
 
 **Node.js Version**
 
-* See [`node`](src/node) folder inside this sample's `src` folder
+* See [`node`](src/nodejs) folder inside this sample's `src` folder
 
 ### 4. Update & package the Teams app manifest
 
@@ -104,3 +111,5 @@ This sample demonstrates how to create a tab for Teams that uses Single-Sign-On 
 * [Tab Authentication](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab)
 * [Single Sign-On (SSO) For Tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)
 * [Microsoft Authentication Library (MSAL) 2.0](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-sso />

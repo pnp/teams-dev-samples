@@ -1,0 +1,24 @@
+{
+    "name": "teams-conversation-bot",
+    "version": "1.0.0",
+    "msteams": {
+        "teamsAppId": "{new unique GUID for this Teams app - NOT the Azure AD App ID}"
+    },
+    "description": "Microsoft Teams conversation bot quickstart",
+    "author": "Microsoft",
+    "license": "MIT",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./index.js",
+        "watch": "nodemon ./index.js"
+    },
+    "dependencies": {
+        "axios": "^0.21.1",
+        "body-parser": "^1.19.0",
+        "botbuilder": "^4.11.0",
+        "cors": "^2.8.5",
+        "dotenv": "^8.0.0",
+        "express": "~4.17.1",
+        "html-entities": "^1.3.1"
+    }
+}

@@ -1,0 +1,60 @@
+﻿{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "version": "1.0.0",
+  "id": "<<YOUR-APP-ID>>",
+  "packageName": "com.contoso.virtualmeetings",
+  "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.microsoft.com/privacy",
+    "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+  },
+  "name": {
+    "short": "Virtual Events",
+    "full": "Virtual events - Meetings extensibility"
+  },
+  "description": {
+    "short": "Virtual Meetings",
+    "full": "This sample app provides a very simple app for Microsoft Teams. You can extend this to add more content and capabilities."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#60A18E",
+  "staticTabs": [
+    {
+      "entityId": "events",
+      "name": "Events",
+      "contentUrl": "https://<<SUBDOMAIN>>.ngrok.io",
+      "scopes": [ "personal" ]
+    }
+  ],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://<<SUBDOMAIN>>.ngrok.io/configure",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupchat"
+      ],
+      "context": [
+        "channelTab",
+        "privateChatTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel"
+      ]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": [
+    "*.ngrok.io",
+    "token.botframework.com"
+  ],
+  "webApplicationInfo": {
+    "id": "<<AZURE-CLIENT-ID>>",
+    "resource": "api://<<SUBDOMAIN.EXAMPLE.COM>>/<<AZURE-CLIENT-ID>>"
+  }
+}

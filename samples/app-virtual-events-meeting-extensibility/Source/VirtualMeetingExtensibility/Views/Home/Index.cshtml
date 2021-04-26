@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@section Styles {
+    <link href="~/css/index.css" rel="stylesheet" />
+}
+<mgt-teams-provider client-id="<<AZURE-CLIENT-ID>>"
+                    auth-popup-url="https://<<SUBDOMAIN>>.ngrok.io/auth"
+                    authority="https://login.microsoftonline.com/<<TENANT-ID>>">
+</mgt-teams-provider>
+<mgt-login></mgt-login>
+<button onclick="homeLogin()" id="login" style="display:none;">Login</button>
+<div id="loading"></div>
+<div class="container">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="newevent-tab" data-toggle="pill" href="#newevent" role="tab"
+               aria-controls="newevent" aria-selected="true">New Event</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="event" role="tabpanel" aria-labelledby="event-tab">
+            <div class="form-group row">
+                <label for="subject" class="col-sm-4 col-form-label">Subject</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="subject">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="participants" class="col-sm-4 col-form-label">Participants</label>
+                <div class="col-sm-8">
+                    <mgt-people-picker show-max="4"> </mgt-people-picker>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="start-date" class="col-sm-4 col-form-label">Start Date </label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control start-date" id="startDate">
+                </div>
+                <div class="col-sm-4">
+                    <input type="time" class="form-control" placeholder="Time" id="startTime">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="end-date" class="col-sm-4 col-form-label">End Date </label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control end-date" id="endDate">
+                </div>
+                <div class="col-sm-4">
+                    <input type="time" class="form-control" placeholder="Time" id="endTime">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="end-date" class="col-sm-4 col-form-label"> </label>
+                <div class="col-sm-8">
+                    <div id="suggTimes" style="display:none;font-size: 12px;"><span>suggested: </span> <span id="suggLinks"></span></div>
+                </div>
+            </div>
+            <input type="submit" value="Submit" onclick="submitEvent()" class="btn btn-primary float-right" />
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script src="~/js/index.js"></script>
+}
