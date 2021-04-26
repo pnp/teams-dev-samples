@@ -37,15 +37,7 @@ export const App: React.FunctionComponent = () => {
     Providers.globalProvider = new TeamsProvider({
       clientId: config.clientId,
       authPopupUrl: '/auth.html',
-      scopes: [
-        'User.Read',
-        'User.ReadBasic.All',
-        'People.Read',
-        'TeamsAppInstallation.ReadForUser',
-        'TeamsActivity.Send',
-        'AppCatalog.Read.All',
-        'TeamsAppInstallation.ReadForUser',
-      ],
+      scopes: ['User.Read', 'User.ReadBasic.All', 'People.Read', 'TeamsActivity.Send', 'AppCatalog.Read.All'],
     });
   }, [config.clientId]);
 

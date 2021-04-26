@@ -27,6 +27,8 @@ archive.finalize();
  */
 async function ensureFolder(folderPath) {
   try {
-    await mkdir(folderPath);
+    if (!fs.existsSync(folderPath)) {
+      fs.mkdirSync(folderPath);
+    }
   } catch (e) {}
 }
