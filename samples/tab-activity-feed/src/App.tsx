@@ -15,6 +15,7 @@ import {
   Dropdown,
   Dialog,
   Loader,
+  CloseIcon,
 } from '@fluentui/react-northstar';
 import { useTeams } from 'msteams-react-base-component';
 import { useIsSignedIn } from './hooks/useIsSignedIn';
@@ -29,7 +30,9 @@ export const App: React.FunctionComponent = () => {
   const [userId, setUserId] = React.useState<string>('');
   const [people, setPeople] = React.useState<IDynamicPerson[]>([]);
   const [message, setMessage] = React.useState<string>('');
+  const [errorMessage, setErrorMessage] = React.useState<string>('');
   const [mgtTheme, setMgtTheme] = React.useState<string>('');
+  const [dialogOpen, setDialogOpen] = React.useState<boolean>(false);
   const [category, setCategory] = React.useState<string | null>(null);
 
   React.useEffect(() => {
@@ -52,10 +55,12 @@ export const App: React.FunctionComponent = () => {
   const _sendNotification = async () => {
     if (isSignedIn) {
       try {
+        setDialogOpen(true);
         await sendNotification(config.teamsAppId, userId, category, 'KudosHome', 'sendKudosToUser', message);
+        setDialogOpen(false);
         _clearForm();
       } catch (e) {
-        console.error(e);
+        setErrorMessage(e.message);
       }
     }
   };
@@ -87,6 +92,11 @@ export const App: React.FunctionComponent = () => {
 
   const _isDisabled = (): boolean | undefined => {
     return message === '' || userId === '' || category === '';
+  };
+
+  const _closeDialog = () => {
+    setDialogOpen(false);
+    setErrorMessage('');
   };
 
   const formStyles: any = {
@@ -143,7 +153,21 @@ export const App: React.FunctionComponent = () => {
                     />
                     <Button content="Submit" onClick={_sendNotification} disabled={_isDisabled() || loading} />
 
-                    <Dialog header="Sending your Kudos" open={loading} content={<Loader />} />
+                    <Dialog
+                      header="Sending your Kudos"
+                      open={dialogOpen}
+                      headerAction={{
+                        icon: <CloseIcon />,
+                        title: 'Close',
+                        onClick: _closeDialog,
+                      }}
+                      content={
+                        <>
+                          {!errorMessage && <Loader />}
+                          {errorMessage && <Text important content={errorMessage} />}
+                        </>
+                      }
+                    />
                   </Flex>
                 </Flex.Item>
               </Flex>

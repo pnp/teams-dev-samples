@@ -36,17 +36,22 @@ export function useGraphService(): [
     const installedApp = await _getCatalogApps(appId);
 
     if (installedApp) {
-      await client?.api(`/users/${userId}/teamwork/sendActivityNotification`).post({
-        topic: {
-          source: 'text',
-          value: categoryName ? categoryName : 'Kudos App',
-          webUrl: `https://teams.microsoft.com/l/entity/${installedApp.id}/${tabName}`,
-        },
-        activityType: activityType,
-        previewText: {
-          content: message,
-        },
-      });
+      try {
+        await client?.api(`/users/${userId}/teamwork/sendActivityNotification`).post({
+          topic: {
+            source: 'text',
+            value: categoryName ? categoryName : 'Kudos App',
+            webUrl: `https://teams.microsoft.com/l/entity/${installedApp.id}/${tabName}`,
+          },
+          activityType: activityType,
+          previewText: {
+            content: message,
+          },
+        });
+      } catch (err: any) {
+        setLoading(false);
+        throw err;
+      }
     }
 
     setLoading(false);
