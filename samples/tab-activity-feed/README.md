@@ -1,46 +1,77 @@
-# Getting Started with Create React App
+# Kudos App (Teams Activity Feed API)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Summary
 
-## Available Scripts
+Sample showcasing how to build a solution leveraging the Teams Activity Feed API to send notifications to other users.
 
-In the project directory, you can run:
+![Sample of the Kudos App](./assets/TeamsActivityFeed.gif)
 
-### `yarn start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+* [Node.js](https://nodejs.org) version 10.14.1 or higher
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+    ```bash
+    # determine node version
+    node --version
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) version 2.16.0 or higher (_Optional_)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Version history
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Version|Date|Author|Comments
+-------|----|----|--------
+1.0|April 26, 2021| [Sébastien Levert](https://www.linkedin.com/in/sebastienlevert) ([@sebastienlevert](https://twitter.com/sebastienlevert)) |Initial release
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Disclaimer
 
-### `yarn eject`
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Minimal Path to Awesome
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* Clone this repository
+* Create you Azure AD Application using the [manual approach](#create-a-new-azure-ad-application) or execute the following script :
+  * `.\scripts\New-AADApp.ps1 -ApplicationName "Kudos App" -RedirectUrl "https://localhost:3000"`
+* Copy the `.env.sample` to a new `.env` file and add the your generated Azure AD Application id at the `REACT_APP_CLIENT_ID`
+* In the command line run:
+  * `npm install`
+  * `npm run package`
+  * [Upload and install the app to Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/deploy-and-publish/apps-upload#upload-your-package-into-a-team-or-conversation-using-the-store)
+  * `npm start`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### First time debug step
+On the first time running and debugging your app you need allow the localhost certificate.  After starting debugging when your browser is launched and you have installed your app it will fail to load.
 
-## Learn More
+- Open a new tab `in the same browser window that was opened`
+- Navigate to `https://localhost:3000`
+- Click the `Advanced` button
+- Select the `Continue to localhost`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Create a new Azure AD Application
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Go to the [AAD Azure Portal](https://aad.portal.azure.com), then select **Azure Active Directory** from the left-hand side menu.
+  
+2. Select **App Registration** and click on **New Registration** button.
+
+3. Fill the details to register an app:
+   * Give a name to your application (OneProductivityHub)
+   * Select **Accounts in any organizational directory (Any Azure AD directory - Multitenant)** as an access level
+   * Use the following Redirect URLs `https://localhost:3000/auth.html`
+   * Select **Register**
+
+4. Go to **Authentication** tab and enable **Implicit grant** by selecting `Access tokens` and `ID tokens`, then click `Save` button on the top of the page.
+
+## Features
+
+This solution illustrates the following concepts on top of the a Teams Tab :
+
+* Utilizing the Microsoft Graph Toolkit
+* Customizing the Microsoft Graph Toolkit Components
+* Utilizing the Activity Feed API provided by Microsoft Graph
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-activity-feed" />
