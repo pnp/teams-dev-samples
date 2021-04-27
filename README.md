@@ -2,7 +2,7 @@
 
 This repository contains community samples that demonstrate different usage patterns for developing on Microsoft Teams as a platform. Samples are generally not production-ready, but are intended to show developers specific patterns and use cases for use in complete applications.
 
-> We welcome community contributions to the samples folder in this repository for demonstrating different patterns and use cases with Microsoft Teams. Please see our [contribution guidelines](/.github/CONTRIBUTING.md) for details.
+> We welcome community contributions to the samples folder in this repository for demonstrating different patterns and use cases with Microsoft Teams. Please see our [contribution guidelines](./CONTRIBUTING.md) for details.
 
 > If you use 3rd party libraries, please make sure that library license allows distributions of it as part of your sample.
 
@@ -41,10 +41,9 @@ Due to the diversity of the samples and technologies, there are no fixed instruc
 
 These samples are from the Microsoft 365 developer community. We welcome your samples and suggestions for new samples. 
 
-Please have a look on our [Contribution Guidance](./.github/CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Thx.
+Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Thx.
 
 > Sharing is caring!
-
 
 ## Additional resources
 
@@ -52,19 +51,18 @@ Please have a look on our [Contribution Guidance](./.github/CONTRIBUTING.md) bef
 
 * [Teams Platform Overview](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
 
-
 ### Bots
 
 * Azure Bot Service: [main page](https://azure.microsoft.com/en-us/services/bot-service/)
 * Azure Bot SDK: [main page](https://dev.botframework.com/), [repo](https://github.com/microsoft/botframework-sdk)
-* Azure Cognitive Services: 
+* Azure Cognitive Services:
     * [QnA Maker](https://www.qnamaker.ai/) finds answers to questions
     * [LUIS](https://www.luis.ai)  predicts user's intent and enties
     * [QnA Maker and LUIS together](https://docs.microsoft.com/en-us/azure/cognitive-services/qnamaker/tutorials/integrate-qnamaker-luis)
 * [Bots in Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots)
 * Tutorials: 
     * [5-minute quickstarts](https://docs.microsoft.com/en-us/azure/bot-service/?view=azure-bot-service-4.0#5-minute-quickstarts)
-    * Quickstarts: [.NET Core](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/csharp_dotnetcore/57.teams-conversation-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/57.teams-conversation-bot), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/python/57.teams-conversation-bot)
+    * Quickstarts: [.NET Core](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot), [JavaScript](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot), [Python](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot)
     * [Create a bot for Microsoft Teams](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/how-to/create-a-bot-for-teams)
 
 ### Tabs

@@ -8,7 +8,7 @@ This is a bare-bones demo that displays recent email for the logged in user. It'
 
 ![Bot calling Graph](docs/images/BotCallsGraph.png)
 
-This sample is derived from the OAuth sample in the [BotBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples/tree/master/samples/javascript_nodejs/46.teams-auth) repo. It elaborates on that demo by providing an option to call the Graph API after obtaining an access token from Azure AD.
+This sample is derived from the OAuth sample in the [BotBuilder-Samples](https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth) repo. It elaborates on that demo by providing an option to call the Graph API after obtaining an access token from Azure AD.
 
 Note that Microsoft Teams bots receive an Invoke activity rather than the Event activity used in other bot channels. _This Invoke Activity must be forwarded to the dialog if the OAuthPrompt is being used._ This is done by subclassing the TeamsActivityHandler and implementing handleTeamsSigninVerifyState.
 
