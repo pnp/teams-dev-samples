@@ -27,16 +27,17 @@
     {
       "entityId": "KudosHome",
       "name": "Kudos",
-      "contentUrl": "https://localhost:3000/tab",
-      "websiteUrl": "https://localhost:3000/tab",
+      "contentUrl": "https://localhost:3000",
+      "websiteUrl": "https://localhost:3000",
       "scopes": ["personal"]
     }
   ],
   "permissions": ["identity", "messageTeamMembers"],
   "webApplicationInfo": {
-    "id": "b4b9c71b-3303-4973-bc94-bfbcec86ed89",
+    "id": "8b43bd99-59fd-4466-8e8c-28cd53b083c5",
     "resource": "https://localhost:3000"
   },
+  "validDomains": ["localhost:3000", "login.microsoftonline.com"],
   "activities": {
     "activityTypes": [
       {

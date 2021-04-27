@@ -39,6 +39,7 @@ Version|Date|Author|Comments
   * `.\scripts\New-AADApp.ps1 -ApplicationName "Kudos App" -RedirectUrl "https://localhost:3000"`
 * Copy the `.env.sample` to a new `.env` file
 * Add the your generated Azure AD Application id of the `REACT_APP_CLIENT_ID` in the `.env` file
+* In the `.publish/manifest.json` file, update the value of `webApplicationInfo > id` with the value of your Azure AD Application
 * From the `.publish/manifest.json` file, extract the if and update the `REACT_APP_TEAMS_APP_ID` in the `.env` file
 * In the command line run:
   * `npm install`
