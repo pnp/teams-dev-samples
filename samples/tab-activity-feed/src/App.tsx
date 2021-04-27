@@ -21,6 +21,7 @@ import { useTeams } from 'msteams-react-base-component';
 import { useIsSignedIn } from './hooks/useIsSignedIn';
 import { useConfiguration } from './hooks/useConfiguration';
 import { useGraphService } from './hooks/useGraphService';
+import { MgtPerson } from '@microsoft/mgt';
 
 export const App: React.FunctionComponent = () => {
   const [{ inTeams, theme, themeString }] = useTeams({});
@@ -40,15 +41,9 @@ export const App: React.FunctionComponent = () => {
     Providers.globalProvider = new TeamsProvider({
       clientId: config.clientId,
       authPopupUrl: '/auth.html',
-      scopes: [
-        'User.Read',
-        'User.ReadBasic.All',
-        'People.Read',
-        'TeamsActivity.Send',
-        'AppCatalog.Read.All',
-        'Contacts.Read',
-      ],
+      scopes: ['User.Read', 'User.ReadBasic.All', 'People.Read', 'TeamsActivity.Send', 'AppCatalog.Read.All'],
     });
+    MgtPerson.config.useContactApis = false;
   }, [config.clientId]);
 
   React.useEffect(() => {
