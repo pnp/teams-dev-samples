@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.8/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.8",
+  "version": "1.0.0",
+  "id": "b8d4ae4e-5f88-4a14-a5c4-45ec92e385cd",
+  "packageName": "com.microsoft.teams.activityfeed",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "https://www.contoso.com",
+    "privacyUrl": "https://www.contoso.com/privacy",
+    "termsOfUseUrl": "https://www.contoso.com/terms"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "Kudos",
+    "full": "Kudos Sample"
+  },
+  "description": {
+    "short": "Kudos app to send Activity Feed notifications to other users.",
+    "full": "Kudos app to send Activity Feed notifications to other users."
+  },
+  "accentColor": "#FFFFFF",
+  "staticTabs": [
+    {
+      "entityId": "KudosHome",
+      "name": "Kudos",
+      "contentUrl": "https://localhost:3000",
+      "websiteUrl": "https://localhost:3000",
+      "scopes": ["personal"]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "webApplicationInfo": {
+    "id": "8b43bd99-59fd-4466-8e8c-28cd53b083c5",
+    "resource": "https://localhost:3000"
+  },
+  "validDomains": ["localhost:3000", "login.microsoftonline.com"],
+  "activities": {
+    "activityTypes": [
+      {
+        "type": "sendKudosToUser",
+        "description": "Sending Kudos to a user",
+        "templateText": "{actor} sent you a Kudos!"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+mgt-people-picker {
+  --input-border: 0; /* sets all input area border */
+  border-radius: 0.1875rem 0.1875rem 0.125rem 0.125rem;
+  margin-bottom: 30px;
+}
+.mgt-light mgt-people-picker {
+  --input-background-color: rgb(243, 242, 241);
+  --placeholder-color: rgb(37, 36, 35);
+}
+
+.mgt-dark mgt-people-picker {
+  --input-background-color: rgb(32, 31, 31);
+  --placeholder-color: #c8c6c4;
+}
