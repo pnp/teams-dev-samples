@@ -1092,7 +1092,7 @@ extra:
       source: pnp
       summary: This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/app-consulting-bot
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/app-consulting-bot
       author: Bob German
       client_language:
       client_platform:
@@ -1111,7 +1111,7 @@ extra:
       source: pnp
       summary: This simple bot demonstrates conversation state and user state in Bot Framework v4
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-statebot
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-statebot
       author: Bob German
       client_language:
       client_platform:
@@ -1147,7 +1147,7 @@ extra:
       features: msgext
       source: pnp
       summary: A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-customer-search
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-customer-search
       author: Bob German
       client_language: 
       client_platform: 
@@ -1337,7 +1337,7 @@ extra:
       source: pnp
       summary: Simple Bot calls Graph and displays recent emails from the user's inbox
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-call-graph-as-user
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-call-graph-as-user
       author: Bob German
       client_language:
       client_platform:
@@ -1356,7 +1356,7 @@ extra:
       source: pnp
       summary: Search-based messaging extension queries Graph API to find documents needing review
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-graph-search-docreview
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-search-docreview
       author: Markus Moeller
       client_language:
       client_platform:
@@ -1375,7 +1375,7 @@ extra:
       source: pnp
       summary: Teams messaging extension uses Microsoft Graph to create tasks in ToDo or Planner
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-graph-task-creation
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-task-creation
       author: Stephan Bisser
       client_language:
       client_platform:
@@ -1394,7 +1394,7 @@ extra:
       source: pnp
       summary: Tab uses MSAL 2.0 in a pop-up and calls Graph API. Shows authorization using auth code PKCE from a static web site.
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-aad-msal2
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-aad-msal2
       author: Bob German
       client_language: javascript
       client_platform: spa
@@ -1413,7 +1413,7 @@ extra:
       source: pnp
       summary: Tab uses SPFx and Graph to display recent email
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-aad-spfx
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-aad-spfx
       author: Bob German
       client_language: javascript
       client_platform: spfx
@@ -1432,7 +1432,7 @@ extra:
       source: pnp
       summary: Tab uses OAuth 2.0 in a pop-up, calls the Box API and displays Box Content Explorer
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-spfx-oauth2
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-spfx-oauth2
       author: Ramin Ahmadi
       client_language: javascript
       client_platform: spfx
@@ -1451,7 +1451,7 @@ extra:
       source: pnp
       summary: Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review.
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-graph-action-docreview
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-action-docreview
       author: Markus Moeller
       client_language:
       client_platform:
@@ -1470,7 +1470,7 @@ extra:
       source: pnp
       summary: Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review. Task module uses SPFx.
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-spfx-graph-docreview
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-spfx-graph-docreview
       author: Markus Moeller
       client_language: typescript
       client_platform: spfx
@@ -1489,7 +1489,7 @@ extra:
       source: pnp
       summary: Sample of an Action messaging extension that shows a Just-In-Time installer to install the app into Teams/Personal/Group Chat, and how to post an adaptive card response directly into a conversation
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-graph-action-docreview
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-action-docreview
       author: Rajesh Sitaraman
       client_language:
       client_platform:
@@ -1508,7 +1508,7 @@ extra:
       source: pnp
       summary: This is a small sample code to build a messaging extension with Node.js and Bot Framework
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-httpstatuscats
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-httpstatuscats
       author: Tomomi Imura
       client_language:
       client_platform:
@@ -1527,7 +1527,7 @@ extra:
       source: pnp
       summary: Demonstrates how to use SharePoint Framework powered Task modules in Microsoft Teams applications
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-bot-spfx-taskmodules
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-bot-spfx-taskmodules
       author: Vardhaman Deshpande
       client_language: typescript
       client_platform: spfx
@@ -1546,7 +1546,7 @@ extra:
       source: pnp
       summary: A Teams app where users can start their day and see their personal information using Microsoft Graph Toolkit React components
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-spfx-me-experience
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-spfx-me-experience
       author: Rabia Williams
       client_language: typescript
       client_platform: spfx
@@ -1565,7 +1565,7 @@ extra:
       source: pnp
       summary: Search based Messaging extension allows users to find and insert gify's into a Microsoft Teams message
       thumbnail: 
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/msgext-search-giphy
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-search-giphy
       author: Rabia Williams
       client_language:
       client_platform:
@@ -1584,7 +1584,7 @@ extra:
       source: pnp
       summary: Tab allows uploading documents; they are converted to PDF and saved to the current channel
       thumbnail: ./img/thumbnails/tab-sso-graph-upload-as-pdf.gif
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-sso-graph-upload-as-pdf
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-sso-graph-upload-as-pdf
       author: Markus Moeller
       client_language: typescript
       client_platform: spa
@@ -1603,7 +1603,7 @@ extra:
       source: pnp
       summary: Two samples in one, with .NET Core and Node implementations; now makes Graph calls from the back end rather than pass the Graph access token to the browser.
       thumbnail:
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-sso
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-sso
       author: Hilton Giesenow
       client_language: javascript
       client_platform: spa
@@ -1622,7 +1622,7 @@ extra:
       source: pnp
       summary: Tab SSO with .NET Core MVC
       thumbnail:
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-sso-teamsclientsdk
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-sso-teamsclientsdk
       author: Abtin Amini and Arun Kumar Anaparthi
       client_language: javascript
       client_platform: spa
@@ -1660,7 +1660,7 @@ extra:
       source: pnp
       summary: Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0
       thumbnail:
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/tab-one-productivity-hub
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-one-productivity-hub
       author: Sébastien Levert
       client_language: javascript
       client_platform: mgt
@@ -1679,7 +1679,7 @@ extra:
       source: pnp
       summary: This sample shows how to implement Azure AD Single Sign-on for a Bot in Microsoft Teams
       thumbnail:
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-sso-azuread
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-sso-azuread
       author: Abtin Amini and Arun Kumar Anaparthi
       client_language: 
       client_platform: 
@@ -1698,7 +1698,7 @@ extra:
       source: pnp
       summary: Shows how to create an app with a bot that calls users into a meeting with a custom event
       thumbnail:
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/app-virtual-events-meeting-extensibility
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/app-virtual-events-meeting-extensibility
       author: Abtin Amini and Arun Kumar Anaparthi
       client_language: javascript
       client_platform: spa
@@ -1717,7 +1717,7 @@ extra:
       source: pnp
       summary: Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot
       thumbnail:
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-proactive-messaging
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging
       author: Hilton Giesenow
       client_language: javascript
       client_platform: spa
@@ -1736,7 +1736,7 @@ extra:
       source: pnp
       summary: Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot
       thumbnail:
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-proactive-messaging
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging
       author: Hilton Giesenow
       client_language: javascript
       client_platform: spa
@@ -1755,7 +1755,7 @@ extra:
       source: pnp
       summary: Allows citizen end users get in touch with an SME / Support Agent working in Teams
       thumbnail:
-      url: https://github.com/pnp/teams-dev-samples/tree/master/samples/bot-b2c-chat-bot
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-b2c-chat-bot
       author: Abtin Amini, Sathya Raveendran, Saikrishna Neeli, Arun Kumar Anaparthi
       client_language:
       client_platform:
@@ -1784,6 +1784,45 @@ extra:
       bot_framework:
       modifiedtext: March 22, 2021
       modified: 2021-03-22
+
+# SharePoint Uploader / Document Management
+    - name: msgext-bot-SPUploader
+      title: Document manager sample app using messaging extensions
+      type: demo
+      features: msgext, bot
+      source: pnp
+      summary: Provides a basis for building a digital asset / document repository management app.
+      thumbnail:
+      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-meeting-app-questionnaire
+      author: Sathya Raveendran, Varaprasad SSLN
+      client_language: javascript
+      client_platform: 
+      client_ui: jquery
+      server_language: csharp
+      server_platform: dotnetcore
+      bot_framework: bot46
+      modifiedtext: April 21, 2021
+      modified: 2021-03-22
+
+# Teams activity feed notifications / Kudos app
+    - name: tab-activity-feed
+      title: Tab notifies users via the Teams activity feed
+      type: solution
+      features: tab
+      source: pnp
+      summary: Simple Kudos app notifies users of new kudos via the Teams activity feed and Microsoft Graph
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-activity-feed
+      author: Sébastien Levert
+      client_language: typescript
+      client_platform: mgt
+      client_ui: react
+      server_language:
+      server_platform:
+      bot_framework:
+      modifiedtext: April 26, 2021
+      modified: 2021-04-26
+
 
 #################################
 #endregion COMMUNITY SAMPLES
