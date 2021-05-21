@@ -1,0 +1,69 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "id": "{{APPLICATION_ID}}",
+  "version": "{{VERSION}}",
+  "packageName": "{{PACKAGE_NAME}}",
+  "developer": {
+    "name": "Sébastien Levert",
+    "websiteUrl": "https://{{HOSTNAME}}",
+    "privacyUrl": "https://{{HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "Context Viewer",
+    "full": "Context Viewer"
+  },
+  "description": {
+    "short": "Simple app to visualize the context of your Teams tabs",
+    "full": "Simple app to visualize the context of your Teams tabs"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{{HOSTNAME}}/contextViewerTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupchat"
+      ], 
+      "context":[
+        "channelTab",
+        "privateChatTab",
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel",
+        "meetingStage"
+     ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "contextViewer",
+      "scopes": [
+        "personal"
+      ],
+      "context":[
+        "personalTab"
+      ],
+      "name": "Context Viewer",
+      "contentUrl": "https://{{HOSTNAME}}/contextViewerTab/?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "websiteUrl": "https://{{HOSTNAME}}/contextViewerTab/?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}"
+    }
+  ],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{HOSTNAME}}"
+  ],
+  "showLoadingIndicator": true
+}
