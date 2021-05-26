@@ -9,7 +9,8 @@ Sample showcasing every Teams SDK context in every type of tab.
 ## Prerequisites
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
-* [Node.js](https://nodejs.org) version 10.14.1 or higher
+* [Node.js](https://nodejs.org) version 12.13.1 or higher
+* [Gulp task runner](https://gulpjs.com/) - install by typing `npm install yo gulp-cli --global`
 
 
     ```bash
