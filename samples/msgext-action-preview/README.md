@@ -35,10 +35,11 @@ Version|Date|Author|Comments
 ---
 
 ## Minimal Path to Awesome
-- Clone the repository
+- Clone the repository and navigate to the project folder
 
     ```bash
-    git clone https://github.com/mmsharepoint/teams-ext-action-preview.git
+    git clone https://github.com/pnp/teams-dev-samples.git
+    cd teams-dev-samples/samples/msgext-action-preview
     ```
 
 - Install modules
