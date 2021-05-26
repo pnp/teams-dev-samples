@@ -14,7 +14,8 @@ For further details refer to the author's [blog post](https://mmsharepoint.wordp
 ## Prerequisites
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
-* [Node.js](https://nodejs.org) version 10.14.1 or higher
+* [Node.js](https://nodejs.org) version 12.13.0 or higher
+* [Gulp task runner](https://www.npmjs.com/package/gulp-cli/v/2.2.0) - install by typing `npm install yo gulp-cli --global`
 * [ngrok](https://ngrok.com) or similar tunneling application is required for local testing
 
     ```bash
@@ -150,4 +151,4 @@ SET DEBUG=msteams
 
 If you are using Microsoft Azure to host your Microsoft Teams app, then you can add `DEBUG` as an Application Setting with the value of `msteams`.
 
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/msgext-action-preview" />
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-action-preview" />
