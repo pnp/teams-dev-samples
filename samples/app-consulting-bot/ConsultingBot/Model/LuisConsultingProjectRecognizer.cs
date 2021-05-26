@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Recognizers.Text;
 using Microsoft.Recognizers.Text.DateTime;
+using Microsoft.Recognizers.Text.Number;
 using Newtonsoft.Json.Linq;
 
 namespace ConsultingBot
@@ -126,6 +127,15 @@ namespace ConsultingBot
                     if (result <= 0)
                     {
                         result = hours * hoursMultiplier;
+                    }
+                }
+                else
+                {
+                    var possibleHours = NumberRecognizer.RecognizeNumber(val.Split(' ')[0], Culture.English);
+                    if (possibleHours.Count > 0)
+                    {
+                        possibleHours.FirstOrDefault().Resolution.TryGetValue("value", out var hoursString);
+                        result = Convert.ToDouble(hoursString) * hoursMultiplier;
                     }
                 }
             }

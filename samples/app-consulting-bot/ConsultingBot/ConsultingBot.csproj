@@ -28,6 +28,7 @@
     <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.6.3" />
     <PackageReference Include="Microsoft.Recognizers.Text.DataTypes.TimexExpression" Version="1.2.8" />
     <PackageReference Include="Microsoft.Recognizers.Text.DateTime" Version="1.2.8" />
+    <PackageReference Include="Microsoft.Recognizers.Text.Number" Version="1.2.8" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,6 +36,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Update="appSettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Update="appSettings.sample.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
