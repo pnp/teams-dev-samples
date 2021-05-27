@@ -1,9 +1,16 @@
 # Summary
 
 This sample is a action based messaging extension created using the Teams Yeoman Generator as featured in this video. It authenticates against Microsoft Graph via SSO and on-behalf flow from the frontend and recieves documents to be posted as adaptive card to the message compose box of a channel.
+Result similar to this example:
+
+![Result Adaptive Card](https://mmsharepoint.files.wordpress.com/2020/08/14pickedadaptivecardresult.png)
+
+[Document Review Msg Extension Action - Microsoft Teams App](https://github.com/mmsharepoint/teams-dev-samples/tree/contribspfx/samples/msgext-graph-action-docreview)
+
 The essential thing is that it is configurable and persists t's configuration to an Azure App Configuration resource.
 
 ![Configuration of Teams Messaging extension ...](https://mmsharepoint.files.wordpress.com/2021/05/08fetchtask_configurefirst.png?w=946)
+
 For further details see the author's [blog post](https://mmsharepoint.wordpress.com/2021/05/17/configure-teams-applications-with-azure-app-configuration-nodejs/)
 
 ## Prerequisites
