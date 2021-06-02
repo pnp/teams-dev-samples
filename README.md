@@ -16,6 +16,7 @@ The samples folder contains a folder for each sample, named with a prefix as fol
 | --- | --- |
 | app- | These are samples of apps that have multiple features such as a tab and a bot |
 | bot- | These are simple bots, intended to show a single capability or pattern |
+| connector- | These are connectors which send notifications to Teams channels and optionally O365 groups in Outlook
 | msgext- | These are simple messaging extensions, intended to show a single capability or pattern |
 | tabs- | These are simple tabs, intended to show a single capability or pattern |
 
