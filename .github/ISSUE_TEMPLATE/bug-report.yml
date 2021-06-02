@@ -93,16 +93,22 @@ body:
       
       We're not trying to be difficult here, we just want to help as quickly as possible.
 
-- type: dropdown
-  id: sharepoint-version
-  validations:
-    required: true
+- type: checkboxes
+  id: teams-client
   attributes:
-    label: Target SharePoint environment
+    label: Teams Client    
+    description: |
+      What Teams client have you tested where this issue occurs?
+      
+      Select the clients this submission is relevant to.
+
     options:
-      - SharePoint Online
-      - SharePoint Server 2019 (on-premise)
-      - SharePoint Server 2016 (on-premise)
+      - label: Teams desktop client
+      - label: Web browser
+      - label: mobile (iOS/iPadOS)
+      - label: mobile (Android)
+      - label: not applicable
+      - label: other (enter in the "Additional environment details" area below)
 
 - type: dropdown
   id: environment-os
@@ -132,18 +138,6 @@ body:
       - label: mobile (Android)
       - label: not applicable
       - label: other (enter in the "Additional environment details" area below)
-
-- type: input
-  id: spfx
-  validations:
-    required: true
-  attributes:
-    label: SPFx version
-    placeholder: 1.11.0
-    description: |
-        Which version of SPFx are you using?
-        
-        TIP: To find out, run `npm ls -g --depth=0 @microsoft/generator-sharepoint` and provide the number that comes after `@microsoft/generator-sharepoint@`
 
 - type: input
   id: Node
