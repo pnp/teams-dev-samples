@@ -7,7 +7,7 @@ Result similar to this example:
 
 [Document Review Msg Extension Action - Microsoft Teams App](https://github.com/mmsharepoint/teams-dev-samples/tree/contribspfx/samples/msgext-graph-action-docreview)
 
-The essential thing is that it is configurable and persists t's configuration to an Azure App Configuration resource.
+The essential thing is that it is configurable and persists its configuration to an Azure App Configuration resource.
 
 ![Configuration of Teams Messaging extension ...](https://mmsharepoint.files.wordpress.com/2021/05/08fetchtask_configurefirst.png?w=946)
 
@@ -16,11 +16,12 @@ For further details see the author's [blog post](https://mmsharepoint.wordpress.
 ## Prerequisites
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
-* [Node.js](https://nodejs.org) version 10.14.1 or higher
+* [Node.js](https://nodejs.org) version 12.13.1 or higher
     ```bash
     # determine node version
     node --version
     ```
+* Gulp task runner - install by typing `npm install gulp-cli --global`
 * [ngrok](https://ngrok.com) or similar tunneling application is required for local testing
 * [Azure App Configuration](https://docs.microsoft.com/en-us/azure/azure-app-configuration/quickstart-aspnet-core-app?tabs=core5x#create-an-app-configuration-store) setup like mentioned here
 * [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/general/)
@@ -54,6 +55,7 @@ Version|Date|Author|Comments
     ```bash
     npm install
     ```
+
 - Run ngrok and note down the given url
 
     ```bash
