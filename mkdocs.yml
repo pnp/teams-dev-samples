@@ -1793,7 +1793,7 @@ extra:
       source: pnp
       summary: Provides a basis for building a digital asset / document repository management app.
       thumbnail:
-      url: https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-meeting-app-questionnaire
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-bot-SPUploader
       author: Sathya Raveendran, Varaprasad SSLN
       client_language: javascript
       client_platform: 
