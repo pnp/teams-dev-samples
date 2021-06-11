@@ -1823,6 +1823,64 @@ extra:
       modifiedtext: April 26, 2021
       modified: 2021-04-26
 
+# Tab context viewer
+    - name: tab-context-viewer
+      title: Context viewer
+      type: barebones
+      features: tab
+      source: pnp
+      summary: A helpful development tool. this simple app displays the entire Teams context in any type of tab
+      thumbnail:
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-context-viewer
+      author: Sébastien Levert
+      client_language: typescript
+      client_platform:
+      client_ui: react
+      server_language: typescript
+      server_platform: express
+      bot_framework:
+      modifiedtext: May 21, 2021
+      modified: 2021-05-21
+
+# Action messaging extension posts an adaptive card as a bot
+    - name: msgext-action-preview
+      title: Action messaging extension posts as a bot
+      type: barebones
+      features: msgext
+      source: pnp
+      summary: Action messaging extension confirms with a preview then posts an adaptive card as a bot rather than inserting it into the compose box
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-action-preview
+      author: Markus Moeller
+      client_language:
+      client_platform:
+      client_ui:
+      server_language: typescript
+      server_platform: express
+      bot_framework: bot46
+      modifiedtext: May 5, 2021
+      modified: 2021-05-05
+
+# Messaging extension stores configuration info in an Azure configuration resource
+    - name: msgext-graph-action-config
+      title: Messaging extension stores settings in an Azure configuration resource
+      type: barebones
+      features: msgext
+      source: pnp
+      summary: Shows how to provide a setup page for your messaging extension which stores configuration information in Azure
+      thumbnail: 
+      url: https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-action-config
+      author: Markus Moeller
+      client_language: typescript
+      client_platform:
+      client_ui: react
+      server_language: typescript
+      server_platform: express
+      bot_framework: bot46
+      modifiedtext: May 14, 2021
+      modified: 2021-05-14
+
+
 
 #################################
 #endregion COMMUNITY SAMPLES
