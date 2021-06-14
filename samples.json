@@ -1,6 +1,7 @@
 [
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-associate-insights",
+    "reponame": "microsoft-teams-apps-associate-insights",
     "source": "pnp",
     "title": "Associate Insights App Template",
     "shortDescription": "Associate insights is a Power Apps template that empowers firstline workers to directly capture and submit customer opinion, sentiment, and perception.",
@@ -18,6 +19,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -89,6 +94,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-attendance",
+    "reponame": "microsoft-teams-apps-attendance",
     "source": "pnp",
     "title": "Attendance App Template",
     "shortDescription": "Attendance app is a Power Apps based solution to take attendance in educational tenant.",
@@ -106,6 +112,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -170,6 +180,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-book-a-room",
+    "reponame": "microsoft-teams-apps-book-a-room",
     "source": "pnp",
     "title": "Book-a-room App Template",
     "shortDescription": "Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations.",
@@ -187,6 +198,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -259,6 +274,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-celebrate",
+    "reponame": "microsoft-teams-apps-celebrate",
     "source": "pnp",
     "title": "Celebrate App Template",
     "shortDescription": "Celebrations is a Teams app that helps team members celebrate each others\u2019 birthdays, anniversaries, and other recurring events.",
@@ -276,6 +292,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -348,6 +368,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-company-communicator",
+    "reponame": "microsoft-teams-apps-company-communicator",
     "source": "pnp",
     "title": "Company Communicator App Template",
     "shortDescription": "The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate.",
@@ -365,6 +386,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -441,6 +466,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-contact-group-lookup",
+    "reponame": "microsoft-teams-apps-contact-group-lookup",
     "source": "pnp",
     "title": "Contact Group App Template",
     "shortDescription": "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization\u0027s contact groups (formerly known as distribution lists or communication groups).",
@@ -458,6 +484,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -522,6 +552,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-crowd-sourcer",
+    "reponame": "microsoft-teams-apps-crowd-sourcer",
     "source": "pnp",
     "title": "Crowd Sourcer App Template",
     "shortDescription": "CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions.",
@@ -539,6 +570,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -611,6 +646,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-custom-stickers",
+    "reponame": "microsoft-teams-apps-custom-stickers",
     "source": "pnp",
     "title": "Custom Stickers App Template",
     "shortDescription": "This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams.",
@@ -628,6 +664,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -692,6 +732,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-expert-finder",
+    "reponame": "microsoft-teams-apps-expert-finder",
     "source": "pnp",
     "title": "Expert Finder App Template",
     "shortDescription": "Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes",
@@ -709,6 +750,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -785,6 +830,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-faq-plus",
+    "reponame": "microsoft-teams-apps-faq-plus",
     "source": "pnp",
     "title": "FAQ Plus App Template",
     "shortDescription": "FAQ Plus is a friendly Q\u0026A bot that brings a human in the loop when it is unable to help.",
@@ -802,6 +848,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -878,6 +928,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-goal-tracker",
+    "reponame": "microsoft-teams-apps-goal-tracker",
     "source": "pnp",
     "title": "Goal Tracker App Template",
     "shortDescription": "Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams.",
@@ -895,6 +946,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -971,6 +1026,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-great-ideas",
+    "reponame": "microsoft-teams-apps-great-ideas",
     "source": "pnp",
     "title": "Great Ideas App Template",
     "shortDescription": "The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals.",
@@ -988,6 +1044,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1064,6 +1124,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-group-activities",
+    "reponame": "microsoft-teams-apps-group-activities",
     "source": "pnp",
     "title": "Group Activities App Template",
     "shortDescription": "Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete",
@@ -1081,6 +1142,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1153,6 +1218,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-grow-your-skills",
+    "reponame": "microsoft-teams-apps-grow-your-skills",
     "source": "pnp",
     "title": "Grow Your Skills App Template",
     "shortDescription": "The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills",
@@ -1170,6 +1236,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1246,6 +1316,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-hr-support",
+    "reponame": "microsoft-teams-apps-hr-support",
     "source": "pnp",
     "title": "HR Support App Template",
     "shortDescription": "HR Support bot is a friendly Q\u0026A bot that brings a support professional/expert from the HR team in the loop when it is unable to help",
@@ -1263,6 +1334,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1339,6 +1414,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-icebreaker",
+    "reponame": "microsoft-teams-apps-icebreaker",
     "source": "pnp",
     "title": "Icebreaker App Template",
     "shortDescription": "Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet",
@@ -1356,6 +1432,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1424,6 +1504,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-incentives",
+    "reponame": "microsoft-teams-apps-incentives",
     "source": "pnp",
     "title": "Incentives App Template",
     "shortDescription": "Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives",
@@ -1441,6 +1522,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1509,6 +1594,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-incident-reporter",
+    "reponame": "microsoft-teams-apps-incident-reporter",
     "source": "pnp",
     "title": "Incident Reporter App Template",
     "shortDescription": "The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking.",
@@ -1526,6 +1612,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1602,6 +1692,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-open-badges",
+    "reponame": "microsoft-teams-apps-open-badges",
     "source": "pnp",
     "title": "Open Badges App Template",
     "shortDescription": "Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere",
@@ -1619,6 +1710,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1695,6 +1790,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-quick-responses",
+    "reponame": "microsoft-teams-apps-quick-responses",
     "source": "pnp",
     "title": "Quick Responses App Template",
     "shortDescription": "Quick Responses is a Microsoft Teams app that answering users\u0027 frequently asked questions (FAQs) using a messaging extension.",
@@ -1712,6 +1808,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1788,6 +1888,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-remote-support",
+    "reponame": "microsoft-teams-apps-remote-support",
     "source": "pnp",
     "title": "Remote Support App Template",
     "shortDescription": "Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform.",
@@ -1805,6 +1906,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1881,6 +1986,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-request-a-team",
+    "reponame": "microsoft-teams-apps-request-a-team",
     "source": "pnp",
     "title": "Request-a-team App Template",
     "shortDescription": "Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds",
@@ -1898,6 +2004,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -1974,6 +2084,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-scrums-for-channels",
+    "reponame": "microsoft-teams-apps-scrums-for-channels",
     "source": "pnp",
     "title": "Scrums for Channels App Template",
     "shortDescription": "Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones.",
@@ -1991,6 +2102,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2059,6 +2174,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-scrums-for-group-chat",
+    "reponame": "microsoft-teams-apps-scrums-for-group-chat",
     "source": "pnp",
     "title": "Scrums for Channels App Template",
     "shortDescription": "Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum.",
@@ -2076,6 +2192,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2144,6 +2264,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-share-now",
+    "reponame": "microsoft-teams-apps-share-now",
     "source": "pnp",
     "title": "Share Now App Template",
     "shortDescription": "The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading",
@@ -2161,6 +2282,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2237,6 +2362,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-splist-search",
+    "reponame": "microsoft-teams-apps-splist-search",
     "source": "pnp",
     "title": "SharePoint List Search App Template",
     "shortDescription": "The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation",
@@ -2254,6 +2380,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2318,6 +2448,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-staff-checkins",
+    "reponame": "microsoft-teams-apps-staff-checkins",
     "source": "pnp",
     "title": "Staff Check-ins App Template",
     "shortDescription": "Staff Check-ins enables oversight communication between your business and field personnel.",
@@ -2335,6 +2466,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2399,6 +2534,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-visitor-management",
+    "reponame": "microsoft-teams-apps-visitor-management",
     "source": "pnp",
     "title": "Visitor Management App Template",
     "shortDescription": "The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives.",
@@ -2416,6 +2552,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2480,6 +2620,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-workplace-awards",
+    "reponame": "microsoft-teams-apps-workplace-awards",
     "source": "pnp",
     "title": "Workplace Awards App Template",
     "shortDescription": "The app enables you to setup and manage an employee rewards and recognition (R\u0026R) program where employees can easily nominate and endorse colleagues and your R\u0026R leader can view submitted nominations, grant awards, and announce recipients",
@@ -2497,6 +2638,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2573,6 +2718,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-learning-pathways-solution",
+    "reponame": "learning-pathways-solution",
     "source": "pnp",
     "title": "Get Started (Learning Pathways)",
     "shortDescription": "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL\u0027s prior to installation.",
@@ -2590,6 +2736,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "msftTeams"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "solution"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2654,6 +2804,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-teams-home-app",
+    "reponame": "teams-home-app",
     "source": "pnp",
     "title": "Microsoft Teams Sample Hub",
     "shortDescription": "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \u0022art of the possible\u0022 by showcasing the Teams platform and articulating the value that it can deliver.",
@@ -2671,6 +2822,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "msftTeams"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2735,6 +2890,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-simple-message-bot-dotnet",
+    "reponame": "microsoft-teams-bb-simple-message-bot-dotnet",
     "source": "pnp",
     "title": "Simple message bot using C#/ASP.NET Core",
     "shortDescription": "Simple example of a bot that responds to messages based on regex matching",
@@ -2752,6 +2908,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2820,6 +2980,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-simple-message-bot-node",
+    "reponame": "microsoft-teams-bb-simple-message-bot-node",
     "source": "pnp",
     "title": "Simple message bot using NodeJS",
     "shortDescription": "Simple example of a bot that responds to messages based on regex matching",
@@ -2837,6 +2998,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2905,6 +3070,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-simple-message-bot-python",
+    "reponame": "microsoft-teams-bb-simple-message-bot-python",
     "source": "pnp",
     "title": "Simple message bot using Python",
     "shortDescription": "Simple example of a bot that responds to messages based on regex matching",
@@ -2922,6 +3088,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -2990,6 +3160,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-authenticate-bot-csharp",
+    "reponame": "microsoft-teams-bb-authenticate-bot-csharp",
     "source": "pnp",
     "title": "OAuth Bot using C#/ASP.NET Core",
     "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf",
@@ -3007,6 +3178,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3075,6 +3250,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-authenticate-bot-node",
+    "reponame": "microsoft-teams-bb-authenticate-bot-node",
     "source": "pnp",
     "title": "OAuth Bot using NodeJS",
     "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf",
@@ -3092,6 +3268,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3160,6 +3340,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-authenticate-bot-python",
+    "reponame": "microsoft-teams-bb-authenticate-bot-python",
     "source": "pnp",
     "title": "OAuth Bot using Python",
     "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf",
@@ -3177,6 +3358,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3245,6 +3430,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-file-upload-bot-csharp",
+    "reponame": "microsoft-teams-bb-file-upload-bot-csharp",
     "source": "pnp",
     "title": "File Upload Bot using C#/ASP.NET Core",
     "shortDescription": "Bot uploads a file from the user",
@@ -3262,6 +3448,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3330,6 +3520,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-file-upload-bot-node",
+    "reponame": "microsoft-teams-bb-file-upload-bot-node",
     "source": "pnp",
     "title": "File Upload Bot using NodeJS",
     "shortDescription": "Bot uploads a file from the user",
@@ -3347,6 +3538,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3415,6 +3610,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-file-upload-bot-python",
+    "reponame": "microsoft-teams-bb-file-upload-bot-python",
     "source": "pnp",
     "title": "File Upload Bot using Python",
     "shortDescription": "Bot uploads a file from the user",
@@ -3432,6 +3628,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3500,6 +3700,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-search-msgext-csharp",
+    "reponame": "microsoft-teams-bb-search-msgext-csharp",
     "source": "pnp",
     "title": "Search messaging extension using C#/ASP.NET Core",
     "shortDescription": "Simple messaging extension with a Search command",
@@ -3517,6 +3718,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3581,6 +3786,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-search-msgext-node",
+    "reponame": "microsoft-teams-bb-search-msgext-node",
     "source": "pnp",
     "title": "Search messaging extension using NodeJS",
     "shortDescription": "Simple messaging extension with a Search command",
@@ -3598,6 +3804,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3662,6 +3872,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-search-msgext-python",
+    "reponame": "microsoft-teams-bb-search-msgext-python",
     "source": "pnp",
     "title": "Search messaging extension using Python",
     "shortDescription": "Simple messaging extension with a Search command",
@@ -3679,6 +3890,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3743,6 +3958,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-search-auth-msgext-csharp",
+    "reponame": "microsoft-teams-bb-search-auth-msgext-csharp",
     "source": "pnp",
     "title": "Search messaging extension w/Auth using C#/ASP.NET Core",
     "shortDescription": "Messaging extension with a Search command, authentication, and configuration",
@@ -3760,6 +3976,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3824,6 +4044,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-search-auth-msgext-node",
+    "reponame": "microsoft-teams-bb-search-auth-msgext-node",
     "source": "pnp",
     "title": "Search messaging extension w/Auth using NodeJS",
     "shortDescription": "Messaging extension with a Search command, authentication, and configuration",
@@ -3841,6 +4062,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3905,6 +4130,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-search-msgext-auth-python",
+    "reponame": "microsoft-teams-bb-search-msgext-auth-python",
     "source": "pnp",
     "title": "Search messaging extension w/Auth using Python",
     "shortDescription": "Messaging extension with a Search command, authentication, and configuration",
@@ -3922,6 +4148,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -3986,6 +4216,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-action-msgext-csharp",
+    "reponame": "microsoft-teams-bb-action-msgext-csharp",
     "source": "pnp",
     "title": "Action messaging extension using C#/ASP.NET Core",
     "shortDescription": "Simple messaging extension with a action command. Response inserted into the compose message area.",
@@ -4003,6 +4234,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4067,6 +4302,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-action-msgext-node",
+    "reponame": "microsoft-teams-bb-action-msgext-node",
     "source": "pnp",
     "title": "Simple action messaging extension using NodeJS",
     "shortDescription": "Simple messaging extension with a action command. Response inserted into the compose message area.",
@@ -4084,6 +4320,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4148,6 +4388,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-action-msgext-python",
+    "reponame": "microsoft-teams-bb-action-msgext-python",
     "source": "pnp",
     "title": "Action messaging extension using Python",
     "shortDescription": "Messaging extension with a action command. Response inserted into the compose message area.",
@@ -4165,6 +4406,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4237,6 +4482,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-action-bot-msgext-csharp",
+    "reponame": "microsoft-teams-bb-action-bot-msgext-csharp",
     "source": "pnp",
     "title": "Action messaging extension with bot response using C#/ASP.NET Core",
     "shortDescription": "Messaging extension with a action command. Response inserted into the conversation by the bot.",
@@ -4254,6 +4500,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4326,6 +4576,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-action-bot-msgext-node",
+    "reponame": "microsoft-teams-bb-action-bot-msgext-node",
     "source": "pnp",
     "title": "Simple action messaging extension with bot response using NodeJS",
     "shortDescription": "Messaging extension with a action command. Response inserted into the conversation by the bot.",
@@ -4343,6 +4594,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4407,6 +4662,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-bb-action-bot-msgext-python",
+    "reponame": "microsoft-teams-bb-action-bot-msgext-python",
     "source": "pnp",
     "title": "Simple action messaging extension with bot response using Python",
     "shortDescription": "Messaging extension with a action command. Response inserted into the conversation by the bot.",
@@ -4424,6 +4680,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4496,6 +4756,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-app-consulting-bot",
+    "reponame": "app-consulting-bot",
     "source": "pnp",
     "title": "Consulting Bot",
     "shortDescription": "This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)",
@@ -4513,6 +4774,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4590,6 +4855,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-bot-statebot",
+    "reponame": "bot-statebot",
     "source": "pnp",
     "title": "StateBot",
     "shortDescription": "This simple bot demonstrates conversation state and user state in Bot Framework v4",
@@ -4607,6 +4873,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4676,6 +4946,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-spfx-field-visit",
+    "reponame": "tab-spfx-field-visit",
     "source": "pnp",
     "title": "Field visit mashup",
     "shortDescription": "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits.",
@@ -4693,6 +4964,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4762,6 +5037,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-customer-search",
+    "reponame": "msgext-customer-search",
     "source": "pnp",
     "title": "Customer search messaging extension",
     "shortDescription": "A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation",
@@ -4779,6 +5055,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4844,6 +5124,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-other-teams-creator-web-part",
+    "reponame": "other-teams-creator-web-part",
     "source": "pnp",
     "title": "Teams Creator web part",
     "shortDescription": "This is a SharePoint web part that creates Teams",
@@ -4861,6 +5142,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -4926,6 +5211,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-config-using-sharepoint",
+    "reponame": "tab-config-using-sharepoint",
     "source": "pnp",
     "title": "Configurable tabs with SharePoint",
     "shortDescription": "This is a SharePoint web part that creates Teams",
@@ -4943,6 +5229,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5012,6 +5302,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-other-send-message-web-part",
+    "reponame": "other-send-message-web-part",
     "source": "pnp",
     "title": "SharePoint web part sends to Teams",
     "shortDescription": "This is a SharePoint web part that displays the user\u0027s Teams and sends messages to channele",
@@ -5029,6 +5320,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5093,6 +5388,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-personal-app-settings",
+    "reponame": "tab-personal-app-settings",
     "source": "pnp",
     "title": "SPFx personal tab with property pane editing",
     "shortDescription": "Shows how to expose the web part editing of an SPFx personal tab",
@@ -5110,6 +5406,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5179,6 +5479,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-suggested-members",
+    "reponame": "tab-suggested-members",
     "source": "pnp",
     "title": "Suggested members tab",
     "shortDescription": "SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click",
@@ -5196,6 +5497,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5264,6 +5569,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-tag-teams-graph-ext",
+    "reponame": "tab-tag-teams-graph-ext",
     "source": "pnp",
     "title": "Web part to tag a Team",
     "shortDescription": "Web part to tag a Team using managed metadata and Graph extension",
@@ -5281,6 +5587,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5345,6 +5655,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-public-teams-not-member-of",
+    "reponame": "tab-public-teams-not-member-of",
     "source": "pnp",
     "title": "Tab or web part to show Teams to join",
     "shortDescription": "Tab or web part shows Teams the user is not a member of, with an opportunity to join",
@@ -5362,6 +5673,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5431,6 +5746,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-other-webpart-show-my-teams",
+    "reponame": "other-webpart-show-my-teams",
     "source": "pnp",
     "title": "Web part to show my Teams",
     "shortDescription": "Web part shows Teams the user belongs to with links to each Team",
@@ -5448,6 +5764,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5513,6 +5833,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-other-outlook-addin-save-to-teams",
+    "reponame": "other-outlook-addin-save-to-teams",
     "source": "pnp",
     "title": "Outlook add-in saves email to Teams",
     "shortDescription": "Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)",
@@ -5530,6 +5851,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5595,6 +5920,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-bot-call-graph-as-user",
+    "reponame": "bot-call-graph-as-user",
     "source": "pnp",
     "title": "Bot calls Graph as a user",
     "shortDescription": "Simple Bot calls Graph and displays recent emails from the user\u0027s inbox",
@@ -5612,6 +5938,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5681,6 +6011,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-graph-search-docreview",
+    "reponame": "msgext-graph-search-docreview",
     "source": "pnp",
     "title": "Document Review - Search messaging extension calls Graph",
     "shortDescription": "Search-based messaging extension queries Graph API to find documents needing review",
@@ -5698,6 +6029,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5763,6 +6098,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-graph-task-creation",
+    "reponame": "msgext-graph-task-creation",
     "source": "pnp",
     "title": "Task creation messaging extension",
     "shortDescription": "Teams messaging extension uses Microsoft Graph to create tasks in ToDo or Planner",
@@ -5780,6 +6116,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5844,6 +6184,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-aad-msal2",
+    "reponame": "tab-aad-msal2",
     "source": "pnp",
     "title": "Tab uses MSAL 2.0 and calls Graph API",
     "shortDescription": "Tab uses MSAL 2.0 in a pop-up and calls Graph API. Shows authorization using auth code PKCE from a static web site.",
@@ -5861,6 +6202,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -5926,6 +6271,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-aad-spfx",
+    "reponame": "tab-aad-spfx",
     "source": "pnp",
     "title": "Tab uses SharePoint Framework to call Graph API",
     "shortDescription": "Tab uses SPFx and Graph to display recent email",
@@ -5943,6 +6289,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6012,6 +6362,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-spfx-oauth2",
+    "reponame": "tab-spfx-oauth2",
     "source": "pnp",
     "title": "SPFx tab uses OAuth 2.0 to call 3rd party service (Box)",
     "shortDescription": "Tab uses OAuth 2.0 in a pop-up, calls the Box API and displays Box Content Explorer",
@@ -6029,6 +6380,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6098,6 +6453,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-graph-action-docreview",
+    "reponame": "msgext-graph-action-docreview",
     "source": "pnp",
     "title": "Document Review - Action messaging extension calls Graph",
     "shortDescription": "Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review.",
@@ -6115,6 +6471,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6180,6 +6540,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-spfx-graph-docreview",
+    "reponame": "msgext-spfx-graph-docreview",
     "source": "pnp",
     "title": "Document Review - Action messaging extension with SPFx Task Module",
     "shortDescription": "Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review. Task module uses SPFx.",
@@ -6197,6 +6558,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6266,6 +6631,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-action-jit",
+    "reponame": "msgext-action-jit",
     "source": "pnp",
     "title": "Action messaging extension with Just In Time installer",
     "shortDescription": "Sample of an Action messaging extension that shows a Just-In-Time installer to install the app into Teams/Personal/Group Chat, and how to post an adaptive card response directly into a conversation",
@@ -6283,6 +6649,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6347,6 +6717,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-httpstatuscats",
+    "reponame": "msgext-httpstatuscats",
     "source": "pnp",
     "title": "HTTP Status Lookup messaging extension with cats",
     "shortDescription": "This is a small sample code to build a messaging extension with Node.js and Bot Framework",
@@ -6364,6 +6735,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6428,6 +6803,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-bot-spfx-taskmodules",
+    "reponame": "msgext-bot-spfx-taskmodules",
     "source": "pnp",
     "title": "SharePoint Framework task module with Bot and Messaging Extension",
     "shortDescription": "Demonstrates how to use SharePoint Framework powered Task modules in Microsoft Teams applications",
@@ -6445,6 +6821,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6521,6 +6901,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-spfx-me-experience",
+    "reponame": "tab-spfx-me-experience",
     "source": "pnp",
     "title": "Me experience demonstrates use of Microsoft Graph Toolkit React Extensions in an SPFx web part in Teams",
     "shortDescription": "A Teams app where users can start their day and see their personal information using Microsoft Graph Toolkit React components",
@@ -6538,6 +6919,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6607,6 +6992,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-search-giphy",
+    "reponame": "msgext-search-giphy",
     "source": "pnp",
     "title": "Giphy Search Messaging Extension",
     "shortDescription": "Search based Messaging extension allows users to find and insert gify\u0027s into a Microsoft Teams message",
@@ -6624,6 +7010,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6689,6 +7079,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-sso-graph-upload-as-pdf",
+    "reponame": "tab-sso-graph-upload-as-pdf",
     "source": "pnp",
     "title": "Upload as PDF tab",
     "shortDescription": "Tab allows uploading documents; they are converted to PDF and saved to the current channel",
@@ -6706,6 +7097,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6778,6 +7173,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-sso",
+    "reponame": "tab-sso",
     "source": "pnp",
     "title": "Tab SSO with .NET Core and Node back-ends",
     "shortDescription": "Two samples in one, with .NET Core and Node implementations; now makes Graph calls from the back end rather than pass the Graph access token to the browser.",
@@ -6795,6 +7191,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6859,6 +7259,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-sso-teamsclientsdk",
+    "reponame": "tab-sso-teamsclientsdk",
     "source": "pnp",
     "title": "Tab SSO with .NET Core MVC",
     "shortDescription": "Tab SSO with .NET Core MVC",
@@ -6876,6 +7277,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -6946,6 +7351,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-react-teams-send-notification",
+    "reponame": "react-teams-send-notification",
     "source": "pnp",
     "title": "Send notifications in Teams",
     "shortDescription": "Tab sends notifications to Teams users",
@@ -6963,6 +7369,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7037,6 +7447,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-one-productivity-hub",
+    "reponame": "tab-one-productivity-hub",
     "source": "pnp",
     "title": "One Productivity Hub",
     "shortDescription": "Tab displays user\u0027s calendar, tasks, and emails using Microsoft Graph Toolkit 2.0",
@@ -7054,6 +7465,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "solution"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7119,6 +7534,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-bot-sso-azuread",
+    "reponame": "bot-sso-azuread",
     "source": "pnp",
     "title": "Bot Single Sign-on",
     "shortDescription": "This sample shows how to implement Azure AD Single Sign-on for a Bot in Microsoft Teams",
@@ -7136,6 +7552,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7210,6 +7630,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-app-virtual-events-meeting-extensibility",
+    "reponame": "app-virtual-events-meeting-extensibility",
     "source": "pnp",
     "title": "Virtual events meeting extensibility",
     "shortDescription": "Shows how to create an app with a bot that calls users into a meeting with a custom event",
@@ -7227,6 +7648,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7309,8 +7734,9 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-bot-proactive-messaging-node",
+    "reponame": "bot-proactive-messaging-node",
     "source": "pnp",
-    "title": "Teams Proactive Bot Messaging (Node)",
+    "title": "Teams Proactive Bot Messaging",
     "shortDescription": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging-node",
     "longDescription": [
@@ -7326,6 +7752,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7394,8 +7824,9 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-bot-proactive-messaging-netcore",
+    "reponame": "bot-proactive-messaging-netcore",
     "source": "pnp",
-    "title": "Teams Proactive Bot Messaging (.Net)",
+    "title": "Teams Proactive Bot Messaging",
     "shortDescription": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging-netcore",
     "longDescription": [
@@ -7411,6 +7842,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7479,6 +7914,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-bot-b2c-chat-bot",
+    "reponame": "bot-b2c-chat-bot",
     "source": "pnp",
     "title": "Business to Citizen Consumer Communication Bot",
     "shortDescription": "Allows citizen end users get in touch with an SME / Support Agent working in Teams",
@@ -7496,6 +7932,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7594,6 +8034,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-react-teams-meeting-app-questionnaire",
+    "reponame": "react-teams-meeting-app-questionnaire",
     "source": "pnp",
     "title": "Questionnaire Teams Meeting App",
     "shortDescription": "Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions",
@@ -7611,6 +8052,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7680,6 +8125,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-msgext-bot-SPUploader",
+    "reponame": "msgext-bot-SPUploader",
     "source": "pnp",
     "title": "Document manager sample app using messaging extensions",
     "shortDescription": "Provides a basis for building a digital asset / document repository management app.",
@@ -7697,6 +8143,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7775,6 +8225,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-activity-feed",
+    "reponame": "tab-activity-feed",
     "source": "pnp",
     "title": "Tab notifies users via the Teams activity feed",
     "shortDescription": "Simple Kudos app notifies users of new kudos via the Teams activity feed and Microsoft Graph",
@@ -7792,6 +8243,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "solution"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7857,6 +8312,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-app-contoso-hr-talent-app",
+    "reponame": "app-contoso-hr-talent-app",
     "source": "pnp",
     "title": "HR Talent App demo/lab",
     "shortDescription": "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn\u0027t get into the Bot Framework till 4.6)",
@@ -7874,6 +8330,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "officeDev"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -7958,6 +8418,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-app-emergency-response",
+    "reponame": "app-emergency-response",
     "source": "pnp",
     "title": "Teams Emergency Response solution with SharePoint",
     "shortDescription": "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint",
@@ -7975,6 +8436,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "officeDev"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -8047,6 +8512,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-app-emergency-response",
+    "reponame": "app-emergency-response",
     "source": "pnp",
     "title": "Teams Emergency Response solution with SharePoint",
     "shortDescription": "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint",
@@ -8064,6 +8530,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "officeDev"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "solution"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -8136,6 +8606,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-one-productivity-hub-workshop",
+    "reponame": "tab-one-productivity-hub-workshop",
     "source": "pnp",
     "title": "One Productivity Hub workshop",
     "shortDescription": "Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email",
@@ -8153,6 +8624,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "officeDev"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
@@ -8217,6 +8692,7 @@
   },
   {
     "name": "pnp-sp-dev-teams-sample-app-customer-orders",
+    "reponame": "app-customer-orders",
     "source": "pnp",
     "title": "Angular SPA grows into a full Teams app with bot",
     "shortDescription": "From the Learn Together event of December 15, 2020",
@@ -8234,6 +8710,10 @@
       {
         "key": "TEAMS-SAMPLE-SOURCE",
         "value": "officeDev"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
