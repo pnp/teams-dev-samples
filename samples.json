@@ -7310,7 +7310,7 @@
   {
     "name": "pnp-sp-dev-teams-sample-bot-proactive-messaging-node",
     "source": "pnp",
-    "title": "Teams Proactive Bot Messaging",
+    "title": "Teams Proactive Bot Messaging (Node)",
     "shortDescription": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging-node",
     "longDescription": [
@@ -7395,7 +7395,7 @@
   {
     "name": "pnp-sp-dev-teams-sample-bot-proactive-messaging-netcore",
     "source": "pnp",
-    "title": "Teams Proactive Bot Messaging",
+    "title": "Teams Proactive Bot Messaging (.Net)",
     "shortDescription": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging-netcore",
     "longDescription": [
