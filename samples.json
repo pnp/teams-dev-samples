@@ -8,8 +8,8 @@
     "longDescription": [
       "Associate insights is a Power Apps template that empowers firstline workers to directly capture and submit customer opinion, sentiment, and perception."
     ],
-    "created": "2020-04-30",
-    "modified": "2020-04-30",
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
     "products": [
       "Teams",
       "Office"
@@ -96,8 +96,8 @@
     "longDescription": [
       "Attendance app is a Power Apps based solution to take attendance in educational tenant."
     ],
-    "created": "2020-05-14",
-    "modified": "2020-05-14",
+    "creationDateTime": "2020-05-14",
+    "updateDateTime": "2020-05-14",
     "products": [
       "Teams",
       "Office"
@@ -177,8 +177,8 @@
     "longDescription": [
       "Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations."
     ],
-    "created": "2020-07-13",
-    "modified": "2020-07-13",
+    "creationDateTime": "2020-07-13",
+    "updateDateTime": "2020-07-13",
     "products": [
       "Teams",
       "Office"
@@ -266,8 +266,8 @@
     "longDescription": [
       "Celebrations is a Teams app that helps team members celebrate each others\u2019 birthdays, anniversaries, and other recurring events."
     ],
-    "created": "2019-10-08",
-    "modified": "2019-10-08",
+    "creationDateTime": "2019-10-08",
+    "updateDateTime": "2019-10-08",
     "products": [
       "Teams",
       "Office"
@@ -355,8 +355,8 @@
     "longDescription": [
       "The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate."
     ],
-    "created": "2020-04-30",
-    "modified": "2020-04-30",
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
     "products": [
       "Teams",
       "Office"
@@ -448,8 +448,8 @@
     "longDescription": [
       "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization\u0027s contact groups (formerly known as distribution lists or communication groups)."
     ],
-    "created": "2020-07-13",
-    "modified": "2020-07-13",
+    "creationDateTime": "2020-07-13",
+    "updateDateTime": "2020-07-13",
     "products": [
       "Teams",
       "Office"
@@ -529,8 +529,8 @@
     "longDescription": [
       "CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions."
     ],
-    "created": "2020-07-13",
-    "modified": "2020-07-13",
+    "creationDateTime": "2020-07-13",
+    "updateDateTime": "2020-07-13",
     "products": [
       "Teams",
       "Office"
@@ -618,8 +618,8 @@
     "longDescription": [
       "This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams."
     ],
-    "created": "2020-05-26",
-    "modified": "2020-05-26",
+    "creationDateTime": "2020-05-26",
+    "updateDateTime": "2020-05-26",
     "products": [
       "Teams",
       "Office"
@@ -699,8 +699,8 @@
     "longDescription": [
       "Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes"
     ],
-    "created": "2020-05-26",
-    "modified": "2020-05-26",
+    "creationDateTime": "2020-05-26",
+    "updateDateTime": "2020-05-26",
     "products": [
       "Teams",
       "Office"
@@ -792,8 +792,8 @@
     "longDescription": [
       "FAQ Plus is a friendly Q\u0026A bot that brings a human in the loop when it is unable to help."
     ],
-    "created": "2020-07-02",
-    "modified": "2020-07-02",
+    "creationDateTime": "2020-07-02",
+    "updateDateTime": "2020-07-02",
     "products": [
       "Teams",
       "Office"
@@ -885,8 +885,8 @@
     "longDescription": [
       "Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams."
     ],
-    "created": "2020-07-02",
-    "modified": "2020-07-02",
+    "creationDateTime": "2020-07-02",
+    "updateDateTime": "2020-07-02",
     "products": [
       "Teams",
       "Office"
@@ -978,8 +978,8 @@
     "longDescription": [
       "The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals."
     ],
-    "created": "2020-07-08",
-    "modified": "2020-07-08",
+    "creationDateTime": "2020-07-08",
+    "updateDateTime": "2020-07-08",
     "products": [
       "Teams",
       "Office"
@@ -1071,8 +1071,8 @@
     "longDescription": [
       "Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete"
     ],
-    "created": "2020-04-30",
-    "modified": "2020-04-30",
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
     "products": [
       "Teams",
       "Office"
@@ -1160,8 +1160,8 @@
     "longDescription": [
       "The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills"
     ],
-    "created": "2020-04-30",
-    "modified": "2020-04-30",
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
     "products": [
       "Teams",
       "Office"
@@ -1253,8 +1253,8 @@
     "longDescription": [
       "HR Support bot is a friendly Q\u0026A bot that brings a support professional/expert from the HR team in the loop when it is unable to help"
     ],
-    "created": "2020-04-30",
-    "modified": "2020-04-30",
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
     "products": [
       "Teams",
       "Office"
@@ -1346,8 +1346,8 @@
     "longDescription": [
       "Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet"
     ],
-    "created": "2020-04-30",
-    "modified": "2020-04-30",
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
     "products": [
       "Teams",
       "Office"
@@ -1431,8 +1431,8 @@
     "longDescription": [
       "Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives"
     ],
-    "created": "2020-04-30",
-    "modified": "2020-04-30",
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
     "products": [
       "Teams",
       "Office"
@@ -1516,8 +1516,8 @@
     "longDescription": [
       "The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking."
     ],
-    "created": "2020-04-16",
-    "modified": "2020-04-16",
+    "creationDateTime": "2020-04-16",
+    "updateDateTime": "2020-04-16",
     "products": [
       "Teams",
       "Office"
@@ -1609,8 +1609,8 @@
     "longDescription": [
       "Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere"
     ],
-    "created": "2020-03-23",
-    "modified": "2020-03-23",
+    "creationDateTime": "2020-03-23",
+    "updateDateTime": "2020-03-23",
     "products": [
       "Teams",
       "Office"
@@ -1702,8 +1702,8 @@
     "longDescription": [
       "Quick Responses is a Microsoft Teams app that answering users\u0027 frequently asked questions (FAQs) using a messaging extension."
     ],
-    "created": "2020-03-23",
-    "modified": "2020-03-23",
+    "creationDateTime": "2020-03-23",
+    "updateDateTime": "2020-03-23",
     "products": [
       "Teams",
       "Office"
@@ -1795,8 +1795,8 @@
     "longDescription": [
       "Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform."
     ],
-    "created": "2020-03-23",
-    "modified": "2020-03-23",
+    "creationDateTime": "2020-03-23",
+    "updateDateTime": "2020-03-23",
     "products": [
       "Teams",
       "Office"
@@ -1888,8 +1888,8 @@
     "longDescription": [
       "Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -1981,8 +1981,8 @@
     "longDescription": [
       "Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones."
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -2066,8 +2066,8 @@
     "longDescription": [
       "Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum."
     ],
-    "created": "2020-06-10",
-    "modified": "2020-06-10",
+    "creationDateTime": "2020-06-10",
+    "updateDateTime": "2020-06-10",
     "products": [
       "Teams",
       "Office"
@@ -2151,8 +2151,8 @@
     "longDescription": [
       "The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading"
     ],
-    "created": "2020-06-10",
-    "modified": "2020-06-10",
+    "creationDateTime": "2020-06-10",
+    "updateDateTime": "2020-06-10",
     "products": [
       "Teams",
       "Office"
@@ -2244,8 +2244,8 @@
     "longDescription": [
       "The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation"
     ],
-    "created": "2020-04-30",
-    "modified": "2020-04-30",
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
     "products": [
       "Teams",
       "Office"
@@ -2325,8 +2325,8 @@
     "longDescription": [
       "Staff Check-ins enables oversight communication between your business and field personnel."
     ],
-    "created": "2020-07-01",
-    "modified": "2020-07-01",
+    "creationDateTime": "2020-07-01",
+    "updateDateTime": "2020-07-01",
     "products": [
       "Teams",
       "Office"
@@ -2406,8 +2406,8 @@
     "longDescription": [
       "The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives."
     ],
-    "created": "2020-07-02",
-    "modified": "2020-07-02",
+    "creationDateTime": "2020-07-02",
+    "updateDateTime": "2020-07-02",
     "products": [
       "Teams",
       "Office"
@@ -2487,8 +2487,8 @@
     "longDescription": [
       "The app enables you to setup and manage an employee rewards and recognition (R\u0026R) program where employees can easily nominate and endorse colleagues and your R\u0026R leader can view submitted nominations, grant awards, and announce recipients"
     ],
-    "created": "2020-07-02",
-    "modified": "2020-07-02",
+    "creationDateTime": "2020-07-02",
+    "updateDateTime": "2020-07-02",
     "products": [
       "Teams",
       "Office"
@@ -2580,8 +2580,8 @@
     "longDescription": [
       "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL\u0027s prior to installation."
     ],
-    "created": "2020-07-16",
-    "modified": "2020-07-16",
+    "creationDateTime": "2020-07-16",
+    "updateDateTime": "2020-07-16",
     "products": [
       "Teams",
       "Office"
@@ -2661,8 +2661,8 @@
     "longDescription": [
       "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \u0022art of the possible\u0022 by showcasing the Teams platform and articulating the value that it can deliver."
     ],
-    "created": "2020-08-25",
-    "modified": "2020-08-25",
+    "creationDateTime": "2020-08-25",
+    "updateDateTime": "2020-08-25",
     "products": [
       "Teams",
       "Office"
@@ -2742,8 +2742,8 @@
     "longDescription": [
       "Simple example of a bot that responds to messages based on regex matching"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -2827,8 +2827,8 @@
     "longDescription": [
       "Simple example of a bot that responds to messages based on regex matching"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -2912,8 +2912,8 @@
     "longDescription": [
       "Simple example of a bot that responds to messages based on regex matching"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -2997,8 +2997,8 @@
     "longDescription": [
       "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3082,8 +3082,8 @@
     "longDescription": [
       "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3167,8 +3167,8 @@
     "longDescription": [
       "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3252,8 +3252,8 @@
     "longDescription": [
       "Bot uploads a file from the user"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3337,8 +3337,8 @@
     "longDescription": [
       "Bot uploads a file from the user"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3422,8 +3422,8 @@
     "longDescription": [
       "Bot uploads a file from the user"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3507,8 +3507,8 @@
     "longDescription": [
       "Simple messaging extension with a Search command"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3588,8 +3588,8 @@
     "longDescription": [
       "Simple messaging extension with a Search command"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3669,8 +3669,8 @@
     "longDescription": [
       "Simple messaging extension with a Search command"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3750,8 +3750,8 @@
     "longDescription": [
       "Messaging extension with a Search command, authentication, and configuration"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3831,8 +3831,8 @@
     "longDescription": [
       "Messaging extension with a Search command, authentication, and configuration"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3912,8 +3912,8 @@
     "longDescription": [
       "Messaging extension with a Search command, authentication, and configuration"
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -3993,8 +3993,8 @@
     "longDescription": [
       "Simple messaging extension with a action command. Response inserted into the compose message area."
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -4074,8 +4074,8 @@
     "longDescription": [
       "Simple messaging extension with a action command. Response inserted into the compose message area."
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -4155,8 +4155,8 @@
     "longDescription": [
       "Messaging extension with a action command. Response inserted into the compose message area."
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -4244,8 +4244,8 @@
     "longDescription": [
       "Messaging extension with a action command. Response inserted into the conversation by the bot."
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -4333,8 +4333,8 @@
     "longDescription": [
       "Messaging extension with a action command. Response inserted into the conversation by the bot."
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -4414,8 +4414,8 @@
     "longDescription": [
       "Messaging extension with a action command. Response inserted into the conversation by the bot."
     ],
-    "created": "2020-07-09",
-    "modified": "2020-07-09",
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
     "products": [
       "Teams",
       "Office"
@@ -4503,8 +4503,8 @@
     "longDescription": [
       "This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)"
     ],
-    "created": "2020-04-23",
-    "modified": "2020-04-23",
+    "creationDateTime": "2020-04-23",
+    "updateDateTime": "2020-04-23",
     "products": [
       "Teams",
       "Office"
@@ -4597,8 +4597,8 @@
     "longDescription": [
       "This simple bot demonstrates conversation state and user state in Bot Framework v4"
     ],
-    "created": "2019-08-12",
-    "modified": "2019-08-12",
+    "creationDateTime": "2019-08-12",
+    "updateDateTime": "2019-08-12",
     "products": [
       "Teams",
       "Office"
@@ -4683,8 +4683,8 @@
     "longDescription": [
       "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits."
     ],
-    "created": "2019-04-20",
-    "modified": "2019-04-20",
+    "creationDateTime": "2019-04-20",
+    "updateDateTime": "2019-04-20",
     "products": [
       "Teams",
       "Office"
@@ -4769,8 +4769,8 @@
     "longDescription": [
       "A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation"
     ],
-    "created": "2020-08-06",
-    "modified": "2020-08-06",
+    "creationDateTime": "2020-08-06",
+    "updateDateTime": "2020-08-06",
     "products": [
       "Teams",
       "Office"
@@ -4851,8 +4851,8 @@
     "longDescription": [
       "This is a SharePoint web part that creates Teams"
     ],
-    "created": "2018-11-19",
-    "modified": "2018-11-19",
+    "creationDateTime": "2018-11-19",
+    "updateDateTime": "2018-11-19",
     "products": [
       "Teams",
       "Office"
@@ -4933,8 +4933,8 @@
     "longDescription": [
       "This is a SharePoint web part that creates Teams"
     ],
-    "created": "2020-01-06",
-    "modified": "2020-01-06",
+    "creationDateTime": "2020-01-06",
+    "updateDateTime": "2020-01-06",
     "products": [
       "Teams",
       "Office"
@@ -5019,8 +5019,8 @@
     "longDescription": [
       "This is a SharePoint web part that displays the user\u0027s Teams and sends messages to channele"
     ],
-    "created": "2020-05-23",
-    "modified": "2020-05-23",
+    "creationDateTime": "2020-05-23",
+    "updateDateTime": "2020-05-23",
     "products": [
       "Teams",
       "Office"
@@ -5100,8 +5100,8 @@
     "longDescription": [
       "Shows how to expose the web part editing of an SPFx personal tab"
     ],
-    "created": "2020-04-24",
-    "modified": "2020-04-24",
+    "creationDateTime": "2020-04-24",
+    "updateDateTime": "2020-04-24",
     "products": [
       "Teams",
       "Office"
@@ -5186,8 +5186,8 @@
     "longDescription": [
       "SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click"
     ],
-    "created": "2018-11-18",
-    "modified": "2018-11-18",
+    "creationDateTime": "2018-11-18",
+    "updateDateTime": "2018-11-18",
     "products": [
       "Teams",
       "Office"
@@ -5271,8 +5271,8 @@
     "longDescription": [
       "Web part to tag a Team using managed metadata and Graph extension"
     ],
-    "created": "2019-04-18",
-    "modified": "2019-04-18",
+    "creationDateTime": "2019-04-18",
+    "updateDateTime": "2019-04-18",
     "products": [
       "Teams",
       "Office"
@@ -5352,8 +5352,8 @@
     "longDescription": [
       "Tab or web part shows Teams the user is not a member of, with an opportunity to join"
     ],
-    "created": "2019-02-05",
-    "modified": "2019-02-05",
+    "creationDateTime": "2019-02-05",
+    "updateDateTime": "2019-02-05",
     "products": [
       "Teams",
       "Office"
@@ -5438,8 +5438,8 @@
     "longDescription": [
       "Web part shows Teams the user belongs to with links to each Team"
     ],
-    "created": "2019-02-26",
-    "modified": "2019-02-26",
+    "creationDateTime": "2019-02-26",
+    "updateDateTime": "2019-02-26",
     "products": [
       "Teams",
       "Office"
@@ -5520,8 +5520,8 @@
     "longDescription": [
       "Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)"
     ],
-    "created": "2020-01-29",
-    "modified": "2020-01-29",
+    "creationDateTime": "2020-01-29",
+    "updateDateTime": "2020-01-29",
     "products": [
       "Teams",
       "Office"
@@ -5602,8 +5602,8 @@
     "longDescription": [
       "Simple Bot calls Graph and displays recent emails from the user\u0027s inbox"
     ],
-    "created": "2020-01-29",
-    "modified": "2020-01-29",
+    "creationDateTime": "2020-01-29",
+    "updateDateTime": "2020-01-29",
     "products": [
       "Teams",
       "Office"
@@ -5688,8 +5688,8 @@
     "longDescription": [
       "Search-based messaging extension queries Graph API to find documents needing review"
     ],
-    "created": "2020-08-26",
-    "modified": "2020-08-26",
+    "creationDateTime": "2020-08-26",
+    "updateDateTime": "2020-08-26",
     "products": [
       "Teams",
       "Office"
@@ -5770,8 +5770,8 @@
     "longDescription": [
       "Teams messaging extension uses Microsoft Graph to create tasks in ToDo or Planner"
     ],
-    "created": "2020-08-24",
-    "modified": "2020-08-24",
+    "creationDateTime": "2020-08-24",
+    "updateDateTime": "2020-08-24",
     "products": [
       "Teams",
       "Office"
@@ -5851,8 +5851,8 @@
     "longDescription": [
       "Tab uses MSAL 2.0 in a pop-up and calls Graph API. Shows authorization using auth code PKCE from a static web site."
     ],
-    "created": "2020-08-25",
-    "modified": "2020-08-25",
+    "creationDateTime": "2020-08-25",
+    "updateDateTime": "2020-08-25",
     "products": [
       "Teams",
       "Office"
@@ -5933,8 +5933,8 @@
     "longDescription": [
       "Tab uses SPFx and Graph to display recent email"
     ],
-    "created": "2020-08-25",
-    "modified": "2020-08-25",
+    "creationDateTime": "2020-08-25",
+    "updateDateTime": "2020-08-25",
     "products": [
       "Teams",
       "Office"
@@ -6019,8 +6019,8 @@
     "longDescription": [
       "Tab uses OAuth 2.0 in a pop-up, calls the Box API and displays Box Content Explorer"
     ],
-    "created": "2020-08-25",
-    "modified": "2020-08-25",
+    "creationDateTime": "2020-08-25",
+    "updateDateTime": "2020-08-25",
     "products": [
       "Teams",
       "Office"
@@ -6105,8 +6105,8 @@
     "longDescription": [
       "Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review."
     ],
-    "created": "2020-08-28",
-    "modified": "2020-08-28",
+    "creationDateTime": "2020-08-28",
+    "updateDateTime": "2020-08-28",
     "products": [
       "Teams",
       "Office"
@@ -6187,8 +6187,8 @@
     "longDescription": [
       "Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review. Task module uses SPFx."
     ],
-    "created": "2020-09-15",
-    "modified": "2020-09-15",
+    "creationDateTime": "2020-09-15",
+    "updateDateTime": "2020-09-15",
     "products": [
       "Teams",
       "Office"
@@ -6273,8 +6273,8 @@
     "longDescription": [
       "Sample of an Action messaging extension that shows a Just-In-Time installer to install the app into Teams/Personal/Group Chat, and how to post an adaptive card response directly into a conversation"
     ],
-    "created": "2020-09-10",
-    "modified": "2020-09-10",
+    "creationDateTime": "2020-09-10",
+    "updateDateTime": "2020-09-10",
     "products": [
       "Teams",
       "Office"
@@ -6354,8 +6354,8 @@
     "longDescription": [
       "This is a small sample code to build a messaging extension with Node.js and Bot Framework"
     ],
-    "created": "2020-09-11",
-    "modified": "2020-09-11",
+    "creationDateTime": "2020-09-11",
+    "updateDateTime": "2020-09-11",
     "products": [
       "Teams",
       "Office"
@@ -6435,8 +6435,8 @@
     "longDescription": [
       "Demonstrates how to use SharePoint Framework powered Task modules in Microsoft Teams applications"
     ],
-    "created": "2020-09-11",
-    "modified": "2020-09-11",
+    "creationDateTime": "2020-09-11",
+    "updateDateTime": "2020-09-11",
     "products": [
       "Teams",
       "Office"
@@ -6528,8 +6528,8 @@
     "longDescription": [
       "A Teams app where users can start their day and see their personal information using Microsoft Graph Toolkit React components"
     ],
-    "created": "2020-11-08",
-    "modified": "2020-11-08",
+    "creationDateTime": "2020-11-08",
+    "updateDateTime": "2020-11-08",
     "products": [
       "Teams",
       "Office"
@@ -6614,8 +6614,8 @@
     "longDescription": [
       "Search based Messaging extension allows users to find and insert gify\u0027s into a Microsoft Teams message"
     ],
-    "created": "2020-10-29",
-    "modified": "2020-10-29",
+    "creationDateTime": "2020-10-29",
+    "updateDateTime": "2020-10-29",
     "products": [
       "Teams",
       "Office"
@@ -6696,8 +6696,8 @@
     "longDescription": [
       "Tab allows uploading documents; they are converted to PDF and saved to the current channel"
     ],
-    "created": "2020-11-30",
-    "modified": "2020-11-30",
+    "creationDateTime": "2020-11-30",
+    "updateDateTime": "2020-11-30",
     "products": [
       "Teams",
       "Office"
@@ -6785,8 +6785,8 @@
     "longDescription": [
       "Two samples in one, with .NET Core and Node implementations; now makes Graph calls from the back end rather than pass the Graph access token to the browser."
     ],
-    "created": "2020-12-05",
-    "modified": "2020-12-05",
+    "creationDateTime": "2020-12-05",
+    "updateDateTime": "2020-12-05",
     "products": [
       "Teams",
       "Office"
@@ -6866,8 +6866,8 @@
     "longDescription": [
       "Tab SSO with .NET Core MVC"
     ],
-    "created": "2020-12-03",
-    "modified": "2020-12-03",
+    "creationDateTime": "2020-12-03",
+    "updateDateTime": "2020-12-03",
     "products": [
       "Teams",
       "Office"
@@ -6953,8 +6953,8 @@
     "longDescription": [
       "Tab sends notifications to Teams users"
     ],
-    "created": "2020-12-04",
-    "modified": "2020-12-04",
+    "creationDateTime": "2020-12-04",
+    "updateDateTime": "2020-12-04",
     "products": [
       "Teams",
       "Office"
@@ -7044,8 +7044,8 @@
     "longDescription": [
       "Tab displays user\u0027s calendar, tasks, and emails using Microsoft Graph Toolkit 2.0"
     ],
-    "created": "2020-12-17",
-    "modified": "2020-12-17",
+    "creationDateTime": "2020-12-17",
+    "updateDateTime": "2020-12-17",
     "products": [
       "Teams",
       "Office"
@@ -7126,8 +7126,8 @@
     "longDescription": [
       "This sample shows how to implement Azure AD Single Sign-on for a Bot in Microsoft Teams"
     ],
-    "created": "2020-12-18",
-    "modified": "2020-12-18",
+    "creationDateTime": "2020-12-18",
+    "updateDateTime": "2020-12-18",
     "products": [
       "Teams",
       "Office"
@@ -7217,8 +7217,8 @@
     "longDescription": [
       "Shows how to create an app with a bot that calls users into a meeting with a custom event"
     ],
-    "created": "2020-12-18",
-    "modified": "2020-12-18",
+    "creationDateTime": "2020-12-18",
+    "updateDateTime": "2020-12-18",
     "products": [
       "Teams",
       "Office"
@@ -7316,8 +7316,8 @@
     "longDescription": [
       "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
     ],
-    "created": "2021-01-28",
-    "modified": "2021-01-28",
+    "creationDateTime": "2021-01-28",
+    "updateDateTime": "2021-01-28",
     "products": [
       "Teams",
       "Office"
@@ -7401,8 +7401,8 @@
     "longDescription": [
       "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
     ],
-    "created": "2021-01-28",
-    "modified": "2021-01-28",
+    "creationDateTime": "2021-01-28",
+    "updateDateTime": "2021-01-28",
     "products": [
       "Teams",
       "Office"
@@ -7486,8 +7486,8 @@
     "longDescription": [
       "Allows citizen end users get in touch with an SME / Support Agent working in Teams"
     ],
-    "created": "2021-02-18",
-    "modified": "2021-02-18",
+    "creationDateTime": "2021-02-18",
+    "updateDateTime": "2021-02-18",
     "products": [
       "Teams",
       "Office"
@@ -7601,8 +7601,8 @@
     "longDescription": [
       "Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions"
     ],
-    "created": "2021-03-22",
-    "modified": "2021-03-22",
+    "creationDateTime": "2021-03-22",
+    "updateDateTime": "2021-03-22",
     "products": [
       "Teams",
       "Office"
@@ -7687,8 +7687,8 @@
     "longDescription": [
       "Provides a basis for building a digital asset / document repository management app."
     ],
-    "created": "2021-03-22",
-    "modified": "2021-03-22",
+    "creationDateTime": "2021-03-22",
+    "updateDateTime": "2021-03-22",
     "products": [
       "Teams",
       "Office"
@@ -7782,8 +7782,8 @@
     "longDescription": [
       "Simple Kudos app notifies users of new kudos via the Teams activity feed and Microsoft Graph"
     ],
-    "created": "2021-04-26",
-    "modified": "2021-04-26",
+    "creationDateTime": "2021-04-26",
+    "updateDateTime": "2021-04-26",
     "products": [
       "Teams",
       "Office"
@@ -7864,8 +7864,8 @@
     "longDescription": [
       "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn\u0027t get into the Bot Framework till 4.6)"
     ],
-    "created": "2019-10-04",
-    "modified": "2019-10-04",
+    "creationDateTime": "2019-10-04",
+    "updateDateTime": "2019-10-04",
     "products": [
       "Teams",
       "Office"
@@ -7965,8 +7965,8 @@
     "longDescription": [
       "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint"
     ],
-    "created": "2020-10-16",
-    "modified": "2020-10-16",
+    "creationDateTime": "2020-10-16",
+    "updateDateTime": "2020-10-16",
     "products": [
       "Teams",
       "Office"
@@ -8054,8 +8054,8 @@
     "longDescription": [
       "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint"
     ],
-    "created": "2020-10-16",
-    "modified": "2020-10-16",
+    "creationDateTime": "2020-10-16",
+    "updateDateTime": "2020-10-16",
     "products": [
       "Teams",
       "Office"
@@ -8143,8 +8143,8 @@
     "longDescription": [
       "Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email"
     ],
-    "created": "2020-10-16",
-    "modified": "2020-10-16",
+    "creationDateTime": "2020-10-16",
+    "updateDateTime": "2020-10-16",
     "products": [
       "Teams",
       "Office"
@@ -8224,8 +8224,8 @@
     "longDescription": [
       "From the Learn Together event of December 15, 2020"
     ],
-    "created": "2020-12-14",
-    "modified": "2020-12-14",
+    "creationDateTime": "2020-12-14",
+    "updateDateTime": "2020-12-14",
     "products": [
       "Teams",
       "Office"
