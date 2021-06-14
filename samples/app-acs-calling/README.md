@@ -41,42 +41,42 @@ Step 1: Setup bot in Service
 ====================================
 1. Create new bot channel registration resource in Azure.
 
-<img src="./Docs/Images/BotChannelReg.png" alt="Bot Channel Reg" width="700" height="400">
+
 
 	* Remember the bot handle, you will need it while updating the index.cshtml file.
 
 2. Create New Microsoft App ID and Password.
 
-<img src="./Docs/Images/CreateNewMicrosoftAppId.png" alt="Create New Microsoft App Id" width="700" height="400">
+
 
 3. Go to App registrations and create a new app registration in a different tab.
 4. Register an application.
 	* Fill out name and select third option for supported account type and click "Register".
 
-<img src="./Docs/Images/RegisterAnApplication.png" alt="Register An Application" width="700" height="400">
+
 
 	* Copy and paste the App Id and Tenant ID somewhere safe. You will need it in a future step.
 
 5. Create Client Secret.
    * Navigate to the "Certificates & secrets" blade and add a client secret by clicking "New Client Secret".
 
-<img src="./Docs/Images/CertificatesAndSecrets.png" alt="Certificates And Secrets" width="700" height="400">
+
 
 	* Copy and paste the secret somewhere safe. You will need it in a future step.
 	
    * Paste the App Id and password in the respective blocks and click on OK.
 
-<img src="./Docs/Images/PopulateAppIdANdSecret.png" alt="Populate App Id And Secret" width="700" height="400">
+
 
    * Click on Create on the Bot Channel registration.
    
 6. Go to the created resource, navigate to channels and add "Microsoft Teams" and “Web chat” channels.
 
-<img src="./Docs/Images/BotChannels.png" alt="Bot Channels" width="700" height="400">
+
 
 7. Edit Web chat, click on the show under secret keys section in the right panel.
 
-<img src="./Docs/Images/BotWebChatSecretKey.png" alt="Bot Web Chat Secret Key" width="700" height="400">
+
 
 	* copy the secret, you will need it while updating the index.cshtml file.	
 
@@ -86,7 +86,7 @@ Step 1: Setup bot in Service
 		* Application permissions - OnlineMeetings.ReadWrite.All, Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All
 
 
-<img src="./Docs/Images/APIPermissions.png" alt="API Permissions" width="700" height="400">
+
 
 Step 2: Create a Policy for a user in the tenant for creating online meetings on behalf of that user
 ====================================
@@ -115,10 +115,6 @@ Step 3: Run the app locally
 4. Update the HomeScreen.tsx and appsettings.json files. 
       - TeamsServiceUrl, is the URL sent by Teams in the Bot payload in the turnContext.Activity.serviceUrl property, dubug the project to get the URL.
 
-<img src="./Docs/Images/UpdateIndexCshtmlWithBotHandleNameAndSecret.png" alt="Update Index.cshtml" style="width: 100%;">
-
-<img src="./Docs/Images/UpdateAppsettings.PNG" alt="Update Appsettings" style="width: 100%;">
-
 5. Run Ngrok to expose your local web server via a public URL. Make sure to point it to your Ngrok URI. For example, if you're using port 3333 locally, run:
 
 		Win: ./ngrok http 3333 -host-header=localhost:3333 -subdomain="contoso"
@@ -127,8 +123,6 @@ Step 3: Run the app locally
 6. Update messaging endpoint in the Azure Bots Channel Registration. Open the Bot channel registration, click on Configuration/Settings on the left pane, whichever is available and update the messaging endpoint to the endpoint that bot app will be listening on. Update the ngrok URL in the below format for the messaging endpoint.
 
 		ex: https://<subdomain>.ngrok.io/api/messages.
-
-<img src="./Docs/Images/BotConfiguration.png" alt="Bot Configuration" width="700" height="400">
 
 Step 4: Packaging and installing your app to Teams 
 ==================================================
