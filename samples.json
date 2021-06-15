@@ -184,7 +184,7 @@
     "source": "pnp",
     "title": "Book-a-room App Template",
     "shortDescription": "Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-book-a-room",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#book-a-room",
     "longDescription": [
       "Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations."
     ],
@@ -470,7 +470,7 @@
     "source": "pnp",
     "title": "Contact Group App Template",
     "shortDescription": "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization\u0027s contact groups (formerly known as distribution lists or communication groups).",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-contact-group-lookup",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#contact-group-lookup-",
     "longDescription": [
       "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization\u0027s contact groups (formerly known as distribution lists or communication groups)."
     ],
@@ -556,7 +556,7 @@
     "source": "pnp",
     "title": "Crowd Sourcer App Template",
     "shortDescription": "CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-crowd-sourcer",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#crowdsourcer",
     "longDescription": [
       "CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions."
     ],
@@ -2722,7 +2722,7 @@
     "source": "pnp",
     "title": "Get Started (Learning Pathways)",
     "shortDescription": "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL\u0027s prior to installation.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/learning-pathways-solution",
+    "url": "https://github.com/msft-teams/tools/tree/master/M365%20Learning%20Pathways",
     "longDescription": [
       "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL\u0027s prior to installation."
     ],
@@ -2808,7 +2808,7 @@
     "source": "pnp",
     "title": "Microsoft Teams Sample Hub",
     "shortDescription": "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \u0022art of the possible\u0022 by showcasing the Teams platform and articulating the value that it can deliver.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/teams-home-app",
+    "url": "https://github.com/msft-teams/tools/tree/master/TeamsSampleHub",
     "longDescription": [
       "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \u0022art of the possible\u0022 by showcasing the Teams platform and articulating the value that it can deliver."
     ],
@@ -3704,7 +3704,7 @@
     "source": "pnp",
     "title": "Search messaging extension using C#/ASP.NET Core",
     "shortDescription": "Simple messaging extension with a Search command",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-search-msgext-csharp",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Simple messaging extension with a Search command"
     ],
@@ -3790,7 +3790,7 @@
     "source": "pnp",
     "title": "Search messaging extension using NodeJS",
     "shortDescription": "Simple messaging extension with a Search command",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-search-msgext-node",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Simple messaging extension with a Search command"
     ],
@@ -3876,7 +3876,7 @@
     "source": "pnp",
     "title": "Search messaging extension using Python",
     "shortDescription": "Simple messaging extension with a Search command",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-search-msgext-python",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Simple messaging extension with a Search command"
     ],
@@ -3962,7 +3962,7 @@
     "source": "pnp",
     "title": "Search messaging extension w/Auth using C#/ASP.NET Core",
     "shortDescription": "Messaging extension with a Search command, authentication, and configuration",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-search-auth-msgext-csharp",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Messaging extension with a Search command, authentication, and configuration"
     ],
@@ -4048,7 +4048,7 @@
     "source": "pnp",
     "title": "Search messaging extension w/Auth using NodeJS",
     "shortDescription": "Messaging extension with a Search command, authentication, and configuration",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-search-auth-msgext-node",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Messaging extension with a Search command, authentication, and configuration"
     ],
@@ -4134,7 +4134,7 @@
     "source": "pnp",
     "title": "Search messaging extension w/Auth using Python",
     "shortDescription": "Messaging extension with a Search command, authentication, and configuration",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-search-msgext-auth-python",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Messaging extension with a Search command, authentication, and configuration"
     ],
@@ -4220,7 +4220,7 @@
     "source": "pnp",
     "title": "Action messaging extension using C#/ASP.NET Core",
     "shortDescription": "Simple messaging extension with a action command. Response inserted into the compose message area.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-action-msgext-csharp",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Simple messaging extension with a action command. Response inserted into the compose message area."
     ],
@@ -4392,7 +4392,7 @@
     "source": "pnp",
     "title": "Action messaging extension using Python",
     "shortDescription": "Messaging extension with a action command. Response inserted into the compose message area.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-action-msgext-python",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Messaging extension with a action command. Response inserted into the compose message area."
     ],
@@ -4580,7 +4580,7 @@
     "source": "pnp",
     "title": "Simple action messaging extension with bot response using NodeJS",
     "shortDescription": "Messaging extension with a action command. Response inserted into the conversation by the bot.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-action-bot-msgext-node",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Messaging extension with a action command. Response inserted into the conversation by the bot."
     ],
@@ -8422,7 +8422,7 @@
     "source": "pnp",
     "title": "Teams Emergency Response solution with SharePoint",
     "shortDescription": "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-emergency-response",
+    "url": "https://github.com/OfficeDev/M365Bootcamp-TeamsEmergencyResponse",
     "longDescription": [
       "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint"
     ],
@@ -8516,7 +8516,7 @@
     "source": "pnp",
     "title": "One Productivity Hub workshop",
     "shortDescription": "Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-one-productivity-hub-workshop",
+    "url": "https://github.com/OfficeDev/M365Bootcamp-TeamsOneProductivityHub",
     "longDescription": [
       "Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email"
     ],
