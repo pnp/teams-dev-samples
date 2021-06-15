@@ -5,7 +5,7 @@
     "source": "pnp",
     "title": "Associate Insights App Template",
     "shortDescription": "Associate insights is a Power Apps template that empowers firstline workers to directly capture and submit customer opinion, sentiment, and perception.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-associate-insights",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#associate-insights",
     "longDescription": [
       "Associate insights is a Power Apps template that empowers firstline workers to directly capture and submit customer opinion, sentiment, and perception."
     ],
@@ -98,7 +98,7 @@
     "source": "pnp",
     "title": "Attendance App Template",
     "shortDescription": "Attendance app is a Power Apps based solution to take attendance in educational tenant.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-attendance",
+    "url": "https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#attendance",
     "longDescription": [
       "Attendance app is a Power Apps based solution to take attendance in educational tenant."
     ],
@@ -372,7 +372,7 @@
     "source": "pnp",
     "title": "Company Communicator App Template",
     "shortDescription": "The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-company-communicator",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations",
     "longDescription": [
       "The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate."
     ],
@@ -650,7 +650,7 @@
     "source": "pnp",
     "title": "Custom Stickers App Template",
     "shortDescription": "This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-custom-stickers",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers",
     "longDescription": [
       "This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams."
     ],
@@ -736,7 +736,7 @@
     "source": "pnp",
     "title": "Expert Finder App Template",
     "shortDescription": "Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-expert-finder",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers",
     "longDescription": [
       "Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes"
     ],
@@ -834,7 +834,7 @@
     "source": "pnp",
     "title": "FAQ Plus App Template",
     "shortDescription": "FAQ Plus is a friendly Q\u0026A bot that brings a human in the loop when it is unable to help.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-faq-plus",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#faq-plus",
     "longDescription": [
       "FAQ Plus is a friendly Q\u0026A bot that brings a human in the loop when it is unable to help."
     ],
@@ -932,7 +932,7 @@
     "source": "pnp",
     "title": "Goal Tracker App Template",
     "shortDescription": "Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-goal-tracker",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#goal-tracker-",
     "longDescription": [
       "Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams."
     ],
@@ -1128,7 +1128,7 @@
     "source": "pnp",
     "title": "Group Activities App Template",
     "shortDescription": "Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-group-activities",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-",
     "longDescription": [
       "Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete"
     ],
@@ -1222,7 +1222,7 @@
     "source": "pnp",
     "title": "Grow Your Skills App Template",
     "shortDescription": "The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-grow-your-skills",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#grow-your-skills-",
     "longDescription": [
       "The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills"
     ],
@@ -1320,7 +1320,7 @@
     "source": "pnp",
     "title": "HR Support App Template",
     "shortDescription": "HR Support bot is a friendly Q\u0026A bot that brings a support professional/expert from the HR team in the loop when it is unable to help",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-hr-support",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support",
     "longDescription": [
       "HR Support bot is a friendly Q\u0026A bot that brings a support professional/expert from the HR team in the loop when it is unable to help"
     ],
@@ -1418,7 +1418,7 @@
     "source": "pnp",
     "title": "Icebreaker App Template",
     "shortDescription": "Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-icebreaker",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support",
     "longDescription": [
       "Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet"
     ],
@@ -1508,7 +1508,7 @@
     "source": "pnp",
     "title": "Incentives App Template",
     "shortDescription": "Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-incentives",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incentives",
     "longDescription": [
       "Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives"
     ],
@@ -1598,7 +1598,7 @@
     "source": "pnp",
     "title": "Incident Reporter App Template",
     "shortDescription": "The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-incident-reporter",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-",
     "longDescription": [
       "The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking."
     ],
@@ -1794,7 +1794,7 @@
     "source": "pnp",
     "title": "Quick Responses App Template",
     "shortDescription": "Quick Responses is a Microsoft Teams app that answering users\u0027 frequently asked questions (FAQs) using a messaging extension.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-quick-responses",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#quick-responses",
     "longDescription": [
       "Quick Responses is a Microsoft Teams app that answering users\u0027 frequently asked questions (FAQs) using a messaging extension."
     ],
@@ -1892,7 +1892,7 @@
     "source": "pnp",
     "title": "Remote Support App Template",
     "shortDescription": "Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-remote-support",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#remote-support-",
     "longDescription": [
       "Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform."
     ],
@@ -2178,7 +2178,7 @@
     "source": "pnp",
     "title": "Scrums for Channels App Template",
     "shortDescription": "Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-scrums-for-group-chat",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-group-chat-",
     "longDescription": [
       "Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum."
     ],
@@ -2268,7 +2268,7 @@
     "source": "pnp",
     "title": "Share Now App Template",
     "shortDescription": "The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-share-now",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#share-now-",
     "longDescription": [
       "The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading"
     ],
@@ -2366,7 +2366,7 @@
     "source": "pnp",
     "title": "SharePoint List Search App Template",
     "shortDescription": "The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-splist-search",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#sharepoint-list-search",
     "longDescription": [
       "The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation"
     ],
@@ -2452,7 +2452,7 @@
     "source": "pnp",
     "title": "Staff Check-ins App Template",
     "shortDescription": "Staff Check-ins enables oversight communication between your business and field personnel.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-staff-checkins",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#staff-check-ins-",
     "longDescription": [
       "Staff Check-ins enables oversight communication between your business and field personnel."
     ],
