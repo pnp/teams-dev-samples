@@ -4950,7 +4950,7 @@
     "source": "pnp",
     "title": "Field visit mashup",
     "shortDescription": "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-spfx-field-visit",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/main/samples/tab-spfx-field-visit",
     "longDescription": [
       "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits."
     ],
@@ -5128,7 +5128,7 @@
     "source": "pnp",
     "title": "Teams Creator web part",
     "shortDescription": "This is a SharePoint web part that creates Teams",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/other-teams-creator-web-part",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-team-creator",
     "longDescription": [
       "This is a SharePoint web part that creates Teams"
     ],
@@ -5215,7 +5215,7 @@
     "source": "pnp",
     "title": "Configurable tabs with SharePoint",
     "shortDescription": "This is a SharePoint web part that creates Teams",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-config-using-sharepoint",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-configure-tab",
     "longDescription": [
       "This is a SharePoint web part that creates Teams"
     ],
@@ -5305,10 +5305,10 @@
     "reponame": "other-send-message-web-part",
     "source": "pnp",
     "title": "SharePoint web part sends to Teams",
-    "shortDescription": "This is a SharePoint web part that displays the user\u0027s Teams and sends messages to channele",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/other-send-message-web-part",
+    "shortDescription": "This is a SharePoint web part that displays the user\u0027s Teams and sends messages to channels",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-message",
     "longDescription": [
-      "This is a SharePoint web part that displays the user\u0027s Teams and sends messages to channele"
+      "This is a SharePoint web part that displays the user\u0027s Teams and sends messages to channels"
     ],
     "creationDateTime": "2020-05-23",
     "updateDateTime": "2020-05-23",
@@ -5392,7 +5392,7 @@
     "source": "pnp",
     "title": "SPFx personal tab with property pane editing",
     "shortDescription": "Shows how to expose the web part editing of an SPFx personal tab",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-personal-app-settings",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-personal-app-settings",
     "longDescription": [
       "Shows how to expose the web part editing of an SPFx personal tab"
     ],
@@ -5483,7 +5483,7 @@
     "source": "pnp",
     "title": "Suggested members tab",
     "shortDescription": "SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-suggested-members",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tab-suggested-members",
     "longDescription": [
       "SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click"
     ],
@@ -5573,7 +5573,7 @@
     "source": "pnp",
     "title": "Web part to tag a Team",
     "shortDescription": "Web part to tag a Team using managed metadata and Graph extension",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-tag-teams-graph-ext",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tagging",
     "longDescription": [
       "Web part to tag a Team using managed metadata and Graph extension"
     ],
@@ -5659,7 +5659,7 @@
     "source": "pnp",
     "title": "Tab or web part to show Teams to join",
     "shortDescription": "Tab or web part shows Teams the user is not a member of, with an opportunity to join",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-public-teams-not-member-of",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tagging",
     "longDescription": [
       "Tab or web part shows Teams the user is not a member of, with an opportunity to join"
     ],
@@ -5750,7 +5750,7 @@
     "source": "pnp",
     "title": "Web part to show my Teams",
     "shortDescription": "Web part shows Teams the user belongs to with links to each Team",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/other-webpart-show-my-teams",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-my-teams",
     "longDescription": [
       "Web part shows Teams the user belongs to with links to each Team"
     ],
@@ -5837,7 +5837,7 @@
     "source": "pnp",
     "title": "Outlook add-in saves email to Teams",
     "shortDescription": "Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/other-outlook-addin-save-to-teams",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-outlook-copy2teams",
     "longDescription": [
       "Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)"
     ],
@@ -7355,7 +7355,7 @@
     "source": "pnp",
     "title": "Send notifications in Teams",
     "shortDescription": "Tab sends notifications to Teams users",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/react-teams-send-notification",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-send-notification",
     "longDescription": [
       "Tab sends notifications to Teams users"
     ],
@@ -8038,7 +8038,7 @@
     "source": "pnp",
     "title": "Questionnaire Teams Meeting App",
     "shortDescription": "Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/react-teams-meeting-app-questionnaire",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-meeting-app-questionnaire",
     "longDescription": [
       "Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions"
     ],
