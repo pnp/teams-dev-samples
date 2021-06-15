@@ -4306,7 +4306,7 @@
     "source": "pnp",
     "title": "Simple action messaging extension using NodeJS",
     "shortDescription": "Simple messaging extension with a action command. Response inserted into the compose message area.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-action-msgext-node",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Simple messaging extension with a action command. Response inserted into the compose message area."
     ],
@@ -4486,7 +4486,7 @@
     "source": "pnp",
     "title": "Action messaging extension with bot response using C#/ASP.NET Core",
     "shortDescription": "Messaging extension with a action command. Response inserted into the conversation by the bot.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-action-bot-msgext-csharp",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Messaging extension with a action command. Response inserted into the conversation by the bot."
     ],
@@ -4666,7 +4666,7 @@
     "source": "pnp",
     "title": "Simple action messaging extension with bot response using Python",
     "shortDescription": "Messaging extension with a action command. Response inserted into the conversation by the bot.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-action-bot-msgext-python",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Messaging extension with a action command. Response inserted into the conversation by the bot."
     ],
