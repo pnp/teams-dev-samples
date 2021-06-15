@@ -278,7 +278,7 @@
     "source": "pnp",
     "title": "Celebrate App Template",
     "shortDescription": "Celebrations is a Teams app that helps team members celebrate each others\u2019 birthdays, anniversaries, and other recurring events.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-celebrate",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations",
     "longDescription": [
       "Celebrations is a Teams app that helps team members celebrate each others\u2019 birthdays, anniversaries, and other recurring events."
     ],
@@ -1030,7 +1030,7 @@
     "source": "pnp",
     "title": "Great Ideas App Template",
     "shortDescription": "The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-great-ideas",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-",
     "longDescription": [
       "The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals."
     ],
@@ -1696,7 +1696,7 @@
     "source": "pnp",
     "title": "Open Badges App Template",
     "shortDescription": "Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-open-badges",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-",
     "longDescription": [
       "Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere"
     ],
@@ -1990,7 +1990,7 @@
     "source": "pnp",
     "title": "Request-a-team App Template",
     "shortDescription": "Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-request-a-team",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#request-a-team-",
     "longDescription": [
       "Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds"
     ],
@@ -2088,7 +2088,7 @@
     "source": "pnp",
     "title": "Scrums for Channels App Template",
     "shortDescription": "Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-scrums-for-channels",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-channels-",
     "longDescription": [
       "Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones."
     ],
@@ -2538,7 +2538,7 @@
     "source": "pnp",
     "title": "Visitor Management App Template",
     "shortDescription": "The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-visitor-management",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#visitor-management-",
     "longDescription": [
       "The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives."
     ],
@@ -2624,7 +2624,7 @@
     "source": "pnp",
     "title": "Workplace Awards App Template",
     "shortDescription": "The app enables you to setup and manage an employee rewards and recognition (R\u0026R) program where employees can easily nominate and endorse colleagues and your R\u0026R leader can view submitted nominations, grant awards, and announce recipients",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-apps-workplace-awards",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#workplace-awards-",
     "longDescription": [
       "The app enables you to setup and manage an employee rewards and recognition (R\u0026R) program where employees can easily nominate and endorse colleagues and your R\u0026R leader can view submitted nominations, grant awards, and announce recipients"
     ],
@@ -2894,7 +2894,7 @@
     "source": "pnp",
     "title": "Simple message bot using C#/ASP.NET Core",
     "shortDescription": "Simple example of a bot that responds to messages based on regex matching",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-simple-message-bot-dotnet",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Simple example of a bot that responds to messages based on regex matching"
     ],
@@ -2984,7 +2984,7 @@
     "source": "pnp",
     "title": "Simple message bot using NodeJS",
     "shortDescription": "Simple example of a bot that responds to messages based on regex matching",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-simple-message-bot-node",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Simple example of a bot that responds to messages based on regex matching"
     ],
@@ -3074,7 +3074,7 @@
     "source": "pnp",
     "title": "Simple message bot using Python",
     "shortDescription": "Simple example of a bot that responds to messages based on regex matching",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-simple-message-bot-python",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Simple example of a bot that responds to messages based on regex matching"
     ],
@@ -3164,7 +3164,7 @@
     "source": "pnp",
     "title": "OAuth Bot using C#/ASP.NET Core",
     "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-authenticate-bot-csharp",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf"
     ],
@@ -3254,7 +3254,7 @@
     "source": "pnp",
     "title": "OAuth Bot using NodeJS",
     "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-authenticate-bot-node",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf"
     ],
@@ -3344,7 +3344,7 @@
     "source": "pnp",
     "title": "OAuth Bot using Python",
     "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-authenticate-bot-python",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf"
     ],
@@ -3434,7 +3434,7 @@
     "source": "pnp",
     "title": "File Upload Bot using C#/ASP.NET Core",
     "shortDescription": "Bot uploads a file from the user",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-file-upload-bot-csharp",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Bot uploads a file from the user"
     ],
@@ -3524,7 +3524,7 @@
     "source": "pnp",
     "title": "File Upload Bot using NodeJS",
     "shortDescription": "Bot uploads a file from the user",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-file-upload-bot-node",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Bot uploads a file from the user"
     ],
@@ -3614,7 +3614,7 @@
     "source": "pnp",
     "title": "File Upload Bot using Python",
     "shortDescription": "Bot uploads a file from the user",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/microsoft-teams-bb-file-upload-bot-python",
+    "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
       "Bot uploads a file from the user"
     ],
@@ -4950,7 +4950,7 @@
     "source": "pnp",
     "title": "Field visit mashup",
     "shortDescription": "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits.",
-    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/main/samples/tab-spfx-field-visit",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tab-field-visit-mashup",
     "longDescription": [
       "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits."
     ],
@@ -8316,7 +8316,7 @@
     "source": "pnp",
     "title": "HR Talent App demo/lab",
     "shortDescription": "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn\u0027t get into the Bot Framework till 4.6)",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-contoso-hr-talent-app",
+    "url": "https://github.com/OfficeDev/msteams-sample-contoso-hr-talent-app",
     "longDescription": [
       "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn\u0027t get into the Bot Framework till 4.6)"
     ],
