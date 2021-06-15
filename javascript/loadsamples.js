@@ -1,7 +1,7 @@
 /**
  * This file is unique for each sample browser. It contains the logic specific to each repo for loading the samples as needed.
  */
-var jsonPath = "https://pnp.github.io/teams-dev-samples/samples.json";
+var jsonPath = "https://raw.githubusercontent.com/pnp/teams-dev-samples/gh-pages/samples.json";
 
 /**
  * Reads a sample metadata and returns a pre-populated HTML element
