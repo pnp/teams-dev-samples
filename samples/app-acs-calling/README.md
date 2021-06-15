@@ -13,9 +13,11 @@ The sample supporting ACS and Teams Interoperation allows citizen end users get 
 
 * [Office 365 tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program).
 
-* Node.js (12.18.4 and above), Visual Studio (2019 and above), .NET Core 3.1 (Make sure to install version that corresponds with your visual studio instance, 32 vs 64 bit)
+* An Azure account with an active subscription. For details, see [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
 
-* An Azure Communication Services resource. For details, see Create an Azure Communication Resource. You'll need to record your resource connection string for this QuickStart
+* [Node.js (12.18.4 and above)](https://nodejs.org/en/download/), [Visual Studio (2019 and above)](https://visualstudio.microsoft.com/vs/), [.NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1) (Make sure to install version that corresponds with your visual studio instance, 32 vs 64 bit)
+
+* An Azure Communication Services resource. For details, see [Create an Azure Communication Resource](https://docs.microsoft.com/en-us/azure/communication-services/quickstarts/create-communication-resource). You'll need to record your resource connection string for this QuickStart
 
 * To test locally, you'll need [Ngrok](https://ngrok.com/download) and [Azure Cosmos DB Emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=cli%2Cssl-netstd21) installed on your development machine. Make sure you've downloaded and installed both on your local machine. ngrok will tunnel requests from the Internet to your local computer and terminate the SSL connection from Teams.
 
