@@ -131,7 +131,7 @@ function loadSample(sample, filter) {
 <a class="sample-thumbnail" href="${sample.url}" data-modified="${sample.modified}" data-title="${title}" data-keywords="${keywords}" data-sample-type="${sampleType}" data-framework="${framework}" data-feature="${features}" data-source="${sampleSource}" data-client-language="${clientLanguage}" data-client-platform="${clientPlatform}" data-bot-framework="${botFramework}" data-server-language="${serverLanguage}" data-server-platform="${serverPlatform}">
   <div class="sample-inner">
     <div class="sample-preview">
-      <img src="${thumbnail}"  loading="lazy" alt="${title}">
+      <img src="${thumbnail}" loading="lazy" alt="${title}">
     </div>
     <div class="sample-details">
       <div class="producttype-item ${productTag}">${productName}</div>
