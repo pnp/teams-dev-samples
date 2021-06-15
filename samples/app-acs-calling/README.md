@@ -4,6 +4,10 @@
 
 The sample supporting ACS and Teams Interoperation allows citizen end users get in touch with an SME / Support Agent belonging to a business entity over a video call in order to discuss and address an issue. It allows business users with a Teams license on one side have a call with a citizen consumer who doesn’t have a Teams license / login. <br/><br/>
 
+<img src="./Docs/GIF/PlaceACall.gif" alt="PlaceACall" style="width: 100%;">
+<br/>
+<img src="./Docs/GIF/RequestACall.gif" alt="RequestACall" style="width: 100%;">
+
 ## Frameworks
 
 ![drop](https://img.shields.io/badge/.NET&nbsp;Core-3.1-green.svg)
@@ -43,63 +47,71 @@ Step 1: Setup bot in Service
 ====================================
 1. Create new bot channel registration resource in Azure.
 
+<img src="./Docs/Images/BotChannelRegistration.png" alt="BotChannelRegistration" style="width: 100%;">
 
-
-	* Remember the bot handle, you will need it while updating the index.cshtml file.
+	* Remember the bot handle, you will need it while updating the HomeScreen.tsx file.
 
 2. Create New Microsoft App ID and Password.
 
-
+<img src="./Docs/Images/CreateMicrosoftAppIdAndPassword.png" alt="CreateMicrosoftAppIdAndPassword" style="width: 100%;">
 
 3. Go to App registrations and create a new app registration in a different tab.
 4. Register an application.
 	* Fill out name and select third option for supported account type and click "Register".
 
-
+<img src="./Docs/Images/RegisterAnApplication.png" alt="RegisterAnApplication" style="width: 100%;">
 
 	* Copy and paste the App Id and Tenant ID somewhere safe. You will need it in a future step.
 
 5. Create Client Secret.
    * Navigate to the "Certificates & secrets" blade and add a client secret by clicking "New Client Secret".
 
-
+<img src="./Docs/Images/CreateClientSecret.png" alt="CreateClientSecret" style="width: 100%;">
 
 	* Copy and paste the secret somewhere safe. You will need it in a future step.
 	
    * Paste the App Id and password in the respective blocks and click on OK.
 
-
+<img src="./Docs/Images/PopulateMicrosoftAppIdAndPassword.png" alt="PopulateMicrosoftAppIdAndPassword" style="width: 100%;">
 
    * Click on Create on the Bot Channel registration.
    
 6. Go to the created resource, navigate to channels and add "Microsoft Teams" and “Web chat” channels.
 
-
+<img src="./Docs/Images/BotChannels.png" alt="BotChannels" style="width: 100%;">
 
 7. Edit Web chat, click on the show under secret keys section in the right panel.
 
+<img src="./Docs/Images/BotWebChatSecretKey.png" alt="BotWebChatSecretKey" style="width: 100%;">
 
-
-	* copy the secret, you will need it while updating the index.cshtml file.	
-
-8. Add any necessary API permissions for downstream calls in the App registration.
+	* copy the secret, you will need it while updating the HomeScreen.tsx file.	
+											      
+9. Add any necessary API permissions for downstream calls in the App registration.
 	* Navigate to "API permissions" blade on the left-hand side.
 	* Add following permissions to the application.
-		* Application permissions - OnlineMeetings.ReadWrite.All, Calls.AccessMedia.All, Calls.Initiate.All, Calls.InitiateGroupCall.All, Calls.JoinGroupCall.All, Calls.JoinGroupCallAsGuest.All
+		* Application permissions
+			* OnlineMeetings.ReadWrite.All
+			* Calls.AccessMedia.All
+			* Calls.Initiate.All
+			* Calls.InitiateGroupCall.All
+			* Calls.JoinGroupCall.All
+			* Calls.JoinGroupCallAsGuest.All
 
+<img src="./Docs/Images/APIPermissions.png" alt="APIPermissions" style="width: 100%;">
 
+If you are logged in as the Global Administrator, click on the “Grant admin consent for %tenant-name%” button to grant admin consent, else inform your Admin to do the same through the portal.
 
-
-Step 2: Create a Policy for a user in the tenant for creating online meetings on behalf of that user
+Step 2: Create a Policy for a user in the tenant for creating online meetings on behalf of that user using below PowerShell script
 ====================================
 
-Import-Module MicrosoftTeams
-$userCredential = Get-Credential
-Connect-MicrosoftTeams -Credential $userCredential
+Import-Module MicrosoftTeams<br />
+$userCredential = Get-Credential<br />
+Connect-MicrosoftTeams -Credential $userCredential<br />
  
-New-CsApplicationAccessPolicy -Identity “<<policy-identity/policy-name>>” -AppIds "<<replace-applicaition-id-from-step-1>>" -Description "<<policy-desciption>>"
-Grant-CsApplicationAccessPolicy -PolicyName “<<policy-identity/policy-name>>” -Identity "<< object-id-of-the-user-to-whom-policy-need-to-be-granted >>"
+New-CsApplicationAccessPolicy -Identity %policy-identity/policy-name% -AppIds "%replace-applicaition-id-from-step-1%" -Description "%policy-desciption%"<br />
+Grant-CsApplicationAccessPolicy -PolicyName %policy-identity/policy-name% -Identity "%object-id-of-the-user-to-whom-policy-need-to-be-granted%"
 
+	
 Step 3: Run the app locally 
 ====================================
 1. Clone the repository.
@@ -112,10 +124,14 @@ Step 3: Run the app locally
  	- Navigate to samples/app-acs-calling/Source folder.
  	- Select Calling.csproj file.
 
-3. The Azure Cosmos DB Emulator must be runnning before starting the service. To start the Azure Cosmos DB Emulator on Windows, select the Start button or press the Windows key. Begin typing Azure Cosmos DB Emulator, and select the emulator from the list of applications.When the emulator has started, you'll see an icon in the Windows taskbar notification area. It automatically opens the Azure Cosmos data explorer in your browser at this URL https://localhost:8081/_explorer/index.html URL. Make sure to copy the URI and Primary key values from the data explorer, update the same in the appsettings.json file. Cosmos Database and collection names can be anything of your choice. For more information, see the [Azure Cosmos DB Emulator reference](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=cli%2Cssl-netstd21) article. Values of the keys [GroupId](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?view=graph-rest-1.0&tabs=http), [ChannelId](https://docs.microsoft.com/en-us/graph/api/channel-list?view=graph-rest-1.0&tabs=http), [ChannelFilesFolderId](https://docs.microsoft.com/en-us/graph/api/channel-get-filesfolder?view=graph-rest-1.0&tabs=http) can be retrieved using the Graph explorer.
+3. The Azure Cosmos DB Emulator must be runnning before starting the service. To start the Azure Cosmos DB Emulator on Windows, select the Start button or press the Windows key. Begin typing Azure Cosmos DB Emulator, and select the emulator from the list of applications.When the emulator has started, you'll see an icon in the Windows taskbar notification area. It automatically opens the Azure Cosmos data explorer in your browser at this URL https://localhost:8081/_explorer/index.html URL. Make sure to copy the URI and Primary key values from the data explorer, update the same in the appsettings.json file. Cosmos Database and collection names can be anything of your choice. For more information, see the [Azure Cosmos DB Emulator reference](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator?tabs=cli%2Cssl-netstd21) article. Values of the keys [GroupId](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?view=graph-rest-1.0&tabs=http), [ChannelId](https://docs.microsoft.com/en-us/graph/api/channel-list?view=graph-rest-1.0&tabs=http) can be retrieved using the Graph explorer.
 
 4. Update the HomeScreen.tsx and appsettings.json files. 
       - TeamsServiceUrl, is the URL sent by Teams in the Bot payload in the turnContext.Activity.serviceUrl property, dubug the project to get the URL.
+
+<img src="./Docs/Images/HomeScreenUpdates.png" alt="HomeScreenUpdates" style="width: 100%;">
+<br />
+<img src="./Docs/Images/AppSettingsUpdates.png" alt="AppSettingsUpdates" style="width: 100%;">
 
 5. Run Ngrok to expose your local web server via a public URL. Make sure to point it to your Ngrok URI. For example, if you're using port 3333 locally, run:
 
@@ -125,6 +141,14 @@ Step 3: Run the app locally
 6. Update messaging endpoint in the Azure Bots Channel Registration. Open the Bot channel registration, click on Configuration/Settings on the left pane, whichever is available and update the messaging endpoint to the endpoint that bot app will be listening on. Update the ngrok URL in the below format for the messaging endpoint.
 
 		ex: https://<subdomain>.ngrok.io/api/messages.
+
+<img src="./Docs/Images/BotConfiguration.png" alt="BotConfiguration" style="width: 100%;">
+
+7. Enable calling on the Calling tab of the Microsoft Teams channel. Fill in the Webhook (for calling) where you will receive incoming notifications. 
+		
+		ex: https://<subdomain>.ngrok.io/callback/calling.
+
+<img src="./Docs/Images/EnableCallingAndSetWebhook.png" alt="EnableCallingAndSetWebhook" style="width: 100%;">
 
 Step 4: Packaging and installing your app to Teams 
 ==================================================
@@ -154,28 +178,32 @@ Step 5: Try out the app
     - Once the agent joins the call, follow the instructions provided by the bot in the meeting.
     - Admit the user waiting in lobby to kickstart the call with citizen user
 
-Limitations:
+## Limitations
 
-    - This Web app supports 2 video streams, i.e., One is Local and other one is Remote video stream. It’s a known behaviour of the Calling SDK. For more information refer to Calling SDK streaming support
-    - In case of Place a call flow, A call will be made to Teams experts instantly, it will take around 30 – 35 sec to make subsequent calls in calls of earlier calls are not answered/declined.
+* This Web app supports 2 video streams, i.e., One is Local and other one is Remote video stream. It’s a known behaviour of the Calling SDK. For more information refer to Calling SDK streaming support.
+* In case of Place a call flow, A call will be made to Teams experts instantly, it will take around 30 – 35 sec to make subsequent calls in calls of earlier calls are not answered/declined.
 
 ## App Features
 
 The sample app allows two ways in which a citizen user can get in touch with an agent using Teams. Citizen user can use the passive option of ‘requesting a call back’ once an agent is available or ‘place an urgent call’ to get connected with an available agent right away. 
 
-Request Call: (Agent initiates the call) 
+Request Call: (Agent initiates the call)
 
-    - Citizen end users can request for a call with an SME / support agent on Teams using bot interface on a website. The users are asked to submit basic contact information, query details to aid in triage. 
-    - Agents may assign the incoming citizen requests to themselves and initiate a call. This will share a Meeting Join link for the citizen user
-    - The citizen user may join the meeting by clicking on the Join link. It in turn opens a meeting interface in the website with options to turn on video, microphone and providing a name for joining the call. 
-    - When a citizen user joins the call, the agent would be prompted to allow entry from lobby. As both parties join, they can perform a video call and share screens between each other. 
+<img src="./Docs/Images/RequestCall.png" alt="RequestCall" style="width: 100%;">
 
+- Citizen end users can request for a call with an SME / support agent on Teams using bot interface on a website. The users are asked to submit basic contact information, query details to aid in triage. 
+- Agents may assign the incoming citizen requests to themselves and initiate a call. This will share a Meeting Join link for the citizen user
+- The citizen user may join the meeting by clicking on the Join link. It in turn opens a meeting interface in the website with options to turn on video, microphone and providing a name for joining the call. 
+- When a citizen user joins the call, the agent would be prompted to allow entry from lobby. As both parties join, they can perform a video call and share screens between each other. 
+    
 Place a call (Citizen user initiates the call)
 
-    - On clicking ‘Place a call’ a meeting join URL is immediately formed allowing citizen user to join an open meeting using the browser interface via ACS. 
-    - A Calling and Meeting bot follows a routing logic and calls first agent in the queue. If the agent accepts the call, both parties get to join and participate in a video meeting. 
-    - If the agent is unavailable and misses accepting the call or if the agent rejects the call, the bot looks for next available agent in the queue and repeats the process. 
-    - This routing logic can be customized and extended for any number of agents. 
+<img src="./Docs/Images/PlaceCall.png" alt="PlaceCall" style="width: 100%;">
+
+- On clicking ‘Place a call’ a meeting join URL is immediately formed allowing citizen user to join an open meeting using the browser interface via ACS. 
+- A Calling and Meeting bot follows a routing logic and calls first agent in the queue. If the agent accepts the call, both parties get to join and participate in a video meeting. 
+- If the agent is unavailable and misses accepting the call or if the agent rejects the call, the bot looks for next available agent in the queue and repeats the process. 
+- This routing logic can be customized and extended for any number of agents. 
 
 ## Take it Further
 
