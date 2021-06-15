@@ -207,6 +207,13 @@ Place a call (Citizen user initiates the call)
 - If the agent is unavailable and misses accepting the call or if the agent rejects the call, the bot looks for next available agent in the queue and repeats the process. 
 - This routing logic can be customized and extended for any number of agents. 
 
+## Demo
+
+
+https://user-images.githubusercontent.com/60575415/122059257-11e2c080-ce0a-11eb-9cff-1f1667470584.mp4
+
+
+
 ## Take it Further
 
 There are multiple real world scenarios across different industries that can be brought to life by enabling a B2C Calling. Following are few scenarios where a B2C video call would play crux of the solution. 
