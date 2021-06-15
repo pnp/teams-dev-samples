@@ -92,7 +92,6 @@ extra:
 repo_url: https://github.com/pnp/teams-dev-samples
 edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
-site_favicon: favicon.ico
 site_description: A gallery of Microsoft Teams samples created by the community
 #endregion
 
