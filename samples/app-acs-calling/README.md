@@ -184,6 +184,7 @@ Step 5: Try out the app
 
 * This Web app supports 2 video streams, i.e., One is Local and other one is Remote video stream. It’s a known behaviour of the Calling SDK. For more information refer to Calling SDK streaming support.
 * In case of Place a call flow, A call will be made to Teams experts instantly, it will take around 30 – 35 sec to make subsequent calls in calls of earlier calls are not answered/declined.
+* Video of Citizen end user who is using ACS on iOS devices, will not be rendered on the Teams meeting stage.
 
 ## App Features
 
