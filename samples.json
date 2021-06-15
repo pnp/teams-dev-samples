@@ -7738,7 +7738,7 @@
     "source": "pnp",
     "title": "Teams Proactive Bot Messaging",
     "shortDescription": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging-node",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging",
     "longDescription": [
       "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
     ],
@@ -7828,7 +7828,7 @@
     "source": "pnp",
     "title": "Teams Proactive Bot Messaging",
     "shortDescription": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging-netcore",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging",
     "longDescription": [
       "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
     ],
@@ -8439,100 +8439,6 @@
       },
       {
         "key": "TEAMS-SAMPLE-TYPE",
-        "value": "demo"
-      },
-      {
-        "key": "TEAMS-CLIENT-LANGUAGE",
-        "value": "typescript"
-      },
-      {
-        "key": "TEAMS-CLIENT-PLATFORM",
-        "value": "spfx"
-      },
-      {
-        "key": "TEAMS-CLIENT-UI",
-        "value": "react"
-      },
-      {
-        "key": "TEAMS-SERVER-LANGUAGE",
-        "value": ""
-      },
-      {
-        "key": "TEAMS-SERVER-PLATFORM",
-        "value": ""
-      },
-      {
-        "key": "TEAMS-BOT-FRAMEWORK",
-        "value": ""
-      },
-      {
-        "key": "TEAMS-FEATURES",
-        "value": "tab, taskmodule"
-      },
-      {
-        "key": "TEAMS-GENERATOR",
-        "value": ""
-      }
-    ],
-    "thumbnails": [],
-    "authors": [
-      {
-        "gitHubAccount": "microsoft",
-        "company": "Microsoft",
-        "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft"
-      }
-    ],
-    "references": [
-      {
-        "name": "Teams JavaScript SDK",
-        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
-      },
-      {
-        "name": "Microsoft Teams task modules",
-        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
-      },
-      {
-        "name": "Build for Microsoft Teams using SharePoint Framework",
-        "url": "https://aka.ms/sample-ref-teams-spfx"
-      },
-      {
-        "name": "Teams developer questions",
-        "url": "https://aka.ms/sample-ref-teams-dev-questions"
-      },
-      {
-        "name": "Teams development videos from Microsoft",
-        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
-      },
-      {
-        "name": "Teams development videos from the community",
-        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
-      }
-    ]
-  },
-  {
-    "name": "pnp-sp-dev-teams-sample-app-emergency-response",
-    "reponame": "app-emergency-response",
-    "source": "pnp",
-    "title": "Teams Emergency Response solution with SharePoint",
-    "shortDescription": "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-emergency-response",
-    "longDescription": [
-      "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint"
-    ],
-    "creationDateTime": "2020-10-16",
-    "updateDateTime": "2020-10-16",
-    "products": [
-      "Teams",
-      "Office"
-    ],
-    "metadata": [
-      {
-        "key": "TEAMS-SAMPLE-SOURCE",
-        "value": "officeDev"
-      },
-      {
-        "key": "TEAMS-SAMPLE-TYPE",
         "value": "solution"
       },
       {
@@ -8696,7 +8602,7 @@
     "source": "pnp",
     "title": "Angular SPA grows into a full Teams app with bot",
     "shortDescription": "From the Learn Together event of December 15, 2020",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-customer-orders",
+    "url": "https://github.com/microsoft/DevAppsForTeams",
     "longDescription": [
       "From the Learn Together event of December 15, 2020"
     ],
