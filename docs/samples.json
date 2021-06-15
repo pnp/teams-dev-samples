@@ -7139,7 +7139,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "./img/thumbnails/tab-sso-graph-upload-as-pdf.gif",
+        "url": "https://camo.githubusercontent.com/c39dae5cc765cf0a895335812754b9ed447467242a8a1890a9814bb2ad9fb114/68747470733a2f2f6d6d7368617265706f696e742e66696c65732e776f726470726573732e636f6d2f323032302f31312f303166696c6575706c6f6164746f7064662d312e676966",
         "alt": "Upload as PDF tab"
       }
     ],
