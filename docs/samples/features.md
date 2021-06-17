@@ -1,5 +1,5 @@
 ---
-title: Browse by Feature
+title: Browse by Capability
 template: filter.html
 filteroptions:
     - name: all
@@ -36,6 +36,6 @@ filteroptions:
       filter: '[data-feature=''other'']'   
 ---
 
-Teams applications can include one or more features such as tabs and bots.
+Teams applications can include one or more capabilities such as tabs and bots.
 
 To learn more about how to use these samples, please refer to our [getting started](../gettingstarted/index.md) section.

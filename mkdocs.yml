@@ -34,7 +34,7 @@ plugins:
 nav:
   - Samples:
     - By Type: index.md
-    - By Feature: samples/features.md
+    - By Capability: samples/features.md
     - By Source: samples/source.md
     - CLIENT SIDE CODE: samples/client_language.md
     - By Client Language: samples/client_language.md
