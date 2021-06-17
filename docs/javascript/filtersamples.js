@@ -6,7 +6,7 @@
 
  $(document).ready(function () {
   var filterText = $('#sample-listing').data("filter");
-  var qsRegex;
+  var qsRegex = new Array();
   var buttonFilter;
 
   // init Isotope
@@ -20,8 +20,17 @@
       title: '.sample-title'
     },
     filter: function () {
-      var searchResult = qsRegex ? $(this).data("keywords").match(qsRegex) : true;
+      var searchResult = true;
+      qsRegex.forEach((term) => {
+          if (!($(this).data("keywords").match(term))) {
+            // If any term doesn't match, return false
+            searchResult = false;
+          }
+      })
       var buttonResult = buttonFilter ? $(this).is(buttonFilter) : true;
+      if (!(searchResult && buttonResult)) {
+        console.log('FALSE!');
+      }
       return searchResult && buttonResult;
     },
     fitRows:{
@@ -97,7 +106,11 @@
   });
 
   search.on('change keyup paste', debounce(function () {
-    qsRegex = new RegExp(search.val(), 'gi');
+    var query = search.val().toString();
+    if (query) {
+      qsRegex = query.split(" ").map(term => new RegExp(term, 'gi'));
+      console.log(qsRegex[0]);
+    }
     $grid.isotope();
   }, 200));
 
