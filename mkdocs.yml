@@ -89,6 +89,7 @@ extra:
       link: 'https://www.youtube.com/playlist?list=PLR9nK3mnD-OXgMjDBdjWUTRia89oixBhx'
     - icon: 'fontawesome/solid/link'
       link: 'https://aka.ms/m365pnp'
+      
 repo_url: https://github.com/pnp/teams-dev-samples
 edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
