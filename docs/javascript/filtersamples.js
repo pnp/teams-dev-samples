@@ -4,7 +4,7 @@
  * This is a generic isotope filter for samples
  */
 
- $(document).ready(function () {
+$(document).ready(function () {
   var filterText = $('#sample-listing').data("filter");
   var qsRegex = new Array();
   var buttonFilter;
@@ -22,10 +22,10 @@
     filter: function () {
       var searchResult = true;
       qsRegex.forEach((term) => {
-          if (!($(this).data("keywords").match(term))) {
-            // If any term doesn't match, return false
-            searchResult = false;
-          }
+        if (!($(this).data("keywords").match(term))) {
+          // If any term doesn't match, return false
+          searchResult = false;
+        }
       })
       var buttonResult = buttonFilter ? $(this).is(buttonFilter) : true;
       if (!(searchResult && buttonResult)) {
@@ -33,7 +33,7 @@
       }
       return searchResult && buttonResult;
     },
-    fitRows:{
+    fitRows: {
       columnWidth: '.grid-sizer'
     }
   });
@@ -107,9 +107,14 @@
 
   search.on('change keyup paste', debounce(function () {
     var query = search.val().toString();
-    if (query) {
-      qsRegex = query.split(" ").map(term => new RegExp(term, 'gi'));
-      console.log(qsRegex[0]);
+    if (!query) {
+      qsRegex = new Array();
+    } else {
+      qsRegex = query.match(/\w+|"[^"]+"/gi); 
+      let i = qsRegex.length;
+      while (i--) {
+        qsRegex[i] = qsRegex[i].replace(/"/gi, "");
+      }
     }
     $grid.isotope();
   }, 200));
