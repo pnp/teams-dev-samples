@@ -2946,7 +2946,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3036,7 +3043,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3126,7 +3140,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3216,7 +3237,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3306,7 +3334,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3396,7 +3431,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3486,7 +3528,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3576,7 +3625,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3666,7 +3722,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3756,7 +3819,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3842,7 +3912,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3928,7 +4005,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -4014,7 +4098,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -4100,7 +4191,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -4186,7 +4284,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -4358,7 +4463,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -4444,7 +4556,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -4538,7 +4657,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -4632,7 +4758,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -4718,7 +4851,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
