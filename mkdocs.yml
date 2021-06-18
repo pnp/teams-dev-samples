@@ -1,31 +1,7 @@
 # teams-dev-samples
 # Author: Hugo Bernier, updates by Bob German
 #
-#region Sample entry (install region folding for VS Code add-in to make regions collapsable)
-#
-# Each sample has an entry as show below:
-# 
-#    - name: some-unique-name
-#      title: 
-#      type: apptemplate, barebones, demo, solution
-#      features: bot, connector, meetings, msgext, tab, taskmodule, webhook
-#      source: appTemplate, botBuilder, msftTeams, officeDev, pnp
-#      summary: 
-#      thumbnail: https://github.com/OfficeDev/microsoft-teams-apps-attendance/wiki/Images/Attendance_Readme_01.png
-#      url: https://github.com/OfficeDev/microsoft-teams-apps-attendance
-#      author: Microsoft
-#      client_language: typescript, javascript, powerapps
-#      client_platform: spa, spfx, mgt, powerapps, netcore, sharepoint
-#      client_ui: react, angularjs, angular, knockout, jquery, vuejs
-#      server_language: csharp, typescript, javascript, python, java, powerautomate
-#      server_platform: netcore, netframework, express, restify, powerautomate, requests
-#      bot_framework: bot3, bot4beta, bot40, bot46
-#      modifiedtext: May 14, 2020
-#      modified: 2020-05-14
-#
-#endregion
 
-#region MKDocs App settings
 site_name: Microsoft Teams Development Samples
 plugins:
     - search
@@ -94,7 +70,6 @@ repo_url: https://github.com/pnp/teams-dev-samples
 edit_uri: tree/Docs/docs
 site_url: https://pnp.github.io/teams-dev-samples/
 site_description: A gallery of Microsoft Teams samples created by the community
-#endregion
 
 # Uncomment during testing if you need to change the default web server settings
 

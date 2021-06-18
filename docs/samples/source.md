@@ -29,6 +29,13 @@ filteroptions:
       filter: '[data-source=''pnp'']'
 ---
 
-While the community samples are all in the PnP Github repository [teams-dev-samples](https://github.com/PnP/teams-dev-samples), the Microsoft samples come from a number of locations. To view samples based on their location/source, use this page.
+Use this page to find samples based on their location:
+
+* [Microsoft App Templates](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates), which are complete applications you can deploy or use as a starting point for your application
+* [Bot Builder samples](https://github.com/microsoft/BotBuilder-Samples) specific to Microsoft Teams from the Azure Bot Team
+* Microsoft Teams solutions in the [msft-teams](https://github.com/msft-teams/) repositories
+* [Office Developer samples](https://github.com/OfficeDev) from Microsoft Teams engineering and cloud advocacy
+* Community samples in the PnP Github repository [teams-dev-samples](https://github.com/PnP/teams-dev-samples)
+
 
 To learn more about how to use these samples, please refer to our [getting started](../gettingstarted/index.md) section.

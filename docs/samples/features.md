@@ -36,6 +36,12 @@ filteroptions:
       filter: '[data-feature=''other'']'   
 ---
 
-Teams applications can include one or more capabilities such as tabs and bots.
+Teams applications can include one or more capabilities:
 
-To learn more about how to use these samples, please refer to our [getting started](../gettingstarted/index.md) section.
+ * Bot - A conversational user interface that interacts with users in the Teams chat user interface
+ * Meetings - An application that can interact with users attending a Teams meeting
+ * Messaging extensions, which allow you to add to the Teams command bar, compose box, and context menus
+ * Tab - A visual user interface implemented as a web page running in an IFrame
+ * Other capabilities include connectors (configurable services that can send notifications to Teams channels), task modules (modal dialog boxes) and webhooks (a simplified way for users in a Teams channel to send messages to a web service)
+
+
