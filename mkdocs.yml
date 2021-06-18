@@ -34,7 +34,7 @@ plugins:
 nav:
   - Samples:
     - By Type: index.md
-    - By Feature: samples/features.md
+    - By Capability: samples/features.md
     - By Source: samples/source.md
     - CLIENT SIDE CODE: samples/client_language.md
     - By Client Language: samples/client_language.md
@@ -98,5 +98,4 @@ site_description: A gallery of Microsoft Teams samples created by the community
 
 # Uncomment during testing if you need to change the default web server settings
 
-#dev_addr: '192.168.24.52:8000'  # BG nubuntu
 # dev_addr: '127.0.0.1:443'
