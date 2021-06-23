@@ -150,7 +150,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-attendance.png",
+        "alt": "Attendance app is a Power Apps based solution to take attendance in educational tenant."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -236,7 +243,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-book-a-room.png",
+        "alt": "Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -277,10 +291,10 @@
     "reponame": "microsoft-teams-apps-celebrate",
     "source": "pnp",
     "title": "Celebrate App Template",
-    "shortDescription": "Celebrations is a Teams app that helps team members celebrate each others\u2019 birthdays, anniversaries, and other recurring events.",
+    "shortDescription": "Celebrations is a Teams app that helps team members celebrate each others’ birthdays, anniversaries, and other recurring events.",
     "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations",
     "longDescription": [
-      "Celebrations is a Teams app that helps team members celebrate each others\u2019 birthdays, anniversaries, and other recurring events."
+      "Celebrations is a Teams app that helps team members celebrate each others’ birthdays, anniversaries, and other recurring events."
     ],
     "creationDateTime": "2019-10-08",
     "updateDateTime": "2019-10-08",
@@ -330,7 +344,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-celebrate.png",
+        "alt": "Celebrations is a Teams app that helps team members celebrate each others’ birthdays, anniversaries, and other recurring events."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -424,7 +445,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-company-communicator.png",
+        "alt": "The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -469,10 +497,10 @@
     "reponame": "microsoft-teams-apps-contact-group-lookup",
     "source": "pnp",
     "title": "Contact Group App Template",
-    "shortDescription": "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization\u0027s contact groups (formerly known as distribution lists or communication groups).",
+    "shortDescription": "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization's contact groups (formerly known as distribution lists or communication groups).",
     "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#contact-group-lookup-",
     "longDescription": [
-      "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization\u0027s contact groups (formerly known as distribution lists or communication groups)."
+      "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization's contact groups (formerly known as distribution lists or communication groups)."
     ],
     "creationDateTime": "2020-07-13",
     "updateDateTime": "2020-07-13",
@@ -522,7 +550,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-contact-group-lookup.png",
+        "alt": "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization's contact groups (formerly known as distribution lists or communication groups)."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -608,7 +643,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-crowd-sourcer.png",
+        "alt": "CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -702,7 +744,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-custom-stickers.png",
+        "alt": "This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -788,7 +837,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-expert-finder.png",
+        "alt": "Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -833,10 +889,10 @@
     "reponame": "microsoft-teams-apps-faq-plus",
     "source": "pnp",
     "title": "FAQ Plus App Template",
-    "shortDescription": "FAQ Plus is a friendly Q\u0026A bot that brings a human in the loop when it is unable to help.",
+    "shortDescription": "FAQ Plus is a friendly Q&A bot that brings a human in the loop when it is unable to help.",
     "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#faq-plus",
     "longDescription": [
-      "FAQ Plus is a friendly Q\u0026A bot that brings a human in the loop when it is unable to help."
+      "FAQ Plus is a friendly Q&A bot that brings a human in the loop when it is unable to help."
     ],
     "creationDateTime": "2020-07-02",
     "updateDateTime": "2020-07-02",
@@ -886,7 +942,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-faq-plus.png",
+        "alt": "FAQ Plus is a friendly Q&A bot that brings a human in the loop when it is unable to help."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -984,7 +1047,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-goal-tracker.png",
+        "alt": "Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1082,7 +1152,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-great-ideas.png",
+        "alt": "The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1180,7 +1257,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-group-activities.png",
+        "alt": "Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1274,7 +1358,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-grow-your-skills.png",
+        "alt": "The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1319,10 +1410,10 @@
     "reponame": "microsoft-teams-apps-hr-support",
     "source": "pnp",
     "title": "HR Support App Template",
-    "shortDescription": "HR Support bot is a friendly Q\u0026A bot that brings a support professional/expert from the HR team in the loop when it is unable to help",
+    "shortDescription": "HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help",
     "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support",
     "longDescription": [
-      "HR Support bot is a friendly Q\u0026A bot that brings a support professional/expert from the HR team in the loop when it is unable to help"
+      "HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help"
     ],
     "creationDateTime": "2020-04-30",
     "updateDateTime": "2020-04-30",
@@ -1372,7 +1463,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-hr-support.png",
+        "alt": "HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1470,7 +1568,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-icebreaker.png",
+        "alt": "Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1560,7 +1665,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-incentives.png",
+        "alt": "Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1650,7 +1762,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-incident-reporter.png",
+        "alt": "The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1748,7 +1867,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-open-badges.png",
+        "alt": "Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1793,10 +1919,10 @@
     "reponame": "microsoft-teams-apps-quick-responses",
     "source": "pnp",
     "title": "Quick Responses App Template",
-    "shortDescription": "Quick Responses is a Microsoft Teams app that answering users\u0027 frequently asked questions (FAQs) using a messaging extension.",
+    "shortDescription": "Quick Responses is a Microsoft Teams app that answering users' frequently asked questions (FAQs) using a messaging extension.",
     "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#quick-responses",
     "longDescription": [
-      "Quick Responses is a Microsoft Teams app that answering users\u0027 frequently asked questions (FAQs) using a messaging extension."
+      "Quick Responses is a Microsoft Teams app that answering users' frequently asked questions (FAQs) using a messaging extension."
     ],
     "creationDateTime": "2020-03-23",
     "updateDateTime": "2020-03-23",
@@ -1846,7 +1972,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-quick-responses.png",
+        "alt": "Quick Responses is a Microsoft Teams app that answering users' frequently asked questions (FAQs) using a messaging extension."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -1944,7 +2077,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-remote-support.png",
+        "alt": "Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -2042,7 +2182,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-request-a-team.png",
+        "alt": "Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -2140,7 +2287,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-scrums-for-channels.png",
+        "alt": "Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -2230,7 +2384,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-scrums-for-group-chat.png",
+        "alt": "Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -2320,7 +2481,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-share-now.png",
+        "alt": "The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -2418,7 +2586,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-splist-search.png",
+        "alt": "The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -2504,7 +2679,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-staff-checkins.png",
+        "alt": "Staff Check-ins enables oversight communication between your business and field personnel."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -2590,7 +2772,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-visitor-management.png",
+        "alt": "The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -2623,10 +2812,10 @@
     "reponame": "microsoft-teams-apps-workplace-awards",
     "source": "pnp",
     "title": "Workplace Awards App Template",
-    "shortDescription": "The app enables you to setup and manage an employee rewards and recognition (R\u0026R) program where employees can easily nominate and endorse colleagues and your R\u0026R leader can view submitted nominations, grant awards, and announce recipients",
+    "shortDescription": "The app enables you to setup and manage an employee rewards and recognition (R&R) program where employees can easily nominate and endorse colleagues and your R&R leader can view submitted nominations, grant awards, and announce recipients",
     "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#workplace-awards-",
     "longDescription": [
-      "The app enables you to setup and manage an employee rewards and recognition (R\u0026R) program where employees can easily nominate and endorse colleagues and your R\u0026R leader can view submitted nominations, grant awards, and announce recipients"
+      "The app enables you to setup and manage an employee rewards and recognition (R&R) program where employees can easily nominate and endorse colleagues and your R&R leader can view submitted nominations, grant awards, and announce recipients"
     ],
     "creationDateTime": "2020-07-02",
     "updateDateTime": "2020-07-02",
@@ -2676,7 +2865,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-workplace-awards.png",
+        "alt": "The app enables you to setup and manage an employee rewards and recognition (R&R) program where employees can easily nominate and endorse colleagues and your R&R leader can view submitted nominations, grant awards, and announce recipients"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -2721,10 +2917,10 @@
     "reponame": "learning-pathways-solution",
     "source": "pnp",
     "title": "Get Started (Learning Pathways)",
-    "shortDescription": "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL\u0027s prior to installation.",
+    "shortDescription": "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL's prior to installation.",
     "url": "https://github.com/msft-teams/tools/tree/master/M365%20Learning%20Pathways",
     "longDescription": [
-      "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL\u0027s prior to installation."
+      "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL's prior to installation."
     ],
     "creationDateTime": "2020-07-16",
     "updateDateTime": "2020-07-16",
@@ -2774,7 +2970,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/learning-pathways-solution.png",
+        "alt": "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL's prior to installation."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "karuanag",
@@ -2807,10 +3010,10 @@
     "reponame": "teams-home-app",
     "source": "pnp",
     "title": "Microsoft Teams Sample Hub",
-    "shortDescription": "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \u0022art of the possible\u0022 by showcasing the Teams platform and articulating the value that it can deliver.",
+    "shortDescription": "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \"art of the possible\" by showcasing the Teams platform and articulating the value that it can deliver.",
     "url": "https://github.com/msft-teams/tools/tree/master/TeamsSampleHub",
     "longDescription": [
-      "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \u0022art of the possible\u0022 by showcasing the Teams platform and articulating the value that it can deliver."
+      "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \"art of the possible\" by showcasing the Teams platform and articulating the value that it can deliver."
     ],
     "creationDateTime": "2020-08-25",
     "updateDateTime": "2020-08-25",
@@ -2860,7 +3063,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/teams-home-app.png",
+        "alt": "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \"art of the possible\" by showcasing the Teams platform and articulating the value that it can deliver."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -3184,10 +3394,10 @@
     "reponame": "microsoft-teams-bb-authenticate-bot-csharp",
     "source": "pnp",
     "title": "OAuth Bot using C#/ASP.NET Core",
-    "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf",
+    "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user's behalf",
     "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
-      "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf"
+      "Bot authenticates user with Azure AD to allow calling back-end service on user's behalf"
     ],
     "creationDateTime": "2020-07-09",
     "updateDateTime": "2020-07-09",
@@ -3281,10 +3491,10 @@
     "reponame": "microsoft-teams-bb-authenticate-bot-node",
     "source": "pnp",
     "title": "OAuth Bot using NodeJS",
-    "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf",
+    "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user's behalf",
     "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
-      "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf"
+      "Bot authenticates user with Azure AD to allow calling back-end service on user's behalf"
     ],
     "creationDateTime": "2020-07-09",
     "updateDateTime": "2020-07-09",
@@ -3378,10 +3588,10 @@
     "reponame": "microsoft-teams-bb-authenticate-bot-python",
     "source": "pnp",
     "title": "OAuth Bot using Python",
-    "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf",
+    "shortDescription": "Bot authenticates user with Azure AD to allow calling back-end service on user's behalf",
     "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/tutorials/code-samples?WT.mc_id=-github-rogerman#teams-bot-samples",
     "longDescription": [
-      "Bot authenticates user with Azure AD to allow calling back-end service on user\u0027s behalf"
+      "Bot authenticates user with Azure AD to allow calling back-end service on user's behalf"
     ],
     "creationDateTime": "2020-07-09",
     "updateDateTime": "2020-07-09",
@@ -4377,7 +4587,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-bb-action-msgext-csharp.png",
+        "alt": "Simple messaging extension with a action command. Response inserted into the compose message area."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -4952,12 +5169,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-consulting-bot.png",
+        "alt": "This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "BobGerman",
         "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460\u0026u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
         "name": "Bob German",
         "twitter": "Bob1German"
       }
@@ -5051,12 +5275,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-statebot.png",
+        "alt": "This simple bot demonstrates conversation state and user state in Bot Framework v4"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "BobGerman",
         "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460\u0026u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
         "name": "Bob German",
         "twitter": "Bob1German"
       }
@@ -5142,12 +5373,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-spfx-field-visit.png",
+        "alt": "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "BobGerman",
         "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460\u0026u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
         "name": "Bob German",
         "twitter": "Bob1German"
       }
@@ -5233,12 +5471,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-customer-search.png",
+        "alt": "A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "BobGerman",
         "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460\u0026u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
         "name": "Bob German",
         "twitter": "Bob1German"
       }
@@ -5320,12 +5565,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-teams-creator-web-part.png",
+        "alt": "This is a SharePoint web part that creates Teams"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "AJIXuMuK",
         "company": "Sharepointalist",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/17036219?s=460\u0026u=b8e83fb70a90eae0c0e0078c206990785e1a5b6f\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/17036219?s=460&u=b8e83fb70a90eae0c0e0078c206990785e1a5b6f&v=4",
         "name": "Alex Terentiev",
         "twitter": "alexaterentiev"
       }
@@ -5407,12 +5659,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-config-using-sharepoint.png",
+        "alt": "This is a SharePoint web part that creates Teams"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "BobGerman",
         "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460\u0026u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
         "name": "Bob German",
         "twitter": "Bob1German"
       }
@@ -5445,10 +5704,10 @@
     "reponame": "other-send-message-web-part",
     "source": "pnp",
     "title": "SharePoint web part sends to Teams",
-    "shortDescription": "This is a SharePoint web part that displays the user\u0027s Teams and sends messages to channels",
+    "shortDescription": "This is a SharePoint web part that displays the user's Teams and sends messages to channels",
     "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-message",
     "longDescription": [
-      "This is a SharePoint web part that displays the user\u0027s Teams and sends messages to channels"
+      "This is a SharePoint web part that displays the user's Teams and sends messages to channels"
     ],
     "creationDateTime": "2020-05-23",
     "updateDateTime": "2020-05-23",
@@ -5498,7 +5757,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-send-message-web-part.png",
+        "alt": "This is a SharePoint web part that displays the user's Teams and sends messages to channels"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "siddharth-vaghasia",
@@ -5584,12 +5850,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-personal-app-settings.png",
+        "alt": "Shows how to expose the web part editing of an SPFx personal tab"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "AJIXuMuK",
         "company": "Sharepointalist",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/17036219?s=460\u0026u=b8e83fb70a90eae0c0e0078c206990785e1a5b6f\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/17036219?s=460&u=b8e83fb70a90eae0c0e0078c206990785e1a5b6f&v=4",
         "name": "Alex Terentiev",
         "twitter": "alexaterentiev"
       }
@@ -5675,13 +5948,20 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-suggested-members.png",
+        "alt": "SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "luismanez",
         "company": "ClearPeople",
         "pictureUrl": "https://github.com/luismanez.png",
-        "name": "Luis Ma\u00F1ez"
+        "name": "Luis Mañez"
       }
     ],
     "references": [
@@ -5765,7 +6045,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-tag-teams-graph-ext.png",
+        "alt": "Web part to tag a Team using managed metadata and Graph extension"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "fredupstair",
@@ -5851,7 +6138,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-public-teams-not-member-of.png",
+        "alt": "Tab or web part shows Teams the user is not a member of, with an opportunity to join"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "LauraKokkarinen",
@@ -5942,7 +6236,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-webpart-show-my-teams.png",
+        "alt": "Web part shows Teams the user belongs to with links to each Team"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "joelfmrodrigues",
@@ -6029,7 +6330,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-outlook-addin-save-to-teams.png",
+        "alt": "Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "mmsharepoint",
@@ -6063,10 +6371,10 @@
     "reponame": "bot-call-graph-as-user",
     "source": "pnp",
     "title": "Bot calls Graph as a user",
-    "shortDescription": "Simple Bot calls Graph and displays recent emails from the user\u0027s inbox",
+    "shortDescription": "Simple Bot calls Graph and displays recent emails from the user's inbox",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-call-graph-as-user",
     "longDescription": [
-      "Simple Bot calls Graph and displays recent emails from the user\u0027s inbox"
+      "Simple Bot calls Graph and displays recent emails from the user's inbox"
     ],
     "creationDateTime": "2020-01-29",
     "updateDateTime": "2020-01-29",
@@ -6116,12 +6424,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-call-graph-as-user.png",
+        "alt": "Simple Bot calls Graph and displays recent emails from the user's inbox"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "BobGerman",
         "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460\u0026u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
         "name": "Bob German",
         "twitter": "Bob1German"
       }
@@ -6207,7 +6522,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-graph-search-docreview.png",
+        "alt": "Search-based messaging extension queries Graph API to find documents needing review"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "mmsharepoint",
@@ -6294,7 +6616,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-graph-task-creation.png",
+        "alt": "Teams messaging extension uses Microsoft Graph to create tasks in ToDo or Planner"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "stephanbisser",
@@ -6380,12 +6709,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-aad-msal2.png",
+        "alt": "Tab uses MSAL 2.0 in a pop-up and calls Graph API. Shows authorization using auth code PKCE from a static web site."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "BobGerman",
         "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460\u0026u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
         "name": "Bob German",
         "twitter": "Bob1German"
       }
@@ -6467,12 +6803,19 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-aad-spfx.png",
+        "alt": "Tab uses SPFx and Graph to display recent email"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "BobGerman",
         "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460\u0026u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d\u0026v=4",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
         "name": "Bob German",
         "twitter": "Bob1German"
       }
@@ -6558,7 +6901,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-spfx-oauth2.png",
+        "alt": "Tab uses OAuth 2.0 in a pop-up, calls the Box API and displays Box Content Explorer"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "AhmadiRamin",
@@ -6649,7 +6999,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-graph-action-docreview.png",
+        "alt": "Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "mmsharepoint",
@@ -6736,7 +7093,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-spfx-graph-docreview.png",
+        "alt": "Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review. Task module uses SPFx."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "mmsharepoint",
@@ -6827,7 +7191,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-action-jit.png",
+        "alt": "Sample of an Action messaging extension that shows a Just-In-Time installer to install the app into Teams/Personal/Group Chat, and how to post an adaptive card response directly into a conversation"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "rjesh-git",
@@ -6913,7 +7284,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-httpstatuscats.png",
+        "alt": "This is a small sample code to build a messaging extension with Node.js and Bot Framework"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "girliemac",
@@ -6999,7 +7377,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-bot-spfx-taskmodules.png",
+        "alt": "Demonstrates how to use SharePoint Framework powered Task modules in Microsoft Teams applications"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "vman",
@@ -7097,7 +7482,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-spfx-me-experience.png",
+        "alt": "A Teams app where users can start their day and see their personal information using Microsoft Graph Toolkit React components"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "rabwill",
@@ -7135,10 +7527,10 @@
     "reponame": "msgext-search-giphy",
     "source": "pnp",
     "title": "Giphy Search Messaging Extension",
-    "shortDescription": "Search based Messaging extension allows users to find and insert gify\u0027s into a Microsoft Teams message",
+    "shortDescription": "Search based Messaging extension allows users to find and insert gify's into a Microsoft Teams message",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-search-giphy",
     "longDescription": [
-      "Search based Messaging extension allows users to find and insert gify\u0027s into a Microsoft Teams message"
+      "Search based Messaging extension allows users to find and insert gify's into a Microsoft Teams message"
     ],
     "creationDateTime": "2020-10-29",
     "updateDateTime": "2020-10-29",
@@ -7188,7 +7580,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-search-giphy.png",
+        "alt": "Search based Messaging extension allows users to find and insert gify's into a Microsoft Teams message"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "rabwill",
@@ -7369,7 +7768,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-sso.png",
+        "alt": "Two samples in one, with .NET Core and Node implementations; now makes Graph calls from the back end rather than pass the Graph access token to the browser."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "HiltonGiesenow",
@@ -7455,7 +7861,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-sso-teamsclientsdk.png",
+        "alt": "Tab SSO with .NET Core MVC"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "Saikrishna-MSFT",
@@ -7547,19 +7960,26 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/react-teams-send-notification.png",
+        "alt": "Tab sends notifications to Teams users"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "luismanez",
         "company": "ClearPeople",
         "pictureUrl": "https://github.com/luismanez.png",
-        "name": "Luis Ma\u00F1ez"
+        "name": "Luis Mañez"
       },
       {
         "gitHubAccount": "luismanez",
         "company": "ClearPeople",
         "pictureUrl": "https://github.com/luismanez.png",
-        "name": "Luis Ma\u00F1ez"
+        "name": "Luis Mañez"
       }
     ],
     "references": [
@@ -7590,10 +8010,10 @@
     "reponame": "tab-one-productivity-hub",
     "source": "pnp",
     "title": "One Productivity Hub",
-    "shortDescription": "Tab displays user\u0027s calendar, tasks, and emails using Microsoft Graph Toolkit 2.0",
+    "shortDescription": "Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-one-productivity-hub",
     "longDescription": [
-      "Tab displays user\u0027s calendar, tasks, and emails using Microsoft Graph Toolkit 2.0"
+      "Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0"
     ],
     "creationDateTime": "2020-12-17",
     "updateDateTime": "2020-12-17",
@@ -7643,13 +8063,20 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-one-productivity-hub.png",
+        "alt": "Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "sebastienlevert",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/sebastienlevert.png",
-        "name": "S\u00E9bastien Levert",
+        "name": "Sébastien Levert",
         "twitter": "sebastienlevert"
       }
     ],
@@ -7730,7 +8157,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-sso-azuread.png",
+        "alt": "This sample shows how to implement Azure AD Single Sign-on for a Bot in Microsoft Teams"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "Saikrishna-MSFT",
@@ -7826,7 +8260,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-virtual-events-meeting-extensibility.png",
+        "alt": "Shows how to create an app with a bot that calls users into a meeting with a custom event"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "Saikrishna-MSFT",
@@ -7930,7 +8371,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-proactive-messaging-node.png",
+        "alt": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "HiltonGiesenow",
@@ -8020,7 +8468,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-proactive-messaging-netcore.png",
+        "alt": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "HiltonGiesenow",
@@ -8110,7 +8565,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-b2c-chat-bot.png",
+        "alt": "Allows citizen end users get in touch with an SME / Support Agent working in Teams"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "arun-msft",
@@ -8230,7 +8692,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/react-teams-meeting-app-questionnaire.png",
+        "alt": "Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "nanddeepn",
@@ -8321,7 +8790,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-bot-SPUploader.png",
+        "alt": "Provides a basis for building a digital asset / document repository management app."
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "Saikrishna-MSFT",
@@ -8421,13 +8897,20 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-activity-feed.png",
+        "alt": "Simple Kudos app notifies users of new kudos via the Teams activity feed and Microsoft Graph"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "sebastienlevert",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/sebastienlevert.png",
-        "name": "S\u00E9bastien Levert",
+        "name": "Sébastien Levert",
         "twitter": "sebastienlevert"
       }
     ],
@@ -8455,10 +8938,10 @@
     "reponame": "app-contoso-hr-talent-app",
     "source": "pnp",
     "title": "HR Talent App demo/lab",
-    "shortDescription": "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn\u0027t get into the Bot Framework till 4.6)",
+    "shortDescription": "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)",
     "url": "https://github.com/OfficeDev/msteams-sample-contoso-hr-talent-app",
     "longDescription": [
-      "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn\u0027t get into the Bot Framework till 4.6)"
+      "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)"
     ],
     "creationDateTime": "2019-10-04",
     "updateDateTime": "2019-10-04",
@@ -8508,7 +8991,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-contoso-hr-talent-app.png",
+        "alt": "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -8614,7 +9104,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-emergency-response.png",
+        "alt": "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -8708,7 +9205,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-one-productivity-hub-workshop.png",
+        "alt": "Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -8794,7 +9298,14 @@
         "value": ""
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "order": 100,
+        "type": "image",
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-customer-orders.png",
+        "alt": "From the Learn Together event of December 15, 2020"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "microsoft",
@@ -10048,10 +10559,10 @@
     "reponame": "officedev-bot-proactive-messaging-csharp-coordinate-logger",
     "source": "pnp",
     "title": "Teams bot proactive messaging across users and channels",
-    "shortDescription": "Teams Bot records \u0022coordinates\u0022 (conversation, channel info) and sends proactive messages",
+    "shortDescription": "Teams Bot records \"coordinates\" (conversation, channel info) and sends proactive messages",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/bot-proactive-messaging/csharp/coordinate-logger/Bot/CoordinateLoggerActivityHandler.cs",
     "longDescription": [
-      "Teams Bot records \u0022coordinates\u0022 (conversation, channel info) and sends proactive messages"
+      "Teams Bot records \"coordinates\" (conversation, channel info) and sends proactive messages"
     ],
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
@@ -10145,10 +10656,10 @@
     "reponame": "officedev-bot-proactive-messaging-csharp-proactive-cmd",
     "source": "pnp",
     "title": "Teams bot with Polly retry policies",
-    "shortDescription": "Teams bot uses \u0022Polly\u0022 policies for throttling and exception handling, see http://www.thepollyproject.org/",
+    "shortDescription": "Teams bot uses \"Polly\" policies for throttling and exception handling, see http://www.thepollyproject.org/",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-proactive-messaging/csharp/proactive-cmd",
     "longDescription": [
-      "Teams bot uses \u0022Polly\u0022 policies for throttling and exception handling, see http://www.thepollyproject.org/"
+      "Teams bot uses \"Polly\" policies for throttling and exception handling, see http://www.thepollyproject.org/"
     ],
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
@@ -10339,10 +10850,10 @@
     "reponame": "officedev-connector-generic-nodejs",
     "source": "pnp",
     "title": "Generic Connector",
-    "shortDescription": "Generic connector that\u0027s easy to customize for any system which supports webhooks",
+    "shortDescription": "Generic connector that's easy to customize for any system which supports webhooks",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/connector-generic/nodejs",
     "longDescription": [
-      "Generic connector that\u0027s easy to customize for any system which supports webhooks"
+      "Generic connector that's easy to customize for any system which supports webhooks"
     ],
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
@@ -10885,10 +11396,10 @@
     "reponame": "officedev-meetings-content-bubble-csharp",
     "source": "pnp",
     "title": "Content Bubble Meeting app",
-    "shortDescription": "Illustrates how to implement the \u0022content bubble\u0022 in-meeting experience",
+    "shortDescription": "Illustrates how to implement the \"content bubble\" in-meeting experience",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/csharp",
     "longDescription": [
-      "Illustrates how to implement the \u0022content bubble\u0022 in-meeting experience"
+      "Illustrates how to implement the \"content bubble\" in-meeting experience"
     ],
     "creationDateTime": "2021-04-06",
     "updateDateTime": "2021-04-06",
@@ -10978,10 +11489,10 @@
     "reponame": "officedev-meetings-content-bubble-nodejs",
     "source": "pnp",
     "title": "Content Bubble Meeting app",
-    "shortDescription": "Illustrates how to implement the \u0022content bubble\u0022 in-meeting experience",
+    "shortDescription": "Illustrates how to implement the \"content bubble\" in-meeting experience",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/meetings-content-bubble/nodejs",
     "longDescription": [
-      "Illustrates how to implement the \u0022content bubble\u0022 in-meeting experience"
+      "Illustrates how to implement the \"content bubble\" in-meeting experience"
     ],
     "creationDateTime": "2021-04-06",
     "updateDateTime": "2021-04-06",
@@ -11257,10 +11768,10 @@
     "reponame": "officedev-msgext-link-unfurling-reddit-csharp",
     "source": "pnp",
     "title": "Custom display of Reddit links",
-    "shortDescription": "Messaging extension that detects Reddit links and shows a custom \u0022unfurling\u0022 experience",
+    "shortDescription": "Messaging extension that detects Reddit links and shows a custom \"unfurling\" experience",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/msgext-link-unfurling-reddit/csharp",
     "longDescription": [
-      "Messaging extension that detects Reddit links and shows a custom \u0022unfurling\u0022 experience"
+      "Messaging extension that detects Reddit links and shows a custom \"unfurling\" experience"
     ],
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
@@ -11536,10 +12047,10 @@
     "reponame": "officedev-outgoing-webhook-csharp",
     "source": "pnp",
     "title": "Outgoing webhook in C#",
-    "shortDescription": "This project is an implementation of a very simple Outgoing Webhook for Microsoft Teams. All it does is verify that what\u0027s sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it.",
+    "shortDescription": "This project is an implementation of a very simple Outgoing Webhook for Microsoft Teams. All it does is verify that what's sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it.",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/csharp",
     "longDescription": [
-      "This project is an implementation of a very simple Outgoing Webhook for Microsoft Teams. All it does is verify that what\u0027s sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it."
+      "This project is an implementation of a very simple Outgoing Webhook for Microsoft Teams. All it does is verify that what's sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it."
     ],
     "creationDateTime": "2017-12-17",
     "updateDateTime": "2017-12-17",
@@ -11625,10 +12136,10 @@
     "reponame": "officedev-outgoing-webhook-nodejs",
     "source": "pnp",
     "title": "Outgoing webhook in NodeJS",
-    "shortDescription": "This project is an implementation of a very simple Outgoing Webhook for Microsoft Teams. All it does is verify that what\u0027s sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it.",
+    "shortDescription": "This project is an implementation of a very simple Outgoing Webhook for Microsoft Teams. All it does is verify that what's sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it.",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/outgoing-webhook/nodejs",
     "longDescription": [
-      "This project is an implementation of a very simple Outgoing Webhook for Microsoft Teams. All it does is verify that what\u0027s sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it."
+      "This project is an implementation of a very simple Outgoing Webhook for Microsoft Teams. All it does is verify that what's sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it."
     ],
     "creationDateTime": "2017-12-17",
     "updateDateTime": "2017-12-17",
@@ -12729,10 +13240,10 @@
     "reponame": "officedev-tab-channel-group-mvc",
     "source": "pnp",
     "title": "Channel/group tabs in ASP.NET Core with MVC",
-    "shortDescription": "In this quickstart we\u0027ll walk-through creating a custom channel/group tab with ASP.Net Core and MVC. We\u0027ll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams.",
+    "shortDescription": "In this quickstart we'll walk-through creating a custom channel/group tab with ASP.Net Core and MVC. We'll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams.",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group/mvc-csharp",
     "longDescription": [
-      "In this quickstart we\u0027ll walk-through creating a custom channel/group tab with ASP.Net Core and MVC. We\u0027ll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams."
+      "In this quickstart we'll walk-through creating a custom channel/group tab with ASP.Net Core and MVC. We'll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams."
     ],
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
@@ -12818,10 +13329,10 @@
     "reponame": "officedev-tab-channel-group-razor",
     "source": "pnp",
     "title": "Channel/group tabs in ASP.NET Core with Razor",
-    "shortDescription": "In this quickstart we\u0027ll walk-through creating a custom channel/group tab with ASP.Net Core and Razor. We\u0027ll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams.",
+    "shortDescription": "In this quickstart we'll walk-through creating a custom channel/group tab with ASP.Net Core and Razor. We'll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams.",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-channel-group/razor-csharp",
     "longDescription": [
-      "In this quickstart we\u0027ll walk-through creating a custom channel/group tab with ASP.Net Core and Razor. We\u0027ll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams."
+      "In this quickstart we'll walk-through creating a custom channel/group tab with ASP.Net Core and Razor. We'll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams."
     ],
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
@@ -13000,10 +13511,10 @@
     "reponame": "officedev-tab-personal-mvc",
     "source": "pnp",
     "title": "Personal tabs in ASP.NET Core with MVC",
-    "shortDescription": "In this quickstart we\u0027ll walk-through creating a custom channel/group tab with ASP.Net Core and MVC. We\u0027ll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams.",
+    "shortDescription": "In this quickstart we'll walk-through creating a custom channel/group tab with ASP.Net Core and MVC. We'll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams.",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-personal/mvc-csharp",
     "longDescription": [
-      "In this quickstart we\u0027ll walk-through creating a custom channel/group tab with ASP.Net Core and MVC. We\u0027ll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams."
+      "In this quickstart we'll walk-through creating a custom channel/group tab with ASP.Net Core and MVC. We'll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams."
     ],
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
@@ -13089,10 +13600,10 @@
     "reponame": "officedev-tab-personal-razor",
     "source": "pnp",
     "title": "Personal tabs in ASP.NET Core with Razor",
-    "shortDescription": "In this quickstart we\u0027ll walk-through creating a custom channel/group tab with ASP.Net Core and Razor. We\u0027ll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams.",
+    "shortDescription": "In this quickstart we'll walk-through creating a custom channel/group tab with ASP.Net Core and Razor. We'll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams.",
     "url": "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-personal/razor-csharp",
     "longDescription": [
-      "In this quickstart we\u0027ll walk-through creating a custom channel/group tab with ASP.Net Core and Razor. We\u0027ll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams."
+      "In this quickstart we'll walk-through creating a custom channel/group tab with ASP.Net Core and Razor. We'll also use App Studio for Microsoft Teams to finalize your app manifest and deploy your tab to Teams."
     ],
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
