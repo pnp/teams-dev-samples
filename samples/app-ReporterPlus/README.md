@@ -1,7 +1,7 @@
 ﻿# ReporterPlus – Microsoft Teams Device Capabilities Application.  
 
 ## Summary
-
+The ReporterPlus sample app explains the MS Teams Device Capability features. This app is useful to Scan a barcode, capture images and record audio. After providing these inputs, the user can assign it to the approver and submit. Now the app sends an Adaptive card with refresh functionality to the group/meeting/team and to the approver's mail. The approver can Approve/Reject the request from either Teams or Outlook and the card on the other platform gets auto updated with the Universal Action Model.
 
 
 ## Frameworks
