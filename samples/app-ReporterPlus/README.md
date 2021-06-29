@@ -6,7 +6,7 @@ The sample app demonstrates the power of integrating Teams platform with device 
 Teams apps allow end users to do more by directly integrating with native device capabilities. This integration also reduces the barrier to app development, speeds-up development-cycle, and creates new scenarios or use-cases for the developer community.<br/>
 The sample allows end users to capture and report incidents / tasks / tickets for approval. While the sample app can be used in varied scenarios or use cases, for the purpose of demonstration and walkthrough, we assume the sample is being used for submitting a request for replacing a damaged office asset. 
 
-<img src="./Docs/GIF/SubmittingRequest.gif" alt="SubmittingRequest" style="max-width: 100%;">
+<img src="./Docs/GIF/SubmittingRequest.gif" alt="SubmittingRequest" style="max-width: 100%">
 
 ### Submitting a request
 
