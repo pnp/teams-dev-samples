@@ -54,7 +54,7 @@
     "messageTeamMembers"
   ],
   "validDomains": [
-    "<<BaseUrl>>"
+    "*.ngrok.io"
   ],
   "devicePermissions": [
     "media"
