@@ -32,10 +32,5 @@ namespace ReporterPlus.Controllers
             // The adapter will invoke the bot.
             await Adapter.ProcessAsync(Request, Response, Bot);
         }
-        //[HttpPost]
-        //public async Task<IActionResult> PostMessages([FromBody] Activity activity)
-        //{
-        //    return Ok();
-        //}
     }
 }

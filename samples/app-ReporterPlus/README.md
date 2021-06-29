@@ -2,7 +2,27 @@
 
 ## Summary
 
-The ReporterPlus sample app explains the MS Teams Device Capability features. This app is useful to Scan a barcode, capture images and record audio. After providing these inputs, the user can assign it to the approver and submit. Now the app sends an Adaptive card with refresh functionality to the group/meeting/team and to the approver's mail. The approver can Approve/Reject the request from either Teams or Outlook and the card on the other platform gets auto updated with the Universal Action Model.
+The sample app demonstrates the power of integrating Teams platform with device capabilities such as camera, QR or barcode scanner, photo gallery and microphone. This integration reduces the barrier to app development, speeds-up development-cycle, and creates new scenarios or use-cases for the developer community.
+Teams apps allow end users to do more by directly integrating with native device capabilities. This integration also reduces the barrier to app development, speeds-up development-cycle, and creates new scenarios or use-cases for the developer community.
+The sample allows end users to capture and report incidents / tasks / tickets for approval. While the sample app can be used in varied scenarios or use cases, for the purpose of demonstration and walkthrough, we assume the sample is being used for submitting a request for replacing a damaged office asset. 
+
+<img src="./Docs/GIF/SubmittingRequest.gif" alt="SubmittingRequest" style="width: 100%;">
+
+### Submitting a request
+
+* The sample makes use of an action-based Messaging extension to invoke the submission flow from any scope (1:1 chat, group chat, channel).
+* In the task module interface, app allows user to scan an asset using [QR / Barcode scanner](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/device-capabilities/qr-barcode-scanner-capability).
+* App makes use People picker component to view and select other users for approving requests.
+* App makes use of device’s camera and annotation capabilities to take a picture, annotate and add to request.
+* Device’s microphone is used to record an optional voice message that will be submitted to the approver.
+
+<img src="./Docs/GIF/ApprovingRequest.gif" alt="ApprovingRequest" style="width: 100%;">
+
+### Approving request
+
+* Adaptive card is posted in the same scope where messaging extension was invoked.
+* Adaptive card with request for approval is also sent to the approver’s email as [actionable message](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview?tabs=mobile#universal-actions).
+* Requester and approver view different views of the same Adaptive card as the app leverages [user specific views](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/user-specific-views?tabs=mobile).
 
 ## Frameworks
 
@@ -178,9 +198,50 @@ Make sure the required values such as `MicrosoftAppId` and `BaseUrl` are populat
 Step 5: Try out the app
 ==================================================
 
+### Submit the Request
 
-## Limitations
+* Invoke the app using Messaging extension from a 1:1 chat, group chat or channel scope
+* Scan QR / Bar code to accept input for the asset.
+* Use the ‘Assign’ button to invoke people picker and select a user for approving your request.
+* Use camera to take pictures  (maximum of 5) and add it to your request.
+* Invoke mic using the microphone icon and record your voice message. 
 
+### Approve Request
 
-## App Features
+* Option A – Approve the request directly in Teams where adaptive card is posted with Approve / Reject options.
+* Option B – Open outlook on Web. Look for email titled ‘New Request Assigned’.
+* Approve the request on e-mail. The corresponding adaptive card will refresh to Approved state.
+
+## Take it Further
+
+This sample app can provide as basis for multiple real world scenarios across different industries.
+
+<table>
+<tbody>
+<tr>
+<td class="col-md-8" style="color:black;" align="center"><b>Industry</b></td>
+<td class="col-md-8" style="color:black;" align="center"><b>Scenario Description</b></td>
+</tr>
+<tr>
+<td>Cross-Industry</td>
+<td>Allocating assets for replacement, repairs. App can be extended to empower employees to submit asset requests and track it to completion</td>
+</tr>
+<tr>
+<td>Manufacturing / Construction</td>
+<td>Allows submission of CapEx requests for approvals. Typically these requests have information around expenditure item, images</td>
+</tr>
+<tr>
+<td>Healthcare</td>
+<td>App can be extended for patient care taking photos of patients, scanning patient IDs and securely sharing information among other hospital staff for further diagnosis</td>
+</tr>
+<tr>
+<td>Energy & Utils, Construction, Manufacturing</td>
+<td>Reporting incidents that happen on factory floor or construction floor</td>
+</tr>
+<tr>
+<td>Hospitality</td>
+<td>Reporting incidents such as broken items in guest rooms, tasks such as clean up to be assigned to others and tracked to completion</td>
+</tr>
+</tbody>
+</table>
 
