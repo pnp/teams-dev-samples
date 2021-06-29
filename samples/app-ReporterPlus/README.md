@@ -2,18 +2,18 @@
 
 ## Summary
 
-The sample app demonstrates the power of integrating Teams platform with device capabilities such as camera, QR or barcode scanner, photo gallery and microphone. This integration reduces the barrier to app development, speeds-up development-cycle, and creates new scenarios or use-cases for the developer community.
-Teams apps allow end users to do more by directly integrating with native device capabilities. This integration also reduces the barrier to app development, speeds-up development-cycle, and creates new scenarios or use-cases for the developer community.
+The sample app demonstrates the power of integrating Teams platform with device capabilities such as camera, QR or barcode scanner, photo gallery and microphone. This integration reduces the barrier to app development, speeds-up development-cycle, and creates new scenarios or use-cases for the developer community.<br/>
+Teams apps allow end users to do more by directly integrating with native device capabilities. This integration also reduces the barrier to app development, speeds-up development-cycle, and creates new scenarios or use-cases for the developer community.<br/>
 The sample allows end users to capture and report incidents / tasks / tickets for approval. While the sample app can be used in varied scenarios or use cases, for the purpose of demonstration and walkthrough, we assume the sample is being used for submitting a request for replacing a damaged office asset. 
 
-<img src="./Docs/GIF/SubmittingRequest.gif" alt="SubmittingRequest" style="width: 100%;">
+<img src="./Docs/GIF/SubmittingRequest.gif" alt="SubmittingRequest" style="max-width: 100%;">
 
 ### Submitting a request
 
 * The sample makes use of an action-based Messaging extension to invoke the submission flow from any scope (1:1 chat, group chat, channel).
 * In the task module interface, app allows user to scan an asset using [QR / Barcode scanner](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/device-capabilities/qr-barcode-scanner-capability).
 * App makes use People picker component to view and select other users for approving requests.
-* App makes use of device’s camera and annotation capabilities to take a picture, annotate and add to request.
+* App makes use of [device’s camera and annotation capabilities](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/device-capabilities/mobile-camera-image-permissions) to take a picture, annotate and add to request.
 * Device’s microphone is used to record an optional voice message that will be submitted to the approver.
 
 <img src="./Docs/GIF/ApprovingRequest.gif" alt="ApprovingRequest" style="width: 100%;">
