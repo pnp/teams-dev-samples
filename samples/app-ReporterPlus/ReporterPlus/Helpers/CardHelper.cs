@@ -14,13 +14,13 @@ namespace ReporterPlus.Helpers
             Attachment cardAttachment;
             switch (cardType)
             {
-                case "BaseCard":
+                case Status.BaseCard:
                     string[] baseCard = { ".", "Resources", "BaseCard.json" };
                     cardAttachment = GetPayloadBasedOnCardType(baseCard, blobData, Constants.PendingImageUrl, out cardJsonstring);
                     string[] baseMail = { ".", "Resources", "AssignedToCardEmail.json" };
                     GetPayloadBasedOnCardType(baseMail, blobData, Constants.PendingImageUrl, out cardJsonstring);
                     return cardAttachment;
-                case "Pending":
+                case Status.Pending:
                     string[] refresh = { ".", "Resources", "AssignedToCard.json" };
                     cardAttachment = GetPayloadBasedOnCardType(refresh, blobData, Constants.PendingImageUrl, out cardJsonstring);
                     if (channel == "outlook")
@@ -29,7 +29,7 @@ namespace ReporterPlus.Helpers
                         GetPayloadBasedOnCardType(approvedMail, blobData, Constants.PendingImageUrl, out cardJsonstring);
                     }
                     return cardAttachment;
-                case "Approved":
+                case Status.Approved:
                     string[] approved = { ".", "Resources", "ApproveRejectCard.json" };
                     cardAttachment = GetPayloadBasedOnCardType(approved, blobData, Constants.ApprovedImageUrl, out cardJsonstring);
                     if(channel == "outlook")
@@ -38,7 +38,7 @@ namespace ReporterPlus.Helpers
                         GetPayloadBasedOnCardType(approvedMail, blobData, Constants.ApprovedImageUrl, out cardJsonstring);
                     }
                     return cardAttachment;
-                case "Rejected":
+                case Status.Rejected:
                     string[] reject = { ".", "Resources", "ApproveRejectCard.json" };
                     cardAttachment = GetPayloadBasedOnCardType(reject, blobData, Constants.RejectedImageUrl, out cardJsonstring);
                     if (channel == "outlook")

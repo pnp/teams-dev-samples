@@ -83,7 +83,7 @@ namespace ReporterPlus.Helpers
             var payloadData = new
             {
                 requestID = requestID,
-                status = "Pending",
+                status = Status.Pending,
                 itemName = taskModuleOutput.data.ItemName,
                 itemCode = taskModuleOutput.data.ItemCode,
                 assignedToName = taskModuleOutput.data.AssignedTo.displayName,
@@ -115,7 +115,7 @@ namespace ReporterPlus.Helpers
             CloudBlobClient serviceClient = storageAccount.CreateCloudBlobClient();
             CloudBlobContainer container = serviceClient.GetContainerReference(Constants.BlobContainerName);
             CloudBlockBlob blob = container.GetBlockBlobReference(fileName);
-            if (request == "Approved" || request == "Rejected" || messageId != null)
+            if (Status.Approved.Equals(request) || Status.Rejected.Equals(request) || messageId != null)
             {
                 await UpdateBlob(blob, request, messageId);
             }

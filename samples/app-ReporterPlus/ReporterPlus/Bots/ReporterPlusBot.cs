@@ -62,7 +62,7 @@ namespace ReporterPlus.Bots
                 var blobInfo = BlobHelper.GetBlob(data.action.data.reqId, verb).Result;
                 string cardJsonString;
 
-                if (verb == "Refresh" && blobInfo.status == "Pending")
+                if (Status.Refresh.Equals(verb) && Status.Pending.Equals(blobInfo.status))
                 {
                     CardHelper.CreateAdaptiveCardAttachment(blobInfo.status, blobInfo, channel, out cardJsonString);
                     var cardResponse = JObject.Parse(cardJsonString);
@@ -113,13 +113,13 @@ namespace ReporterPlus.Bots
                 return task;
             }
 
-            if (taskModuleOutput.commandId == "BarCodeScanner")
+            if (taskModuleOutput.commandId == Constants.MessageExtensionCommandId)
             {
                 var member = await TeamsInfo.GetMemberAsync(turnContext, taskModuleOutput.data.AssignedTo.objectId, cancellationToken);
                 taskModuleOutput.data.AssignedTo.objectId = member.Id;
                 var blobId = await BlobHelper.UploadToBlob(taskModuleOutput, turnContext);
                 var blobData = BlobHelper.GetBlob(blobId, null).Result;
-                var cardResponse = CardHelper.CreateAdaptiveCardAttachment("BaseCard", blobData, "msteams", out string cardJsonstring);
+                var cardResponse = CardHelper.CreateAdaptiveCardAttachment(Status.BaseCard, blobData, "msteams", out string cardJsonstring);
                 var messageResponse =  await turnContext.SendActivityAsync(MessageFactory.Attachment(cardResponse), cancellationToken);
                 string messageId = messageResponse.Id;
                 BlobHelper.GetBlob(blobId, null, messageId);
@@ -160,7 +160,7 @@ namespace ReporterPlus.Bots
                 throw;
             }
 
-            if (action.CommandId == "BarCodeScanner")
+            if (action.CommandId == Constants.MessageExtensionCommandId)
             {
                 var response = new MessagingExtensionActionResponse()
                 {

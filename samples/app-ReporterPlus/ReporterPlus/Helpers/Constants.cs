@@ -12,6 +12,7 @@
         public static string BlobContainerName;
         public static string BlobConnectionString;
         public static int MaxImagesCount = 5;
+        public static string MessageExtensionCommandId = "BarCodeScanner";
         public static string ComposeExtensionFetch = "composeExtension/fetchTask";
         public static string ComposeExtensionSubmit = "composeExtension/submitAction";
         public static string TaskModuleFetch = "task/fetch";
