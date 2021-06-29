@@ -3,6 +3,7 @@ using Microsoft.Bot.Schema;
 using Newtonsoft.Json;
 using System.IO;
 using ReporterPlus.Models;
+using AdaptiveCards;
 
 namespace ReporterPlus.Helpers
 {
@@ -78,7 +79,7 @@ namespace ReporterPlus.Helpers
             cardJsonstring = template.Expand(payloadData);
             var adaptiveCardAttachmnt = new Attachment()
             {
-                ContentType = "application/vnd.microsoft.card.adaptive",
+                ContentType = AdaptiveCard.ContentType,
                 Content = JsonConvert.DeserializeObject(cardJsonstring),
             };
             return adaptiveCardAttachmnt;
@@ -90,7 +91,7 @@ namespace ReporterPlus.Helpers
             var adaptiveCardJson = File.ReadAllText(Path.Combine(paths));
             var adaptiveCardAttachment = new Attachment()
             {
-                ContentType = "application/vnd.microsoft.card.adaptive",
+                ContentType = AdaptiveCard.ContentType,
                 Content = JsonConvert.DeserializeObject(adaptiveCardJson),
             };
             return adaptiveCardAttachment;

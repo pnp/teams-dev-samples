@@ -1,8 +1,8 @@
-﻿# ReporterPlus – Microsoft Teams Device Capabilities Application.  
+﻿# ReporterPlus – Teams Device Capabilities Application.  
 
 ## Summary
-The ReporterPlus sample app explains the MS Teams Device Capability features. This app is useful to Scan a barcode, capture images and record audio. After providing these inputs, the user can assign it to the approver and submit. Now the app sends an Adaptive card with refresh functionality to the group/meeting/team and to the approver's mail. The approver can Approve/Reject the request from either Teams or Outlook and the card on the other platform gets auto updated with the Universal Action Model.
 
+The ReporterPlus sample app explains the MS Teams Device Capability features. This app is useful to Scan a barcode, capture images and record audio. After providing these inputs, the user can assign it to the approver and submit. Now the app sends an Adaptive card with refresh functionality to the group/meeting/team and to the approver's mail. The approver can Approve/Reject the request from either Teams or Outlook and the card on the other platform gets auto updated with the Universal Action Model.
 
 ## Frameworks
 
@@ -39,8 +39,11 @@ Version|Date|Author|Comments
 
 Step 1: Setup bot in Service
 ====================================
-1. Go to App registrations and create a new app registration in a different tab.
+1. Search for Azure Active Directory in portal.azure.com and Add a "App Registration".
+![image](https://user-images.githubusercontent.com/80528379/123678831-723f1c80-d864-11eb-921c-a87837938504.png)
+
 2. Register an application.
+
 	* Fill out name and select third option for supported account type and click "Register".
 
 ![image](https://user-images.githubusercontent.com/80528379/123212936-0b77d700-d4e3-11eb-9666-14d89b965cd2.png)
@@ -76,7 +79,8 @@ Step 1: Setup bot in Service
 ![image](https://user-images.githubusercontent.com/80528379/123219798-ed15d980-d4ea-11eb-8af2-718ec1222e19.png)
 
 8. Provide the Friendly Name and other required details as requested on the page and Save it.
-	- Provide the Mail-Id on behalf of which you want to Send the Outlook Actionable Message in `Sender email address from which actionable emails will originate`
+	- Provide the Mail-Id on behalf of which you want to Send the Outlook Actionable Message in `Sender email address from which actionable emails will originate` and select the scope as `Global`.
+	- For more details to request for the Originator Id approval, please follow the [documentation](https://docs.microsoft.com/en-us/outlook/actionable-messages/email-dev-dashboard).
 
 ![image](https://user-images.githubusercontent.com/80528379/123217381-239e2500-d4e8-11eb-8f52-da9c507fa9a0.png)
 
@@ -86,10 +90,9 @@ Step 1: Setup bot in Service
 	* Navigate to "API permissions" blade on the left-hand side.
 	* Add following permissions to the application.
 		* Application permissions
-			* User.ReadWrite.All
 			* Mail.Send
-			* Mail.ReadWrite
 
+![image](https://user-images.githubusercontent.com/80528379/123676010-00b19f00-d861-11eb-944d-7290f15aac88.png)
 
 If you are logged in as the Global Administrator, click on the “Grant admin consent for %tenant-name%” button to grant admin consent, else inform your Admin to do the same through the portal.
 
@@ -147,7 +150,7 @@ Step 3: Run the app locally
 3. Update the appsettings.json files
       - `MicrosoftAppId` & `TenantId` from the Step-1 Point-2.
       - `MicrosoftAppPassword` from Step-1 Point-3.
-      - `ServiceUrl` is the URL sent by Teams in the Bot payload in the turnContext.Activity.serviceUrl property, dubug the project to get the URL.
+      - `ServiceUrl` is the URL sent by Teams in the Bot payload in the turnContext.Activity.serviceUrl property, debug the project to get the URL.
       - `BaseUrl` is the ngrok url that has been generated for the tunneling service as described in the Step-3 Point-4.
       - `OriginatorId` from Step-1 Point-8.
       - `SenderEmail` with the email that you have provided to create an Originator Id in the Step-1 Point-8.
@@ -158,8 +161,8 @@ Step 3: Run the app locally
 
 4. Run Ngrok to expose your local web server via a public URL. Make sure to point it to your Ngrok URI. For example, if you're using port 3978 locally, run:
 
-		Win: ./ngrok http 3978 -host-header=localhost:3978 -subdomain="contoso"
-		Mac: /ngrok http 3978 -host-header=localhost:3978 -subdomain="contoso".
+		Win: ngrok http 3978 -host-header=localhost:3978 -subdomain="contoso"
+		Mac: ngrok http 3978 -host-header=localhost:3978 -subdomain="contoso".
 
 5. Update messaging endpoint in the Azure Bots Channel Registration. Open the Bot channel registration, click on Configuration/Settings on the left pane, whichever is available and update the messaging endpoint to the endpoint that bot app will be listening on. Update the ngrok URL in the below format for the messaging endpoint.
 

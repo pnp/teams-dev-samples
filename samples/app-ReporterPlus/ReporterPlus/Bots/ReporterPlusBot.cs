@@ -34,7 +34,7 @@ namespace ReporterPlus.Bots
 
         protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
         {
-            if (turnContext.Activity.Name == "composeExtension/fetchTask")
+            if (Constants.ComposeExtensionFetch.Equals(turnContext.Activity.Name))
             {
                 MessagingExtensionAction action = new MessagingExtensionAction();
                 var actionJson = JsonConvert.DeserializeObject<MessagingExtensionActionDeserializer>(turnContext.Activity.Value.ToString());
@@ -42,19 +42,19 @@ namespace ReporterPlus.Bots
                 var task = await this.OnTeamsMessagingExtensionFetchTaskAsync(turnContext, action, cancellationToken);
                 return CreateInvokeResponse(task);
             }
-            else if (turnContext.Activity.Name == "composeExtension/submitAction")
+            else if (Constants.ComposeExtensionSubmit.Equals(turnContext.Activity.Name))
             {
                 MessagingExtensionAction action = new MessagingExtensionAction();
                 var task = await this.OnTeamsMessagingExtensionSubmitActionAsync(turnContext, action, cancellationToken);
                 return CreateInvokeResponse(task);
             }
-            else if (turnContext.Activity.Name == "task/fetch")
+            else if (Constants.TaskModuleFetch.Equals(turnContext.Activity.Name))
             {
                 var actionJson = JsonConvert.DeserializeObject<ActionBase>(turnContext.Activity.Value.ToString());
                 var task = await ReturnViewDetails(actionJson.data.reqId);
                 return CreateInvokeResponse(task);
             }
-            else if (turnContext.Activity.Name == "adaptiveCard/action")
+            else if (Constants.AdaptiveCardAction.Equals(turnContext.Activity.Name))
             {
                 var data = JsonConvert.DeserializeObject<ActionType>(turnContext.Activity.Value.ToString());
                 string channel = turnContext.Activity.ChannelId;
@@ -91,7 +91,7 @@ namespace ReporterPlus.Bots
             return null;
         }
 
-        private void UpdateCardInTeams(BlobDataDeserializer blobData, Attachment adaptiveCardAttachment)
+        private async void UpdateCardInTeams(BlobDataDeserializer blobData, Attachment adaptiveCardAttachment)
         {
             using var connector = new ConnectorClient(new Uri(Constants.ServiceUrl), Constants.MicrosoftAppId, Constants.MicrosoftAppPassword);
             AppCredentials.TrustServiceUrl(Constants.ServiceUrl, DateTime.MaxValue);
@@ -100,7 +100,7 @@ namespace ReporterPlus.Bots
             updateActivity.Type = "message";
             updateActivity.Attachments = new List<Attachment> { adaptiveCardAttachment };
             updateActivity.Conversation = new ConversationAccount(id: blobData.conversationId);
-            var response = connector.Conversations.UpdateActivityAsync(updateActivity).Result;
+            await connector.Conversations.UpdateActivityAsync(updateActivity);
         }
 
         protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionSubmitActionAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionAction action, CancellationToken cancellationToken)
@@ -115,6 +115,8 @@ namespace ReporterPlus.Bots
 
             if (taskModuleOutput.commandId == "BarCodeScanner")
             {
+                var member = await TeamsInfo.GetMemberAsync(turnContext, taskModuleOutput.data.AssignedTo.objectId, cancellationToken);
+                taskModuleOutput.data.AssignedTo.objectId = member.Id;
                 var blobId = await BlobHelper.UploadToBlob(taskModuleOutput, turnContext);
                 var blobData = BlobHelper.GetBlob(blobId, null).Result;
                 var cardResponse = CardHelper.CreateAdaptiveCardAttachment("BaseCard", blobData, "msteams", out string cardJsonstring);
@@ -198,13 +200,13 @@ namespace ReporterPlus.Bots
 
         protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
-            var replyText = $"Hi *{turnContext.Activity.From.Name}*, This is a Device Capabilities Application where you can make use of the features like *Barcode Scanner, Image Capturing, Audio Recording*, etc. ";
+            var replyText = $"Hi *{turnContext.Activity.From.Name}*, This is a ReporterPlus Application where you can make use of the features like *Barcode Scanner, Image Capturing, Audio Recording*, etc.";
             await turnContext.SendActivityAsync(MessageFactory.Text(replyText, replyText), cancellationToken);
         }
 
         protected override async Task OnMembersAddedAsync(IList<ChannelAccount> membersAdded, ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
         {
-            var welcomeText = "Hello and welcome to the MS Teams Device Capabilities App";
+            var welcomeText = "Hello and welcome to the ReporterPlus App";
             foreach (var member in membersAdded)
             {
                 if (member.Id != turnContext.Activity.Recipient.Id)

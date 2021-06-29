@@ -36,7 +36,7 @@ namespace ReporterPlus.Helpers
             if(assignedToUserImage != null)
             {
                 blob = container.GetBlobClient(requestID + "-" + taskModuleOutput.data.AssignedTo.objectId + ".jpg");
-                var data = blob.UploadAsync(assignedToUserImage, blobHttpHeader);
+                blob.UploadAsync(assignedToUserImage, blobHttpHeader);
                 assignedToUserImageUrl = blob.Uri.ToString();
             }
             else
@@ -48,7 +48,7 @@ namespace ReporterPlus.Helpers
             if (submittedByUserImage != null)
             {
                 blob = container.GetBlobClient(requestID + "-" + turnContext.Activity.From.AadObjectId + ".jpg");
-                var data = blob.UploadAsync(submittedByUserImage, blobHttpHeader);
+                blob.UploadAsync(submittedByUserImage, blobHttpHeader);
                 submittedByUserImageUrl = blob.Uri.ToString();
             }
             else
@@ -153,6 +153,7 @@ namespace ReporterPlus.Helpers
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.StackTrace);
                 return null;
             }
         }
