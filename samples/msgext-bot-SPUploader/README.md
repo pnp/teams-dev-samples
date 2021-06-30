@@ -99,7 +99,8 @@ Step 2: Create sharepoint app
 	
 	* You need to register a new addin/app in your Sharepoint site, this will generate a ClientID and a Client Secret, which we will use to authenticate.
 	* Navigate to https//{SharePointDomain}.sharepoint.com/sites/{SiteName}/_layouts/15/appregnew.aspx
-		eg: https://xxxxxxxxx.sharepoint.com/sites/TestSite/_layouts/15/appregnew.aspx
+	
+		eg: https//xxxxxxxxx.sharepoint.com/sites/TestSite/_layouts/15/appregnew.aspx
 
 <img src="./Docs/Images/SharepointAppCreation.PNG" alt="Bot Channels" width="1000" height="500">
 
