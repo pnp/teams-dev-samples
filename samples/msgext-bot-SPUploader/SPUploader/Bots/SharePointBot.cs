@@ -15,6 +15,8 @@ using Microsoft.Bot.Schema;
 using Microsoft.Bot.Schema.Teams;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -33,7 +35,14 @@ namespace MeetingExtension_SP.Bots
         {
             this.configuration = configuration;
         }
-
+        protected override async Task OnConversationUpdateActivityAsync(ITurnContext<IConversationUpdateActivity> turnContext, CancellationToken cancellationToken)
+        {
+            JObject context = turnContext.Activity.ChannelData;
+            JObject teamData = JObject.Parse(context.GetValue("team").ToString());
+            ChannelData.ChannelID = teamData.GetValue("id").ToString();
+            ChannelData.TeamID = teamData.GetValue("aadGroupId").ToString();
+            await base.OnConversationUpdateActivityAsync(turnContext, cancellationToken);
+        }
         protected override async Task<InvokeResponse> OnInvokeActivityAsync(ITurnContext<IInvokeActivity> turnContext, CancellationToken cancellationToken)
         {
             if (turnContext.Activity.Name == "composeExtension/fetchTask")
@@ -182,9 +191,15 @@ namespace MeetingExtension_SP.Bots
         protected override async Task<MessagingExtensionActionResponse> OnTeamsMessagingExtensionFetchTaskAsync(ITurnContext<IInvokeActivity> turnContext, MessagingExtensionAction action, CancellationToken cancellationToken)
         {
             //get and store the user details in temp file
-            var tempFilePath = @"Temp/UserFile.txt";
-            System.IO.File.WriteAllText(tempFilePath, turnContext.Activity.From.Name + "," + turnContext.Activity.From.AadObjectId + "," + turnContext.Activity.From.Id);
+            try
+            {
+                var tempFilePath = @"Temp/UserFile.txt";
+                System.IO.File.WriteAllText(tempFilePath, turnContext.Activity.From.Name + "," + turnContext.Activity.From.AadObjectId + "," + turnContext.Activity.From.Id);
+            }
+            catch (Exception e)
+            {
 
+            }
             var response = new MessagingExtensionActionResponse()
                 {
                     Task = new TaskModuleContinueResponse()

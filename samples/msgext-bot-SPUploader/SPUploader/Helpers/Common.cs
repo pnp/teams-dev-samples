@@ -34,7 +34,7 @@ namespace MessageExtension_SP.Helpers
         public static async Task SendChannelData(Attachment card, IConfiguration configuration)
         {
             //Teams channel id in which to create the post.
-            string teamsChannelId = configuration["ChannelId"];
+            string teamsChannelId = ChannelData.ChannelID;
 
             //The Bot Service Url needs to be dynamically fetched (and stored) from the Team. Recommendation is to capture the serviceUrl from the bot Payload and later re-use it to send proactive messages.
             string serviceUrl = configuration["BotServiceUrl"];
@@ -106,7 +106,7 @@ namespace MessageExtension_SP.Helpers
         public static async Task<string> GetManagerId(IConfiguration configuration)
         {
             string tenantId = configuration["TenantId"];
-            string groupId= configuration["TeamId"];
+            string groupId = ChannelData.TeamID;
             try
             {
                 var token = await GetToken(tenantId, configuration);
