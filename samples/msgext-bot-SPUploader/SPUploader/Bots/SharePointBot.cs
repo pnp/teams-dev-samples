@@ -198,7 +198,7 @@ namespace MeetingExtension_SP.Bots
             }
             catch (Exception e)
             {
-
+                Console.WriteLine(e);
             }
             var response = new MessagingExtensionActionResponse()
                 {
