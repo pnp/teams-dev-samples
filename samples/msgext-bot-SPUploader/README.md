@@ -86,7 +86,7 @@ Step 1: Setup bot in Service
 	* Application permissions - User.Read.All and GroupMember.Read.All
 	* Delegated permissions - User.Read (enabled by default)
 
-<img src="./Docs/Images/ApiPermissions.PNG" alt="API Permissions" width="1000" height="500">
+<img src="./Docs/Images/APIPermissions.PNG" alt="API Permissions">
 
 Step 2: Create sharepoint app
 ====================================
@@ -99,7 +99,7 @@ Step 2: Create sharepoint app
 	
 	* You need to register a new addin/app in your Sharepoint site, this will generate a ClientID and a Client Secret, which we will use to authenticate.
 	* Navigate to https//{SharePointDomain}.sharepoint.com/sites/{SiteName}/_layouts/15/appregnew.aspx
-	
+
 		eg: https//xxxxxxxxx.sharepoint.com/sites/TestSite/_layouts/15/appregnew.aspx
 
 <img src="./Docs/Images/SharepointAppCreation.PNG" alt="Bot Channels" width="1000" height="500">
@@ -124,7 +124,7 @@ Step 2: Create sharepoint app
 	* Create Two document libraries to upload the files into sharepoint doc library.
 	* You need to mention these document libraries in appsetting.json as StagingFolder and ApprovedFolder.
 
-<img src="./Docs/Images/CreateDocumentLibrary.png" alt="Create Document Library" width="1000" height="500">
+<img src="./Docs/Images/CreateDocumentLibrary.PNG" alt="Create Document Library">
 <img src="./Docs/Images/AppCreated.png" alt="App Created" width="1000" height="500">
 
 
