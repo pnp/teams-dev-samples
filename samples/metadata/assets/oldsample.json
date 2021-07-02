@@ -70,8 +70,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -153,8 +152,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-attendance.png",
         "alt": "Attendance app is a Power Apps based solution to take attendance in educational tenant."
       }
@@ -164,8 +163,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -247,8 +245,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-book-a-room.png",
         "alt": "Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations."
       }
@@ -258,8 +256,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -349,8 +346,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-celebrate.png",
         "alt": "Celebrations is a Teams app that helps team members celebrate each others’ birthdays, anniversaries, and other recurring events."
       }
@@ -360,8 +357,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -451,8 +447,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-company-communicator.png",
         "alt": "The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate."
       }
@@ -462,8 +458,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -557,8 +552,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-contact-group-lookup.png",
         "alt": "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization's contact groups (formerly known as distribution lists or communication groups)."
       }
@@ -568,8 +563,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -651,8 +645,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-crowd-sourcer.png",
         "alt": "CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions."
       }
@@ -662,8 +656,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -753,8 +746,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-custom-stickers.png",
         "alt": "This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams."
       }
@@ -764,8 +757,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -847,8 +839,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-expert-finder.png",
         "alt": "Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes"
       }
@@ -858,8 +850,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -953,8 +944,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-faq-plus.png",
         "alt": "FAQ Plus is a friendly Q&A bot that brings a human in the loop when it is unable to help."
       }
@@ -964,8 +955,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1059,8 +1049,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-goal-tracker.png",
         "alt": "Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams."
       }
@@ -1070,8 +1060,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1165,8 +1154,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-great-ideas.png",
         "alt": "The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals."
       }
@@ -1176,8 +1165,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1271,8 +1259,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-group-activities.png",
         "alt": "Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete"
       }
@@ -1282,8 +1270,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1373,8 +1360,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-grow-your-skills.png",
         "alt": "The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills"
       }
@@ -1384,8 +1371,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1479,8 +1465,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-hr-support.png",
         "alt": "HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help"
       }
@@ -1490,8 +1476,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1585,8 +1570,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-icebreaker.png",
         "alt": "Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet"
       }
@@ -1596,8 +1581,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1683,8 +1667,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-incentives.png",
         "alt": "Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives"
       }
@@ -1694,8 +1678,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1781,8 +1764,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-incident-reporter.png",
         "alt": "The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking."
       }
@@ -1792,8 +1775,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1887,8 +1869,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-open-badges.png",
         "alt": "Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere"
       }
@@ -1898,8 +1880,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -1993,8 +1974,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-quick-responses.png",
         "alt": "Quick Responses is a Microsoft Teams app that answering users' frequently asked questions (FAQs) using a messaging extension."
       }
@@ -2004,8 +1985,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -2099,8 +2079,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-remote-support.png",
         "alt": "Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform."
       }
@@ -2110,8 +2090,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -2205,8 +2184,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-request-a-team.png",
         "alt": "Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds"
       }
@@ -2216,8 +2195,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -2311,8 +2289,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-scrums-for-channels.png",
         "alt": "Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones."
       }
@@ -2322,8 +2300,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -2409,8 +2386,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-scrums-for-group-chat.png",
         "alt": "Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum."
       }
@@ -2420,8 +2397,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -2507,8 +2483,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-share-now.png",
         "alt": "The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading"
       }
@@ -2518,8 +2494,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -2613,8 +2588,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-splist-search.png",
         "alt": "The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation"
       }
@@ -2624,8 +2599,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -2707,8 +2681,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-staff-checkins.png",
         "alt": "Staff Check-ins enables oversight communication between your business and field personnel."
       }
@@ -2718,8 +2692,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -2801,8 +2774,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-visitor-management.png",
         "alt": "The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives."
       }
@@ -2812,8 +2785,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -2895,8 +2867,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-workplace-awards.png",
         "alt": "The app enables you to setup and manage an employee rewards and recognition (R&R) program where employees can easily nominate and endorse colleagues and your R&R leader can view submitted nominations, grant awards, and announce recipients"
       }
@@ -2906,8 +2878,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3001,8 +2972,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/learning-pathways-solution.png",
         "alt": "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL's prior to installation."
       }
@@ -3012,8 +2983,7 @@
         "gitHubAccount": "karuanag",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/karuanag.png",
-        "name": "Karuana Gatimu",
-        "twitter": ""
+        "name": "Karuana Gatimu"
       }
     ],
     "references": [
@@ -3095,8 +3065,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/teams-home-app.png",
         "alt": "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \"art of the possible\" by showcasing the Teams platform and articulating the value that it can deliver."
       }
@@ -3106,8 +3076,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3200,8 +3169,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3298,8 +3266,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3396,8 +3363,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3494,8 +3460,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3592,8 +3557,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3690,8 +3654,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3788,8 +3751,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3886,8 +3848,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -3984,8 +3945,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4082,8 +4042,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4176,8 +4135,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4270,8 +4228,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4364,8 +4321,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4458,8 +4414,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4552,8 +4507,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4635,8 +4589,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-bb-action-msgext-csharp.png",
         "alt": "Simple messaging extension with a action command. Response inserted into the compose message area."
       }
@@ -4646,8 +4600,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4740,8 +4693,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4834,8 +4786,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -4936,8 +4887,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -5038,8 +4988,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -5132,8 +5081,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -5223,8 +5171,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-consulting-bot.png",
         "alt": "This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)"
       }
@@ -5329,8 +5277,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-statebot.png",
         "alt": "This simple bot demonstrates conversation state and user state in Bot Framework v4"
       }
@@ -5427,8 +5375,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-spfx-field-visit.png",
         "alt": "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits."
       }
@@ -5525,8 +5473,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-customer-search.png",
         "alt": "A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation"
       }
@@ -5619,8 +5567,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-teams-creator-web-part.png",
         "alt": "This is a SharePoint web part that creates Teams"
       }
@@ -5713,8 +5661,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-config-using-sharepoint.png",
         "alt": "This is a SharePoint web part that creates Teams"
       }
@@ -5811,8 +5759,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-send-message-web-part.png",
         "alt": "This is a SharePoint web part that displays the user's Teams and sends messages to channels"
       }
@@ -5822,8 +5770,7 @@
         "gitHubAccount": "siddharth-vaghasia",
         "company": "",
         "pictureUrl": "https://github.com/siddharth-vaghasia.png",
-        "name": "Siddharth Vaghasia",
-        "twitter": ""
+        "name": "Siddharth Vaghasia"
       }
     ],
     "references": [
@@ -5905,8 +5852,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-personal-app-settings.png",
         "alt": "Shows how to expose the web part editing of an SPFx personal tab"
       }
@@ -6003,8 +5950,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-suggested-members.png",
         "alt": "SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click"
       }
@@ -6014,8 +5961,7 @@
         "gitHubAccount": "luismanez",
         "company": "ClearPeople",
         "pictureUrl": "https://github.com/luismanez.png",
-        "name": "Luis Mañez",
-        "twitter": ""
+        "name": "Luis Mañez"
       }
     ],
     "references": [
@@ -6101,8 +6047,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-tag-teams-graph-ext.png",
         "alt": "Web part to tag a Team using managed metadata and Graph extension"
       }
@@ -6112,8 +6058,7 @@
         "gitHubAccount": "fredupstair",
         "company": "Avanade Italy",
         "pictureUrl": "https://github.com/fredupstair.png",
-        "name": "Federico Porceddu",
-        "twitter": ""
+        "name": "Federico Porceddu"
       }
     ],
     "references": [
@@ -6195,8 +6140,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-public-teams-not-member-of.png",
         "alt": "Tab or web part shows Teams the user is not a member of, with an opportunity to join"
       }
@@ -6293,8 +6238,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-webpart-show-my-teams.png",
         "alt": "Web part shows Teams the user belongs to with links to each Team"
       }
@@ -6387,8 +6332,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-outlook-addin-save-to-teams.png",
         "alt": "Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)"
       }
@@ -6481,8 +6426,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-call-graph-as-user.png",
         "alt": "Simple Bot calls Graph and displays recent emails from the user's inbox"
       }
@@ -6579,8 +6524,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-graph-search-docreview.png",
         "alt": "Search-based messaging extension queries Graph API to find documents needing review"
       }
@@ -6673,8 +6618,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-graph-task-creation.png",
         "alt": "Teams messaging extension uses Microsoft Graph to create tasks in ToDo or Planner"
       }
@@ -6684,8 +6629,7 @@
         "gitHubAccount": "stephanbisser",
         "company": "",
         "pictureUrl": "https://github.com/stephanbisser.png",
-        "name": "Stephan Bisser",
-        "twitter": ""
+        "name": "Stephan Bisser"
       }
     ],
     "references": [
@@ -6767,8 +6711,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-aad-msal2.png",
         "alt": "Tab uses MSAL 2.0 in a pop-up and calls Graph API. Shows authorization using auth code PKCE from a static web site."
       }
@@ -6861,8 +6805,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-aad-spfx.png",
         "alt": "Tab uses SPFx and Graph to display recent email"
       }
@@ -6959,8 +6903,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-spfx-oauth2.png",
         "alt": "Tab uses OAuth 2.0 in a pop-up, calls the Box API and displays Box Content Explorer"
       }
@@ -7057,8 +7001,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-graph-action-docreview.png",
         "alt": "Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review."
       }
@@ -7151,8 +7095,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-spfx-graph-docreview.png",
         "alt": "Sample of an action based messaging extension that authenticates via SSO and On Behalf Of flow to call Microsoft Graph and receive documents to review. Task module uses SPFx."
       }
@@ -7249,8 +7193,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-action-jit.png",
         "alt": "Sample of an Action messaging extension that shows a Just-In-Time installer to install the app into Teams/Personal/Group Chat, and how to post an adaptive card response directly into a conversation"
       }
@@ -7260,8 +7204,7 @@
         "gitHubAccount": "rjesh-git",
         "company": "CoreBTS",
         "pictureUrl": "https://github.com/rjesh-git.png",
-        "name": "Rajesh Sitaraman",
-        "twitter": ""
+        "name": "Rajesh Sitaraman"
       }
     ],
     "references": [
@@ -7343,8 +7286,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-httpstatuscats.png",
         "alt": "This is a small sample code to build a messaging extension with Node.js and Bot Framework"
       }
@@ -7354,8 +7297,7 @@
         "gitHubAccount": "girliemac",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/girliemac.png",
-        "name": "Tomomi Imura",
-        "twitter": ""
+        "name": "Tomomi Imura"
       }
     ],
     "references": [
@@ -7437,8 +7379,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-bot-spfx-taskmodules.png",
         "alt": "Demonstrates how to use SharePoint Framework powered Task modules in Microsoft Teams applications"
       }
@@ -7448,8 +7390,7 @@
         "gitHubAccount": "vman",
         "company": "",
         "pictureUrl": "https://github.com/vman.png",
-        "name": "Vardhaman Deshpande",
-        "twitter": ""
+        "name": "Vardhaman Deshpande"
       }
     ],
     "references": [
@@ -7543,8 +7484,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-spfx-me-experience.png",
         "alt": "A Teams app where users can start their day and see their personal information using Microsoft Graph Toolkit React components"
       }
@@ -7641,8 +7582,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-search-giphy.png",
         "alt": "Search based Messaging extension allows users to find and insert gify's into a Microsoft Teams message"
       }
@@ -7829,8 +7770,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-sso.png",
         "alt": "Two samples in one, with .NET Core and Node implementations; now makes Graph calls from the back end rather than pass the Graph access token to the browser."
       }
@@ -7840,8 +7781,7 @@
         "gitHubAccount": "HiltonGiesenow",
         "company": "Experts Inside",
         "pictureUrl": "https://github.com/HiltonGiesenow.png",
-        "name": "Hilton Giesenow",
-        "twitter": ""
+        "name": "Hilton Giesenow"
       }
     ],
     "references": [
@@ -7923,8 +7863,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-sso-teamsclientsdk.png",
         "alt": "Tab SSO with .NET Core MVC"
       }
@@ -7934,15 +7874,13 @@
         "gitHubAccount": "Saikrishna-MSFT",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
-        "name": "Saikrishna Neeli",
-        "twitter": ""
+        "name": "Saikrishna Neeli"
       },
       {
         "gitHubAccount": "arun-msft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/arun-msft.png",
-        "name": "Arun Kumar Anaparthi",
-        "twitter": ""
+        "name": "Arun Kumar Anaparthi"
       }
     ],
     "references": [
@@ -8024,8 +7962,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/react-teams-send-notification.png",
         "alt": "Tab sends notifications to Teams users"
       }
@@ -8035,15 +7973,13 @@
         "gitHubAccount": "luismanez",
         "company": "ClearPeople",
         "pictureUrl": "https://github.com/luismanez.png",
-        "name": "Luis Mañez",
-        "twitter": ""
+        "name": "Luis Mañez"
       },
       {
         "gitHubAccount": "luismanez",
         "company": "ClearPeople",
         "pictureUrl": "https://github.com/luismanez.png",
-        "name": "Luis Mañez",
-        "twitter": ""
+        "name": "Luis Mañez"
       }
     ],
     "references": [
@@ -8129,8 +8065,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-one-productivity-hub.png",
         "alt": "Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0"
       }
@@ -8223,8 +8159,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-sso-azuread.png",
         "alt": "This sample shows how to implement Azure AD Single Sign-on for a Bot in Microsoft Teams"
       }
@@ -8234,15 +8170,13 @@
         "gitHubAccount": "Saikrishna-MSFT",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
-        "name": "Saikrishna Neeli",
-        "twitter": ""
+        "name": "Saikrishna Neeli"
       },
       {
         "gitHubAccount": "arun-msft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/arun-msft.png",
-        "name": "Arun Kumar Anaparthi",
-        "twitter": ""
+        "name": "Arun Kumar Anaparthi"
       }
     ],
     "references": [
@@ -8328,8 +8262,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-virtual-events-meeting-extensibility.png",
         "alt": "Shows how to create an app with a bot that calls users into a meeting with a custom event"
       }
@@ -8339,15 +8273,13 @@
         "gitHubAccount": "Saikrishna-MSFT",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
-        "name": "Saikrishna Neeli",
-        "twitter": ""
+        "name": "Saikrishna Neeli"
       },
       {
         "gitHubAccount": "arun-msft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/arun-msft.png",
-        "name": "Arun Kumar Anaparthi",
-        "twitter": ""
+        "name": "Arun Kumar Anaparthi"
       }
     ],
     "references": [
@@ -8441,8 +8373,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-proactive-messaging-node.png",
         "alt": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
       }
@@ -8452,8 +8384,7 @@
         "gitHubAccount": "HiltonGiesenow",
         "company": "Experts Inside",
         "pictureUrl": "https://github.com/HiltonGiesenow.png",
-        "name": "Hilton Giesenow",
-        "twitter": ""
+        "name": "Hilton Giesenow"
       }
     ],
     "references": [
@@ -8539,8 +8470,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-proactive-messaging-netcore.png",
         "alt": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
       }
@@ -8550,8 +8481,7 @@
         "gitHubAccount": "HiltonGiesenow",
         "company": "Experts Inside",
         "pictureUrl": "https://github.com/HiltonGiesenow.png",
-        "name": "Hilton Giesenow",
-        "twitter": ""
+        "name": "Hilton Giesenow"
       }
     ],
     "references": [
@@ -8637,8 +8567,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-b2c-chat-bot.png",
         "alt": "Allows citizen end users get in touch with an SME / Support Agent working in Teams"
       }
@@ -8648,43 +8578,37 @@
         "gitHubAccount": "arun-msft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/arun-msft.png",
-        "name": "Arun Kumar Anaparthi",
-        "twitter": ""
+        "name": "Arun Kumar Anaparthi"
       },
       {
         "gitHubAccount": "Saikrishna-MSFT",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
-        "name": "Saikrishna Neeli",
-        "twitter": ""
+        "name": "Saikrishna Neeli"
       },
       {
         "gitHubAccount": "Saikrishna-MSFT",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
-        "name": "Saikrishna Neeli",
-        "twitter": ""
+        "name": "Saikrishna Neeli"
       },
       {
         "gitHubAccount": "Saikrishna-MSFT",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
-        "name": "Saikrishna Neeli",
-        "twitter": ""
+        "name": "Saikrishna Neeli"
       },
       {
         "gitHubAccount": "arun-msft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/arun-msft.png",
-        "name": "Arun Kumar Anaparthi",
-        "twitter": ""
+        "name": "Arun Kumar Anaparthi"
       },
       {
         "gitHubAccount": "arun-msft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/arun-msft.png",
-        "name": "Arun Kumar Anaparthi",
-        "twitter": ""
+        "name": "Arun Kumar Anaparthi"
       }
     ],
     "references": [
@@ -8770,8 +8694,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/react-teams-meeting-app-questionnaire.png",
         "alt": "Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions"
       }
@@ -8868,8 +8792,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-bot-SPUploader.png",
         "alt": "Provides a basis for building a digital asset / document repository management app."
       }
@@ -8879,15 +8803,13 @@
         "gitHubAccount": "Saikrishna-MSFT",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
-        "name": "Saikrishna Neeli",
-        "twitter": ""
+        "name": "Saikrishna Neeli"
       },
       {
         "gitHubAccount": "https://github.com/VaraPrasad-MSFT",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/VaraPrasad-MSFT.png",
-        "name": "Varaprasad SSLN",
-        "twitter": ""
+        "name": "Varaprasad SSLN"
       }
     ],
     "references": [
@@ -8977,8 +8899,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-activity-feed.png",
         "alt": "Simple Kudos app notifies users of new kudos via the Teams activity feed and Microsoft Graph"
       }
@@ -9071,8 +8993,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-contoso-hr-talent-app.png",
         "alt": "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)"
       }
@@ -9082,8 +9004,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -9185,8 +9106,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-emergency-response.png",
         "alt": "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint"
       }
@@ -9196,8 +9117,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -9287,8 +9207,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-one-productivity-hub-workshop.png",
         "alt": "Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email"
       }
@@ -9298,8 +9218,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -9381,8 +9300,8 @@
     ],
     "thumbnails": [
       {
-        "type": "image",
         "order": 100,
+        "type": "image",
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-customer-orders.png",
         "alt": "From the Learn Together event of December 15, 2020"
       }
@@ -9392,8 +9311,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -9494,8 +9412,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -9587,15 +9504,7 @@
         "alt": "No preview available"
       }
     ],
-    "authors": [
-      {
-        "gitHubAccount": "microsoft",
-        "company": "Microsoft",
-        "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
-      }
-    ],
+    "authors": [],
     "references": [
       {
         "name": "Azure Bot Framework resources",
@@ -9694,8 +9603,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -9800,8 +9708,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -9906,8 +9813,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10012,8 +9918,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10118,8 +10023,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10220,8 +10124,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10326,8 +10229,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10432,8 +10334,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10530,8 +10431,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10628,8 +10528,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10726,8 +10625,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10824,8 +10722,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -10922,8 +10819,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11020,8 +10916,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11114,8 +11009,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11208,8 +11102,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11302,8 +11195,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11392,8 +11284,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11482,8 +11373,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11572,8 +11462,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11666,8 +11555,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11760,8 +11648,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11854,8 +11741,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -11948,8 +11834,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12042,8 +11927,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12136,8 +12020,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12230,8 +12113,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12320,8 +12202,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12410,8 +12291,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12504,8 +12384,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12598,8 +12477,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12692,8 +12570,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12786,8 +12663,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12880,8 +12756,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -12974,8 +12849,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13068,8 +12942,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13162,8 +13035,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13256,8 +13128,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13346,8 +13217,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13436,8 +13306,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13526,8 +13395,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13616,8 +13484,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13710,8 +13577,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13800,8 +13666,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13890,8 +13755,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -13980,8 +13844,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
@@ -14070,8 +13933,7 @@
         "gitHubAccount": "microsoft",
         "company": "Microsoft",
         "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
+        "name": "Microsoft"
       }
     ],
     "references": [
