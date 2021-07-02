@@ -1,8 +1,8 @@
-﻿# ACS – Teams InterOp with Call Routing.  
+﻿# Azure Communication Services – Teams InterOp with Call Routing
 
 ## Summary
 
-The sample supporting ACS and Teams Interoperation allows citizen end users get in touch with an SME / Support Agent belonging to a business entity over a video call in order to discuss and address an issue. It allows business users with a Teams license on one side have a call with a citizen consumer who doesn’t have a Teams license / login. <br/><br/>
+The sample supporting Azure Communication Services (ACS) and Teams Interoperation allows citizen end users get in touch with an SME / Support Agent belonging to a business entity over a video call in order to discuss and address an issue. It allows business users with a Teams license on one side have a call with a citizen consumer who doesn’t have a Teams license / login. <br/><br/>
 
 <img src="./Docs/GIF/PlaceACall.gif" alt="PlaceACall" style="width: 100%;">
 <br/>
