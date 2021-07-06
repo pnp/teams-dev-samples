@@ -83,38 +83,48 @@ Step 1: Setup bot in Service
 7. Add any necessary API permissions for downstream calls in the App registration.
 	* Navigate to "API permissions" blade on the left-hand side.
 	* Add following permissions to the application.
-		* Application permissions - User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All,
-									GroupMember.Read.All, Group.Read.All, GroupMember.ReadWrite.All, Group.ReadWrite.All,Directory.AccessAsUser.All
-		* Delegated permissions - User.Read (enabled by default)
+	* Application permissions - User.Read.All and GroupMember.Read.All
+	* Delegated permissions - User.Read (enabled by default)
 
-<img src="./Docs/Images/APIPermissions.PNG" alt="API Permissions" width="1000" height="500">
+<img src="./Docs/Images/APIPermissions.PNG" alt="API Permissions">
 
 Step 2: Create sharepoint app
 ====================================
-1. Register a new sharepoint app
+1. Create a new site on sharepoint app
+	* Select Team Site.
+	* Give name of the site eg: TestSite
+	<img src="./Docs/Images/CreateSite.PNG" alt="CreateSite">
+
+2. Register a new sharepoint app
 	
 	* You need to register a new addin/app in your Sharepoint site, this will generate a ClientID and a Client Secret, which we will use to authenticate.
-	* Navigate to https//{SharePointDomain}/_layouts/15/appregnew.aspx
+	* Navigate to https//{SharePointDomain}.sharepoint.com/sites/{SiteName}/_layouts/15/appregnew.aspx
+
+		eg: https//xxxxxxxxx.sharepoint.com/sites/TestSite/_layouts/15/appregnew.aspx
 
 <img src="./Docs/Images/SharepointAppCreation.PNG" alt="Bot Channels" width="1000" height="500">
 
-2. Know your Tenant ID and Resource ID
-	* It is very important to know your tenant ID for triggering any kind of service calls. You can get your Tenant ID, Resource Id by following below points:
-	* Navigate to https//{SharePointDomain}/_layouts/15/appprincipals.aspx
-	* You will see Site Collection App Permissions under site settings.
-	* You can check your any App and get the Tenant Id and Resource Id from App Identifier. The part after "@" is your tenant ID and the part before @ is Resource ID
+2. Grant permissions
+	* New Client app has been created in SP Online site, now its time to decide what permissions this app should have on your site. You can grant Site collection, web or even at list level read or write permissions. [Follow docs](https://docs.microsoft.com/en-us/sharepoint/dev/solution-guidance/security-apponly-azureacs) to add permission.
 
-<img src="./Docs/Images/AppPermissions.PNG" alt="Bot Channels" width="1000" height="500">
-
-3. Grant permissions
-	* New Client app has been created in SP Online site, now its time to decide what permissions this app should have on your site. You can grant Site collection, web or even at list level read or write permissions.
-	* Go to  https//{SharePointDomain}/_layouts/15/appinv.aspx and serach with ClientID we generated earlier. The application will fetch all other details based on your ClientID.
+	* Go to  https//{SharePointDomain}.sharepoint.com/sites/{SiteName}/_layouts/15/appinv.aspx and search with ClientID we generated earlier. The application will fetch all other details based on your ClientID.
 
 <img src="./Docs/Images/GrantPermission.PNG" alt="Bot Channels" width="1000" height="500">
 
-4. Create document library
-	* Create Two document libraries to upload the files into sharepoint doc library
+3. Know your Tenant ID and Resource ID
+	* It is very important to know your tenant ID for triggering any kind of service calls. You can get your Tenant ID, Resource Id by following below points:
+	* Navigate to https//{SharePointDomain}.sharepoint.com/sites/{SiteName}/_layouts/15/appprincipals.aspx
+	* You will see Site Collection App Permissions under site settings.
+	* You can check your any App and get the Tenant Id and Resource Id from App Identifier. The part after "@" is your tenant ID and the part before @ is Resource ID
+	* In the appsetting.json you need to add SharePointResource value which is 00000003-0000-0ff1-ce00-000000000000 and it is constant value. [Follow docs](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/authorization-code-oauth-flow-for-sharepoint-add-ins)
 
+<img src="./Docs/Images/AppPermissions.PNG" alt="Bot Channels" width="1000" height="500">
+
+4. Create document library
+	* Create Two document libraries to upload the files into sharepoint doc library.
+	* You need to mention these document libraries in appsetting.json as StagingFolder and ApprovedFolder.
+
+<img src="./Docs/Images/CreateDocumentLibrary.PNG" alt="Create Document Library">
 <img src="./Docs/Images/AppCreated.png" alt="App Created" width="1000" height="500">
 
 
@@ -143,7 +153,7 @@ Step 3: Run the app locally
 
 <img src="./Docs/Images/appsettings.PNG" alt="App Settings" style="width: 100%;">
 
-NOTE: The App id to be installed into Teams meeting can be retrieved using the graph explorer. As this sample uses the same app to be added to the teams meeting, app needs to be installed into Teams (follow step 4 on how to package and install the app to teams) and use the app's ID generated by Teams (different from the external ID). For more information, see the [List teamsApp](https://docs.microsoft.com/en-us/graph/api/appcatalogs-list-teamsapps?view=graph-rest-1.0&tabs=http) refernce article
+NOTE: As this sample uses the same app to be added to the teams meeting, app needs to be installed into Teams (follow step 4 on how to package and install the app to teams).
 
 4. Press F5 to run the project in the Visual studio.
 
