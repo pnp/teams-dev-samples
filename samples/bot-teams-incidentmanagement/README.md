@@ -76,7 +76,7 @@ bot-teams-incidentmanagement | [Smita Nachan](https://www.linkedin.com/in/smitan
 
 Version|Date|Comments
 -------|----|--------
-1.0|July 07, 2021|Initial release
+1.0|July 12, 2021|Initial release
 
 ## Disclaimer
 
