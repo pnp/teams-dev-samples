@@ -1,0 +1,43 @@
+{
+  "type": "AdaptiveCard",
+  "refresh": {
+    "action": {
+      "type": "Action.Execute",
+      "title": "Submit",
+      "verb": "initialRefresh",
+      "data": {
+        "CreatedBy": "${createdBy}",
+        "CreatedByUserID": "${createdByUserID}",
+        "ServiceName": "${serviceName}",
+        "ImagePath": "${imagePath}"
+      }
+    },
+    "userIds": [
+      "${createdByUserID}"
+    ]
+  },
+  "body": [
+    {
+      "type": "Image",
+      "url": "${imagePath}",
+      "altText": "${imageAlt}",
+      "size": "auto"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Please wait...",
+      "color": "warning",
+      "size": "Medium",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "${createdBy} is creating an incident for ${serviceName}!",
+      "weight": "Bolder",
+      "size": "Medium",
+      "wrap": true
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}

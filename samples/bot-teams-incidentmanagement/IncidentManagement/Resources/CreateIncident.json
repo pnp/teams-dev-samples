@@ -1,0 +1,97 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Raise an incident for ${serviceName}"
+        },
+        {
+          "type": "Image",
+          "url": "${imagePath}",
+          "altText": "${imageAlt}",
+          "size": "auto"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Title"
+        },
+        {
+          "type": "Input.Text",
+          "style": "text",
+          "id": "incidentTitle",
+          "placeholder": "Please enter the incident title",
+          "isRequired": true,
+          "errorMessage": "*"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Description"
+        },
+        {
+          "type": "Input.Text",
+          "style": "text",
+          "isMultiline": true,
+          "id": "incidentDescription",
+          "placeholder": "Please enter the incident description"
+        },
+        {
+          "type": "TextBlock",          
+          "text": "Assigned To"
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "choices": "${assignees}",
+          "id": "assignedToUserID",
+          "isMultiSelect": false
+        },
+        {
+          "type": "TextBlock",
+          "text": "Category"
+        },
+        {
+          "type": "Input.ChoiceSet",
+          "id": "incidentCategory",
+          "style": "compact",
+          "isMultiSelect": false,
+          "value": "Functional",
+          "choices": [
+            {
+              "title": "Functional",
+              "value": "Functional"
+            },
+            {
+              "title": "Technical",
+              "value": "Technical"
+            },
+            {
+              "title": "UI",
+              "value": "UI"
+            }
+          ]
+        },
+        {
+          "type": "ActionSet",
+          "actions": [
+            {
+              "type": "Action.Execute",
+              "title": "Submit",
+              "verb": "createIncident",
+              "data": {
+                "CreatedBy": "${createdBy}",
+                "CreatedByUserID": "${createdByUserID}",
+                "ServiceName": "${serviceName}",
+                "ImagePath": "${imagePath}",
+                "AssignedToUserID": "${assignedToUserID}"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "type": "AdaptiveCard",
+  "version": "1.4"
+}
