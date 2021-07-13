@@ -11,7 +11,7 @@ The essential thing is that it is configurable and persists its configuration to
 
 ![Configuration of Teams Messaging extension ...](https://mmsharepoint.files.wordpress.com/2021/05/08fetchtask_configurefirst.png?w=946)
 
-For further details see the author's [blog post](https://mmsharepoint.wordpress.com/2021/05/17/configure-teams-applications-with-azure-app-configuration-nodejs/)
+For further details see the author's [blog post](https://mmsharepoint.wordpress.com/2021/05/17/configure-teams-applications-with-azure-app-configuration-nodejs/) or watch my community demo [here.](https://techcommunity.microsoft.com/t5/microsoft-365-pnp-blog/microsoft-365-developer-community-call-recording-8th-of-july/ba-p/2481287)
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ For further details see the author's [blog post](https://mmsharepoint.wordpress.
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|May 14, 2021|[Markus Moeller](https://twitter.com/moeller2_0)|Initial release
+1.1|Jul 08, 2021|[Markus Moeller](https://twitter.com/moeller2_0)|Added search api usage
 
 ## Disclaimer
 
@@ -91,6 +91,8 @@ gulp build
 ## Features
 This is a simple Action based messaging extension. It offers documents retrieved from Microsoft Graph for selection and to be posted to the current Team's news channel.
 * SSO access token generation to access Microsoft Graph
+    * Retrieves documents either via listItems from site / list or
+    * Uses search to retrieve them independently from sites / lists [Blog post](https://mmsharepoint.wordpress.com/2021/06/16/query-sharepoint-items-with-microsoft-graph-and-search/)
 * [Post an adaptive card](https://adaptivecards.io/)
 * A configuration page to offer self service configuration of the SiteID and ListID where the documents reside
 * Configuraton storage in [Azure App Configuration](https://github.com/Azure/azure-sdk-for-js/tree/master/sdk/appconfiguration/app-configuration)

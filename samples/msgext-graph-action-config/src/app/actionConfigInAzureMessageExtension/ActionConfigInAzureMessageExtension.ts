@@ -117,7 +117,7 @@ export default class ActionConfigInAzureMessageExtension implements IMessagingEx
       }
       return Promise.resolve({
           title: "Action Config in Azure Configuration",
-          value: `https://${process.env.HOSTNAME}/actionConfigInAzureMessageExtension/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}&siteID=${config.SiteID}&listID=${config.ListID}`
+          value: `https://${process.env.HOSTNAME}/actionConfigInAzureMessageExtension/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}&siteID=${config.SiteID}&listID=${config.ListID}&useSearch=${config.UseSearch.toString()}&searchQuery=${config.SearchQuery}`
       });
     }
 
@@ -125,7 +125,7 @@ export default class ActionConfigInAzureMessageExtension implements IMessagingEx
         // take care of the setting returned from the dialog, with the value stored in state
         const setting = JSON.parse(context.activity.value.state);
         log(`New setting: ${setting}`);
-        await Utilities.saveConfig({SiteID: setting.siteID, ListID: setting.listID});
+        await Utilities.saveConfig({SiteID: setting.siteID, ListID: setting.listID, UseSearch: setting.useSearch, SearchQuery: setting.searchQuery});
         return Promise.resolve();
     }
 }
