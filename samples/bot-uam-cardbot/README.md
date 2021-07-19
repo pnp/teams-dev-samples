@@ -1,5 +1,5 @@
 
-# Card Bot - Bot showcasing the Adaptive Card Universsal Action Model in Node/TypeScript
+# Card Bot - Bot showcasing the Adaptive Card Universal Action Model in Node/TypeScript
 
 This bot demonstrates [UAM](https://aka.ms/universal-actions-model) capabilities.
 
