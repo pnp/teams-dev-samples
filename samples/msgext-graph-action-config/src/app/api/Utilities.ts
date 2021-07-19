@@ -8,11 +8,17 @@ export default class Utilities {
     const client = this.getClient();
     let siteID = "";
     let listID = "";
+    let useSearch: boolean = false;
+    let searchQuery: string = "";
     try {
       const siteSetting = await client.getConfigurationSetting({ key: "SiteID"});
       siteID = siteSetting.value!;
       const listSetting = await client.getConfigurationSetting({ key: "ListID"});
       listID = listSetting.value!;
+      const useSearchSetting = await client.getConfigurationSetting({ key: "UseSearch" });
+      useSearch = useSearchSetting.value?.toLowerCase() === "true" ? true : false;
+      const searchQuerySetting = await client.getConfigurationSetting({ key: "SearchQuery" });
+      searchQuery = searchQuerySetting.value!;
     }
     catch(error) {
       if (siteID === "") {
@@ -22,7 +28,7 @@ export default class Utilities {
         //  listID = process.env.LIST_ID!;
       }
     }
-    return Promise.resolve({ SiteID: siteID, ListID: listID})
+    return Promise.resolve({ SiteID: siteID, ListID: listID, UseSearch: useSearch, SearchQuery: searchQuery });
   }
 
   public static async saveConfig(newConfig: Config) {
@@ -32,7 +38,11 @@ export default class Utilities {
     }
     if (newConfig.ListID) {
       await client.setConfigurationSetting({ key: "ListID", value: newConfig.ListID });
+    }    
+    if (newConfig.SearchQuery) {
+      await client.setConfigurationSetting({ key: "SearchQuery", value: newConfig.SearchQuery });
     }
+    await client.setConfigurationSetting({ key: "UseSearch", value: newConfig.UseSearch.toString() });
   }
 
   private static getClient(): AppConfigurationClient {
@@ -66,15 +76,9 @@ export default class Utilities {
 
   private static getSecretClient(): SecretClient {
     const connectionString = process.env.AZURE_KEYVAULT_CONNECTION_STRING!;
-    let client: SecretClient;
-    if (process.env.AZURE_CLIENT_SECRET) {
-      const credential = new EnvironmentCredential();
-      client = new SecretClient(connectionString, credential);
-    }
-    else {
-      const credential = new ManagedIdentityCredential();
-      client = new SecretClient(connectionString, credential);
-    }
+    const credential = new DefaultAzureCredential();
+    const client = new SecretClient(connectionString, credential);
+    
     return client;
   }
 }
