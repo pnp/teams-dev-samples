@@ -1,29 +1,14 @@
----
-page_type: sample
-products:
-- teams
-languages:
-- typescript
-extensions:
-  contentType: samples
-  technologies:
-  - Bot Framework SDK
-  - Microsoft Teams
-  - Adaptive cards
-  platforms:
-  - Express
 
-createdDate: 19/07/2021 12:00:00 AM
----
-# cardBotTS
+# Card Bot - Bot showcasing the Adaptive Card Universsal Action Model in Node/TypeScript
 
-A bot that demonstrates [UAM](https://aka.ms/universal-actions-model) capabilities.
+This bot demonstrates [UAM](https://aka.ms/universal-actions-model) capabilities.
 
 # Summary
 
-A bot that let's an initiator ask a question in a Team/Group chat. The team mates can respond to the question with a form input. The initiator and the team mates see card updates in real time based on the actions or refresh feature of the adaptive card.
+A bot that lets an initiator ask a question in a Team/Group chat. The team mates can respond to the question with a form input. The initiator and the team mates see card updates in real time based on the actions or refresh feature of the adaptive card.
 
 See it work!
+
 ![uam-image](./assets/uam.gif)
 
 ## Used Bot Framework Version
@@ -93,4 +78,4 @@ ngrok http-host-header=localhost:3978
 - [Universal action model](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview?WT.mc_id=m365-35338-rwilliams)
 - [Bot generator](https://www.npmjs.com/package/generator-botbuilder)
 
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/readme-template" />
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/bot-uamcardbot" />
