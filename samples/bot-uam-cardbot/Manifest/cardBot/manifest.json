@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "version": "1.0.0",
+  "manifestVersion": "1.9",
+  "id": "fa9e506a-09e5-4b6e-8de9-d334b899c06d",
+  "packageName": "com.package.name",
+  "name": {
+    "short": "cardBotTS",
+    "full": "A bot that demonstrates UAM capabilities"
+  },
+  "developer": {
+    "name": "",
+    "mpnId": "",
+    "websiteUrl": "https://teams.microsoft.com/",
+    "privacyUrl": "https://teams.microsoft.com/privacy",
+    "termsOfUseUrl": "https://teams.microsoft.com/terms"
+  },
+  "description": {
+    "short": "A bot to show UAM capabilities",
+    "full": ""
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "<your bot ID>",
+      "scopes": [ "personal", "team", "groupchat" ],
+      "isNotificationOnly": false,
+      "supportsFiles": false
+    }
+  ],
+  "validDomains": [ "<your ngrok/hosted domain>" ]
+}

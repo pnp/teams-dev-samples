@@ -1,0 +1,24 @@
+{
+  "type": "AdaptiveCard",   
+   "body": [
+    {
+      "type": "TextBlock",
+      "text": "Hi initiator, ${click} team mates responded to your question : ' ${question} ' 💥",
+      "wrap": true,
+      "color": "Accent"
+    }    
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "refresh": {
+    "userIds": "${userIds}",
+    "action": {
+      "type": "Action.Execute",
+      "verb": "refresh",
+      "title": "Refresh",
+      "data": {
+        "cardId": "${cardId}"
+      }
+    }
+  }
+}

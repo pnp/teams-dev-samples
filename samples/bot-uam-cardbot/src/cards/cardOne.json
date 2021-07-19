@@ -1,0 +1,51 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.4",
+  "refresh": {
+    "userIds": "${userIds}",
+    "action": {
+      "type": "Action.Execute",
+      "verb": "refresh",
+      "title": "Refresh",
+      "data": {
+        "cardId": "${cardId}"
+      }
+    }
+  },
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "Did you wanna take a moment to reply to your team mate's question?",
+      "size": "medium",
+      "weight": "bolder",
+      "wrap": true
+    },
+    {
+      "type": "TextBlock",
+      "text": "${question}",
+      "wrap": true,
+      "size": "Large"
+    },
+    {
+      "type": "Input.Text",
+      "placeholder": "",
+      "spacing": "Medium",
+      "id": "text"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Execute",
+          "title": "Boom",
+          "verb": "ok",
+          "data": {
+            "cardId": "${cardId}"
+          },
+          "style": "positive"
+        }
+      ]
+    }
+  ]
+}
