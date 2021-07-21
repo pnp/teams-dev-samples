@@ -153,3 +153,5 @@ Below are the references used while developing this sample:
 ## Thank You!
 
 Special thanks to [Shiladitya Saha](https://www.linkedin.com/in/shiladityasaha/), [Wictor Wilen](https://www.linkedin.com/in/wictorw/), and [Rabia Williams](https://www.linkedin.com/in/rabiawilliams/) (Microsoft) for their valuable discussions and guidance on this interesting topic.
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/bot-teams-incidentmanagement" />
