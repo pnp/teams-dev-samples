@@ -1,17 +1,3 @@
----
-page_type: sample
-products:
-- teams
-languages:
-- javascript
-extensions:
-  contentType: samples
-  technologies:
-  - Bot Framework SDK
-  platforms:
-  - Restify
-createdDate: 7/12/2021 12:00:00 AM
----
 # MS Teams Incident Management Bot
 
 This sample illustrates `sequential workflow`, `user specific views`, and `upto date adaptive cards` bot.
