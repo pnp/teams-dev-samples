@@ -2,7 +2,7 @@
 
 ## Summary
 
-This small demo sample is a **action** based messaging extension created using the Teams Yeoman Generator as featured in [this video](https://www.youtube.com/watch?v=S1eANUbqaRs&list=PLR9nK3mnD-OUeDoawdmYJJsTlRHd6p5DB&index=7&t=7s). It posts a simple adaptive card to the Team's news channel but 'as a bot' and with an action to update the same adaptive card again and agin.
+This small demo sample is an **action** based messaging extension created using the Teams Yeoman Generator as featured in [this video](https://www.youtube.com/watch?v=S1eANUbqaRs&list=PLR9nK3mnD-OUeDoawdmYJJsTlRHd6p5DB&index=7&t=7s). It posts a simple adaptive card to the Team's news channel but 'as a bot' and with an action to update the same adaptive card again and again.
 
 ![Result: Adaptive Card ... updating ...](https://mmsharepoint.files.wordpress.com/2021/05/04_adaptivecard_update.gif?w=670&zoom=2)
 For further details refer to the author's [blog post](https://mmsharepoint.wordpress.com/2021/05/05/how-to-update-an-adaptivecard-with-a-teams-messaging-extension/).
