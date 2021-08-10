@@ -68,9 +68,50 @@ Version|Date|Author|Comments
 
 ### 2. Register Azure AD application
 
-For detailed steps on how to do this, read [Registering your app through the Azure Active Directory portal in-depth](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#registering-your-app-through-the-azure-active-directory-portal-in-depth).
+For detailed steps on how to do this, read [Registering your app through the Azure Active Directory portal in-depth](https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso#registering-your-app-through-the-azure-active-directory-portal-in-depth). We summarize the steps below:
 
-> :warning: During registration, make sure the Redirect URI is of type **Single-page application**, and not **Web**.
+1. Navigate to the [Azure portal](https://portal.azure.com) and select the **Azure AD** service.
+1. Select the **App Registrations** blade on the left, then select **New registration**.
+1. In the **Register an application page** that appears, enter your application's registration information:
+   - In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example `teams-sso-sample`.
+   - Under **Supported account types**, select **Accounts in any organizational directory**.
+   - In the **Redirect URI (optional)** section, select **Single-page application** in the combo-box and enter a redirect URI (e.g. `https://contoso.ngrok.io/auth-end`).
+   - Select **Register** to create the application.
+1. In the app's registration screen, find and note the **Application (client) ID**. You use this value in your app's configuration file(s) later in your code.
+1. In the app's registration screen, select the **Certificates & secrets** blade in the left to open the page where we can generate secrets and upload certificates.
+1. In the **Client secrets** section, select **New client secret**:
+   - Type a key description (for instance `app secret`),
+   - Select one of the available key durations (**6 months**, **12 months** or **Custom**) as per your security posture.
+   - The generated key value will be displayed when you select the **Add** button. Copy and save the generated value for use in later steps.
+1. In the app's registration screen, select the **API permissions** blade in the left to open the page where we add access to the APIs that your application needs.
+   - Select the **Add a permission** button and then,
+   - Ensure that the **Microsoft APIs** tab is selected.
+   - In the *Commonly used Microsoft APIs* section, select **Microsoft Graph**
+   - In the **Delegated permissions** section, select **openid**, **profile**, **email**, **offline_access** and **user.read** in the list. Use the search box if necessary.
+   - Select the **Add permissions** button at the bottom.
+1. In the app's registration screen, select the **Expose an API** blade to the left to open the page where you can declare the parameters to expose this app as an API for which client applications can obtain [access tokens](https://docs.microsoft.com/azure/active-directory/develop/access-tokens) for.
+The first thing that we need to do is to declare the unique [resource](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow) URI that the clients will be using to obtain access tokens for this Api. To declare an resource URI, follow the following steps:
+   - Select `Set` next to the **Application ID URI** to generate a URI that is unique for this app.
+   - For this sample, edit the proposed Application ID URI (e.g. `api://contoso.ngrok.io/{appId}`) and selecting **Save**.
+1. All APIs have to publish a minimum of one [scope](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code) for the client's to obtain an access token successfully. To publish a scope, follow the following steps:
+   - Select **Add a scope** button open the **Add a scope** screen and Enter the values as indicated below:
+        - For **Scope name**, use `access_as_user`.
+        - Select **Admins and users** options for **Who can consent?**.
+        - For **Admin consent display name** type `Access teams-sso-sample`.
+        - For **Admin consent description** type `Allows the app to access teams-sso-sample as the signed-in user.`
+        - For **User consent display name** type `Access teams-sso-sample`.
+        - For **User consent description** type `Allow the application to access teams-sso-sample on your behalf.`
+        - Keep **State** as **Enabled**.
+        - Select the **Add scope** button on the bottom to save this scope.
+1. Still in the **Expose an API** blade, find the **Authorized client applications** section, follow the steps below:
+        - Select **Add a client application**
+        - In the panel that opens to the right, enter `1fec8e78-bce4-4aaf-ab1b-5451cc387264`
+        - Check the **Authorized scopes** checkbox for the scope you've just exposed (e.g. `access_as_user`)
+        - Select **Add application** to save.
+        - In the **Authorized client applications** section, select **Add a client application** again.
+        - In the panel that opens to the right, enter `5e3ce6c0-2b1f-4285-8d4b-75ee78787346`
+        - Check the **Authorized scopes** checkbox for the scope you've just exposed (e.g. `access_as_user`)
+        - Select **Add application** to save.
 
 ### 3. Update app configuration & run the web application
 
@@ -86,7 +127,8 @@ For detailed steps on how to do this, read [Registering your app through the Azu
 
 Inside the [`src`](src) folder for this sample is a [`manifest.json`](src/manifest.json) file. The following needs to be changed in this file:
 
-1. The `"id"` value must be populated with a new Guid value. You can do this in various ways depending on your platform of choice, but a simple PowerShell command is: 
+1. The `"id"` value must be populated with a new Guid value. You can do this in various ways depending on your platform of choice, but a simple PowerShell command is:
+
 ```powershell
 New-Guid
 ```
@@ -99,7 +141,7 @@ New-Guid
 
 ### 5. Upload the manifest to Teams
 
-There are a few possible options to do this, depending on your development tools and platform. The easiest is simple to use Teams' [App Studio](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview) tool, in particular the [`manifest editor`](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview#manifest-editor) tab which allows you to import a manifest (i.e. the one you created in step 4 above) and immediately install it.
+There are a few possible options to do this, depending on your development tools and platform. The easiest is simple to use Teams' [App Studio](https://docs.microsoft.com/microsoftteams/platform/concepts/build-and-test/app-studio-overview) tool, in particular the [`manifest editor`](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/build-and-test/app-studio-overview#manifest-editor) tab which allows you to import a manifest (i.e. the one you created in step 4 above) and immediately install it.
 
 ## Features
 
@@ -107,9 +149,9 @@ This sample demonstrates how to create a tab for Teams that uses Single-Sign-On 
 
 ## Further Reading
 
-* [What Are Tabs (Overview of Tabs in Teams)](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/what-are-tabs)
-* [Tab Authentication](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab)
-* [Single Sign-On (SSO) For Tabs](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)
+* [What Are Tabs (Overview of Tabs in Teams)](https://docs.microsoft.com/microsoftteams/platform/tabs/what-are-tabs)
+* [Tab Authentication](https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab)
+* [Single Sign-On (SSO) For Tabs](https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/auth-aad-sso)
 * [Microsoft Authentication Library (MSAL) 2.0](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser)
 
 <img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-sso />
