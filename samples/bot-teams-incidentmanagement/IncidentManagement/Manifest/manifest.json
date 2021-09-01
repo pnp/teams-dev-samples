@@ -1,0 +1,63 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.10/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.10",
+  "id": "<<YOUR-MICROSOFT-APP-ID>>",
+  "version": "1.0.0",
+  "packageName": "com.example.myapp",
+  "developer": {
+    "name": "Nanddeep Nachan",
+    "websiteUrl": "https://<<YOUR-Site-URL>>",
+    "privacyUrl": "https://<<YOUR-Site-URL>>/privacy.html",
+    "termsOfUseUrl": "https://<<YOUR-Site-URL>>/tou.html"
+  },
+  "name": {
+    "short": "Incident Management",
+    "full": "Incident Management"
+  },
+  "description": {
+    "short": "Teams Incident Management",
+    "full": "Teams Incident Management for handling incidents in Microsoft Teams using Adaptive Cards."
+  },
+  "icons": {
+    "outline": "bot-icon-outline-32x32.png",
+    "color": "bot-icon-color-192x192.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [
+    {
+      "botId": "<<YOUR-MICROSOFT-APP-ID>>",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "<<YOUR-Site-URL>>"
+  ],
+  "showLoadingIndicator": true
+}
