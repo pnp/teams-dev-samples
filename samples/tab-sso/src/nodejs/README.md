@@ -22,17 +22,23 @@ Please note that this sample has been built using the Microsoft Teams Toolkit, w
 
 ## Microsoft identity platform
 
-This sample is secured with [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/). It uses Microsoft [Authentication Library for JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js) (MSAL.js) to implement acquisition of access tokens. In particular, the front-end React project uses [Microsoft Authentication Library for React (Preview)](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-react) (MSAL React), while the the `api-server` uses [Microsoft Authentication Library for Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) (MSAL Node).
+This sample is secured with [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/). It uses Microsoft [Authentication Library for JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js) (MSAL.js) to implement acquisition of access tokens. In particular, the front-end React project uses [Microsoft Authentication Library for React](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-react) (MSAL React), while the the `api-server` uses [Microsoft Authentication Library for Node](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-node) (MSAL Node).
 
 ## Minimal Path to Awesome
 
-1. Refer initially to the [overall sample readme](../../) which includes details on setting up the Azure AD Application.
+1. Start Ngrok (or a similar tunneling tool), using the following command:
 
-> :warning: During registration, make sure the Redirect URI is of type **Single-page application**, and not **Web**.
+```shell
+ngrok http https://localhost:3000/ -host-header="localhost:3000"
+```
 
-2. Modify the [`.env`](./.env) file by inserting a value for the `CLIENT_ID`, being the Application Id of the Azure Application created earlier.
+If you are using the free version of Ngrok, this will generate the public Ngrok domain (e.g. `b788591e3a9d.ngrok.io`) that you will use in the subsequent steps.
 
-3. Modify the [`.env`](./api-server/.env) file in the `api-server` subfolder, for the backend web API that does the token exchange, by inserting a value for:
+2. Register an Azure AD application. Refer to the [overall sample readme](../../README.md#2-register-azure-ad-application) which includes details on setting up the Azure AD Application.
+
+3. Modify the [`.env`](./.env) file by inserting a value for the `CLIENT_ID`, being the Application Id of the Azure Application created earlier.
+
+4. Modify the [`.env`](./api-server/.env) file in the `api-server` subfolder, for the backend web API that does the token exchange, by inserting a value for:
     - `CLIENT_ID`, being the Application Id of the Azure Application created earlier, and,
     - `CLIENT_SECRET`, being the client secret from the same application,
     - `EXPECTED_SCOPES`, being the scopes for the exposed API endpoint from the same application.
@@ -43,26 +49,14 @@ Note also that the value of the `TENANT_INFO` in setting for steps **(2)** and *
 - `organizations`, for a multi-tenant application,
 - `common`, for authenticating users with any type of account from any tenant.
 
-4. Within both the `nodejs` directory and the `api-server` subdirectory, run
+5. Within both the `nodejs` directory and the `api-server` subdirectory, run `npm install` to install the needed NPM packages.
 
-```shell
-npm install
-```
-
-to install the needed NPM packages.
-
-5. Run the application, using 2 terminal sessions, run the following in the `nodejs` directory and the `api-server` subdirectory:
+6. Run the application, using 2 terminal sessions, run the following in the `nodejs` directory and the `api-server` subdirectory:
 
 ```shell
 npm run start
 ```
 
-6. Start Ngrok (or a similar tunneling tool), using the following command:
-
-```shell
-ngrok http https://localhost:3000/ -host-header="localhost:3000"
-```
-
-7. Complete the remaining steps in the main readme file.
+7. Complete the remaining steps in the main readme file. Make sure the review the example [manifiest.json](../manifest.json) file to compare with your settings
 
 <img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-sso/nodejs" />

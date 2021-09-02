@@ -3,7 +3,7 @@
     "manifestVersion": "1.5",
     "version": "1.0.0",
     "id": "{new unique GUID for this Teams app - NOT the Azure AD App ID}",
-    "packageName": "com.contoso.SsoSample",
+    "packageName": "com.contoso.ssoSample",
     "developer": {
         "name": "AAD SSO Tab Sample",
         "websiteUrl": "https://www.microsoft.com",
@@ -38,10 +38,15 @@
             "team"
         ]
     }],
-    "permissions": [],
-    "validDomains": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "{ngrokSubdomain}.ngrok.io"
+    ],
     "webApplicationInfo": {
-        "id": "{appId}",
-        "resource": "api://{ngrokSubdomain}.ngrok.io/{appId}"
+        "id": "{Azure AD App ID (aka Client ID)}",
+        "resource": "api://{ngrokSubdomain}.ngrok.io/{Azure AD App ID (aka Client ID)}"
     }
 }
