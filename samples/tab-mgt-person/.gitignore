@@ -3,6 +3,7 @@ node_modules
 
 # do not include the package in Git
 package
+temp
 
 # do not include the local environment files
 .env

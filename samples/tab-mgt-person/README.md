@@ -13,6 +13,18 @@ The other version uses Teams SSO with the on-behalf flow and that access token i
 
 For further details see the author's [blog post](https://mmsharepoint.wordpress.com/2021/09/01/microsoft-graph-toolkit-in-a-teams-application-with-yo-teams-and-sso/)
 
+## Prerequisites
+
+* [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
+* [Node.js](https://nodejs.org) version 10.14.1 or higher
+* [Gulp CLI](https://github.com/gulpjs/gulp-cli) `npm install gulp-cli --global`
+* [ngrok](https://ngrok.com) or similar tunneling application is required for local testing
+
+    ```bash
+    # determine node version
+    node --version
+    ```
+
 ## Version history
 
 Version|Date|Author|Comments

@@ -20,6 +20,7 @@ For further details see the [Yo Teams wiki for the project structure](https://gi
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
 * [Node.js](https://nodejs.org) version 10.14.1 or higher
+* [Gulp CLI](https://github.com/gulpjs/gulp-cli) `npm install gulp-cli --global`
 * [ngrok](https://ngrok.com) or similar tunneling application is required for local testing
 
     ```bash
