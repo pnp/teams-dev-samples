@@ -58,10 +58,30 @@ export const tokenRouter = (options: any): express.Router => {
 
     router.get(
         "/accesstoken",
-        pass.authenticate("oauth-bearer", { session: false }),        
+        pass.authenticate("oauth-bearer", { session: false }),
         async (req: any, res: express.Response, next: express.NextFunction) => {
             const user: any = req.user;
             try {
+                const accessToken = await exchangeForToken(user.tid,
+                    req.header("Authorization")!.replace("Bearer ", "") as string,
+                    ["https://graph.microsoft.com/user.read","https://graph.microsoft.com/people.read"]);
+                
+                res.json({ access_token: accessToken});
+            } catch (err) {
+                if (err.status) {
+                    res.status(err.status).send(err.message);
+                } else {
+                    res.status(500).send(err);
+                }
+            }
+        });
+    router.post(
+        "/token",
+        pass.authenticate("oauth-bearer", { session: false }),
+        async (req: express.Request, res: express.Response, next: express.NextFunction) => {
+            const user: any = req.user;
+            try {
+                log(req.query.ssoToken);
                 const accessToken = await exchangeForToken(user.tid,
                     req.header("Authorization")!.replace("Bearer ", "") as string,
                     ["https://graph.microsoft.com/user.read","https://graph.microsoft.com/people.read"]);
