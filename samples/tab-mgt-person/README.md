@@ -30,6 +30,7 @@ For further details see the author's [blog post](https://mmsharepoint.wordpress.
 Version|Date|Author|Comments
 -------|----|----|--------
 1.0|Sep 01, 2021|[Markus Moeller](https://twitter.com/moeller2_0)|Initial release
+1.1|Sep 17, 2021|[Markus Moeller](https://twitter.com/moeller2_0)|Added TeamsMsal2Provider
 
 ## Disclaimer
 
@@ -67,7 +68,14 @@ Version|Date|Author|Comments
   - With the client IDs for Teams App and Teams Web App 1fec8e78-bce4-4aaf-ab1b-5451cc387264 and 5e3ce6c0-2b1f-4285-8d4b-75ee78787346
 - Also add the app ID and its secret to .env (taken from .env-sample) as TAB_APP_ID= and 
     - add the secret to TAB_APP_SECRET"
-
+- Package the app
+    ```bash
+    gulp manifest
+    ```
+- Start the app
+    ```bash
+    gulp serve --debug
+    ```
 
 
 

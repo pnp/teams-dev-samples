@@ -1,6 +1,7 @@
 import * as React from "react";
 import { PeopleMgtTabLogin } from "./PeopleMgtTabLogin";
 import { PeopleMgtTabSSO } from "./PeopleMgtTabSSO";
+import { PeopleMgtTabTeamsSSO } from "./PeopleMgtTabTeamsSSO";
 
 /**
  * Implementation of the People MGT Tab content page
@@ -11,8 +12,9 @@ export const PeopleMgtTab = () => {
      */
     return (
         <div>
-            <PeopleMgtTabSSO />
+            {/* <PeopleMgtTabSSO /> */}
             {/* <PeopleMgtTabLogin /> */}
+            <PeopleMgtTabTeamsSSO />
         </div>
     );
 };
