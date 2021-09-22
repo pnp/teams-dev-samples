@@ -1,0 +1,73 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.9",
+  "id": "{{APPLICATION_ID}}",
+  "version": "{{VERSION}}",
+  "packageName": "{{PACKAGE_NAME}}",
+  "developer": {
+    "name": "Markus Moeller",
+    "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
+    "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "bot meeting lifecycle basic",
+    "full": "bot meeting lifecycle basic"
+  },
+  "description": {
+    "short": "A simple bot demonstrating meeting lifecycle.",
+    "full": "A simple bot demonstrating meeting lifecycle by posting to meeting's channel once meeting started/ended."
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [],
+  "bots": [
+    {
+      "botId": "{{MICROSOFT_APP_ID}}",
+      "needsChannelSelector": true,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal",
+        "groupchat"
+      ],
+      "commandLists": [
+        {
+          "scopes": [
+            "team",
+            "personal"
+          ],
+          "commands": [
+            {
+              "title": "Help",
+              "description": "Shows help information"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{PUBLIC_HOSTNAME}}",
+    "token.botframework.com"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false,
+  "webApplicationInfo": {
+    "id": "{{MICROSOFT_APP_ID}}",
+    "resource": "https://RscPermission",
+    "applicationPermissions": [
+      "OnlineMeeting.ReadBasic.Chat"
+    ]
+  }
+}
