@@ -1,0 +1,82 @@
+body {
+	font-family: sans-serif;
+
+	max-width: 80vw;
+	margin: 0 auto;
+}
+
+.l-header {
+	display: flex;
+
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 5em;
+	padding: 1em;
+
+	align-content: space-between;
+	align-items: stretch;
+	justify-content: space-between;
+
+	h1 {
+		box-sizing: border-box;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
+
+	}
+}
+
+.l-article {
+	margin: 3em 2em;
+}
+
+.l-title {
+	flex-grow: 1;
+}
+
+img.logo {
+	width: 100%;
+	min-width: 76px;
+	height: auto;
+}
+.panelSize {
+	width: 260px;
+	h1 {
+		font-size: 1.4em;
+	}
+}
+.userRecording {
+    width: 260px;
+}
+.userPic {
+	width: 34px;
+	width: 34px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.audioCell {
+	width: 225px;
+    display: table-cell;
+    padding-left: 8px;
+}
+.audioPanel {
+	border: 1px dotted;
+    border-radius: 8px;
+    padding: 8px;
+    display: inline-block;
+	margin-bottom: 8px;
+}
+.audioIcon {
+	margin-right: 8px;
+	cursor: pointer;
+}
+.closeDiv {
+	position: relative;
+}
+.closeIcon {
+	cursor: pointer;
+	position: fixed;
+	left: 240px;
+}
+mgt-person {
+	--avatar-size: 32px;
+}
