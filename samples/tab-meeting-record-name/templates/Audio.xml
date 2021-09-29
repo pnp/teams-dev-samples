@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://schemas.dev.office.com/PnP/2019/09/ProvisioningSchema https://raw.githubusercontent.com/OfficeDev/PnP-Provisioning-Schema/master/OfficeDevPnP.ProvisioningSchema/ProvisioningSchema-2019-09.xsd">
+  <pnp:Preferences Author="Markus Moeller" Version="1.0">
+    <pnp:Parameters>
+      <pnp:Parameter Key="DocumentsUrl">Freigegebene Dokumente</pnp:Parameter>      
+      <pnp:Parameter Key="DocumentsTitle">Dokumente</pnp:Parameter>
+    </pnp:Parameters>
+  </pnp:Preferences>
+  <pnp:Templates ID="CONTAINER-TEMPLATE-3DE6372F3EBB4867963ACF2BC3D0F04C">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-3DE6372F3EBB4867963ACF2BC3D0F04C" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">     
+      <pnp:SiteFields>
+        <Field ID="{2af8c064-c758-46eb-8c93-92e618737a6d}" Name="UserID" DisplayName="User ID" StaticName="UserID" Type="Text" Required="TRUE" Indexed="TRUE" Group="MM" />
+        <Field ID="{75c3a869-4785-475c-b326-70b0535ce1cf}" Name="MeetingID" DisplayName="Meeting ID" StaticName="MeetingID" Type="Text" Required="FALSE" Indexed="TRUE" Group="MM" />
+		<Field ID="{bac1cf38-2258-4657-977a-6a0301c7aaa8}" Name="UserDispName" DisplayName="User Name" StaticName="UserDispName" Type="Text" Required="FALSE" Indexed="TRUE" Group="MM" />        		
+      </pnp:SiteFields>
+      <pnp:ContentTypes>
+        <pnp:ContentType ID="0x0101007FDF3507342ED449A5EC3AE335D2D321" Name="MMDocument" Description="A custom document content type." Group="MM">
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="{2af8c064-c758-46eb-8c93-92e618737a6d}" Name="UserID" Required="true" UpdateChildren="true" />
+            <pnp:FieldRef ID="{75c3a869-4785-475c-b326-70b0535ce1cf}" Name="MeetingID" Required="false" UpdateChildren="true" />
+			<pnp:FieldRef ID="{bac1cf38-2258-4657-977a-6a0301c7aaa8}" Name="UserDispName" Required="false" UpdateChildren="true" />
+          </pnp:FieldRefs>
+        </pnp:ContentType>
+      </pnp:ContentTypes>
+      <pnp:Lists>
+        <pnp:ListInstance Title="{parameter:DocumentsTitle}" Description="" OnQuickLaunch="true" TemplateType="101" Url="{parameter:DocumentsUrl}" ContentTypesEnabled="true" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="500" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" ListExperience="NewExperience" ImageUrl="/_layouts/15/images/itdl.png?rev=45" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x0101" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0101007FDF3507342ED449A5EC3AE335D2D321" Default="true"/>
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{774801CD-4390-4F11-B79E-1CBB9AD1E012}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All {parameter:DocumentsTitle}" Url="{site}/{parameter:DocumentsUrl}/Forms/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/dlicon.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="FileLeafRef" />
+                </OrderBy>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="DocIcon" />
+                <FieldRef Name="LinkFilename" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="Editor" />
+				        <FieldRef Name="UserDispName" />
+                <FieldRef Name="UserID" />
+                <FieldRef Name="MeetingID" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <CustomFormatter />
+            </View>
+          </pnp:Views>
+        </pnp:ListInstance>        
+      </pnp:Lists>     
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
