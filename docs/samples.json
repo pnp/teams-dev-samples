@@ -14281,10 +14281,10 @@
     "reponame": "bot-meeting-lifecycle-basic",
     "source": "pnp",
     "title": "Bot meeting lifecycle basics",
-    "shortDescription": "Very simple bot acts on the Teams meeting's lifecyle<cpmma> posts a message to the meeting's chat when the meeting starts or ends",
+    "shortDescription": "Very simple bot acts on the Teams meeting's lifecyle, posts a message to the meeting's chat when the meeting starts or ends",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-meeting-lifecycle-basic",
     "longDescription": [
-      "Very simple bot acts on the Teams meeting's lifecyle<cpmma> posts a message to the meeting's chat when the meeting starts or ends"
+      "Very simple bot acts on the Teams meeting's lifecyle, posts a message to the meeting's chat when the meeting starts or ends"
     ],
     "creationDateTime": "2021-09-17",
     "updateDateTime": "2021-09-17",
