@@ -24,7 +24,7 @@ export class BotMeetingLifecycleBasicBot extends TeamsActivityHandler {
         super();
     }
 
-    async onTurnActivity(context) {
+    async onEventActivity(context) {
         if (context.activity.type == 'event' && context.activity.name == "application/vnd.microsoft.meetingStart") {
             var meetingObject = context.activity.value;
             await context.sendActivity(`Meeting ${meetingObject.Title} started at ${meetingObject.StartTime}`);
