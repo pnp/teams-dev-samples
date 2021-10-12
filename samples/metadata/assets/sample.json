@@ -14093,7 +14093,7 @@
     "name": "pnp-sp-dev-teams-sample-app-ReporterPlus",
     "reponame": "app-ReporterPlus",
     "source": "pnp",
-    "title": "ReporterPlus � Teams Device Capabilities Application",
+    "title": "ReporterPlus - Teams Device Capabilities Application",
     "shortDescription": "The sample app demonstrates the power of integrating Teams platform with device capabilities such as camera, QR or barcode scanner, photo gallery and microphone",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-ReporterPlus",
     "longDescription": [
