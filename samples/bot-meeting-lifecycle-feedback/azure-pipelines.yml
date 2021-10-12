@@ -1,0 +1,50 @@
+trigger:
+  - main
+
+stages:
+  - stage: Build
+    displayName: Build and package
+    jobs:
+      - job: Build
+        displayName: Build and package
+        pool:
+          vmImage: "ubuntu-latest"
+        steps:
+          - task: NodeTool@0
+            displayName: Use Node 12.x
+            inputs:
+              versionSpec: "12.x"
+          - script: |
+              sudo curl -sfL https://install.goreleaser.com/github.com/tj/node-prune.sh | sudo bash -s -- -b /usr/local/bin
+            displayName: Install node-prune
+          - script: |
+              npm install
+            displayName: npm install
+          - script: |
+              npm run build
+            displayName: npm run build
+          - script: |
+              npm prune --production
+            displayName: npm prune
+          - script: |
+              /usr/local/bin/node-prune
+            displayName: execute node-prune
+          - task: CopyFiles@2
+            displayName: Only publish files needed for runtime
+            inputs:
+              SourceFolder: "$(System.DefaultWorkingDirectory)"
+              Contents: |
+                dist/**
+                library/**
+                package.json
+                node_modules/**
+              TargetFolder: "$(Build.ArtifactStagingDirectory)"
+          - task: ArchiveFiles@2
+            inputs:
+              rootFolderOrFile: "$(Build.ArtifactStagingDirectory)"
+              includeRootFolder: false
+              archiveFile: "$(Build.ArtifactStagingDirectory)/$(appName).zip"
+              archiveType: zip
+          - task: PublishPipelineArtifact@1
+            inputs:
+              targetPath: "$(Build.ArtifactStagingDirectory)/$(appName).zip"
