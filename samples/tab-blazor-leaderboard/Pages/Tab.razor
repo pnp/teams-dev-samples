@@ -176,15 +176,15 @@
         {
             if (cm.Subject != null)
             {
-                AddScore(cm.From.User.Id, cm.From.User.DisplayName, ScoringModell.CHATMESSAGE_WITH_SUBJECT);
+                AddScore(cm.From.User.Id, cm.From.User.DisplayName, ScoringModel.CHATMESSAGE_WITH_SUBJECT);
             }
             else
             {
-                AddScore(cm.From.User.Id, cm.From.User.DisplayName, ScoringModell.CHAT_MESSAGE);
+                AddScore(cm.From.User.Id, cm.From.User.DisplayName, ScoringModel.CHAT_MESSAGE);
             }
             foreach (ChatMessageReaction cmr in cm.Reactions)
             {                
-                AddScore(cmr.User.User.Id, cmr.User.User.DisplayName, ScoringModell.REACTION);
+                AddScore(cmr.User.User.Id, cmr.User.User.DisplayName, ScoringModel.REACTION);
             }
 
             //Get all replies of the channel message
@@ -199,11 +199,11 @@
             {
                 foreach (ChatMessage reply in replies.CurrentPage)
                 {
-                    AddScore(reply.From.User.Id, reply.From.User.DisplayName, ScoringModell.REPLY);
+                    AddScore(reply.From.User.Id, reply.From.User.DisplayName, ScoringModel.REPLY);
 
                     foreach (ChatMessageReaction cmr in reply.Reactions)
                     {
-                        AddScore(cmr.User.User.Id, cmr.User.User.DisplayName, ScoringModell.REACTION);
+                        AddScore(cmr.User.User.Id, cmr.User.User.DisplayName, ScoringModel.REACTION);
                     }
                 }
             }
