@@ -28,6 +28,7 @@ For further details see the author's [blog post](https://mmsharepoint.wordpress.
 Version|Date|Author|Comments
 -------|----|----|--------
 1.0|Sep 17, 2021|[Markus Moeller](https://twitter.com/moeller2_0)|Initial release
+1.1|Oct 07, 2021|[Markus Moeller](https://twitter.com/moeller2_0)|More precise bot function used (onEventActivity)
 
 ## Disclaimer
 
