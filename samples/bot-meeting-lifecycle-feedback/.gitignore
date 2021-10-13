@@ -3,6 +3,7 @@ node_modules
 
 # do not include the package in Git
 package
+manifest.json
 
 # do not include the local environment files
 .env
