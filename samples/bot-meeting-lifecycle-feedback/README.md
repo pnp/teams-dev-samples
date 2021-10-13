@@ -1,14 +1,20 @@
-# bot meeting lifecycle basic - Microsoft Teams App
-
-Teams meeting bot app handling lifecycle events.
+# bot meeting lifecycle feedback - Microsoft Teams App
+Teams meeting bot app handling lifecycle events by requesting feedback from the user
 
 ## Summary
-This sample is a Teams Bot meeting app created using the Teams Yeoman Generator. It acts on the real start and end date (not the scheduled ones) and posts a simple message to the meeting's chat once each event is fired.
+This sample is a Teams Bot meeting app created using the Teams Yeoman Generator. It acts on the real end date (not the scheduled ones) and posts an adaptive card requesting user feedback to the meeting's chat once each event is fired.
+Once voted each (already voted) user sees the overall feedback result from all participating users.
 App result:
 
-![App result in chat](https://mmsharepoint.files.wordpress.com/2021/09/04meetingbotlifecyleactivities.png)
+|Meeting ended - Feedback request posted|
+:-------------------------:
+![Meeting ended - Feedback request](/samples/bot-meeting-lifecycle-feedback/docs/images/06meetingended_feedbackrequest.gif)
 
-For further details see the author's [blog post](https://mmsharepoint.wordpress.com/2021/09/21/microsoft-teams-meeting-apps-lifecycle-basics/)
+|Feedback given - Refreshed card shows result|
+:-------------------------:
+![Feedback given - Refresh card](/samples/bot-meeting-lifecycle-feedback/docs/images/07givefeedback-1.gif)
+
+For further details see the author's [blog post](https://mmsharepoint.wordpress.com/)
 
 ## Prerequisites
 
@@ -22,13 +28,11 @@ For further details see the author's [blog post](https://mmsharepoint.wordpress.
     # determine node version
     node --version
     ```
-
 ## Version history
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|Sep 17, 2021|[Markus Moeller](https://twitter.com/moeller2_0)|Initial release
-1.1|Oct 07, 2021|[Markus Moeller](https://twitter.com/moeller2_0)|More precise bot function used (onEventActivity)
+1.0|Oct 07, 2021|[Markus Moeller](https://twitter.com/moeller2_0)|Initial release
 
 ## Disclaimer
 
@@ -40,10 +44,10 @@ Version|Date|Author|Comments
     git clone https://github.com/pnp/teams-dev-samples.git
     ```
 
-- In a console, navigate to `/bot-meeting-lifecycle-basic`
+- In a console, navigate to `/bot-meeting-lifecycle-feedback`
 
     ```bash
-    cd bot-meeting-lifecycle-basic
+    cd bot-meeting-lifecycle-feedback
     ```
 
 - Install modules
@@ -85,6 +89,12 @@ Version|Date|Author|Comments
 - At the right end of the tabs click (+) to add a new app and sideload your package
 - Join the meeting and after a while leave the meeting
 
+## Features
+
+This is a Teams meeting bot app handling lifecycle events by requesting feedback from the user:
+* Microsoft Teams Meeting Apps - Meeting leifecylc
+* Adaptive Cards Templating
+* Adaptive Cards Universal Action Model (UAM) to refresh cards and show user specific views
 
 ## Useful links
  * [Debugging with Visual Studio Code](https://github.com/pnp/generator-teams/blob/master/docs/docs/vscode.md)
@@ -120,4 +130,4 @@ SET DEBUG=msteams
 
 If you are using Microsoft Azure to host your Microsoft Teams app, then you can add `DEBUG` as an Application Setting with the value of `msteams`.
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/bot-meeting-lifecycle-basic" />
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/bot-meeting-lifecycle-feedback" />
