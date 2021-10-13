@@ -73,39 +73,65 @@ Version|Date|Comments
 ## Minimal Path to Awesome
 
 ### Step 1: Setup bot in Service
-1. Create new bot channel registration resource in Azure.
-2. Create New Microsoft App ID and Password.
-3. Navigate to channels and add "Microsoft Teams" channel.
+1. In the [Azure portal](https://portal.azure.com), start by creating new `Azure Bot` resource.
+
+  ![Azure Bot](./Docs/Images/new_azure_bot_resource.png)
+
+2. In the Azure Bot creation wizard, 
+    - Specify the Bot handle. 
+    - Select existing or create a new resource group. 
+    - Choose the Pricing tier.
+    - Choose to create New Microsoft App ID.
+
+  ![Azure Bot wizard](./Docs/Images/azure_bot_creation_wizard.png)
+
+3. Navigate to `Configuration` and note down the `Microsoft App ID` for the future reference.
+
+  ![Azure Bot Microsoft App ID](./Docs/Images/azure_bot_microsoft_app_id.png)
+
+4. Also, note down the location of `Messaging endpoint` which needs to be updated in Step 3 (A) or (B).
+5. Click `Manage` link next to the `Microsoft App ID`.
+6. Under `Certificates & secrets`, select `+ New client secret` to generate a new client secret.
+7. Note down the client secret value for the future reference.
+
+  ![Azure Bot Microsoft App ID](./Docs/Images/azure_bot_new_client_secret.png)
+
+8. Navigate to `Channels` and add `Microsoft Teams` channel.
+
+  ![Azure Bot Microsoft Teams channel](./Docs/Images/azure_bot_channels_teams.png)
+
 
 ### Step 2: Update configuration
-1. **Edit** the `manifest.json` contained in the `Manifest` folder to replace your Microsoft App Id (that was created when you registered your bot earlier) *everywhere* you see the place holder string `<<YOUR-MICROSOFT-APP-ID>>` (depending on the scenario the Microsoft App Id may occur multiple times in the `manifest.json`). Replace the occurances of `<<YOUR-Site-URL>>` with web site where you have hosted the solution. It could be an Azure web site or Ngrok URI.
-2. Update appsettings.json file with Microsoft App Id, App Secret.
+1. **Edit** the `manifest.json` contained in the `Manifest` folder for below changes: 
+  - Replace your `Microsoft App Id` (from step 1.3) *everywhere* you see the place holder string `<<YOUR-MICROSOFT-APP-ID>>` (depending on the scenario the Microsoft App Id may occur multiple times in the `manifest.json`). 
+  - Replace the occurances of `<<YOUR-Site-URL>>` with web site where you have hosted the solution. It could be an Azure web site or Ngrok URI.
+2. Update `appsettings.json` file with the `Microsoft App Id` and `App Secret`.
 3. **Zip** up the contents of the `Manifest` folder to create a `manifest.zip`
-4. **Upload** the `manifest.zip` to Teams (in the Apps view click "Upload a custom app")
+4. **Upload** the `manifest.zip` to Teams (in the Apps view click `Upload a custom app`).
 
-### Step 3: Run the app locally 
+### Step 3 (A): Run and debug the app locally using Ngrok 
 1. Run the bot from a terminal or from Visual Studio:
 
-  A) From a terminal, navigate to `bot-teams-incidentmanagement` folder.
+    A) From a terminal, navigate to `bot-teams-incidentmanagement` folder.
 
-  ```bash
-  # run the bot
-  dotnet run
-  ```
+    ```bash
+    # run the bot
+    dotnet run
+    ```
 
-  B) Or from Visual Studio
+    B) Or from Visual Studio
 
-  - Launch Visual Studio.
-  - File -> Open -> Project/Solution.
-  - Navigate to `bot-teams-incidentmanagement\IncidentManagement` folder.
-  - Select `IncidentManagement.csproj` file.
-  - Press `F5` to run the project.
+    - Launch Visual Studio.
+    - File -> Open -> Project/Solution.
+    - Navigate to `bot-teams-incidentmanagement\IncidentManagement` folder.
+    - Select `IncidentManagement.csproj` file.
+    - Press `F5` to run the project.
 
-2. Update the appsettings.json files. 
+2. Update the `appsettings.json` file. 
 
-  "MicrosoftAppId: `<<Your Microsoft Bot_Id>>`
-  "MicrosoftAppPassword": `<<Your Microsoft Bot_Secret>>`
-  "ImageBasePath": `<<Path where images are stored>>`
+    - "MicrosoftAppId: `<<Your Microsoft Bot_Id>>`
+    - "MicrosoftAppPassword": `<<Your Microsoft Bot_Secret>>`
+    - "ImageBasePath": `<<Path where images are stored>>`
 
 3. Press `F5` to run the project in the Visual studio.
 
@@ -113,10 +139,23 @@ Version|Date|Comments
 
 		ngrok.exe http 3978 -host-header=localhost:3978
 
-5. Update messaging endpoint in the `Azure Bots Channel Registration`. Open the `Bot channel registration`, click on `Configuration/Settings` on the left pane, whichever is available and update the `messaging endpoint` to the endpoint that bot app will be listening on. Update the ngrok URL in the below format for the messaging endpoint.
+5. Update `Messaging endpoint` to a place specified in `step 1.4`, to the endpoint that bot app will be listening on. Update the ngrok URL in the below format for the messaging endpoint.
 
-		ex: https://<subdomain>.ngrok.io/api/messages.
+		ex: https://<subdomain>.ngrok.io/api/messages
 
+### Step 3 (B): Deploy to Azure Web App
+1. In the [Azure portal](https://portal.azure.com), create new `Web App` resource.
+    - Select `Runtime stack` as `.NET Core 3.1 (LTS)`.
+
+  ![Azure Bot](./Docs/Images/azure_new_web_app.png)
+
+2. Publish the code to above created Azure web app by downloading the publishing profile or using the Deployment Center.
+
+3. Update `Messaging endpoint` to a place specified in `step 1.4`, to the endpoint that bot app will be listening on. Update the Azure Web App URL in the below format for the messaging endpoint.
+
+    ```
+    ex: https://incidentmanagement.azurewebsites.net/api/messages
+    ```
 ---
 
 ## References
@@ -124,7 +163,7 @@ Version|Date|Comments
 Below are the references used while developing this sample:
 
 - [Adaptive Cards](https://adaptivecards.io/)
-- [Universal Actions for Adaptive Cards](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/)
+- [Universal Actions for Adaptive Cards](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview)
 - [User Specific Views](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/user-specific-views/)
 - [Sequential Workflows](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/sequential-workflows/)
 - [Up to date cards](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/up-to-date-views/)
