@@ -1,0 +1,28 @@
+Welcome to the Teams Toolkit! Here are some tips to get started building your app.
+
+
+Quick start
+----------
+
+Before you run or Start Debugging for the first time, follow these steps:
+
+1. Select the Project > TeamsFx > Configure for SSO menu.
+2. When prompted, sign in to your Microsoft account that has a Microsoft 365 tenant.
+3. Once finished, select Debug > Start Debugging or press F5.
+4. In the browser, click Add to add your app to Teams.
+
+Learn more about developing Teams applications with Blazor at https://aka.ms/blazor-teams-app-dev.
+
+Building your app UI
+--------------------
+
+Fluent UI is a front-end framework designed to build experiences that fit seamlessly into a broad range of Microsoft products. To make it simpler for you to build applications that fit seamlessly into Microsoft Teams, this template showcases Fluent UI Blazor components that are part of the Microsoft.Fast.Components.FluentUI package. 
+
+Learn more about these components here: https://github.com/microsoft/fast-blazor
+
+
+Troubleshooting
+---------------
+
+If you Start Debugging in a browser and Teams shows the message "App not found, Please verify the app and it's access permissions", it means the app hasn't been uploaded to Teams Dev Portal. To resolve this, follow the steps in the Quick start section above. The Project > TeamsFx > Configure for SSO menu command will do this step for you.
+
