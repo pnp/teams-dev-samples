@@ -84,4 +84,4 @@ is locked down to only a selection of Teams apps.
 * Adding an additional permission to the created Azure AD application
 
 
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/tab-blazor-leaderboard" />
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-blazor-leaderboard" />
