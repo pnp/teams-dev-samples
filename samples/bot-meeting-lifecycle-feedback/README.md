@@ -92,7 +92,7 @@ Version|Date|Author|Comments
 ## Features
 
 This is a Teams meeting bot app handling lifecycle events by requesting feedback from the user:
-* Microsoft Teams Meeting Apps - Meeting leifecylc
+* Microsoft Teams Meeting Apps - Meeting lifecylce
 * Adaptive Cards Templating
 * Adaptive Cards Universal Action Model (UAM) to refresh cards and show user specific views
 
