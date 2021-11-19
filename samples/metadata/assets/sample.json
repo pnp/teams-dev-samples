@@ -14698,7 +14698,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-blazor-leaderboard/assets/Leaderboard.png",
+        "url": "https://github.com/pnp/teams-dev-samples/blob/main/samples/tab-blazor-leaderboard/assets/Leaderboard.png?raw=true",
         "alt": "Tab showing Teams channel leaderboard"
       }
     ],
