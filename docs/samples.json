@@ -14716,7 +14716,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -14814,7 +14814,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -14912,7 +14912,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15010,7 +15010,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15108,7 +15108,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15206,7 +15206,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15304,7 +15304,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15402,7 +15402,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15500,7 +15500,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15598,7 +15598,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15795,7 +15795,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15893,7 +15893,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -15991,7 +15991,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16089,7 +16089,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16187,7 +16187,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16285,7 +16285,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16383,7 +16383,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16481,7 +16481,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16579,7 +16579,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16678,7 +16678,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16776,7 +16776,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16874,7 +16874,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -16972,7 +16972,204 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "springboot"
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "comment": "**** BEGIN BOT COMPOSER BOTBUILDER SAMPLES ****",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51.teams-messaging-extensions-action-composer",
+    "reponame": "botbuilder-51.teams-messaging-extensions-action-composer",
+    "source": "pnp",
+    "title": "Bot Composer Teams Action Messaging Extension (EXPERIMENTAL)",
+    "shortDescription": "Sample illustrates how to build an Action-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/composer_nodejs/51.teams-messaging-extensions-action",
+    "longDescription": [
+      "Simple Teams action messaging extension. Messaging extensions are based on the Azure Bot Framework."
+    ],
+    "creationDateTime": "2021-05-24",
+    "updateDateTime": "2021-10-12",
+    "products": [
+      "Teams",
+      "Office"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "composer"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57.teams-conversation-bot-composer",
+    "reponame": "botbuilder-57.teams-conversation-bot-composer",
+    "source": "pnp",
+    "title": "Bot Composer Teams Conversation Bot",
+    "shortDescription": "Sample shows how to incorporate basic conversational flow into a Teams application. It also illustrates a few of the Teams specific calls you can make from your bot.",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/composer_nodejs/57.teams-conversation-bot",
+    "longDescription": [
+      "Simple bot with conversational flow demonstrates how to display a welcome card, mention the user and message all members in a conversation"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams",
+      "Office"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "composer"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
