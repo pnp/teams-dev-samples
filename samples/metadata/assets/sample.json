@@ -6215,6 +6215,10 @@
         "order": 100,
         "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-one-productivity-hub.png",
         "alt": "Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0"
+      },
+      {
+        "type": "video",
+        "url":"https://www.youtube.com/embed/U7XBPa-n9Ik"
       }
     ],
     "authors": [
