@@ -74,3 +74,4 @@ site_description: A gallery of Microsoft Teams samples created by the community
 # Uncomment during testing if you need to change the default web server settings
 
 # dev_addr: '127.0.0.1:443'
+# dev_addr: '192.168.24.103:8000'
