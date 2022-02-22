@@ -1,7 +1,6 @@
 # tab-react-router - Microsoft Teams App
 
-This is a starter solution  sample app to show the demostrations of how to use React Router with Teams App project generated using Yo teams.
-It particularlly uses Hash Router to when you need to mutiple pages like a stand alone react application and applying the navigation using routers. 
+This is a starter solution  sample app to show the demostrations of how to use React Router with Teams App project generated using Yo teams. It particularlly uses Hash Router when we need to have mutiple pages like a stand alone react application and applying the navigation using router. Hoping that this sample would be useful for/as reference to create a React Router based Teams App Tab with mutiple pages and support for deeplinking and using the concepts of router for nagivation.
 
 ## Idea behind this Sample
  Once we create a Teams App Tab using Yeoman Generator it creates a project structure as Single page application.
