@@ -82,7 +82,7 @@ class Tab extends React.Component {
             headers: headers
         };
 
-        let response = await fetch("/getGraphAccessToken", options).catch(this.unhandledFetchError); //This calls getGraphAccessToken route in /api-server/app.js
+        let response = await fetch("/getGraphAccessToken", options).catch(this.unhandledFetchError); //This calls getGraphAccessToken route in /api-server/server.js
         let data = await response.json().catch(this.unhandledFetchError);
 
         if (!response.ok) {
