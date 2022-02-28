@@ -57,10 +57,16 @@ For further details see the [Yo Teams documentation](https://github.com/PnP/gene
 
 ## Building the app
 
+Before building for the first time, install the npm dependencies.
+
+``` bash
+npm install
+npm i -g gulp-cli
+```
+
 The application is built using the `build` Gulp task.
 
 ``` bash
-npm i -g gulp-cli
 gulp build
 ```
 
@@ -128,4 +134,4 @@ SET DEBUG=msteams
 
 If you are using Microsoft Azure to host your Microsoft Teams app, then you can add `DEBUG` as an Application Setting with the value of `msteams`.
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/teamspp-react-router" />
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-react-router" />
