@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
+  "id": "e2977240-89d8-11ec-a109-cbc7b8791c22",
+  "version": "0.0.1",
+  "packageName": "teamsroutes",
+  "developer": {
+    "name": "mypersorg",
+    "websiteUrl": "https://5949-103-198-165-253.ngrok.io",
+    "privacyUrl": "https://5949-103-198-165-253.ngrok.io/privacy.html",
+    "termsOfUseUrl": "https://5949-103-198-165-253.ngrok.io/tou.html"
+  },
+  "name": {
+    "short": "TeamsRoutes",
+    "full": "TeamsRoutes"
+  },
+  "description": {
+    "short": "TODO: add short description here",
+    "full": "TODO: add full description here"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://5949-103-198-165-253.ngrok.io/teamsRoutesTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [],
+  "bots": [],
+  "connectors": [],
+  "composeExtensions": [],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "5949-103-198-165-253.ngrok.io"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false
+}
