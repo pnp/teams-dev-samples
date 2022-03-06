@@ -1,0 +1,12 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "BinaryRoots",
+      "unitTestsEnabled": false,
+      "lintingSupport": false,
+      "useAzureAppInsights": true
+    },
+    "libraryName": "teamsMsgForward",
+    "generator-version": "3.5.0-preview"
+  }
+}
