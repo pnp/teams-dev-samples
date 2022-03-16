@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:apps='http://schemas.google.com/apps/2006'>
+	<title>Mail Filters</title>
+	<id>tag:mail.google.com,2008:filters:1187390107241,1187747076608,1198155562862</id>
+	<updated>2021-10-11T20:37:31Z</updated>
+	<author>
+		<name>Megan Bowen</name>
+		<email>mbowen@contoso.com</email>
+	</author>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1187390107241</id>
+		<updated>2021-10-11T20:37:31Z</updated>
+		<content></content>
+		<apps:property name='from' value='LatestUpdates@info.contoso.com'/>
+		<apps:property name='label' value='newsletter'/>
+	</entry>
+	<entry>
+		<category term='filter'></category>
+		<title>Mail Filter</title>
+		<id>tag:mail.google.com,2008:filter:1187747076608</id>
+		<updated>2021-10-11T20:37:31Z</updated>
+		<content></content>
+		<apps:property name='from' value='Contoso'/>
+		<apps:property name='label' value='Contoso'/>
+		<apps:property name='shouldArchive' value='true'/>
+	</entry>
+</feed>
