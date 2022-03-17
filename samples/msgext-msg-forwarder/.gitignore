@@ -10,5 +10,6 @@ package
 # do not include the Connectors Json Db file
 connectors.json
 
-# do not include dist files
+# do not include temp and dist files
+temp
 dist

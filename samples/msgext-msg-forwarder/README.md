@@ -29,6 +29,7 @@ Version|Date|Author|Comments
 * Clone this repository
 * in the command line run:
   * `npm install`
+  * `npm i -g gulp-cli`
   * `gulp ngrok-serve`
 * This will give your ngrok url, which can  be used in below steps
 * Register a bot and Azure AD application (Steps mentoined below)
@@ -47,7 +48,7 @@ This Teams app will provide way to forward a message to any users or teamms chan
 As we are using Graph API and SSO, we need to setup new Azure AD app registration. 
 
 * To create a new Azure AD App registration with SSO refer this [link](https://pnp.github.io/generator-teams/tutorials/build-a-tab-with-sso-support/#set-up-your-azure-ad-application) 
-* For making graph call using Microsoft Graph Toolkit with SSO, we would need to do addtional steps in Azure AD app to make sure Graph API token is retrieved and we get required constent and permissoins. You can refer this [link](https://blog.mastykarz.nl/securely-connect-microsoft-graph-teams-tabs-sso/) from Waldek on same to understand the concept. Please note that the code is already implemented in this solution. so you need to just do configuraiton in Azure AD app registration
+* For making graph call using Microsoft Graph Toolkit with SSO, we would need to do addtional steps in Azure AD app to make sure Graph API token is retrieved and we get required constent and permissoins. You can refer this [link](https://blog.mastykarz.nl/securely-connect-microsoft-graph-teams-tabs-sso/) from Waldek on same to understand the concept. Please note that the code is already implemented in this solution. so you need to just do configuration in Azure AD app registration.
 
 ![picture of the app in action](assets/enableimplicitflow.png)
 
@@ -55,7 +56,7 @@ As we are using Graph API and SSO, we need to setup new Azure AD app registratio
 
 * ['User.Read','Mail.ReadBasic', 'User.ReadBasic.All','ChatMessage.Send', 'User.Read.All', 'Chat.ReadWrite','People.Read','Team.ReadBasic.All','Group.Read.All','Channel.ReadBasic.all','Chat.Create','Chat.ReadWrite']
 
-![picture of the app in action](assets/permissions.png)
+![picture of the app in action](assets/Permissions.png)
 
 ## Create Azure Bot Regisration
 As we have to use messaging extension, we need to register a Azure Bot.
@@ -66,7 +67,7 @@ As we have to use messaging extension, we need to register a Azure Bot.
 * Enable Bot channel for Teams
 * Replace the API messaging endpoint with your ngrok url after you ran.
 
-![picture of the app in action](assets/botregistration.png)
+![picture of the app in action](assets/BotRegistration.png)
 
 ## Replace client ID for provider
 
@@ -79,15 +80,15 @@ Create a .env file at the root of the solution(when you will clone, this file wo
 
 ```
 # The public domain name of where you host your application
-PUBLIC_HOSTNAME=teamsmsgforward.azurewebsites.net
+PUBLIC_HOSTNAME=xxx.azurewebsites.net
 
 # Id of the Microsoft Teams application
-APPLICATION_ID=860000-0000-0000-0000-000000000ef3
+APPLICATION_ID=00000000-0000-0000-0000-000000000000
 # Package name of the Microsoft Teams application
 PACKAGE_NAME=teamsmsgforward
 
 # App Id and App Password for the Bot Framework bot
-MICROSOFT_APP_ID=13000000-0000-0000-0000-00000000b
+MICROSOFT_APP_ID=00000000-0000-0000-0000-000000000000
 MICROSOFT_APP_PASSWORD=k1723712738612836217123823373B
 
 # Port for local debugging
@@ -113,9 +114,9 @@ NGROK_REGION=
 # Debug settings, default logging "msteams"
 DEBUG=msteams
 
-TAB_APP_ID=13000000-0000-0000-0000-00000000b
-TAB_APP_URI=api://b9c5-103-198-165-253.ngrok.io/13000000-0000-0000-0000-00000000b
-MICROSOFT_APP_ID=13000000-0000-0000-0000-00000000b
+TAB_APP_ID=00000000-0000-0000-0000-000000000000
+TAB_APP_URI=api://b9c5-103-198-165-253.ngrok.io/00000000-0000-0000-0000-000000000000
+MICROSOFT_APP_ID=13000000-0000-0000-0000-00000000b59d
 
 ```
 
