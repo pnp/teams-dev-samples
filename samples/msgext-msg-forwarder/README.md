@@ -120,4 +120,4 @@ MICROSOFT_APP_ID=13000000-0000-0000-0000-00000000b59d
 
 ```
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgExt-message-forwarder" />
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-msg-forwarder" />
