@@ -1,4 +1,5 @@
 import { Checkbox, Divider, Header, List, Segment, Status, Text } from "@fluentui/react-northstar";
+import { Fragment } from "react";
 import { Filter } from "../lib/types";
 
 interface MappingListProps {
@@ -106,8 +107,8 @@ export default function MappingList(props: MappingListProps) {
 
   return (
     <>
-      {props.filters.map(f => (
-        <>
+      {props.filters.map((f, n) =>
+        <Fragment key={n}>
           <Segment color="black" disabled={f.disabled}>
             <div style={{ "textAlign": "right" }}>
               <Checkbox toggle checked={!f.disabled} onChange={() => changeDisabled(f)} />
@@ -124,8 +125,8 @@ export default function MappingList(props: MappingListProps) {
             </div>
           </Segment>
           <Divider />
-        </>
-      ))}
+        </Fragment>
+      )}
     </>
   );
 }

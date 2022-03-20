@@ -46,6 +46,10 @@ Version|Date|Author|Comments
 * Alternatively use the `Run and Debug Activity Panel` in Visual Studio Code and click the `Run and Debug` green arrow button.
 * From TeamsFx CLI: Start debugging the project by executing the command `teamsfx preview --local` in your project directory.
 
+## Important notes
+
+* Google security does not allow login from a Chromium-based browser that has a debugger connected. If debugging from Visual Studio Code, you'll have to import XML rather than connecting to Gmail.
+* As Google login takes place in an OAuth popup window, it may not work in your Teams desktop client. Again, importing XML will still work, as will using the Teams web client.
 
 ## Features
 
@@ -53,6 +57,5 @@ Version|Date|Author|Comments
 * Authenticates to Google Workspace
 * Reads from GMail
 * Writes to Outlook
-
 
 <img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-MoveYourFilters" />

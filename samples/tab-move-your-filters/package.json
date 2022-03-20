@@ -4,7 +4,9 @@
     "description": "Create a new Outlook rule and folder for each filter you want to move",
     "author": "Mark Allan, Tom Resing, et al",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "install:tabs": "cd tabs && npm install",
+        "installAll": "npm run install:tabs"
     },
     "devDependencies": {
         "@microsoft/teamsfx-cli": "0.*"

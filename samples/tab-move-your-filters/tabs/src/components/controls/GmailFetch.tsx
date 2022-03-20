@@ -14,8 +14,6 @@ interface GmailFetchProps {
 export default function GmailFetch(props: GmailFetchProps) {
   const [errorMessage, setErrorMessage] = useState("");
 
-  console.log(`GmailFetch: ${clientId}`);
-
   async function parseFilter(gFilter: any): Promise<Filter> {
     const filter: Filter = {};
 
@@ -69,9 +67,7 @@ export default function GmailFetch(props: GmailFetchProps) {
     return filter;
   }
 
-  function onLoggedIn(res: any) {
-    console.log(`OnLoggedIn: ${clientId}`);
-    console.dir(res);
+  function onLoggedIn() {
     gapi.load("client", async () => {
       try {
         gapi.client.setApiKey(clientId);
@@ -88,8 +84,6 @@ export default function GmailFetch(props: GmailFetchProps) {
   }
 
   function onFailure(res: any) {
-    console.log(`OnFailure: ${clientId}`);
-    console.dir(res);
     setErrorMessage(res.error || JSON.stringify(res));
   }
 

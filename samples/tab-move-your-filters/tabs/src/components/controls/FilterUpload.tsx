@@ -50,6 +50,9 @@ export default function FilterUpload(props: FilterUploadProps) {
 
   return (
     <>
+      <p>
+        <a href="https://mail.google.com/#settings/filters" target="_blank" rel="noreferrer">Export filters here &raquo;</a>
+      </p>
       <Button primary content="Upload XML" onClick={triggerFileUpload} />
       <input id="fileUploadElt" style={{ "display": "none" }} type="file" onChange={xmlUploaded} />
 

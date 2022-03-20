@@ -1,6 +1,8 @@
 {
     "appName": "MoveYourFilters",
     "projectId": "7c30a2eb-73a4-46c6-a1e7-009c44f1411b",
+    "version": "2.1.0",
+    "isFromSample": false,
     "solutionSettings": {
         "name": "fx-solution-azure",
         "version": "1.0.0",
@@ -18,7 +20,5 @@
             "fx-resource-simple-auth"
         ]
     },
-    "version": "2.0.0",
-    "activeEnvironment": "default",
     "programmingLanguage": "typescript"
 }

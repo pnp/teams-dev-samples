@@ -7,6 +7,7 @@ import FilterUpload from "./controls/FilterUpload";
 import GmailFetch from "./controls/GmailFetch";
 import MappingList from "./controls/MappingList";
 import "./Tab.css";
+import { Client } from "@microsoft/microsoft-graph-client";
 
 export default function Tab() {
   const [filters, setFilters] = useState(Array<Filter>());
@@ -15,16 +16,22 @@ export default function Tab() {
   const [imported, setImported] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
-  const { loading: authenticating, error: authError, data: graph } = useGraph(
-    async (graph) => graph,
+  const { loading: authenticating, error: authError, reload: login } = useGraph(
+    async (graph) => {
+      if (filters.length > 0) moveFilters(graph);
+    },
     { scope: ["MailboxSettings.Read", "Mail.ReadWrite", "MailboxSettings.ReadWrite"] }
   );
 
-  async function moveFilters() {
-    if (importing || imported || graph === undefined || filters.length === 0) return;
+  async function startMove() {
+    if (importing || imported || filters.length === 0) return;
 
     setImporting(true);
 
+    login();
+  }
+
+  async function moveFilters(graph: Client) {
     try {
       const archiveFolder = await graph.api("/me/mailFolders/archive").get();
       const existingRules = await graph.api("/me/mailFolders/inbox/messageRules").get();
@@ -122,7 +129,7 @@ export default function Tab() {
           <>
             <h2>Filters to move</h2>
             <MappingList filters={filters} onFiltersChanged={setFilters} />
-            <Button content="Move them!" primary disabled={active} loading={active} onClick={moveFilters} />
+            <Button content="Move them!" primary disabled={active} loading={active} onClick={startMove} />
             {authError && <ErrorMessage message={JSON.stringify(authError)} />}
             {errorMessage && <ErrorMessage message={errorMessage} />}
           </>
@@ -131,8 +138,10 @@ export default function Tab() {
             <h2>Migration complete!</h2>
             <p>
               {processed} filters were successfully imported into Outlook.
-              <a href="https://outlook.office.com/mail/options/mail/rules" target="_blank">Take a look &raquo;</a>
-              </p>
+            </p>
+            <p>
+              <a href="https://outlook.office.com/mail/options/mail/rules" target="_blank" rel="noreferrer">Take a look &raquo;</a>
+            </p>
           </>
         )}
       </div>

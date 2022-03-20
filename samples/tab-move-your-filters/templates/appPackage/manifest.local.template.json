@@ -1,22 +1,22 @@
 {
-    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
-    "manifestVersion": "1.9",
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
     "version": "1.0.0",
     "id": "{{localSettings.teamsApp.teamsAppId}}",
     "packageName": "com.microsoft.teams.extension",
     "developer": {
         "name": "Microsoft Hackathon",
         "websiteUrl": "{{{localSettings.frontend.tabEndpoint}}}",
-        "privacyUrl": "{{{localSettings.frontend.tabEndpoint}}}/index.html#/privacy",
-        "termsOfUseUrl": "{{{localSettings.frontend.tabEndpoint}}}/index.html#/termsofuse"
+        "privacyUrl": "{{{localSettings.frontend.tabEndpoint}}}{{{localSettings.frontend.tabIndexPath}}}/privacy",
+        "termsOfUseUrl": "{{{localSettings.frontend.tabEndpoint}}}{{{localSettings.frontend.tabIndexPath}}}/termsofuse"
     },
     "icons": {
-        "color": "color.png",
-        "outline": "outline.png"
+        "color": "resources/color.png",
+        "outline": "resources/outline.png"
     },
     "name": {
         "short": "MoveYourFilters-local-debug",
-        "full": "This field is not used-local-debug"
+        "full": "MoveYourFilters-local-debug"
     },
     "description": {
         "short": "Create a new Outlook rule and folder for each filter you want to move.",
@@ -27,7 +27,7 @@
     "composeExtensions": [],
     "configurableTabs": [
         {
-            "configurationUrl": "{{{localSettings.frontend.tabEndpoint}}}/index.html#/config",
+            "configurationUrl": "{{{localSettings.frontend.tabEndpoint}}}{{{localSettings.frontend.tabIndexPath}}}/config",
             "canUpdateConfiguration": true,
             "scopes": [
                 "team",
@@ -39,8 +39,8 @@
         {
             "entityId": "index",
             "name": "Personal Tab",
-            "contentUrl": "{{{localSettings.frontend.tabEndpoint}}}/tab",
-            "websiteUrl": "{{{localSettings.frontend.tabEndpoint}}}/tab",
+            "contentUrl": "{{{localSettings.frontend.tabEndpoint}}}{{{localSettings.frontend.tabIndexPath}}}/tab",
+            "websiteUrl": "{{{localSettings.frontend.tabEndpoint}}}{{{localSettings.frontend.tabIndexPath}}}/tab",
             "scopes": [
                 "personal"
             ]
