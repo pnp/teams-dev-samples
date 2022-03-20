@@ -1,0 +1,13 @@
+{
+    "name": "MoveYourFilters",
+    "version": "1.0.0",
+    "description": "Create a new Outlook rule and folder for each filter you want to move",
+    "author": "Mark Allan, Tom Resing, et al",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "devDependencies": {
+        "@microsoft/teamsfx-cli": "0.*"
+    },
+    "license": "MIT"
+}

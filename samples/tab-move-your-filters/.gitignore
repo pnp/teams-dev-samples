@@ -1,0 +1,12 @@
+node_modules
+/.fx/*.env
+/.fx/*.userdata
+.DS_Store
+.archive
+.archive.log
+.fx/configs/localSettings.json
+.fx/subscriptionInfo.json
+build
+**/.env.teamsfx.local
+.fx/states/*.userdata
+.backup
