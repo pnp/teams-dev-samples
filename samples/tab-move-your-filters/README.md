@@ -20,11 +20,10 @@ This solution uses Teams Toolkit (Preview) v3.2.0 from January 12, 2022.
 
 ## Prerequisites
 
-- [NodeJS](https://nodejs.org/en/)
-- An M365 account. If you do not have M365 account, apply one from [M365 developer program](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
-- [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) or [TeamsFx CLI](https://aka.ms/teamsfx-cli)
-- A GMail account (or use the [sample file to import](./assets/) )
-- A Google app ID
+- The [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) (sample tested with v3.5.0)
+- The [Teams Toolkit prerequisites](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension#prerequisites)
+- A GMail account (or use the [sample XML file](./assets/) to test without one)
+- A Google API app ID if you want to use Google login rather than XML import (see https://developers.google.com/gmail/api/auth/web-server).
 
 ## Version history
 
@@ -41,10 +40,10 @@ Version|Date|Author|Comments
 ## Minimal Path to Awesome
 
 * Clone this repository
-* Add your Google API app id to the config file
-* From Visual Studio Code: Start debugging the project by hitting the `F5` key in Visual Studio Code. 
-* Alternatively use the `Run and Debug Activity Panel` in Visual Studio Code and click the `Run and Debug` green arrow button.
-* From TeamsFx CLI: Start debugging the project by executing the command `teamsfx preview --local` in your project directory.
+* Open in Visual Studio Code with the [Teams Toolkit extension](https://aka.ms/teams-toolkit) installed
+* Start debugging the project by hitting the `F5` key in Visual Studio Code. 
+* Alternatively use the `Run and Debug Activity Panel` in Visual Studio Code and click the `Run and Debug` green arrow button with your preferred browser selected for launching.
+* To use Google login, add your Google API app id to the config file for the relevant environment (see https://create-react-app.dev/docs/adding-custom-environment-variables/).
 
 ## Important notes
 
