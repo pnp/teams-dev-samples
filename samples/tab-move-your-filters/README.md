@@ -43,7 +43,7 @@ This solution uses Teams Toolkit (Preview).
 - Open in Visual Studio Code with the [Teams Toolkit extension](https://aka.ms/teams-toolkit) installed
 - Start debugging the project by hitting the `F5` key in Visual Studio Code.
 - Alternatively use the `Run and Debug Activity Panel` in Visual Studio Code and click the `Run and Debug` green arrow button with your preferred browser selected for launching.
-- To use Google login, add your Google API app id to the config file for the relevant environment (see https://create-react-app.dev/docs/adding-custom-environment-variables/).
+- To use Google login, add your Google API app id at REACT_APP_GMAIL_CLIENT_ID in the config file for the relevant environment (see https://create-react-app.dev/docs/adding-custom-environment-variables/).
 
 ## Important notes
 
