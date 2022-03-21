@@ -12679,7 +12679,7 @@
   },
   {
     "comment": "**** BEGIN C# BOTBUILDER SAMPLES ****",
-    "name": "pnp-sp-dev-teams-sample-botbuilder-46.teams-auth-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-46_teams-auth-csharp",
     "reponame": "botbuilder-46.teams-auth-csharp",
     "source": "pnp",
     "title": ".NET Bot with Teams Authentication",
@@ -12776,7 +12776,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-50.teams-messaging-extensions-search-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-csharp",
     "reponame": "botbuilder-50.teams-messaging-extensions-search-csharp",
     "source": "pnp",
     "title": ".NET Teams Search Messaging Extension",
@@ -12873,7 +12873,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-51.teams-messaging-extensions-action-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-csharp",
     "reponame": "botbuilder-51.teams-messaging-extensions-action-csharp",
     "source": "pnp",
     "title": ".NET Teams Action Messaging Extension",
@@ -12970,7 +12970,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-52.teams-messaging-extensions-search-auth-config-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-csharp",
     "reponame": "botbuilder-52.teams-messaging-extensions-search-auth-config-csharp",
     "source": "pnp",
     "title": ".NET Search Messaging Extension with Config Page and Authentication",
@@ -13067,7 +13067,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-53.teams-messaging-extensions-action-preview-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-csharp",
     "reponame": "botbuilder-53.teams-messaging-extensions-action-preview-csharp",
     "source": "pnp",
     "title": ".NET Messaging Extension, Bot sends on behalf of a user",
@@ -13164,7 +13164,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-54.teams-task-module-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-csharp",
     "reponame": "botbuilder-54.teams-task-module-csharp",
     "source": "pnp",
     "title": ".NET Teams Task Module with Bot Framework",
@@ -13261,7 +13261,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-55.teams-link-unfurling-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-csharp",
     "reponame": "botbuilder-55.teams-link-unfurling-csharp",
     "source": "pnp",
     "title": ".NET Teams Link Unfurling",
@@ -13358,7 +13358,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-56.teams-file-upload-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-csharp",
     "reponame": "botbuilder-56.teams-file-upload-csharp",
     "source": "pnp",
     "title": ".NET Teams File Upload Bot",
@@ -13455,7 +13455,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-57.teams-conversation-bot-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-csharp",
     "reponame": "botbuilder-57.teams-conversation-bot-csharp",
     "source": "pnp",
     "title": ".NET Teams Conversation Bot",
@@ -13552,7 +13552,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-58.teams-start-new-thread-in-channel-csharp",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-csharp",
     "reponame": "botbuilder-58.teams-start-new-thread-in-channel-csharp",
     "source": "pnp",
     "title": ".NET Bot starts a thread in a specific Teams channel",
@@ -13650,7 +13650,7 @@
   },
   {
     "comment": "**** BEGIN JAVA BOTBUILDER SAMPLES ****",
-    "name": "pnp-sp-dev-teams-sample-botbuilder-46.teams-auth-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-46_teams-auth-java",
     "reponame": "botbuilder-46.teams-auth-java",
     "source": "pnp",
     "title": "Java Bot with Teams Authentication",
@@ -13747,7 +13747,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-50.teams-messaging-extensions-search-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-java",
     "reponame": "botbuilder-50.teams-messaging-extensions-search-java",
     "source": "pnp",
     "title": "Java Teams Search Messaging Extension",
@@ -13844,7 +13844,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-51.teams-messaging-extensions-action-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-java",
     "reponame": "botbuilder-51.teams-messaging-extensions-action-java",
     "source": "pnp",
     "title": "Java Teams Action Messaging Extension",
@@ -13941,7 +13941,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-52.teams-messaging-extensions-search-auth-config-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-java",
     "reponame": "botbuilder-52.teams-messaging-extensions-search-auth-config-java",
     "source": "pnp",
     "title": "Java Messaging Extension with Auth and Config",
@@ -14038,7 +14038,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-53.teams-messaging-extensions-action-preview-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-java",
     "reponame": "botbuilder-53.teams-messaging-extensions-action-preview-java",
     "source": "pnp",
     "title": "Java Messaging Extension, Bot sends on behalf of a user",
@@ -14135,7 +14135,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-54.teams-task-module-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-java",
     "reponame": "botbuilder-54.teams-task-module-java",
     "source": "pnp",
     "title": "Java Teams Task Module with Bot Framework",
@@ -14232,7 +14232,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-55.teams-link-unfurling-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-java",
     "reponame": "botbuilder-55.teams-link-unfurling-java",
     "source": "pnp",
     "title": "Java Teams Link Unfurling",
@@ -14329,7 +14329,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-56.teams-file-upload-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-java",
     "reponame": "botbuilder-56.teams-file-upload-java",
     "source": "pnp",
     "title": "Java Teams File Upload Bot",
@@ -14426,7 +14426,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-57.teams-conversation-bot-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-java",
     "reponame": "botbuilder-57.teams-conversation-bot-java",
     "source": "pnp",
     "title": "Java Teams Conversation Bot",
@@ -14523,7 +14523,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-58.teams-start-new-thread-in-channel-java",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-java",
     "reponame": "botbuilder-58.teams-start-new-thread-in-channel-java",
     "source": "pnp",
     "title": "Java Bot starts a thread in a specific Teams channel",
@@ -14621,7 +14621,7 @@
   },
   {
     "comment": "**** BEGIN JAVASCRIPT BOTBUILDER SAMPLES ****",
-    "name": "pnp-sp-dev-teams-sample-botbuilder-46.teams-auth-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-46_teams-auth-javascript",
     "reponame": "botbuilder-46.teams-auth-javascript",
     "source": "pnp",
     "title": "Javascript Bot with Teams Authentication",
@@ -14718,7 +14718,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-50.teams-messaging-extensions-search-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-javascript",
     "reponame": "botbuilder-50.teams-messaging-extensions-search-javascript",
     "source": "pnp",
     "title": "Javascript Teams Search Messaging Extension",
@@ -14815,7 +14815,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-51.teams-messaging-extensions-action-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-javascript",
     "reponame": "botbuilder-51.teams-messaging-extensions-action-javascript",
     "source": "pnp",
     "title": "Javascript Teams Action Messaging Extension",
@@ -14912,7 +14912,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-52.teams-messaging-extensions-search-auth-config-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-javascript",
     "reponame": "botbuilder-52.teams-messaging-extensions-search-auth-config-javascript",
     "source": "pnp",
     "title": "Javascript Messaging Extension with Auth and Config",
@@ -15009,7 +15009,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-53.teams-messaging-extensions-action-preview-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-javascript",
     "reponame": "botbuilder-53.teams-messaging-extensions-action-preview-javascript",
     "source": "pnp",
     "title": "Javascript Messaging Extension, Bot sends on behalf of a user",
@@ -15106,7 +15106,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-54.teams-task-module-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-javascript",
     "reponame": "botbuilder-54.teams-task-module-javascript",
     "source": "pnp",
     "title": "Javascript Teams Task Module with Bot Framework",
@@ -15203,7 +15203,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-55.teams-link-unfurling-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-javascript",
     "reponame": "botbuilder-55.teams-link-unfurling-javascript",
     "source": "pnp",
     "title": "Javascript Teams Link Unfurling",
@@ -15300,7 +15300,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-56.teams-file-upload-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-javascript",
     "reponame": "botbuilder-56.teams-file-upload-javascript",
     "source": "pnp",
     "title": "Javascript Teams File Upload Bot",
@@ -15397,7 +15397,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-57.teams-conversation-bot-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-javascript",
     "reponame": "botbuilder-57.teams-conversation-bot-javascript",
     "source": "pnp",
     "title": "Javascript Teams Conversation Bot",
@@ -15494,7 +15494,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-58.teams-start-new-thread-in-channel-javascript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-javascript",
     "reponame": "botbuilder-58.teams-start-new-thread-in-channel-javascript",
     "source": "pnp",
     "title": "Javascript Bot starts a thread in a specific Teams channel",
@@ -15592,7 +15592,7 @@
   },
   {
     "comment": "**** BEGIN PYTHON BOTBUILDER SAMPLES ****",
-    "name": "pnp-sp-dev-teams-sample-botbuilder-46.teams-auth-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-46_teams-auth-python",
     "reponame": "botbuilder-46.teams-auth-python",
     "source": "pnp",
     "title": "Python Bot with Teams Authentication",
@@ -15689,7 +15689,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-50.teams-messaging-extensions-search-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-python",
     "reponame": "botbuilder-50.teams-messaging-extensions-search-python",
     "source": "pnp",
     "title": "Python Teams Search Messaging Extension",
@@ -15786,7 +15786,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-51.teams-messaging-extensions-action-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-python",
     "reponame": "botbuilder-51.teams-messaging-extensions-action-python",
     "source": "pnp",
     "title": "Python Teams Action Messaging Extension",
@@ -15883,7 +15883,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-52.teams-messaging-extensions-search-auth-config-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-python",
     "reponame": "botbuilder-52.teams-messaging-extensions-search-auth-config-python",
     "source": "pnp",
     "title": "Python Messaging Extension with Auth and Config",
@@ -15980,7 +15980,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-53.teams-messaging-extensions-action-preview-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-python",
     "reponame": "botbuilder-53.teams-messaging-extensions-action-preview-python",
     "source": "pnp",
     "title": "Python Messaging Extension, Bot sends on behalf of a user",
@@ -16077,7 +16077,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-54.teams-task-module-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-python",
     "reponame": "botbuilder-54.teams-task-module-python",
     "source": "pnp",
     "title": "Python Teams Task Module with Bot Framework",
@@ -16174,7 +16174,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-55.teams-link-unfurling-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-python",
     "reponame": "botbuilder-55.teams-link-unfurling-python",
     "source": "pnp",
     "title": "Python Teams Link Unfurling",
@@ -16271,7 +16271,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-56.teams-file-upload-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-python",
     "reponame": "botbuilder-56.teams-file-upload-python",
     "source": "pnp",
     "title": "Python Teams File Upload Bot",
@@ -16368,7 +16368,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-57.teams-conversation-bot-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-python",
     "reponame": "botbuilder-57.teams-conversation-bot-python",
     "source": "pnp",
     "title": "Python Teams Conversation Bot",
@@ -16465,7 +16465,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-58.teams-start-new-thread-in-channel-python",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-python",
     "reponame": "botbuilder-58.teams-start-new-thread-in-channel-python",
     "source": "pnp",
     "title": "Python Bot starts a thread in a specific Teams channel",
@@ -16563,7 +16563,7 @@
   },
   {
     "comment": "**** BEGIN TYPESCRIPT BOTBUILDER SAMPLES ****",
-    "name": "pnp-sp-dev-teams-sample-botbuilder-50.teams-messaging-extensions-search-typescript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-typescript",
     "reponame": "botbuilder-50.teams-messaging-extensions-search-typescript",
     "source": "pnp",
     "title": "Typescript Teams Search Messaging Extension",
@@ -16660,7 +16660,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-51.teams-messaging-extensions-action-typescript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-typescript",
     "reponame": "botbuilder-51.teams-messaging-extensions-action-typescript",
     "source": "pnp",
     "title": "Typescript Teams Action Messaging Extension",
@@ -16757,7 +16757,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-57.teams-conversation-bot-typescript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-typescript",
     "reponame": "botbuilder-57.teams-conversation-bot-typescript",
     "source": "pnp",
     "title": "Typescript Teams Conversation Bot",
@@ -16854,7 +16854,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-58.teams-start-new-thread-in-channel-typescript",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-typescript",
     "reponame": "botbuilder-58.teams-start-new-thread-in-channel-typescript",
     "source": "pnp",
     "title": "Typescript Bot starts a thread in a specific Teams channel",
@@ -16952,7 +16952,7 @@
   },
   {
     "comment": "**** BEGIN BOT COMPOSER BOTBUILDER SAMPLES ****",
-    "name": "pnp-sp-dev-teams-sample-botbuilder-51.teams-messaging-extensions-action-composer",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-composer",
     "reponame": "botbuilder-51.teams-messaging-extensions-action-composer",
     "source": "pnp",
     "title": "Bot Composer Teams Action Messaging Extension (EXPERIMENTAL)",
@@ -17049,7 +17049,7 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-57.teams-conversation-bot-composer",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-composer",
     "reponame": "botbuilder-57.teams-conversation-bot-composer",
     "source": "pnp",
     "title": "Bot Composer Teams Conversation Bot",
