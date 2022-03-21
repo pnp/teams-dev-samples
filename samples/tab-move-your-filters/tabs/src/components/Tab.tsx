@@ -36,7 +36,9 @@ export default function Tab() {
       const archiveFolder = await graph.api("/me/mailFolders/archive").get();
       const existingRules = await graph.api("/me/mailFolders/inbox/messageRules").get();
 
-      const sequences = existingRules.value.map((r: any) => r.sequence);
+      const sequences = (existingRules && existingRules.value && existingRules.value.length)
+        ? existingRules.value.map((r: any) => r.sequence)
+        : [0];
       let nextSequence = Math.max(...sequences) + 1;
 
       let total = 0;
