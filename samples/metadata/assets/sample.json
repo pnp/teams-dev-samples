@@ -17206,7 +17206,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-msg-forwarder/assets/appinaction.gif",
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/msgext-msg-forwarder/assets/appinaction.gif",
         "alt": "No preview available"
       }
     ],
@@ -17303,7 +17303,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-move-your-filters/assets/MoveYourFiltersTeamsApp.png",
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/tab-move-your-filters/assets/MoveYourFiltersTeamsApp.png",
         "alt": "No preview available"
       }
     ],
