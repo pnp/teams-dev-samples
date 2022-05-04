@@ -94,7 +94,7 @@ Version|Date|Comments
 
 9. [Setup SSO](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/bot-conversation-sso-quickstart/BotSSOSetup.md)
 
-Step 2: Update configuration
+### Step 2: Update configuration
 1. **Edit** the `manifest.json` contained in the `Manifest` folder for below changes: 
   - Replace your `Microsoft App Id` (from step 1.3) *everywhere* you see the place holder string `<<YOUR-MICROSOFT-APP-ID>>` (depending on the scenario the Microsoft App Id may occur multiple times in the `manifest.json`). 
   - Replace the occurances of `<<YOUR-Site-URL>>` with web site where you have hosted the solution. It could be an Azure web site or Ngrok URI.
