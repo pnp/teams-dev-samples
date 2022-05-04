@@ -2,6 +2,8 @@
 
 Using this C# sample, a bot can retreive different entities such as messages, events, files, and SharePoint list items using Microsoft Graph Search API, and display the resutls in adaptive cards with paging capability.
 
+![demo](./Assets/ms-search-api-bot.gif)
+
 ## Summary
 
 This bot has been created using [Bot Framework](https://dev.botframework.com/), it shows how to use Microsoft Search API to search through the Office 365 entities, and how to implement pagination on Adaptive Cards.
