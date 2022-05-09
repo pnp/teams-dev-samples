@@ -12,8 +12,7 @@
     "creationDateTime": "2020-04-30",
     "updateDateTime": "2020-04-30",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -92,8 +91,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Associate Insights App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#associate-insights"
+        "name": "Associate Insights App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#associate-insights"
       }
     ]
   },
@@ -110,8 +109,7 @@
     "creationDateTime": "2020-05-14",
     "updateDateTime": "2020-05-14",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -190,8 +188,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Attendance App Template",
-          "url": "https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#attendance"
+        "name": "Attendance App Template",
+        "url": "https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#attendance"
       }
     ]
   },
@@ -208,8 +206,7 @@
     "creationDateTime": "2020-07-13",
     "updateDateTime": "2020-07-13",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -296,8 +293,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Book-a-room App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#book-a-room"
+        "name": "Book-a-room App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#book-a-room"
       }
     ]
   },
@@ -314,8 +311,7 @@
     "creationDateTime": "2019-10-08",
     "updateDateTime": "2019-10-08",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -420,8 +416,7 @@
     "creationDateTime": "2020-04-30",
     "updateDateTime": "2020-04-30",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -512,8 +507,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Company Communicator App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations"
+        "name": "Company Communicator App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations"
       }
     ]
   },
@@ -530,8 +525,7 @@
     "creationDateTime": "2020-07-13",
     "updateDateTime": "2020-07-13",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -610,8 +604,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Contact Group App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#contact-group-lookup-"
+        "name": "Contact Group App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#contact-group-lookup-"
       }
     ]
   },
@@ -628,8 +622,7 @@
     "creationDateTime": "2020-07-13",
     "updateDateTime": "2020-07-13",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -716,8 +709,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Crowd Sourcer App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#crowdsourcer"
+        "name": "Crowd Sourcer App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#crowdsourcer"
       }
     ]
   },
@@ -734,8 +727,7 @@
     "creationDateTime": "2020-05-26",
     "updateDateTime": "2020-05-26",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -814,8 +806,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Custom Stickers App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers"
+        "name": "Custom Stickers App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers"
       }
     ]
   },
@@ -832,8 +824,7 @@
     "creationDateTime": "2020-05-26",
     "updateDateTime": "2020-05-26",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -924,8 +915,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Expert Finder App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers"
+        "name": "Expert Finder App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers"
       }
     ]
   },
@@ -942,8 +933,7 @@
     "creationDateTime": "2020-07-02",
     "updateDateTime": "2020-07-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -1034,8 +1024,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "FAQ Plus App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#faq-plus"
+        "name": "FAQ Plus App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#faq-plus"
       }
     ]
   },
@@ -1052,8 +1042,7 @@
     "creationDateTime": "2020-07-02",
     "updateDateTime": "2020-07-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -1144,8 +1133,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Goal Tracker App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#goal-tracker-"
+        "name": "Goal Tracker App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#goal-tracker-"
       }
     ]
   },
@@ -1162,8 +1151,7 @@
     "creationDateTime": "2020-07-08",
     "updateDateTime": "2020-07-08",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -1254,8 +1242,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "Great Ideas App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-"
+        "name": "Great Ideas App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-"
       }
     ]
   },
@@ -1272,8 +1260,7 @@
     "creationDateTime": "2020-04-30",
     "updateDateTime": "2020-04-30",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -1378,8 +1365,7 @@
     "creationDateTime": "2020-04-30",
     "updateDateTime": "2020-04-30",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -1488,8 +1474,7 @@
     "creationDateTime": "2020-04-30",
     "updateDateTime": "2020-04-30",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -1580,8 +1565,8 @@
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       },
       {
-          "name": "HR Support App Template",
-          "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support"
+        "name": "HR Support App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support"
       }
     ]
   },
@@ -1598,8 +1583,7 @@
     "creationDateTime": "2020-04-30",
     "updateDateTime": "2020-04-30",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -1700,8 +1684,7 @@
     "creationDateTime": "2020-04-30",
     "updateDateTime": "2020-04-30",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -1802,8 +1785,7 @@
     "creationDateTime": "2020-04-16",
     "updateDateTime": "2020-04-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -1912,8 +1894,7 @@
     "creationDateTime": "2020-03-23",
     "updateDateTime": "2020-03-23",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2022,8 +2003,7 @@
     "creationDateTime": "2020-03-23",
     "updateDateTime": "2020-03-23",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2132,8 +2112,7 @@
     "creationDateTime": "2020-03-23",
     "updateDateTime": "2020-03-23",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2242,8 +2221,7 @@
     "creationDateTime": "2020-07-09",
     "updateDateTime": "2020-07-09",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2352,8 +2330,7 @@
     "creationDateTime": "2020-07-09",
     "updateDateTime": "2020-07-09",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2454,8 +2431,7 @@
     "creationDateTime": "2020-06-10",
     "updateDateTime": "2020-06-10",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2556,8 +2532,7 @@
     "creationDateTime": "2020-06-10",
     "updateDateTime": "2020-06-10",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2666,8 +2641,7 @@
     "creationDateTime": "2020-04-30",
     "updateDateTime": "2020-04-30",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2764,8 +2738,7 @@
     "creationDateTime": "2020-07-01",
     "updateDateTime": "2020-07-01",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2862,8 +2835,7 @@
     "creationDateTime": "2020-07-02",
     "updateDateTime": "2020-07-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -2960,8 +2932,7 @@
     "creationDateTime": "2020-07-02",
     "updateDateTime": "2020-07-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3070,8 +3041,7 @@
     "creationDateTime": "2020-07-16",
     "updateDateTime": "2020-07-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3164,8 +3134,7 @@
     "creationDateTime": "2020-08-25",
     "updateDateTime": "2020-08-25",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3258,8 +3227,7 @@
     "creationDateTime": "2020-04-23",
     "updateDateTime": "2020-04-23",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3364,8 +3332,7 @@
     "creationDateTime": "2019-08-12",
     "updateDateTime": "2019-08-12",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3462,8 +3429,7 @@
     "creationDateTime": "2019-04-20",
     "updateDateTime": "2019-04-20",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3560,8 +3526,7 @@
     "creationDateTime": "2020-08-06",
     "updateDateTime": "2020-08-06",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3654,8 +3619,7 @@
     "creationDateTime": "2018-11-19",
     "updateDateTime": "2018-11-19",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3748,8 +3712,7 @@
     "creationDateTime": "2020-01-06",
     "updateDateTime": "2020-01-06",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3846,8 +3809,7 @@
     "creationDateTime": "2020-05-23",
     "updateDateTime": "2020-05-23",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -3940,8 +3902,7 @@
     "creationDateTime": "2020-04-24",
     "updateDateTime": "2020-04-24",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4038,8 +3999,7 @@
     "creationDateTime": "2018-11-18",
     "updateDateTime": "2018-11-18",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4136,8 +4096,7 @@
     "creationDateTime": "2019-04-18",
     "updateDateTime": "2019-04-18",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4230,8 +4189,7 @@
     "creationDateTime": "2019-02-05",
     "updateDateTime": "2019-02-05",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4328,8 +4286,7 @@
     "creationDateTime": "2019-02-26",
     "updateDateTime": "2019-02-26",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4422,8 +4379,7 @@
     "creationDateTime": "2020-01-29",
     "updateDateTime": "2020-01-29",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4516,8 +4472,7 @@
     "creationDateTime": "2020-01-29",
     "updateDateTime": "2020-01-29",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4614,8 +4569,7 @@
     "creationDateTime": "2020-08-26",
     "updateDateTime": "2020-08-26",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4708,8 +4662,7 @@
     "creationDateTime": "2020-08-24",
     "updateDateTime": "2020-08-24",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4802,8 +4755,7 @@
     "creationDateTime": "2020-08-25",
     "updateDateTime": "2020-08-25",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4896,8 +4848,7 @@
     "creationDateTime": "2020-08-25",
     "updateDateTime": "2020-08-25",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -4994,8 +4945,7 @@
     "creationDateTime": "2020-08-25",
     "updateDateTime": "2020-08-25",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5092,8 +5042,7 @@
     "creationDateTime": "2020-08-28",
     "updateDateTime": "2020-08-28",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5186,8 +5135,7 @@
     "creationDateTime": "2020-09-15",
     "updateDateTime": "2020-09-15",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5284,8 +5232,7 @@
     "creationDateTime": "2020-09-10",
     "updateDateTime": "2020-09-10",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5378,8 +5325,7 @@
     "creationDateTime": "2020-09-11",
     "updateDateTime": "2020-09-11",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5472,8 +5418,7 @@
     "creationDateTime": "2020-09-11",
     "updateDateTime": "2020-09-11",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5578,8 +5523,7 @@
     "creationDateTime": "2020-11-08",
     "updateDateTime": "2020-11-08",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5676,8 +5620,7 @@
     "creationDateTime": "2020-10-29",
     "updateDateTime": "2020-10-29",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5770,8 +5713,7 @@
     "creationDateTime": "2020-11-30",
     "updateDateTime": "2020-11-30",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5864,8 +5806,7 @@
     "creationDateTime": "2020-12-05",
     "updateDateTime": "2020-12-05",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -5958,8 +5899,7 @@
     "creationDateTime": "2020-12-03",
     "updateDateTime": "2020-12-03",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -6059,8 +5999,7 @@
     "creationDateTime": "2020-12-04",
     "updateDateTime": "2020-12-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -6164,8 +6103,7 @@
     "creationDateTime": "2020-12-17",
     "updateDateTime": "2020-12-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -6258,8 +6196,7 @@
     "creationDateTime": "2020-12-18",
     "updateDateTime": "2020-12-18",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -6363,8 +6300,7 @@
     "creationDateTime": "2020-12-18",
     "updateDateTime": "2020-12-18",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -6476,8 +6412,7 @@
     "creationDateTime": "2021-01-28",
     "updateDateTime": "2021-01-28",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -6574,8 +6509,7 @@
     "creationDateTime": "2021-01-28",
     "updateDateTime": "2021-01-28",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -6672,8 +6606,7 @@
     "creationDateTime": "2021-02-18",
     "updateDateTime": "2021-02-18",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -6805,8 +6738,7 @@
     "creationDateTime": "2021-03-22",
     "updateDateTime": "2021-03-22",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -6903,8 +6835,7 @@
     "creationDateTime": "2021-03-22",
     "updateDateTime": "2021-03-22",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -7012,8 +6943,7 @@
     "creationDateTime": "2021-04-26",
     "updateDateTime": "2021-04-26",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -7106,8 +7036,7 @@
     "creationDateTime": "2019-10-04",
     "updateDateTime": "2019-10-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -7220,8 +7149,7 @@
     "creationDateTime": "2020-10-16",
     "updateDateTime": "2020-10-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -7322,8 +7250,7 @@
     "creationDateTime": "2020-10-16",
     "updateDateTime": "2020-10-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -7416,8 +7343,7 @@
     "creationDateTime": "2020-12-14",
     "updateDateTime": "2020-12-14",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -7506,104 +7432,6 @@
     ]
   },
   {
-    "name": "pnp-sp-dev-teams-sample-botbuilder-teams-sso-csharp",
-    "reponame": "botbuilder-teams-sso-csharp",
-    "source": "pnp",
-    "title": "Teams bot with SSO",
-    "shortDescription": "Simple bot uses SSO feature for auth",
-    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/experimental/teams-sso/csharp_dotnetcore",
-    "longDescription": [
-      "Simple bot uses SSO feature for auth"
-    ],
-    "creationDateTime": "2021-01-19",
-    "updateDateTime": "2021-01-19",
-    "products": [
-      "Teams",
-      "Office"
-    ],
-    "metadata": [
-      {
-        "key": "TEAMS-SAMPLE-SOURCE",
-        "value": "botBuilder"
-      },
-      {
-        "key": "TEAMS-SAMPLE-TYPE",
-        "value": "barebones"
-      },
-      {
-        "key": "TEAMS-CLIENT-LANGUAGE",
-        "value": ""
-      },
-      {
-        "key": "TEAMS-CLIENT-PLATFORM",
-        "value": ""
-      },
-      {
-        "key": "TEAMS-CLIENT-UI",
-        "value": ""
-      },
-      {
-        "key": "TEAMS-SERVER-LANGUAGE",
-        "value": "csharp"
-      },
-      {
-        "key": "TEAMS-SERVER-PLATFORM",
-        "value": "netcore"
-      },
-      {
-        "key": "TEAMS-BOT-FRAMEWORK",
-        "value": "bot46"
-      },
-      {
-        "key": "TEAMS-FEATURES",
-        "value": "bot"
-      },
-      {
-        "key": "TEAMS-GENERATOR",
-        "value": ""
-      }
-    ],
-    "thumbnails": [
-      {
-        "type": "image",
-        "order": 100,
-        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
-        "alt": "No preview available"
-      }
-    ],
-    "authors": [
-      {
-        "gitHubAccount": "microsoft",
-        "company": "Microsoft",
-        "pictureUrl": "https://github.com/microsoft.png",
-        "name": "Microsoft",
-        "twitter": ""
-      }
-    ],
-    "references": [
-      {
-        "name": "Azure Bot Framework resources",
-        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
-      },
-      {
-        "name": "Microsoft Teams bots",
-        "url": "https://aka.ms/sample-ref-teams-docs-bots"
-      },
-      {
-        "name": "Teams developer questions",
-        "url": "https://aka.ms/sample-ref-teams-dev-questions"
-      },
-      {
-        "name": "Teams development videos from Microsoft",
-        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
-      },
-      {
-        "name": "Teams development videos from the community",
-        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
-      }
-    ]
-  },
-  {
     "name": "pnp-sp-dev-teams-sample-officedev-app-auth-nodejs",
     "reponame": "officedev-app-auth-nodejs",
     "source": "pnp",
@@ -7616,8 +7444,7 @@
     "creationDateTime": "2018-02-08",
     "updateDateTime": "2018-02-08",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -7718,8 +7545,7 @@
     "creationDateTime": "2017-05-08",
     "updateDateTime": "2017-05-08",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -7824,8 +7650,7 @@
     "creationDateTime": "2017-05-08",
     "updateDateTime": "2017-05-08",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -7930,8 +7755,7 @@
     "creationDateTime": "2017-10-16",
     "updateDateTime": "2017-10-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8036,8 +7860,7 @@
     "creationDateTime": "2017-10-16",
     "updateDateTime": "2017-10-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8142,8 +7965,7 @@
     "creationDateTime": "2021-03-18",
     "updateDateTime": "2021-03-18",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8244,8 +8066,7 @@
     "creationDateTime": "2018-09-16",
     "updateDateTime": "2018-09-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8350,8 +8171,7 @@
     "creationDateTime": "2018-09-16",
     "updateDateTime": "2018-09-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8456,8 +8276,7 @@
     "creationDateTime": "2021-02-02",
     "updateDateTime": "2021-02-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8554,8 +8373,7 @@
     "creationDateTime": "2021-03-10",
     "updateDateTime": "2021-03-10",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8652,8 +8470,7 @@
     "creationDateTime": "2021-03-10",
     "updateDateTime": "2021-03-10",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8750,8 +8567,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8848,8 +8664,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -8946,8 +8761,7 @@
     "creationDateTime": "2021-03-09",
     "updateDateTime": "2021-03-09",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9044,8 +8858,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9138,8 +8951,7 @@
     "creationDateTime": "2017-08-21",
     "updateDateTime": "2017-08-21",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9232,8 +9044,7 @@
     "creationDateTime": "2018-01-16",
     "updateDateTime": "2018-01-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9326,8 +9137,7 @@
     "creationDateTime": "2021-02-24",
     "updateDateTime": "2021-02-24",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9416,8 +9226,7 @@
     "creationDateTime": "2018-02-08",
     "updateDateTime": "2018-02-08",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9506,8 +9315,7 @@
     "creationDateTime": "2018-02-08",
     "updateDateTime": "2018-02-08",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9596,8 +9404,7 @@
     "creationDateTime": "2021-04-06",
     "updateDateTime": "2021-04-06",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9690,8 +9497,7 @@
     "creationDateTime": "2021-04-06",
     "updateDateTime": "2021-04-06",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9784,8 +9590,7 @@
     "creationDateTime": "2021-01-13",
     "updateDateTime": "2021-01-13",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9878,8 +9683,7 @@
     "creationDateTime": "2021-02-02",
     "updateDateTime": "2021-02-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -9972,8 +9776,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10066,8 +9869,7 @@
     "creationDateTime": "2021-02-02",
     "updateDateTime": "2021-02-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10160,8 +9962,7 @@
     "creationDateTime": "2021-03-25",
     "updateDateTime": "2021-03-25",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10254,8 +10055,7 @@
     "creationDateTime": "2017-12-17",
     "updateDateTime": "2017-12-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10344,8 +10144,7 @@
     "creationDateTime": "2017-12-17",
     "updateDateTime": "2017-12-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10434,8 +10233,7 @@
     "creationDateTime": "2021-02-04",
     "updateDateTime": "2021-02-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10528,8 +10326,7 @@
     "creationDateTime": "2021-02-02",
     "updateDateTime": "2021-02-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10622,8 +10419,7 @@
     "creationDateTime": "2021-02-02",
     "updateDateTime": "2021-02-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10716,8 +10512,7 @@
     "creationDateTime": "2021-03-17",
     "updateDateTime": "2021-03-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10810,8 +10605,7 @@
     "creationDateTime": "2021-03-17",
     "updateDateTime": "2021-03-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10904,8 +10698,7 @@
     "creationDateTime": "2021-02-02",
     "updateDateTime": "2021-02-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -10998,8 +10791,7 @@
     "creationDateTime": "2021-02-02",
     "updateDateTime": "2021-02-02",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11092,8 +10884,7 @@
     "creationDateTime": "2021-03-17",
     "updateDateTime": "2021-03-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11186,8 +10977,7 @@
     "creationDateTime": "2021-03-17",
     "updateDateTime": "2021-03-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11280,8 +11070,7 @@
     "creationDateTime": "2021-03-16",
     "updateDateTime": "2021-03-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11370,8 +11159,7 @@
     "creationDateTime": "2021-03-16",
     "updateDateTime": "2021-03-16",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11460,8 +11248,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11550,8 +11337,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11640,8 +11426,7 @@
     "creationDateTime": "2021-01-06",
     "updateDateTime": "2021-01-06",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11734,8 +11519,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11824,8 +11608,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -11914,8 +11697,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12004,8 +11786,7 @@
     "creationDateTime": "2021-01-04",
     "updateDateTime": "2021-01-04",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12094,8 +11875,7 @@
     "creationDateTime": "2020-12-08",
     "updateDateTime": "2020-12-08",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12184,8 +11964,7 @@
     "creationDateTime": "2021-06-24",
     "updateDateTime": "2021-06-24",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12281,8 +12060,7 @@
     "creationDateTime": "2021-07-19",
     "updateDateTime": "2021-07-19",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12371,8 +12149,7 @@
     "creationDateTime": "2021-09-17",
     "updateDateTime": "2021-09-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12461,8 +12238,7 @@
     "creationDateTime": "2021-09-01",
     "updateDateTime": "2021-09-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12551,8 +12327,7 @@
     "creationDateTime": "2021-09-01",
     "updateDateTime": "2021-09-17",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12629,6 +12404,102 @@
     ]
   },
   {
+    "name": "pnp-sp-dev-teams-tab-react-router",
+    "reponame": "tab-react-router",
+    "source": "pnp",
+    "title": "Teams Tab with yo teams and React router",
+    "shortDescription": "Shows how to implement React routing in a Teams app created with the yo teams generator",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-react-router",
+    "longDescription": [
+      "Shows how to implement React routing for a single-page application in a Teams app created with the yo teams generator."
+    ],
+    "creationDateTime": "2022-02-22",
+    "updateDateTime": "2022-02-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/tab-react-router/assets/sampleinaction.gif",
+        "alt": "Tab showing a simple SPA with React Routing"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "siddharth-vaghasia",
+        "company": "Independent consultant, Microsoft MVP",
+        "pictureUrl": "https://github.com/siddharth-vaghasia.png",
+        "name": "Siddharth Vaghasia",
+        "twitter": "siddh_me"
+      },
+      {
+        "gitHubAccount": "kunj-sangani",
+        "company": "Open source contributor",
+        "pictureUrl": "https://github.com/kunj-sangani.png",
+        "name": "Kunj Sangani",
+        "twitter": "sanganikunj"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
     "name": "pnp-sp-dev-teams-sample-bot-meeting-lifecycle-feedback",
     "reponame": "bot-meeting-lifecycle-feedback",
     "source": "pnp",
@@ -12641,8 +12512,7 @@
     "creationDateTime": "2021-10-07",
     "updateDateTime": "2021-10-07",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12731,8 +12601,7 @@
     "creationDateTime": "2021-10-10",
     "updateDateTime": "2021-10-10",
     "products": [
-      "Teams",
-      "Office"
+      "Teams"
     ],
     "metadata": [
       {
@@ -12794,6 +12663,4676 @@
       }
     ],
     "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "comment": "**** BEGIN C# BOTBUILDER SAMPLES ****",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-46_teams-auth-csharp",
+    "reponame": "botbuilder-46.teams-auth-csharp",
+    "source": "pnp",
+    "title": ".NET Bot with Teams Authentication",
+    "shortDescription": "Simple bot uses Auth Dialog or Teams SSO to authenticate the user",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/46.teams-auth",
+    "longDescription": [
+      "Simple bot shows how to get started with authentication in a bot for Microsoft Teams"
+    ],
+    "creationDateTime": "2019-07-10",
+    "updateDateTime": "2021-11-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-csharp",
+    "reponame": "botbuilder-50.teams-messaging-extensions-search-csharp",
+    "source": "pnp",
+    "title": ".NET Teams Search Messaging Extension",
+    "shortDescription": "Sample illustrates how to build a Search-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/50.teams-messaging-extensions-search",
+    "longDescription": [
+      "Sample illustrates how to build a Search-based Messaging Extension. Messaging extensions are implemented using the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-csharp",
+    "reponame": "botbuilder-51.teams-messaging-extensions-action-csharp",
+    "source": "pnp",
+    "title": ".NET Teams Action Messaging Extension",
+    "shortDescription": "Sample illustrates how to build an Action-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/51.teams-messaging-extensions-action",
+    "longDescription": [
+      "Simple Teams action messaging extension. Messaging extensions are based on the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-csharp",
+    "reponame": "botbuilder-52.teams-messaging-extensions-search-auth-config-csharp",
+    "source": "pnp",
+    "title": ".NET Search Messaging Extension with Config Page and Authentication",
+    "shortDescription": "Search messaging extension including a configuration page and Bot service authentication",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/52.teams-messaging-extensions-search-auth-config",
+    "longDescription": [
+      "Sample shows how to use a Messaging Extension configuration page, as well as how to sign into an OAuth2 provider from a search Messaging Extension."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-csharp",
+    "reponame": "botbuilder-53.teams-messaging-extensions-action-preview-csharp",
+    "source": "pnp",
+    "title": ".NET Messaging Extension, Bot sends on behalf of a user",
+    "shortDescription": "Messaging extension shows a card and bot sends on behalf of a user",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/53.teams-messaging-extensions-action-preview",
+    "longDescription": [
+      "This sample hows how to create a simple card based on parameters entered by the user from a Task Module. It also displays the scenario where a Bot sends messages on behalf of a User."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext,bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-csharp",
+    "reponame": "botbuilder-54.teams-task-module-csharp",
+    "source": "pnp",
+    "title": ".NET Teams Task Module with Bot Framework",
+    "shortDescription": "Dislay a Task Module from Hero or Adaptive Card buttons and receive input from the Task Module in the bot",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/54.teams-task-module",
+    "longDescription": [
+      "Sample shows how to fetch a Task Module from Hero Card or Adaptive Card buttons and receive input from the Task Module in the bot"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-csharp",
+    "reponame": "botbuilder-55.teams-link-unfurling-csharp",
+    "source": "pnp",
+    "title": ".NET Teams Link Unfurling",
+    "shortDescription": "Messaging extension that customizes the view of hyperlinks in conversation",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/55.teams-link-unfurling",
+    "longDescription": [
+      "Sample messaging extension that customizes the view of hyperlinks matching a particular hostname"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-csharp",
+    "reponame": "botbuilder-56.teams-file-upload-csharp",
+    "source": "pnp",
+    "title": ".NET Teams File Upload Bot",
+    "shortDescription": "Simple bot for Microsoft Teams shows how to upload files",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/56.teams-file-upload",
+    "longDescription": [
+      "Sample shows how to upload files to Teams from a bot and how to receive a file sent to a bot as an attachment. It also shows how to fetch inline images sent in message."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-csharp",
+    "reponame": "botbuilder-57.teams-conversation-bot-csharp",
+    "source": "pnp",
+    "title": ".NET Teams Conversation Bot",
+    "shortDescription": "Sample shows how to incorporate basic conversational flow into a Teams application. It also illustrates a few of the Teams specific calls you can make from your bot.",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/57.teams-conversation-bot",
+    "longDescription": [
+      "Simple bot with conversational flow demonstrates how to display a welcome card, mention the user and message all members in a conversation"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-csharp",
+    "reponame": "botbuilder-58.teams-start-new-thread-in-channel-csharp",
+    "source": "pnp",
+    "title": ".NET Bot starts a thread in a specific Teams channel",
+    "shortDescription": "Sample shows how to create a new conversation thread in a channel in Microsoft Teams",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/csharp_dotnetcore/58.teams-start-new-thread-in-channel",
+    "longDescription": [
+      "This sample shows how to create a new conversation thread in a channel in Microsoft Teams."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "comment": "**** BEGIN JAVA BOTBUILDER SAMPLES ****",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-46_teams-auth-java",
+    "reponame": "botbuilder-46.teams-auth-java",
+    "source": "pnp",
+    "title": "Java Bot with Teams Authentication",
+    "shortDescription": "Simple bot uses Auth Dialog or Teams SSO to authenticate the user",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/46.teams-auth",
+    "longDescription": [
+      "Simple bot shows how to get started with authentication in a bot for Microsoft Teams"
+    ],
+    "creationDateTime": "2019-07-10",
+    "updateDateTime": "2021-11-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-java",
+    "reponame": "botbuilder-50.teams-messaging-extensions-search-java",
+    "source": "pnp",
+    "title": "Java Teams Search Messaging Extension",
+    "shortDescription": "Sample illustrates how to build a Search-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/50.teams-messaging-extensions-search",
+    "longDescription": [
+      "Sample illustrates how to build a Search-based Messaging Extension. Messaging extensions are implemented using the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-java",
+    "reponame": "botbuilder-51.teams-messaging-extensions-action-java",
+    "source": "pnp",
+    "title": "Java Teams Action Messaging Extension",
+    "shortDescription": "Sample illustrates how to build an Action-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/51.teams-messaging-extensions-action",
+    "longDescription": [
+      "Simple Teams action messaging extension. Messaging extensions are based on the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-java",
+    "reponame": "botbuilder-52.teams-messaging-extensions-search-auth-config-java",
+    "source": "pnp",
+    "title": "Java Messaging Extension with Auth and Config",
+    "shortDescription": "Search messaging extension including a configuration page and Bot service authentication",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/52.teams-messaging-extensions-search-auth-config",
+    "longDescription": [
+      "Sample shows how to use a Messaging Extension configuration page, as well as how to sign into an OAuth2 provider from a search Messaging Extension."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-java",
+    "reponame": "botbuilder-53.teams-messaging-extensions-action-preview-java",
+    "source": "pnp",
+    "title": "Java Messaging Extension, Bot sends on behalf of a user",
+    "shortDescription": "Messaging extension shows a card and bot sends on behalf of a user",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/53.teams-messaging-extensions-action-preview",
+    "longDescription": [
+      "This sample hows how to create a simple card based on parameters entered by the user from a Task Module. It also displays the scenario where a Bot sends messages on behalf of a User."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext,bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-java",
+    "reponame": "botbuilder-54.teams-task-module-java",
+    "source": "pnp",
+    "title": "Java Teams Task Module with Bot Framework",
+    "shortDescription": "Dislay a Task Module from Hero or Adaptive Card buttons and receive input from the Task Module in the bot",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/54.teams-task-module",
+    "longDescription": [
+      "Sample shows how to fetch a Task Module from Hero Card or Adaptive Card buttons and receive input from the Task Module in the bot"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-java",
+    "reponame": "botbuilder-55.teams-link-unfurling-java",
+    "source": "pnp",
+    "title": "Java Teams Link Unfurling",
+    "shortDescription": "Messaging extension that customizes the view of hyperlinks in conversation",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/55.teams-link-unfurling",
+    "longDescription": [
+      "Sample messaging extension that customizes the view of hyperlinks matching a particular hostname"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-java",
+    "reponame": "botbuilder-56.teams-file-upload-java",
+    "source": "pnp",
+    "title": "Java Teams File Upload Bot",
+    "shortDescription": "Simple bot for Microsoft Teams shows how to upload files",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/56.teams-file-upload",
+    "longDescription": [
+      "Sample shows how to upload files to Teams from a bot and how to receive a file sent to a bot as an attachment. It also shows how to fetch inline images sent in message."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-java",
+    "reponame": "botbuilder-57.teams-conversation-bot-java",
+    "source": "pnp",
+    "title": "Java Teams Conversation Bot",
+    "shortDescription": "Sample shows how to incorporate basic conversational flow into a Teams application. It also illustrates a few of the Teams specific calls you can make from your bot.",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/57.teams-conversation-bot",
+    "longDescription": [
+      "Simple bot with conversational flow demonstrates how to display a welcome card, mention the user and message all members in a conversation"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-java",
+    "reponame": "botbuilder-58.teams-start-new-thread-in-channel-java",
+    "source": "pnp",
+    "title": "Java Bot starts a thread in a specific Teams channel",
+    "shortDescription": "Sample shows how to create a new conversation thread in a channel in Microsoft Teams",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/java_springboot/58.teams-start-new-thread-in-channel",
+    "longDescription": [
+      "This sample shows how to create a new conversation thread in a channel in Microsoft Teams."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "java"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "comment": "**** BEGIN JAVASCRIPT BOTBUILDER SAMPLES ****",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-46_teams-auth-javascript",
+    "reponame": "botbuilder-46.teams-auth-javascript",
+    "source": "pnp",
+    "title": "Javascript Bot with Teams Authentication",
+    "shortDescription": "Simple bot uses Auth Dialog or Teams SSO to authenticate the user",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/46.teams-auth",
+    "longDescription": [
+      "Simple bot shows how to get started with authentication in a bot for Microsoft Teams"
+    ],
+    "creationDateTime": "2019-07-10",
+    "updateDateTime": "2021-11-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-javascript",
+    "reponame": "botbuilder-50.teams-messaging-extensions-search-javascript",
+    "source": "pnp",
+    "title": "Javascript Teams Search Messaging Extension",
+    "shortDescription": "Sample illustrates how to build a Search-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/50.teams-messaging-extensions-search",
+    "longDescription": [
+      "Sample illustrates how to build a Search-based Messaging Extension. Messaging extensions are implemented using the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-javascript",
+    "reponame": "botbuilder-51.teams-messaging-extensions-action-javascript",
+    "source": "pnp",
+    "title": "Javascript Teams Action Messaging Extension",
+    "shortDescription": "Sample illustrates how to build an Action-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/51.teams-messaging-extensions-action",
+    "longDescription": [
+      "Simple Teams action messaging extension. Messaging extensions are based on the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-javascript",
+    "reponame": "botbuilder-52.teams-messaging-extensions-search-auth-config-javascript",
+    "source": "pnp",
+    "title": "Javascript Messaging Extension with Auth and Config",
+    "shortDescription": "Search messaging extension including a configuration page and Bot service authentication",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/52.teams-messaging-extensions-search-auth-config",
+    "longDescription": [
+      "Sample shows how to use a Messaging Extension configuration page, as well as how to sign into an OAuth2 provider from a search Messaging Extension."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-javascript",
+    "reponame": "botbuilder-53.teams-messaging-extensions-action-preview-javascript",
+    "source": "pnp",
+    "title": "Javascript Messaging Extension, Bot sends on behalf of a user",
+    "shortDescription": "Messaging extension shows a card and bot sends on behalf of a user",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/53.teams-messaging-extensions-action-preview",
+    "longDescription": [
+      "This sample hows how to create a simple card based on parameters entered by the user from a Task Module. It also displays the scenario where a Bot sends messages on behalf of a User."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext,bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-javascript",
+    "reponame": "botbuilder-54.teams-task-module-javascript",
+    "source": "pnp",
+    "title": "Javascript Teams Task Module with Bot Framework",
+    "shortDescription": "Dislay a Task Module from Hero or Adaptive Card buttons and receive input from the Task Module in the bot",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/54.teams-task-module",
+    "longDescription": [
+      "Sample shows how to fetch a Task Module from Hero Card or Adaptive Card buttons and receive input from the Task Module in the bot"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-javascript",
+    "reponame": "botbuilder-55.teams-link-unfurling-javascript",
+    "source": "pnp",
+    "title": "Javascript Teams Link Unfurling",
+    "shortDescription": "Messaging extension that customizes the view of hyperlinks in conversation",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/55.teams-link-unfurling",
+    "longDescription": [
+      "Sample messaging extension that customizes the view of hyperlinks matching a particular hostname"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-javascript",
+    "reponame": "botbuilder-56.teams-file-upload-javascript",
+    "source": "pnp",
+    "title": "Javascript Teams File Upload Bot",
+    "shortDescription": "Simple bot for Microsoft Teams shows how to upload files",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/56.teams-file-upload",
+    "longDescription": [
+      "Sample shows how to upload files to Teams from a bot and how to receive a file sent to a bot as an attachment. It also shows how to fetch inline images sent in message."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-javascript",
+    "reponame": "botbuilder-57.teams-conversation-bot-javascript",
+    "source": "pnp",
+    "title": "Javascript Teams Conversation Bot",
+    "shortDescription": "Sample shows how to incorporate basic conversational flow into a Teams application. It also illustrates a few of the Teams specific calls you can make from your bot.",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/57.teams-conversation-bot",
+    "longDescription": [
+      "Simple bot with conversational flow demonstrates how to display a welcome card, mention the user and message all members in a conversation"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-javascript",
+    "reponame": "botbuilder-58.teams-start-new-thread-in-channel-javascript",
+    "source": "pnp",
+    "title": "Javascript Bot starts a thread in a specific Teams channel",
+    "shortDescription": "Sample shows how to create a new conversation thread in a channel in Microsoft Teams",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/javascript_nodejs/58.teams-start-new-thread-in-channel",
+    "longDescription": [
+      "This sample shows how to create a new conversation thread in a channel in Microsoft Teams."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "comment": "**** BEGIN PYTHON BOTBUILDER SAMPLES ****",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-46_teams-auth-python",
+    "reponame": "botbuilder-46.teams-auth-python",
+    "source": "pnp",
+    "title": "Python Bot with Teams Authentication",
+    "shortDescription": "Simple bot uses Auth Dialog or Teams SSO to authenticate the user",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth",
+    "longDescription": [
+      "Simple bot shows how to get started with authentication in a bot for Microsoft Teams"
+    ],
+    "creationDateTime": "2019-07-10",
+    "updateDateTime": "2021-11-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "springboot"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-python",
+    "reponame": "botbuilder-50.teams-messaging-extensions-search-python",
+    "source": "pnp",
+    "title": "Python Teams Search Messaging Extension",
+    "shortDescription": "Sample illustrates how to build a Search-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/46.teams-auth",
+    "longDescription": [
+      "Sample illustrates how to build a Search-based Messaging Extension. Messaging extensions are implemented using the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-python",
+    "reponame": "botbuilder-51.teams-messaging-extensions-action-python",
+    "source": "pnp",
+    "title": "Python Teams Action Messaging Extension",
+    "shortDescription": "Sample illustrates how to build an Action-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/51.teams-messaging-extensions-action",
+    "longDescription": [
+      "Simple Teams action messaging extension. Messaging extensions are based on the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-python",
+    "reponame": "botbuilder-52.teams-messaging-extensions-search-auth-config-python",
+    "source": "pnp",
+    "title": "Python Messaging Extension with Auth and Config",
+    "shortDescription": "Search messaging extension including a configuration page and Bot service authentication",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/52.teams-messaging-extensions-search-auth-config",
+    "longDescription": [
+      "Sample shows how to use a Messaging Extension configuration page, as well as how to sign into an OAuth2 provider from a search Messaging Extension."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-python",
+    "reponame": "botbuilder-53.teams-messaging-extensions-action-preview-python",
+    "source": "pnp",
+    "title": "Python Messaging Extension, Bot sends on behalf of a user",
+    "shortDescription": "Messaging extension shows a card and bot sends on behalf of a user",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/53.teams-messaging-extensions-action-preview",
+    "longDescription": [
+      "This sample hows how to create a simple card based on parameters entered by the user from a Task Module. It also displays the scenario where a Bot sends messages on behalf of a User."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext,bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-python",
+    "reponame": "botbuilder-54.teams-task-module-python",
+    "source": "pnp",
+    "title": "Python Teams Task Module with Bot Framework",
+    "shortDescription": "Dislay a Task Module from Hero or Adaptive Card buttons and receive input from the Task Module in the bot",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/54.teams-task-module",
+    "longDescription": [
+      "Sample shows how to fetch a Task Module from Hero Card or Adaptive Card buttons and receive input from the Task Module in the bot"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-python",
+    "reponame": "botbuilder-55.teams-link-unfurling-python",
+    "source": "pnp",
+    "title": "Python Teams Link Unfurling",
+    "shortDescription": "Messaging extension that customizes the view of hyperlinks in conversation",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/55.teams-link-unfurling",
+    "longDescription": [
+      "Sample messaging extension that customizes the view of hyperlinks matching a particular hostname"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-python",
+    "reponame": "botbuilder-56.teams-file-upload-python",
+    "source": "pnp",
+    "title": "Python Teams File Upload Bot",
+    "shortDescription": "Simple bot for Microsoft Teams shows how to upload files",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/56.teams-file-upload",
+    "longDescription": [
+      "Sample shows how to upload files to Teams from a bot and how to receive a file sent to a bot as an attachment. It also shows how to fetch inline images sent in message."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-python",
+    "reponame": "botbuilder-57.teams-conversation-bot-python",
+    "source": "pnp",
+    "title": "Python Teams Conversation Bot",
+    "shortDescription": "Sample shows how to incorporate basic conversational flow into a Teams application. It also illustrates a few of the Teams specific calls you can make from your bot.",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/57.teams-conversation-bot",
+    "longDescription": [
+      "Simple bot with conversational flow demonstrates how to display a welcome card, mention the user and message all members in a conversation"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-python",
+    "reponame": "botbuilder-58.teams-start-new-thread-in-channel-python",
+    "source": "pnp",
+    "title": "Python Bot starts a thread in a specific Teams channel",
+    "shortDescription": "Sample shows how to create a new conversation thread in a channel in Microsoft Teams",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/python/58.teams-start-thread-in-channel",
+    "longDescription": [
+      "This sample shows how to create a new conversation thread in a channel in Microsoft Teams."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "python"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "comment": "**** BEGIN TYPESCRIPT BOTBUILDER SAMPLES ****",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-typescript",
+    "reponame": "botbuilder-50.teams-messaging-extensions-search-typescript",
+    "source": "pnp",
+    "title": "Typescript Teams Search Messaging Extension",
+    "shortDescription": "Sample illustrates how to build a Search-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/typescript_nodejs/50.teams-messaging-extensions-search",
+    "longDescription": [
+      "Sample illustrates how to build a Search-based Messaging Extension. Messaging extensions are implemented using the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-typescript",
+    "reponame": "botbuilder-51.teams-messaging-extensions-action-typescript",
+    "source": "pnp",
+    "title": "Typescript Teams Action Messaging Extension",
+    "shortDescription": "Sample illustrates how to build an Action-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/typescript_nodejs/51.teams-messaging-extensions-action",
+    "longDescription": [
+      "Simple Teams action messaging extension. Messaging extensions are based on the Azure Bot Framework."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-typescript",
+    "reponame": "botbuilder-57.teams-conversation-bot-typescript",
+    "source": "pnp",
+    "title": "Typescript Teams Conversation Bot",
+    "shortDescription": "Sample shows how to incorporate basic conversational flow into a Teams application. It also illustrates a few of the Teams specific calls you can make from your bot.",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/typescript_nodejs/57.teams-conversation-bot",
+    "longDescription": [
+      "Simple bot with conversational flow demonstrates how to display a welcome card, mention the user and message all members in a conversation"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-typescript",
+    "reponame": "botbuilder-58.teams-start-new-thread-in-channel-typescript",
+    "source": "pnp",
+    "title": "Typescript Bot starts a thread in a specific Teams channel",
+    "shortDescription": "Sample shows how to create a new conversation thread in a channel in Microsoft Teams",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/typescript_nodejs/58.teams-start-new-thread-in-channel",
+    "longDescription": [
+      "This sample shows how to create a new conversation thread in a channel in Microsoft Teams."
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "comment": "**** BEGIN BOT COMPOSER BOTBUILDER SAMPLES ****",
+    "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-composer",
+    "reponame": "botbuilder-51.teams-messaging-extensions-action-composer",
+    "source": "pnp",
+    "title": "Bot Composer Teams Action Messaging Extension (EXPERIMENTAL)",
+    "shortDescription": "Sample illustrates how to build an Action-based Messaging Extension",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/composer_nodejs/51.teams-messaging-extensions-action",
+    "longDescription": [
+      "Simple Teams action messaging extension. Messaging extensions are based on the Azure Bot Framework."
+    ],
+    "creationDateTime": "2021-05-24",
+    "updateDateTime": "2021-10-12",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "composer"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-composer",
+    "reponame": "botbuilder-57.teams-conversation-bot-composer",
+    "source": "pnp",
+    "title": "Bot Composer Teams Conversation Bot",
+    "shortDescription": "Sample shows how to incorporate basic conversational flow into a Teams application. It also illustrates a few of the Teams specific calls you can make from your bot.",
+    "url": "https://github.com/microsoft/BotBuilder-Samples/tree/main/samples/composer_nodejs/57.teams-conversation-bot",
+    "longDescription": [
+      "Simple bot with conversational flow demonstrates how to display a welcome card, mention the user and message all members in a conversation"
+    ],
+    "creationDateTime": "2019-10-17",
+    "updateDateTime": "2021-11-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "composer"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/_nopreview-BOT.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-msg-forwarder",
+    "reponame": "msgext-msg-forwarder",
+    "source": "pnp",
+    "title": "Message forwarder messaging extension",
+    "shortDescription": "This messaging extension allows forwarding Teams chat messages to other Teams or chats",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-msg-forwarder",
+    "longDescription": [
+      "Messaging extension allows a user to forard a message to user(s) or a Teams channel using the Microsoft Graph API"
+    ],
+    "creationDateTime": "2022-03-03",
+    "updateDateTime": "2022-03-03",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "yoteams"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/msgext-msg-forwarder/assets/appinaction.gif",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "siddharth-vaghasia",
+        "company": "Independent",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Siddharth Vaghasia",
+        "twitter": "siddh_me"
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-move-your-filters",
+    "reponame": "tab-move-your-filters",
+    "source": "pnp",
+    "title": "Move your filters",
+    "shortDescription": "Sample that reads filters from Gmail and creates matching rules and filters in Outlook",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-move-your-filters",
+    "longDescription": [
+      "Sample Microsoft Teams Toolkit React project to read filters and labels from Gmail and create matching rules and filters in Outlook"
+    ],
+    "creationDateTime": "2022-03-22",
+    "updateDateTime": "2022-03-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "composer"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/tab-move-your-filters/assets/MoveYourFiltersTeamsApp.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "MarkXA",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/1598875?v=4",
+        "name": "Mark Allan",
+        "twitter": "MarkXA"
+      },
+      {
+        "gitHubAccount": "tomresing",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/2660081?v=4",
+        "name": "Tom Resing",
+        "twitter": "resing"
+      }
+
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
       {
         "name": "Teams developer questions",
         "url": "https://aka.ms/sample-ref-teams-dev-questions"
