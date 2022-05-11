@@ -17353,7 +17353,7 @@
     "source": "pnp",
     "title": "Microsoft Graph Search API Bot",
     "shortDescription": "Bot searches for items such as messages, events, files, and SharePoint list items",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-move-your-filters",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-microsoft-search-api",
     "longDescription": [
       "Sample bot and messaging extension finds items such as messages, events, files, and SharePoint list items using the Microsoft Graph Search API and displays results in adaptive cards with paging"
     ],
@@ -17408,7 +17408,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/blob/96f2367f6f85b52554541bce030dd52ce0d15ef5/samples/bot-microsoft-search-api/Assets/ms-search-api-bot.gif?raw=true",
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/bot-microsoft-search-api/Assets/ms-search-api-bot.gif",
         "alt": "Search bot in action"
       }
     ],
