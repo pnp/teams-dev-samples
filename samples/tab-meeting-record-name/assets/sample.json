@@ -1,0 +1,91 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-meeting-record-name",
+    "reponame": "tab-meeting-record-name",
+    "source": "pnp",
+    "title": "Tab meeting record name",
+    "shortDescription": "Meeting app lets attendees record their names and listen to how other people pronounce their names",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-record-name",
+    "longDescription": [
+      "Meeting app lets attendees record their names and listen to how other people pronounce their names"
+    ],
+    "creationDateTime": "2021-09-01",
+    "updateDateTime": "2021-09-17",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab,meetings"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/Docs/docs/img/thumbnails/tab-meeting-record-name.png",
+        "alt": "Users in a meeting with record/play buttons"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mmsharepoint",
+        "company": "Avanade ",
+        "pictureUrl": "https://github.com/mmsharepoint.png",
+        "name": "Markus Moeller",
+        "twitter": "moeller2_0"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

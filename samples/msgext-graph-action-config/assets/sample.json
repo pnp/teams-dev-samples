@@ -1,0 +1,91 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-graph-action-config",
+    "reponame": "msgext-graph-action-config",
+    "source": "pnp",
+    "title": "Tab meeting stageview",
+    "shortDescription": "Action messaging extension authenticates with SSO and calls Microsoft Graph.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-action-config",
+    "longDescription": [
+      "Messaging extension authenticates against Microsoft Graph via SSO and on-behalf flow from the frontend and recieves documents to be posted as adaptive card to the message compose box of a channel"
+    ],
+    "creationDateTime": "2021-07-08",
+    "updateDateTime": "2021-07-08",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-meeting-stageview-basic/assets/05StageView.jpg",
+        "alt": "Messaging extension showing Graph data"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mmsharepoint",
+        "company": "Avanade ",
+        "pictureUrl": "https://github.com/mmsharepoint.png",
+        "name": "Markus Moeller",
+        "twitter": "moeller2_0"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

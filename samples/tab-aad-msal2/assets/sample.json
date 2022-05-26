@@ -1,0 +1,95 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-aad-msal2",
+    "reponame": "tab-aad-msal2",
+    "source": "pnp",
+    "title": "Tab uses MSAL 2.0 and calls Graph API",
+    "shortDescription": "Tab uses MSAL 2.0 in a pop-up and calls Graph API. Shows authorization using auth code PKCE from a static web site.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-aad-msal2",
+    "longDescription": [
+      "Tab uses MSAL 2.0 in a pop-up and calls Graph API. Shows authorization using auth code PKCE from a static web site."
+    ],
+    "creationDateTime": "2020-08-25",
+    "updateDateTime": "2020-08-25",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-aad-msal2.png",
+        "alt": "Tab uses MSAL 2.0 in a pop-up and calls Graph API. Shows authorization using auth code PKCE from a static web site."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "BobGerman",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
+        "name": "Bob German",
+        "twitter": "Bob1German"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

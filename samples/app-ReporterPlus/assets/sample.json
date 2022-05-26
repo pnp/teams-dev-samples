@@ -1,0 +1,98 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-app-ReporterPlus",
+    "reponame": "app-ReporterPlus",
+    "source": "pnp",
+    "title": "ReporterPlus - Teams Device Capabilities Application",
+    "shortDescription": "The sample app demonstrates the power of integrating Teams platform with device capabilities such as camera, QR or barcode scanner, photo gallery and microphone",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-ReporterPlus",
+    "longDescription": [
+      "Teams apps allow end users to do more by directly integrating with native device capabilities. This integration also reduces the barrier to app development, speeds-up development-cycle, and creates new scenarios or use-cases for the developer community. The sample allows end users to capture and report incidents / tasks / tickets for approval. While the sample app can be used in varied scenarios or use cases, for the purpose of demonstration and walkthrough, we assume the sample is being used for submitting a request for replacing a damaged office asset."
+    ],
+    "creationDateTime": "2021-06-24",
+    "updateDateTime": "2021-06-24",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-ReporterPlus.png",
+        "alt": "Preview of app"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Pothan-MSFT ",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/80528379",
+        "name": "Veera Venkata Sai Pothan Thota",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "",
+        "company": "Microsoft",
+        "pictureUrl": "",
+        "name": "Sathya Raveendran",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

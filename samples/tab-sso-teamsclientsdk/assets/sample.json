@@ -1,0 +1,102 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-sso-teamsclientsdk",
+    "reponame": "tab-sso-teamsclientsdk",
+    "source": "pnp",
+    "title": "Tab SSO with .NET Core MVC",
+    "shortDescription": "Tab SSO with .NET Core MVC",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-sso-teamsclientsdk",
+    "longDescription": [
+      "Tab SSO with .NET Core MVC"
+    ],
+    "creationDateTime": "2020-12-03",
+    "updateDateTime": "2020-12-03",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "jquery"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-sso-teamsclientsdk.png",
+        "alt": "Tab SSO with .NET Core MVC"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Saikrishna-MSFT",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
+        "name": "Saikrishna Neeli",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "arun-msft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/arun-msft.png",
+        "name": "Arun Kumar Anaparthi",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

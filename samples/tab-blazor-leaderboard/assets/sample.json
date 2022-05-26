@@ -1,0 +1,91 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-blazor-leaderboard",
+    "reponame": "tab-blazor-leaderboard",
+    "source": "pnp",
+    "title": "Teams Leaderboard in Blazor",
+    "shortDescription": "Shows how to use Microsoft Teams Toolkit with Blazor to build a Teams personal tab",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-blazor-leaderboard",
+    "longDescription": [
+      "Shows how to use Blazor to build a personal tab in Teams"
+    ],
+    "creationDateTime": "2021-10-10",
+    "updateDateTime": "2021-10-10",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "blazor"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "teamstoolkit"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/blob/main/samples/tab-blazor-leaderboard/assets/Leaderboard.png?raw=true",
+        "alt": "Tab showing Teams channel leaderboard"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "thomyg",
+        "company": "Solvion",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/10920072",
+        "name": "Thomy Goelles",
+        "twitter": "thomyg"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

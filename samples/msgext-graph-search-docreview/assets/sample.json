@@ -1,0 +1,95 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-graph-search-docreview",
+    "reponame": "msgext-graph-search-docreview",
+    "source": "pnp",
+    "title": "Document Review - Search messaging extension calls Graph",
+    "shortDescription": "Search-based messaging extension queries Graph API to find documents needing review",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-search-docreview",
+    "longDescription": [
+      "Search-based messaging extension queries Graph API to find documents needing review"
+    ],
+    "creationDateTime": "2020-08-26",
+    "updateDateTime": "2020-08-26",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot40"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-graph-search-docreview.png",
+        "alt": "Search-based messaging extension queries Graph API to find documents needing review"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mmsharepoint",
+        "company": "Avanade ",
+        "pictureUrl": "https://github.com/mmsharepoint.png",
+        "name": "Markus Moeller",
+        "twitter": "moeller2_0"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

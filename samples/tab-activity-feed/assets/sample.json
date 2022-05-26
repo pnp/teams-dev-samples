@@ -1,0 +1,95 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-activity-feed",
+    "reponame": "tab-activity-feed",
+    "source": "pnp",
+    "title": "Tab notifies users via the Teams activity feed",
+    "shortDescription": "Simple Kudos app notifies users of new kudos via the Teams activity feed and Microsoft Graph",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-activity-feed",
+    "longDescription": [
+      "Simple Kudos app notifies users of new kudos via the Teams activity feed and Microsoft Graph"
+    ],
+    "creationDateTime": "2021-04-26",
+    "updateDateTime": "2021-04-26",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "solution"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "mgt"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-activity-feed.png",
+        "alt": "Simple Kudos app notifies users of new kudos via the Teams activity feed and Microsoft Graph"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sebastienlevert",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/sebastienlevert.png",
+        "name": "Sébastien Levert",
+        "twitter": "sebastienlevert"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

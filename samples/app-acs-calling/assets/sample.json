@@ -1,0 +1,105 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-app-acs-calling",
+    "reponame": "app-acs-calling",
+    "source": "pnp",
+    "title": "Azure Communication Services – Teams InterOp with Call Routing",
+    "shortDescription": "The sample supports Azure Communication Services (ACS) and Teams Interoperation to allow citizen end users get in touch with an SME / Support Agent belonging to a business entity over a video call.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-acs-calling",
+    "longDescription": [
+      "The sample supporting Azure Communication Services (ACS) and Teams Interoperation allows citizen end users get in touch with an SME / Support Agent belonging to a business entity over a video call in order to discuss and address an issue. It allows business users with a Teams license on one side have a call with a citizen consumer who doesn’t have a Teams license / login."
+    ],
+    "creationDateTime": "2021-06-18",
+    "updateDateTime": "2021-06-18",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/app-acs-calling/Docs/GIF/PlaceACall.gif",
+        "alt": "Preview of app"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "",
+        "company": "Microsoft",
+        "pictureUrl": "",
+        "name": "Sathya Raveendran",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "Saikrishna-MSFT",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
+        "name": "Saikrishna Neeli",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "arun-msft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/arun-msft.png",
+        "name": "Arun Kumar Anaparthi",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

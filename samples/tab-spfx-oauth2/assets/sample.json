@@ -1,0 +1,99 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-spfx-oauth2",
+    "reponame": "tab-spfx-oauth2",
+    "source": "pnp",
+    "title": "SPFx tab uses OAuth 2.0 to call 3rd party service (Box)",
+    "shortDescription": "Tab uses OAuth 2.0 in a pop-up, calls the Box API and displays Box Content Explorer",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-spfx-oauth2",
+    "longDescription": [
+      "Tab uses OAuth 2.0 in a pop-up, calls the Box API and displays Box Content Explorer"
+    ],
+    "creationDateTime": "2020-08-25",
+    "updateDateTime": "2020-08-25",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-spfx-oauth2.png",
+        "alt": "Tab uses OAuth 2.0 in a pop-up, calls the Box API and displays Box Content Explorer"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "AhmadiRamin",
+        "company": "Content and Cloud",
+        "pictureUrl": "https://github.com/AhmadiRamin.png",
+        "name": "Ramin Ahmadi",
+        "twitter": "raminahmadi1986"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

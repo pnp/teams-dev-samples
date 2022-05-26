@@ -1,0 +1,95 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-action-jit",
+    "reponame": "msgext-action-jit",
+    "source": "pnp",
+    "title": "Action messaging extension with Just In Time installer",
+    "shortDescription": "Sample of an Action messaging extension that shows a Just-In-Time installer to install the app into Teams/Personal/Group Chat, and how to post an adaptive card response directly into a conversation",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-action-jit",
+    "longDescription": [
+      "Sample of an Action messaging extension that shows a Just-In-Time installer to install the app into Teams/Personal/Group Chat, and how to post an adaptive card response directly into a conversation"
+    ],
+    "creationDateTime": "2020-09-10",
+    "updateDateTime": "2020-09-10",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot40"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-action-jit.png",
+        "alt": "Sample of an Action messaging extension that shows a Just-In-Time installer to install the app into Teams/Personal/Group Chat, and how to post an adaptive card response directly into a conversation"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rjesh-git",
+        "company": "CoreBTS",
+        "pictureUrl": "https://github.com/rjesh-git.png",
+        "name": "Rajesh Sitaraman",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

@@ -1,0 +1,91 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-action-preview",
+    "reponame": "msgext-action-preview",
+    "source": "pnp",
+    "title": "Action Messaging Extension updates Adaptive Card",
+    "shortDescription": "Action based messaging extension posts an adaptive card to a Teams channel as a bot and allows updating the card with an action messaging extension.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-action-preview",
+    "longDescription": [
+      "This sample is an action based messaging extension created using the Teams Yeoman Generator. It posts a simple adaptive card to the Teams news channel as a bot and with an action to update the card again and again."
+    ],
+    "creationDateTime": "2021-05-05",
+    "updateDateTime": "2021-05-05",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://camo.githubusercontent.com/aff735bae1ff2daa03135b2cd1f41066248f2d6348b766b6a7c3395c2a909960/68747470733a2f2f6d6d7368617265706f696e742e66696c65732e776f726470726573732e636f6d2f323032312f30352f30345f6164617074697665636172645f7570646174652e6769663f773d363730267a6f6f6d3d32",
+        "alt": "Bot displays meeting start and end"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mmsharepoint",
+        "company": "Avanade ",
+        "pictureUrl": "https://github.com/mmsharepoint.png",
+        "name": "Markus Moeller",
+        "twitter": "moeller2_0"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

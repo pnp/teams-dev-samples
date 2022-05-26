@@ -1,0 +1,99 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-spfx-me-experience",
+    "reponame": "tab-spfx-me-experience",
+    "source": "pnp",
+    "title": "Me experience demonstrates use of Microsoft Graph Toolkit React Extensions in an SPFx web part in Teams",
+    "shortDescription": "A Teams app where users can start their day and see their personal information using Microsoft Graph Toolkit React components",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-spfx-me-experience",
+    "longDescription": [
+      "A Teams app where users can start their day and see their personal information using Microsoft Graph Toolkit React components"
+    ],
+    "creationDateTime": "2020-11-08",
+    "updateDateTime": "2020-11-08",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-spfx-me-experience.png",
+        "alt": "A Teams app where users can start their day and see their personal information using Microsoft Graph Toolkit React components"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rabwill",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/rabwill.png",
+        "name": "Rabia Williams",
+        "twitter": "williamsrabia"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

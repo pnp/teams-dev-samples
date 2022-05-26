@@ -1,0 +1,107 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-app-consulting-bot",
+    "reponame": "app-consulting-bot",
+    "source": "pnp",
+    "title": "Consulting Bot",
+    "shortDescription": "This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-consulting-bot",
+    "longDescription": [
+      "This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)"
+    ],
+    "creationDateTime": "2020-04-23",
+    "updateDateTime": "2020-04-23",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-consulting-bot.png",
+        "alt": "This app demonstrates two styles of Bot conversation - using natural language (best for 1:1 conversation) and using adaptive cards (best for Team channels and group chat)"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "BobGerman",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
+        "name": "Bob German",
+        "twitter": "Bob1German"
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1153 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-spfx-field-visit",
+    "reponame": "tab-spfx-field-visit",
+    "source": "pnp",
+    "title": "Field visit mashup",
+    "shortDescription": "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits.",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tab-field-visit-mashup",
+    "longDescription": [
+      "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits."
+    ],
+    "creationDateTime": "2019-04-20",
+    "updateDateTime": "2019-04-20",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-spfx-field-visit.png",
+        "alt": "A web part for use in Microsoft Teams that displays a mashup of information partaining to customer visits."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "BobGerman",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
+        "name": "Bob German",
+        "twitter": "Bob1German"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-other-teams-creator-web-part",
+    "reponame": "other-teams-creator-web-part",
+    "source": "pnp",
+    "title": "Teams Creator web part",
+    "shortDescription": "This is a SharePoint web part that creates Teams",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-team-creator",
+    "longDescription": [
+      "This is a SharePoint web part that creates Teams"
+    ],
+    "creationDateTime": "2018-11-19",
+    "updateDateTime": "2018-11-19",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "other"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-teams-creator-web-part.png",
+        "alt": "This is a SharePoint web part that creates Teams"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "AJIXuMuK",
+        "company": "Sharepointalist",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/17036219?s=460&u=b8e83fb70a90eae0c0e0078c206990785e1a5b6f&v=4",
+        "name": "Alex Terentiev",
+        "twitter": "alexaterentiev"
+      }
+    ],
+    "references": [
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-config-using-sharepoint",
+    "reponame": "tab-config-using-sharepoint",
+    "source": "pnp",
+    "title": "Configurable tabs with SharePoint",
+    "shortDescription": "This is a SharePoint web part that creates Teams",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-configure-tab",
+    "longDescription": [
+      "This is a SharePoint web part that creates Teams"
+    ],
+    "creationDateTime": "2020-01-06",
+    "updateDateTime": "2020-01-06",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-config-using-sharepoint.png",
+        "alt": "This is a SharePoint web part that creates Teams"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "BobGerman",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
+        "name": "Bob German",
+        "twitter": "Bob1German"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-other-send-message-web-part",
+    "reponame": "other-send-message-web-part",
+    "source": "pnp",
+    "title": "SharePoint web part sends to Teams",
+    "shortDescription": "This is a SharePoint web part that displays the user's Teams and sends messages to channels",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-message",
+    "longDescription": [
+      "This is a SharePoint web part that displays the user's Teams and sends messages to channels"
+    ],
+    "creationDateTime": "2020-05-23",
+    "updateDateTime": "2020-05-23",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "other"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-send-message-web-part.png",
+        "alt": "This is a SharePoint web part that displays the user's Teams and sends messages to channels"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "siddharth-vaghasia",
+        "company": "",
+        "pictureUrl": "https://github.com/siddharth-vaghasia.png",
+        "name": "Siddharth Vaghasia",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-personal-app-settings",
+    "reponame": "tab-personal-app-settings",
+    "source": "pnp",
+    "title": "SPFx personal tab with property pane editing",
+    "shortDescription": "Shows how to expose the web part editing of an SPFx personal tab",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-personal-app-settings",
+    "longDescription": [
+      "Shows how to expose the web part editing of an SPFx personal tab"
+    ],
+    "creationDateTime": "2020-04-24",
+    "updateDateTime": "2020-04-24",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-personal-app-settings.png",
+        "alt": "Shows how to expose the web part editing of an SPFx personal tab"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "AJIXuMuK",
+        "company": "Sharepointalist",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/17036219?s=460&u=b8e83fb70a90eae0c0e0078c206990785e1a5b6f&v=4",
+        "name": "Alex Terentiev",
+        "twitter": "alexaterentiev"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-suggested-members",
+    "reponame": "tab-suggested-members",
+    "source": "pnp",
+    "title": "Suggested members tab",
+    "shortDescription": "SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tab-suggested-members",
+    "longDescription": [
+      "SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click"
+    ],
+    "creationDateTime": "2018-11-18",
+    "updateDateTime": "2018-11-18",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-suggested-members.png",
+        "alt": "SPFx tab that suggests new members for a Team based on insights from Microsoft Graph, and adds them with a click"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "luismanez",
+        "company": "ClearPeople",
+        "pictureUrl": "https://github.com/luismanez.png",
+        "name": "Luis Mañez",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-tag-teams-graph-ext",
+    "reponame": "tab-tag-teams-graph-ext",
+    "source": "pnp",
+    "title": "Web part to tag a Team",
+    "shortDescription": "Web part to tag a Team using managed metadata and Graph extension",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tagging",
+    "longDescription": [
+      "Web part to tag a Team using managed metadata and Graph extension"
+    ],
+    "creationDateTime": "2019-04-18",
+    "updateDateTime": "2019-04-18",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "other"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-tag-teams-graph-ext.png",
+        "alt": "Web part to tag a Team using managed metadata and Graph extension"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "fredupstair",
+        "company": "Avanade Italy",
+        "pictureUrl": "https://github.com/fredupstair.png",
+        "name": "Federico Porceddu",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-public-teams-not-member-of",
+    "reponame": "tab-public-teams-not-member-of",
+    "source": "pnp",
+    "title": "Tab or web part to show Teams to join",
+    "shortDescription": "Tab or web part shows Teams the user is not a member of, with an opportunity to join",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-tagging",
+    "longDescription": [
+      "Tab or web part shows Teams the user is not a member of, with an opportunity to join"
+    ],
+    "creationDateTime": "2019-02-05",
+    "updateDateTime": "2019-02-05",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-public-teams-not-member-of.png",
+        "alt": "Tab or web part shows Teams the user is not a member of, with an opportunity to join"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "LauraKokkarinen",
+        "company": "Sulava",
+        "pictureUrl": "https://github.com/LauraKokkarinen.png",
+        "name": "Laura Kokkarinen",
+        "twitter": "LauraKokkarinen"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-other-webpart-show-my-teams",
+    "reponame": "other-webpart-show-my-teams",
+    "source": "pnp",
+    "title": "Web part to show my Teams",
+    "shortDescription": "Web part shows Teams the user belongs to with links to each Team",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-my-teams",
+    "longDescription": [
+      "Web part shows Teams the user belongs to with links to each Team"
+    ],
+    "creationDateTime": "2019-02-26",
+    "updateDateTime": "2019-02-26",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "other"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-webpart-show-my-teams.png",
+        "alt": "Web part shows Teams the user belongs to with links to each Team"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "joelfmrodrigues",
+        "company": "Storm Technology",
+        "pictureUrl": "https://github.com/joelfmrodrigues.png",
+        "name": "Joel Rodrigues",
+        "twitter": "joelfmrodrigues"
+      }
+    ],
+    "references": [
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-other-outlook-addin-save-to-teams",
+    "reponame": "other-outlook-addin-save-to-teams",
+    "source": "pnp",
+    "title": "Outlook add-in saves email to Teams",
+    "shortDescription": "Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-outlook-copy2teams",
+    "longDescription": [
+      "Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)"
+    ],
+    "creationDateTime": "2020-01-29",
+    "updateDateTime": "2020-01-29",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "other"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/other-outlook-addin-save-to-teams.png",
+        "alt": "Outlook add-in written in SPFx saves email to Teams, OneDrive, or M365 Groups (SharePoint)"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mmsharepoint",
+        "company": "Avanade ",
+        "pictureUrl": "https://github.com/mmsharepoint.png",
+        "name": "Markus Moeller",
+        "twitter": "moeller2_0"
+      }
+    ],
+    "references": [
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-react-teams-send-notification",
+    "reponame": "react-teams-send-notification",
+    "source": "pnp",
+    "title": "Send notifications in Teams",
+    "shortDescription": "Tab sends notifications to Teams users",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-send-notification",
+    "longDescription": [
+      "Tab sends notifications to Teams users"
+    ],
+    "creationDateTime": "2020-12-04",
+    "updateDateTime": "2020-12-04",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/react-teams-send-notification.png",
+        "alt": "Tab sends notifications to Teams users"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "luismanez",
+        "company": "ClearPeople",
+        "pictureUrl": "https://github.com/luismanez.png",
+        "name": "Luis Mañez",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "luismanez",
+        "company": "ClearPeople",
+        "pictureUrl": "https://github.com/luismanez.png",
+        "name": "Luis Mañez",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-react-teams-meeting-app-questionnaire",
+    "reponame": "react-teams-meeting-app-questionnaire",
+    "source": "pnp",
+    "title": "Questionnaire Teams Meeting App",
+    "shortDescription": "Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions",
+    "url": "https://github.com/pnp/sp-dev-fx-webparts/tree/master/samples/react-teams-meeting-app-questionnaire",
+    "longDescription": [
+      "Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions"
+    ],
+    "creationDateTime": "2021-03-22",
+    "updateDateTime": "2021-03-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "meetings"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/react-teams-meeting-app-questionnaire.png",
+        "alt": "Questionnaire meeting app provides pre-meeting app experience for Teams meeting attendees to ask questions"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "nanddeepn",
+        "company": "",
+        "pictureUrl": "https://github.com/nanddeepn.png",
+        "name": "Nanddeep Nachan",
+        "twitter": "NanddeepNachan"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams meeting apps",
+        "url": "https://aka.ms/sample-ref-teams-docs-meetings"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

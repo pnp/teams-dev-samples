@@ -1,0 +1,134 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-bot-b2c-chat-bot",
+    "reponame": "bot-b2c-chat-bot",
+    "source": "pnp",
+    "title": "Business to Citizen Consumer Communication Bot",
+    "shortDescription": "Allows citizen end users get in touch with an SME / Support Agent working in Teams",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-b2c-chat-bot",
+    "longDescription": [
+      "Allows citizen end users get in touch with an SME / Support Agent working in Teams"
+    ],
+    "creationDateTime": "2021-02-18",
+    "updateDateTime": "2021-02-18",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-b2c-chat-bot.png",
+        "alt": "Allows citizen end users get in touch with an SME / Support Agent working in Teams"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "arun-msft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/arun-msft.png",
+        "name": "Arun Kumar Anaparthi",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "Saikrishna-MSFT",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
+        "name": "Saikrishna Neeli",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "Saikrishna-MSFT",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
+        "name": "Saikrishna Neeli",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "Saikrishna-MSFT",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
+        "name": "Saikrishna Neeli",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "arun-msft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/arun-msft.png",
+        "name": "Arun Kumar Anaparthi",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "arun-msft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/arun-msft.png",
+        "name": "Arun Kumar Anaparthi",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-httpstatuscats",
+    "reponame": "msgext-httpstatuscats",
+    "source": "pnp",
+    "title": "HTTP Status Lookup messaging extension with cats",
+    "shortDescription": "This is a small sample code to build a messaging extension with Node.js and Bot Framework",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-httpstatuscats",
+    "longDescription": [
+      "This is a small sample code to build a messaging extension with Node.js and Bot Framework"
+    ],
+    "creationDateTime": "2020-09-11",
+    "updateDateTime": "2020-09-11",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot40"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-httpstatuscats.png",
+        "alt": "This is a small sample code to build a messaging extension with Node.js and Bot Framework"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "girliemac",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/girliemac.png",
+        "name": "Tomomi Imura",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

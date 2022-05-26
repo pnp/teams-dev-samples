@@ -1,0 +1,95 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-one-productivity-hub",
+    "reponame": "tab-one-productivity-hub",
+    "source": "pnp",
+    "title": "One Productivity Hub",
+    "shortDescription": "Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-one-productivity-hub",
+    "longDescription": [
+      "Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0"
+    ],
+    "creationDateTime": "2020-12-17",
+    "updateDateTime": "2020-12-17",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "solution"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "mgt"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-one-productivity-hub.png",
+        "alt": "Tab displays user's calendar, tasks, and emails using Microsoft Graph Toolkit 2.0"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sebastienlevert",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/sebastienlevert.png",
+        "name": "Sébastien Levert",
+        "twitter": "sebastienlevert"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

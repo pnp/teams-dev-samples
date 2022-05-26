@@ -1,0 +1,91 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-bot-uam-cardbot",
+    "reponame": "bot-uam-cardbot",
+    "source": "pnp",
+    "title": "Card Bot",
+    "shortDescription": "This sample demonstrates the new Universal Action Model for adaptive cards using Node/TypeScript",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-uam-cardbot",
+    "longDescription": [
+      "A bot that lets an initiator ask a question in a Team/Group chat. The team mates can respond to the question with a form input. The initiator and the team mates see card updates in real time based on the actions or refresh feature of the adaptive card."
+    ],
+    "creationDateTime": "2021-07-19",
+    "updateDateTime": "2021-07-19",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-uam-cardbot.png",
+        "alt": "Adaptive card bot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rabwill",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/20379311",
+        "name": "Rabia Williams",
+        "twitter": "williamsrabia"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]

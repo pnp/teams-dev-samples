@@ -1,0 +1,106 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-move-your-filters",
+    "reponame": "tab-move-your-filters",
+    "source": "pnp",
+    "title": "Move your filters",
+    "shortDescription": "Sample that reads filters from Gmail and creates matching rules and filters in Outlook",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-move-your-filters",
+    "longDescription": [
+      "Sample Microsoft Teams Toolkit React project to read filters and labels from Gmail and create matching rules and filters in Outlook"
+    ],
+    "creationDateTime": "2022-03-22",
+    "updateDateTime": "2022-03-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "botBuilder"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "composer"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-move-your-filters/assets/MoveYourFiltersTeamsApp.png",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "MarkXA",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/1598875?v=4",
+        "name": "Mark Allan",
+        "twitter": "MarkXA"
+      },
+      {
+        "gitHubAccount": "tomresing",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/2660081?v=4",
+        "name": "Tom Resing",
+        "twitter": "resing"
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ]
+  }
+]
