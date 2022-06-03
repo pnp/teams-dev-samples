@@ -98,7 +98,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-app-complete-sample-csharp",
@@ -203,7 +204,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-app-complete-sample-nodejs",
@@ -308,7 +310,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-app-helloworld-csharp",
@@ -413,7 +416,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-app-helloworld-nodejs",
@@ -518,7 +522,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-app-region-selection-csharp",
@@ -619,7 +624,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-app-task-module-csharp",
@@ -724,7 +730,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-app-task-module-nodejs",
@@ -829,7 +836,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-bot-conversation-quickstart-js",
@@ -926,7 +934,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-bot-conversation-sso-quickstart-csharp",
@@ -1023,7 +1032,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-bot-proactive-messaging-csharp-coordinate-logger",
@@ -1120,7 +1130,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-bot-proactive-messaging-csharp-proactive-cmd",
@@ -1217,7 +1228,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-bot-sharepoint-list-csharp",
@@ -1314,7 +1326,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-connector-generic-nodejs",
@@ -1407,7 +1420,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-connector-github-notification-nodejs",
@@ -1500,7 +1514,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-connector-todo-notification",
@@ -1593,7 +1608,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-graph-channel-lifecycle-csharp",
@@ -1682,7 +1698,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-graph-rsc-csharp",
@@ -1771,7 +1788,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-graph-rsc-nodejs",
@@ -1860,7 +1878,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-meetings-content-bubble-csharp",
@@ -1953,7 +1972,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-meetings-content-bubble-nodejs",
@@ -2046,7 +2066,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-meetings-token-app-csharp",
@@ -2139,7 +2160,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-msgext-action-quickstart-js",
@@ -2232,7 +2254,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-msgext-link-unfurling-reddit-csharp",
@@ -2325,7 +2348,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-msgext-search-quickstart-js",
@@ -2418,7 +2442,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-msgext-search-sso-config",
@@ -2511,7 +2536,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-outgoing-webhook-csharp",
@@ -2600,7 +2626,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-outgoing-webhook-nodejs",
@@ -2689,7 +2716,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-channel-group-config-page-auth-csharp",
@@ -2782,7 +2810,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-channel-group-quickstart-js",
@@ -2875,7 +2904,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-channel-group-quickstart-ts",
@@ -2968,7 +2998,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-channel-group-sso-quickstart-js",
@@ -3061,7 +3092,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-channel-group-sso-quickstart-ts",
@@ -3154,7 +3186,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-personal-quickstart-js",
@@ -3247,7 +3280,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-personal-quickstart-ts",
@@ -3340,7 +3374,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-personal-sso-quickstart-js",
@@ -3433,7 +3468,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-personal-sso-quickstart-ts",
@@ -3526,7 +3562,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-channel-group-sso-csharp",
@@ -3615,7 +3652,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-personal-sso-csharp",
@@ -3704,7 +3742,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-channel-group-mvc",
@@ -3793,7 +3832,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-channel-group-razor",
@@ -3882,7 +3922,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-channel-group-spfx",
@@ -3975,7 +4016,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-personal-mvc",
@@ -4064,7 +4106,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-personal-razor",
@@ -4153,7 +4196,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-sso-csharp",
@@ -4242,7 +4286,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-sso-nodejs",
@@ -4331,7 +4376,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-officedev-tab-ui-templates-ts",
@@ -4420,6 +4466,7 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   }
 ]

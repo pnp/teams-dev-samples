@@ -90,7 +90,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-teams-home-app",
@@ -183,7 +184,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-app-contoso-hr-talent-app",
@@ -296,7 +298,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-app-emergency-response",
@@ -397,7 +400,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-one-productivity-hub-workshop",
@@ -490,7 +494,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-app-customer-orders",
@@ -591,6 +596,7 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   }
 ]

@@ -94,7 +94,8 @@
         "name": "Associate Insights App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#associate-insights"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-attendance",
@@ -191,7 +192,8 @@
         "name": "Attendance App Template",
         "url": "https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#attendance"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-book-a-room",
@@ -296,7 +298,8 @@
         "name": "Book-a-room App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#book-a-room"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-celebrate",
@@ -401,7 +404,8 @@
         "name": "Celebrate App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-company-communicator",
@@ -510,7 +514,8 @@
         "name": "Company Communicator App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-contact-group-lookup",
@@ -607,7 +612,8 @@
         "name": "Contact Group App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#contact-group-lookup-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-crowd-sourcer",
@@ -712,7 +718,8 @@
         "name": "Crowd Sourcer App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#crowdsourcer"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-custom-stickers",
@@ -809,7 +816,8 @@
         "name": "Custom Stickers App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-expert-finder",
@@ -918,7 +926,8 @@
         "name": "Expert Finder App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-faq-plus",
@@ -1027,7 +1036,8 @@
         "name": "FAQ Plus App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#faq-plus"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-goal-tracker",
@@ -1136,7 +1146,8 @@
         "name": "Goal Tracker App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#goal-tracker-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-great-ideas",
@@ -1245,7 +1256,8 @@
         "name": "Great Ideas App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-group-activities",
@@ -1350,7 +1362,8 @@
         "name": "Group Activities App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-grow-your-skills",
@@ -1459,7 +1472,8 @@
         "name": "Grow Your Skills App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#grow-your-skills-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-hr-support",
@@ -1568,7 +1582,8 @@
         "name": "HR Support App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-icebreaker",
@@ -1669,7 +1684,8 @@
         "name": "Icebreaker App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-incentives",
@@ -1770,7 +1786,8 @@
         "name": "Incentives App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incentives"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-incident-reporter",
@@ -1879,7 +1896,8 @@
         "name": "Incident Reporter App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-open-badges",
@@ -1988,7 +2006,8 @@
         "name": "Open Badges App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-quick-responses",
@@ -2097,7 +2116,8 @@
         "name": "Quick Responses App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#quick-responses"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-remote-support",
@@ -2206,7 +2226,8 @@
         "name": "Remote Support App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#remote-support-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-request-a-team",
@@ -2315,7 +2336,8 @@
         "name": "Request-a-team App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#request-a-team-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-scrums-for-channels",
@@ -2416,7 +2438,8 @@
         "name": "Scrums for Channels App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-channels-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-scrums-for-group-chat",
@@ -2517,7 +2540,8 @@
         "name": "Scrums for Group Chat App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-group-chat-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-share-now",
@@ -2626,7 +2650,8 @@
         "name": "Share Now App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#share-now-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-splist-search",
@@ -2723,7 +2748,8 @@
         "name": "SharePoint List Search App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#sharepoint-list-search"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-staff-checkins",
@@ -2820,7 +2846,8 @@
         "name": "Staff Check-ins App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#staff-check-ins-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-visitor-management",
@@ -2917,7 +2944,8 @@
         "name": "Visitor Management App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#visitor-management-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-workplace-awards",
@@ -3026,6 +3054,7 @@
         "name": "Workplace Awards App Template",
         "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#workplace-awards-"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   }
 ]

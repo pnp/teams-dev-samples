@@ -94,7 +94,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-bot-proactive-messaging-netcore",
@@ -191,6 +192,7 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   }
 ]

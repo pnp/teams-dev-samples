@@ -94,7 +94,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-other-teams-creator-web-part",
@@ -187,7 +188,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-config-using-sharepoint",
@@ -284,7 +286,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-other-send-message-web-part",
@@ -377,7 +380,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-personal-app-settings",
@@ -474,7 +478,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-suggested-members",
@@ -571,7 +576,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-tag-teams-graph-ext",
@@ -664,7 +670,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-tab-public-teams-not-member-of",
@@ -761,7 +768,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-other-webpart-show-my-teams",
@@ -854,7 +862,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-other-outlook-addin-save-to-teams",
@@ -947,7 +956,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-react-teams-send-notification",
@@ -1051,7 +1061,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-react-teams-meeting-app-questionnaire",
@@ -1148,6 +1159,7 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   }
 ]

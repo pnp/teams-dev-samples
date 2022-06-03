@@ -95,7 +95,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-csharp",
@@ -192,7 +193,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-csharp",
@@ -289,7 +291,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-csharp",
@@ -386,7 +389,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-csharp",
@@ -483,7 +487,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-csharp",
@@ -580,7 +585,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-csharp",
@@ -677,7 +683,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-csharp",
@@ -774,7 +781,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-csharp",
@@ -871,7 +879,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-csharp",
@@ -968,7 +977,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "comment": "**** BEGIN JAVA BOTBUILDER SAMPLES ****",
@@ -1066,7 +1076,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-java",
@@ -1163,7 +1174,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-java",
@@ -1260,7 +1272,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-java",
@@ -1357,7 +1370,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-java",
@@ -1454,7 +1468,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-java",
@@ -1551,7 +1566,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-java",
@@ -1648,7 +1664,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-java",
@@ -1745,7 +1762,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-java",
@@ -1842,7 +1860,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-java",
@@ -1939,7 +1958,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "comment": "**** BEGIN JAVASCRIPT BOTBUILDER SAMPLES ****",
@@ -2037,7 +2057,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-javascript",
@@ -2134,7 +2155,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-javascript",
@@ -2231,7 +2253,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-javascript",
@@ -2328,7 +2351,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-javascript",
@@ -2425,7 +2449,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-javascript",
@@ -2522,7 +2547,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-javascript",
@@ -2619,7 +2645,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-javascript",
@@ -2716,7 +2743,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-javascript",
@@ -2813,7 +2841,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-javascript",
@@ -2910,7 +2939,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "comment": "**** BEGIN PYTHON BOTBUILDER SAMPLES ****",
@@ -3008,7 +3038,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-50_teams-messaging-extensions-search-python",
@@ -3105,7 +3136,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-python",
@@ -3202,7 +3234,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-52_teams-messaging-extensions-search-auth-config-python",
@@ -3299,7 +3332,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-53_teams-messaging-extensions-action-preview-python",
@@ -3396,7 +3430,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-54_teams-task-module-python",
@@ -3493,7 +3528,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-55_teams-link-unfurling-python",
@@ -3590,7 +3626,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-56_teams-file-upload-python",
@@ -3687,7 +3724,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-python",
@@ -3784,7 +3822,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-python",
@@ -3881,7 +3920,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "comment": "**** BEGIN TYPESCRIPT BOTBUILDER SAMPLES ****",
@@ -3979,7 +4019,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-51_teams-messaging-extensions-action-typescript",
@@ -4076,7 +4117,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-typescript",
@@ -4173,7 +4215,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-58_teams-start-new-thread-in-channel-typescript",
@@ -4270,7 +4313,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "comment": "**** BEGIN BOT COMPOSER BOTBUILDER SAMPLES ****",
@@ -4368,7 +4412,8 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   },
   {
     "name": "pnp-sp-dev-teams-sample-botbuilder-57_teams-conversation-bot-composer",
@@ -4465,6 +4510,7 @@
         "name": "Teams development videos from the community",
         "url": "https://aka.ms/sample-ref-teams-vids-from-community"
       }
-    ]
+    ],
+    "version": "1.0.0.0"
   }
 ]
