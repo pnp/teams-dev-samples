@@ -1,0 +1,115 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-app-virtual-events-meeting-extensibility",
+    "reponame": "app-virtual-events-meeting-extensibility",
+    "source": "pnp",
+    "title": "Virtual events meeting extensibility",
+    "shortDescription": "Shows how to create an app with a bot that calls users into a meeting with a custom event",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-virtual-events-meeting-extensibility",
+    "longDescription": [
+      "Shows how to create an app with a bot that calls users into a meeting with a custom event"
+    ],
+    "creationDateTime": "2020-12-18",
+    "updateDateTime": "2020-12-18",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "jquery"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, tab, meetings"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-virtual-events-meeting-extensibility.png",
+        "alt": "Shows how to create an app with a bot that calls users into a meeting with a custom event"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Saikrishna-MSFT",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
+        "name": "Saikrishna Neeli",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "arun-msft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/arun-msft.png",
+        "name": "Arun Kumar Anaparthi",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams meeting apps",
+        "url": "https://aka.ms/sample-ref-teams-docs-meetings"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

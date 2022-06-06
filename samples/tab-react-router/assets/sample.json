@@ -1,0 +1,99 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-tab-react-router",
+    "reponame": "tab-react-router",
+    "source": "pnp",
+    "title": "Teams Tab with yo teams and React router",
+    "shortDescription": "Shows how to implement React routing in a Teams app created with the yo teams generator",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-react-router",
+    "longDescription": [
+      "Shows how to implement React routing for a single-page application in a Teams app created with the yo teams generator."
+    ],
+    "creationDateTime": "2022-02-22",
+    "updateDateTime": "2022-02-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/tab-react-router/assets/sampleinaction.gif",
+        "alt": "Tab showing a simple SPA with React Routing"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "siddharth-vaghasia",
+        "company": "Independent consultant, Microsoft MVP",
+        "pictureUrl": "https://github.com/siddharth-vaghasia.png",
+        "name": "Siddharth Vaghasia",
+        "twitter": "siddh_me"
+      },
+      {
+        "gitHubAccount": "kunj-sangani",
+        "company": "Open source contributor",
+        "pictureUrl": "https://github.com/kunj-sangani.png",
+        "name": "Kunj Sangani",
+        "twitter": "sanganikunj"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

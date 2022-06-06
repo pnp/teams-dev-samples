@@ -1,0 +1,95 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-bot-teams-incidentmanagement",
+    "reponame": "bot-teams-incidentmanagement",
+    "source": "pnp",
+    "title": "MS Teams Incident Management Bot",
+    "shortDescription": "This sample illustrates sequential workflow, user specific views, and upto date adaptive cards bot. This bot has been created using Bot Framework, it shows how to create a simple incidence and resolution using Adaptive Cards v1.4.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-teams-incidentmanagement",
+    "longDescription": [
+      "This sample illustrates sequential workflow, user specific views, and upto date adaptive cards bot. This bot has been created using Bot Framework, it shows how to create a simple incidence and resolution using Adaptive Cards v1.4."
+    ],
+    "creationDateTime": "2021-07-12",
+    "updateDateTime": "2021-07-12",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "dotnetcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-teams-incidentmanagement/Docs/Images/preview.gif",
+        "alt": "Incident management bot with adaptive cards"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "nanddeepn",
+        "company": "",
+        "pictureUrl": "https://github.com/nanddeepn.png",
+        "name": "Nanddeep Nachan",
+        "twitter": "NanddeepNachan"
+      },
+      {
+        "gitHubAccount": "SmitaNachan",
+        "company": "",
+        "pictureUrl": "https://github.com/SmitaNachan.png",
+        "name": "Smita Nachan",
+        "twitter": "SmitaNachan"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

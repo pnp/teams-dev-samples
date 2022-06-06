@@ -1,0 +1,198 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-bot-proactive-messaging-node",
+    "reponame": "bot-proactive-messaging-node",
+    "source": "pnp",
+    "title": "Teams Proactive Bot Messaging",
+    "shortDescription": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging",
+    "longDescription": [
+      "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
+    ],
+    "creationDateTime": "2021-01-28",
+    "updateDateTime": "2021-01-28",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-proactive-messaging-node.png",
+        "alt": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "HiltonGiesenow",
+        "company": "Experts Inside",
+        "pictureUrl": "https://github.com/HiltonGiesenow.png",
+        "name": "Hilton Giesenow",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-bot-proactive-messaging-netcore",
+    "reponame": "bot-proactive-messaging-netcore",
+    "source": "pnp",
+    "title": "Teams Proactive Bot Messaging",
+    "shortDescription": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-proactive-messaging",
+    "longDescription": [
+      "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
+    ],
+    "creationDateTime": "2021-01-28",
+    "updateDateTime": "2021-01-28",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/bot-proactive-messaging-netcore.png",
+        "alt": "Simple example of a bot that sends messages proactively when a web API is called; includes a tab for testing the bot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "HiltonGiesenow",
+        "company": "Experts Inside",
+        "pictureUrl": "https://github.com/HiltonGiesenow.png",
+        "name": "Hilton Giesenow",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

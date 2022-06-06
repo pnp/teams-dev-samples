@@ -1,0 +1,100 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-aad-spfx",
+    "reponame": "tab-aad-spfx",
+    "source": "pnp",
+    "title": "Tab uses SharePoint Framework to call Graph API",
+    "shortDescription": "Tab uses SPFx and Graph to display recent email",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-aad-spfx",
+    "longDescription": [
+      "Tab uses SPFx and Graph to display recent email"
+    ],
+    "creationDateTime": "2020-08-25",
+    "updateDateTime": "2020-08-25",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-aad-spfx.png",
+        "alt": "Tab uses SPFx and Graph to display recent email"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "BobGerman",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
+        "name": "Bob German",
+        "twitter": "Bob1German"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-bot-SPUploader",
+    "reponame": "msgext-bot-SPUploader",
+    "source": "pnp",
+    "title": "Document manager sample app using messaging extensions",
+    "shortDescription": "Provides a basis for building a digital asset / document repository management app.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-bot-SPUploader",
+    "longDescription": [
+      "Provides a basis for building a digital asset / document repository management app."
+    ],
+    "creationDateTime": "2021-03-22",
+    "updateDateTime": "2021-03-22",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "jquery"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "dotnetcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext, bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-bot-SPUploader.png",
+        "alt": "Provides a basis for building a digital asset / document repository management app."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Saikrishna-MSFT",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/Saikrishna-MSFT.png",
+        "name": "Saikrishna Neeli",
+        "twitter": ""
+      },
+      {
+        "gitHubAccount": "VaraPrasad-MSFT",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/VaraPrasad-MSFT.png",
+        "name": "Varaprasad SSLN",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

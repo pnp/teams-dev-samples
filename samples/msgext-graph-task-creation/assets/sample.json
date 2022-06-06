@@ -1,0 +1,96 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-graph-task-creation",
+    "reponame": "msgext-graph-task-creation",
+    "source": "pnp",
+    "title": "Task creation messaging extension",
+    "shortDescription": "Teams messaging extension uses Microsoft Graph to create tasks in ToDo or Planner",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-task-creation",
+    "longDescription": [
+      "Teams messaging extension uses Microsoft Graph to create tasks in ToDo or Planner"
+    ],
+    "creationDateTime": "2020-08-24",
+    "updateDateTime": "2020-08-24",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot40"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-graph-task-creation.png",
+        "alt": "Teams messaging extension uses Microsoft Graph to create tasks in ToDo or Planner"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "stephanbisser",
+        "company": "",
+        "pictureUrl": "https://github.com/stephanbisser.png",
+        "name": "Stephan Bisser",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

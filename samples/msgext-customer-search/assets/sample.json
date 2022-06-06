@@ -1,0 +1,96 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-customer-search",
+    "reponame": "msgext-customer-search",
+    "source": "pnp",
+    "title": "Customer search messaging extension",
+    "shortDescription": "A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-customer-search",
+    "longDescription": [
+      "A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation"
+    ],
+    "creationDateTime": "2020-08-06",
+    "updateDateTime": "2020-08-06",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-customer-search.png",
+        "alt": "A search messaging extension that looks up customers in the Northwind database and inserts an adaptive card for the customer into the conversation"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "BobGerman",
+        "company": "Microsoft",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
+        "name": "Bob German",
+        "twitter": "Bob1German"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

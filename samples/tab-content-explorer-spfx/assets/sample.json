@@ -1,0 +1,100 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-content-explorer-spfx",
+    "reponame": "tab-content-explorer-spfx",
+    "source": "pnp",
+    "title": "SharePoint Content Explorer for Teams",
+    "shortDescription": "Content Explorer app allows users to surface all the libraries, lists, sub-sites and hub associated sites by pointing to any SharePoint site collection URL within a Tab in any of your Microsoft Teams.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-content-explorer-spfx",
+    "longDescription": [
+      "Content Explorer app allows users to surface all the libraries, lists, sub-sites and hub associated sites by pointing to any SharePoint site collection URL within a Tab in any of your Microsoft Teams."
+    ],
+    "creationDateTime": "2020-08-01",
+    "updateDateTime": "2020-08-01",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-content-explorer-spfx/ImagesForOpenSource/change-to-grouped-layout.gif",
+        "alt": "A web part for use in Microsoft Teams that allows exploring SharePoint content."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "joselarios",
+        "company": "Cloudpark Labs",
+        "pictureUrl": "https://github.com/joselarios.png",
+        "name": "Jose Larios",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

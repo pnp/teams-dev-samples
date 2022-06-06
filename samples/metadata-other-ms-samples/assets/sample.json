@@ -1,0 +1,602 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-learning-pathways-solution",
+    "reponame": "learning-pathways-solution",
+    "source": "pnp",
+    "title": "Get Started (Learning Pathways)",
+    "shortDescription": "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL's prior to installation.",
+    "url": "https://github.com/msft-teams/tools/tree/master/M365%20Learning%20Pathways",
+    "longDescription": [
+      "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL's prior to installation."
+    ],
+    "creationDateTime": "2020-07-16",
+    "updateDateTime": "2020-07-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "msftTeams"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "solution"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "sharepoint"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/learning-pathways-solution.png",
+        "alt": "Integrate Microsoft 365 Learning Pathways custom training solution into Microsoft Teams with this app template. This app will require the installation of M365 Learning Pathways free training solution and to edit the default files with your particular site URL's prior to installation."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "karuanag",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/karuanag.png",
+        "name": "Karuana Gatimu",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-teams-home-app",
+    "reponame": "teams-home-app",
+    "source": "pnp",
+    "title": "Microsoft Teams Sample Hub",
+    "shortDescription": "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \"art of the possible\" by showcasing the Teams platform and articulating the value that it can deliver.",
+    "url": "https://github.com/msft-teams/tools/tree/master/TeamsSampleHub",
+    "longDescription": [
+      "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \"art of the possible\" by showcasing the Teams platform and articulating the value that it can deliver."
+    ],
+    "creationDateTime": "2020-08-25",
+    "updateDateTime": "2020-08-25",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "msftTeams"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "jquery"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/teams-home-app.png",
+        "alt": "The Teams Branded Experience (aka Sample Hub), together with custom line-of-business applications, enable you to quickly present the \"art of the possible\" by showcasing the Teams platform and articulating the value that it can deliver."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-app-contoso-hr-talent-app",
+    "reponame": "app-contoso-hr-talent-app",
+    "source": "pnp",
+    "title": "HR Talent App demo/lab",
+    "shortDescription": "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)",
+    "url": "https://github.com/OfficeDev/msteams-sample-contoso-hr-talent-app",
+    "longDescription": [
+      "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)"
+    ],
+    "creationDateTime": "2019-10-04",
+    "updateDateTime": "2019-10-04",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "officeDev"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript, javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa, spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "jquery"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot3, bot40"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, tab, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-contoso-hr-talent-app.png",
+        "alt": "This is the lab for the 2019 Microsoft Teams Development Bootcamp. It shows all the extension points that were avaialble at the time. Includes two implementations, Bot Framework 3.x and Bot Framework 4.4 (Teams messages handled in code since they didn't get into the Bot Framework till 4.6)"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-app-emergency-response",
+    "reponame": "app-emergency-response",
+    "source": "pnp",
+    "title": "Teams Emergency Response solution with SharePoint",
+    "shortDescription": "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint",
+    "url": "https://github.com/OfficeDev/M365Bootcamp-TeamsEmergencyResponse",
+    "longDescription": [
+      "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint"
+    ],
+    "creationDateTime": "2020-10-16",
+    "updateDateTime": "2020-10-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "officeDev"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "solution"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spfx"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-emergency-response.png",
+        "alt": "Workshop with sample code shows how to build a working emergency response solution with Teams and SharePoint"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Build for Microsoft Teams using SharePoint Framework",
+        "url": "https://aka.ms/sample-ref-teams-spfx"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-one-productivity-hub-workshop",
+    "reponame": "tab-one-productivity-hub-workshop",
+    "source": "pnp",
+    "title": "One Productivity Hub workshop",
+    "shortDescription": "Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email",
+    "url": "https://github.com/OfficeDev/M365Bootcamp-TeamsOneProductivityHub",
+    "longDescription": [
+      "Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email"
+    ],
+    "creationDateTime": "2020-10-16",
+    "updateDateTime": "2020-10-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "officeDev"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "mgt"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/tab-one-productivity-hub-workshop.png",
+        "alt": "Workshop with sample code shows how to build a solution step by step that displays personal calendar, tasks, email"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-app-customer-orders",
+    "reponame": "app-customer-orders",
+    "source": "pnp",
+    "title": "Angular SPA grows into a full Teams app with bot",
+    "shortDescription": "From the Learn Together event of December 15, 2020",
+    "url": "https://github.com/microsoft/DevAppsForTeams",
+    "longDescription": [
+      "From the Learn Together event of December 15, 2020"
+    ],
+    "creationDateTime": "2020-12-14",
+    "updateDateTime": "2020-12-14",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "officeDev"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "angular"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot40"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab, bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/app-customer-orders.png",
+        "alt": "From the Learn Together event of December 15, 2020"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

@@ -1,0 +1,3060 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-associate-insights",
+    "reponame": "microsoft-teams-apps-associate-insights",
+    "source": "pnp",
+    "title": "Associate Insights App Template",
+    "shortDescription": "Associate insights is a Power Apps template that empowers firstline workers to directly capture and submit customer opinion, sentiment, and perception.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-associateinsights",
+    "longDescription": [
+      "Associate insights is a Power Apps template that empowers firstline workers to directly capture and submit customer opinion, sentiment, and perception."
+    ],
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/assets/images/associate-insights-app.png",
+        "alt": "Associate Insights App Template"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Associate Insights App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#associate-insights"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-attendance",
+    "reponame": "microsoft-teams-apps-attendance",
+    "source": "pnp",
+    "title": "Attendance App Template",
+    "shortDescription": "Attendance app is a Power Apps based solution to take attendance in educational tenant.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-attendance",
+    "longDescription": [
+      "Attendance app is a Power Apps based solution to take attendance in educational tenant."
+    ],
+    "creationDateTime": "2020-05-14",
+    "updateDateTime": "2020-05-14",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "powerautomate"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "powerautomate"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-attendance.png",
+        "alt": "Attendance app is a Power Apps based solution to take attendance in educational tenant."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Attendance App Template",
+        "url": "https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#attendance"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-book-a-room",
+    "reponame": "microsoft-teams-apps-book-a-room",
+    "source": "pnp",
+    "title": "Book-a-room App Template",
+    "shortDescription": "Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-bookaroom",
+    "longDescription": [
+      "Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations."
+    ],
+    "creationDateTime": "2020-07-13",
+    "updateDateTime": "2020-07-13",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-book-a-room.png",
+        "alt": "Book-a-room is a Microsoft Teams bot that lets users quickly find and reserve a meeting room for 30 (default), 60, or 90 minutes starting from the current time. The Book-a-room bot scopes to personal or 1:1 conversations."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Book-a-room App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#book-a-room"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-celebrate",
+    "reponame": "microsoft-teams-apps-celebrate",
+    "source": "pnp",
+    "title": "Celebrate App Template",
+    "shortDescription": "Celebrations is a Teams app that helps team members celebrate each others’ birthdays, anniversaries, and other recurring events.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-celebrations",
+    "longDescription": [
+      "Celebrations is a Teams app that helps team members celebrate each others’ birthdays, anniversaries, and other recurring events."
+    ],
+    "creationDateTime": "2019-10-08",
+    "updateDateTime": "2019-10-08",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "jquery"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot3"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-celebrate.png",
+        "alt": "Celebrations is a Teams app that helps team members celebrate each others’ birthdays, anniversaries, and other recurring events."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Celebrate App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-company-communicator",
+    "reponame": "microsoft-teams-apps-company-communicator",
+    "source": "pnp",
+    "title": "Company Communicator App Template",
+    "shortDescription": "The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-company-communicator",
+    "longDescription": [
+      "The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate."
+    ],
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot4beta"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, tab, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-company-communicator.png",
+        "alt": "The Company Communicator app enables corporate teams to create and send messages intended for multiple teams or large number of employees over chat allowing organization to reach employees right where they collaborate."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Company Communicator App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#celebrations"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-contact-group-lookup",
+    "reponame": "microsoft-teams-apps-contact-group-lookup",
+    "source": "pnp",
+    "title": "Contact Group App Template",
+    "shortDescription": "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization's contact groups (formerly known as distribution lists or communication groups).",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-contactgrouplookup",
+    "longDescription": [
+      "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization's contact groups (formerly known as distribution lists or communication groups)."
+    ],
+    "creationDateTime": "2020-07-13",
+    "updateDateTime": "2020-07-13",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-contact-group-lookup.png",
+        "alt": "The Contact Group Lookup app provides a convenient and useful approach to creating, accessing, and managing your organization's contact groups (formerly known as distribution lists or communication groups)."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Contact Group App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#contact-group-lookup-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-crowd-sourcer",
+    "reponame": "microsoft-teams-apps-crowd-sourcer",
+    "source": "pnp",
+    "title": "Crowd Sourcer App Template",
+    "shortDescription": "CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-crowdsourcer",
+    "longDescription": [
+      "CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions."
+    ],
+    "creationDateTime": "2020-07-13",
+    "updateDateTime": "2020-07-13",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot40"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-crowd-sourcer.png",
+        "alt": "CrowdSourcer is a bot that helps a group maintain a list of frequently asked questions."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Crowd Sourcer App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#crowdsourcer"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-custom-stickers",
+    "reponame": "microsoft-teams-apps-custom-stickers",
+    "source": "pnp",
+    "title": "Custom Stickers App Template",
+    "shortDescription": "This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-stickers",
+    "longDescription": [
+      "This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams."
+    ],
+    "creationDateTime": "2020-05-26",
+    "updateDateTime": "2020-05-26",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot40"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-custom-stickers.png",
+        "alt": "This app template is a messaging extension that enables your users to use custom stickers and GIFs within Microsoft Teams."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Custom Stickers App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-expert-finder",
+    "reponame": "microsoft-teams-apps-expert-finder",
+    "source": "pnp",
+    "title": "Expert Finder App Template",
+    "shortDescription": "Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-expertfinder",
+    "longDescription": [
+      "Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes"
+    ],
+    "creationDateTime": "2020-05-26",
+    "updateDateTime": "2020-05-26",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-expert-finder.png",
+        "alt": "Expert Finder is a Microsoft Teams bot that identifies specific organization members based on their skills, interests, and education attributes"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Expert Finder App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#custom-stickers"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-faq-plus",
+    "reponame": "microsoft-teams-apps-faq-plus",
+    "source": "pnp",
+    "title": "FAQ Plus App Template",
+    "shortDescription": "FAQ Plus is a friendly Q&A bot that brings a human in the loop when it is unable to help.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-faqplus",
+    "longDescription": [
+      "FAQ Plus is a friendly Q&A bot that brings a human in the loop when it is unable to help."
+    ],
+    "creationDateTime": "2020-07-02",
+    "updateDateTime": "2020-07-02",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "jquery"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot40"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-faq-plus.png",
+        "alt": "FAQ Plus is a friendly Q&A bot that brings a human in the loop when it is unable to help."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "FAQ Plus App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#faq-plus"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-goal-tracker",
+    "reponame": "microsoft-teams-apps-goal-tracker",
+    "source": "pnp",
+    "title": "Goal Tracker App Template",
+    "shortDescription": "Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-goaltracker",
+    "longDescription": [
+      "Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams."
+    ],
+    "creationDateTime": "2020-07-02",
+    "updateDateTime": "2020-07-02",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-goal-tracker.png",
+        "alt": "Goal Tracker app is a comprehensive solution for your organization to support establishing goals, observing progress, and acknowledging success within Microsoft Teams."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Goal Tracker App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#goal-tracker-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-great-ideas",
+    "reponame": "microsoft-teams-apps-great-ideas",
+    "source": "pnp",
+    "title": "Great Ideas App Template",
+    "shortDescription": "The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-greatideas",
+    "longDescription": [
+      "The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals."
+    ],
+    "creationDateTime": "2020-07-08",
+    "updateDateTime": "2020-07-08",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-great-ideas.png",
+        "alt": "The Great Ideas app enables employees to share ideas with colleagues and leadership, discover new submissions, spotlight contributions for peer consideration, and vote for the best proposals."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Great Ideas App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-group-activities",
+    "reponame": "microsoft-teams-apps-group-activities",
+    "source": "pnp",
+    "title": "Group Activities App Template",
+    "shortDescription": "Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-groupactivities",
+    "longDescription": [
+      "Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete"
+    ],
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-group-activities.png",
+        "alt": "Group Activities allows team owners to create activities, randomly distribute team members in groups, and optionally have the bot send reminders until activities are complete"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Group Activities App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#great-ideas-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-grow-your-skills",
+    "reponame": "microsoft-teams-apps-grow-your-skills",
+    "source": "pnp",
+    "title": "Grow Your Skills App Template",
+    "shortDescription": "The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-growyourskills",
+    "longDescription": [
+      "The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills"
+    ],
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, tabs"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-grow-your-skills.png",
+        "alt": "The Grow Your Skills app supports professional growth and development by enabling employees to contribute to supplemental projects for your organization while simultaneously learning new skills"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Grow Your Skills App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#grow-your-skills-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-hr-support",
+    "reponame": "microsoft-teams-apps-hr-support",
+    "source": "pnp",
+    "title": "HR Support App Template",
+    "shortDescription": "HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-hrsupport",
+    "longDescription": [
+      "HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help"
+    ],
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot4beta"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, tabs"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-hr-support.png",
+        "alt": "HR Support bot is a friendly Q&A bot that brings a support professional/expert from the HR team in the loop when it is unable to help"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "HR Support App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-icebreaker",
+    "reponame": "microsoft-teams-apps-icebreaker",
+    "source": "pnp",
+    "title": "Icebreaker App Template",
+    "shortDescription": "Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-icebreaker",
+    "longDescription": [
+      "Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet"
+    ],
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netframework"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot3"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-icebreaker.png",
+        "alt": "Icebreaker is a Microsoft Teams bot that helps your team get closer by pairing two random team members up every week to meet"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Icebreaker App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#hr-support"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-incentives",
+    "reponame": "microsoft-teams-apps-incentives",
+    "source": "pnp",
+    "title": "Incentives App Template",
+    "shortDescription": "Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-incentives",
+    "longDescription": [
+      "Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives"
+    ],
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-incentives.png",
+        "alt": "Incentives is a Power Apps template that manages and tracks incentivized employee participation in designated activities such as trainings and change management initiatives"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Incentives App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incentives"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-incident-reporter",
+    "reponame": "microsoft-teams-apps-incident-reporter",
+    "source": "pnp",
+    "title": "Incident Reporter App Template",
+    "shortDescription": "The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-incidentreport",
+    "longDescription": [
+      "The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking."
+    ],
+    "creationDateTime": "2020-04-16",
+    "updateDateTime": "2020-04-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-incident-reporter.png",
+        "alt": "The Incident Reporter is a bot that facilitates automated incident data collection, customized incident reports, relevant stakeholder notifications, and end-to-end incident tracking."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Incident Reporter App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-open-badges",
+    "reponame": "microsoft-teams-apps-open-badges",
+    "source": "pnp",
+    "title": "Open Badges App Template",
+    "shortDescription": "Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-openbadges",
+    "longDescription": [
+      "Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere"
+    ],
+    "creationDateTime": "2020-03-23",
+    "updateDateTime": "2020-03-23",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-open-badges.png",
+        "alt": "Open Badges is a Microsoft Teams app that enables individuals to earn digital learning credential badges within the Teams context and share them everywhere"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Open Badges App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#incident-reporter-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-quick-responses",
+    "reponame": "microsoft-teams-apps-quick-responses",
+    "source": "pnp",
+    "title": "Quick Responses App Template",
+    "shortDescription": "Quick Responses is a Microsoft Teams app that answering users' frequently asked questions (FAQs) using a messaging extension.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-quickresponses",
+    "longDescription": [
+      "Quick Responses is a Microsoft Teams app that answering users' frequently asked questions (FAQs) using a messaging extension."
+    ],
+    "creationDateTime": "2020-03-23",
+    "updateDateTime": "2020-03-23",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-quick-responses.png",
+        "alt": "Quick Responses is a Microsoft Teams app that answering users' frequently asked questions (FAQs) using a messaging extension."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Quick Responses App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#quick-responses"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-remote-support",
+    "reponame": "microsoft-teams-apps-remote-support",
+    "source": "pnp",
+    "title": "Remote Support App Template",
+    "shortDescription": "Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-remotesupport",
+    "longDescription": [
+      "Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform."
+    ],
+    "creationDateTime": "2020-03-23",
+    "updateDateTime": "2020-03-23",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-remote-support.png",
+        "alt": "Remote Support is a Microsoft Teams bot that provides a focused interface between support requesters throughout your organization and the internal support team. End-users can submit, edit, or withdraw requests for support and the support team can respond, manage, and update requests all within the Teams platform."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Remote Support App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#remote-support-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-request-a-team",
+    "reponame": "microsoft-teams-apps-request-a-team",
+    "source": "pnp",
+    "title": "Request-a-team App Template",
+    "shortDescription": "Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-requestateam",
+    "longDescription": [
+      "Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds"
+    ],
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "powerautomate"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "powerautomate"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, taskmodule"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-request-a-team.png",
+        "alt": "Request-a-team is a Microsoft Teams app that optimizes new team creation for your enterprise organization. The app supports standardization and best practices when creating new team instances through the integration of a wizard-guided request form, an embedded approval process, a request status dashboard, and automated team builds"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Microsoft Teams task modules",
+        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Request-a-team App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#request-a-team-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-scrums-for-channels",
+    "reponame": "microsoft-teams-apps-scrums-for-channels",
+    "source": "pnp",
+    "title": "Scrums for Channels App Template",
+    "shortDescription": "Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-scrumsforchannels",
+    "longDescription": [
+      "Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones."
+    ],
+    "creationDateTime": "2020-07-09",
+    "updateDateTime": "2020-07-09",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-scrums-for-channels.png",
+        "alt": "Scrums for Channels is a scrum assistant app that enables users to schedule and run scrums in channels within Microsoft Teams. The app is great for remote teams and teams comprised of members from varied geographical locations and time zones."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Scrums for Channels App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-channels-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-scrums-for-group-chat",
+    "reponame": "microsoft-teams-apps-scrums-for-group-chat",
+    "source": "pnp",
+    "title": "Scrums for Group Chat App Template",
+    "shortDescription": "Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-scrumsforgroupchat",
+    "longDescription": [
+      "Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum."
+    ],
+    "creationDateTime": "2020-06-10",
+    "updateDateTime": "2020-06-10",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot4beta"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-scrums-for-group-chat.png",
+        "alt": "Scrums for Group Chat is a supportive scrum assistant that enables group chat members to run asynchronous stand-up meetings and easily share their daily updates. It allows all members of the group chat to contribute to the scrum and view the updates made by others in the running scrum."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Scrums for Group Chat App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#scrums-for-group-chat-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-share-now",
+    "reponame": "microsoft-teams-apps-share-now",
+    "source": "pnp",
+    "title": "Share Now App Template",
+    "shortDescription": "The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-sharenow",
+    "longDescription": [
+      "The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading"
+    ],
+    "creationDateTime": "2020-06-10",
+    "updateDateTime": "2020-06-10",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot4bbot46eta"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-share-now.png",
+        "alt": "The Share Now app allows users to easily share content within the Teams environment. Users engage the app to share items of interest with team members, discover new shared content, set preferences, and bookmark favorites for later reading"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Share Now App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#share-now-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-splist-search",
+    "reponame": "microsoft-teams-apps-splist-search",
+    "source": "pnp",
+    "title": "SharePoint List Search App Template",
+    "shortDescription": "The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-list-search",
+    "longDescription": [
+      "The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation"
+    ],
+    "creationDateTime": "2020-04-30",
+    "updateDateTime": "2020-04-30",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netframework"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot3"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-splist-search.png",
+        "alt": "The SharePoint List Search application allows users to find and insert information from SharePoint list items directly within a chat conversation"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "SharePoint List Search App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#sharepoint-list-search"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-staff-checkins",
+    "reponame": "microsoft-teams-apps-staff-checkins",
+    "source": "pnp",
+    "title": "Staff Check-ins App Template",
+    "shortDescription": "Staff Check-ins enables oversight communication between your business and field personnel.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-staffcheckins",
+    "longDescription": [
+      "Staff Check-ins enables oversight communication between your business and field personnel."
+    ],
+    "creationDateTime": "2020-07-01",
+    "updateDateTime": "2020-07-01",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "powerautomate"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "powerautomate"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-staff-checkins.png",
+        "alt": "Staff Check-ins enables oversight communication between your business and field personnel."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Staff Check-ins App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#staff-check-ins-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-visitor-management",
+    "reponame": "microsoft-teams-apps-visitor-management",
+    "source": "pnp",
+    "title": "Visitor Management App Template",
+    "shortDescription": "The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives.",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-visitormanagement",
+    "longDescription": [
+      "The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives."
+    ],
+    "creationDateTime": "2020-07-02",
+    "updateDateTime": "2020-07-02",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "powerapps"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "powerautomate"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "powerautomate"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-visitor-management.png",
+        "alt": "The Visitor Management app enables your organization and employees to easily and efficiently manage the on-site visitor process, directly from Microsoft Teams. The app enables employees to create visitor requests, centrally track a request status through the visitor dashboard, and receive real-time notifications when a visitor arrives."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Visitor Management App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#visitor-management-"
+      }
+    ],
+    "version": "1.0.0.0"
+  },
+  {
+    "name": "pnp-sp-dev-teams-sample-microsoft-teams-apps-workplace-awards",
+    "reponame": "microsoft-teams-apps-workplace-awards",
+    "source": "pnp",
+    "title": "Workplace Awards App Template",
+    "shortDescription": "The app enables you to setup and manage an employee rewards and recognition (R&R) program where employees can easily nominate and endorse colleagues and your R&R leader can view submitted nominations, grant awards, and announce recipients",
+    "url": "https://github.com/OfficeDev/microsoft-teams-apps-workplaceawards",
+    "longDescription": [
+      "The app enables you to setup and manage an employee rewards and recognition (R&R) program where employees can easily nominate and endorse colleagues and your R&R leader can view submitted nominations, grant awards, and announce recipients"
+    ],
+    "creationDateTime": "2020-07-02",
+    "updateDateTime": "2020-07-02",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "appTemplate"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "apptemplate"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "netcore"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot, msgext, tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/microsoft-teams-apps-workplace-awards.png",
+        "alt": "The app enables you to setup and manage an employee rewards and recognition (R&R) program where employees can easily nominate and endorse colleagues and your R&R leader can view submitted nominations, grant awards, and announce recipients"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "microsoft",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Microsoft",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      },
+      {
+        "name": "Workplace Awards App Template",
+        "url": "https://docs.microsoft.com/en-us/microsoftteams/platform/samples/app-templates?WT.mc_id=-github-rogerman#workplace-awards-"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

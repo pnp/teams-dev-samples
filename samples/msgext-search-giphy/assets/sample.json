@@ -1,0 +1,96 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-search-giphy",
+    "reponame": "msgext-search-giphy",
+    "source": "pnp",
+    "title": "Giphy Search Messaging Extension",
+    "shortDescription": "Search based Messaging extension allows users to find and insert gify's into a Microsoft Teams message",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-search-giphy",
+    "longDescription": [
+      "Search based Messaging extension allows users to find and insert gify's into a Microsoft Teams message"
+    ],
+    "creationDateTime": "2020-10-29",
+    "updateDateTime": "2020-10-29",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "javascript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-search-giphy.png",
+        "alt": "Search based Messaging extension allows users to find and insert gify's into a Microsoft Teams message"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rabwill",
+        "company": "Microsoft",
+        "pictureUrl": "https://github.com/rabwill.png",
+        "name": "Rabia Williams",
+        "twitter": "williamsrabia"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Teams messaging extensions",
+        "url": "https://aka.ms/sample-ref-docs-msgext"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

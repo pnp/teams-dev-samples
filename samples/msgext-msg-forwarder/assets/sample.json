@@ -1,0 +1,100 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-msg-forwarder",
+    "reponame": "msgext-msg-forwarder",
+    "source": "pnp",
+    "title": "Message forwarder messaging extension",
+    "shortDescription": "This messaging extension allows forwarding Teams chat messages to other Teams or chats",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-msg-forwarder",
+    "longDescription": [
+      "Messaging extension allows a user to forard a message to user(s) or a Teams channel using the Microsoft Graph API"
+    ],
+    "creationDateTime": "2022-03-03",
+    "updateDateTime": "2022-03-03",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "yoteams"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-msg-forwarder/assets/appinaction.gif",
+        "alt": "No preview available"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "siddharth-vaghasia",
+        "company": "Independent",
+        "pictureUrl": "https://github.com/microsoft.png",
+        "name": "Siddharth Vaghasia",
+        "twitter": "siddh_me"
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]
