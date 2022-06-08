@@ -12,3 +12,5 @@ connectors.json
 
 # do not include dist files
 dist
+manifest.json
+
