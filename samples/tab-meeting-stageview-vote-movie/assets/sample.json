@@ -1,0 +1,92 @@
+[
+    {
+      "name": "pnp-sp-dev-teams-sample-tab-meeting-stageview-basic",
+      "reponame": "tab-meeting-stageview-basic",
+      "source": "pnp",
+      "title": "Movie Vote - Tab meeting w/stageview",
+      "shortDescription": "Teams meeting app shows up in sidePanel and on stageView. Lets users vote for a movie in sidePanel and shwing then the most voted one for all in stageView",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-stageview-basic",
+      "longDescription": [
+        "Teams meeting app shows up in sidePanel and on stageView. Lets users vote for a movie in sidePanel and shwing then the most voted one for all in stageView"
+      ],
+      "creationDateTime": "2022-05-26",
+      "updateDateTime": "2022-05-26",
+      "products": [
+        "Teams"
+      ],
+      "metadata": [
+        {
+          "key": "TEAMS-SAMPLE-SOURCE",
+          "value": "pnp"
+        },
+        {
+          "key": "TEAMS-SAMPLE-TYPE",
+          "value": "demo"
+        },
+        {
+          "key": "TEAMS-CLIENT-LANGUAGE",
+          "value": "typescript"
+        },
+        {
+          "key": "TEAMS-CLIENT-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-UI",
+          "value": "react"
+        },
+        {
+          "key": "TEAMS-SERVER-LANGUAGE",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-SERVER-PLATFORM",
+          "value": "express"
+        },
+        {
+          "key": "TEAMS-BOT-FRAMEWORK",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-FEATURES",
+          "value": "meeting"
+        },
+        {
+          "key": "TEAMS-GENERATOR",
+          "value": ""
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-meeting-stageview-vote-movie/assets/03WatchMostVotedVideoResult.jpg",
+          "alt": "Movie shown in stage view during a meeting with voting"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "mmsharepoint",
+          "company": "Avanade ",
+          "pictureUrl": "https://github.com/mmsharepoint.png",
+          "name": "Markus Moeller",
+          "twitter": "moeller2_0"
+        }
+      ],
+      "references": [
+        {
+          "name": "Teams developer questions",
+          "url": "https://aka.ms/sample-ref-teams-dev-questions"
+        },
+        {
+          "name": "Teams development videos from Microsoft",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+        },
+        {
+          "name": "Teams development videos from the community",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+        }
+      ],
+      "version": "1.0.0.0"
+    }
+  ]
