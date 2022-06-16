@@ -60,7 +60,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-meeting-stageview-basic/assets/05StageView.jpg",
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/tab-meeting-stageview-basic/assets/05StageView.jpg",
         "alt": "Tab shown as stage view during a meeting"
       }
     ],
