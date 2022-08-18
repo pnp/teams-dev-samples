@@ -45,7 +45,7 @@ Version|Date|Author|Comments
 ## Minimal Path to Awesome
 - Clone the repository
     ```bash
-    git clone https://github.com/mmsharepoint/tab-meeting-stageview-vote-movie.git
+    git clone https://github.com/pnp/teams-dev-samples.git
     ```
 
 - In a console, navigate to `/samples/tab-meeting-stageview-vote-movie`
