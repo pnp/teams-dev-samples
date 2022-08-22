@@ -8,11 +8,22 @@ This sample is a Teams meeting app created using the Teams Yeoman Generator. It'
 
 Meeting Details in Meeting Chat Tab
 
-![OnStageView](assets/07TeamsMeeting_MeetingDetails.png)
+![Meeting Details in Meeting Chat Tab](assets/07TeamsMeeting_MeetingDetails.png)
+
+Meeting Details in Adaptive Card Task Module
+
+![Meeting Details in Adaptive Card Task Module](assets/09TeamsMeeting_MeetingDetails_TaskModule.png)
 
 Participant Details in Meeting Chat Tab
 
-![OnStageView](assets/08TeamsMeeting_ParticipantDetails.png)
+![Participant Details in Meeting Chat Tab](assets/08TeamsMeeting_ParticipantDetails.png)
+
+Init Reload Participant Details
+
+![Init Reload Participant Details](assets/10initReloadDialog.png)
+
+Participant Details in Adaptive Card Task Module
+![Participant Details in Adaptive Card Task Module](assets/11TeamsMeeting_ParticipantDetails_TaskModule.png)
 
 For further details see the author's [blog post](https://mmsharepoint.wordpress.com/2022/08/04/teams-meeting-details-with-bot-framework-sdk/)
 
@@ -29,6 +40,7 @@ For further details see the author's [blog post](https://mmsharepoint.wordpress.
 Version|Date|Author|Comments
 -------|----|----|--------
 1.0|Aug 06, 2022|[Markus Moeller](https://twitter.com/moeller2_0)|Initial release
+1.1|Aug 02, 2022|[Markus Moeller](https://twitter.com/moeller2_0)|Bot Framework SDK in Bot activities added
 
 ## Disclaimer
 
@@ -83,7 +95,8 @@ Version|Date|Author|Comments
 
 This is a Teams Tab meeting app to show up in chatTab or detailsTab
 * Show a tab in pre-meeting experience in chatTab or detailsTab
-* Use a Bot in Teams Meeting app
+* [Use a Bot in Teams Meeting app](https://docs.microsoft.com/en-us/microsoftteams/platform/bots/what-are-bots?WT.mc_id=M365-MVP-5004617)
+* [Chain Task Modules with Adaptive Cards](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/task-modules/task-modules-bots?tabs=nodejs&WT.mc_id=M365-MVP-5004617#submit-the-result-of-a-task-module)
 * Use [Meeting apps Api references](https://docs.microsoft.com/en-us/microsoftteams/platform/apps-in-teams-meetings/api-references?WT.mc_id=M365-MVP-5004617) to get meeting and participant details
 
 
