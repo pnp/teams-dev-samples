@@ -5,9 +5,9 @@
       "source": "pnp",
       "title": "Movie Vote - Tab meeting w/stageview with Fluid Framework",
       "shortDescription": "Teams meeting app shows up in sidePanel and on stageView. Lets users vote for a movie in sidePanel and showing then the most voted one for all in stageView",
-      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-stageview-basic",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-stageview-vote-movie-fluid",
       "longDescription": [
-        "Teams meeting app shows up in sidePanel and on stageView. Lets users vote for a movie in sidePanel and shwing then the most voted one for all in stageView"
+        "Teams meeting app shows up in sidePanel and on stageView. Lets users vote for a movie in sidePanel and shwing then the most voted one for all in stageView. Using FluidFramework and Azure Fluid Relay service for syncing the votes."
       ],
       "creationDateTime": "2022-07-09",
       "updateDateTime": "2022-07-09",
@@ -53,7 +53,7 @@
         },
         {
           "key": "TEAMS-GENERATOR",
-          "value": ""
+          "value": "yoteams"
         }
       ],
       "thumbnails": [
