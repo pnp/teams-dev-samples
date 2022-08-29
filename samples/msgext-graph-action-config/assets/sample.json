@@ -3,11 +3,11 @@
     "name": "pnp-sp-dev-teams-sample-msgext-graph-action-config",
     "reponame": "msgext-graph-action-config",
     "source": "pnp",
-    "title": "Tab meeting stageview",
+    "title": "Configure Teams Applications with Azure App Configuration",
     "shortDescription": "Action messaging extension authenticates with SSO and calls Microsoft Graph.",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-action-config",
     "longDescription": [
-      "Messaging extension authenticates against Microsoft Graph via SSO and on-behalf flow from the frontend and recieves documents to be posted as adaptive card to the message compose box of a channel"
+      "Messaging extension authenticates against Microsoft Graph via SSO and on-behalf flow from the frontend and recieves documents to be posted as adaptive card to the message compose box of a channel. Uses Azure App Configuration and Azure Key Vault."
     ],
     "creationDateTime": "2021-07-08",
     "updateDateTime": "2021-07-08",
@@ -53,7 +53,7 @@
       },
       {
         "key": "TEAMS-GENERATOR",
-        "value": ""
+        "value": "yoteams"
       }
     ],
     "thumbnails": [

@@ -7,7 +7,7 @@
     "shortDescription": "Teams meeting app showing up during in-Meeting experince in the sidePanel but also, once shared, in the stageView for all meeting participants.",
     "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-stageview-basic",
     "longDescription": [
-      "Teams meeting app showing up during in-Meeting experince in the sidePanel but also, once shared, in the stageView for all meeting participants."
+      "Teams meeting app showing up during in-Meeting experience in the sidePanel but also, once shared, in the stageView for all meeting participants."
     ],
     "creationDateTime": "2021-12-06",
     "updateDateTime": "2021-12-06",

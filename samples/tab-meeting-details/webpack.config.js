@@ -91,7 +91,7 @@ const config = [{
         }]
     },
     plugins: [
-        new webpack.EnvironmentPlugin({ PUBLIC_HOSTNAME: undefined, TAB_APP_ID: null, TAB_APP_URI: null }),
+        new webpack.EnvironmentPlugin({ PUBLIC_HOSTNAME: undefined, MICROSOFT_APP_ID: null, TAB_APP_ID: null, TAB_APP_URI: null }),
         new ForkTsCheckerWebpackPlugin({
             typescript: {
                 configFile: "./src/client/tsconfig.json"

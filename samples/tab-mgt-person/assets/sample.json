@@ -1,7 +1,7 @@
 [
   {
     "name": "pnp-sp-dev-teams-sample-tab-mgt-people",
-    "reponame": "tab-mgt-people",
+    "reponame": "tab-mgt-person",
     "source": "pnp",
     "title": "Teams Tab w/SSO and MSAL2, Graph Toolkit and yo teams",
     "shortDescription": "Shows how to use Microsoft Graph toolkit in a yo teams project - with authentication!",
@@ -53,7 +53,7 @@
       },
       {
         "key": "TEAMS-GENERATOR",
-        "value": ""
+        "value": "yoteams"
       }
     ],
     "thumbnails": [

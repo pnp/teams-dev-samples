@@ -1,13 +1,13 @@
 [
     {
-      "name": "pnp-sp-dev-teams-sample-tab-meeting-stageview-basic",
-      "reponame": "tab-meeting-stageview-basic",
+      "name": "pnp-sp-dev-teams-sample-tab-meeting-stageview-vote-movie",
+      "reponame": "tab-meeting-stageview-vote-movie",
       "source": "pnp",
       "title": "Movie Vote - Tab meeting w/stageview",
-      "shortDescription": "Teams meeting app shows up in sidePanel and on stageView. Lets users vote for a movie in sidePanel and shwing then the most voted one for all in stageView",
-      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-stageview-basic",
+      "shortDescription": "Teams meeting app shows up in sidePanel and on stageView. Lets users vote for a movie in sidePanel and showing then the most voted one for all in stageView",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-stageview-vote-movie",
       "longDescription": [
-        "Teams meeting app shows up in sidePanel and on stageView. Lets users vote for a movie in sidePanel and shwing then the most voted one for all in stageView"
+        "Teams meeting app shows up in sidePanel and on stageView. Lets users vote for a movie in sidePanel and showing then the most voted one for all in stageView"
       ],
       "creationDateTime": "2022-05-26",
       "updateDateTime": "2022-05-26",
@@ -53,7 +53,7 @@
         },
         {
           "key": "TEAMS-GENERATOR",
-          "value": ""
+          "value": "yoteams"
         }
       ],
       "thumbnails": [
