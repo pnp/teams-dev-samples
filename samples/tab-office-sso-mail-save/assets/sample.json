@@ -1,0 +1,92 @@
+[
+    {
+      "name": "pnp-sp-dev-teams-sample-tab-office-sso-mail-save",
+      "reponame": "tab-office-sso-mail-save",
+      "source": "pnp",
+      "title": "Tab Office Mail Storage",
+      "shortDescription": "Microsoft Teams and Office personal tab able to list and store recent mails in OneDrive or Teams",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-office-sso-mail-save",
+      "longDescription": [
+        "This Microsoft Teams and Office personal tab lists recent mails of signed in user and lets her/him store the whole mail as .eml in a dialog selected personal OneDrive folder or Team."
+      ],
+      "creationDateTime": "2022-08-31",
+      "updateDateTime": "2022-08-31",
+      "products": [
+        "Teams"
+      ],
+      "metadata": [
+        {
+          "key": "TEAMS-SAMPLE-SOURCE",
+          "value": "pnp"
+        },
+        {
+          "key": "TEAMS-SAMPLE-TYPE",
+          "value": "barebones"
+        },
+        {
+          "key": "TEAMS-CLIENT-LANGUAGE",
+          "value": "typescript"
+        },
+        {
+          "key": "TEAMS-CLIENT-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-UI",
+          "value": "react"
+        },
+        {
+          "key": "TEAMS-SERVER-LANGUAGE",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-SERVER-PLATFORM",
+          "value": "express"
+        },
+        {
+          "key": "TEAMS-BOT-FRAMEWORK",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-FEATURES",
+          "value": "tab"
+        },
+        {
+          "key": "TEAMS-GENERATOR",
+          "value": "yoteams"
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-office-sso-mail-save/assets/02AppInActionInTeams.png",
+          "alt": "Storing selected recent mail inside Teams"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "mmsharepoint",
+          "company": "Avanade ",
+          "pictureUrl": "https://github.com/mmsharepoint.png",
+          "name": "Markus Moeller",
+          "twitter": "moeller2_0"
+        }
+      ],
+      "references": [
+        {
+          "name": "Teams developer questions",
+          "url": "https://aka.ms/sample-ref-teams-dev-questions"
+        },
+        {
+          "name": "Teams development videos from Microsoft",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+        },
+        {
+          "name": "Teams development videos from the community",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+        }
+      ],
+      "version": "1.0.0.0"
+    }
+  ]
