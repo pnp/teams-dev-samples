@@ -62,6 +62,12 @@
         "order": 100,
         "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-meeting-lifecycle-feedback/docs/images/06meetingended_feedbackrequest.gif",
         "alt": "Bot gathering feedback at the end of a meeting"
+      },
+      {
+        "type": "video",
+        "order": 101,
+        "url": "https://www.youtube.com/watch?v=ucg9Z_4ccr8",
+        "alt": "Community demo of the sample"
       }
     ],
     "authors": [

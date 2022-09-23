@@ -55,6 +55,9 @@ export const VoteMovieFluidTabConfig = () => {
     
   };
 
+  const onResetChanged = (e, data) => {
+    setReset(data.checked);
+  };
   const saveConfig = async (idToken: string, saveEvent: pages.config.SaveEvent) => {
     if (reset) {
       setContainerId("");
@@ -147,6 +150,7 @@ export const VoteMovieFluidTabConfig = () => {
               }}
               required />
             <Checkbox checked={reset}
+                      onChange={onResetChanged}
                       toggle
                       label="Reset Votings" />
           </div>
