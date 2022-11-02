@@ -4,7 +4,7 @@ This App talks about the Teams tab which displays Adaptive card with CSharp help
 
 For reference please check [Build tabs with Adaptive Cards](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/build-adaptive-card-tabs)
 
-![Demo](./assets/ms-search-api-tab.gif)
+![Demo](./Assets/ms-search-api-tab.gif)
 
 ## Frameworks
 
@@ -105,27 +105,27 @@ Make sure you've downloaded and installed the ngrok on your local machine. ngrok
 
 - Single-sign on
 
-![Adaptive Card Sign in](./assets/SignIn.png)
+![Adaptive Card Sign in](./Assets/SignIn.png)
 
 - Tab showing Adaptive cards
 
-![Adaptive Card Tab](./assets/TabAdaptiveCardFlow.png)
+![Adaptive Card Tab](./Assets/TabAdaptiveCardFlow.png)
 
 - Search different resources across office 365
 
-![Adaptive Card search events](./assets/searchEvents.png)
+![Adaptive Card search events](./Assets/searchEvents.png)
 
 - Fetch a task module to filter the results
 
-![Adaptive Card fetch task module](./assets/SampleTaskModuleFetch.png)
+![Adaptive Card fetch task module](./Assets/SampleTaskModuleFetch.png)
 
 - Task module submit results
 
-![Adaptive Card submit task module](./assets/SampleTaskModuleSubmit.png)
+![Adaptive Card submit task module](./Assets/SampleTaskModuleSubmit.png)
 
 - Sign out message
 
-![Adaptive Card sign out](./assets/SignOutMessage.png)
+![Adaptive Card sign out](./Assets/SignOutMessage.png)
 
 ## Deploy the bot to Azure
 
