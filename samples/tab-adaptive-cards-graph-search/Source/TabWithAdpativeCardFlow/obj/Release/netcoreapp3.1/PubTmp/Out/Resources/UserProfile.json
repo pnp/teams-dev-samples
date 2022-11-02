@@ -1,0 +1,64 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "style": "Person",
+              "url": "${Photo}",
+              "altText": "${Name}",
+              "size": "Small",
+              "horizontalAlignment": "Left"
+            }
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "weight": "Bolder",
+              "text": "Welcome ${Name}",
+              "wrap": true,
+              "spacing": "None",
+              "horizontalAlignment": "Left"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${Position}",
+              "wrap": true,
+              "spacing": "None"
+            }
+          ],
+          "width": 70,
+          "horizontalAlignment": "Left"
+        },
+        {
+          "type": "Column",
+          "width": 30,
+          "items": [
+            {
+              "type": "ActionSet",
+              "actions": [
+                {
+                  "type": "Action.Submit",
+                  "title": "Sign out"
+                }
+              ],
+              "horizontalAlignment": "Left"
+            }
+          ],
+          "horizontalAlignment": "Right"
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}

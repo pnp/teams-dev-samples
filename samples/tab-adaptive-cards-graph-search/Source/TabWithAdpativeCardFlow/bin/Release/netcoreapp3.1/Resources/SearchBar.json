@@ -1,0 +1,76 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "body": [
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "Input.Text",
+                  "id": "SearchInput",
+                  "placeholder": "Search..."
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "Input.ChoiceSet",
+                  "choices": [
+                    {
+                      "title": "Files",
+                      "value": "files"
+                    },
+                    {
+                      "title": "Events",
+                      "value": "events"
+                    },
+                    {
+                      "title": "Messages",
+                      "value": "messages"
+                    },
+                    {
+                      "title": "List Items",
+                      "value": "listitems"
+                    }
+                  ],
+                  "placeholder": "Resource",
+                  "id": "ResourceType",
+                  "value": "Files"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Search"
+        },
+        {
+          "type": "Action.Submit",
+          "title": "Filters",
+          "data": {
+            "msteams": {
+              "type": "task/fetch"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
