@@ -144,3 +144,5 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](htt
 - [Language Understanding using LUIS](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/)
 - [Channels and Bot Connector Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-concepts?view=azure-bot-service-4.0)
 - [Overview of the Microsoft Search API](https://learn.microsoft.com/en-us/graph/search-concept-overview)
+
+<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samplesbot-microsoft-search-api" />
