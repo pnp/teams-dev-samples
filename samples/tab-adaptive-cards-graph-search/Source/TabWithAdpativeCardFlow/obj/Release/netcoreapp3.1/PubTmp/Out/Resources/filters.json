@@ -1,0 +1,63 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.6",
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "text": "Created",
+      "weight": "Bolder"
+    },
+    {
+      "type": "Input.Date",
+      "id": "ctCreated"
+    },
+    {
+      "columns": [
+        {
+          "width": "auto",
+          "items": [
+            {
+              "text": "Created by",
+              "wrap": true,
+              "height": "stretch",
+              "type": "TextBlock",
+              "weight": "Bolder"
+            }
+          ],
+          "type": "Column"
+        }
+      ],
+      "type": "ColumnSet"
+    },
+    {
+      "columns": [
+        {
+          "width": "stretch",
+          "items": [
+            {
+              "isMultiSelect": false,
+              "style": "filtered",
+              "choices.data": {
+                "type": "Data.Query",
+                "dataset": "graph.microsoft.com/users"
+              },
+              "id": "userId",
+              "type": "Input.ChoiceSet"
+            }
+          ],
+          "type": "Column"
+        }
+      ],
+      "type": "ColumnSet"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "id": "submitdynamic",
+      "title": "Submit"
+    }
+  ]
+}

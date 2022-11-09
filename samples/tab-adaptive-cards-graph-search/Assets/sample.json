@@ -1,0 +1,100 @@
+[
+    {
+      "name": "pnp-sp-dev-teams-sample-tab-adaptive-cards-graph-search",
+      "reponame": "tab-adaptive-cards-graph-search",
+      "source": "pnp",
+      "title": "Tabs with Adaptive Cards",
+      "shortDescription": "Tab that allows searching via the Microsoft Graph using Adaptive Cards as the user interface",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-adaptive-cards-graph-search",
+      "longDescription": [
+        "Sample showing a new approach to building tabs for Microsoft Teams - using adaptive cards!"
+      ],
+      "creationDateTime": "2022-11-02",
+      "updateDateTime": "2022-11-02",
+      "products": [
+        "Teams"
+      ],
+      "metadata": [
+        {
+          "key": "TEAMS-SAMPLE-SOURCE",
+          "value": "pnp"
+        },
+        {
+          "key": "TEAMS-SAMPLE-TYPE",
+          "value": "demo"
+        },
+        {
+          "key": "TEAMS-CLIENT-LANGUAGE",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-UI",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-SERVER-LANGUAGE",
+          "value": "csharp"
+        },
+        {
+          "key": "TEAMS-SERVER-PLATFORM",
+          "value": "netcore"
+        },
+        {
+          "key": "TEAMS-BOT-FRAMEWORK",
+          "value": "bot46"
+        },
+        {
+          "key": "TEAMS-FEATURES",
+          "value": "tab, bot"
+        },
+        {
+          "key": "TEAMS-GENERATOR",
+          "value": ""
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/bot-microsoft-search-api/Assets/ms-search-api-tab.gif",
+          "alt": "Adaptive card tab in action"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "AhmadiRamin",
+          "company": "Content and Cloud",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/15119083?v=4",
+          "name": "Ramin Ahmadi",
+          "twitter": "raminahmadi1986"
+        }
+      ],
+      "references": [
+        {
+          "name": "Azure Bot Framework resources",
+          "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+        },
+        {
+          "name": "Microsoft Teams bots",
+          "url": "https://aka.ms/sample-ref-teams-docs-bots"
+        },
+        {
+          "name": "Teams developer questions",
+          "url": "https://aka.ms/sample-ref-teams-dev-questions"
+        },
+        {
+          "name": "Teams development videos from Microsoft",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+        },
+        {
+          "name": "Teams development videos from the community",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+        }
+      ],
+      "version": "1.0.0.0"
+    }
+  ]
