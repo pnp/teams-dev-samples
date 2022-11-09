@@ -12,8 +12,8 @@
     "@fluentui/react-northstar": "~0.56.0",
     "@microsoft/teams-js": "~1.10.0",
     "axios": "^0.21.1",
-    "botbuilder": "4.11.1",
-    "botbuilder-dialogs": "4.11.1",
+    "botbuilder": "4.18.0",
+    "botbuilder-dialogs": "4.18.0",
     "compression": "1.7.4",
     "debug": "4.2.0",
     "dotenv": "8.2.0",
@@ -42,7 +42,7 @@
     "webpack": "5.0.0",
     "yargs": "^16.0.3",
     "yoteams-build-core": "^1.2.0",
-    "yoteams-deploy": "^1.0.0",
+    "yoteams-deploy": "^1.2.0",
     "webpack-node-externals": "^2.5.2"
   },
   "browserslist": [
