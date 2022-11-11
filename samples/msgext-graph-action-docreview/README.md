@@ -166,4 +166,4 @@ You can use the following flags for the `serve`, `ngrok-serve` and build command
 * `--no-linting` - skips the linting of Typescript during build to improve build times
 * `--debug` - builds in debug mode
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-graph-action-docreview" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgext-graph-action-docreview" />

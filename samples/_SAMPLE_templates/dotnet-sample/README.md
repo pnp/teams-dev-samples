@@ -63,4 +63,4 @@ This Web Part illustrates the following concepts on top of the SharePoint Framew
 
 _Below there is a clear image used for telemetry. Please change "readme-template" to your sample name._
 
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/readme-template" />
+<img src="https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/readme-template" />

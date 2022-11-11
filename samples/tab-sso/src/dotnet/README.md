@@ -39,4 +39,4 @@ Version|Date|Author|Comments
 
 6. Complete the remaining steps in the main README file.
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-sso/dotnet" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-sso/dotnet" />

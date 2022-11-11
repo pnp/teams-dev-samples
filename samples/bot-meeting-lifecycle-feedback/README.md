@@ -130,4 +130,4 @@ SET DEBUG=msteams
 
 If you are using Microsoft Azure to host your Microsoft Teams app, then you can add `DEBUG` as an Application Setting with the value of `msteams`.
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/bot-meeting-lifecycle-feedback" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-meeting-lifecycle-feedback" />

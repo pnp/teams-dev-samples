@@ -234,4 +234,4 @@ This sample demonstrates how to obtain the required values from within your bot 
 * [Send proactive notifications to users](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-proactive-message?view=azure-bot-service-4.0&tabs=csharp)
 * [How Bot Calls Actually Work](https://hilton.giesenow.com/how-bot-calls-actually-work)
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/bot-proactive-messaging" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-proactive-messaging" />

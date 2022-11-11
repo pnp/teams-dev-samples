@@ -122,4 +122,4 @@ To learn more about deploying a bot to Azure, see [Deploy your bot to Azure](htt
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [Microsoft Teams Developer Platform](https://docs.microsoft.com/en-us/microsoftteams/platform/)
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/bot-call-graph-as-user" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-call-graph-as-user" />

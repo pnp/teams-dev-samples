@@ -57,4 +57,4 @@ This solution uses Teams Toolkit (Preview).
 - Reads from GMail
 - Writes to Outlook
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-MoveYourFilters" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-MoveYourFilters" />

@@ -169,4 +169,4 @@ Below are the references used while developing this sample:
 - [Search Events](https://docs.microsoft.com/en-us/graph/search-concept-events)
 - [Search content in OneDrive and SharePoint ](https://docs.microsoft.com/en-us/graph/search-concept-files)
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samplesbot-microsoft-search-api" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samplesbot-microsoft-search-api" />
