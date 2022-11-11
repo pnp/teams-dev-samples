@@ -101,4 +101,4 @@ Update the appsettings.json with the correct values:
 }
 ```
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgExt-graph-task-creation" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgExt-graph-task-creation" />

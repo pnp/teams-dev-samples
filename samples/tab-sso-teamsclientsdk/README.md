@@ -168,4 +168,4 @@ App structure
     - This workflow is only necessary if you want authorization to use additional Graph APIs. Most apps will find this flow unnecessary if all they want to do is authenticate the user.
     - This workflow is the same as our standard [web-based authentication flow](https://docs.microsoft.com/en-us/microsoftteams/platform/tabs/how-to/authentication/auth-tab-aad#navigate-to-the-authorization-page-from-your-popup-page) that we've always had in Teams before we had single sign-on support. It just so happens that it's a great way to request additional permissions from the user, so it's left in this sample as an illustration of what that flow looks like.
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-sso-teamsclientsdk" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-sso-teamsclientsdk" />

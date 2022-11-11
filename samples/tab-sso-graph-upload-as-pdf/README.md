@@ -99,4 +99,4 @@ This webpart illustrates the following concepts:
 - [Writing normal files smaller 4MB](https://docs.microsoft.com/en-us/graph/api/driveitem-put-content?view=graph-rest-1.0&tabs=http)
 - Retrieving files with [format=pdf](https://docs.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-1.0&tabs=http) conversion
 
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/tab-sso-graph-upload-as-pdf" />
+<img src="https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/tab-sso-graph-upload-as-pdf" />

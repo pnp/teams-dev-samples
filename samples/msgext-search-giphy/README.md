@@ -89,5 +89,5 @@ Run ngrok - point to port 3978
 ## Deploy to Teams
 Start debugging the project by hitting the `F5` key or click the debug icon in Visual Studio Code and click the `Start Debugging` green arrow button.
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-search-giphy" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgext-search-giphy" />
 

@@ -130,10 +130,10 @@ This extension illustrates the following concepts:
 <<<<<<< HEAD
 <<<<<<< HEAD
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-spfx-graph-docreview" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgext-spfx-graph-docreview" />
 =======
 >>>>>>> be254ab... Initial commit
 =======
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/msgext-spfx-graph-docreview" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgext-spfx-graph-docreview" />
 >>>>>>> fc2b5645b4e763f29c39873e35f90072ef8d5877

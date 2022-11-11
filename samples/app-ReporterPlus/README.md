@@ -245,4 +245,4 @@ This sample app can provide as basis for multiple real world scenarios across di
 </tbody>
 </table>
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/app-ReporterPlus" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/app-ReporterPlus" />

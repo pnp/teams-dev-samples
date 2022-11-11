@@ -89,4 +89,4 @@ This project illustrates the following concepts:
 
 For illustrative purposes, try restarting the conversation with and without a new User ID in the Bot Framework Emulator.
 
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/readme-template" />
+<img src="https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/readme-template" />

@@ -78,4 +78,4 @@ This solution illustrates the following concepts on top of the a Teams Tab :
 * Customizing the Microsoft Graph Toolkit Components
 * Utilizing the Activity Feed API provided by Microsoft Graph
 
-<img src="https://telemetry.sharepointpnp.com/teams-dev-samples/samples/tab-activity-feed" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-activity-feed" />
