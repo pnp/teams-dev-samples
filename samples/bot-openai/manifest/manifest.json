@@ -1,0 +1,48 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+    "version": "1.0.0",
+    "manifestVersion": "1.15",
+    "id": "<YOUR-MICROSOFT-APP-ID>",
+    "packageName": "com.teams.openai.bot",
+    "name": {
+        "short": "OpenAI Bot",
+        "full": "OpenAI Bot"
+    },
+    "developer": {
+        "name": "Lee Ford",
+        "mpnId": "",
+        "websiteUrl": "https://www.lee-ford.co.uk",
+        "privacyUrl": "https://www.lee-ford.co.uk",
+        "termsOfUseUrl": "https://www.lee-ford.co.uk"
+    },
+    "description": {
+        "short": "OpenAI Bot",
+        "full": "OpenAI Bot used for talking with OpenAI from Teams"
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "<YOUR-MICROSOFT-APP-ID>",
+            "scopes": [
+                "team",
+                "personal"
+            ],
+            "isNotificationOnly": false,
+            "supportsFiles": false
+        }
+    ],
+    "validDomains": [
+        "token.botframework.com",
+        "online.microsoftlogin.com",
+        "*.ngrok.io"
+    ],
+    "defaultGroupCapability": {
+        "team": "bot",
+        "groupchat": "bot",
+        "meetings": "bot"
+    }
+}
