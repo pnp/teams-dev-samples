@@ -4,7 +4,7 @@
 
 This is a sample example OpenAI bot for Microsoft Teams. It allows a user in Teams to send a chat message to the Bot, which then uses [OpenAI API](https://beta.openai.com/overview) to get an answer to the chat message.
 
-> Please note: Currently there is no publicly available API for OpenAI's [ChatGPT](https://openai.com/blog/chatgpt/). This sample uses the OpenAI API, which models doesn't currently include ChatGPT. The OpenAI API is currently in beta, and is not free. You can sign up for a free account [here](https://beta.openai.com/). For a list of supported models, see [here](https://beta.openai.com/docs/api-reference/models).
+> Please note: Currently there is no publicly available API for OpenAI's [ChatGPT](https://openai.com/blog/chatgpt/). This sample uses the OpenAI API, which models doesn't currently include ChatGPT. The OpenAI API is currently in beta, and is not free, however you can sign up for a free trial [here](https://beta.openai.com/). For a list of supported models, see [here](https://beta.openai.com/docs/api-reference/models).
 
 ![Example conversation](./assets/example-conversation.gif)
 
@@ -117,4 +117,4 @@ Take a note of the forwarding URL, as you will need it later.
 2. Zip the `manifest` folder into a `manifest.zip` file
 3. Upload the `manifest.zip` file to Teams (side load the or upload in Teams Admin Center)
 
-<img src="https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/bot-openai" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-openai" />
