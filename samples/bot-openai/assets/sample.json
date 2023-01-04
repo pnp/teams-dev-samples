@@ -5,7 +5,7 @@
     "source": "pnp",
     "title": "Teams OpenAI Conversation Bot",
     "shortDescription": "This is a sample Teams bot which uses OpenAI API generate responses",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-statebot",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-openai",
     "longDescription": [
       "This sample allows a user in Teams to send a chat message to the Bot, which then uses OpenAI API to get an answer to the chat message"
     ],
