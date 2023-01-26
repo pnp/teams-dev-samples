@@ -1,0 +1,18 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "speak": "${imageDescription}",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "_'${imageDescription}'_",
+            "size": "Medium"
+        },
+        {
+            "type": "Image",
+            "url": "${imageLink}",
+            "altText": "${imageDescription}"
+        }
+    ]
+}
