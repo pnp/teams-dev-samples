@@ -20,6 +20,9 @@ App live in action inside **Outlook** using messaging extension
 
 For further details see the author's [blog series](https://mmsharepoint.wordpress.com/2022/12/28/a-sharepoint-document-generator-as-microsoft-365-app-i-yoteams/)
 
+This sample is realized with yeoman generator for Teams. A similar sample realizing the Document Generator in a personal tab as well is available as SPFx solution in the [PnP DEV FX Webparts sample gallery](https://github.com/pnp/sp-dev-fx-webparts/tree/main/samples/react-office-offer-creation).
+
+
 ## Prerequisites
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
