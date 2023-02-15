@@ -39,7 +39,7 @@
       "botId": "{{MICROSOFT_APP_ID}}",
       "scopes": [
         "team",
-        "groupchat"
+        "groupChat"
       ]
     }
   ],
