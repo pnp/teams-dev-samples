@@ -1,0 +1,104 @@
+[
+    {
+      "name": "pnp-sp-dev-teams-sample-tab-office-offer-creation",
+      "reponame": "tab-office-offer-creation",
+      "source": "pnp",
+      "title": "Tab Office Offer Creation",
+      "shortDescription": "Teams and Office App to create custom offer documents for further processing such as review or publish",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-office-offer-creation",
+      "longDescription": [
+        "This sample is a Teams personal Tab to act as a Microsoft 365 across application (Teams, Outlook, Office) including a search-based messaging extension to act in Teams and Outlook. The App will create custom offer documents based on a custom SharePoint content type with custom document template for further processing such as review and finalization (PDF archive)."
+      ],
+      "creationDateTime": "2023-02-07",
+      "updateDateTime": "2023-02-07",
+      "products": [
+        "Teams"
+      ],
+      "metadata": [
+        {
+          "key": "TEAMS-SAMPLE-SOURCE",
+          "value": "pnp"
+        },
+        {
+          "key": "TEAMS-SAMPLE-TYPE",
+          "value": "barebones"
+        },
+        {
+          "key": "TEAMS-CLIENT-LANGUAGE",
+          "value": "typescript"
+        },
+        {
+          "key": "TEAMS-CLIENT-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-UI",
+          "value": "react"
+        },
+        {
+          "key": "TEAMS-SERVER-LANGUAGE",
+          "value": "typescript"
+        },
+        {
+          "key": "TEAMS-SERVER-PLATFORM",
+          "value": "express"
+        },
+        {
+          "key": "TEAMS-BOT-FRAMEWORK",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-FEATURES",
+          "value": "tab"
+        },
+        {
+          "key": "TEAMS-GENERATOR",
+          "value": "yoteams"
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-office-offer-creation/assets/15OfferCreationDemo_yoteams.gif",
+          "alt": "Offer creation inside Teams"
+        },
+        {
+          "type": "image",
+          "order": 101,
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-office-offer-creation/assets/31CreateReviewCard.gif",
+          "alt": "Inside Teams using messaging extension"
+        },
+        {
+          "type": "image",
+          "order": 102,
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-office-offer-creation/assets/32CreateReviewCard_Outlook.gif",
+          "alt": "Inside Outlook using messaging extension"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "mmsharepoint",
+          "company": "Avanade ",
+          "pictureUrl": "https://github.com/mmsharepoint.png",
+          "name": "Markus Moeller",
+          "twitter": "moeller2_0"
+        }
+      ],
+      "references": [
+        {
+          "name": "Teams developer questions",
+          "url": "https://aka.ms/sample-ref-teams-dev-questions"
+        },
+        {
+          "name": "Teams development videos from Microsoft",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+        },
+        {
+          "name": "Teams development videos from the community",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+        }
+      ],
+      "version": "1.0.0.0"
+    }
+  ]

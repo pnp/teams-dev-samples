@@ -1,0 +1,97 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.13",
+  "id": "{{APPLICATION_ID}}",
+  "version": "{{VERSION}}",
+  "packageName": "{{PACKAGE_NAME}}",
+  "developer": {
+    "name": "Markus Moeller",
+    "websiteUrl": "https://{{PUBLIC_HOSTNAME}}",
+    "privacyUrl": "https://{{PUBLIC_HOSTNAME}}/privacy.html",
+    "termsOfUseUrl": "https://{{PUBLIC_HOSTNAME}}/tou.html"
+  },
+  "name": {
+    "short": "Offer Creation (yoteams)",
+    "full": "Offer Creation (yoteams)"
+  },
+  "description": {
+    "short": "A personal M365 app to create custom offer documents",
+    "full": "A personal Microsoft 365 app to create custom offer documents"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "accentColor": "#D85028",
+  "configurableTabs": [],
+  "staticTabs": [
+    {
+      "entityId": "108eec64-bd4b-4095-a02a-38ad1b2f848c",
+      "name": "Offer Creation",
+      "contentUrl": "https://{{PUBLIC_HOSTNAME}}/offerCreationTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "{{MICROSOFT_APP_ID}}",
+      "scopes": [
+        "team",
+        "groupChat"
+      ]
+    }
+  ],
+  "connectors": [],
+  "composeExtensions": [
+    {
+      "botId": "{{MICROSOFT_APP_ID}}",
+      "canUpdateConfiguration": true,
+      "commands": [
+        {
+          "id": "offerReviewYoteamsMessageExtension",
+          "title": "Offer Review (yoteams)",
+          "description": "Reviews an offer",
+          "initialRun": true,
+          "parameters": [
+            {
+              "name": "parameter",
+              "description": "Search for Offer documents",
+              "title": "Parameter"
+            }
+          ],
+          "type": "query"
+        },
+        {
+          "id": "offerPublishYoteamsMessageExtension",
+          "title": "Offer Publish (yoteams)",
+          "description": "Publishes an offer",
+          "initialRun": true,
+          "parameters": [
+            {
+              "name": "parameter",
+              "description": "Search for Offer documents",
+              "title": "Parameter"
+            }
+          ],
+          "type": "query"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "{{PUBLIC_HOSTNAME}}",
+    "*.botframework.com"
+  ],
+  "showLoadingIndicator": false,
+  "isFullScreen": false,
+  "webApplicationInfo": {
+    "id": "{{TAB_APP_ID}}",
+    "resource": "api://{{PUBLIC_HOSTNAME}}/{{TAB_APP_ID}}"
+  }
+}
