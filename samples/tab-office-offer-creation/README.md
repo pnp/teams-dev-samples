@@ -70,7 +70,7 @@ Version|Date|Author|Comments
     - Put the same site url to your .env as SiteUrl=
 - You will need to register an app in Azure AD [also described here](https://mmsharepoint.wordpress.com/2021/09/07/meeting-apps-in-microsoft-teams-1-pre-meeting/#appreg)
   - with client secret
-  - with **delegated** SharePoint permissions AllSires.Write 
+  - with **delegated** SharePoint permissions AllSites.Write 
   - With exposed Api "access_as_user" and App ID Uri api://{NGrok-Url}/{App ID}
   - With the client IDs for Teams App and Teams Web App 1fec8e78-bce4-4aaf-ab1b-5451cc387264 and 5e3ce6c0-2b1f-4285-8d4b-75ee78787346
   - Also With the client IDs for Office Apps Office web	4765445b-32c6-49b0-83e6-1d93765276ca, Office desktop 0ec893e0-5785-4de6-99da-4ed124e5296c,
