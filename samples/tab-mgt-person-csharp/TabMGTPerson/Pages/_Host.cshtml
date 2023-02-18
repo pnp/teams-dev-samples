@@ -1,0 +1,93 @@
+@page "/"
+@namespace TabMGTPerson.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = null;
+}
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tab-mgt-person-csharp</title>
+    <base href="~/" />
+    <link href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" rel="stylesheet"/>
+    <link href="css/site.css" rel="stylesheet" />
+</head>
+<body>
+  <script
+    src="https://res.cdn.office.net/teams-js/2.0.0/js/MicrosoftTeams.min.js"
+    integrity="sha384-QtTBFeFlfRDZBfwHJHYQp7MdLJ2C3sfAEB1Qpy+YblvjavBye+q87TELpTnvlXw4"
+    crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/@@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+  <script>
+    mgt.Providers.globalProvider = new mgt.TeamsMsal2Provider({
+        clientId: "@Configuration["TeamsFx:Authentication:ClientId"]",
+        authPopupUrl: '',
+        scopes: ["User.Read", "User.ReadBasic.All", "People.Read"],
+        ssoUrl: "/api/Token",
+        httpMethod: "POST"
+    });
+
+    //if (microsoftTeams) {
+    //  microsoftTeams.initialize();
+    //  microsoftTeams.authentication.getAuthToken({
+    //    successCallback: (token) => {
+    //      console.log(token);
+    //      fetch('/api/Token', {
+    //        headers: {
+    //          'Authorization': `Bearer ${token}`
+    //        }
+    //      }).then(response => {
+    //        response.text()
+    //          .then(body => {
+    //            console.log(body);
+    //            const container = document.getElementById('sso-container');
+    //            const code = document.createElement("span");
+    //            code.innerText = body;
+    //            code.style = 'word-break: break-all;';
+    //            container.appendChild(code);
+    //          });
+    //      }).catch(error => {
+    //        console.error(error);
+    //        renderError(error);
+    //      });
+    //    },
+    //    failureCallback: (error) => {
+    //      renderError(error);
+    //    }
+    //  });     
+    //}
+    //else {
+    //  alert('No teams!')
+    //}
+
+    //function renderError(error) {
+    //        const container = document.getElementById('sso-container');
+    //        const errorEle = document.createElement("h1");
+    //        errorEle.innerText = 'ERROR!';
+    //        container.appendChild(errorEle);
+    //}
+  </script>
+
+  <component type="typeof(App)" render-mode="ServerPrerendered" />
+
+  <div id="blazor-error-ui">
+      <environment include="Staging,Production">
+          An error has occurred. This application may no longer respond until reloaded.
+      </environment>
+      <environment include="Development">
+          An unhandled exception has occurred. See browser dev tools for details.
+      </environment>
+      <a href="" class="reload">Reload</a>
+      <a class="dismiss">🗙</a>
+  </div>
+
+  <script src="_framework/blazor.server.js"></script>
+  <script type="module" src="https://unpkg.com/@@fluentui/web-components"></script>
+</body>
+</html>
