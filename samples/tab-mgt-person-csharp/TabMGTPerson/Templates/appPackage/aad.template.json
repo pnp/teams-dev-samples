@@ -18,13 +18,33 @@
     },
     "requiredResourceAccess": [
         {
-            "resourceAppId": "Microsoft Graph",
-            "resourceAccess": [
-                {
-                    "id": "User.Read",
-                    "type": "Scope"
-                }
-            ]
+          "resourceAppId": "Microsoft Graph",
+          "resourceAccess": [
+            {
+              "id": "User.Read",
+              "type": "Scope"
+            },
+            {
+              "id": "People.Read",
+              "type": "Scope"
+            },
+            {
+              "id": "User.ReadBasic.All",
+              "type": "Scope"
+            },
+            {
+              "id": "profile",
+              "type": "Scope"
+            },
+            {
+              "id": "offline_access",
+              "type": "Scope"
+            },
+            {
+              "id": "openid",
+              "type": "Scope"
+            }
+          ]
         }
     ],
     "oauth2Permissions": [

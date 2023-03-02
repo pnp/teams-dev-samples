@@ -27,51 +27,11 @@
   <script>
     mgt.Providers.globalProvider = new mgt.TeamsMsal2Provider({
         clientId: "@Configuration["TeamsFx:Authentication:ClientId"]",
-        authPopupUrl: '',
+        authPopupUrl: '/auth-teams-sso.html',
         scopes: ["User.Read", "User.ReadBasic.All", "People.Read"],
         ssoUrl: "/api/Token",
         httpMethod: "POST"
     });
-
-    //if (microsoftTeams) {
-    //  microsoftTeams.initialize();
-    //  microsoftTeams.authentication.getAuthToken({
-    //    successCallback: (token) => {
-    //      console.log(token);
-    //      fetch('/api/Token', {
-    //        headers: {
-    //          'Authorization': `Bearer ${token}`
-    //        }
-    //      }).then(response => {
-    //        response.text()
-    //          .then(body => {
-    //            console.log(body);
-    //            const container = document.getElementById('sso-container');
-    //            const code = document.createElement("span");
-    //            code.innerText = body;
-    //            code.style = 'word-break: break-all;';
-    //            container.appendChild(code);
-    //          });
-    //      }).catch(error => {
-    //        console.error(error);
-    //        renderError(error);
-    //      });
-    //    },
-    //    failureCallback: (error) => {
-    //      renderError(error);
-    //    }
-    //  });     
-    //}
-    //else {
-    //  alert('No teams!')
-    //}
-
-    //function renderError(error) {
-    //        const container = document.getElementById('sso-container');
-    //        const errorEle = document.createElement("h1");
-    //        errorEle.innerText = 'ERROR!';
-    //        container.appendChild(errorEle);
-    //}
   </script>
 
   <component type="typeof(App)" render-mode="ServerPrerendered" />

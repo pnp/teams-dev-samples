@@ -47,14 +47,11 @@ namespace TabMGTPerson.Controllers
             {
                 _logger.LogError(ex, "Consent required");
                 // This exception indicates consent is required.
-                // Return a 403 with "consent_required" in the body
-                // to signal to the tab it needs to prompt for consent
-                return new ContentResult
+                var response = new { error = "consent_required" };
+                return new JsonResult(response)
                 {
-                    StatusCode = (int)HttpStatusCode.Forbidden,
-                    ContentType = "text/plain",
-                    Content = "consent_required"
-                };
+                    StatusCode = (int)HttpStatusCode.Forbidden                    
+                }; 
             }
             catch (Exception ex)
             {
