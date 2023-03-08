@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     // Use Web API authentication (default JWT bearer token scheme)
-    .AddMicrosoftIdentityWebApiAuthentication(builder.Configuration)
+    .AddMicrosoftIdentityWebApiAuthentication(builder.Configuration, "TeamsFx:Authentication")
     // Enable token acquisition via on-behalf-of flow
     .EnableTokenAcquisitionToCallDownstreamApi()
     // Add authenticated Graph client via dependency injection
