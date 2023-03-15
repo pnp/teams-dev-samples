@@ -13,6 +13,11 @@ The other version uses Teams SSO with the on-behalf flow and that access token i
 
 For further details see the author's [blog post](https://mmsharepoint.wordpress.com/2021/09/01/microsoft-graph-toolkit-in-a-teams-application-with-yo-teams-and-sso/)
 
+## Applies to
+
+This sample was created using the [Yeoman Generator for Teams](https://github.com/pnp/generator-teams). The same sample was also realized with the [Teams Toolkit with Visual Studio 2022](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/teams-toolkit-fundamentals?pivots=visual-studio&WT.mc_id=M365-MVP-5004617) and can be found [here](https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-mgt-person-csharp).
+
+
 ## Prerequisites
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
