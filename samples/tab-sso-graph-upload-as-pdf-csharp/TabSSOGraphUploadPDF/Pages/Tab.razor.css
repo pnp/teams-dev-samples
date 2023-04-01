@@ -1,0 +1,101 @@
+﻿.narrow {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.page-padding {
+	padding: 4rem;
+}
+
+.welcome.page > .narrow > img {
+	margin: 0 auto;
+	display: block;
+	width: 200px;
+}
+
+.welcome.page > .narrow > ul {
+	width: 75%;
+	justify-content: space-between;
+	margin: 4rem auto;
+}
+
+	.welcome.page > .narrow > ul > li {
+		background-color: inherit;
+		margin: auto;
+	}
+
+		.welcome.page > .narrow > ul > li > a {
+			font-size: 16px;
+			height: 32px;
+			border-bottom-color: rgb(98, 100, 167);
+		}
+
+.center {
+	text-align: center;
+}
+
+pre {
+	overflow-x: scroll;
+}
+
+pre,
+div.error {
+	background-color: #e5e5e5;
+	padding: 1rem;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	margin: 1rem 0;
+}
+
+code {
+	background-color: #e5e5e5;
+	display: inline-block;
+	padding: 0px 6px;
+	border-radius: 3px;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+	color: red;
+}
+
+.dropZoneBG {
+	position: relative;
+	width: 400px;
+	height: 200px;
+	margin: 15px;
+}
+
+.dropZone {
+	position: absolute;
+	top: 10;
+	border: 1px solid black;
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+
+.dropZoneHighlight {
+	background-color: rgba(211, 211, 211, 0.5);
+}
+
+.pdfLogo {
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	font-size: xxx-large;
+}
+
+.suppFileTypes {
+	margin-left: 15px;
+	margin-top: 30px;
+	font-size: 0.8em;
+}
+
+.loader {
+	position: absolute;
+	top: 25%;
+	left: 45%;
+	text-align: center;
+}

@@ -1,16 +1,16 @@
 [
   {
-    "name": "pnp-sp-dev-teams-sample-tab-mgt-person-csharp",
-    "reponame": "tab-mgt-person-csharp",
+    "name": "pnp-sp-dev-teams-sample-tab-sso-graph-upload-as-pdf-csharp",
+    "reponame": "tab-sso-graph-upload-as-pdf-csharp",
     "source": "pnp",
-    "title": "Teams Tab w/SSO and MSAL2, Graph Toolkit and Teams Toolkit with Visual Studio 2022",
-    "shortDescription": "Shows how to use Microsoft Graph toolkit in a VS project - with authentication!",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-mgt-person-csharp",
+    "title": "Upload as PDF tab (CSharp)",
+    "shortDescription": "Tab allows uploading documents; they are converted to PDF and saved to the current Teams' site",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-sso-graph-upload-as-pdf-csharp",
     "longDescription": [
-      "Shows how to use Microsoft Graph toolkit in a Teams Toolkit with Visual Studio 2022 project - with SSO authentication!"
+      "Tab allows uploading documents with drag&drop; they are converted to PDF and saved to the current Teams' site"
     ],
-    "creationDateTime": "2023-02-18",
-    "updateDateTime": "2023-02-18",
+    "creationDateTime": "2023-04-01",
+    "updateDateTime": "2023-04-01",
     "products": [
       "Teams"
     ],
@@ -25,7 +25,7 @@
       },
       {
         "key": "TEAMS-CLIENT-LANGUAGE",
-        "value": "javascript"
+        "value": "csharp"
       },
       {
         "key": "TEAMS-CLIENT-PLATFORM",
@@ -33,7 +33,7 @@
       },
       {
         "key": "TEAMS-CLIENT-UI",
-        "value": "mgt"
+        "value": "blazor"
       },
       {
         "key": "TEAMS-SERVER-LANGUAGE",
@@ -60,7 +60,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-mgt-person-csharp/assets/07Result.png",
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-sso-graph-upload-as-pdf-csharp/assets/01UploadProcess.gif",
         "alt": "Tab showing user profile"
       }
     ],

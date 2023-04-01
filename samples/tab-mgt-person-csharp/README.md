@@ -28,8 +28,8 @@ Version|Date|Author|Comments
 ## Minimal Path to Awesome
 - Clone the repository
     ```bash
-    git clone https://github.com/mmsharepoint/tab-mgt-person-csharp.git
-- Open tab-mgt-person-csharp.sln in Visual Studio
+    git clone https://github.com/pnp/teams-dev-samples.git
+- Open samples\tab-mgt-person-csharp\tab-mgt-person-csharp.sln in Visual Studio
 - Perform first actions in GettingStarted.txt (before hitting F5)
 - This should [register an app in Azure AD](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/add-single-sign-on?pivots=visual-studio&WT.mc_id=M365-MVP-5004617#add-sso-to-teams-app-for-visual-studio)
 - Ensure there is an app
