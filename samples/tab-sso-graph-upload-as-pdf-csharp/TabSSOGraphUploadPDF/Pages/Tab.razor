@@ -1,0 +1,22 @@
+﻿@page "/"
+@page "/tab"
+
+<div>
+  <div class='dropZoneBG'>
+    Drag your file here:
+    <div class="dropZone" 
+          ondragenter="TabPDF.Drag.enableHighlight(event)"
+          ondragleave="TabPDF.Drag.disableHighlight(event)"
+          ondragover="TabPDF.Drag.allowDrop(event)"
+          ondrop="TabPDF.executeUpload(event)">
+      <div style="display: none;" class="loader">
+        <FluentProgressRing />
+      </div>
+      <i class="ms-Icon ms-Icon--PDF pdfLogo" aria-hidden="true"></i>
+    </div>    
+  </div>
+  <div class="suppFileTypes">Supported file types: <span id="fileTypes">csv,doc,docx,odp,ods,odt,pot,potm,potx,pps,ppsx,ppsxm,ppt,pptm,pptx,rtf,xls,xlsx</span></div>
+</div>
+
+
+
