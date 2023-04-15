@@ -1,0 +1,104 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-sso-graph-file-conversion-csharp",
+    "reponame": "tab-sso-graph-file-conversion-csharp",
+    "source": "pnp",
+    "title": "Convert to PDF/HTML/JPG tab (CSharp)",
+    "shortDescription": "Tab allows uploading documents; they are converted to PDF/HTML/JPG and saved to the current Teams' site",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-sso-graph-file-conversion-csharp",
+    "longDescription": [
+      "Tab allows uploading documents with drag&drop or file upload; they are converted to PDF, HTML or JPG and saved to the current Teams' site or SharePoint root"
+    ],
+    "creationDateTime": "2023-04-15",
+    "updateDateTime": "2023-04-15",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "blazor"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "teamstoolkit"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-sso-graph-file-conversion-csharp/assets/01SelectFileType.gif",
+        "alt": "Select target file type"
+      },
+      {
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-sso-graph-file-conversion-csharp/assets/02UploadPNGfile.gif",
+        "alt": "File upload and JPG conversion"
+      },
+      {
+        "type": "image",
+        "order": 102,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-sso-graph-file-conversion-csharp/assets/03SelectUploadOption.gif",
+        "alt": "Switch between drag&drop and file upload"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mmsharepoint",
+        "company": "Avanade ",
+        "pictureUrl": "https://github.com/mmsharepoint.png",
+        "name": "Markus Moeller",
+        "twitter": "moeller2_0"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

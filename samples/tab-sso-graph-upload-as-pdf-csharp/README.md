@@ -53,4 +53,4 @@ This is a simple Teams Tab. It uses the Microsoft Graph Toolkit (MGT) for simpli
 * [Convert supported files to PDF with Microsoft Graph](https://learn.microsoft.com/en-us/graph/api/driveitem-get-content-format?view=graph-rest-1.0&tabs=http&WT.mc_id=M365-MVP-5004617)
 * [Use Fluent UI Web Components with Blazor](https://learn.microsoft.com/en-us/fluent-ui/web-components/integrations/blazor?WT.mc_id=M365-MVP-5004617)
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-mgt-person-csharp" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-sso-graph-upload-pdf-csharp" />
