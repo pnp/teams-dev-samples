@@ -1,0 +1,49 @@
+﻿@page "/"
+@page "/tab"
+@inject IJSRuntime JS
+
+<div>
+  <div class="switch">
+    <FluentSwitch @bind-Value=showUpload>Use File Upload</FluentSwitch>
+  </div>
+  @if (!showUpload)
+  {
+      <div id="dropFile" class="dropZoneBG">
+          Drag your file here:
+          <div class="dropZone"
+                ondragenter="TabFile.Drag.enableHighlight(event)"
+                ondragleave="TabFile.Drag.disableHighlight(event)"
+                ondragover="TabFile.Drag.allowDrop(event)"
+                ondrop="TabFile.executeUpload(event)">              
+              <i id="fileIcon" class="ms-Icon ms-Icon--PDF pdfLogo" aria-hidden="true"></i>
+          </div>
+      </div>
+  }    
+  @if (showUpload)
+  {
+    <div id="inputFile" class="fileInput">
+      <label class="fileInputLabel" for="myfile">Select a file: </label>
+      <input type="file" id="myfile" name="myfile">
+      <FluentButton onclick="TabFile.inputUpload()">Upload</FluentButton>
+    </div>
+  }
+  <div style="display: none;" class="loader">
+    <FluentProgressRing />
+  </div>
+  <div class="selectFile">
+    <FluentSelect @bind-Value="@selectValue" onchange="TabFile.fileTypeChanged(event)">
+      <FluentOption Value=@("PDF")>PDF</FluentOption>
+      <FluentOption Value=@("HTML")>HTML</FluentOption>
+      <FluentOption Value=@("JPG")>JPG</FluentOption>
+    </FluentSelect>
+  </div>
+  <div class="suppFileTypes">Supported file types: <span id="fileTypes">csv,doc,docx,odp,ods,odt,pot,potm,potx,pps,ppsx,ppsxm,ppt,pptm,pptx,rtf,xls,xlsx</span></div>
+  <div class="resultDiv">
+    <span id="resultSpan"></span>
+  </div>
+</div>
+
+@code {
+    string? selectValue;
+    bool showUpload = false;
+}
