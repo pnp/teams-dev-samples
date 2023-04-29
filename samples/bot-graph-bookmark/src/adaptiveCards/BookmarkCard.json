@@ -1,0 +1,73 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "size": "Large",
+                    "weight": "Bolder",
+                    "text": "${header}",
+                    "horizontalAlignment": "Center",
+                    "style": "heading",
+                    "separator": true,
+                    "spacing": "None",
+                    "isSubtle": false,
+                    "color": "Default",
+                    "wrap": true
+                }
+            ],
+            "style": "good",
+            "bleed": true
+        },
+        {
+            "type": "Input.Text",
+            "label": "Title",
+            "id": "Title",
+            "placeholder": "Enter a short title",
+            "isRequired": true,
+            "errorMessage": "Title is required"
+        },
+        {
+            "type": "Input.Text",
+            "label": "URL",
+            "placeholder": "Enter the full URL of the bookmark",
+            "style": "Url",
+            "id": "URL",
+            "isRequired": true,
+            "errorMessage": "URL is required"
+        },
+        {
+            "type": "Input.Text",
+            "label": "Comments",
+            "isMultiline": true,
+            "id": "BookmarkComments"
+        },
+        {
+            "type": "Input.Text",
+            "label": "Tags",
+            "id": "Tags",
+            "placeholder": "Enter tags with comma separated"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Execute",
+            "verb": "submit",
+            "title": "Submit",            
+            "style": "positive"
+        },
+        {
+            "type": "Action.Execute",
+            "verb": "cancel",
+            "title": "cancel",
+            "data": {
+                "id": "1234"
+            },
+            "style": "destructive"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4"
+}
