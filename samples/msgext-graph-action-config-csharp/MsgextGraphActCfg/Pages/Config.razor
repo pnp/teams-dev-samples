@@ -1,0 +1,31 @@
+﻿@page "/config"
+@inject IConfiguration configuration;
+<h3>Search Config in Azure App configuration</h3>
+<div>
+  <div class="siteIDField">
+    <FluentTextField @bind-Value="@siteID" 
+                      Appearance="Appearance.Filled" 
+                      Placeholder="Enter a site id" 
+                      Required="true" 
+                      id="txtSiteID">Site ID</FluentTextField>
+  </div>
+  <div class="listIDField">
+    <FluentTextField @bind-Value="@listID" 
+                      Appearance="Appearance.Filled"
+                      Placeholder="Enter a list id" 
+                      Required="true" 
+                      id="txtListID">List ID</FluentTextField>
+  </div>
+</div>
+<p />
+<FluentButton onclick="MsgExtCfg.Config.saveConfig()" Appearance="Appearance.Accent">Save</FluentButton>
+@code {
+    string siteID;
+    string listID;
+    protected override Task OnInitializedAsync()
+    {
+        siteID = configuration["MsgExtGraphActCfg:Settings:SiteID"];
+        listID = configuration["MsgExtGraphActCfg:Settings:ListID"];
+        return base.OnInitializedAsync();
+    }
+}

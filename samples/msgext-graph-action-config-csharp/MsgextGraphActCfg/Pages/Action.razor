@@ -1,0 +1,65 @@
+﻿@page "/action"
+@inject IConfiguration configuration;
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Action Config in Azure Action</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+
+<body>
+  <FluentDataGrid RowsData="@people" TGridItem="Person">
+    <TemplateColumn Title="Person">
+      <div class="flex items-center">
+        <a href="#">@context.Name</a>
+      </div>
+    </TemplateColumn>
+    <PropertyColumn Property="@(p => p.Name)" Sortable="true" />
+    <PropertyColumn Property="@(p => p.Modified)" Format="yyyy-MM-dd" Sortable="true" />
+    <PropertyColumn Property="@(p => p.Author)" Sortable="true" />
+    <TemplateColumn Title="Actions">
+      <FluentButton Appearance="Appearance.Accent" @onclick="@(() => Select(context))">Select</FluentButton>
+      <FluentButton Appearance="Appearance.Lightweight" @onclick="this.onClicked">Select</FluentButton>
+    </TemplateColumn>
+  </FluentDataGrid>
+
+  <div>
+    <FluentTextField id="txtSelectedName" @bind-Value=@selectedDocumentName>Selected Document</FluentTextField>
+    <FluentTextField id="txtSelectedHiddenId" hidden @bind-Value=@selectedDocumentId>ID</FluentTextField>
+  </div>
+  <FluentButton onclick="MsgExtCfg.Action.submit()" Appearance="Appearance.Accent">Save</FluentButton>
+
+</body>
+
+</html>
+
+@code {
+    record Person(int Id, string Name, DateOnly Modified, string Author);
+
+    string selectedDocumentName;
+    string selectedDocumentId;
+
+    IQueryable<Person> people = new[]
+    {
+        new Person(10895, "Jean Martin", new DateOnly(1985, 3, 16), "Markus Moeller"),
+        new Person(10944, "António Langa", new DateOnly(1991, 12, 1), "Markus Moeller"),
+        new Person(11203, "Julie Smith", new DateOnly(1958, 10, 10), "Markus Moeller"),
+        new Person(11205, "Nur Sari", new DateOnly(1922, 4, 27), "Markus Moeller"),
+        new Person(11898, "Jose Hernandez", new DateOnly(2011, 5, 3), "Markus Moeller"),
+        new Person(12130, "Kenji Sato", new DateOnly(2004, 1, 9), "Markus Moeller"),
+    }.AsQueryable();
+
+    void Select(Person p) => selectedDocumentName = p.Name;
+    void onClicked ()
+    {
+        Console.WriteLine(selectedDocumentName);
+    }
+    //{
+    //    selectedDocumentName = p.Name;
+    //    selectedDocumentId = p.Id.ToString();
+    //}
+}

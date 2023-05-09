@@ -1,0 +1,98 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-graph-srch-config-csharp",
+    "reponame": "msgext-graph-srch-config-csharp",
+    "source": "pnp",
+    "title": "Configure Teams Applications with Azure App Configuration (CSharp)",
+    "shortDescription": "Search-based messaging extension authenticates with SSO and calls Microsoft Graph.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-srch-config-csharp",
+    "longDescription": [
+      "Messaging extension authenticates against Microsoft Graph via Bot SSO and recieves documents to be posted as adaptive card to the message compose box of a channel. Uses Azure App Configuration and Azure Key Vault."
+    ],
+    "creationDateTime": "2023-05-09",
+    "updateDateTime": "2023-05-09",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "barebones"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "blazor"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "csharp"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "teamstoolkit"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-graph-srch-config-csharp/assets/07ConfigPage.png",
+        "alt": "Configuration Page"
+      },
+      {
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-graph-srch-config-csharp/assets/14MsgextInAction.gif",
+        "alt": "Message Extension in action"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mmsharepoint",
+        "company": "Avanade ",
+        "pictureUrl": "https://github.com/mmsharepoint.png",
+        "name": "Markus Moeller",
+        "twitter": "moeller2_0"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]
