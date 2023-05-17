@@ -5,7 +5,7 @@
     "source": "pnp",
     "title": "Configure Teams Applications with Azure App Configuration (CSharp)",
     "shortDescription": "Search-based messaging extension authenticates with SSO and calls Microsoft Graph.",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-graph-srch-config-csharp",
+    "url": "https://github.com/pnp/teams-dev-samples/main/samples/msgext-graph-action-config-csharp",
     "longDescription": [
       "Messaging extension authenticates against Microsoft Graph via Bot SSO and recieves documents to be posted as adaptive card to the message compose box of a channel. Uses Azure App Configuration and Azure Key Vault."
     ],
@@ -60,14 +60,14 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-graph-srch-config-csharp/assets/07ConfigPage.png",
-        "alt": "Configuration Page"
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/msgext-graph-action-config-csharp/assets/14MsgextInAction.gif",
+        "alt": "Message Extension in action"
       },
       {
         "type": "image",
-        "order": 101,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-graph-srch-config-csharp/assets/14MsgextInAction.gif",
-        "alt": "Message Extension in action"
+        "order": 200,
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/msgext-graph-action-config-csharp/assets/07ConfigPage.png",
+        "alt": "Configuration Page"
       }
     ],
     "authors": [
