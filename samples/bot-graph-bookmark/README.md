@@ -60,6 +60,8 @@ Version|Date|Author|Comments
 
     ### Debug application
 
+    1. In the application folder, run `npm install` to install the needed packages
+
     1. First, select the Teams Toolkit icon on the left in the VS Code toolbar.
     2. In the Account section, sign in with your [Microsoft 365 account](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts) if you haven't already.
     3. Press F5 to start debugging which launches your app in Teams using a web browser. Select `Debug (Edge)` or `Debug (Chrome)`.
