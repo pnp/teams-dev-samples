@@ -1,0 +1,48 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+    "version": "1.0.0",
+    "manifestVersion": "1.15",
+    "id": "2a9cc8df-1419-4e59-afc3-7965424e8772",
+    "packageName": "com.teams.tflstatus.bot",
+    "name": {
+        "short": "TfL Status Bot",
+        "full": "TfL Status Bot"
+    },
+    "developer": {
+        "name": "Anoop Tatti",
+        "mpnId": "",
+        "websiteUrl": "https://aka.ms/anoopt",
+        "privacyUrl": "https://aka.ms/anoopt",
+        "termsOfUseUrl": "https://aka.ms/anoopt"
+    },
+    "description": {
+        "short": "TfL Status Bot",
+        "full": "A bot that can tell you the status of a TfL line"
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "2a9cc8df-1419-4e59-afc3-7965424e8772",
+            "scopes": [
+                "team",
+                "personal"
+            ],
+            "isNotificationOnly": false,
+            "supportsFiles": false
+        }
+    ],
+    "validDomains": [
+        "token.botframework.com",
+        "online.microsoftlogin.com",
+        "*.ngrok.io"
+    ],
+    "defaultGroupCapability": {
+        "team": "bot",
+        "groupchat": "bot",
+        "meetings": "bot"
+    }
+}
