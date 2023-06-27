@@ -52,6 +52,10 @@ Version|Date|Author|Comments
 -------|----|----|--------
 1.0|June 27, 2023|Anoop T|Initial release
 
+## Credits
+
+Credits to [Lee Ford](https://twitter.com/lee_ford) for creating a this awesome [Teams bot sample](https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-openai) that demonstrates using OpenAI.
+
 ## Disclaimer
 
 **THIS CODE IS PROVIDED _AS IS_ WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
