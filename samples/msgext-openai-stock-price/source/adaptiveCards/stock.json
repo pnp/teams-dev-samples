@@ -1,0 +1,101 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "${companyName}",
+                    "size": "Large",
+                    "wrap": true,
+                    "weight": "bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "${primaryExchange}: ${symbol}",
+                    "isSubtle": true,
+                    "spacing": "None",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "{{DATE(${formatEpoch(quote.latestUpdate, 'yyyy-MM-ddTHH:mm:ssZ')}, SHORT)}} {{TIME(${formatEpoch(quote.latestUpdate, 'yyyy-MM-ddTHH:mm:ssZ')})}}",
+                    "wrap": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "spacing": "None",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${formatNumber(quote.current, 2)} ",
+                                    "size": "ExtraLarge",
+                                    "wrap": true
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "${if(quote.change >= 0, '▲', '▼')} ${formatNumber(quote.change,2)} USD (${formatNumber(quote.changePercent, 2)}%)",
+                                    "color": "${if(quote.change >= 0, 'good', 'attention')}",
+                                    "spacing": "None",
+                                    "wrap": true
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Data provided by Finnhub",
+                                    "isSubtle": true,
+                                    "size": "Small",
+                                    "spacing": "None",
+                                    "wrap": true
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Open ${formatNumber(quote.open, 2)}",
+                                    "horizontalAlignment": "right",
+                                    "wrap": true
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "High ${formatNumber(quote.high, 2)}",
+                                    "spacing": "None",
+                                    "horizontalAlignment": "right",
+                                    "wrap": true
+                                },
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Low  ${formatNumber(quote.low, 2)}",
+                                    "spacing": "None",
+                                    "horizontalAlignment": "right",
+                                    "wrap": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${summary}",
+            "wrap": true,
+            "separator": true
+        }
+    ]
+}
