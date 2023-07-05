@@ -18,6 +18,7 @@ The purpose of this sample app is to convert different types of documents into P
 
 3. An [Microsoft 365 account for development](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts)
 
+4. Install the latest version of visual studio [Install Visual Studio](https://visualstudio.microsoft.com/vs/). I have used Visual Studio 2022 Enterprise. You can also use the **community** version if you dont have an enterprise licence. 
 
 ## Version history
 
@@ -61,6 +62,6 @@ Version|Date|Author|Comments
     | M365_TENANT_ID 	| Tenant id for your AAD tenant. 	|
     | ALLOWED_APP_IDS 	| List of client ids which are allowed to call the function app. Split by semicolon ';' 	|    
 
-7. Navigate to the API folder and open the Azure function in Visual Studio. Start debugging the Azure function project parallelly as well.
+7. Navigate to the API folder and open the Azure function in **Visual Studio**. Press 5 to start debugging the Azure function project parallelly in Visual Studio.
 
 <img src="https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/bot-graph-bookmark" />
