@@ -40,6 +40,12 @@
     func --version
     ```
 
+* If you are running PowerShell, ensure that scripts are allowed to run:
+
+    ```powershell
+    Set-ExecutionPolicy Unrestricted
+    ```
+
 * [ngrok](https://ngrok.com/) - Although a free account will work with this sample, the tunnel subdomain will change each time you run ngrok, requiring a change to the Azure Bot messaging endpoint and the Teams app manifest. A paid account with a permanent subdomain is recommended.
 
 OR
