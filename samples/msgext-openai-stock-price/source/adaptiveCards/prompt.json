@@ -1,0 +1,19 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+        {
+            "id": "stockQuery",
+            "type": "Input.Text",
+            "label": "Enter your stock query or symbol or company name",
+            "placeholder": "E.g. - MSFT or How is Microsoft doing?"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Get stock details"
+        }
+    ]
+}

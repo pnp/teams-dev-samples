@@ -1,0 +1,96 @@
+[
+    {
+      "name": "pnp-sp-dev-teams-sample-msgext-openai-stock-price",
+      "reponame": "msgext-openai-stock-price",
+      "source": "pnp",
+      "title": "Teams OpenAI Stock Price Message Extension",
+      "shortDescription": "A sample Teams message extension which uses OpenAI's function calling along with Finnhub API to stock price information.",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-openai-stock-price",
+      "longDescription": [
+        "A sample Teams message extension which uses OpenAI's function calling along with Finnhub API to stock price information."
+      ],
+      "creationDateTime": "2023-07-03",
+      "updateDateTime": "2023-07-03",
+      "products": [
+        "Teams"
+      ],
+      "metadata": [
+        {
+          "key": "TEAMS-SAMPLE-SOURCE",
+          "value": "pnp"
+        },
+        {
+          "key": "TEAMS-SAMPLE-TYPE",
+          "value": "demo"
+        },
+        {
+          "key": "TEAMS-CLIENT-LANGUAGE",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-UI",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-SERVER-LANGUAGE",
+          "value": "typescript"
+        },
+        {
+          "key": "TEAMS-SERVER-PLATFORM",
+          "value": "az-func"
+        },
+        {
+          "key": "TEAMS-BOT-FRAMEWORK",
+          "value": "bot46"
+        },
+        {
+          "key": "TEAMS-FEATURES",
+          "value": "msgext"
+        },
+        {
+          "key": "TEAMS-GENERATOR",
+          "value": ""
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-openai-stock-price/assets/demo.gif",
+          "alt": "A user prompts OpenAI, which get stock price information from Finnhub API and returns the result to the user."
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "anoopt",
+          "company": "Content+Cloud",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/9694225?v=4",
+          "name": "Anoop Tatti",
+          "twitter": "anooptells"
+        }
+      ],
+      "references": [
+        {
+          "name": "Azure Bot Framework resources",
+          "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+        },
+        {
+          "name": "Microsoft Teams bots",
+          "url": "https://aka.ms/sample-ref-teams-docs-bots"
+        },
+        {
+          "name": "OpenAI function calling",
+          "url": "https://openai.com/blog/function-calling-and-other-api-updates"
+        },
+        {
+          "name": "Finnhub API",
+          "url": "https://finnhub.io"
+        }
+      ],
+      "version": "1.0.0.0"
+    }
+  ]
