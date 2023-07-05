@@ -1,0 +1,18 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Hello 👋",
+            "size": "medium",
+            "weight": "bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "I am the TfL Status Bot. I can help you with queries about the status of TfL lines. Please type your query below.",
+            "wrap": true
+        }
+    ]
+}
