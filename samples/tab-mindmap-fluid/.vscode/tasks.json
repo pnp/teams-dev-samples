@@ -48,8 +48,19 @@
         {
             "label": "Start application",
             "dependsOn": [
-                "Start frontend"
+                "Start frontend",
+                "Start LocalFluidRelay"
             ]
+        },
+        {
+            "label": "Start LocalFluidRelay",
+            "type": "shell",
+            "command": "npm run fluid",
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+
         },
         {
             "label": "Start frontend",
