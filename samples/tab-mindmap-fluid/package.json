@@ -2,7 +2,7 @@
     "name": "TeamsMindMap",
     "version": "0.1.0",
     "engines": {
-        "node": "16 || 18"
+        "node": "18"
     },
     "private": true,
     "dependencies": {
@@ -36,11 +36,13 @@
         "env-cmd": "^10.1.0",
         "node-sass": "^9.0.0",
         "react-scripts": "^5.0.1",
+        "tinylicious": "^0.8.0-151160",
         "typescript": "^4.1.2"
     },
     "scripts": {
         "dev:teamsfx": "env-cmd --silent -f .localConfigs npm run start",
         "fluid": "npx @fluidframework/azure-local-service",
+        "tinylicious": "tinylicious",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "eject": "react-scripts eject",
