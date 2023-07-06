@@ -33,10 +33,15 @@ Meeting Tab (GO on Stage)
   
 ## Getting Started With Azure Fluid Relay Testing
 
-Work in Progress for a better doumentation
+Work in Progress for a better doumentation (location of config.ts)
+
 Setup Your Azure Function and Deploy Azure function from Folder `APIC`
+- How to Deploy (todo)
+- VScode and/or VS
+
 Setup Your Fluid Relay Service
-Setup `config.ts`
+
+fill out your values into `src/components/tab/config.ts`
 
 ```
 const config = {
