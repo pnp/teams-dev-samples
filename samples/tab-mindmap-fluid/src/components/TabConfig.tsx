@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { app, pages } from "@microsoft/teams-js";
-import { containerIdQueryParamKey, containerSchema,  createContainerID, getAzureMemberFromCtx } from "./tab/util";
+import { containerIdQueryParamKey,  createContainerID, getAzureMemberFromCtx } from "./tab/util";
 
 
 

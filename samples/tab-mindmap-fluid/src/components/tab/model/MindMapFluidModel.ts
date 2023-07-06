@@ -51,7 +51,7 @@ export class MindMapFluidModel extends EventEmitter  {
         this.connections = container.initialObjects.connections as ISharedMap;
         this.title = container.initialObjects.title as ISharedString;
         this.audience = services.audience;
-/*
+
         this.audience.on("memberAdded", (members) => {
               console.log("valueChanged audience");
             const membersChangedPayload = { type: "membersChanged" };
@@ -62,7 +62,7 @@ export class MindMapFluidModel extends EventEmitter  {
             const membersChangedPayload = { type: "membersChanged" };
             this.emit("modelChanged", membersChangedPayload);
         });
-*/
+
         this.nodes.on("valueChanged", (changed:IValueChanged, local, target) => {
            console.log("valueChanged nodes");
             const changedNodePayload: EventPayload = { type: "singleNodeChange", changed };

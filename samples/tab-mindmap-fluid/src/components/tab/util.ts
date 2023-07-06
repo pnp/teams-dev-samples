@@ -24,6 +24,7 @@ function getConnectionConfig(user: AzureMember): AzureClientProps {
         tokenProvider: new InsecureTokenProvider("foobar", { id: user.userId ,
         userId: user.userId,
         userName: user.userName,
+        name:user.userName, //azure-client AzureAudience.ts azureUser?.name !== undefined, 'Provided user was not an "AzureUser".'
         connections: [],
       
       } as any),
