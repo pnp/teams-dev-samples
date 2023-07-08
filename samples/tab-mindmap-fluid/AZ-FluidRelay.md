@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - [Azure Subscription](https://portal.azure.com/)
-- [Visual Studio 2022](https://visualstudio.microsoft.com) or VSCode (additonal tooling is required!)
+- [Visual Studio 2022](https://visualstudio.microsoft.com) or VSCode (additional tooling is required!)
 
 ## Create Azure Fluid Relay
 
@@ -11,7 +11,7 @@
 
 ## Visual Studio Deployment of Azure Function
 
-- Open the Visual Studio Solution `FunctionApp1.sln` this file is Located unter the folder `APIC/FunctionApp1`
+- Open the Visual Studio Solution `FunctionApp1.sln` this file is located untiner the folder `APIC/FunctionApp1`
 - Please follow the Deployment and Azure Function Steps from the MS-Lean Quickstart Guide starting at (Publish the project to Azure)
 [https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-your-first-function-visual-studio#publish-the-project-to-azure]
 
@@ -19,7 +19,7 @@ if you have already created the Azure function you can also import the Publishin
 
 ## VsCode Deployment of Azure Function
 
-### Prerequisites
+### Requisites
 
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
 - [Azure Functions Core Tools](../articles/azure-functions/functions-run-local.md#install-the-azure-functions-core-tools) version 4.x.
@@ -30,19 +30,19 @@ if you have already created the Azure function you can also import the Publishin
 ### Deployment it
 
 - Open the Folder `APIC/FunctionApp1`
-- Please follow this Sections `Sign in to Azure,Create the function app in Azure,Deploy the project to Azure` in the MS-Learn Quickstart Guide start at [Sign in to Azure](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp#sign-in-to-azure)
+- Please follow these Sections `Sign in to Azure, Create the function app in Azure, Deploy the project to Azure` in the MS-Learn Quickstart Guide start at [Sign in to Azure](https://learn.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp#sign-in-to-azure)
 
 ## Configure your Azure Function
 
-- first go to your Fluid Relay Service and go to Access Key
+- First, go to your Fluid Relay Service and go to Access Key
   ![Fluid Relay Service](./assets/azure/azure_FRS_access.png)
   this information we need in the next steps
-- Go to your Azure Function select `Configuration`
-  - in the tab `Application settings` add a `New applicaition settings`
+- Go to your Azure Function and select `Configuration`
+  - in the tab `Application settings` add a `New application settings`
     Set as Name `FRS` and the value is the `Primary key` of your Fluid Relay Service of step 1
-    Please hit the buttun save!!! (my typical mistake)
-    ![Azure Function Configuration FRS Keu](./assets/azure/azure_AF_configuration.png)
-- Go to your Azure Function select `CORS`
+    Please hit the button save!!! (my typical mistake)
+    ![Azure Function Configuration FRS Key](./assets/azure/azure_AF_configuration.png)
+- Go to your Azure Function and select `CORS`
   - You have to enable CORS for some domains and localhost
 
     ```text
@@ -51,16 +51,16 @@ if you have already created the Azure function you can also import the Publishin
     https://localhost:53000
     ```
 
-   ![Azure Function Configuration FRS Keu](./assets/azure/azure_AF_CORS.png.png)
+   ![Azure Function CORS](./assets/azure/azure_AF_CORS.png.png)
 
 ### Side notes
 
-Please Store the key in a Azure KeyVault, with manages Identity it is mutch more secure than in the AppSetting
+Please store the key in an  Azure KeyVault, with manages Identity it is much more secure than in the AppSetting
 
 ## Use the Azure Fluid Relay Service and the Azure Function
 
 Please open the File `src/config.ts`
-FRS stands for Fluid Relay Service and only this parameters are interestig in this step
+FRS stands for Fluid Relay Service and only these parameters are interesting in this step
 
 - change `FRS_local` from `true` to `false`
 - `FRS_TokenProviderURL` you find your URL in the Azure Function `Overview`, please add `/api/GetToken`as Endpoint
