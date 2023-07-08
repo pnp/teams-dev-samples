@@ -27,7 +27,7 @@
     "morgan": "1.9.1",
     "msteams-react-base-component": "^3.1.0",
     "passport": "^0.4.1",
-    "passport-azure-ad": "^4.3.1-beta.0",
+    "passport-azure-ad": "^4.3.5",
     "querystring": "^0.2.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
