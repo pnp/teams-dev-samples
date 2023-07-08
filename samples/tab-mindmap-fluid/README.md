@@ -31,64 +31,10 @@ Meeting Tab (GO on Stage)
   - Application stated you see  2 running Tasks
   ![VScode Start debugger](./assets/install/vscode_taskrunner.png)
   
-## Getting Started With Azure Fluid Relay Testing
+## Test it with Azure Fluid Relay Service
 
-Work in Progress for a better doumentation (location of config.ts)
+Please Follow this [link](AZ-FluidRelay.md)
 
-Setup Your Azure Function and Deploy Azure function from Folder `APIC`
-- How to Deploy (todo)
-- VScode and/or VS
-
-Setup Your Fluid Relay Service
-
-fill out your values into `src/components/tab/config.ts`
-
-```
-const config = {
-  FRS_local:false,
-  FRS_TokenProviderURL:"https://yourAZFunction.azurewebsites.net/api/GetToken",
-  FRS_TenantId: "your valid Guid",
-  FRS_Endpoint:"https://eu.fluidrelay.azure.com"
-};
-```
-
-## Deploy Application
-
-Be sure this is a Sample and it is not production Ready.
-
-### Deploy this sample as Storage Account and Azure Function
-
-#### Prerequisites:
-
--[dotnet6 SDK] (https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-
-or
-
-- [Visual Studio] (https://visualstudio.microsoft.com/)
-
-#### Setup the Infrastructure
-
-`infra/azure`
-
-### Deploy as Azure Static WebApp
-
-- Create your Azure Resources `infra/swa`
-- Push this SourceCode to your Repo
-- You find a Sample-Pipeline for Azure DevOps and also for Github in this  Sample root folder.
-
-#### Azure DevOps
-
-Use the azure-devops-static-webapp.yaml
-
-- Parameter: DeploymentToken
-- How to Setup
-
-#### Github Action
-
-Use the ???TODO??.yaml
-
-- Parameter: DeploymentToken
-- How to Setup
 
 ## Version history
 

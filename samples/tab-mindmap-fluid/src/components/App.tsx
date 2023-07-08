@@ -14,7 +14,7 @@ import TermsOfUse from "./TermsOfUse";
 import Tab from "./Tab";
 import {TabConfig} from "./TabConfig";
 import { TeamsFxContext } from "./Context";
-import config from "./tab/config";
+import config from "./config";
 
 
 /**

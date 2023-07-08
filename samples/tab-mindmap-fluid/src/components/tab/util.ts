@@ -2,7 +2,7 @@ import { AttachState, IFluidContainer,  SharedMap } from "fluid-framework";
 import { AzureClient, AzureClientProps, AzureContainerServices, AzureFunctionTokenProvider, AzureMember } from "@fluidframework/azure-client";
 import { SharedString } from "@fluidframework/sequence";
 import { InitMindMapContainer } from "./model/MindMapFluidModel"
-import config from "./config";
+import config from "../config";
 import { InsecureTokenProvider } from "@fluidframework/test-client-utils";
 
 export const containerIdQueryParamKey = "containerId";
