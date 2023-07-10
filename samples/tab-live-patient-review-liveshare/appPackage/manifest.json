@@ -1,0 +1,79 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.14/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.14",
+  "version": "1.0.0",
+  "id": "${{TEAMS_APP_ID}}",
+  "packageName": "com.microsoft.teams.extension",
+  "developer": {
+    "name": "Rapid Circle",
+    "websiteUrl": "https://www.rapidcircle.com",
+    "privacyUrl": "${{PROVISIONOUTPUT__FRONTENDHOSTINGOUTPUT__ENDPOINT}}${{PROVISIONOUTPUT__FRONTENDHOSTINGOUTPUT__INDEXPATH}}/privacy",
+    "termsOfUseUrl": "${{PROVISIONOUTPUT__FRONTENDHOSTINGOUTPUT__ENDPOINT}}${{PROVISIONOUTPUT__FRONTENDHOSTINGOUTPUT__INDEXPATH}}/termsofuse"
+  },
+  "icons": {
+    "color": "resources/color.png",
+    "outline": "resources/outline.png"
+  },
+  "name": {
+    "short": "${{CONFIG__MANIFEST__APPNAME__SHORT}}",
+    "full": "${{CONFIG__MANIFEST__APPNAME__FULL}}"
+  },
+  "description": {
+    "short": "Meeting app to help decide who should speak next",
+    "full": "${{CONFIG__MANIFEST__APPNAME__SHORT}} is displayed in the side panel of a Teams meeting to help decide who should speak next."
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [],
+  "composeExtensions": [],
+  "configurableTabs": [
+    {
+      "configurationUrl": "${{PROVISIONOUTPUT__FRONTENDHOSTINGOUTPUT__ENDPOINT}}${{PROVISIONOUTPUT__FRONTENDHOSTINGOUTPUT__INDEXPATH}}/config",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team",
+        "groupchat"
+      ],
+      "context": [
+        "meetingChatTab",
+        "meetingDetailsTab",
+        "meetingSidePanel",
+        "meetingStage"
+      ]
+    }
+  ],
+  "permissions": [
+    "messageTeamMembers"
+  ],
+  "authorization": {
+    "permissions": {
+      "resourceSpecific": [
+        {
+          "name": "LiveShareSession.ReadWrite.Chat",
+          "type": "Delegated"
+        },
+        {
+          "name": "LiveShareSession.ReadWrite.Group",
+          "type": "Delegated"
+        },
+        {
+          "name": "MeetingStage.Write.Chat",
+          "type": "Delegated"
+        },
+        {
+          "name": "ChannelMeetingStage.Write.Group",
+          "type": "Delegated"
+        }
+      ]
+    }
+  },
+  "validDomains": [
+    "${{PROVISIONOUTPUT__FRONTENDHOSTINGOUTPUT__DOMAIN}}"
+  ],
+  "configurableProperties": [
+    "largeImageUrl",
+    "smallImageUrl",
+    "name",
+    "shortDescription",
+    "accentColor"
+  ]
+}
