@@ -1,0 +1,23 @@
+﻿@{
+	ViewData["Title"] = "Vacation Submit";
+}
+<h1>Vacation Submit</h1>
+<p>Hello! Use the form below to submit your vacation period. All vacation submitions will undergo to approval for your manager: <span id="managerName" style="display: none"></span></p>
+<div id="divIdExpenseForm">
+	<fieldset id="forms__input">
+		<legend>Input fields</legend>
+		<p>
+			<label for="input__text2">Start Date</label>
+			<input type="date" id="iddate1" min="2020-01-20" max="2030-12-31">
+		</p>
+		<p>
+			<label for="input__text2">End Date</label>
+			<input type="date" id="iddate2" min="2020-01-20" max="2030-12-31">
+		</p>
+		<p>
+			<button onclick="submitVacation()">Submit</button>
+		</p>
+	</fieldset>
+</div>
+<div id="successFormVacation" style="display: none"> <p>Your vacation request has successfully been submitted. You have also received an e-mail regarding this.</p></div>
+<div id="errorFormVacation" style="display: none"> <p>There was an error in your request</p> </div>

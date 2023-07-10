@@ -1,0 +1,90 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\felipedotti\\Documents\\Git\\teams-dev-samples-felipedotti\\samples\\app-coorporatehelper-tab\\CoorporateHelper.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\felipedotti\\Documents\\Git\\teams-dev-samples-felipedotti\\samples\\app-coorporatehelper-tab\\CoorporateHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\felipedotti\\Documents\\Git\\teams-dev-samples-felipedotti\\samples\\app-coorporatehelper-tab\\CoorporateHelper.csproj",
+        "projectName": "CoorporateHelper",
+        "projectPath": "C:\\Users\\felipedotti\\Documents\\Git\\teams-dev-samples-felipedotti\\samples\\app-coorporatehelper-tab\\CoorporateHelper.csproj",
+        "packagesPath": "C:\\Users\\felipedotti\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\felipedotti\\Documents\\Git\\teams-dev-samples-felipedotti\\samples\\app-coorporatehelper-tab\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\felipedotti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.AzureAD.UI": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.Web.LibraryManager.Build": {
+              "target": "Package",
+              "version": "[2.1.113, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

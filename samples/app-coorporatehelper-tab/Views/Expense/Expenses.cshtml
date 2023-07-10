@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Expense Submit";
+}
+<h1>Expense Submit</h1>
+<p>Hello! Use the form below to submit a expense file. All expense submitions will undergo to approval for your manager: <span id="managerName" style="display: none"></span></p>
+<div id="divIdExpenseForm">
+	<fieldset id="forms__input">
+		<legend>Input fields</legend>
+		<p>
+			<label for="input__text">Expense Name</label>
+			<input id="input__text" type="text" placeholder="Input">
+		</p>
+		<p>
+			<label for="input__text2">Value</label>
+				<input id="input__text2" type="number" min="0" oninput="this.value = !!this.value && Math.abs(this.value)>= 0 ? Math.abs(this.value) : null" placeholder="Enter a Number">
+		</p>
+		<p>
+			<label for="input__text2">Date</label>
+			<input type="date" id="idd" value="2023-01-01" min="2023-01-01" max="2030-12-31">
+		</p>
+		<p>
+			<label for="input__file">File Input</label>
+			<input id="input__file" type="file">
+		</p>
+		<p>
+			<button onclick="submitExpense()">Submit</button>
+		</p>
+	</fieldset>
+</div>
+<div id="successForm" style="display: none"> <p>Your expense has successfully been submitted. You have also received an e-mail regarding this.</p></div>
+<div id="errorForm" style="display: none"> <p>There was an error in your request</p> </div>

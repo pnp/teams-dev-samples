@@ -1,0 +1,54 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.12/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.12",
+  "version": "1.0.5",
+  "id": "<<YOUR-MICROSOFT-APP-ID>>",
+  "packageName": "com.microsoft.coorporatehelper",
+  "developer": {
+    "name": "Felipe Dotti",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.microsoft.com/privacy",
+    "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+  },
+  "name": {
+    "short": "Coorporate Helper",
+    "full": "Coorporate Helper"
+  },
+  "description": {
+    "short": "Coorporate Helper",
+    "full": "Coorporate Helper"
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#60A18E",
+  "staticTabs": [
+    {
+      "entityId": "home",
+      "name": "Home",
+      "contentUrl": "https://{{domain-name}}/Home/Index",
+      "scopes": [ "personal" ]
+    },
+    {
+      "entityId": "expense",
+      "name": "Expenses",
+      "contentUrl": "https://{{domain-name}}/expense/expenses",
+      "scopes": [ "personal" ]
+    },
+    {
+      "entityId": "vacation",
+      "name": "Vacations",
+      "contentUrl": "https://{{domain-name}}/vacation/vacations",
+      "scopes": [ "personal" ]
+    }
+  ],
+  "permissions": [ "identity", "messageTeamMembers" ],
+  "validDomains": [
+    "*.ngrok.io"
+  ],
+  "webApplicationInfo": {
+    "id": "<<YOUR-MICROSOFT-APP-ID>>",
+    "resource": "api://{{domain-name}}/<<YOUR-MICROSOFT-APP-ID>>"
+  }
+}
