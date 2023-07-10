@@ -1,0 +1,66 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Topic: ${selectedTopic}",
+            "wrap": true,
+            "weight": "Bolder",
+            "color": "Accent",
+            "style": "heading",
+            "fontType": "Default",
+            "size": "Large",
+            "isSubtle": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Question ${currentindex}/${totalQuestionsCount}",
+                    "wrap": true,
+                    "size": "large",
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "${question}",
+                    "wrap": true
+                },
+                {
+                    "type": "Input.ChoiceSet",
+                    "id": "answerChoice",
+                    "style": "expanded",
+                    "choices": [
+                        {
+                            "$data": "${optionSet}",
+                            "title": "${title}",
+                            "value": "${value}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Reference [link](${referenceLink})",
+            "wrap": true
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Execute",
+            "title": "Next Question >",
+            "verb": "nextquestion",
+            "fallback": "Action.Submit"
+        },
+        {
+            "type": "Action.Execute",
+            "title": "End Assessment",
+            "verb": "endassessment",
+            "fallback": "Action.Submit"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5"
+}
