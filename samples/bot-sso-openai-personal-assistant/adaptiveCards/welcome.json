@@ -1,0 +1,18 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "weight": "Bolder",
+      "text": "Hi, I am your personal assistant bot!"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Please ask me a question to get started. You can ask me about your details, calendar or tasks.",
+      "wrap": true
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}
