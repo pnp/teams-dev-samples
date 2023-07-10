@@ -55,12 +55,12 @@ if you have already created the Azure function you can also import the Publishin
 
 ### Side notes
 
-Please store the key in an  Azure KeyVault, with manages Identity it is much more secure than in the AppSetting
+Please store the key in an  Azure KeyVault, with Managed-Identity it is a better than the appsetting. To keep it simple it is stored in this location.
 
 ## Use the Azure Fluid Relay Service and the Azure Function
 
 Please open the File `src/config.ts`
-FRS stands for Fluid Relay Service and only these parameters are interesting in this step
+FRS stands for Fluid Relay Service and only these parameters are engaging in this step
 
 - change `FRS_local` from `true` to `false`
 - `FRS_TokenProviderURL` you find your URL in the Azure Function `Overview`, please add `/api/GetToken`as Endpoint
