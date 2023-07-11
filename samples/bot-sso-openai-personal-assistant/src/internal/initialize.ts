@@ -1,6 +1,8 @@
 import { BotBuilderCloudAdapter } from "@microsoft/teamsfx";
 import ConversationBot = BotBuilderCloudAdapter.ConversationBot;
-
+import { TeamsActivityHandler } from "botbuilder";
+import { MessageBuilder } from "@microsoft/teamsfx";
+import welcomeCard from "../adaptiveCards/welcome.json";
 import config from "./config";
 import { UserQueryHandler } from "../userQueryHandler";
 
@@ -34,3 +36,27 @@ export const commandBot = new ConversationBot({
     ssoCommands: [new UserQueryHandler()],
   }
 });
+
+class WelcomeBot extends TeamsActivityHandler {
+
+  constructor() {
+    super();
+
+    this.onMembersAdded(async (context, next) => {
+      const membersAdded = context.activity.membersAdded;
+      for (let cnt = 0; cnt < membersAdded.length; cnt++) {
+        if (membersAdded[cnt].id) {
+          await context.sendActivity(MessageBuilder.attachAdaptiveCard(welcomeCard, null));
+          break;
+        }
+      }
+      await next();
+    });
+  }
+
+  async run(context) {
+    await super.run(context);
+  }
+}
+
+export const welcomeBot = new WelcomeBot();

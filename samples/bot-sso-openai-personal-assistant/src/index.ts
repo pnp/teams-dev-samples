@@ -1,5 +1,5 @@
 import * as restify from "restify";
-import { commandBot } from "./internal/initialize";
+import { commandBot, welcomeBot } from "./internal/initialize";
 const path = require("path");
 import "isomorphic-fetch";
 
@@ -25,6 +25,9 @@ server.post("/api/messages", async (req, res) => {
       throw err;
     }
   });
+
+  // If welcome card is needed then use the below code instead
+  // await commandBot.adapter.process(req, res, (context) => welcomeBot.run(context));
 });
 
 server.get(
