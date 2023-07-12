@@ -2,12 +2,12 @@
 
 ## Summary
 
-- This sample Teams bot that provides information to the current logged in user. 
+- This sample is a Teams bot that provides information to the current logged in user. 
 - The information can be the user's basic details or user's calendar details or user's tasks. - The information exchanged between the user and the chatbot is in natural language. 
 - The chatbot uses [OpenAI's function calling feature](https://openai.com/blog/function-calling-and-other-api-updates) to understand whether a function in the code needs to be called based on user's query. 
 - The chatbot uses Microsoft Graph API to get the user's details or details from calendar or tasks.
 - Single Sign-on is implemented using `botbuilder` and Teams Framework to call Microsoft Graph API.
-- That JSON response from Microsoft Graph is the transformed into a natural language response by OpenAI and sent back to the user.
+- The JSON response from Microsoft Graph is the transformed into a natural language response by OpenAI and sent back to the user.
 
 
 ![Personal Assistant Bot](assets/images/bot-pa.gif)
@@ -17,6 +17,14 @@
 - The chatbot supports multi lingual responses which is provided out of the box by OpenAI.
 
 ![Personal Assistant Bot Multi Lingual](assets/images/bot-pa-multilingual.png)
+
+## Further details
+- This sample shows how use [OpenAI's function calling feature](https://openai.com/blog/function-calling-and-other-api-updates). A Teams bot is used to show this feature in action. 
+- The bot sends the user's message to [OpenAI API](https://platform.openai.com/docs/api-reference). 
+- Based on user's message, OpenAI determines whether a function (in our code) needs to be called. 
+- If so, based on the response from OpenAI, the bot calls the function (in our code i.e. a typescript function in this sample) - which in turn uses Microsoft Graph API to get the details of the user or their calendar or their tasks. 
+- The result of the function (raw JSON) is then sent back to OpenAI. OpenAI then uses the result to generate a response based on user's message/query.
+- That response is then shown as text or formatted as an adaptive card and sent back to the user.
 
 ## Prerequisites
 - [Node.js](https://nodejs.org/), supported versions: 16, 18
