@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MsTeamsQuizBot": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7210"
+    }
+  }
+}
