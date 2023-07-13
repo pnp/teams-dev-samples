@@ -94,4 +94,4 @@ Steps to debug the application:
   
   The app's state is saved in a Cosmos Database, allowing the Function App to pause or scale out to multiple instances without affecting quizzes in progress. When the Function App remains running, a memory cache is used to retrieve data without accessing the Cosmos Database.
 
-<img src="https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/app-msteams-quiz-bot" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/app-msteams-quiz-bot" />
