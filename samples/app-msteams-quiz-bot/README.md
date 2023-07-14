@@ -34,7 +34,7 @@ https://user-images.githubusercontent.com/126659601/246180922-01173cba-c3f4-4846
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|July 13, 2023||Initial release
+1.0|July 13, 2023|Marcel Paalvast|Initial release
 
 ## Disclaimer
 
