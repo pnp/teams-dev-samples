@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.20.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.9.1"
+    },
+    "version": "1.17.2",
+    "libraryName": "guest-user-overview",
+    "libraryId": "4a429c92-ca92-4b31-97be-da28ddb9541f",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "guest-user-overview",
+    "solutionShortDescription": "guest-user-overview description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
