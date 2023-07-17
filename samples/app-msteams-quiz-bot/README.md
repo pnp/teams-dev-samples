@@ -6,6 +6,8 @@ MsTeams Quiz Bot is a Microsoft Teams bot that allows users to create quizzes on
 
 When mentioned with `@bot-name quiz`, the bot creates an adaptive card that enables users to set up a quiz about a specific topic and in their preferred language. The user initiating the quiz has full control to participate, lock a question, generate the next question, and stop the quiz to view the top results.
 
+![Example of a quiz in action](assets/example-questions-and-result.png)
+
 https://user-images.githubusercontent.com/126659601/246180922-01173cba-c3f4-4846-b722-6e1aa31cc17c.mp4
 
 ## Frameworks
