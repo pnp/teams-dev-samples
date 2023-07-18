@@ -76,3 +76,5 @@ _See below an app architecture_
 
 1. Once the both front-end and back-end apps running, you can now use the document pack app in the Microsoft Teams client.
 2. Upload some documents and click on Create PDF document pack button to create document pack
+
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-sso-documentpack" />

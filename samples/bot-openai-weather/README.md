@@ -65,6 +65,12 @@ OPENAI_API_KEY=""
 WEATHER_API_KEY=""
 ```
 
+- Install server side packages
+
+```sh
+npm install
+```
+
 - From VS Code:
     1. hit `F5` to start debugging. Alternatively open the `Run and Debug Activity` Panel and select `Debug (Edge)` or `Debug (Chrome)`.    
 - Once the weather bot is up and running, Ask the bot about the weather in any city. See below some sample questions
@@ -73,3 +79,4 @@ WEATHER_API_KEY=""
   2.  Can you tell me what the weather is expected to be like in London over the next three days?
   3. Can you tell me what the weather is expected to be like in London over the next five days?
 
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/bot-openai-weather" />

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-bot-graph-bookmark",
+    "reponame": "bot-graph-bookmark",
+    "source": "pnp",
+    "title": "Teams Bookmark Bot",
+    "shortDescription": "This sample is a bot for Microsoft Teams that provides information about current weather as well as daily forecast",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-graph-bookmark",
+    "longDescription": [
+      "This is a sample Bookmark bot for Microsoft Teams. It allows a user in Teams to create bookmark item in the SharePoint list using Microsoft Graph API. It also implements single sign-on authentication."
+    ],
+    "creationDateTime": "2023-05-16",
+    "updateDateTime": "2023-05-16",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "ttk"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-graph-bookmark/assets/trigger-bookmark.jpg",
+        "alt": "Picture of a Teams bot that allows bookmarking a web page"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ejazhussain",
+        "company": "",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/472320?v=4",
+        "name": "Ejaz Hussain",
+        "twitter": "EjazHussain_"
+      }
+    ],
+    "references": [
+      {
+        "name": "Office 365 Clinic (author's blog)",
+        "url": "https://www.office365clinic.com/"
+      },
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

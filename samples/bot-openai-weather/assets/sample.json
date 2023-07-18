@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-bot-openai-weather",
+    "reponame": "bot-openai-weather",
+    "source": "pnp",
+    "title": "Teams OpenAI Weather Bot",
+    "shortDescription": "This sample is a bot for Microsoft Teams that provides information about current weather as well as daily forecast",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-openai-weather",
+    "longDescription": [
+      "This sample is a bot for Microsoft Teams that provides information about current weather as well as daily forecast weather for given city. It uses OpenAI and OpenWeather API's."
+    ],
+    "creationDateTime": "2023-07-09",
+    "updateDateTime": "2023-07-09",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "restify"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "ttk"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-openai-weather/assets/bot-openai-weather-demo.gif",
+        "alt": "Picture of a Teams bot with responses relating to the weather"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ejazhussain",
+        "company": "",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/472320?v=4",
+        "name": "Ejaz Hussain",
+        "twitter": "EjazHussain_"
+      }
+    ],
+    "references": [
+      {
+        "name": "Office 365 Clinic (author's blog)",
+        "url": "https://www.office365clinic.com/"
+      },
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

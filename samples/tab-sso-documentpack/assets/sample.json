@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-sso-documentpack",
+    "reponame": "tab-sso-documentpack",
+    "source": "pnp",
+    "title": "Teams Document Pack",
+    "shortDescription": "Sample app to convert different types of documents into PDF and then merge them together",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-sso-documentpack",
+    "longDescription": [
+      "The purpose of this sample app is to convert different types of documents into PDF via the Microsoft Graph API, and then merge them together in order to form one document pack. It utilizes a Microsoft Teams tab with single sign-on enabled and uses an Azure function as its backend to interact with the Graph API."
+    ],
+    "creationDateTime": "2023-06-25",
+    "updateDateTime": "2023-06-25",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "ttk"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/blob/main/samples/tab-sso-documentpack/assets/architecture-diagram.png",
+        "alt": "Architecture document with Azure function and Teams tab"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ejazhussain",
+        "company": "",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/472320?v=4",
+        "name": "Ejaz Hussain",
+        "twitter": "EjazHussain_"
+      }
+    ],
+    "references": [
+      {
+        "name": "Office 365 Clinic (author's blog)",
+        "url": "https://www.office365clinic.com/"
+      },
+      {
+        "name": "Azure Bot Framework resources",
+        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]
