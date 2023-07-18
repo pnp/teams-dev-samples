@@ -1,0 +1,114 @@
+[
+    {
+        "name": "pnp-sp-dev-teams-sample-bot-knowledge-quest",
+        "reponame": "bot-knowledge-quest",
+        "source": "pnp",
+        "title": "Knowledge Quest Teams Bot",
+        "shortDescription": "An interactive Chat Bot application designed to allow users to test their knowledge on specific topics.",
+        "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-knowledge-quest",
+        "longDescription": [
+            "The Knowledge Quest Teams Bot is an interactive Chat Bot application designed to allow users to test their knowledge on specific topics using the power of OpenAI"
+        ],
+        "creationDateTime": "2023-06-15",
+        "updateDateTime": "2023-06-15",
+        "products": [
+            "Teams Global Hack "
+        ],
+        "metadata": [
+            {
+                "key": "TEAMS-SAMPLE-SOURCE",
+                "value": "pnp"
+            },
+            {
+                "key": "TEAMS-SAMPLE-TYPE",
+                "value": "demo"
+            },
+            {
+                "key": "TEAMS-CLIENT-LANGUAGE",
+                "value": ""
+            },
+            {
+                "key": "TEAMS-CLIENT-PLATFORM",
+                "value": ""
+            },
+            {
+                "key": "TEAMS-CLIENT-UI",
+                "value": "javascript"
+            },
+            {
+                "key": "TEAMS-SERVER-LANGUAGE",
+                "value": "javascript"
+            },
+            {
+                "key": "TEAMS-SERVER-PLATFORM",
+                "value": "restify"
+            },
+            {
+                "key": "TEAMS-BOT-FRAMEWORK",
+                "value": "bot46"
+            },
+            {
+                "key": "TEAMS-FEATURES",
+                "value": "bot"
+            },
+            {
+                "key": "TEAMS-GENERATOR",
+                "value": "ttk"
+            }
+        ],
+        "thumbnails": [
+            {
+                "type": "image",
+                "order": 100,
+                "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-knowledge-quest/assets/preview.gif",
+                "alt": "Preview of app"
+            }
+        ],
+        "authors": [
+            {
+                "gitHubAccount": "kunj-sangani",
+                "company": "",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/25693207?v=4",
+                "name": "Kunj Balkrishna Sangani",
+                "twitter": "https://twitter.com/sanganikunj"
+            },
+            {
+                "gitHubAccount": "nanddeepn",
+                "company": "",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/8310319?v=4",
+                "name": "Nanddeep Nachan",
+                "twitter": "https://twitter.com/NanddeepNachan"
+            },
+            {
+                "gitHubAccount": "siddharth-vaghasia",
+                "company": "",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/9557557?v=4",
+                "name": "Siddharth Vaghasia",
+                "twitter": ""
+            },
+            {
+                "gitHubAccount": "SmitaNachan",
+                "company": "",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/65232102?v=4",
+                "name": "Smita Nachan",
+                "twitter": ""
+            }
+
+        ],
+        "references": [
+            {
+                "name": "Teams developer questions",
+                "url": "https://aka.ms/sample-ref-teams-dev-questions"
+            },
+            {
+                "name": "Teams development videos from Microsoft",
+                "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+            },
+            {
+                "name": "Teams development videos from the community",
+                "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+            }
+        ],
+        "version": "1.0.0.0"
+    }
+]

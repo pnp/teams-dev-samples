@@ -132,4 +132,4 @@ Once deployed, you may want to distribute your application to your organization'
 * My Stats: The app also offers statistics regarding the quizzes you have taken in the past, including your scores. This feature provides valuable insights into your knowledge and learning progress based on your previous quiz performances. It's an excellent tool to assess how well you're doing and track your growth over time.
 
 
-<img src="https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/bot-knowledge-quest" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/bot-knowledge-quest" />
