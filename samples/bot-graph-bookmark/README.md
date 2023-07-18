@@ -83,5 +83,4 @@ The bot should run in a recent conversation and offer some command suggestions. 
 
 This will display an adaptive card, where you can enter the bookmark information. When the adaptive card is submitted, it will add your bookmark to the SharePoint lsit.
 
-
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-graph-bookmark" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/bot-graph-bookmark" />

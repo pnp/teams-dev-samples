@@ -1,0 +1,177 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.5",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "${location}",
+            "size": "ExtraLarge",
+            "isSubtle": true,
+            "wrap": true
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "102px",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "${currentImageUrl}",
+                            "width": "100px",
+                            "height": "100px"
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 50,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "${currentTemp}°C",
+                            "size": "ExtraLarge",
+                            "spacing": "None",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "${currentDescription}",
+                            "size": "Large",
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                },
+                {
+                    "type": "Column",
+                    "width": 50,
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Sunrise: ${sunrise}",
+                            "horizontalAlignment": "Left",
+                            "spacing": "None",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Sunset: ${sunset}",
+                            "horizontalAlignment": "Left",
+                            "spacing": "None",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Humidity: ${currentHumidity}%",
+                            "horizontalAlignment": "Left",
+                            "spacing": "None",
+                            "wrap": true
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Wind Speed: ${currentWindSpeed}mph",
+                            "horizontalAlignment": "Left",
+                            "spacing": "None",
+                            "wrap": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "Forecast",
+            "wrap": true,
+            "spacing": "Medium",
+            "size": "Large"
+        },
+        {
+            "type": "Container",
+            "$data": "${dailyForecastData}",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "52px",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "url": "${imageUrl}",
+                                    "width": "50px",
+                                    "height": "50px",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": 75,
+                            "items": [
+                                {
+                                    "type": "ColumnSet",
+                                    "columns": [
+                                        {
+                                            "type": "Column",
+                                            "width": 50,
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${date}",
+                                                    "wrap": true,
+                                                    "size": "Large",
+                                                    "spacing": "Small"
+                                                },
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${description}",
+                                                    "wrap": true,
+                                                    "spacing": "Small"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Column",
+                                            "width": 50,
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${high}°C",
+                                                    "wrap": true,
+                                                    "size": "Large",
+                                                    "spacing": "Small"
+                                                },
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "${low}°C",
+                                                    "wrap": true,
+                                                    "spacing": "Small"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "spacing": "None"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        }
+                    ]
+                }
+            ],
+            "separator": true
+        },
+        {
+            "type": "TextBlock",
+            "size": "default",
+            "isSubtle": true,
+            "text": "",
+            "wrap": true,
+            "maxLines": 0
+        }
+    ]
+}
