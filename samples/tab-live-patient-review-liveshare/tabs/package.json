@@ -13,7 +13,7 @@
     "@microsoft/teams-js": "^2.11.0",
     "fluid-framework": "^1.2.3",
     "lodash": "^4.17.21",
-    "node-sass": "^7.0.3",
+    "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-drag-reorder": "^1.2.0",
