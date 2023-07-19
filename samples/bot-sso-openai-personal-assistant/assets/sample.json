@@ -41,7 +41,7 @@
         },
         {
           "key": "TEAMS-SERVER-PLATFORM",
-          "value": ""
+          "value": "restify"
         },
         {
           "key": "TEAMS-BOT-FRAMEWORK",
@@ -53,14 +53,14 @@
         },
         {
           "key": "TEAMS-GENERATOR",
-          "value": ""
+          "value": "ttk"
         }
       ],
       "thumbnails": [
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-sso-openai-personal-assistant/assets/bot-pa.gif",
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-sso-openai-personal-assistant/assets/images/bot-pa.gif",
           "alt": "Picture of a Teams bot personal assistant"
         }
       ],

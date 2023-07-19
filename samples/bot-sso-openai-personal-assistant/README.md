@@ -53,6 +53,9 @@ Credits to Microsoft for creating a the [Teams Bot SSO sample](https://github.co
        ```
        OPENAI_API_KEY=<your-openai-api-key>
        ```
+
+- If your OpenAI subscription doesn't include GPT-4, change the GPT_MODEL_TO_USE in `env/.env.local` and `env/.env.dev` to gpt-3.5-turbo
+
 ### Run the app locally
 - From VS Code:
     1. Clone the repo to your local workspace or directly download the source code.
@@ -94,4 +97,4 @@ Credits to Microsoft for creating a the [Teams Bot SSO sample](https://github.co
   - From TeamsFx CLI:
     1. Run command: `teamsfx preview --env dev`.
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-sso-openai-personal-assistant" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/bot-sso-openai-personal-assistant" />
