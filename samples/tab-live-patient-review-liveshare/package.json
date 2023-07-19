@@ -9,7 +9,7 @@
         "installAll": "npm run install:tabs"
     },
     "devDependencies": {
-        "@microsoft/teamsfx-cli": "1.*"
+        "@microsoft/teamsfx-cli": "2.*"
     },
     "license": "MIT",
     "dependencies": {
