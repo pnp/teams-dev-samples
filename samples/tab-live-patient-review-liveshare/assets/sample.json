@@ -1,115 +1,106 @@
 [
   {
-    "name": "pnp-sp-dev-teams-sample-tab-meeting-whos-next",
-    "reponame": "tab-meeting-whos-next",
-    "source": "pnp",
-    "title": "Who's Next Meeting App",
-    "shortDescription": "This app helps decide who should speak next in a meeting",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-whos-next",
-    "longDescription": [
-      "This app helps decide who should speak next in a meeting. It is anonymous; anyone in the meeting can enter a name to put on the list."
-    ],
-    "creationDateTime": "2020-04-23",
-    "updateDateTime": "2020-04-23",
-    "products": [
-      "Teams"
-    ],
-    "metadata": [
-      {
-        "key": "TEAMS-SAMPLE-SOURCE",
-        "value": "pnp"
-      },
-      {
-        "key": "TEAMS-SAMPLE-TYPE",
-        "value": "demo"
-      },
-      {
-        "key": "TEAMS-CLIENT-LANGUAGE",
-        "value": "javascript"
-      },
-      {
-        "key": "TEAMS-CLIENT-PLATFORM",
-        "value": "teamstoolkit"
-      },
-      {
-        "key": "TEAMS-CLIENT-UI",
-        "value": "react"
-      },
-      {
-        "key": "TEAMS-SERVER-LANGUAGE",
-        "value": ""
-      },
-      {
-        "key": "TEAMS-SERVER-PLATFORM",
-        "value": ""
-      },
-      {
-        "key": "TEAMS-BOT-FRAMEWORK",
-        "value": ""
-      },
-      {
-        "key": "TEAMS-FEATURES",
-        "value": "tab, meeting"
-      },
-      {
-        "key": "TEAMS-GENERATOR",
-        "value": ""
-      }
-    ],
-    "thumbnails": [
-      {
-        "type": "image",
-        "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/samples/whosnext/blob/main/assets/WhosTurn.gif",
-        "alt": "This app helps decide who should speak next at a meeting, and demonstrates the use of the Fluid Framework"
-      }
-    ],
-    "authors": [
-      {
-        "gitHubAccount": "BobGerman",
-        "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/4664072?s=460&u=29310fd67417ec5f81dc8881dc6eb5dc0065da2d&v=4",
-        "name": "Bob German",
-        "twitter": "Bob1German"
-      },
-      {
-        "gitHubAccount": "rabwill",
-        "company": "Microsoft",
-        "pictureUrl": "https://avatars.githubusercontent.com/u/20379311?v=4",
-        "name": "Rabia Williams",
-        "twitter": "williamsrabia"
-      }
-    ],
-    "references": [
-      {
-        "name": "Azure Bot Framework resources",
-        "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
-      },
-      {
-        "name": "Microsoft Teams bots",
-        "url": "https://aka.ms/sample-ref-teams-docs-bots"
-      },
-      {
-        "name": "Microsoft Teams messaging extensions",
-        "url": "https://aka.ms/sample-ref-docs-msgext"
-      },
-      {
-        "name": "Microsoft Teams task modules",
-        "url": "https://aka.ms/sample-ref-teams-docs-task-modules"
-      },
-      {
-        "name": "Teams developer questions",
-        "url": "https://aka.ms/sample-ref-teams-dev-questions"
-      },
-      {
-        "name": "Teams development videos from Microsoft",
-        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
-      },
-      {
-        "name": "Teams development videos from the community",
-        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
-      }
-    ],
-    "version": "1.0.0.0"
+      "name": "pnp-sp-dev-teams-sample-tab-live-patient-review-liveshare",
+      "reponame": "tab-live-patient-review-liveshare",
+      "source": "pnp",
+      "title": "Live patient review",
+      "shortDescription": "Meeting app to help specialists and doctors review patient details on the go in a meeting",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-live-patient-review-liveshare",
+      "longDescription": [
+          "Application solving the problem statement for specialists and doctors to review patient details on the go in a meeting. Using Live Share SDK, Presence, Fluid Framework and role based options in the App."
+      ],
+      "creationDateTime": "2023-06-15",
+      "updateDateTime": "2023-06-15",
+      "products": [
+          "Teams Global Hack "
+      ],
+      "metadata": [
+          {
+              "key": "TEAMS-SAMPLE-SOURCE",
+              "value": "pnp"
+          },
+          {
+              "key": "TEAMS-SAMPLE-TYPE",
+              "value": "demo"
+          },
+          {
+              "key": "TEAMS-CLIENT-LANGUAGE",
+              "value": "javascript"
+          },
+          {
+              "key": "TEAMS-CLIENT-PLATFORM",
+              "value": ""
+          },
+          {
+              "key": "TEAMS-CLIENT-UI",
+              "value": "react"
+          },
+          {
+              "key": "TEAMS-SERVER-LANGUAGE",
+              "value": ""
+          },
+          {
+              "key": "TEAMS-SERVER-PLATFORM",
+              "value": ""
+          },
+          {
+              "key": "TEAMS-BOT-FRAMEWORK",
+              "value": ""
+          },
+          {
+              "key": "TEAMS-FEATURES",
+              "value": "tab,meeting"
+          },
+          {
+              "key": "TEAMS-GENERATOR",
+              "value": "ttk"
+          }
+      ],
+      "thumbnails": [
+          {
+              "type": "image",
+              "order": 100,
+              "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-live-patient-review-liveshare/assets/LivePresenceOnCanvas.png",
+              "alt": "Preview of app"
+          }
+      ],
+      "authors": [
+          {
+              "gitHubAccount": "rfjschouten",
+              "company": "Rapid Circle",
+              "pictureUrl": "https://avatars.githubusercontent.com/u/13015367?v=4",
+              "name": "Robert Schouten",
+              "twitter": "https://twitter.com/rfjschouten"
+          },
+          {
+              "gitHubAccount": "mistervisser",
+              "company": "Rapid Circle",
+              "pictureUrl": "https://avatars.githubusercontent.com/u/7722651?v=4",
+              "name": "Maarten Visser",
+              "twitter": "https://twitter.com/mvisser"
+          },
+         {   "gitHubAccount": "Shrusti13",
+              "company": "Rapid Circle",
+              "pictureUrl": "https://conference.c-sharpcorner.com/wp-content/uploads/2022/08/Shrushti.png",
+              "name": "Shrushti Shah",
+              "twitter": ""
+          }
+
+      ],
+      "references": [
+          {
+              "name": "Teams developer questions",
+              "url": "https://aka.ms/sample-ref-teams-dev-questions"
+          },
+          {
+              "name": "Teams development videos from Microsoft",
+              "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+          },
+          {
+              "name": "Teams development videos from the community",
+              "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+          }
+      ],
+      "version": "1.0.0.0"
   }
 ]

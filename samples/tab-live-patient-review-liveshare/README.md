@@ -109,3 +109,4 @@ After you have completed the provision and deploy steps in `Deploy the app to Az
 ### Use in other tenants
 
 This is a very simple application. It doesn't authenticate users, so the manifest works in any tenant. When you have a production deployment in Azure, you can use the same app package in any Microsoft 365 tenant where you have permission to upload or install it.
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-live-patient-review-liveshare" />
