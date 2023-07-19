@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Alice Cooper",
+    "jobTitle": "Doctor",
+    "Hospital": "St. Mary's",
+    "patients": [
+      {
+        "name": "Leah Smith",
+        "comments": "Patient is doing well",
+        "status": "New"
+      },
+      {
+        "name": "John Doe",
+        "comments": "Patient is doing well",
+        "status": "New"
+      },
+      {
+        "name": "Tessa Smith",
+        "comments": "Patient is doing well",
+        "status": "In progress"
+      }
+    ]
+  },
+  {
+    "name": "Bob German",
+    "patients": [
+      {
+        "name": "John Doe",
+        "status": "New"
+      }
+    ]
+  },
+  {
+    "name": "Charlene Dior",
+    "patients": [
+      {
+        "name": "Tessa Smith",
+        "status": "In progress"
+      }
+    ]
+  }
+]
