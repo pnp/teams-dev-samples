@@ -1,0 +1,47 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "weight": "Bolder",
+      "text": "Select your Self-assessment"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Choose your preferences to start testing your knowledge on a specific topic.",
+      "wrap": true
+    },
+    {
+      "id": "assessmenttopic",
+      "type": "Input.Text",
+      "label": "Assessment topic",
+      "isRequired": true
+    },
+    {
+      "id": "numofquestions",
+      "type": "Input.Number",
+      "label": "Number of questions",
+      "value": 5,
+      "min": 3,
+      "max": 10,
+      "isRequired": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Execute",
+      "title": "Start self-assessment",
+      "verb": "startselfassessment",
+      "fallback": "Action.Submit"
+    },
+    {
+      "type": "Action.Execute",
+      "title": "My Stats",
+      "verb": "mystats",
+      "fallback": "Action.Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}

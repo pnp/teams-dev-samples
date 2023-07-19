@@ -1,0 +1,32 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Medium",
+      "weight": "Bolder",
+      "text": "Welcome to Knowledge Quest"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Expand your knowledge, test your skills, and unlock your full potential with this ultimate app for interactive learning and self-assessment. Challenge yourself, explore various topics, and become a true knowledge master.",
+      "wrap": true
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Execute",
+      "title": "Select self-assessment",
+      "verb": "selectselfassessment",
+      "fallback": "Action.Submit"
+    },
+    {
+      "type": "Action.Execute",
+      "title": "My Stats",
+      "verb": "mystats",
+      "fallback": "Action.Submit"
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}
