@@ -1,0 +1,92 @@
+[
+    {
+      "name": "pnp-sp-dev-teams-sample-bot-sso-openai-personal-assistant",
+      "reponame": "bot-sso-openai-personal-assistant",
+      "source": "pnp",
+      "title": "Teams SSO Bot - Personal Assistant",
+      "shortDescription": "A sample Teams bot which uses Teams framework SSO, OpenAI's function calling and Microsoft Graph API to provide a personal assistant experience.",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-sso-openai-personal-assistant",
+      "longDescription": [
+        "This sample allows you to create a Teams bot which uses Teams framework SSO, OpenAI's function calling and Microsoft Graph API to provide a personal assistant experience."
+      ],
+      "creationDateTime": "2023-07-10",
+      "updateDateTime": "2023-07-10",
+      "products": [
+        "Teams"
+      ],
+      "metadata": [
+        {
+          "key": "TEAMS-SAMPLE-SOURCE",
+          "value": "pnp"
+        },
+        {
+          "key": "TEAMS-SAMPLE-TYPE",
+          "value": "demo"
+        },
+        {
+          "key": "TEAMS-CLIENT-LANGUAGE",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-UI",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-SERVER-LANGUAGE",
+          "value": "typescript"
+        },
+        {
+          "key": "TEAMS-SERVER-PLATFORM",
+          "value": "restify"
+        },
+        {
+          "key": "TEAMS-BOT-FRAMEWORK",
+          "value": "bot46"
+        },
+        {
+          "key": "TEAMS-FEATURES",
+          "value": "bot"
+        },
+        {
+          "key": "TEAMS-GENERATOR",
+          "value": "ttk"
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-sso-openai-personal-assistant/assets/images/bot-pa.gif",
+          "alt": "Picture of a Teams bot personal assistant"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "anoopt",
+          "company": "Content+Cloud",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/9694225?v=4",
+          "name": "Anoop Tatti",
+          "twitter": "anooptells"
+        }
+      ],
+      "references": [
+        {
+          "name": "Azure Bot Framework resources",
+          "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+        },
+        {
+          "name": "Microsoft Teams bots",
+          "url": "https://aka.ms/sample-ref-teams-docs-bots"
+        },
+        {
+          "name": "OpenAI function calling",
+          "url": "https://openai.com/blog/function-calling-and-other-api-updates"
+        }
+      ],
+      "version": "1.0.0.0"
+    }
+  ]
