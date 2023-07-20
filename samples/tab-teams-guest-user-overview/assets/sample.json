@@ -5,7 +5,7 @@
       "source": "pnp",
       "title": "Teams Guest User Overview",
       "shortDescription": "A lightweight admin tool to get an overview of guest users in your tenant",
-      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-teams-guest-user-overview",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-teams-guest-user-overview",
       "longDescription": [
         "Teams Guest User Overview is a lightweight admin tool to get an overview of guest users in your tenant"
       ],
@@ -60,7 +60,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/app-teams-guest-user-overview/assets/information.png",
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-teams-guest-user-overview/assets/information.png",
           "alt": "Teams Guest User Overview showing information on Teams"
         }
       ],
