@@ -34,12 +34,17 @@ You can find a quick video demonstrating the app's functionalities [here](assets
 ## Prerequisites
 
 * [Office 365 tenant](https://learn.microsoft.com/en-us/office/developer-program/microsoft-365-developer-program-get-started)
-* [.NET Core SDK](https://dotnet.microsoft.com/download) version 6.0.
+* [.NET Core SDK](https://dotnet.microsoft.com/en-us/download) version 7.0.
 
   determine dotnet version
   ```bash
   dotnet --version
   ```
+
+* [.NET Core 3.1.32 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-3.1.32-windows-x64-installer)
+
+Please install both .NET Core 7.0 and .NET Core 3.1.32 Runtime. 
+Only .NET Core 7.0 will not be able to run the application as there is a dependency with the 3.1.32 Runtime.
 
 * [Ngrok](https://ngrok.com/download) (For local environment testing) Latest (any other tunneling software can also be used).
 * [Teams](https://teams.microsoft.com) Microsoft Teams is installed and you have an active account.
