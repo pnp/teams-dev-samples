@@ -6,22 +6,30 @@ Before contributing, however, please read the following guidelines.
 
 ## Code of Conduct
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-Remember that this repository is maintained by community members who volunteer their time to help. Be courteous and patient.
+Remember that this repository is maintained by community members who volunteer their time to help. Please be courteous and patient.
 
-## Typos, Issues, Bugs, and contributions
+## How to submit or update a sample
 
-Whenever you are submitting any changes to the PnP repositories, please follow these recommendations.
+If you're new to Github and open source, a good place to start is with a [Sharing is Caring session](https://pnp.github.io/sharing-is-caring/). These are small group sessions that aren't recorded and where no question is too basic. During the session you'll learn how to fork a Github repo, add or modify some content, and submit a pull request. These sessions are a lot of fun and everyone is invited!
+
+Once you know the basics, here are the guidelines for submitting to the repo:
 
 * Always fork the repository to your own Github account before making your modifications
-* Do not combine multiple changes to one pull request. For example, submit any samples and documentation updates using separate PRs
-* If your pull request shows merge conflicts, make sure to update your forked branch to be a mirror of  the main branch of the main repo before making your modifications
-* If you are submitting multiple samples, please create a specific PR for each of them
-* If you are submitting typo or documentation fix, you can combine modifications to single PR where suitable
+* If your pull request shows merge conflicts, make sure to update your forked branch to be a mirror of  the main branch of the main repo before making your modifications. 
+* If you are submitting multiple samples, please create a specific PR (from a different branch in your forked repository) for each of them
+* If you are submitting typo or documentation fixes, you can combine modifications to single PR where suitable
 
 If you find an existing sample which is similar to yours, please extend the existing one rather than submitting a new similar sample. When you update existing samples, please update also `README.md` file accordingly with information on provided changes and with your author details.
+
+If you use 3rd party libraries, please make sure that library license allows distributions of it as part of your sample. 
+
+Please be sure to note all the prerequisites for your sample, including all the tools and services required to build and run the sample.
+
+* If your sample requires a licensed service, please be sure to make that clear and note the service required (such as access to a premium feature or AI model).
+* If your sample requires specific tools or libraries, be sure to state the version and URL
+* If your sample requires multiple tools - such as a Teams tab built with VS Code that's backed by an Azure function project in Visual Studio, please be sure to list _all_ the tools and build steps.
 
 ## Sample Naming and Structure
 
@@ -33,10 +41,10 @@ Each sample should be in its own folder within the /samples directory. Your fold
 
 | Prefix | Description |
 | --- | --- |
-| app- | These are samples of apps that have multiple features such as a tab and a bot |
-| bot- | These are simple bots, intended to show a single capability or pattern |
-| msgext- | These are simple messaging extensions, intended to show a single capability or pattern |
-| tabs- | These are simple tabs, intended to show a single capability or pattern |
+| app- | These are samples of apps that have multiple Teams app capabilities such as a tab and a bot |
+| bot- | These are apps that contain a chatbot for use in Teams |
+| msgext- | These are apps that contain one or more messaging extensions, including link unfurling, search, and action message extensions |
+| tabs- | These are apps that contain one or more tabs, including personal, group, channel, and meeting tabs |
 
 ### 2. README.md file
 
@@ -44,9 +52,10 @@ Your sample folder should contain a `README.md` file for your contribution. Plea
 
 | If your sample is | use this template |
 | --- | --- |
-| a Single Page application | [README.md](/samples/_SAMPLE_templates/spa-sample/README.md) |
-| a Power App | [README.md](/samples/_SAMPLE_templates/powerapp-sample/README.md) |
+| built with Teams Toolkit | [README.md]() |
+| built with yo teams | [README.md]() |
 | a SharePoint Framework solution | [README.md](/samples/_SAMPLE_templates/spfx-sample/README.md) |
+| a Single Page application built with other tools | [README.md](/samples/_SAMPLE_templates/spa-sample/README.md) |
 | a Web service based on .NET | [README.md](/samples/_SAMPLE_templates/dotnet-sample/README.md) |
 | a Web service based on nodeJS | [README.md](/samples/_SAMPLE_templates/node-sample/README.md) |
 | something else | [README.md](/samples/_SAMPLE_templates/any-sample/README.md) |
@@ -57,37 +66,42 @@ Each README.md file must contain detailed build and use instructions.
 
 ### 3. .gitignore
 
-The [.gitignore](https://git-scm.com/docs/gitignore) file controls which files are ignored, to prevent checking in files that are part of packages and other files generated at build time. Since the samples run on many different platforms it is not possible to have a global .gitignore file that will work with all of them. Please include a .gitignore file in your sample folder that will ignore any packages and other files that will be created in your solution.
+The [.gitignore](https://git-scm.com/docs/gitignore) file controls which files are ignored, to prevent checking in files that are part of packages and other files generated at build time. Since the samples are built with a variety of toolchains, it is not possible to have a global .gitignore file that will work with all of them. 
+
+Please include a .gitignore file in your sample folder that will ignore any packages and other files that will be created in your solution.
 
 | If your sample is | sample gitignore |
 | --- | --- |
-| a Single Page application | You may find [these samples](https://github.com/github/gitignore) to be helpful |
-| a Power App | usually not required |
+| built with Teams Toolkit | [README.md]() |
+| built with yo teams | [README.md]() |
 | a SharePoint Framework solution | [.gitignore](/samples/_SAMPLE_templates/spfx-sample/.gitignore) |
+| a Single Page application | You may find [these samples](https://github.com/github/gitignore) to be helpful |
 | a Web service based on .NET | [.gitignore](/samples/_SAMPLE_templates/dotnet-sample/.gitignore) |
 | a Web service based on nodeJS | [.gitignore](/samples/_SAMPLE_templates/node-sample/.gitignore) |
 | something else | You may find [these samples](https://github.com/github/gitignore) to be helpful |
 
 This is also a good time to check to make sure you have removed any secrets or tenant-specific settings from your sample such as application IDs and secrets. Consider adding files that contain secrets (.env, appSettings.json, etc.) to your .gitignore, and providing sample files instead with instructions to copy and fill them in. That way you'll prevent others from accidentally checking in their secrets as well.
 
-### 4. Screen shot
+### 4. Handling environment variables
+
+### 5. Screen shot
 
 You will need to have a screenshot picture of your sample in action in the `README.md` file ("pics or it didn't happen"). The preview image must be located in the `/assets/` folder in the root your you solution. Even if it's a simple bot sending a single chat message, please include a screen shot!
 
-### 5. Teams manifest
+### 6. Teams manifest
 
 Your sample should include a folder called "Manifest" containing a Teams `manifest.json` file and well-formed Teams application icons. 
 
  * If the manifest works as-is, you may optionally include an installable Teams application package (zip archive containing these files).
  * If the `manifest.json` requires modification before use, please do not include a zip archive. Instead, include instructions in your `README.md` file explaining how to modify the manifest and create the Teams application package
 
-### 6. Telemetry
+### 7. Telemetry
 
-The `README` template contains a specific tracking image at the bottom of the file with an `img` tag, where the `src` attribute points to `https://m365-visitor-stats.azurewebsites.net/sp-dev-fx-webparts/samples/readme-template`. This is a transparent image which is used to track viewership of individual samples in GitHub.
+Each `README` template contains a specific tracking image at the bottom of the file with an `img` tag, where the `src` attribute points to `https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/readme-template`. This is a transparent image which is used to track viewership of individual samples in GitHub. We only count the number of times each page is accessed, and capture no personal information or correlation with other pages.
 
-Update the image `src` attribute according with the repository name and folder information. For example, if your sample is named `react-todo` in the `samples` folder, you should update the `src` attribute to `https://m365-visitor-stats.azurewebsites.net/sp-dev-fx-webparts/samples/react-todo`
+Please update the image `src` attribute according with the repository name and folder information. For example, if your sample is named `react-todo` in the `samples` folder, you should update the `src` attribute to `https://m365-visitor-stats.azurewebsites.net/sp-dev-fx-webparts/samples/react-todo`
 
-## Submitting Pull Requests
+## Detailed steps for submitting pull requests
 
 Here's a high-level process for submitting new samples or updates to existing ones.
 
@@ -96,7 +110,7 @@ Here's a high-level process for submitting new samples or updates to existing on
 3. Ensure the main branch is up-to-date with the PnP version (if you didn't just fork it). Create a new branch from the `main` branch in your fork for the contribution
 4. Include your changes to your branch
 5. Commit your changes using descriptive commit message. 
-6. Create a pull request in your own fork and target the `main` branch in the PnP version
+6. Create a pull request for your fork and branch, and target the `main` branch in the PnP version
 7. Fill up the provided PR template with the requested details
 
 Before you submit your pull request consider the following guidelines:
@@ -109,13 +123,13 @@ Before you submit your pull request consider the following guidelines:
   # check if you have a remote pointing to the Microsoft repo:
   git remote -v
 
-  # if you see a pair of remotes (fetch & pull) that point to https://github.com/SPnP/teams-dev-samples, you're ok... otherwise you need to add one
+  # if you see a pair of remotes (fetch & pull) that point to https://github.com/pnp/teams-dev-samples, you're ok... otherwise you need to add one
 
   # add a new remote named "upstream" and point to the Microsoft repo
   git remote add upstream https://github.com/PnP/teams-dev-samples.git
   ```
 
-* Make your changes in a new git branch:
+* Make your a new git branch in your local git repo:
 
   ```shell
   git checkout -b mysamplebranch main
