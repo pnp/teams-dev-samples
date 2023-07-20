@@ -2,7 +2,7 @@
     ViewData["Title"] = "Expense Submit";
 }
 <h1>Expense Submit</h1>
-<p>Hello! Use the form below to submit a expense file. All expense submitions will undergo to approval for your manager: <span id="managerName" style="display: none"></span></p>
+<p>Hello! Use the form below to submit an expense. All expense submitions will undergo to approval for your manager: <span id="managerName" style="display: none"></span></p>
 <div id="divIdExpenseForm">
 	<fieldset id="forms__input">
 		<legend>Input fields</legend>
@@ -20,7 +20,8 @@
 		</p>
 		<p>
 			<label for="input__file">File Input</label>
-			<input id="input__file" type="file">
+			<input id="input__file" type="file" disabled>
+			<span style="display: inline-block;">We are sorry! The File Input file field is disabled for now. Please submit the Expense using the Submit button below, and then send your Expense File in the generated e-mail.</span>
 		</p>
 		<p>
 			<button onclick="submitExpense()">Submit</button>
