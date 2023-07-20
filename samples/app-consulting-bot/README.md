@@ -119,4 +119,4 @@ Version|Date|Comments
 
 Note that the project names are included in a list entity in the LUIS model. In an actual application, you would need to update this entity as projects are added and removed using the [LUIS REST API](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/get-started-get-model-rest-apis?pivots=programming-language-csharp); this is not included in the demo.
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/app-consulting-bot/readme" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/app-consulting-bot/readme" />

@@ -178,4 +178,4 @@ Step 6: Trying out the app
 
 <img src="./Docs/Images/UserProfile.png" alt="User Profile" style="width: 100%;">
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-sso-azuread" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/bot-sso-azuread" />

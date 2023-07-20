@@ -78,4 +78,4 @@ ngrok http-host-header=localhost:3978
 - [Universal action model](https://docs.microsoft.com/en-us/microsoftteams/platform/task-modules-and-cards/cards/universal-actions-for-adaptive-cards/overview?WT.mc_id=m365-35338-rwilliams)
 - [Bot generator](https://www.npmjs.com/package/generator-botbuilder)
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-uamcardbot" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/bot-uamcardbot" />

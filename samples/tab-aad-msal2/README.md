@@ -126,4 +126,4 @@ Key files:
 
  * services/TeamsAuthService.js - This is a singleton object that launches the Teams authentication pop-up. It's used by Tab.js.
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-aad-msal2" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-aad-msal2" />

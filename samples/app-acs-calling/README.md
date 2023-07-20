@@ -254,4 +254,4 @@ There are multiple real world scenarios across different industries that can be 
 </tbody>
 </table>
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/app-acs-calling" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/app-acs-calling" />

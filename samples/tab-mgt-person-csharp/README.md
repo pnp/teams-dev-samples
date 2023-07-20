@@ -51,4 +51,4 @@ This is a simple Teams Tab. It uses the Microsoft Graph Toolkit (MGT) for simpli
 * [Use Person component to render info about current user](https://learn.microsoft.com/en-us/graph/toolkit/components/person?WT.mc_id=M365-MVP-5004617)
 * [Use People component to retrieve and render recent contacts](https://learn.microsoft.com/en-us/graph/toolkit/components/people?WT.mc_id=M365-MVP-5004617)
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-mgt-person-csharp" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-mgt-person-csharp" />

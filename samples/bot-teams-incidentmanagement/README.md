@@ -179,4 +179,4 @@ Below are the references used while developing this sample:
 
 Special thanks to [Shiladitya Saha](https://www.linkedin.com/in/shiladityasaha/), [Wictor Wilen](https://www.linkedin.com/in/wictorw/), and [Rabia Williams](https://www.linkedin.com/in/rabiawilliams/) (Microsoft) for their valuable discussions and guidance on this interesting topic.
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-teams-incidentmanagement" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/bot-teams-incidentmanagement" />

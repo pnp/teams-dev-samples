@@ -117,4 +117,4 @@ The following describes the currently implemented features. We are looking to ex
 
 ![prompt](ImagesForOpenSource/content-explorer-sharePoint.PNG)
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-content-explorer-spfx" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-content-explorer-spfx" />

@@ -47,4 +47,4 @@ This solution illustrates the following concepts :
 
 * Getting the context information of every type of Tab
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-context-viewer" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-context-viewer" />

@@ -148,4 +148,4 @@ Take a note of the forwarding URL, as you will need it later.
 2. Zip the `manifest` folder into a `manifest.zip` file
 3. Upload the `manifest.zip` file to Teams (side load the or upload in Teams Admin Center)
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/bot-openai-tfl-status" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/bot-openai-tfl-status" />

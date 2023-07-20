@@ -62,4 +62,4 @@ This sample illustrates tthe following concepts on top of SharePoint Framework.
 * [box-ui-elements](https://github.com/box/box-ui-elements)
 * Office UI fabric components
 
-<img src="https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/tab-spfx-oauth2" />
+<img src="https://m365-visitor-stats.azurewebsites.net/sp-dev-fx-webparts/samples/tab-spfx-oauth2" />

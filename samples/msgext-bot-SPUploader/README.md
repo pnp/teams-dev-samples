@@ -210,5 +210,5 @@ Finance & Banking | Customer information, policy assets, brochures are stored in
 Healthcare | Doctors frequently need to search, find and share information around drugs, diseases from a common repository. They also frequently update this information and add new entries to keep up with new products in the industry. Document manager can help doctors easily search and share such product information 
 Cross-Industry | While uploading documents or assets, the form can be customized to include attributes around the document which can be used as tags related to the asset. This can be used to facilitate advanced searches of information based on tagged data.   
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgext-bot-SPUploader" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-bot-SPUploader" />
 
