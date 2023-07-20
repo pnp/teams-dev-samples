@@ -64,4 +64,4 @@ The app requires two graph permissions that you'll be prompted to grant when you
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
 
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/app-teams-guest-user-overview" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/app-teams-guest-user-overview" />
