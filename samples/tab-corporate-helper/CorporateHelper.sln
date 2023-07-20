@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoorporateHelper", "CoorporateHelper.csproj", "{69EFF229-8D1B-4652-A300-0EBF0D6705E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorporateHelper", "CorporateHelper.csproj", "{69EFF229-8D1B-4652-A300-0EBF0D6705E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

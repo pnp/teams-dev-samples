@@ -135,8 +135,8 @@ Version|Date|Author|Comments
    - If you are using Visual Studio
   - Launch Visual Studio
   - File -> Open -> Project/Solution
-  - Navigate to `samples/app-coorporatehelper-tab` folder
-  - Select `CoorporateHelper.csproj` file
+  - Navigate to `samples/app-Corporatehelper-tab` folder
+  - Select `CorporateHelper.csproj` file
 
 4. Setup Manifest for Teams
 - __*This step is specific to Teams.*__
@@ -174,7 +174,7 @@ Version|Date|Author|Comments
 * Add the following Delegated Permissions for Graph to your App Registration: User.Read, Calendars.ReadWrite ,Mail.Send, MailboxSettings.ReadWrite. Grant Admin Consent to them (https://learn.microsoft.com/en-us/graph/use-postman).
 * Generate a Client Secret for your App Registration.
 * Update the appsettings.json file (Check Setup - Step 3 above).
-* In the command line, go to the project's folder (app-coorporatehelper-tab) and run:
+* In the command line, go to the project's folder (app-Corporatehelper-tab) and run:
   * `dotnet run`
 * Update the manifest (Check Setup - Step 4 above) and upload to Teams.
 
@@ -186,4 +186,4 @@ Once the app is installed, you can navigate between 3 tabs inside it:
 * Expenses: submit a expense report to your manager.
 * Vacation: submit vacation requests to your manager.
 
-<img src="https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/app-coorporatehelper-tab" />
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-corporatehelper" />

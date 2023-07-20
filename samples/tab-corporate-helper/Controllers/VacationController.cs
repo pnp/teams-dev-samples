@@ -1,30 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System.Reflection;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
+using System.Diagnostics;
+using System.Net.Http;
+using TeamsAuthSSO.Models;
 
-namespace CoorporateHelper.Controllers
+namespace CorporateHelper.Controllers
 {
-
-	using System.Diagnostics;
-	using System.Net.Http;
-	using Microsoft.AspNetCore.Http;
-	using Microsoft.AspNetCore.Mvc;
-	using Microsoft.Extensions.Configuration;
-	using TeamsAuthSSO.Models;
-
-	public class ExpenseController : Controller
+	public class VacationController : Controller
 	{
-
 		private readonly IConfiguration _configuration;
 		private readonly IHttpClientFactory _httpClientFactory;
 		private readonly IHttpContextAccessor _httpContextAccessor;
 
 		/// <summary>
-		/// Initializes a new instance of the <see cref="ExpenseController"/> class.
+		/// Initializes a new instance of the <see cref="VacationController"/> class.
 		/// </summary>
 		/// <param name="configuration">IConfiguration instance.</param>
 		/// <param name="httpClientFactory">IHttpClientFactory instance.</param>
 		/// <param name="httpContextAccessor">IHttpContextAccessor instance.</param>
-		public ExpenseController(
+		public VacationController(
 			IConfiguration configuration,
 			IHttpClientFactory httpClientFactory,
 			IHttpContextAccessor httpContextAccessor)
@@ -34,7 +29,7 @@ namespace CoorporateHelper.Controllers
 			_httpContextAccessor = httpContextAccessor;
 		}
 
-		public IActionResult Expenses()
+		public IActionResult Vacations()
 		{
 			return View();
 		}

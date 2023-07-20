@@ -5,10 +5,19 @@ let principalName;
 let displayName;
 
 $(document).ready(function () {
+    microsoftTeams.initialize();
     microsoftTeams.app.initialize();
+
+    try {
+        app.isInitialized();
+    }
+    catch (e) {
+        $("#divOutsideTeams").show();
+        throw (e);
+    }
+
     microsoftTeams.app.getContext().then((context) => {
        if (context.page.id == "vacation") {
-           aaa = new Date().toISOString().split("T")[0];
            $("#iddate1").min = new Date().toISOString().split("T")[0];
            $("#iddate2").min = new Date().toISOString().split("T")[0];
         }
