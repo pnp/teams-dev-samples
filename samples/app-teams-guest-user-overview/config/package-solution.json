@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "guest-user-overview-client-side-solution",
+    "id": "4a429c92-ca92-4b31-97be-da28ddb9541f",
+    "version": "1.0.0.16",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "@Tanddant \u0026 @jeppesc11",
+      "websiteUrl": "https://github.com/Tanddant/TeamsGuestUserOverview",
+      "privacyUrl": "https://github.com/Tanddant/TeamsGuestUserOverview",
+      "termsOfUseUrl": "https://github.com/Tanddant/TeamsGuestUserOverview",
+      "mpnId": "Undefined-1.17.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "guest-user-overview description"
+      },
+      "longDescription": {
+        "default": "guest-user-overview description"
+      },
+      "screenshotPaths": [
+        
+      ],
+      "videoUrl": "",
+      "categories": [
+        
+      ]
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Directory.ReadWrite.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "AuditLog.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.ReadWrite.All"
+      }
+    ],
+    "features": [
+      {
+        "title": "guest-user-overview Feature",
+        "description": "The feature that activates elements of the guest-user-overview solution.",
+        "id": "2cec6159-3ca1-4d0e-bba1-3eca83b2377c",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/guest-user-overview.sppkg"
+  }
+}
