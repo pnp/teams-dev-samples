@@ -120,4 +120,4 @@ MICROSOFT_APP_ID=13000000-0000-0000-0000-00000000b59d
 
 ```
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgext-msg-forwarder" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-msg-forwarder" />

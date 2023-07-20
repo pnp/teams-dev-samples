@@ -75,4 +75,4 @@ This Web Part illustrates the following concepts on top of the a Teams Tab :
 * Utilizing the Microsoft Graph Toolkit
 * Customizing the Microsoft Graph Toolkit Components
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-one-productivity-hub" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-one-productivity-hub" />

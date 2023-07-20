@@ -224,4 +224,4 @@ Virtual Event and online meeting:
  	- Enterprise / Professional Services: Managers could create team meetings / 1:1 meetings with their team mates using the solution. The Calling & Meeting bot can track action items from the meeting and create tasks for each participating member
  	- Cross-Industry: The solution can be extended to any helpdesk scenario. When a user requesting support schedules a meeting, the bot finds an available agent based on their presence, calendar availability, shift timings and calls an available agent directly to support the user.  The agent can in turn take follow up notes on the support tickets to be documented / archived. 
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/app-virtual-events-meeting-extensibility" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/app-virtual-events-meeting-extensibility" />

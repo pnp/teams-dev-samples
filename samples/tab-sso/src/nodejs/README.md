@@ -59,4 +59,4 @@ npm run start
 
 7. Complete the remaining steps in the main readme file. Make sure the review the example [manifiest.json](../manifest.json) file to compare with your settings
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-sso/nodejs" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-sso/nodejs" />

@@ -83,9 +83,9 @@ Your sample should include a folder called "Manifest" containing a Teams `manife
 
 ### 6. Telemetry
 
-The `README` template contains a specific tracking image at the bottom of the file with an `img` tag, where the `src` attribute points to `https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/readme-template`. This is a transparent image which is used to track viewership of individual samples in GitHub.
+The `README` template contains a specific tracking image at the bottom of the file with an `img` tag, where the `src` attribute points to `https://m365-visitor-stats.azurewebsites.net/sp-dev-fx-webparts/samples/readme-template`. This is a transparent image which is used to track viewership of individual samples in GitHub.
 
-Update the image `src` attribute according with the repository name and folder information. For example, if your sample is named `react-todo` in the `samples` folder, you should update the `src` attribute to `https://pnptelemetry.azurewebsites.net/sp-dev-fx-webparts/samples/react-todo`
+Update the image `src` attribute according with the repository name and folder information. For example, if your sample is named `react-todo` in the `samples` folder, you should update the `src` attribute to `https://m365-visitor-stats.azurewebsites.net/sp-dev-fx-webparts/samples/react-todo`
 
 ## Submitting Pull Requests
 

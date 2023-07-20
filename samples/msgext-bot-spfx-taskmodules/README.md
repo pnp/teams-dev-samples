@@ -66,4 +66,4 @@ Version|Date|Comments
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgext-bot-spfx-taskmodules" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-bot-spfx-taskmodules" />

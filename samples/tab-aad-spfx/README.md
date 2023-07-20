@@ -74,4 +74,4 @@ Bare bones sample showing how to call the Microsoft Graph from a Teams tab imple
 
 * Display recent emails for the logged-in user
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-aad-spfx" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-aad-spfx" />

@@ -94,4 +94,4 @@ This is a simple Teams Tab. It uses the Microsoft Graph Toolkit (MGT) for simpli
 * Use Login component as alternative to SSO
 * Use People component to retrieve and render recent contacts
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-mgt-person" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-mgt-person" />

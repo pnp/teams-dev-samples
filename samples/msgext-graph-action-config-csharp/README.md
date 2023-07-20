@@ -69,4 +69,4 @@ This is a simple search-based messaging extension. It offers documents retrieved
 * Configuraton storage in [Azure App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview?WT.mc_id=M365-MVP-5004617)
 * Secret Storage and consumption in [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/overview?WT.mc_id=M365-MVP-5004617)
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgext-graph-action-config-csharp />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-graph-action-config-csharp />

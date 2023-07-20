@@ -69,4 +69,4 @@ This is a simple Teams Tab. It enables a user to upload a supported file type vi
 
 [![Hack Together: Microsoft Graph and .NET](https://img.shields.io/badge/Microsoft%20-Hack--Together-orange?style=for-the-badge&logo=microsoft)](https://github.com/microsoft/hack-together)
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-sso-graph-file-conversion-csharp" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-sso-graph-file-conversion-csharp" />
