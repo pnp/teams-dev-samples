@@ -30,7 +30,7 @@ public class Startup : FunctionsStartup
 {
     public override void Configure(IFunctionsHostBuilder builder)
     {
-        var configuration = builder.GetContext().Configuration;
+        var config = builder.GetContext().Configuration;
 
         // Create the Bot Framework Authentication to be used with the Bot Adapter.
         builder.Services.AddSingleton<BotFrameworkAuthentication, ConfigurationBotFrameworkAuthentication>();
