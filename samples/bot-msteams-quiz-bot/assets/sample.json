@@ -25,11 +25,11 @@
             },
             {
                 "key": "TEAMS-CLIENT-LANGUAGE",
-                "value": "csharp"
+                "value": ""
             },
             {
                 "key": "TEAMS-CLIENT-PLATFORM",
-                "value": "dotnet"
+                "value": ""
             },
             {
                 "key": "TEAMS-CLIENT-UI",
@@ -37,15 +37,15 @@
             },
             {
                 "key": "TEAMS-SERVER-LANGUAGE",
-                "value": ""
+                "value": "csharp"
             },
             {
                 "key": "TEAMS-SERVER-PLATFORM",
-                "value": ""
+                "value": "dotnet"
             },
             {
                 "key": "TEAMS-BOT-FRAMEWORK",
-                "value": ""
+                "value": "bot46"
             },
             {
                 "key": "TEAMS-FEATURES",
