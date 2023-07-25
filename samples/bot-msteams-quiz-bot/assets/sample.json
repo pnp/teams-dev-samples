@@ -1,11 +1,11 @@
 [
     {
-        "name": "pnp-sp-dev-teams-sample-app-msteams-quiz-bot",
-        "reponame": "app-msteams-quiz-bot",
+        "name": "pnp-sp-dev-teams-sample-bot-msteams-quiz-bot",
+        "reponame": "bot-msteams-quiz-bot",
         "source": "pnp",
         "title": "MsTeams Quiz Bot",
         "shortDescription": "MsTeams Quiz Bot is a Microsoft Teams bot that allows users to create quizzes on any subject using randomly generated questions.",
-        "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-msteams-quiz-bot",
+        "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-msteams-quiz-bot",
         "longDescription": [
             "When mentioned with @bot-name quiz, the bot creates an adaptive card that enables users to set up a quiz about a specific topic and in their preferred language. The user initiating the quiz has full control to participate, lock a question, generate the next question, and stop the quiz to view the top results."
         ],
@@ -60,7 +60,7 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/teams-dev-samples/blob/main/samples/app-msteams-quiz-bot/assets/example-questions-and-result.png?raw=true",
+                "url": "https://github.com/pnp/teams-dev-samples/blob/main/samples/bot-msteams-quiz-bot/assets/example-questions-and-result.png?raw=true",
                 "alt": "Preview of app"
                 
             }
@@ -69,7 +69,7 @@
             {
                 "gitHubAccount": "marcel-paalvast",
                 "company": "",
-                "pictureUrl": "",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/126659601?v=4",
                 "name": "Marcel Paalvast",
                 "twitter": ""
             }            
