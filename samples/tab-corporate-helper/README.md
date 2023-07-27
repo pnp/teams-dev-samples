@@ -41,9 +41,9 @@ You can find a quick video demonstrating the app's functionalities [here](assets
   dotnet --version
   ```
 
-* [.NET Core 3.1.32 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-3.1.32-windows-x64-installer)
+* [.NET Core 3.1.32 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)
 
-Please install both .NET Core 7.0 and .NET Core 3.1.32 Runtime. 
+Please install both .NET Core 7.0 and .NET Core 3.1.32 SDKs. 
 Only .NET Core 7.0 will not be able to run the application as there is a dependency with the 3.1.32 Runtime.
 
 * [Ngrok](https://ngrok.com/download) (For local environment testing) Latest (any other tunneling software can also be used).
@@ -80,7 +80,7 @@ Version|Date|Author|Comments
     * Choose **Register**.
  - On the overview page, copy and save the **Application (client) ID, Directory (tenant) ID**. You’ll need those later when updating your Teams application manifest and in the appsettings.json.
  -  Under **Manage**, select **Expose an API**. 
- - Select the **Set** link to generate the Application ID URI in the form of `api://{AppID}`. Insert your fully qualified domain name (with a forward slash "/" appended to the end) between the double forward slashes and the GUID. The entire ID should have the form of: `api://fully-qualified-domain-name/{AppID}`
+ - Select the **Add** link to add an Application ID URI. This will add an aplication ID URI in the form of `api://{AppID}`. Edit the application ID URI to include your fully qualified domain name (with a forward slash "/" appended to the end) between the double forward slashes and the GUID. The entire ID should have the form of: `api://fully-qualified-domain-name/{AppID}`
     * ex: `api://%ngrokDomain%.ngrok-free.app/00000000-0000-0000-0000-000000000000`.
  - Select the **Add a scope** button. In the panel that opens, enter `access_as_user` as the **Scope name**.
  - Set **Who can consent?** to `Admins and users`
@@ -146,11 +146,9 @@ Version|Date|Author|Comments
 4. Setup Manifest for Teams
 - __*This step is specific to Teams.*__
 
-     **Edit** the `manifest.json` contained in the ./Manifest folder to replace your Microsoft App Id (that was created when you registered your app registration earlier) *everywhere* you see the place holder string `<<YOUR-MICROSOFT-APP-ID>>` (depending on the scenario the Microsoft App Id may occur multiple times in the `manifest.json`)
+     **Edit** the `manifest.json` contained in the ./appPackage folder; note that this is not visible in Visual Studio. Replace your Microsoft App Id (that was created when you registered your app registration earlier) *everywhere* you see the place holder string `<<YOUR-MICROSOFT-APP-ID>>` (depending on the scenario the Microsoft App Id may occur multiple times in the `manifest.json`). Note that App ID and Client ID are the same thing.
 
      **Edit** the `manifest.json` for `validDomains` and replace `{{domain-name}}` with base Url of your domain. E.g. if you are using ngrok it would be `https://1234.ngrok-free.app` then your domain-name will be `1234.ngrok-free.app`.
-
-     **Edit** the `manifest.json` for `webApplicationInfo` resource `"api://{{domain-name}}/<<YOUR-MICROSOFT-APP-ID>>"` with MicrosoftAppId. E.g. `"api://1234.ngrok-free.app/00000000-0000-0000-0000-000000000000"`.
 
      **Zip** up the contents of the Manifest folder to create a Manifest.zip file (Make sure that zip file does not contains any subfolder otherwise you will get error while uploading your .zip package).
 
@@ -191,4 +189,4 @@ Once the app is installed, you can navigate between 3 tabs inside it:
 * Expenses: submit a expense report to your manager.
 * Vacation: submit vacation requests to your manager.
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-corporate-helper" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-corporate-helper" />
