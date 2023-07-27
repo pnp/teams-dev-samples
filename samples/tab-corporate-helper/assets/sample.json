@@ -1,0 +1,93 @@
+[
+    {
+        "name": "pnp-sp-dev-teams-sample-tab-corporate-helper",
+        "reponame": "tab-corporate-helper",
+        "source": "pnp",
+        "title": "Corporate Helper",
+        "shortDescription": "A Teams app for submitting expenses and vacation requests",
+        "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-corporate-helper",
+        "longDescription": [
+            "The Knowledge Quest Teams Bot is an interactive Chat Bot application designed to allow users to test their knowledge on specific topics using the power of OpenAI"
+        ],
+        "creationDateTime": "2023-06-15",
+        "updateDateTime": "2023-06-15",
+        "products": [
+            "Teams Global Hack"
+        ],
+        "metadata": [
+            {
+                "key": "TEAMS-SAMPLE-SOURCE",
+                "value": "pnp"
+            },
+            {
+                "key": "TEAMS-SAMPLE-TYPE",
+                "value": "demo"
+            },
+            {
+                "key": "TEAMS-CLIENT-LANGUAGE",
+                "value": ""
+            },
+            {
+                "key": "TEAMS-CLIENT-PLATFORM",
+                "value": ""
+            },
+            {
+                "key": "TEAMS-CLIENT-UI",
+                "value": "javascript"
+            },
+            {
+                "key": "TEAMS-SERVER-LANGUAGE",
+                "value": "csharp"
+            },
+            {
+                "key": "TEAMS-SERVER-PLATFORM",
+                "value": "dotnet"
+            },
+            {
+                "key": "TEAMS-BOT-FRAMEWORK",
+                "value": ""
+            },
+            {
+                "key": "TEAMS-FEATURES",
+                "value": "tab"
+            },
+            {
+                "key": "TEAMS-GENERATOR",
+                "value": ""
+            }
+        ],
+        "thumbnails": [
+            {
+                "type": "image",
+                "order": 100,
+                "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-corporate-helper/assets/demo.gif",
+                "alt": "Preview of app"
+            }
+        ],
+        "authors": [
+            {
+                "gitHubAccount": "fsdp15",
+                "company": "",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/27980240?v=4",
+                "name": "Felipe Dotti",
+                "twitter": "https://twitter.com/felipe_dotti"
+            }
+
+        ],
+        "references": [
+            {
+                "name": "Teams developer questions",
+                "url": "https://aka.ms/sample-ref-teams-dev-questions"
+            },
+            {
+                "name": "Teams development videos from Microsoft",
+                "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+            },
+            {
+                "name": "Teams development videos from the community",
+                "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+            }
+        ],
+        "version": "1.0.0.0"
+    }
+]

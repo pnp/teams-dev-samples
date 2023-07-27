@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Manifest\**" />
+    <Compile Remove="Views\Expense\NewFolder\**" />
+    <Content Remove="Manifest\**" />
+    <Content Remove="Views\Expense\NewFolder\**" />
+    <EmbeddedResource Remove="Manifest\**" />
+    <EmbeddedResource Remove="Views\Expense\NewFolder\**" />
+    <None Remove="Manifest\**" />
+    <None Remove="Views\Expense\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.AzureAD.UI" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.113" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <PropertyGroup>
+    <LibraryRestore>false</LibraryRestore>
+  </PropertyGroup>
+  
+</Project>
