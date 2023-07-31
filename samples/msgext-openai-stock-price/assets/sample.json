@@ -60,7 +60,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-openai-stock-price/assets/demo.gif",
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-openai-stock-price/assets/images/demo.gif",
           "alt": "A user prompts OpenAI, which get stock price information from Finnhub API and returns the result to the user."
         }
       ],
