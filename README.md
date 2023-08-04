@@ -19,7 +19,9 @@ The easy way to browse through all the samples is to visit the [Microsoft 365 Sa
 
 ## Using the samples
 
-The samples folder contains a child folder for each sample, named with a prefix as follows:
+To search all the samples, please visit our [Sample Browser](){target=_blank}, which aggreagates samples from this and other repositories.
+
+To browse the samples in this repo, please visit the [/samples](/samples) folder. It contains a child folder for each sample, named with a prefix as follows:
 
 | Prefix | Description |
 | --- | --- |
@@ -49,11 +51,9 @@ If you have questions about how to develop Teams applications or any of the prov
 | Microsoft Teams JavaScript SDK | Use the feedback link at the footer of the [docs page](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest) |
 | SharePoint Framework with Teams | [sp-dev-docs repository issue list](https://github.com/SharePoint/sp-dev-docs/issues) |
 
-## Using the samples
-
 ## Contributions
 
-These samples are from the Microsoft 365 developer community. We welcome your samples and suggestions for new samples. 
+These samples are from the Microsoft 365 developer community. We welcome your samples and suggestions for new ones.
 
 Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Thx.
 
