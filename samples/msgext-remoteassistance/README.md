@@ -239,4 +239,4 @@ Grant-CsApplicationAccessPolicy -PolicyName RemoteAssistance -Identity <user>
 2. Zip the `manifest` folder into a `manifest.zip` file
 3. Upload the `manifest.zip` file to Teams (side load the or upload in Teams Admin Center)
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/msgext-remoteassitance" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-remoteassitance" />

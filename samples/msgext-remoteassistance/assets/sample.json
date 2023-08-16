@@ -1,0 +1,88 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-msgext-remoteassistance",
+    "reponame": "msgext-remoteassistance",
+    "source": "pnp",
+    "title": "Teams Remote Assistance Message Extension with ACS",
+    "shortDescription": "A message extension which allows Teams users to invite external users to a meeting for remote assistance.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-remoteassistance",
+    "longDescription": [
+      "A message extension which allows Teams users to invite external users to a meeting for remote assistance using Azure Communication Services."
+    ],
+    "creationDateTime": "2023-08-04",
+    "updateDateTime": "2023-08-04",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "az-static"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "msgext"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": ""
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-remoteassistance/assets/example.gif",
+        "alt": "A message extension generates a meeting URL for use in a remote assistance session"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "leeford",
+        "company": "Symity",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/472320?v=4",
+        "name": "Lee Ford",
+        "twitter": "lee_ford"
+      }
+    ],
+    "references": [
+      {
+        "name": "Azure Communication Services",
+        "url": "https://aka.ms/acs"
+      },
+      {
+        "name": "Microsoft Teams bots",
+        "url": "https://aka.ms/sample-ref-teams-docs-bots"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]
