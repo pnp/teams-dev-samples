@@ -1,24 +1,41 @@
 # Microsoft Teams Development Community Samples
 
-This repository contains community samples that demonstrate different usage patterns for developing on Microsoft Teams as a platform. Samples are generally not production-ready, but are intended to show developers specific patterns and use cases for use in complete applications.
-
-> We welcome community contributions to the samples folder in this repository for demonstrating different patterns and use cases with Microsoft Teams. Please see our [contribution guidelines](./CONTRIBUTING.md) for details.
-
-> If you use 3rd party libraries, please make sure that library license allows distributions of it as part of your sample.
-
 Microsoft Teams is highly extensible, allowing 3rd party and custom applications to run alongside the many Office 365 services already included in Teams. Just as you can add a Word tab or the Who bot in Teams, you can write your own tabs and bots. You can also write applications that run outside the Teams UI and use the Microsoft Graph API to access and curate Teams content.
 
-The best way to navigate the samples is to use the [Sample Navigator](https://pnp.github.io/teams-dev-samples/). It will allow you to dial in the Teams app features, language, and other technologies you want samples for.
+Recently, Microsoft has enabled some of the features in Teams applications to work in Microsoft Outlook and the Microsoft 365 app. At the time of this writing, these are limited to personal tabs, search message extensions, and link unfurling. Many of the more recent samples work in these new locations.
 
-The samples folder contains a folder for each sample, named with a prefix as follows:
+This repository contains community samples that demonstrate different usage patterns for developing on Microsoft Teams as a platform. Samples are generally not production-ready, but are intended to show developers patterns and use cases for use in complete applications. Some samples are very bare bones to show how to do something specific, while others are partial or complete applications. Many are useful on their own, but it's up to you to check that they're secure and meet your standards.
+
+This repo is maintained by the [Microsoft 365 & Power Platform Community](https://pnp.github.io/); please join our [community calls](https://pnp.github.io/#community) for announcements and sample demos every other Thursday. The "pnp" in the URL is for "Patterns and Practices", and it's all about sharing our patterns and practices for building solutions on Microsoft 365.
+
+If you're looking for Teams development samples, here's a handy guide:
+
+* **Code-first samples from the community belong in this repo**. 
+* Code-first samples from Microsoft belong [in this repo](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main)
+* Samples using Teams Toolkit live [in this repo](https://github.com/officedev/teamsfx-samples)
+* Power Platform samples from the community - including some Teams samples - can be found in [this repo](https://github.com/pnp/powerplatform-samples)
+
+The easy way to browse through all the samples is to visit the [Microsoft 365 Sample Solution Gallery](https://adoption.microsoft.com/en-us/sample-solution-gallery/).
+
+## Using the samples
+
+To search all the samples, please visit our [Sample Browser](){target=_blank}, which aggreagates samples from this and other repositories.
+
+To browse the samples in this repo, please visit the [/samples](/samples) folder. It contains a child folder for each sample, named with a prefix as follows:
 
 | Prefix | Description |
 | --- | --- |
-| app- | These are samples of apps that have multiple features such as a tab and a bot |
-| bot- | These are simple bots, intended to show a single capability or pattern |
-| connector- | These are connectors which send notifications to Teams channels and optionally O365 groups in Outlook
-| msgext- | These are simple messaging extensions, intended to show a single capability or pattern |
-| tabs- | These are simple tabs, intended to show a single capability or pattern |
+| app- | These are samples of apps that have multiple Teams app capabilities such as a tab and a bot |
+| bot- | These are apps that contain a chatbot for use in Teams |
+| msgext- | These are apps that contain one or more messaging extensions, including link unfurling, search, and action message extensions |
+| tabs- | These are apps that contain one or more tabs, including personal, group, channel, and meeting tabs |
+
+Due to the diversity of the samples and technologies, there are no fixed instructions for building or using the samples. Each sample includes a readme file with a description, screen shot(s), requirements, and build instructions.
+
+## Contributions
+
+We welcome community contributions to the samples folder in this repository! If you've built something cool, or figured out how to do something that's usable by others, consider sharing it as a sample. 
+Please see our [contribution guidelines](./CONTRIBUTING.md) for details. 
 
 ## Questions or Problems?
 
@@ -34,13 +51,9 @@ If you have questions about how to develop Teams applications or any of the prov
 | Microsoft Teams JavaScript SDK | Use the feedback link at the footer of the [docs page](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest) |
 | SharePoint Framework with Teams | [sp-dev-docs repository issue list](https://github.com/SharePoint/sp-dev-docs/issues) |
 
-## Using the samples
-
-Due to the diversity of the samples and technologies, there are no fixed instructions for building or using the samples. Each sample should include a readme file with build instructions.
-
 ## Contributions
 
-These samples are from the Microsoft 365 developer community. We welcome your samples and suggestions for new samples. 
+These samples are from the Microsoft 365 developer community. We welcome your samples and suggestions for new ones.
 
 Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Thx.
 
@@ -50,6 +63,10 @@ Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before subm
 
 ### Teams applications
 
+* [Teams Toolkit Learn Path](https://learn-ttk) - Hands on labs show you how to get started with Teams development using the Teams Toolkit for Visual Studio Code
+* [Teams App Camp](https://aka.ms/app-camp) - Extensive hands-on labs guide you through the process of extending a simple web site to become a full featured Teams application
+* [Teams App Camp New Adventure](https://aka.ms/app-camp-new) - More hands-on labs that show how to extend a web service to become a Teams message extension, including all styles of message extension and some advanced scenarios like calling the Microsoft Graph with SSO and calling Azure OpenAI.
+* [Microsoft 365 Bootcamp: Build a Teams solution using SharePoint and SharePoint Framework](https://github.com/OfficeDev/M365Bootcamp-TeamsEmergencyResponse) - A hands-on lab in which you'll build a simulated "emergency response" solution in Teams using SharePoint pages, lists, and web parts.
 * [Teams Platform Overview](https://docs.microsoft.com/en-us/microsoftteams/platform/overview)
 
 ### Bots

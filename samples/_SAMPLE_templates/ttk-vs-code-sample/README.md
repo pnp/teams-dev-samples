@@ -12,25 +12,31 @@ Short summary on functionality and used technologies.
 
 ![picture of the app in action](#)
 
-## Connectors
+## Tools and Frameworks
 
-_Please list the connectors used in your sample_
+_Please note the version of Teams Toolkit used in your sample_
+
+![drop](https://img.shields.io/badge/Teams&nbsp;Toolkit&nbsp;for&nbsp;VS&nbsp;Code-x.y-green.svg)
+
+_Teams Toolkit pulls in some standard libraries and SDK's such as the Bot Framework SDK and Create React App. Since these are aligned with Teams Toolkit versions, there is no reason to include them here unless you changed them._
+
+_If you use any other frameworks or platforms, please add badges for them here. If there are spaces in the framwork name, use &amp;nbsp;._
+
+![drop](https://img.shields.io/badge/Some&nbsp;Framework-x.y-green.svg)
 
 ## Prerequisites
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
-* [Power Apps](https://powerapps.microsoft.com/en-us/)
-* [Power Automate](https://flow.microsoft.com/en-us/)
+* [Teams Toolkit for Visual Studio Code](https://learn.microsoft.com/microsoftteams/platform/toolkit/install-teams-toolkit?tabs=vscode)
+* [Whatever](#)
 
-Sign up for the free [Power Apps Community Plan](https://powerapps.microsoft.com/en-us/communityplan/) for free single-user access to Power Apps and Power Automate.
-
-_Please list any additional tools required to run te sample, along with download links_
+_Please list any portions of the toolchain required to build and use the sample, along with download links_
 
 ## Version history
 
 Version|Date|Author|Comments
 -------|----|----|--------
-1.0|August 29, 2025|Parker PnP|Initial release
+1.0|August 29, 2025|Parker T. Porcupine|Initial release
 
 ## Disclaimer
 
@@ -43,9 +49,16 @@ Version|Date|Author|Comments
 _Include consise instructions to set up and run the sample. These are just an example!_
 
 * Clone this repository
-* Import the PowerApp (how?)
-* Set up connectors (how?)
-* Add to Teams (how?)
+* Open the cloned copy of this folder with Visual Studio Code
+* Install required npm packages
+
+```shell
+  npm install
+```
+
+* Press F5 to run the application. A browser window should open offering to add your application to Microsoft Teams.
+
+_NOTE: If your solution includes an additional project, such as Teams Toolkit tab with an Azure Function back-end, please be sure to include the instructions for **both** projects!_
 
 ## Features
 
