@@ -1,0 +1,94 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [
+        {
+            "type": "Container",
+            "style": "emphasis",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "large",
+                                    "weight": "bolder",
+                                    "text": "**REMOTE ASSISTANCE REQUEST**",
+                                    "style": "heading",
+                                    "wrap": true
+                                }
+                            ],
+                            "width": "stretch"
+                        }
+                    ]
+                }
+            ],
+            "bleed": true
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "size": "large",
+                                    "text": "**MEETING ID:** ${joinMeetingId}",
+                                    "wrap": true,
+                                    "style": "heading"
+                                }
+                            ],
+                            "width": "stretch"
+                        },
+                        {
+                            "type": "Column",
+                            "items": [
+                                {
+                                    "type": "ActionSet",
+                                    "actions": [
+                                        {
+                                            "type": "Action.OpenUrl",
+                                            "title": "Join",
+                                            "url": "${joinWebUrl}"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "width": "auto"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "FactSet",
+            "spacing": "large",
+            "facts": [
+                {
+                    "title": "Created By",
+                    "value": "${createdByName}"
+                },
+                {
+                    "title": "Assistance For",
+                    "value": "${name}"
+                },
+                {
+                    "title": "Submitted On",
+                    "value": "${formatDateTime(submittedDate, 'yyyy-MM-dd')}"
+                },
+                {
+                    "title": "Description",
+                    "value": "${description}"
+                }
+            ]
+        }
+    ]
+}
