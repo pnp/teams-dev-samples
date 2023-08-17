@@ -1,0 +1,93 @@
+[
+    {
+        "name": "pnp-sp-dev-teams-sample-app-my-dashboard-spfx",
+        "reponame": "app-my-dashboard-spfx",
+        "source": "pnp",
+        "title": "My DashBoard SPFx",
+        "shortDescription": "A dashboard app built with SPFx.",
+        "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-my-dashboard-spfx",
+        "longDescription": [
+            "A dashboard app built with SPFx showing Files, Feed, Agenda etc."
+        ],
+        "creationDateTime": "2023-06-15",
+        "updateDateTime": "2023-08-18",
+        "products": [
+            "Teams Global Hack "
+        ],
+        "metadata": [
+            {
+                "key": "TEAMS-SAMPLE-SOURCE",
+                "value": "pnp"
+            },
+            {
+                "key": "TEAMS-SAMPLE-TYPE",
+                "value": "demo"
+            },
+            {
+                "key": "TEAMS-CLIENT-LANGUAGE",
+                "value": "typescript"
+            },
+            {
+                "key": "TEAMS-CLIENT-PLATFORM",
+                "value": "teamstoolkit"
+            },
+            {
+                "key": "TEAMS-CLIENT-UI",
+                "value": "react"
+            },
+            {
+                "key": "TEAMS-SERVER-LANGUAGE",
+                "value": ""
+            },
+            {
+                "key": "TEAMS-SERVER-PLATFORM",
+                "value": ""
+            },
+            {
+                "key": "TEAMS-BOT-FRAMEWORK",
+                "value": ""
+            },
+            {
+                "key": "TEAMS-FEATURES",
+                "value": "tab"
+            },
+            {
+                "key": "TEAMS-GENERATOR",
+                "value": ""
+            }
+        ],
+        "thumbnails": [
+            {
+                "type": "image",
+                "order": 100,
+                "url": "https://pnp.github.io/teams-dev-samples/samples/app-my-dashboard-spfx/assets/image-dashboard.jpg?raw=true",
+                "alt": "Preview of app"
+            }
+        ],
+        "authors": [
+            {
+                "gitHubAccount": "joaojmendes",
+                "company": "",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/12551125?v=4",
+                "name": "João Mendes",
+                "twitter": "https://twitter.com/joaojmendes"
+            }
+
+        ],
+        "references": [
+            {
+                "name": "Teams developer questions",
+                "url": "https://aka.ms/sample-ref-teams-dev-questions"
+            },
+            {
+                "name": "Teams development videos from Microsoft",
+                "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+            },
+            {
+                "name": "Teams development videos from the community",
+                "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+            }
+        ],
+        "version": "1.0.0.0"
+    }
+]
