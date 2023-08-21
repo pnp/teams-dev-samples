@@ -26,7 +26,7 @@
     "@pnp/logging": "3.14",
     "@pnp/sp": "3.16",
     "@pnp/spfx-controls-react": "^3.14.0",
-    "adaptive-expressions": "^4.19.3",
+    "adaptive-expressions": "^4.20.0",
     "adaptivecards": "^2.0",
     "adaptivecards-templating": "^2.2.0",
     "data-fns": "^1.1.0",
