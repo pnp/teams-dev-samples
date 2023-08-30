@@ -1,11 +1,11 @@
 [
     {
-        "name": "pnp-sp-dev-teams-sample-app-my-dashboard-spfx",
-        "reponame": "app-my-dashboard-spfx",
+        "name": "pnp-sp-dev-teams-sample-tab-my-dashboard-spfx",
+        "reponame": "tab-my-dashboard-spfx",
         "source": "pnp",
         "title": "My DashBoard SPFx",
         "shortDescription": "A dashboard app built with SPFx.",
-        "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/app-my-dashboard-spfx",
+        "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-my-dashboard-spfx",
         "longDescription": [
             "A dashboard app built with SPFx showing Files, Feed, Agenda etc."
         ],
@@ -60,7 +60,7 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://pnp.github.io/teams-dev-samples/samples/app-my-dashboard-spfx/assets/image-dashboard.jpg?raw=true",
+                "url": "https://pnp.github.io/teams-dev-samples/samples/tab-my-dashboard-spfx/assets/image-dashboard.jpg?raw=true",
                 "alt": "Preview of app"
             }
         ],

@@ -22,7 +22,7 @@ The SharePoint Framework (SPFx) is a page and web part model that provides full 
 
 Solution|Author(s)
 --------|---------
-app-my-dashboard-spfx | João Mendes
+tab-my-dashboard-spfx | João Mendes
 
 ## Version history
 
@@ -78,4 +78,4 @@ Start debugging the project by hitting the `F5` key in Visual Studio Code. Alter
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
 
-<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/app-my-dashboard-spfx" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-my-dashboard-spfx" />
