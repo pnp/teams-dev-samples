@@ -4,6 +4,8 @@
 
 The SharePoint Framework (SPFx) is a page and web part model that provides full support for client-side SharePoint development, easy integration with SharePoint data, and extending Microsoft Teams. This project applies SPFx to Teams personal tab and group tab support.
 
+![Dashboard](./assets/image-dashboard.jpg)
+
 ## Applies to
 
 - [SharePoint Framework](https://aka.ms/spfx)
@@ -20,14 +22,13 @@ The SharePoint Framework (SPFx) is a page and web part model that provides full 
 
 Solution|Author(s)
 --------|---------
-folder name | Author details (name, company, twitter alias with link)
+app-my-dashboard-spfx | João Mendes
 
 ## Version history
 
 Version|Date|Comments
 -------|----|--------
-1.1|March 10, 2021|Update comment
-1.0|January 29, 2021|Initial release
+1.0|August 28, 2023|Initial release
 
 ## Disclaimer
 
