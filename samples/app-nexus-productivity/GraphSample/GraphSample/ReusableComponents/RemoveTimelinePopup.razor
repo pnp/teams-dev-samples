@@ -1,0 +1,83 @@
+﻿@using Microsoft.AspNetCore.Components.Forms
+
+<style>
+    .sub-button{
+        background-color: #1b6ec2;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .sub-button:hover{
+        background-color: #1b6ec2c7;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .can-button{
+        background-color: #f44336;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    
+    .can-button:hover{
+        background-color: #f44336c7;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .button-line{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+
+<div>
+    <EditForm Model="_form" OnValidSubmit="SubmitForm">
+        <div class="button-line">
+            <button class="sub-button" type="submit">Submit</button>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    private readonly Form _form = new();
+    [CascadingParameter] BlazoredModalInstance BlazoredModal { get; set; } = default!;
+
+    protected override void OnInitialized() => BlazoredModal.SetTitle("Are you sure you want to delete a timeline?");
+
+    private async Task SubmitForm() => await BlazoredModal.CloseAsync(ModalResult.Ok());
+    private async Task Cancel() => await BlazoredModal.CancelAsync();
+
+    class Form { };
+
+}
+

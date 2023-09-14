@@ -1,0 +1,37 @@
+﻿@page "/authentication/{action}"
+@using Microsoft.AspNetCore.Components;
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
+
+@using System.Threading.Tasks;
+
+@using Microsoft.JSInterop
+
+@inject IJSRuntime JSRuntime
+
+<RemoteAuthenticatorView Action="@Action" LogInFailed="LogInFailedFragment" />
+
+
+@code {
+    [Parameter] public string? Action { get; set; }
+    
+    private static RenderFragment LogInFailedFragment(string message)
+    {
+        return builder =>
+        {
+            builder.OpenElement(0, "div");
+            builder.AddAttribute(1, "class", "alert alert-danger");
+            builder.AddAttribute(2, "role", "alert");
+            builder.OpenElement(3, "p");
+            builder.AddContent(4, "There was an error trying to log you in.");
+            builder.CloseElement();
+            if (!string.IsNullOrEmpty(message))
+            {
+                builder.OpenElement(5, "p");
+                builder.AddContent(6, $"Error: {message}");
+                builder.CloseElement();
+            }
+            builder.CloseElement();
+        };
+    }
+
+}

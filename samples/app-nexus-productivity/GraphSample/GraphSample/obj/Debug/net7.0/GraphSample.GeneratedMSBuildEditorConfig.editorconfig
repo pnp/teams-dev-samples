@@ -1,0 +1,135 @@
+is_global = true
+build_property.PublishFluentIconAssets = true
+build_property.PublishFluentEmojiAssets = false
+build_property.FluentEmojiStyles = 
+build_property.FluentEmojiGroups = 
+build_property.FluentIconSizes = 10,12,16,20,24,28,32,48
+build_property.FluentIconVariants = Filled,Regular
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = GraphSample
+build_property.RootNamespace = GraphSample
+build_property.ProjectDir = C:\Users\mahas\Downloads\HackathonMicrosoft\GraphSample\GraphSample\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\mahas\Downloads\HackathonMicrosoft\GraphSample\GraphSample
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/ApplicationTracker.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwbGljYXRpb25UcmFja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Calendar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsZW5kYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Chat.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Dashbar.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/EditOneNote.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdE9uZU5vdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Schedulingmeeting.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2NoZWR1bGluZ21lZXRpbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/SignIn.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2lnbkluLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Teams.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhbXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/TestAI.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdEFJLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/ToDo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVG9Eby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Transcript.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVHJhbnNjcmlwdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/UniversalSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5pdmVyc2FsU2VhcmNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/ReusableComponents/AddCustomDescriptionPopup.razor]
+build_metadata.AdditionalFiles.TargetPath = UmV1c2FibGVDb21wb25lbnRzXEFkZEN1c3RvbURlc2NyaXB0aW9uUG9wdXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/ReusableComponents/AddTimelinePopup.razor]
+build_metadata.AdditionalFiles.TargetPath = UmV1c2FibGVDb21wb25lbnRzXEFkZFRpbWVsaW5lUG9wdXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/ReusableComponents/AssessmentInputPopup.razor]
+build_metadata.AdditionalFiles.TargetPath = UmV1c2FibGVDb21wb25lbnRzXEFzc2Vzc21lbnRJbnB1dFBvcHVwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/ReusableComponents/InputPopup.razor]
+build_metadata.AdditionalFiles.TargetPath = UmV1c2FibGVDb21wb25lbnRzXElucHV0UG9wdXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/ReusableComponents/RemoveTimelinePopup.razor]
+build_metadata.AdditionalFiles.TargetPath = UmV1c2FibGVDb21wb25lbnRzXFJlbW92ZVRpbWVsaW5lUG9wdXAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/ReusableComponents/UpdateDatePopup.razor]
+build_metadata.AdditionalFiles.TargetPath = UmV1c2FibGVDb21wb25lbnRzXFVwZGF0ZURhdGVQb3B1cC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Shared/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Shared/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/Overview.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3ZlcnZpZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-omvmab0aii
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Pages/SummarizeFiles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VtbWFyaXplRmlsZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-8cwxo513pf
+
+[C:/Users/mahas/Downloads/HackathonMicrosoft/GraphSample/GraphSample/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-bl0j7m4p9v

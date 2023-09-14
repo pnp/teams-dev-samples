@@ -1,0 +1,39 @@
+<style>
+
+    .row {
+      position: relative;
+      margin-bottom: 20px;
+      left: 20px !important;
+      top: 0px !important;
+    }
+  
+
+    @@media (max-width: 576px) {
+        .search-bar {
+            padding: 8px;
+        }
+
+        .search-input {
+            font-size: 14px;
+        }
+
+        .search-button {
+            padding: 6px 12px;
+        }
+    }
+</style>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="row ">
+    <div class="col-md-4 mt-3">
+        <div class="search-bar">
+            <div class="input-group">
+                <input class="form-control py-2 rounded-pill mr-1 pr-5 search-input" type="search" placeholder="Search" id="example-search-input">
+                <span class="input-group-append">
+                    <button class="btn rounded-pill border-0 ml-n5 search-button" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

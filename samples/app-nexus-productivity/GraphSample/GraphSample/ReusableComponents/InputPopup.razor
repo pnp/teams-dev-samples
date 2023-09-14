@@ -1,0 +1,141 @@
+﻿@using Microsoft.AspNetCore.Components.Forms
+
+<style>
+    .sub-button{
+        background-color: #1b6ec2;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .sub-button:hover{
+        background-color: #1b6ec2c7;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .can-button{
+        background-color: #f44336;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    
+    .can-button:hover{
+        background-color: #f44336c7;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .button-line{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+
+</style>
+
+<div>
+    <EditForm Model="_form" OnValidSubmit="SubmitForm">
+        <FluentSearch @ref=searchTest
+                      @oninput=handleSearchInput
+                      @onchange=handleSearchInput
+                      @bind-Value="@searchValue"
+                      Placeholder="Search for email"
+                      autocomplete="off" />
+        <br />
+        <FluentListbox Items=@searchResults TOption="string" SelectedOptionChanged="@(e => searchValue = (e != defaultResultsText ? e : string.Empty) )" />
+
+        <div class="button-line">
+            <button class="sub-button" type="submit">Submit</button>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+
+    List<string> searchResults = defaultResults();
+
+    static string defaultResultsText = "no results";
+    FluentSearch? searchTest;
+    string? searchValue = string.Empty;
+    static List<string> defaultResults()
+    {
+        return new() { defaultResultsText };
+    }
+
+
+
+    void handleSearchInput(ChangeEventArgs args)
+    {
+        if (args is not null && !string.IsNullOrWhiteSpace(args.Value?.ToString()))
+        {
+            string searchTerm = args.Value.ToString()!.ToLower();
+
+            if (searchTerm.Length > 0)
+            {
+                List<string> temp = allSenders.Where(str => str.ToLower().Contains(searchTerm)).Select(str => str).ToList();
+                if (temp.Count() > 0)
+                {
+                    searchResults = temp;
+                }
+            }
+        }
+        else
+        {
+            searchResults = defaultResults();
+            searchValue = string.Empty;
+        }
+    }
+
+    private readonly Form _form = new();
+
+    [CascadingParameter] BlazoredModalInstance BlazoredModal { get; set; } = default!;
+    [Parameter] public HashSet<string> allSenders { get; set; }
+
+    protected override void OnInitialized() => BlazoredModal.SetTitle("Enter an Email Address");
+
+    private async Task SubmitForm() => await BlazoredModal.CloseAsync(ModalResult.Ok(searchValue));
+    private async Task Cancel() => await BlazoredModal.CancelAsync();
+
+    class Form
+    {
+        // take care of the nullability of the string public string Message;
+        public string Message { get; set; } = string.Empty;
+
+    }
+}
