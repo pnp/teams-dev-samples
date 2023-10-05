@@ -44,7 +44,7 @@
     "vinyl": "2.2.1",
     "webpack": "5.76.0",
     "yargs": "^16.0.3",
-    "yoteams-build-core": "^1.5.0",
+    "yoteams-build-core": "^1.8.1",
     "yoteams-deploy": "^1.2.0",
     "webpack-node-externals": "^3.0.0"
   },
