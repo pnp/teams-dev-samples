@@ -1,0 +1,103 @@
+﻿@using Azure.Core
+@using Microsoft.Extensions.Configuration
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.Extensions.Hosting
+@using System.Net.Http.Headers
+@using System.Text.Json
+@using System.Text
+@using System.Text.Encodings
+@using TabOfficeOfferCreation.Model
+@inject TeamsFx teamsfx
+@inject TeamsUserCredential teamsUserCredential
+@inject MicrosoftTeams MicrosoftTeams
+@inject IWebHostEnvironment HostEnvironment
+@inject IHttpClientFactory ClientFactory
+@inject IConfiguration Configuration
+@inject NavigationManager MyNavigationManager
+
+<EditForm Model="@exampleModel" OnSubmit="@load" >
+  <div class="form">
+      <div>
+          <FluentTextField @bind-Value="@exampleModel.Title">Title</FluentTextField>
+      </div>
+      <div>
+          <label class="formLabel">Offer Date</label>
+      </div>
+      <div>          
+          <InputDate @bind-Value=@exampleModel.OfferDate />
+      </div>
+      <div class="formLine">
+          <FluentNumberField @bind-Value="@exampleModel.Price" Step=".01">Price</FluentNumberField>
+      </div>
+      <div class="formLine">
+          <label class="formLabel">Offer Date</label>
+          <label>VAT</label>
+      </div>
+      <div>          
+          <FluentSelect Items=@vatOptions OptionText="@(i => i.Text)" OptionValue="@(i => i.Value)" @bind-Value="@exampleModel.SelectedVAT">VAT</FluentSelect>
+      </div>
+      <div class="formLine">
+          <FluentTextArea Resize="TextAreaResize.Vertical" @bind-Value="@exampleModel.Description">Description</FluentTextArea>
+      </div>
+      <div class="formLine">
+        <FluentButton Appearance="Appearance.Accent" Type="ButtonType.Submit">Save</FluentButton>
+      </div>      
+    </div>
+ </EditForm>
+@if (isLoading)
+{
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <FluentProgressRing />
+    </div>
+}
+@if (resultAvailabe)
+{
+    <label>Document was created and can be found <a href=@resultMessage> here</a></label>
+}
+
+@code {
+    public Offer exampleModel = new()
+    {
+        OfferDate = DateTime.Today,
+        SelectedVAT = ".19"
+    };
+
+    string errorMessage;
+    bool isInTeams;
+    bool isLoading = false;
+    bool resultAvailabe = false;
+    string resultMessage = String.Empty;
+
+    List<Option<string>> vatOptions = new()
+    {
+        { new Option<string> { Value = ".19", Text = "19%", Selected=true } },
+        { new Option<string> { Value = ".07", Text = "7%" } }
+    };
+
+    async void load()
+    {
+        isLoading = true;
+        resultAvailabe = false;
+        var result = await teamsUserCredential.GetTokenAsync(new TokenRequestContext(new string[] { }), new System.Threading.CancellationToken());
+        string token = result.Token;
+        var request = new HttpRequestMessage(HttpMethod.Post,
+            "/api/Offer");
+        request.Headers.Add("Accept", "application/json");
+        request.Headers.Add("User-Agent", "HttpClientFactory-Sample");
+        request.Content = new StringContent(JsonSerializer.Serialize(exampleModel), Encoding.UTF8, "application/json");
+
+        var client = ClientFactory.CreateClient();
+        client.BaseAddress = new Uri(MyNavigationManager.BaseUri);
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+        var response = await client.SendAsync(request);
+
+        if (response.IsSuccessStatusCode)
+        {
+            resultMessage = await response.Content.ReadAsStringAsync();
+            resultAvailabe = true;
+        }
+        isLoading = false;
+        StateHasChanged();
+    }
+}
+
