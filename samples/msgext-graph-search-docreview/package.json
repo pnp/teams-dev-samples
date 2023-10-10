@@ -15,7 +15,7 @@
     "botbuilder-dialogs": "4.7.1",
     "botbuilder-teams-messagingextensions": "1.6.0",
     "compression": "1.7.4",
-    "debug": "4.1.1",
+    "debug": "4.3.1",
     "dotenv": "8.2.0",
     "express": "4.17.3",
     "express-msteams-host": "1.6.2",
