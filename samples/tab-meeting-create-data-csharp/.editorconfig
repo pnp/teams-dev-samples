@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CS8670: Object or collection initializer implicitly dereferences possibly null member.
+dotnet_diagnostic.CS8670.severity = none

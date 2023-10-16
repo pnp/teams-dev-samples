@@ -1,0 +1,92 @@
+[
+    {
+      "name": "pnp-sp-dev-teams-sample-tab-meeting-create-data-csharp",
+      "reponame": "tab-meeting-create-data-csharp",
+      "source": "pnp",
+      "title": "Offer Creation (Teams Toolkit VS)",
+      "shortDescription": "Teams Tab displaying custom data in a meeting to be installed console application.",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-create-data-csharp",
+      "longDescription": [
+        "A Microsoft Teams Tab displaying simple custom data in a meeting which can be installed by the parallel console application."
+      ],
+      "creationDateTime": "2023-10-16",
+      "updateDateTime": "2023-10-16",
+      "products": [
+        "Teams"
+      ],
+      "metadata": [
+        {
+          "key": "TEAMS-SAMPLE-SOURCE",
+          "value": "pnp"
+        },
+        {
+          "key": "TEAMS-SAMPLE-TYPE",
+          "value": "barebones"
+        },
+        {
+          "key": "TEAMS-CLIENT-LANGUAGE",
+          "value": "csharp"
+        },
+        {
+          "key": "TEAMS-CLIENT-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-UI",
+          "value": "blazor"
+        },
+        {
+          "key": "TEAMS-SERVER-LANGUAGE",
+          "value": "csharp"
+        },
+        {
+          "key": "TEAMS-SERVER-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-BOT-FRAMEWORK",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-FEATURES",
+          "value": "tab"
+        },
+        {
+          "key": "TEAMS-GENERATOR",
+          "value": "teamstoolkit"
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-meeting-create-data-csharp/assets/02InMeetingSidePanel.png",
+          "alt": "Custom data dispayed inside Teams Meeting"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "mmsharepoint",
+          "company": "Avanade ",
+          "pictureUrl": "https://github.com/mmsharepoint.png",
+          "name": "Markus Moeller",
+          "twitter": "moeller2_0"
+        }
+      ],
+      "references": [
+        {
+          "name": "Teams developer questions",
+          "url": "https://aka.ms/sample-ref-teams-dev-questions"
+        },
+        {
+          "name": "Teams development videos from Microsoft",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+        },
+        {
+          "name": "Teams development videos from the community",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+        }
+      ],
+      "version": "1.0.0.0"
+    }
+  ]

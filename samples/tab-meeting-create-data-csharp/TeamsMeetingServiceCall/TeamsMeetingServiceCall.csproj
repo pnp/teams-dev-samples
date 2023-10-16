@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectCapability Include="TeamsFx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".fx/**/*" />
+    <None Remove="build/**/*" />
+    <Content Remove="build/**/*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\GraphController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Components\Graph.razor" />
+    <Content Remove="Components\ProfileCard.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Components\ProfileCard.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.Tables" Version="12.8.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.20" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Graph" Version="4.54.0" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Identity.Web.MicrosoftGraph" Version="1.26.0" />
+    <PackageReference Include="Microsoft.TeamsFx" Version="1.2.*" />
+  </ItemGroup>
+
+</Project>
