@@ -1,0 +1,19 @@
+# TeamsFx files
+node_modules
+.fx/configs/localSettings.json
+.fx/states/*.userdata
+.DS_Store
+.env.teamsfx.local
+subscriptionInfo.json
+build
+bin
+obj
+.fx/configs/config.local.json
+.fx/states/state.local.json
+appsettings.Development.json
+.vs
+publish
+/TeamsMeetingServiceCall/env/.env.dev
+/TeamsMeetingServiceCall/Properties/PublishProfiles
+/TeamsMeetingServiceCall/Properties/ServiceDependencies/mmoTabMeetingCreateData - Web Deploy
+/TeamsMeetingCreationPoC/appsettings.Development.json

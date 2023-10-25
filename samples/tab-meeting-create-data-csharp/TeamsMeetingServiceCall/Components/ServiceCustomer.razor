@@ -1,0 +1,107 @@
+﻿﻿@using Azure.Core;
+@using Microsoft.Extensions.Configuration;
+@using Microsoft.AspNetCore.Hosting;
+@using Microsoft.Extensions.Hosting;
+@using System.Net.Http.Headers;
+@using System.Text;
+@using System.Text.Json;
+@using System.Text.Encodings;
+@inject TeamsFx teamsfx
+@inject MicrosoftTeams MicrosoftTeams
+@inject TeamsUserCredential teamsUserCredential
+@inject IWebHostEnvironment HostEnvironment
+@inject IConfiguration Configuration
+@inject IHttpClientFactory ClientFactory
+@inject NavigationManager MyNavigationManager
+@using TeamsMeetingServiceCall.Controllers;
+@using TeamsMeetingServiceCall.Models;
+
+<div class="welcome page">
+  <div class="narrow page-padding">
+    <img src="hello.png" />
+    <h1 class="center">Customer Info</h1>
+    <div class="gridTable">
+      <div class="gridRow">
+        <div class="gridCell3">
+          <label>Name</label>
+        </div>      
+        <div class="gridCell9">
+          <label id="customerName" class="infoData">@customer.Name</label>
+        </div>
+      </div>
+      <div class="gridRow">
+        <div class="gridCell3">
+          <label>Phone</label>
+        </div>
+        <div class="gridCell9">
+          <label id="customerPhone" class="infoData">@customer.Phone</label>
+        </div>
+      </div>
+      <div class="gridRow">
+        <div class="gridCell3">
+          <label>Email</label>
+        </div>
+        <div class="gridCell9">
+          <label id="customerEmail" class="infoData">@customer.Email</label>
+        </div>
+      </div>
+      <div class="gridRow">
+        <div class="gridCell3">
+          <label>ID</label>
+        </div>
+        <div class="gridCell9">
+          <label id="customerID" class="infoData">@customer.Id</label>
+        </div>
+      </div>
+    </div>
+           
+  </div>
+</div>
+
+@code {
+    CustomerData customer = new CustomerData
+      {
+          Name = "",
+          Email = "",
+          Phone = "",
+          Id = ""
+    };
+    bool isInTeams;
+    string meetingID = String.Empty;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+        if (firstRender)
+        {
+            await MicrosoftTeams.InitializeAsync();
+            isInTeams = await MicrosoftTeams.IsInTeams();
+            var context = await MicrosoftTeams.GetTeamsContextAsync();
+            meetingID = context.Meeting.Id;
+            if (isInTeams)
+            {
+                var result = await teamsUserCredential.GetTokenAsync(new TokenRequestContext(new string[] { }), new System.Threading.CancellationToken());
+                string token = result.Token;
+                var request = new HttpRequestMessage(HttpMethod.Get,
+                        $"/api/Customer?meetingId={meetingID}");
+
+                request.Headers.Add("Accept", "application/json");
+                request.Headers.Add("User-Agent", "HttpClientFactory-Sample");
+
+                var client = ClientFactory.CreateClient();
+                client.BaseAddress = new Uri(MyNavigationManager.BaseUri);
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                var response = await client.SendAsync(request);
+                var contents = await response.Content.ReadAsStringAsync();
+                var customerJson = JsonSerializer.Deserialize<CustomerResult>(contents);
+                customer.Name = customerJson.name;
+                customer.Phone = customerJson.phone;
+                customer.Email = customerJson.email;
+                customer.Id = customerJson.id;
+                StateHasChanged();
+            }
+        }
+    }
+}
+
+
