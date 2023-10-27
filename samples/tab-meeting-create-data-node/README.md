@@ -34,7 +34,7 @@ For further details see the [Yo Teams documentation](https://github.com/PnP/gene
 
 ## Applies to
 
-This sample was created [using the Yeoman Generator for Teams with Visual Studio Code](https://pnp.github.io/generator-teams/). 
+This sample was created [using the Yeoman Generator for Teams with Visual Studio Code](https://pnp.github.io/generator-teams/). The same sample was also realized with the [using the Teams Toolkit with Visual Studio 2022](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/teams-toolkit-fundamentals?pivots=visual-studio&WT.mc_id=M365-MVP-5004617) and can be found [here](https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-create-data-csharp).
 
 ## Version history
 
