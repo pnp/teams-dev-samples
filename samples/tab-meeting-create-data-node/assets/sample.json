@@ -1,16 +1,16 @@
 [
     {
-      "name": "pnp-sp-dev-teams-sample-tab-meeting-create-data-csharp",
-      "reponame": "tab-meeting-create-data-csharp",
+      "name": "pnp-sp-dev-teams-sample-tab-meeting-create-data-node",
+      "reponame": "tab-meeting-create-data-node",
       "source": "pnp",
-      "title": "Meeting Creation and Instalation (Teams Toolkit VS)",
+      "title": "Meeting Creation and Instalation (YoTeams)",
       "shortDescription": "Teams Tab displaying custom data in a meeting to be installed console application.",
-      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-create-data-csharp",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-create-data-node",
       "longDescription": [
-        "A Microsoft Teams Tab displaying simple custom data in a meeting which can be installed by the parallel console application."
+        "A Microsoft Teams Tab displaying simple custom data in a meeting which can be installed by the parallel console application. (NodeJS based)"
       ],
-      "creationDateTime": "2023-10-16",
-      "updateDateTime": "2023-10-16",
+      "creationDateTime": "2023-10-27",
+      "updateDateTime": "2023-10-27",
       "products": [
         "Teams"
       ],
@@ -25,7 +25,7 @@
         },
         {
           "key": "TEAMS-CLIENT-LANGUAGE",
-          "value": "csharp"
+          "value": "typescript"
         },
         {
           "key": "TEAMS-CLIENT-PLATFORM",
@@ -33,15 +33,15 @@
         },
         {
           "key": "TEAMS-CLIENT-UI",
-          "value": "blazor"
+          "value": "reactl"
         },
         {
           "key": "TEAMS-SERVER-LANGUAGE",
-          "value": "csharp"
+          "value": "typescript"
         },
         {
           "key": "TEAMS-SERVER-PLATFORM",
-          "value": ""
+          "value": "node"
         },
         {
           "key": "TEAMS-BOT-FRAMEWORK",
@@ -53,14 +53,20 @@
         },
         {
           "key": "TEAMS-GENERATOR",
-          "value": "teamstoolkit"
+          "value": "yoteams"
         }
       ],
       "thumbnails": [
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-meeting-create-data-csharp/assets/02InMeetingSidePanel.png",
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-meeting-create-data-node/assets/07TeamsMeeting_CreationResultNode.png",
+          "alt": "Teams Meeting creation, app istallation and custom data storage"
+        },
+        {
+          "type": "image",
+          "order": 101,
+          "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-meeting-create-data-node/assets/06InMeetingSidePanel.png",
           "alt": "Custom data dispayed inside Teams Meeting"
         }
       ],
