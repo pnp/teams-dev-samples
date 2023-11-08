@@ -99,4 +99,4 @@ This is a Microsoft Teams Tab displaying simple custom data in a meeting which c
 * Configuraton storage and retrieval in [Azure App Configuration](https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview?WT.mc_id=M365-MVP-5004617)
 * Data Storage and retrieval in [Azure Tables](https://learn.microsoft.com/en-us/javascript/api/overview/azure/data-tables-readme?view=azure-node-latest&WT.mc_id=M365-MVP-5004617)
 
-<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-meeting-create-data-node />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-meeting-create-data-node" />
