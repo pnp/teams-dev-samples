@@ -13,7 +13,7 @@
     "@azure/keyvault-secrets": "^4.1.0",
     "@fluentui/react-northstar": "~0.51.0",
     "@microsoft/teams-js": "1.8.0",
-    "axios": "^0.21.1",
+    "axios": "^1.6.0",
     "botbuilder": "4.10.4",
     "botbuilder-dialogs": "4.10.4",
     "botbuilder-teams-messagingextensions": "1.7.0",
