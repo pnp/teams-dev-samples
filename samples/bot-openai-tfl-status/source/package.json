@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@microsoft/adaptivecards-tools": "^1.0.0",
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "botbuilder": "^4.17.0",
     "openai": "^3.3.0"
   },
