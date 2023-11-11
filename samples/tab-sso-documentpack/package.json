@@ -16,7 +16,7 @@
         "@microsoft/teamsfx": "^2.2.0",
         "@microsoft/teamsfx-react": "^3.0.0",
         "antd": "^5.5.0",
-        "axios": "^0.21.1",
+        "axios": "^1.6.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-loader-spinner": "^5.3.4",

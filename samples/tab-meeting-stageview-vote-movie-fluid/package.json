@@ -14,7 +14,7 @@
     "@fluidframework/azure-client": "^1.0.1",
     "@fluidframework/test-client-utils": "^1.1.0",
     "@microsoft/teams-js": "^2.0.0",
-    "axios": "^0.27.2",
+    "axios": "^1.6.0",
     "botbuilder": "~4.16.0",
     "botbuilder-dialogs": "~4.16.0",
     "buffer": "^6.0.3",
