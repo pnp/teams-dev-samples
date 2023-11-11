@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@microsoft/teams-js": "1.8.0",
-    "axios": "^0.21.1",
+    "axios": "^1.6.0",
     "botbuilder": "4.19.3",
     "botbuilder-dialogs": "4.10.4",
     "compression": "1.7.4",
