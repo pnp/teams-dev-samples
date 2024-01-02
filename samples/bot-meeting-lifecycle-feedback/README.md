@@ -28,6 +28,11 @@ For further details see the author's [blog post](https://mmsharepoint.wordpress.
     # determine node version
     node --version
     ```
+## Applies to
+
+This sample was created with the [Yeoman Generator for Teams](https://github.com/pnp/generator-teams). Nearly the same sample was also realized [using the Teams Toolkit with Visual Studio 2022](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/teams-toolkit-fundamentals?pivots=visual-studio&WT.mc_id=M365-MVP-5004617) and can be found [here](https://github.com/pnp/teams-dev-samples/samples/bot-meeting-lifecycle-feedback-csharp).
+
+
 ## Version history
 
 Version|Date|Author|Comments
