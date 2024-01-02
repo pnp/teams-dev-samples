@@ -1,0 +1,133 @@
+{
+  "type": "AdaptiveCard",
+  "schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "refresh": {
+    "action": {
+      "type": "Action.Execute",
+      "title": "Refresh",
+      "verb": "alreadyVoted",
+      "data": {
+        "feedback": {
+          "meetingID": "${meetingID}",
+          "votedPersons": [
+            "${votedPersons}"
+          ],
+          "votes1": "${votes1}",
+          "votes2": "${votes2}",
+          "votes3": "${votes3}",
+          "votes4": "${votes4}",
+          "votes5": "${votes5}"
+        }
+      }
+    },
+    "userIds": "${votedPersons}"
+  },
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "How did you like the meeting?",
+      "wrap": true
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_1",
+          "iconUrl": "https://g3nknkff-5130.euw.devtunnels.ms/images/1.png",
+          "data": {
+            "feedback": {
+              "meetingID": "${meetingID}",
+              "votedPersons": [
+                "${votedPersons}"
+              ],
+              "votes1": "${votes1}",
+              "votes2": "${votes2}",
+              "votes3": "${votes3}",
+              "votes4": "${votes4}",
+              "votes5": "${votes5}"
+            }
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_2",
+          "iconUrl": "",
+          "data": {
+            "feedback": {
+              "meetingID": "${meetingID}",
+              "votedPersons": [
+                "${votedPersons}"
+              ],
+              "votes1": "${votes1}",
+              "votes2": "${votes2}",
+              "votes3": "${votes3}",
+              "votes4": "${votes4}",
+              "votes5": "${votes5}"
+            }
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_3",
+          "iconUrl": "",
+          "data": {
+            "feedback": {
+              "meetingID": "${meetingID}",
+              "votedPersons": [
+                "${votedPersons}"
+              ],
+              "votes1": "${votes1}",
+              "votes2": "${votes2}",
+              "votes3": "${votes3}",
+              "votes4": "${votes4}",
+              "votes5": "${votes5}"
+            }
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_4",
+          "iconUrl": "",
+          "data": {
+            "feedback": {
+              "meetingID": "${meetingID}",
+              "votedPersons": [
+                "${votedPersons}"
+              ],
+              "votes1": "${votes1}",
+              "votes2": "${votes2}",
+              "votes3": "${votes3}",
+              "votes4": "${votes4}",
+              "votes5": "${votes5}"
+            }
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_5",
+          "iconUrl": "",
+          "data": {
+            "feedback": {
+              "meetingID": "${meetingID}",
+              "votedPersons": [
+                "${votedPersons}"
+              ],
+              "votes1": "${votes1}",
+              "votes2": "${votes2}",
+              "votes3": "${votes3}",
+              "votes4": "${votes4}",
+              "votes5": "${votes5}"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

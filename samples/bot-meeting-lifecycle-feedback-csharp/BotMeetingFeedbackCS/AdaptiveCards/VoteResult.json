@@ -1,0 +1,142 @@
+{
+  "type": "AdaptiveCard",
+  "schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "refresh": {
+    "action": {
+      "type": "Action.Execute",
+      "title": "Refresh",
+      "verb": "alreadyVoted",
+      "data": {
+        "meetingID": "${meetingID}",
+        "votedPersons": "${votedPersons}",
+        "votes1": "${formatNumber(votes1,0)}",
+        "votes2": "${formatNumber(votes2,0)}",
+        "votes3": "${formatNumber(votes3,0)}",
+        "votes4": "${formatNumber(votes4,0)}",
+        "votes5": "${formatNumber(votes5,0)}"
+      }
+    },
+    "userIds": "${votedPersons}"
+  },
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "url": "${_hosturl}/images/pnp_logo.png?raw=true",
+              "size": "Medium"
+            }
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Voting result",
+              "style": "heading",
+              "wrap": true
+            }
+          ],
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Image",
+              "size": "Medium",
+              "url": "${_hosturl}/images/1.png"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${formatNumber(votes1,0)}",
+              "wrap": true,
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Image",
+              "size": "Medium",
+              "url": "${_hosturl}/images/2.png"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${formatNumber(votes2,0)}",
+              "wrap": true,
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Image",
+              "size": "Medium",
+              "url": "${_hosturl}/images/3.png"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${formatNumber(votes3,0)}",
+              "wrap": true,
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Image",
+              "size": "Medium",
+              "url": "${_hosturl}/images/4.png"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${formatNumber(votes4,0)}",
+              "wrap": true,
+              "horizontalAlignment": "Center"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "Image",
+              "size": "Medium",
+              "url": "${_hosturl}/images/5.png"
+            },
+            {
+              "type": "TextBlock",
+              "text": "${formatNumber(votes5,0)}",
+              "wrap": true,
+              "horizontalAlignment": "Center"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
