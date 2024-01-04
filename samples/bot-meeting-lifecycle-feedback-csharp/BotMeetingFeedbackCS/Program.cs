@@ -1,5 +1,4 @@
 using BotMeetingFfeedbackCS;
-using BotMeetingFfeedbackCS.Commands;
 using Microsoft.Bot.Builder.Integration.AspNet.Core;
 using Microsoft.Bot.Connector.Authentication;
 using Microsoft.TeamsFx.Conversation;
@@ -28,16 +27,11 @@ builder.Services.AddSingleton<IBotFrameworkHttpAdapter>(sp => sp.GetService<Clou
 builder.Services.AddSingleton<BotAdapter>(sp => sp.GetService<CloudAdapter>());
 
 // Create command handlers and the Conversation with command-response feature enabled.
-builder.Services.AddSingleton<HelloWorldCommandHandler>();
 builder.Services.AddSingleton(sp =>
 {
     var options = new ConversationOptions()
     {
-        Adapter = sp.GetService<CloudAdapter>(),
-        Command = new CommandOptions()
-        {
-            Commands = new List<ITeamsCommandHandler> { sp.GetService<HelloWorldCommandHandler>() }
-        }
+        Adapter = sp.GetService<CloudAdapter>(),        
     };
 
     return new ConversationBot(options);
