@@ -14,7 +14,7 @@
     "@fluentui/react-northstar": "~0.51.0",
     "@microsoft/teams-js": "1.8.0",
     "axios": "^1.6.0",
-    "botbuilder": "4.10.4",
+    "botbuilder": "4.21.4",
     "botbuilder-dialogs": "4.10.4",
     "botbuilder-teams-messagingextensions": "1.7.0",
     "compression": "1.7.4",
