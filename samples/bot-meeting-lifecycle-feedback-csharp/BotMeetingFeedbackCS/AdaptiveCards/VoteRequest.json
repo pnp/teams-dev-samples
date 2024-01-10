@@ -1,0 +1,132 @@
+{
+  "type": "AdaptiveCard",
+  "schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4",
+  "refresh": {
+    "action": {
+      "type": "Action.Execute",
+      "title": "Refresh",
+      "verb": "alreadyVoted",
+      "data": {
+        "meetingID": "${meetingID}",
+        "votedPersons": "${votedPersons}",
+        "votes1": "${formatNumber(votes1,0)}",
+        "votes2": "${formatNumber(votes2,0)}",
+        "votes3": "${formatNumber(votes3,0)}",
+        "votes4": "${formatNumber(votes4,0)}",
+        "votes5": "${formatNumber(votes5,0)}"
+      }
+    },
+    "userIds": "${votedPersons}"
+  },
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "Image",
+              "url": "${_hosturl}/images/pnp_logo.png",
+              "size": "Medium"
+            }
+          ],
+          "width": "auto"
+        },
+        {
+          "type": "Column",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "How did you like the meeting?",
+              "style": "heading",
+              "wrap": true
+            }
+          ],
+          "width": "stretch"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_1",
+          "iconUrl": "${_hosturl}/images/1.png",
+          "data": {
+            "meetingID": "${meetingID}",
+            "votedPersons": "${votedPersons}",
+            "votes1": "${formatNumber(votes1,0)}",
+            "votes2": "${formatNumber(votes2,0)}",
+            "votes3": "${formatNumber(votes3,0)}",
+            "votes4": "${formatNumber(votes4,0)}",
+            "votes5": "${formatNumber(votes5,0)}"
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_2",
+          "iconUrl": "${_hosturl}/images/2.png",
+          "data": {
+            "meetingID": "${meetingID}",
+            "votedPersons": "${votedPersons}",
+            "votes1": "${formatNumber(votes1,0)}",
+            "votes2": "${formatNumber(votes2,0)}",
+            "votes3": "${formatNumber(votes3,0)}",
+            "votes4": "${formatNumber(votes4,0)}",
+            "votes5": "${formatNumber(votes5,0)}"
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_3",
+          "iconUrl": "${_hosturl}/images/3.png",
+          "data": {
+            "meetingID": "${meetingID}",
+            "votedPersons": "${votedPersons}",
+            "votes1": "${formatNumber(votes1,0)}",
+            "votes2": "${formatNumber(votes2,0)}",
+            "votes3": "${formatNumber(votes3,0)}",
+            "votes4": "${formatNumber(votes4,0)}",
+            "votes5": "${formatNumber(votes5,0)}"
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_4",
+          "iconUrl": "${_hosturl}/images/4.png",
+          "data": {
+            "meetingID": "${meetingID}",
+            "votedPersons": "${votedPersons}",
+            "votes1": "${formatNumber(votes1,0)}",
+            "votes2": "${formatNumber(votes2,0)}",
+            "votes3": "${formatNumber(votes3,0)}",
+            "votes4": "${formatNumber(votes4,0)}",
+            "votes5": "${formatNumber(votes5,0)}"
+          }
+        },
+        {
+          "type": "Action.Execute",
+          "title": " ",
+          "verb": "vote_5",
+          "iconUrl": "${_hosturl}/images/5.png",
+          "data": {
+            "meetingID": "${meetingID}",
+            "votedPersons": "${votedPersons}",
+            "votes1": "${formatNumber(votes1,0)}",
+            "votes2": "${formatNumber(votes2,0)}",
+            "votes3": "${formatNumber(votes3,0)}",
+            "votes4": "${formatNumber(votes4,0)}",
+            "votes5": "${formatNumber(votes5,0)}"
+          }
+        }
+      ]
+    }
+  ]
+}
