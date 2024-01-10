@@ -41,7 +41,7 @@
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "express"
+        "value": "dotnet"
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",

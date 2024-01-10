@@ -53,7 +53,7 @@ Version|Date|Author|Comments
     ```bash
     git clone https://github.com/pnp/teams-dev-samples.git
 - Open /samples/bot-meeting-lifecycle-feedback-csharp/bot-meeting-lifecycle-feedback-csharp.sln in Visual Studio 2022
-- Perform first actions in GettingStarted.txt (before hitting F5)
+- Perform first actions in [GettingStarted.md](./BotMeetingFeedbackCS/GettingStarted.md) (before hitting F5)
 - Now you should have prepared your app (will try local first)
 - In your Teams calendar have a "real" meeting prepared ("real" means with at least +1 real partcipant)
 - When starting debug by F5 or "Microsoft Teams (browser)"
