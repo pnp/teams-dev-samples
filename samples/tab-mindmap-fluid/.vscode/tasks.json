@@ -60,6 +60,19 @@
             "options": {
                 "cwd": "${workspaceFolder}"
             },
+            "problemMatcher": {
+                "pattern": {
+                    "regexp": "^.*$",
+                    "file": 0,
+                    "location": 1,
+                    "message": 2
+                },
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".*",
+                    "endsPattern": "Listening|listening|Compiled|Failed|compiled|failed"
+                }
+            }
 
         },
         {
