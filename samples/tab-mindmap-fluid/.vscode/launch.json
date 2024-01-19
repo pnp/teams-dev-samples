@@ -132,13 +132,6 @@
                 "hidden": true
             },
             "internalConsoleOptions": "neverOpen"
-        },
-        {
-            "name": "Attach to Node Functions",
-            "type": "node",
-            "request": "attach",
-            "port": 9229,
-            "preLaunchTask": "func: host start"
         }
     ],
     "compounds": [
