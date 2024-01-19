@@ -3,7 +3,7 @@
     "manifestVersion": "1.16",
     "version": "1.0.0",
     "id": "${{TEAMS_APP_ID}}",
-    "packageName": "com.microsoft.teams.extension",
+    "packageName": "com.teams.extension.fluid.mindmap",
     "developer": {
         "name": "Peter Paul Kirschner",
         "websiteUrl": "${{TAB_ENDPOINT}}",
@@ -62,14 +62,6 @@
                 },
                 {
                     "name": "ChannelMeetingStage.Write.Group",
-                    "type": "Delegated"
-                },
-                {
-                    "name": "LiveShareSession.ReadWrite.Chat",
-                    "type": "Delegated"
-                },
-                {
-                    "name": "LiveShareSession.ReadWrite.Group",
                     "type": "Delegated"
                 }
             ]
