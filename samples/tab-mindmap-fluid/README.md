@@ -27,10 +27,10 @@ Meeting Tab (GO on Stage)
   - `code .`
   - Visual Studio Code Extention: Start debugger
   ![VScode Start debugger](./assets/install/vscode_startdebugger.png)
-  - First Deployment with Teams Toolkit go to ()
-  - Application stated you see  2 running Tasks
+  - First use of Teams Toolkit a Certificate will be installed, please allow it
+  - As Sone the Application is stated, you see  2 running Tasks
   ![VScode Start debugger](./assets/install/vscode_taskrunner.png)
-  - to try Group/Channel Chats or in Meeting add the apppackage to orgs's app catalog of your [M365 Developer Tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
+  - Add the apppackage to orgs's app catalog of your [M365 Developer Tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
     ![Upload app to org's app catalog](./assets/install/upload_to_org.png)
   - Go to your Channel / Chat / Meeting and add the TeamsMindMap-local
   ![Add App to a Channel](./assets/install/add_app_channel.png)
