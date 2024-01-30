@@ -31,7 +31,7 @@ Meeting Tab (GO on Stage)
   - As Sone the Application is stated, you see  2 running Tasks
   ![VScode Start debugger](./assets/install/vscode_taskrunner.png)
   - Add the apppackage to orgs's app catalog of your [M365 Developer Tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program)
-    ![Upload app to org's app catalog](./assets/install/upload_to_org.png)
+  ![Upload app to org's app catalog](./assets/install/upload_to_org.png)
   - Go to your Channel / Chat / Meeting and add the TeamsMindMap-local
   ![Add App to a Channel](./assets/install/add_app_channel.png)
   - Test it with multiple users in different browser profiles on your Maschine
@@ -59,3 +59,5 @@ Version|Date|Author|Comments
 - [Teams Toolkit CLI](https://docs.microsoft.com/microsoftteams/platform/toolkit/teamsfx-cli)
 - [TeamsFx SDK](https://docs.microsoft.com/microsoftteams/platform/toolkit/teamsfx-sdk)
 - [Teams Toolkit Samples](https://github.com/OfficeDev/TeamsFx-Samples)
+
+<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-mindmap-fluid" />

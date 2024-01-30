@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-mindmap-fluid",
+    "reponame": "tab-mindmap-fluid",
+    "source": "pnp",
+    "title": "MindMap based on Fluid",
+    "shortDescription": "Teams tab allowing multiple users to simultaneously edit a shared mind map",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-stageview-basic",
+    "longDescription": [
+      "This app allows multiple users to simultaneously edit a shared mind map in a meeting, group chat, or Teams channel"
+    ],
+    "creationDateTime": "2024-01-30",
+    "updateDateTime": "2024-01-30",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "teams-toolkit"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/petkir/teams-dev-samples/blob/sample-tab-mindmap-fluid/samples/tab-mindmap-fluid/assets/channel.gif?raw=true",
+        "alt": "Users collaborate on a mind map in a Teams channel"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "petkir",
+        "company": "cubido business solutions ",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/13123689?v=4",
+        "name": "Peter Paul Kirschner",
+        "twitter": "petkir_at"
+      }
+    ],
+    "references": [
+      {
+        "name": "Fluid Framework",
+        "url": "https://fluidframework.com/docs/"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]
