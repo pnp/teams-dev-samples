@@ -1,0 +1,70 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.16",
+    "version": "1.0.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "packageName": "com.teams.extension.fluid.mindmap",
+    "developer": {
+        "name": "Peter Paul Kirschner",
+        "websiteUrl": "${{TAB_ENDPOINT}}",
+        "privacyUrl": "${{TAB_ENDPOINT}}/index.html#/privacy",
+        "termsOfUseUrl": "${{TAB_ENDPOINT}}/index.html#/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "TeamsMindMap-${{TEAMSFX_ENV}}",
+        "full": "Mind Map Sample"
+    },
+    "description": {
+        "short": "MS Teams Mind Map Sample",
+        "full": "A Mind Map Based on Fluid Framework and Fluid Relay or Teams LiveShare Api"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [],
+    "composeExtensions": [],
+    "configurableTabs": [
+        {
+        "configurationUrl": "${{TAB_ENDPOINT}}/index.html#/config",
+        "canUpdateConfiguration": false,
+        "scopes": [
+            "team",
+            "groupchat"
+        ],
+        "context": [
+          "channelTab",
+          "meetingChatTab",
+          "privateChatTab",
+          "meetingStage"
+        ]
+      }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "${{TAB_DOMAIN}}"
+    ],
+    "webApplicationInfo": {
+        "id": "${{AAD_APP_CLIENT_ID}}",
+        "resource": "api://${{TAB_DOMAIN}}/${{AAD_APP_CLIENT_ID}}"
+    },
+    "showLoadingIndicator": true,
+    "authorization": {
+        "permissions": {
+            "resourceSpecific": [
+                {
+                    "name": "MeetingStage.Write.Chat",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "ChannelMeetingStage.Write.Group",
+                    "type": "Delegated"
+                }
+            ]
+        }
+    }
+}
