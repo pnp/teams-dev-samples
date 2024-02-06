@@ -5,7 +5,7 @@
     "source": "pnp",
     "title": "MindMap based on Fluid",
     "shortDescription": "Teams tab allowing multiple users to simultaneously edit a shared mind map",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-meeting-stageview-basic",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-mindmap-fluid",
     "longDescription": [
       "This app allows multiple users to simultaneously edit a shared mind map in a meeting, group chat, or Teams channel"
     ],
@@ -60,7 +60,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/petkir/teams-dev-samples/blob/sample-tab-mindmap-fluid/samples/tab-mindmap-fluid/assets/channel.gif?raw=true",
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/tab-mindmap-fluid/assets/channel.gif",
         "alt": "Users collaborate on a mind map in a Teams channel"
       }
     ],
