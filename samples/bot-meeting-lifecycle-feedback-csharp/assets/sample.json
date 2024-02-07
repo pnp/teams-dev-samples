@@ -5,7 +5,7 @@
     "source": "pnp",
     "title": "Bot meeting lifecycle provides meeting feedback",
     "shortDescription": "Shows how to write a bot that gathers and shares feedback at the end of a meeting C#)",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-meeting-lifecycle-feedback",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/bot-meeting-lifecycle-feedback-csharp",
     "longDescription": [
       "Shows how to write a bot that uses the Teams meeting lifecycle to gather meeting feedback and share it via an adaptive card with the universal action model using Teams Toolkit for Visual Studie 2022 (C#)"
     ],
@@ -60,14 +60,8 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-meeting-lifecycle-feedback-csharp/assets/VoteRequest.png?raw=true",
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-meeting-lifecycle-feedback-csharp/assets/06meetingended_feedbackrequest.gif?raw=true",
         "alt": "Bot gathering feedback at the end of a meeting"
-      },
-      {
-        "type": "image",
-        "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/bot-meeting-lifecycle-feedback-csharp/assets/VoteRequest.png?raw=true",
-        "alt": "Bot resulting feedback"
       }
     ],
     "authors": [
