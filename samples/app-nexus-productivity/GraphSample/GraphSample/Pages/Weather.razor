@@ -1,0 +1,91 @@
+@* @page "/weather"
+
+@using Newtonsoft.Json;
+
+<h1>Weather</h1>
+
+<p>@weatherData</p>
+
+@code {
+    private string weatherData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        HttpClient client = new HttpClient();
+
+        var response = await client.GetAsync("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/London?key=SWMLUUAV7UHPW5NZ6ZQQNK2G6");
+
+        response.EnsureSuccessStatusCode(); // Throw an exception if error
+
+        weatherData = await response.Content.ReadAsStringAsync();
+
+        dynamic weather = JsonConvert.DeserializeObject(weatherData);
+
+        // Loop through every "day" in the JSON and print a few details
+        foreach(var day in weather.days)
+        {
+            string weather_date = day.datetime;
+            string weather_desc = day.description;
+            string weather_tmax = day.tempmax;
+            string weather_tmin = day.tempmin;
+
+            Console.WriteLine(" Forecast for date: " + weather_date);
+            Console.WriteLine(" General conditions: " +  weather_desc);
+            Console.WriteLine(" The high temperature will be " +   weather_tmax);
+            Console.WriteLine(" The low temperature will be: " +   weather_tmin);
+        }
+    }
+} *@
+
+
+
+@page "/weather"
+
+@using Newtonsoft.Json;
+@using System.Collections.Generic;
+@using System;
+@using System.Text;
+@using System.Net;
+
+@inject IJSRuntime JSRuntime
+
+<h1>Weather</h1>
+
+<canvas id="weatherChart" width="400" height="200"></canvas>
+
+@code {
+    private List<string> dates = new List<string>();
+    private List<double> tmax = new List<double>();
+    private List<double> tmin = new List<double>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        HttpClient client = new HttpClient();
+
+        var ip = await client.GetStringAsync("https://api.ipify.org");
+        string myIP = ip.ToString();
+        var loc = await client.GetStringAsync("https://api.ipgeolocation.io/ipgeo?apiKey=128faba391e648aba00fcf3acda914e3&ip="+ myIP);
+        
+    
+
+        dynamic location = JsonConvert.DeserializeObject(loc);
+        Console.WriteLine(location.city);
+
+
+        var response = await client.GetAsync("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/"+ location.city +"?key=SWMLUUAV7UHPW5NZ6ZQQNK2G6");
+
+        response.EnsureSuccessStatusCode(); // Throw an exception if error
+
+        var weatherData = await response.Content.ReadAsStringAsync();
+
+        dynamic weather = JsonConvert.DeserializeObject(weatherData);
+
+        // Loop through every "day" in the JSON and extract temperature data
+        foreach (var day in weather.days)
+        {
+            dates.Add(day.datetime.ToString());
+            tmax.Add(day.tempmax.ToString());
+            tmin.Add(day.tempmin.ToString());
+        }
+    }
+}
