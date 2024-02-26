@@ -23,7 +23,7 @@
     "dependencies": {
         "@azure/openai": "^1.0.0-beta.2",
         "@microsoft/adaptivecards-tools": "^1.0.0",
-        "botbuilder": "^4.17.0",
+        "botbuilder": "^4.22.1",
         "restify": "^10.0.0"
     },
     "devDependencies": {
