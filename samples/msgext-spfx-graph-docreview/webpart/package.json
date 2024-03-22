@@ -24,7 +24,7 @@
   "devDependencies": {
     "@types/react": "16.8.8",
     "@types/react-dom": "16.8.3",
-    "@microsoft/sp-build-web": "1.15.2",
+    "@microsoft/sp-build-web": "1.20.1",
     "@microsoft/sp-tslint-rules": "1.11.0",
     "@microsoft/sp-module-interfaces": "1.11.0",
     "@microsoft/sp-webpart-workbench": "1.12.1",
