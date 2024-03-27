@@ -1,0 +1,53 @@
+{
+  "name": "msteams-azure-search-openai-demo",
+  "version": "1.0.0",
+  "description": "ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search in Microsoft Teams",
+  "engines": {
+    "node": "16 || 18"
+  },
+  "author": "Microsoft",
+  "license": "MIT",
+  "main": "./lib/server.js",
+  "scripts": {
+    "dev:teamsfx": "env-cmd --silent -f .localConfigs npm run dev",
+    "dev:teamsfx:testtool": "env-cmd --silent -f .localConfigs.testTool npm run dev",
+    "dev:teamsfx:launch-testtool": "env-cmd --silent -f env/.env.testtool teamsapptester start",
+    "dev": "nodemon -r ts-node/register ./server.ts",
+    "build": "tsc --build",
+    "clean": "gts clean",
+    "lint": "gts lint",
+    "fix": "gts fix",
+    "start": "node ./lib/server.js",
+    "storage": "azurite --silent --location ./_storage_emulator --debug ./_storage_emulator/debug.log",
+    "watch": "nodemon --exec \"npm run start\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "nodemonConfig": {
+    "ignore": ["**/_storage_emulator/**", "**/devTools/**"],
+    "exec": "node --inspect=9239",
+    "verbose": true,
+    "signal": "SIGINT"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "dependencies": {
+    "@microsoft/adaptivecards-tools": "1.3.2",
+    "@microsoft/teams-ai": "1.1.0",
+    "axios": "1.6.7",
+    "botbuilder": "4.22.1",
+    "botbuilder-azure-blobs": "4.22.1",
+    "restify": "11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.18.7",
+    "@types/restify": "8.5.12",
+    "azurite": "3.29.0",
+    "env-cmd": "10.1.0",
+    "gts": "5.2.0",
+    "nodemon": "3.0.2",
+    "ts-node": "10.9.2",
+    "typescript": "5.3.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/dev-proxy/main/schemas/v0.14.1/rc.schema.json",
+    "plugins": [
+        {
+            "name": "MockGeneratorPlugin",
+            "enabled": true,
+            "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll"
+        }
+    ],
+    "urlsToWatch": [
+        "https://app-backend-*.azurewebsites.net/chat"
+    ]
+}

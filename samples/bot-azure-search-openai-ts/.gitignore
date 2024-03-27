@@ -1,0 +1,22 @@
+# TeamsFx files
+env/.env.local
+env/.env.local.user
+env/.env.testtool
+.localConfigs
+.localConfigs.testTool
+appPackage/build
+devTools
+
+# dependencies
+node_modules/
+
+# misc
+.env
+.deployment
+.DS_Store
+
+# build
+lib/
+
+# Azurite emulator
+_storage_emulator

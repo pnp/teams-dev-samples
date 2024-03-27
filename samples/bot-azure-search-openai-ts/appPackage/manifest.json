@@ -1,0 +1,56 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.16",
+    "version": "1.0.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "packageName": "com.microsoft.teams.demo.openai.search.azure",
+    "developer": {
+        "name": "Microsoft",
+        "websiteUrl": "https://github.com/Azure-Samples/azure-search-openai-demo",
+        "privacyUrl": "https://github.com/Azure-Samples/azure-search-openai-demo",
+        "termsOfUseUrl": "https://github.com/Azure-Samples/azure-search-openai-demo"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Chat with your data",
+        "full": "Chat with your data using Azure OpenAI + Cognitive Search"
+    },
+    "description": {
+        "short": "ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search",
+        "full": "ChatGPT + Enterprise data with Azure OpenAI and Cognitive Search"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "${{BOT_ID}}",
+            "scopes": [
+                "personal"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal"
+                    ],
+                    "commands": [
+                        {
+                            "title": "New chat",
+                            "description": "Start a new chat with your data"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}

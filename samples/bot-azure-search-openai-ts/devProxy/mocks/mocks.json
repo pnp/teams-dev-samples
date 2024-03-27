@@ -1,0 +1,194 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/dev-proxy/main/schemas/v0.15.0/mockresponseplugin.schema.json",
+  "mocks": [
+    {
+      "request": {
+        "url": "https://app-backend-*.azurewebsites.net/chat",
+        "method": "POST"
+      },
+      "response": {
+        "statusCode": 200,
+        "body": {
+          "choices": [
+            {
+              "content_filter_results": {
+                "hate": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "self_harm": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "sexual": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "violence": {
+                  "filtered": false,
+                  "severity": "safe"
+                }
+              },
+              "context": {
+                "data_points": {
+                  "text": [
+                    "Benefit_Options.pdf#page=3:  With Northwind Health Plus, you can choose from a variety of in-network providers, including primary care physicians, specialists, hospitals, and pharmacies. This plan also offers coverage for emergency services, both in-network and out-of-network. Northwind Standard Northwind Standard is a basic plan that provides coverage for medical, vision, and dental services. This plan also offers coverage for preventive care services, as well as prescription drug coverage. With Northwind Standard, you can choose from a variety of in-network providers, including primary care physicians, specialists, hospitals, and pharmacies. This plan does not offer coverage for emergency services, mental health and substance abuse coverage, or out-of-network services. Comparison of Plans Both plans offer coverage for routine physicals, well-child visits, immunizations, and other preventive care services. The plans also cover preventive care services such as mammograms, colonoscopies, and other cancer screenings. Northwind Health Plus offers more comprehensive coverage than Northwind Standard.",
+                    "Benefit_Options.pdf#page=3:  Both plans offer coverage for medical services. Northwind Health Plus offers coverage for hospital stays, doctor visits, lab tests, and X-rays. Northwind Standard only offers coverage for doctor visits and lab tests. Northwind Health Plus is a comprehensive plan that offers more coverage than Northwind Standard. Northwind Health Plus offers coverage for emergency services, mental health and substance abuse coverage, and out-of-network services, while Northwind Standard does not. Northwind Health Plus alsooffers a wider range of prescription drug coverage than Northwind Standard. Both plans offer coverage for vision and dental services, as well as medical services. Cost Comparison Contoso Electronics deducts the employee\u0027s portion of the healthcare cost from each paycheck. This means that the cost of the health insurance will be spread out over the course of the year, rather than being paid in one lump sum. The employee\u0027s portion of the cost will be calculated based on the selected health plan and the number of people covered by the insurance.",
+                    "Benefit_Options.pdf#page=3:  The plans also cover preventive care services such as mammograms, colonoscopies, and other cancer screenings. Northwind Health Plus offers more comprehensive coverage than Northwind Standard. This plan offers coverage for emergency services, both in-network and out-of-network, as well as mental health and substance abuse coverage. Northwind Standard does not offer coverage for emergency services, mental health and substance abuse coverage, or out-of-network services. Both plans offer coverage for prescription drugs. Northwind Health Plus offers a wider range of prescription drug coverage than Northwind Standard. Northwind Health Plus covers generic, brand- name, and specialty drugs, while Northwind Standard only covers generic and brand-name drugs. Both plans offer coverage for vision and dental services. Northwind Health Plus offers coverage for vision exams, glasses, and contact lenses, as well as dental exams, cleanings, and fillings. Northwind Standard only offers coverage for vision exams and glasses. Both plans offer coverage for medical services. Northwind Health Plus offers coverage for hospital stays, doctor visits, lab tests, and X-rays."
+                  ]
+                },
+                "followup_questions": [
+                  "What is the cost difference between the Health Plus plan and the standard plan?",
+                  "Are there any limitations on the mental health and substance abuse coverage in the Health Plus plan?",
+                  "What is the coverage for vision and dental services in the standard plan?"
+                ],
+                "thoughts": [
+                  {
+                    "description": "What is included in my Northwind Health Plus plan that is not in standard?",
+                    "props": null,
+                    "title": "Original user query"
+                  },
+                  {
+                    "description": "Northwind Health Plus plan standard",
+                    "props": {
+                      "has_vector": true,
+                      "use_semantic_captions": false
+                    },
+                    "title": "Generated search query"
+                  },
+                  {
+                    "description": [
+                      {
+                        "captions": [],
+                        "category": null,
+                        "content": " With Northwind Health Plus, you can choose from a variety of in-network providers, including primary care physicians, specialists, hospitals, and pharmacies. This plan also offers coverage for emergency services, both in-network and out-of-network.\nNorthwind Standard\nNorthwind Standard is a basic plan that provides coverage for medical, vision, and dental services. This plan also offers coverage for preventive care services, as well as prescription drug coverage. With Northwind Standard, you can choose from a variety of in-network providers, including primary care physicians, specialists, hospitals, and pharmacies. This plan does not offer coverage for emergency services, mental health and substance abuse coverage, or out-of-network services.\nComparison of Plans\nBoth plans offer coverage for routine physicals, well-child visits, immunizations, and other preventive care services. The plans also cover preventive care services such as mammograms, colonoscopies, and other cancer screenings.\nNorthwind Health Plus offers more comprehensive coverage than Northwind Standard.",
+                        "embedding": "[-0.0004170022, -0.00033826465 ...\u002B1534 more]",
+                        "groups": [],
+                        "id": "file-Benefit_Options_pdf-42656E656669745F4F7074696F6E732E706466-page-1",
+                        "imageEmbedding": null,
+                        "oids": [],
+                        "sourcefile": "Benefit_Options.pdf",
+                        "sourcepage": "Benefit_Options.pdf#page=3"
+                      },
+                      {
+                        "captions": [],
+                        "category": null,
+                        "content": "\nBoth plans offer coverage for medical services. Northwind Health Plus offers coverage for hospital stays, doctor visits, lab tests, and X-rays. Northwind Standard only offers coverage for doctor visits and lab tests.\nNorthwind Health Plus is a comprehensive plan that offers more coverage than Northwind Standard. Northwind Health Plus offers coverage for emergency services, mental health and substance abuse coverage, and out-of-network services, while Northwind Standard does not. Northwind Health Plus alsooffers a wider range of prescription drug coverage than Northwind Standard. Both plans offer coverage for vision and dental services, as well as medical services.\nCost Comparison\nContoso Electronics deducts the employee\u0027s portion of the healthcare cost from each paycheck. This means that the cost of the health insurance will be spread out over the course of the year, rather than being paid in one lump sum. The employee\u0027s portion of the cost will be calculated based on the selected health plan and the number of people covered by the insurance.",
+                        "embedding": "[0.008753963, 0.0009699751 ...\u002B1534 more]",
+                        "groups": [],
+                        "id": "file-Benefit_Options_pdf-42656E656669745F4F7074696F6E732E706466-page-3",
+                        "imageEmbedding": null,
+                        "oids": [],
+                        "sourcefile": "Benefit_Options.pdf",
+                        "sourcepage": "Benefit_Options.pdf#page=3"
+                      },
+                      {
+                        "captions": [],
+                        "category": null,
+                        "content": " The plans also cover preventive care services such as mammograms, colonoscopies, and other cancer screenings.\nNorthwind Health Plus offers more comprehensive coverage than Northwind Standard. This plan offers coverage for emergency services, both in-network and out-of-network, as well as mental health and substance abuse coverage. Northwind Standard does not offer coverage for emergency services, mental health and substance abuse coverage, or out-of-network services.\nBoth plans offer coverage for prescription drugs. Northwind Health Plus offers a wider range of prescription drug coverage than Northwind Standard. Northwind Health Plus covers generic, brand- name, and specialty drugs, while Northwind Standard only covers generic and brand-name drugs.\nBoth plans offer coverage for vision and dental services. Northwind Health Plus offers coverage for vision exams, glasses, and contact lenses, as well as dental exams, cleanings, and fillings. Northwind Standard only offers coverage for vision exams and glasses.\nBoth plans offer coverage for medical services. Northwind Health Plus offers coverage for hospital stays, doctor visits, lab tests, and X-rays.",
+                        "embedding": "[0.0003195051, -0.008591734 ...\u002B1534 more]",
+                        "groups": [],
+                        "id": "file-Benefit_Options_pdf-42656E656669745F4F7074696F6E732E706466-page-2",
+                        "imageEmbedding": null,
+                        "oids": [],
+                        "sourcefile": "Benefit_Options.pdf",
+                        "sourcepage": "Benefit_Options.pdf#page=3"
+                      }
+                    ],
+                    "props": null,
+                    "title": "Results"
+                  },
+                  {
+                    "description": [
+                      "{\u0027role\u0027: \u0027system\u0027, \u0027content\u0027: \u0027Assistant helps the company employees with their healthcare plan questions, and questions about the employee handbook. Be brief in your answers.\\n        Answer ONLY with the facts listed in the list of sources below. If there isn\\\u0027t enough information below, say you don\\\u0027t know. Do not generate answers that don\\\u0027t use the sources below. If asking a clarifying question to the user would help, ask the question.\\n        For tabular information return it as an html table. Do not return markdown format. If the question is not in English, answer in the language used in the question.\\n        Each source has a name followed by colon and the actual information, always include the source name for each fact you use in the response. Use square brackets to reference the source, for example [info1.txt]. Don\\\u0027t combine sources, list each source separately, for example [info1.txt][info2.pdf].\\n        Generate 3 very brief follow-up questions that the user would likely ask next.\\n    Enclose the follow-up questions in double angle brackets. Example:\\n    \u003C\u003CAre there exclusions for prescriptions?\u003E\u003E\\n    \u003C\u003CWhich pharmacies can be ordered from?\u003E\u003E\\n    \u003C\u003CWhat is the limit for over-the-counter medication?\u003E\u003E\\n    Do no repeat questions that have already been asked.\\n    Make sure the last question ends with \u0022\u003E\u003E\u0022.\\n    \\n        \\n        \u0027}",
+                      "{\u0027role\u0027: \u0027user\u0027, \u0027content\u0027: \u0022What is included in my Northwind Health Plus plan that is not in standard?\\n\\nSources:\\nBenefit_Options.pdf#page=3:  With Northwind Health Plus, you can choose from a variety of in-network providers, including primary care physicians, specialists, hospitals, and pharmacies. This plan also offers coverage for emergency services, both in-network and out-of-network. Northwind Standard Northwind Standard is a basic plan that provides coverage for medical, vision, and dental services. This plan also offers coverage for preventive care services, as well as prescription drug coverage. With Northwind Standard, you can choose from a variety of in-network providers, including primary care physicians, specialists, hospitals, and pharmacies. This plan does not offer coverage for emergency services, mental health and substance abuse coverage, or out-of-network services. Comparison of Plans Both plans offer coverage for routine physicals, well-child visits, immunizations, and other preventive care services. The plans also cover preventive care services such as mammograms, colonoscopies, and other cancer screenings. Northwind Health Plus offers more comprehensive coverage than Northwind Standard.\\nBenefit_Options.pdf#page=3:  Both plans offer coverage for medical services. Northwind Health Plus offers coverage for hospital stays, doctor visits, lab tests, and X-rays. Northwind Standard only offers coverage for doctor visits and lab tests. Northwind Health Plus is a comprehensive plan that offers more coverage than Northwind Standard. Northwind Health Plus offers coverage for emergency services, mental health and substance abuse coverage, and out-of-network services, while Northwind Standard does not. Northwind Health Plus alsooffers a wider range of prescription drug coverage than Northwind Standard. Both plans offer coverage for vision and dental services, as well as medical services. Cost Comparison Contoso Electronics deducts the employee\u0027s portion of the healthcare cost from each paycheck. This means that the cost of the health insurance will be spread out over the course of the year, rather than being paid in one lump sum. The employee\u0027s portion of the cost will be calculated based on the selected health plan and the number of people covered by the insurance.\\nBenefit_Options.pdf#page=3:  The plans also cover preventive care services such as mammograms, colonoscopies, and other cancer screenings. Northwind Health Plus offers more comprehensive coverage than Northwind Standard. This plan offers coverage for emergency services, both in-network and out-of-network, as well as mental health and substance abuse coverage. Northwind Standard does not offer coverage for emergency services, mental health and substance abuse coverage, or out-of-network services. Both plans offer coverage for prescription drugs. Northwind Health Plus offers a wider range of prescription drug coverage than Northwind Standard. Northwind Health Plus covers generic, brand- name, and specialty drugs, while Northwind Standard only covers generic and brand-name drugs. Both plans offer coverage for vision and dental services. Northwind Health Plus offers coverage for vision exams, glasses, and contact lenses, as well as dental exams, cleanings, and fillings. Northwind Standard only offers coverage for vision exams and glasses. Both plans offer coverage for medical services. Northwind Health Plus offers coverage for hospital stays, doctor visits, lab tests, and X-rays.\u0022}"
+                    ],
+                    "props": null,
+                    "title": "Prompt"
+                  }
+                ]
+              },
+              "finish_reason": "stop",
+              "index": 0,
+              "logprobs": null,
+              "message": {
+                "content": "The Northwind Health Plus plan includes coverage for emergency services, mental health and substance abuse coverage, and out-of-network services, which are not included in the standard plan. Additionally, the Health Plus plan offers a wider range of prescription drug coverage, including coverage for specialty drugs, while the standard plan only covers generic and brand-name drugs. [Benefit_Options.pdf#page=3]\n\n",
+                "function_call": null,
+                "role": "assistant",
+                "tool_calls": null
+              },
+              "session_state": null
+            }
+          ],
+          "created": 1708957289,
+          "id": "chatcmpl-8wW9BMU2favDVrgNNq28sRqZALFjN",
+          "model": "gpt-35-turbo",
+          "object": "chat.completion",
+          "prompt_filter_results": [
+            {
+              "content_filter_results": {
+                "hate": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "self_harm": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "sexual": {
+                  "filtered": false,
+                  "severity": "safe"
+                },
+                "violence": {
+                  "filtered": false,
+                  "severity": "safe"
+                }
+              },
+              "prompt_index": 0
+            }
+          ],
+          "system_fingerprint": null,
+          "usage": {
+            "completion_tokens": 129,
+            "prompt_tokens": 933,
+            "total_tokens": 1062
+          }
+        },
+        "headers": [
+          {
+            "name": "Content-Length",
+            "value": "14538"
+          },
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "name": "Date",
+            "value": "Mon, 26 Feb 2024 14:21:26 GMT"
+          },
+          {
+            "name": "Server",
+            "value": "uvicorn"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "https://app-backend-*.azurewebsites.net/content/Benefit_Options.pdf"
+      },
+      "response": {
+        "statusCode": 200,
+        "body": "@docs/Benefit_Options.pdf",
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/pdf"
+          }
+        ]
+      }
+    }
+  ]
+}

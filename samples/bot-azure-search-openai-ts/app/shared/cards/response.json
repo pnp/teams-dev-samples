@@ -1,0 +1,106 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5",
+    "msteams": {
+        "width": "Full"
+    },
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "url": "data:image/svg+xml,%3Csvg aria-hidden='true' aria-label='Answer logo' fill='rgba(115, 118, 225, 1)' class='___12fm75w f1w7gpdv fez10in fg4l7m0' role='img' width='28' height='28' viewBox='0 0 28 28' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.06 18.7a1.63 1.63 0 0 0 2.43-.67l.77-2.34a3.82 3.82 0 0 1 2.42-2.42l2.23-.73a1.61 1.61 0 0 0 1.07-1.3 1.62 1.62 0 0 0-1.13-1.78l-2.21-.72a3.82 3.82 0 0 1-2.42-2.42l-.73-2.23a1.62 1.62 0 0 0-3.07.01l-.74 2.27a3.82 3.82 0 0 1-2.36 2.36l-2.24.73a1.63 1.63 0 0 0 .02 3.07l2.22.72a3.86 3.86 0 0 1 2.42 2.43l.73 2.23c.1.32.32.6.6.8Zm9.74 6.08a1.2 1.2 0 0 0 1.84-.6l.37-1.14a1.6 1.6 0 0 1 1.02-1.02l1.16-.38a1.21 1.21 0 0 0 .59-1.83 1.23 1.23 0 0 0-.62-.45L23 18.99A1.6 1.6 0 0 1 22 17.97l-.38-1.16a1.2 1.2 0 0 0-2.27.01l-.38 1.15a1.6 1.6 0 0 1-.99 1.02l-1.17.38a1.21 1.21 0 0 0-.58 1.83c.15.2.36.36.6.44l1.14.37A1.6 1.6 0 0 1 19 23.04l.37 1.16c.09.24.24.44.44.58Z' fill='rgba(115, 118, 225, 1)'%3E%3C/path%3E%3C/svg%3E",
+                            "size": "Small",
+                            "width": "28px"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "answer",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "${answer}",
+                    "wrap": true
+                },
+                {
+                    "type": "TextBlock",
+                    "$when": "${count(citations) > 0}",
+                    "text": "Citations:",
+                    "weight": "Bolder",
+                    "wrap": true
+                },
+                {
+                    "type": "ActionSet",
+                    "$when": "${count(citations) > 0}",
+                    "actions": [
+                        {
+                            "type": "Action.OpenUrl",
+                            "$data": "${citations}",
+                            "title": "${$index + 1}. ${filename}",
+                            "url": "${url}",
+                            "tooltip": "Open ${filename}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "$when": "${count(citations) > 0}",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.ShowCard",
+                            "title": "Supporting content",
+                            "tooltip": "Toggle supporting content",
+                            "card": {
+                                "type": "AdaptiveCard",
+                                "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+                                "body": [
+                                    {
+                                        "type": "Container",
+                                        "id": "supportingContent",
+                                        "style": "emphasis",
+                                        "items": [
+                                            {
+                                                "type": "Container",
+                                                "$data": "${supportingContent}",
+                                                "items": [
+                                                    {
+                                                        "type": "TextBlock",
+                                                        "text": "${filename}",
+                                                        "wrap": true,
+                                                        "style": "default",
+                                                        "weight": "Bolder"
+                                                    },
+                                                    {
+                                                        "type": "TextBlock",
+                                                        "text": "${content}",
+                                                        "wrap": true,
+                                                        "isSubtle": true
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

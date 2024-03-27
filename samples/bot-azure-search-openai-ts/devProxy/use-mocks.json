@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/dev-proxy/main/schemas/v0.14.1/rc.schema.json",
+  "plugins": [
+    {
+      "name": "LatencyPlugin",
+      "enabled": true,
+      "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll",
+      "configSection": "latencyPlugin"
+    },
+    {
+      "name": "MockResponsePlugin",
+      "enabled": true,
+      "pluginPath": "~appFolder/plugins/dev-proxy-plugins.dll",
+      "configSection": "mocksPlugin"
+    }
+  ],
+  "mocksPlugin": {
+    "mocksFile": "mocks/mocks.json"
+  },
+  "latencyPlugin": {
+    "minMs": 1000,
+    "maxMs": 3000
+  },
+  "urlsToWatch": ["https://app-backend-*.azurewebsites.net/*"]
+}
