@@ -1,0 +1,104 @@
+﻿@using MsgextActionSrchData.Model;
+@using MsgextActionSrchData.Controllers;
+@using Microsoft.AspNetCore.Components;
+
+@inject ProductController ProductsService
+@inject IJSRuntime JS
+
+@page "/InitialAction"
+<script type="text/javascript">
+    function submitTasks() {
+        var hiddenLabel = document.getElementById('prodName');
+        var selectedId = hiddenLabel.getAttribute('data-prodid');
+        var selectedName = hiddenLabel.getAttribute('data-name');
+        var selectedOrders = hiddenLabel.getAttribute('data-orders');
+        var selectedOrderable = false;
+        if (hiddenLabel.dataset.orderable !== undefined) {
+            selectedOrderable = true;
+        }
+        var result = { Id: selectedId, Name: selectedName, Orders: selectedOrders, Orderable: selectedOrderable }
+        microsoftTeams.dialog.url.submit(result);
+    }
+</script>
+<div class="tmContainer tmContainer-md tmContainer-sm">
+  <div class="tmRow">
+    <div class="tmCol9">
+      <FluentListbox TOption="Product"
+                    Label="Select a product"
+                    Items=@products
+                    Id="products-listbox"
+                    Height="250px"
+                    Width="98%"                   
+                    @bind-Value="@SelectedValue"
+                    @bind-SelectedOption="@SelectedItem">
+                <OptionTemplate>
+                    <div class="tmCol11">@context.Id @context.Name</div>
+                    <div class="tmCol1">
+                        @if (@context.Orderable)
+                        {
+                            <FluentIcon Icon="Icons.Regular.Size16.MailInboxCheckmark" Title="Orderable" Slot="end" />
+                        }
+                    </div>
+                </OptionTemplate>
+    </FluentListbox>
+    </div>
+    <div class="tmCol3">
+      <FluentRadioGroup Required="true" @bind-Value="DataSrc" Name="DataSrc" Orientation="Orientation.Vertical">
+          <FluentRadio Value="@("all")">All</FluentRadio>
+          <FluentRadio Value="@("orderable")">Orderable</FluentRadio>
+          <FluentRadio Value="@("nonorderable")">Non orderable</FluentRadio>
+      </FluentRadioGroup>
+
+      <p>
+          <label id="prodName"
+                  class="hiddenLabel"
+                  aria-hidden="true"
+                  data-name="@SelectedItem?.Name"
+                  data-prodid="@SelectedItem?.Id"
+                  data-orders="@SelectedItem?.Orders"
+                  data-orderable="@SelectedItem?.Orderable"></label>
+      </p>
+        <FluentButton Appearance="Appearance.Accent" Disabled="NoSelectedProduct()" @onclick="SubmitTeamsTask">Submit Order</FluentButton>
+    </div>
+  </div>
+</div>
+
+@code {
+    Product? SelectedItem;
+    string? SelectedValue = string.Empty;
+    string dataSource = "all";
+
+    private async Task SubmitTeamsTask()
+    {
+        await JS.InvokeVoidAsync("submitTasks");
+    }
+    private bool NoSelectedProduct()
+    {
+        return SelectedItem == null;
+    }
+    [Parameter]public string DataSrc { get => dataSource; set
+        {
+            dataSource = value;
+            switch (dataSource)
+            {
+                case "nonorderable":
+                    products = ProductsService.GetNonOrderableProducts();
+                    break;
+                case "orderable":
+                    products = ProductsService.GetOrderableProducts();
+                    break;
+                default:
+                    products = ProductsService.GetAllProducts();
+                    break;
+            }
+        }
+    }
+
+    public List<Product> products;
+
+    protected override Task OnInitializedAsync()
+    {
+        products = ProductsService.GetAllProducts();
+        return base.OnInitializedAsync();
+    }
+}
