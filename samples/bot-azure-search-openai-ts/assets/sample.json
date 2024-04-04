@@ -13,7 +13,9 @@
         "creationDateTime": "2023-03-27",
         "updateDateTime": "2023-03-27",
         "products": [
-            "Teams"
+            "DevProxy",
+            "Teams",
+            "TeamsToolkit"
         ],
         "metadata": [
             {
