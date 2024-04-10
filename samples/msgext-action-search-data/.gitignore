@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/MsgextActionSrchData/Resources/helloWorldCard.json
+/MsgextActionSrchData/Pages/T.razor
+/MsgextActionSrchData/Components/Demo.razor
+/MsgextActionSrchData/infra/botRegistration/azurebot.bicep
+/MsgextActionSrchData/env/.env.dev

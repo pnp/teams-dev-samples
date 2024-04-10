@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>5ae74369-bae9-4648-a791-3b97d63bfaab</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectCapability Include="TeamsFx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="build/**/*" />
+    <Content Remove="build/**/*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.Tables" Version="12.8.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Bot.Builder" Version="4.21.2" />
+    <PackageReference Include="Microsoft.Bot.Builder.Integration.AspNet.Core" Version="4.21.2" />
+    <PackageReference Include="AdaptiveCards" Version="3.1.0" />
+    <PackageReference Include="AdaptiveCards.Templating" Version="1.5.0" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI" Version="3.5.1" />
+    <PackageReference Include="Microsoft.Fast.Components.FluentUI.Icons" Version="3.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwRoot\css\bootstrap\bootstrap.min.css.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Resources\DisplayProductOrder.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="Resources\ProposedOrder.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
