@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="Azure.Data.Tables" Version="12.8.1" />
-    <PackageReference Include="Azure.Identity" Version="1.10.2" />
+    <PackageReference Include="Azure.Identity" Version="1.11.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.AzureAppConfiguration" Version="6.0.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
     <PackageReference Include="Microsoft.Graph" Version="5.21.0" />
