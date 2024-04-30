@@ -1,0 +1,61 @@
+openapi: 3.0.0
+info:
+  title: Microsoft Learn Catalog API
+  description:
+    The Microsoft Learn Catalog API is a REST-based Web API lets you send a
+    web-based query to Microsoft Learn and get back details about the available
+    training content and certification exams such as titles, products covered,
+    levels, links to training, and other metadata and returns a JSON-encoded
+    response with the information.
+  version: 1.0.0
+servers:
+  - url: ${{OPENAPI_SERVER_URL}}/api
+    description: The Microsoft Learn Catalog API server
+paths:
+  /learnCatalog:
+    get:
+      operationId: modules
+      summary: Returns a module
+      description: Returns a module with its details and image
+      parameters:
+        - name: title
+          in: query
+          description: Filter modules by module title
+          schema:
+            type: string
+          required: false
+      responses:
+        "200":
+          description: A list of modules
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    uid:
+                      type: string
+                      description: The unique identifier of the module
+                    title:
+                      type: string
+                      description: The name of the module
+                    summary:
+                      type: string
+                      description: The detailed description of the module
+                    image:
+                      type: string
+                      format: uri
+                      description: The URL of the image of the module
+                    duration:
+                      type: number
+                      description: The duration of the module in minutes                    
+                    icon:
+                      type: string
+                      format: uri
+                      description: The URL of the icon of the module
+                    roles:
+                      type: string
+                      items:
+                        type: string
+                      description: The roles that the module is intended for
+                      example: ["Developer", "Data Scientist"]

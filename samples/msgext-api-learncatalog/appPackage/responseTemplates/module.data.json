@@ -1,0 +1,11 @@
+{
+    "uid": "1",
+    "title": "Deploy device data protection",
+    "summary": "This module describes how you can use Intune to create and manage WIP policies that manage this protection. The module also covers implementing BitLocker and Encrypting File System.",
+    "image": "https://learn.microsoft.com/en-us/training/achievements/generic-social.png",
+    "url": "https://learn.microsoft.com/en-us/training/courses/deploy-device-data-protection",
+    "duration": 60,
+    "icon": "https://learn.microsoft.com/learn/achievements/principles-cloud-computing.svg",
+    "roles": "Administrator, Security Analyst"
+
+}
