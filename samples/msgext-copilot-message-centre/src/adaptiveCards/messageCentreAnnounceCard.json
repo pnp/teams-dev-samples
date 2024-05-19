@@ -1,0 +1,100 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "📢 Service Announcement",
+              "size": "Large"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "ID: ${Id}",
+              "wrap": true,
+              "size": "Large",
+              "horizontalAlignment": "Right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "${Title}",
+      "wrap": true,
+      "size": "Large",
+      "color": "accent"
+    },
+    {
+      "type": "ColumnSet",
+      "columns":[
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Applies to: ${Services}",
+              "wrap": true,
+              "size": "Small",
+              "weight": "Bolder"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "${Category}",
+              "wrap": true,
+              "size": "Medium",
+              "weight": "Bolder",
+              "horizontalAlignment": "Right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "${DetailSummary}",
+      "wrap": true,
+      "size": "Medium",
+      "color": "light",
+      "isSubtle": true
+    },
+    {
+      "type": "Container",
+      "separator": true,
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Started at {{DATE(${StartDateTime}, SHORT)}} at {{TIME(${StartDateTime})}}",
+          "wrap": true,
+          "separator": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "Last Updated: {{DATE(${LastModifiedDateTime}, LONG)}} at {{TIME(${LastModifiedDateTime})}}",
+          "wrap": true
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.4"
+}

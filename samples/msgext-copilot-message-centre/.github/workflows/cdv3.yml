@@ -1,0 +1,82 @@
+# This is a sample workflow file for Continuous Deployment of TeamsFx v3 project to Azure.
+# https://github.com/OfficeDev/Teams-app-cicd-guide/blob/main/final/doc.md
+name: 'Continuous Deployment V3'
+on:
+    push:
+      branches:
+        - main
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        environment: pkb-environment
+        env:
+            TEAMSAPP_CLI_VERSION: "3.0.0"
+            # Add extra environment variables here so that teamsapp cli can use them.
+            AZURE_SERVICE_PRINCIPAL_CLIENT_ID: ${{secrets.AZURE_ACCOUNT_NAME}}
+            AZURE_TENANT_ID: ${{secrets.AZURE_TENANT_ID}}
+            AZURE_SERVICE_PRINCIPAL_CLIENT_SECRET: ${{secrets.AZURE_ACCOUNT_PASSWORD}}
+            
+
+            # Might be unused but lets include them for now
+            AZURE_ACCOUNT_PASSWORD: ${{secrets.AZURE_ACCOUNT_PASSWORD}}
+            AZURE_SUBSCRIPTION_ID: ${{secrets.AZURE_SUBSCRIPTION_ID}}
+            M365_ACCOUNT_NAME: ${{secrets.M365_ACCOUNT_NAME}}
+            M365_ACCOUNT_PASSWORD: ${{secrets.M365_ACCOUNT_PASSWORD}}
+            M365_TENANT_ID: ${{secrets.M365_TENANT_ID}}
+            SECRET_BOT_PASSWORD: ${{secrets.SECRET_BOT_PASSWORD}}
+            TEMAS_APP_UPDATE_TIME: ${{secrets.TEMAS_APP_UPDATE_TIME}}
+            FUNCTION_APP_KEY: ${{secrets.FUNCTION_APP_KEY}}
+            FUNCTION_APP_URL: ${{secrets.FUNCTION_APP_URL}}
+
+            BOT_ID: ${{secrets.BOT_ID}}
+            TEAMS_APP_ID: ${{secrets.TEAMS_APP_ID}}
+            BOT_AZURE_APP_SERVICE_RESOURCE_ID: ${{ secrets.BOT_AZURE_APP_SERVICE_RESOURCE_ID}}
+            BOT_DOMAIN: ${{secrets.BOT_DOMAIN}}
+            TEAMS_APP_TENANT_ID: ${{secrets.TEAMS_APP_TENANT_ID}}
+            M365_TITLE_ID: ${{secrets.M365_TITLE_ID}}
+            M365_APP_ID: ${{secrets.M365_APP_ID}}
+            TEAMS_APP_PUBLISHED_APP_ID: ${{secrets.TEAMS_APP_PUBLISHED_APP_ID}}
+            
+            AZURE_RESOURCE_GROUP_NAME: ${{secrets.AZURE_RESOURCE_GROUP_NAME}}
+            RESOURCE_SUFFIX: ${{secrets.RESOURCE_SUFFIX}}
+
+            TEAMSFX_ENV: dev
+            APP_NAME_SUFFIX: dev
+            TEAMSFX_ENV_NAME: 'dev'
+            CI_ENABLED: true
+
+        steps:
+            - name: "Checkout Github Action"
+              uses: actions/checkout@master
+
+            - name: Setup Node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: "18"
+
+            - name: install cli
+              run: |
+                 npm install @microsoft/teamsapp-cli@${{env.TEAMSAPP_CLI_VERSION}}
+
+            - name: Login Azure by service principal
+              run: |
+                npx teamsapp account login azure --username ${{env.AZURE_SERVICE_PRINCIPAL_CLIENT_ID}}  \
+                --service-principal true \
+                --tenant ${{env.AZURE_TENANT_ID}} \
+                --password ${{env.AZURE_SERVICE_PRINCIPAL_CLIENT_SECRET }} \
+                --interactive false
+
+            - name: Deploy to hosting environment
+              run: |
+                npx teamsapp deploy --ignore-env-file true \
+                --interactive false
+
+            - name: Package app
+              run: |
+                npx teamsapp package
+
+            - name: upload appPackage
+              uses: actions/upload-artifact@v4
+              with:
+                name: artifact
+                path: appPackage/build/appPackage.zip

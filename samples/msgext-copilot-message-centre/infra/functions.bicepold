@@ -1,0 +1,327 @@
+param sites_PnPPowerShellFnApp_name string = 'PnPPowerShellFnApp'
+param serverfarms_ASP_rgpkbtenantmessagecenterdev_8700_externalid string = '/subscriptions/99981a2f-8318-4326-921a-4aeef649979c/resourceGroups/rg-pkbtenantmessagecenter-dev/providers/Microsoft.Web/serverfarms/ASP-rgpkbtenantmessagecenterdev-8700'
+
+resource sites_PnPPowerShellFnApp_name_resource 'Microsoft.Web/sites@2023-01-01' = {
+  name: sites_PnPPowerShellFnApp_name
+  location: 'North Europe'
+  tags: {
+    'hidden-link: /app-insights-resource-id': '/subscriptions/99981a2f-8318-4326-921a-4aeef649979c/resourceGroups/rg-pkbtenantmessagecenter-dev/providers/microsoft.insights/components/PnPPowerShellFnApp'
+    'hidden-link: /app-insights-instrumentation-key': '1658ef0e-4cc9-4b59-ad92-8b2d8bbbbcd1'
+    'hidden-link: /app-insights-conn-string': 'InstrumentationKey=1658ef0e-4cc9-4b59-ad92-8b2d8bbbbcd1;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/'
+  }
+  kind: 'functionapp'
+  identity: {
+    type: 'SystemAssigned'
+  }
+  properties: {
+    enabled: true
+    hostNameSslStates: [
+      {
+        name: 'pnppowershellfnapp.azurewebsites.net'
+        sslState: 'Disabled'
+        hostType: 'Standard'
+      }
+      {
+        name: 'pnppowershellfnapp.scm.azurewebsites.net'
+        sslState: 'Disabled'
+        hostType: 'Repository'
+      }
+    ]
+    serverFarmId: serverfarms_ASP_rgpkbtenantmessagecenterdev_8700_externalid
+    reserved: false
+    isXenon: false
+    hyperV: false
+    vnetRouteAllEnabled: false
+    vnetImagePullEnabled: false
+    vnetContentShareEnabled: false
+    siteConfig: {
+      numberOfWorkers: 1
+      acrUseManagedIdentityCreds: false
+      alwaysOn: false
+      http20Enabled: false
+      functionAppScaleLimit: 200
+      minimumElasticInstanceCount: 0
+    }
+    scmSiteAlsoStopped: false
+    clientAffinityEnabled: false
+    clientCertEnabled: false
+    clientCertMode: 'Required'
+    hostNamesDisabled: false
+    customDomainVerificationId: '1CD6C1A3C29971D5CFDD58C8E41A2964FBA5765EAD7AF3D0442DBB1F05101269'
+    containerSize: 1536
+    dailyMemoryTimeQuota: 0
+    httpsOnly: true
+    redundancyMode: 'None'
+    publicNetworkAccess: 'Enabled'
+    storageAccountRequired: false
+    keyVaultReferenceIdentity: 'SystemAssigned'
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_ftp 'Microsoft.Web/sites/basicPublishingCredentialsPolicies@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'ftp'
+  location: 'North Europe'
+  tags: {
+    'hidden-link: /app-insights-resource-id': '/subscriptions/99981a2f-8318-4326-921a-4aeef649979c/resourceGroups/rg-pkbtenantmessagecenter-dev/providers/microsoft.insights/components/PnPPowerShellFnApp'
+    'hidden-link: /app-insights-instrumentation-key': '1658ef0e-4cc9-4b59-ad92-8b2d8bbbbcd1'
+    'hidden-link: /app-insights-conn-string': 'InstrumentationKey=1658ef0e-4cc9-4b59-ad92-8b2d8bbbbcd1;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/'
+  }
+  properties: {
+    allow: true
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_scm 'Microsoft.Web/sites/basicPublishingCredentialsPolicies@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'scm'
+  location: 'North Europe'
+  tags: {
+    'hidden-link: /app-insights-resource-id': '/subscriptions/99981a2f-8318-4326-921a-4aeef649979c/resourceGroups/rg-pkbtenantmessagecenter-dev/providers/microsoft.insights/components/PnPPowerShellFnApp'
+    'hidden-link: /app-insights-instrumentation-key': '1658ef0e-4cc9-4b59-ad92-8b2d8bbbbcd1'
+    'hidden-link: /app-insights-conn-string': 'InstrumentationKey=1658ef0e-4cc9-4b59-ad92-8b2d8bbbbcd1;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/'
+  }
+  properties: {
+    allow: true
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_web 'Microsoft.Web/sites/config@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'web'
+  location: 'North Europe'
+  tags: {
+    'hidden-link: /app-insights-resource-id': '/subscriptions/99981a2f-8318-4326-921a-4aeef649979c/resourceGroups/rg-pkbtenantmessagecenter-dev/providers/microsoft.insights/components/PnPPowerShellFnApp'
+    'hidden-link: /app-insights-instrumentation-key': '1658ef0e-4cc9-4b59-ad92-8b2d8bbbbcd1'
+    'hidden-link: /app-insights-conn-string': 'InstrumentationKey=1658ef0e-4cc9-4b59-ad92-8b2d8bbbbcd1;IngestionEndpoint=https://northeurope-2.in.applicationinsights.azure.com/;LiveEndpoint=https://northeurope.livediagnostics.monitor.azure.com/'
+  }
+  properties: {
+    numberOfWorkers: 1
+    defaultDocuments: [
+      'Default.htm'
+      'Default.html'
+      'Default.asp'
+      'index.htm'
+      'index.html'
+      'iisstart.htm'
+      'default.aspx'
+      'index.php'
+    ]
+    netFrameworkVersion: 'v6.0'
+    powerShellVersion: '7.2'
+    requestTracingEnabled: false
+    remoteDebuggingEnabled: false
+    remoteDebuggingVersion: 'VS2019'
+    httpLoggingEnabled: false
+    acrUseManagedIdentityCreds: false
+    logsDirectorySizeLimit: 35
+    detailedErrorLoggingEnabled: false
+    publishingUsername: '$PnPPowerShellFnApp'
+    scmType: 'None'
+    use32BitWorkerProcess: true
+    webSocketsEnabled: false
+    alwaysOn: false
+    managedPipelineMode: 'Integrated'
+    virtualApplications: [
+      {
+        virtualPath: '/'
+        physicalPath: 'site\\wwwroot'
+        preloadEnabled: false
+      }
+    ]
+    loadBalancing: 'LeastRequests'
+    experiments: {
+      rampUpRules: []
+    }
+    autoHealEnabled: false
+    vnetRouteAllEnabled: false
+    vnetPrivatePortsCount: 0
+    publicNetworkAccess: 'Enabled'
+    cors: {
+      allowedOrigins: [
+        'https://portal.azure.com'
+      ]
+      supportCredentials: false
+    }
+    localMySqlEnabled: false
+    managedServiceIdentityId: 34083
+    ipSecurityRestrictions: [
+      {
+        ipAddress: 'Any'
+        action: 'Allow'
+        priority: 2147483647
+        name: 'Allow all'
+        description: 'Allow all access'
+      }
+    ]
+    scmIpSecurityRestrictions: [
+      {
+        ipAddress: 'Any'
+        action: 'Allow'
+        priority: 2147483647
+        name: 'Allow all'
+        description: 'Allow all access'
+      }
+    ]
+    scmIpSecurityRestrictionsUseMain: false
+    http20Enabled: false
+    minTlsVersion: '1.2'
+    scmMinTlsVersion: '1.2'
+    ftpsState: 'FtpsOnly'
+    preWarmedInstanceCount: 0
+    functionAppScaleLimit: 200
+    functionsRuntimeScaleMonitoringEnabled: false
+    minimumElasticInstanceCount: 0
+    azureStorageAccounts: {}
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_FindSpecificServiceOrMessage 'Microsoft.Web/sites/functions@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'FindSpecificServiceOrMessage'
+  location: 'North Europe'
+  properties: {
+    script_root_path_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/FindSpecificServiceOrMessage/'
+    script_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/FindSpecificServiceOrMessage/run.ps1'
+    config_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/FindSpecificServiceOrMessage/function.json'
+    test_data_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/data/Functions/sampledata/FindSpecificServiceOrMessage.dat'
+    href: 'https://pnppowershellfnapp.azurewebsites.net/admin/functions/FindSpecificServiceOrMessage'
+    config: {}
+    test_data: '{\r\n    "name": "Azure"\r\n}\r\n'
+    invoke_url_template: 'https://pnppowershellfnapp.azurewebsites.net/api/findspecificserviceormessage'
+    language: 'powershell'
+    isDisabled: false
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_PnPMessageCentreAnnouncements 'Microsoft.Web/sites/functions@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'PnPMessageCentreAnnouncements'
+  location: 'North Europe'
+  properties: {
+    script_root_path_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPMessageCentreAnnouncements/'
+    script_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPMessageCentreAnnouncements/run.ps1'
+    config_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPMessageCentreAnnouncements/function.json'
+    test_data_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/data/Functions/sampledata/PnPMessageCentreAnnouncements.dat'
+    href: 'https://pnppowershellfnapp.azurewebsites.net/admin/functions/PnPMessageCentreAnnouncements'
+    config: {}
+    test_data: '{"method":"get","queryStringParams":[],"headers":[],"body":"{\\"body\\":\\"\\"}"}'
+    invoke_url_template: 'https://pnppowershellfnapp.azurewebsites.net/api/pnpmessagecentreannouncements'
+    language: 'powershell'
+    isDisabled: false
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_PnPMockStatus 'Microsoft.Web/sites/functions@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'PnPMockStatus'
+  location: 'North Europe'
+  properties: {
+    script_root_path_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPMockStatus/'
+    script_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPMockStatus/run.ps1'
+    config_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPMockStatus/function.json'
+    test_data_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/data/Functions/sampledata/PnPMockStatus.dat'
+    href: 'https://pnppowershellfnapp.azurewebsites.net/admin/functions/PnPMockStatus'
+    config: {}
+    test_data: '{"method":"get","queryStringParams":[],"headers":[],"body":"{\\"name\\":\\"Azure\\"}"}'
+    invoke_url_template: 'https://pnppowershellfnapp.azurewebsites.net/api/pnpmockstatus'
+    language: 'powershell'
+    isDisabled: false
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_PnPServiceHealth 'Microsoft.Web/sites/functions@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'PnPServiceHealth'
+  location: 'North Europe'
+  properties: {
+    script_root_path_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPServiceHealth/'
+    script_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPServiceHealth/run.ps1'
+    config_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPServiceHealth/function.json'
+    test_data_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/data/Functions/sampledata/PnPServiceHealth.dat'
+    href: 'https://pnppowershellfnapp.azurewebsites.net/admin/functions/PnPServiceHealth'
+    config: {}
+    test_data: '{"method":"get","queryStringParams":[],"headers":[],"body":"{\\"body\\":\\"\\"}"}'
+    invoke_url_template: 'https://pnppowershellfnapp.azurewebsites.net/api/pnpservicehealth'
+    language: 'powershell'
+    isDisabled: false
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_PnPServiceOrMessageCentreStatus 'Microsoft.Web/sites/functions@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'PnPServiceOrMessageCentreStatus'
+  location: 'North Europe'
+  properties: {
+    script_root_path_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPServiceOrMessageCentreStatus/'
+    script_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPServiceOrMessageCentreStatus/run.ps1'
+    config_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPServiceOrMessageCentreStatus/function.json'
+    test_data_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/data/Functions/sampledata/PnPServiceOrMessageCentreStatus.dat'
+    href: 'https://pnppowershellfnapp.azurewebsites.net/admin/functions/PnPServiceOrMessageCentreStatus'
+    config: {}
+    test_data: '{"method":"get","queryStringParams":[{"name":"SearchFor","value":"SP709902"}],"headers":[],"body":"{\\"name\\":\\"\\"}"}'
+    invoke_url_template: 'https://pnppowershellfnapp.azurewebsites.net/api/pnpserviceormessagecentrestatus'
+    language: 'powershell'
+    isDisabled: false
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_PnPServiceOrMessageCentreStatusSpecific 'Microsoft.Web/sites/functions@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'PnPServiceOrMessageCentreStatusSpecific'
+  location: 'North Europe'
+  properties: {
+    script_root_path_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPServiceOrMessageCentreStatusSpecific/'
+    script_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPServiceOrMessageCentreStatusSpecific/run.ps1'
+    config_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/PnPServiceOrMessageCentreStatusSpecific/function.json'
+    test_data_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/data/Functions/sampledata/PnPServiceOrMessageCentreStatusSpecific.dat'
+    href: 'https://pnppowershellfnapp.azurewebsites.net/admin/functions/PnPServiceOrMessageCentreStatusSpecific'
+    config: {}
+    test_data: '{\r\n    "name": "Azure"\r\n}\r\n'
+    invoke_url_template: 'https://pnppowershellfnapp.azurewebsites.net/api/pnpserviceormessagecentrestatusspecific'
+    language: 'powershell'
+    isDisabled: false
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_Populate_ServiceAnnouncementsCache 'Microsoft.Web/sites/functions@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'Populate-ServiceAnnouncementsCache'
+  location: 'North Europe'
+  properties: {
+    script_root_path_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/Populate-ServiceAnnouncementsCache/'
+    script_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/Populate-ServiceAnnouncementsCache/run.ps1'
+    config_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/Populate-ServiceAnnouncementsCache/function.json'
+    test_data_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/data/Functions/sampledata/Populate-ServiceAnnouncementsCache.dat'
+    href: 'https://pnppowershellfnapp.azurewebsites.net/admin/functions/Populate-ServiceAnnouncementsCache'
+    config: {}
+    language: 'powershell'
+    isDisabled: true
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_Populate_ServiceHealthCache 'Microsoft.Web/sites/functions@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: 'Populate-ServiceHealthCache'
+  location: 'North Europe'
+  properties: {
+    script_root_path_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/Populate-ServiceHealthCache/'
+    script_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/Populate-ServiceHealthCache/run.ps1'
+    config_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/site/wwwroot/Populate-ServiceHealthCache/function.json'
+    test_data_href: 'https://pnppowershellfnapp.azurewebsites.net/admin/vfs/data/Functions/sampledata/Populate-ServiceHealthCache.dat'
+    href: 'https://pnppowershellfnapp.azurewebsites.net/admin/functions/Populate-ServiceHealthCache'
+    config: {}
+    language: 'powershell'
+    isDisabled: true
+  }
+}
+
+resource sites_PnPPowerShellFnApp_name_sites_PnPPowerShellFnApp_name_azurewebsites_net 'Microsoft.Web/sites/hostNameBindings@2023-01-01' = {
+  parent: sites_PnPPowerShellFnApp_name_resource
+  name: '${sites_PnPPowerShellFnApp_name}.azurewebsites.net'
+  location: 'North Europe'
+  properties: {
+    siteName: 'PnPPowerShellFnApp'
+    hostNameType: 'Verified'
+  }
+}
