@@ -18,6 +18,7 @@ It builds on top of the [ChatGPT + Enterprise data with Azure OpenAI and AI Sear
 
 ## Prerequisites
 
+* [nodejs v18 LTS](https://nodejs.org/en)
 * [Teams Toolkit for Visual Studio Code](https://learn.microsoft.com/microsoftteams/platform/toolkit/install-teams-toolkit?tabs=vscode)
 
 You can run this sample locally using a simulated Microsoft 365 tenant, however if you wish to run the sample against live resources, you will need:
@@ -29,6 +30,8 @@ You can run this sample locally using a simulated Microsoft 365 tenant, however 
 
 Version|Date|Author|Comments
 -------|----|----|--------
+1.2|May 24, 2024|Garry Trinder|Updated prerequisites
+1.1|April 2, 2024|Garry Trinder|Updated instructions
 1.0|March 27, 2024|Garry Trinder|Initial release
 
 ## Disclaimer
@@ -48,9 +51,9 @@ First, prepare the project:
 
 Then, choose a path to run the app:
 
-1. **Run against a simulated Microsoft 365 tenant and bot service**, use this approach if you don't have access to a Microsoft 365 tenant, are unable to use a Dev Tunnel, are unable to sideload apps into your tenant,are unable provision Microsoft Entra ID or Bot Framework resources required to create a bot or deploy Azure resources. Teams App Test Tool is used to simulate the Microsoft Teams user interface and LLM responses are mocked using Dev Proxy.
-1. **Run locally against a real Microsoft 365 tenant**, use this approach if you have access to a Microsoft 365 tenant with sideloading enabled, can use a Dev Tunnel, can provision Microsoft Entra ID or Bot Framework resources required to create a bot and can deploy Azure resources.
-1. **Deploy and run from Azure**, use this when you want to provision resources and deploy the bot code to Azure and publish the app to the Microsoft Teams organisation app catalog.
+* **Run against a simulated Microsoft 365 tenant and bot service**, use this approach if you don't have access to a Microsoft 365 tenant, are unable to use a Dev Tunnel, are unable to sideload apps into your tenant,are unable provision Microsoft Entra ID or Bot Framework resources required to create a bot or deploy Azure resources. Teams App Test Tool is used to simulate the Microsoft Teams user interface and LLM responses are mocked using Dev Proxy.
+* **Run locally against a real Microsoft 365 tenant**, use this approach if you have access to a Microsoft 365 tenant with sideloading enabled, can use a Dev Tunnel, can provision Microsoft Entra ID or Bot Framework resources required to create a bot and can deploy Azure resources.
+* **Deploy and run from Azure**, use this when you want to provision resources and deploy the bot code to Azure and publish the app to the Microsoft Teams organisation app catalog.
 
 ### 1. Run locally against a simulated Microsoft 365 tenant and bot service
 
@@ -61,6 +64,8 @@ Then, choose a path to run the app:
 1. In the debug profile dropdown, select `Debug in Test Tool`
 1. Press F5 to launch the Test Tool
 1. In the `Welcome` message, select the first action button
+
+
 
 ### 2. Run locally against a real Microsoft 365 tenant
 
