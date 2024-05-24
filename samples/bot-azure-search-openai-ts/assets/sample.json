@@ -11,7 +11,7 @@
             "This sample app demonstrates how to use a Microsoft Teams bot to chat with your data using natural language in the flow of work. It builds on top of the [ChatGPT + Enterprise data with Azure OpenAI and AI Search](https://github.com/Azure-Samples/azure-search-openai-demo) sample which demonstrates how to create ChatGPT-like experiences over your own data using the Retrieval Augmented Generation pattern with Azure OpenAI Service to access a GPT model (gpt-35-turbo), and Azure AI Search for data indexing and retrieval."
         ],
         "creationDateTime": "2023-03-27",
-        "updateDateTime": "2023-03-27",
+        "updateDateTime": "2024-05-24",
         "products": [
             "DevProxy",
             "Teams",

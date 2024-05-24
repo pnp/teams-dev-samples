@@ -18,6 +18,7 @@ It builds on top of the [ChatGPT + Enterprise data with Azure OpenAI and AI Sear
 
 ## Prerequisites
 
+* [nodejs v18 LTS](https://nodejs.org/en)
 * [Teams Toolkit for Visual Studio Code](https://learn.microsoft.com/microsoftteams/platform/toolkit/install-teams-toolkit?tabs=vscode)
 
 You can run this sample locally using a simulated Microsoft 365 tenant, however if you wish to run the sample against live resources, you will need:
@@ -29,6 +30,8 @@ You can run this sample locally using a simulated Microsoft 365 tenant, however 
 
 Version|Date|Author|Comments
 -------|----|----|--------
+1.2|May 24, 2024|Garry Trinder|Updated prerequisites
+1.1|April 2, 2024|Garry Trinder|Updated instructions
 1.0|March 27, 2024|Garry Trinder|Initial release
 
 ## Disclaimer
