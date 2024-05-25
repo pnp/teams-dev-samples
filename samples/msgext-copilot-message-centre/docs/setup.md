@@ -84,8 +84,10 @@ The Azure Function is used to read the SharePoint site and return the data to th
    1. Runtime Stack: PowerShell Core
    2. Version: 7.2 (note this is going EOL at end of 2024, so mgiht be a later version by the time you read this) 
 2. Create a new Function App in the Azure portal called `GetCachedServiceMessages` with a HTTP trigger using Authorisation level of `Function`.
-3. Use the PowerShell script in `setup\function\using-sharepoint-as-cache\GetCachedServiceMessages.ps1` to create the function.
-4. Ensure you configure the Function App to load the PnP PowerShell Module, by navigating to Functions > App Files > Add New File and update the `requirements.psd1` file to replace with the following:
+3. Use the PowerShell script to create the following functions:
+   - In `setup\function\using-sharepoint-as-cache\GetCachedServiceMessages.ps1` to create the function.
+   - In `setup\function\using-sharepoint-as-cache\FollowServiceMessage.ps1` to create the function.
+4. For both scripts, ensure you configure the Function App to load the PnP PowerShell Module, by navigating to Functions > App Files > Add New File and update the `requirements.psd1` file to replace with the following:
 
     ```powershell
     @{
@@ -103,6 +105,7 @@ The Azure Function is used to read the SharePoint site and return the data to th
    | `Cfg_CacheSiteUrl` | The URL of the SharePoint site where the list is stored e.g. https://<tenant>.sharepoint.com/sites/tenant-status |
    | `Cfg_CacheListName_ServiceHealth` | The name of the SharePoint list e.g. "Cache Service Health" |
    | `Cfg_CacheListName_Announcements` | The name of the SharePoint list e.g. "Cache Service Announcements" |
+   | `Cfg_CacheListName_ServiceFollow` | The name of the SharePoint list e.g. "Follow" |
 
 
 ### Configure the permissions on the Azure Function to allow it to read the SharePoint list by the Azure Function
