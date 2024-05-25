@@ -53,7 +53,7 @@ Invoke-PnPSiteTemplate -Path setup.xml
 5. Then run the follow PnP PowerShell script to assign the permissions (least principal) to the SharePoint site:
 
     ```powershell
-    Connect-PnPOnline https://pkbmvp.sharepoint.com -Interactive
+    Connect-PnPOnline https://<tenant>.sharepoint.com -Interactive
 
     $appId = "<app-id>" # replace with the application ID of the managed identity
     $appName = "<function-app-identity-name>" # replace with the name of the managed identity
@@ -122,7 +122,7 @@ The Azure Function is used to read the SharePoint site and return the data to th
       
         Add-PnPAzureADServicePrincipalAppRole -Principal $appId -AppRole "Sites.Selected" -BuiltInType SharePointOnline
         Add-PnPAzureADServicePrincipalAppRole -Principal $appId -AppRole "Sites.Selected" -BuiltInType MicrosoftGraph
-        Grant-PnPAzureADAppSitePermission -AppId $appId -DisplayName $appName -Permissions Read -Site $spUrl
+        Grant-PnPAzureADAppSitePermission -AppId $appId -DisplayName $appName -Permissions Write -Site $spUrl
         Get-PnPAzureADAppSitePermission -Site $spUrl
         ```
    
@@ -133,6 +133,7 @@ The Azure Function is used to read the SharePoint site and return the data to th
    
    ```
    FUNCTION_APP_URL=https://<function>.azurewebsites.net/api/GetCachedServiceMessages
+   FUNCTION_APP_URL=https://<function>.azurewebsites.net/api/FollowServiceMessage
    FUNCTION_APP_KEY=a7sd98a7s9d79a7g9d97d9879d8f7
    ```
 

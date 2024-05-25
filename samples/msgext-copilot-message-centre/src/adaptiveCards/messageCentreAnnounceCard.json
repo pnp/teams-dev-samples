@@ -93,6 +93,35 @@
           "wrap": true
         }
       ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ActionSet",
+          "isVisible": "${!IsFollowing}",
+          "actions": [
+            {
+              "type": "Action.Execute",
+              "title": "Follow this announcement",
+              "verb": "follow",
+              "data": {
+                "issueId": "${Id}",
+                "issueType": "announcement",
+                "itemId": "${ItemId}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "TextBlock",
+          "isVisible": "${IsFollowing}",
+          "text": "You are following this announcement",
+          "isSubtle": true,
+          "weight": "Bolder",
+          "color": "good"
+        }
+      ]
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

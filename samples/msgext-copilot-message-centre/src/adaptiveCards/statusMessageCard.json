@@ -100,6 +100,35 @@
           "wrap": true
         }
       ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ActionSet",
+          "isVisible": "${!IsFollowing}",
+          "actions": [
+            {
+              "type": "Action.Execute",
+              "title": "Follow this incident",
+              "verb": "follow",
+              "data": {
+                "issueId": "${Id}",
+                "issueType": "health",
+                "itemId": "${ItemId}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "TextBlock",
+          "isVisible": "${IsFollowing}",
+          "text": "You are following this incident",
+          "isSubtle": true,
+          "weight": "Bolder",
+          "color": "good"
+        }
+      ]
     }
   ],
   "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",

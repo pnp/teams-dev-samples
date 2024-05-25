@@ -6,6 +6,7 @@ import {
   TurnContext,
   MessagingExtensionQuery,
   MessagingExtensionResponse,
+  AdaptiveCardInvokeResponse,
 } from "botbuilder";
 import * as ACData from "adaptivecards-templating";
 import * as statusMessageCard from "./adaptiveCards/statusMessageCard.json";
@@ -14,6 +15,9 @@ import config from "./config";
 import { IServiceHealthMessage } from "./utility/iServiceHealthMessage";
 import { IServiceAnnouncement } from "./utility/IServiceAnnouncement";
 import { Logger } from './utility/Logging';
+import acActionHandler from "./utility/adaptiveCardActionHandler";
+import { CreateActionErrorResponse } from "./utility/adaptiveCardResponseHandler";
+import { checkIsFollowing } from "./utility/followService";
 
 export class SearchApp extends TeamsActivityHandler {
   constructor() {
@@ -59,6 +63,9 @@ export class SearchApp extends TeamsActivityHandler {
       // Call the PnP Azure Function.
       const response = await axios.get(finalUrl);
 
+      // Get the user who is calling the bot
+      const who = context.activity.from;
+
       // Iterate over the results and create an adaptive card for each, but the 
       // results will be contained within two objects - ServiceHealthMessages & MessageCentreAnnouncements.
       if (response.data.ServiceHealthMessages.length > 0) {
@@ -69,7 +76,10 @@ export class SearchApp extends TeamsActivityHandler {
           const template = new ACData.Template(statusMessageCard);
 
           const card = template.expand({
-            $root: shMsg,
+            $root: {
+              ...shMsg,
+              IsFollowing: checkIsFollowing(shMsg.FollowedBy, who.aadObjectId),
+            },
           });
 
           const customCard = CardFactory.adaptiveCard(card);
@@ -86,7 +96,10 @@ export class SearchApp extends TeamsActivityHandler {
         response.data.MessageCentreAnnouncements.forEach((mcaMsg: IServiceAnnouncement) => {
           const template = new ACData.Template(messageCentreAnnounceCard);
           const card = template.expand({
-            $root: mcaMsg,
+            $root: {
+              ...mcaMsg,
+              IsFollowing: checkIsFollowing(mcaMsg.FollowedBy, who.aadObjectId)
+            }
           });
 
           const customCard = CardFactory.adaptiveCard(card);
@@ -110,5 +123,21 @@ export class SearchApp extends TeamsActivityHandler {
         attachments: attachments,
       },
     };
+  }
+
+  //Action
+  public async onAdaptiveCardInvoke(context: TurnContext): Promise<AdaptiveCardInvokeResponse>  {
+    try {     
+   
+      switch (context.activity.value.action.verb) {
+        case 'follow': {
+          return acActionHandler.handleAdaptiveCardActionFollow(context);
+        }
+        
+      }
+   
+    } catch (err) {
+      return CreateActionErrorResponse(500, 0, err.message);
+    } 
   }
 }

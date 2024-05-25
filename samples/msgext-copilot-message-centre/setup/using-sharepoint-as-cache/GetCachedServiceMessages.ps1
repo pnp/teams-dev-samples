@@ -1,4 +1,3 @@
-# Description: This script is used to retrieve the latest Service Health messages and Message Centre announcements from SharePoint Lists.
 using namespace System.Net
 
 # Input bindings are passed in via param block.
@@ -35,6 +34,7 @@ if($settingTenantUrl){
 }else{
     Write-Host "No Environment Variables found...local mode"
 
+    Start-Transcript "FindSPCachedMessages.log"
     # Local Mode
     Connect-PnPOnline https://tenant.sharepoint.com/sites/tenant-status -ClientId <client-id> `
     -Thumbprint <thumbprint> -Tenant tenant.onmicrosoft.com
@@ -69,7 +69,7 @@ Write-Host "Input Filter Search Type: $($inputFilterSearchType)"
 $serviceHealthMessages = @()
 
 # This can be optimised with batching and caml queries
-$healthData = Get-PnPListItem -List $serviceHealthList -Fields "ServiceId", "Title", "ServiceStatus", "Service", "ServiceFeature", "ServiceFeatureGroup", "ServiceHighImpact", "ServiceStartDate", "ServiceEndDate", "ServiceLastModifiedDateTime", "ServiceImpactDescription", "ServiceIsResolved"
+$healthData = Get-PnPListItem -List $serviceHealthList -Fields "ServiceId", "Title", "ServiceStatus", "Service", "ServiceFeature", "ServiceFeatureGroup", "ServiceHighImpact", "ServiceStartDate", "ServiceEndDate", "ServiceLastModifiedDateTime", "ServiceImpactDescription", "ServiceIsResolved", "ServiceFollowedByLookup"
 
 if($inputFilterId){
     Write-Host "Using input id filter for Service Health ID..."
@@ -106,6 +106,11 @@ if($hasInputResultMaxParameters){
 $filteredHealthData | ForEach-Object{
     
     $issue = $_
+
+    if($issue.FieldValues.ServiceFollowedByLookup -ne $null){
+        $followedBy = $issue.FieldValues.ServiceFollowedByLookup.LookupValue
+    }
+    
     $serviceHealthMessages += [PSCustomObject]@{
         "Id" = $issue.FieldValues.ServiceId
         "Title" = $issue.FieldValues.Title
@@ -119,6 +124,8 @@ $filteredHealthData | ForEach-Object{
         "EndDateTime" = $issue.FieldValues.ServiceEndDate
         "IsResolved" = $issue.FieldValues.ServiceIsResolved
         "LastModifiedDateTime" = $issue.FieldValues.ServiceLastModifiedDateTime
+        "FollowedBy" = $followedBy
+        "ItemId" = $issue.FieldValues.ID
     }
 }
 
@@ -129,7 +136,7 @@ $filteredHealthData | ForEach-Object{
 $messageCentreAnnouncements = @()
 # Get-PnPMessageCenterAnnouncement
 $msgCtrAnnounceData = Get-PnPListItem -List $serviceAnnounceMessagesList -Fields "ServiceId", "Title", "ServiceServices", "ServiceDetails", "ServiceTags", "ServiceIsMajorChange", "ServiceStartDate", "ServiceEndDate", "ServiceLastModifiedDateTime",
-"ServiceDetailSummary", "ServiceCategory"
+"ServiceDetailSummary", "ServiceCategory", "ServiceFollowedByLookup"
 
 $filteredMsgCtrAnnounceData = $msgCtrAnnounceData
 
@@ -159,6 +166,11 @@ if($hasInputResultMaxParameters){
 # Format the results
 $filteredMsgCtrAnnounceData | ForEach-Object{
     $announcement = $_
+
+    if($announcement.FieldValues.ServiceFollowedByLookup -ne $null){
+        $followedBy = $announcement.FieldValues.ServiceFollowedByLookup.LookupValue
+    }
+
     $messageCentreAnnouncements += [PSCustomObject]@{
         "Id" = $announcement.FieldValues.ServiceId
         "Title" = $announcement.FieldValues.Title
@@ -171,6 +183,8 @@ $filteredMsgCtrAnnounceData | ForEach-Object{
         "LastModifiedDateTime" = $announcement.FieldValues.ServiceLastModifiedDateTime
         "DetailSummary" = $announcement.FieldValues.ServiceDetailSummary
         "Category" = $announcement.FieldValues.ServiceCategory
+        "FollowedBy" = $followedBy
+        "ItemId" = $announcement.FieldValues.ID
     }
 }
 
@@ -188,9 +202,8 @@ $results = $statusReport | ConvertTo-Json -Depth 6 -EnumsAsStrings
 
 if($isLocal){
     Write-Host "Results: $($results.length)"
-    # Write Results to a log file 
-    $logFile = "FindSPCachedMessages.log"
-    $results | Out-File -FilePath $logFile -Force
+    Stop-Transcript
+    
 }else{
     # Associate values to output bindings by calling 'Push-OutputBinding'.
     Push-OutputBinding -Name Response -Value ([HttpResponseContext]@{

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
   <pnp:Preferences Generator="PnP.Framework, Version=1.14.69.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
-  <pnp:Templates ID="CONTAINER-TEMPLATE-6989BF1291D64FE7BF5EFFF6D369C9E0">
-    <pnp:ProvisioningTemplate ID="TEMPLATE-6989BF1291D64FE7BF5EFFF6D369C9E0" Version="1" BaseSiteTemplate="STS#3" Scope="RootSite">
+  <pnp:Templates ID="CONTAINER-TEMPLATE-DCC0C0332D5B4E7AB20E21CE222737DF">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-DCC0C0332D5B4E7AB20E21CE222737DF" Version="1" BaseSiteTemplate="STS#3" Scope="RootSite">
       <pnp:WebSettings RequestAccessEmail="" NoCrawl="true" WelcomePage="SitePages/Home.aspx" SiteLogo="" AlternateCSS="" MasterPageUrl="{masterpagecatalog}/seattle.master" CustomMasterPageUrl="{masterpagecatalog}/seattle.master" CommentsOnSitePagesDisabled="false" QuickLaunchEnabled="true" MembersCanShare="true" SearchScope="DefaultScope" SearchBoxInNavBar="Inherit" />
       <pnp:SiteSettings AllowDesigner="true" AllowCreateDeclarativeWorkflow="true" AllowSaveDeclarativeWorkflowAsTemplate="true" AllowSavePublishDeclarativeWorkflow="true" SearchBoxInNavBar="Inherit" SearchCenterUrl="" />
       <pnp:RegionalSettings AdjustHijriDays="0" AlternateCalendarType="None" CalendarType="Gregorian" Collation="25" FirstDayOfWeek="Sunday" FirstWeekOfYear="0" LocaleId="2057" ShowWeeks="false" Time24="true" TimeZone="2" WorkDayEndHour="5:00PM" WorkDays="62" WorkDayStartHour="8:00AM" />
@@ -22,6 +22,7 @@
             <pnp:NavigationNode Title="Cache Service Health" Url="{site}/Lists/Cache Service Health/Summary Only.aspx" />
             <pnp:NavigationNode Title="Site Contents" Url="{site}/_layouts/15/viewlsts.aspx" IsExternal="true" />
             <pnp:NavigationNode Title="Recent" Url="" IsExternal="true" />
+            <pnp:NavigationNode Title="Follow" Url="{site}/Lists/Follow/AllItems.aspx" />
           </pnp:StructuralNavigation>
         </pnp:CurrentNavigation>
       </pnp:Navigation>
@@ -96,6 +97,7 @@
                 <FieldRef Name="ServiceBody" />
                 <FieldRef Name="ServiceTags" />
                 <FieldRef Name="ServiceDetailSummary" />
+                <FieldRef Name="ServiceFollowedByLookup" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <Aggregations Value="Off" />
@@ -146,6 +148,8 @@
               </CHOICES>
             </Field>
             <Field Type="Note" DisplayName="ServiceDetailSummary" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" Sortable="FALSE" ID="{666972b6-5725-4bc3-96fa-9ca522c130ad}" SourceID="{{listid:Cache Service Announcements}}" StaticName="ServiceDetailSummary" Name="ServiceDetailSummary" ColName="ntext7" RowOrdinal="0" />
+            <Field Type="UserMulti" DisplayName="ServiceFollowedBy" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" ID="{2d10c00a-5bd8-4719-b6f7-575f89df6503}" SourceID="{{listid:Cache Service Announcements}}" StaticName="ServiceFollowedBy" Name="ServiceFollowedBy" ColName="int1" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="ServiceFollowedByLookup" Format="Dropdown" Indexed="FALSE" List="{listid:Follow}" Mult="TRUE" Name="ServiceFollowedByLookup" ShowField="ServiceFollowedByAADId" Title="ServiceFollowedByLookup" Type="LookupMulti" ID="{3c534c62-ed3e-423c-b79a-a205f4b8b98e}" Version="2" StaticName="ServiceFollowedByLookup" SourceID="{{listid:Cache Service Announcements}}" ColName="int2" RowOrdinal="0" />
           </pnp:Fields>
           <pnp:FieldRefs>
             <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
@@ -194,6 +198,7 @@
                 <FieldRef Name="ServiceIsResolved" />
                 <FieldRef Name="ServiceHighImpact" />
                 <FieldRef Name="ServiceImpactDescription" />
+                <FieldRef Name="ServiceFollowedByLookup" />
               </ViewFields>
               <RowLimit Paged="TRUE">30</RowLimit>
               <Aggregations Value="Off" />
@@ -239,6 +244,42 @@
               <JSLink>clienttemplates.js</JSLink>
               <ViewType2>COMPACTLIST</ViewType2>
             </View>
+            <View Name="{2D3AB059-9A3D-499E-A2C6-EB1E3ABEC2C0}" Type="HTML" DisplayName="Unresolved Summary" Url="{site}/Lists/Cache Service Health/Unresolved Summary.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query>
+                <OrderBy>
+                  <FieldRef Name="Modified" Ascending="FALSE" />
+                </OrderBy>
+                <Where>
+                  <Eq>
+                    <FieldRef Name="ServiceIsResolved" />
+                    <Value Type="Text">False</Value>
+                  </Eq>
+                </Where>
+              </Query>
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ServiceId" />
+                <FieldRef Name="ServiceLastModifiedDateTime" />
+                <FieldRef Name="Modified" />
+                <FieldRef Name="ServiceStartDate" />
+                <FieldRef Name="ServiceEndDate" />
+                <FieldRef Name="ServiceClassification" />
+                <FieldRef Name="ServiceStatus" />
+                <FieldRef Name="Service" />
+                <FieldRef Name="ServiceFeature" />
+                <FieldRef Name="ServiceFeatureGroup" />
+                <FieldRef Name="ServiceIsResolved" />
+                <FieldRef Name="ServiceHighImpact" />
+                <FieldRef Name="ServiceImpactDescription" />
+                <FieldRef Name="ServiceFollowedBy" />
+                <FieldRef Name="ID" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <Aggregations Value="Off" />
+              <JSLink>clienttemplates.js</JSLink>
+              <ViewType2>COMPACTLIST</ViewType2>
+              <ViewData />
+            </View>
           </pnp:Views>
           <pnp:Fields>
             <Field ID="{76d13cd2-1bae-45a5-8b74-545b87b65037}" Name="_ColorTag" DisplaceOnUpgrade="TRUE" ShowInFileDlg="FALSE" ReadOnly="TRUE" Type="Text" DisplayName="Color Tag" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_ColorTag" FromBaseType="TRUE" ColName="nvarchar4" />
@@ -277,6 +318,8 @@
               </CHOICES>
             </Field>
             <Field Type="Note" DisplayName="ServiceImpactDescription" Required="FALSE" EnforceUniqueValues="FALSE" Indexed="FALSE" NumLines="6" RichText="FALSE" RichTextMode="Compatible" IsolateStyles="FALSE" Sortable="FALSE" ID="{2a752219-99b5-4681-ad9d-1963777dbf73}" SourceID="{{listid:Cache Service Health}}" StaticName="ServiceImpactDescription" Name="ServiceImpactDescription" ColName="ntext3" RowOrdinal="0" CustomFormatter="" RestrictedMode="TRUE" AppendOnly="FALSE" Version="1" />
+            <Field Type="UserMulti" DisplayName="ServiceFollowedBy" List="UserInfo" Required="FALSE" EnforceUniqueValues="FALSE" ShowField="ImnName" UserSelectionMode="PeopleOnly" UserSelectionScope="0" Mult="TRUE" Sortable="FALSE" ID="{d4fe8ae2-5bb5-4415-bc23-e4e825baa92c}" SourceID="{{listid:Cache Service Health}}" StaticName="ServiceFollowedBy" Name="ServiceFollowedBy" ColName="int1" RowOrdinal="0" />
+            <Field DisplayName="ServiceFollowedByLookup" Format="Dropdown" Indexed="FALSE" IsModern="TRUE" List="{listid:Follow}" Mult="TRUE" Name="ServiceFollowedByLookup" ShowField="ServiceFollowedByAADId" Title="ServiceFollowedByLookup" Type="LookupMulti" ID="{3f67dd06-7fb3-462e-aa7c-6566f897cdac}" SourceID="{{listid:Cache Service Health}}" StaticName="ServiceFollowedByLookup" ColName="int2" RowOrdinal="0" />
           </pnp:Fields>
           <pnp:FieldRefs>
             <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
@@ -313,6 +356,53 @@
             <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
             <pnp:FieldRef ID="cb19284a-cde7-4570-a980-1dab8bd74470" Name="_ExtendedDescription" DisplayName="Description" />
           </pnp:FieldRefs>
+        </pnp:ListInstance>
+        <pnp:ListInstance Title="Follow" Description="Following a message in the message centre" DocumentTemplate="" OnQuickLaunch="true" TemplateType="100" Url="Lists/Follow" EnableVersioning="true" MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/Lists/Follow/DispForm.aspx" DefaultEditFormUrl="{site}/Lists/Follow/EditForm.aspx" DefaultNewFormUrl="{site}/Lists/Follow/NewForm.aspx" ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{9B955E08-43AE-4269-A236-5304D563571A}" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items" Url="{site}/Lists/Follow/AllItems.aspx" Level="1" BaseViewID="1" ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="ServiceFollowedBy" />
+                <FieldRef Name="ServiceList" />
+                <FieldRef Name="ServiceId" />
+                <FieldRef Name="ServiceItemId" />
+                <FieldRef Name="ServiceFollowedByAADId" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <ColumnWidth>
+                <FieldRef Name="ServiceItemId" width="194.199951171875" />
+                <FieldRef Name="ServiceFollowedBy" width="230.20001220703125" />
+                <FieldRef Name="ServiceList" width="156" />
+                <FieldRef Name="ServiceId" width="186" />
+                <FieldRef Name="ServiceFollowedByAADId" width="269.8125" />
+              </ColumnWidth>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{76d13cd2-1bae-45a5-8b74-545b87b65037}" Name="_ColorTag" DisplaceOnUpgrade="TRUE" ShowInFileDlg="FALSE" ReadOnly="TRUE" Type="Text" DisplayName="Color Tag" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="_ColorTag" FromBaseType="TRUE" ColName="nvarchar4" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="ServiceFollowedBy" Format="Dropdown" List="UserInfo" Name="ServiceFollowedBy" Required="TRUE" Title="ServiceFollowedBy" Type="User" UserDisplayOptions="NamePhoto" UserSelectionMode="0" UserSelectionScope="0" ID="{f0b1d542-c7af-43fe-9d28-5d8622a294f9}" Version="2" StaticName="ServiceFollowedBy" SourceID="{{listid:Follow}}" ColName="int1" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CustomFormatter="{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;flex-wrap&quot;:&quot;wrap&quot;,&quot;display&quot;:&quot;flex&quot;},&quot;children&quot;:[{&quot;elmType&quot;:&quot;div&quot;,&quot;style&quot;:{&quot;box-sizing&quot;:&quot;border-box&quot;,&quot;padding&quot;:&quot;4px 8px 5px 8px&quot;,&quot;overflow&quot;:&quot;hidden&quot;,&quot;text-overflow&quot;:&quot;ellipsis&quot;,&quot;display&quot;:&quot;flex&quot;,&quot;border-radius&quot;:&quot;16px&quot;,&quot;height&quot;:&quot;24px&quot;,&quot;align-items&quot;:&quot;center&quot;,&quot;white-space&quot;:&quot;nowrap&quot;,&quot;margin&quot;:&quot;4px 4px 4px 4px&quot;},&quot;attributes&quot;:{&quot;class&quot;:{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$ServiceList]&quot;,&quot;Cache Service Health&quot;]},&quot;sp-css-backgroundColor-BgCornflowerBlue sp-css-color-CornflowerBlueFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$ServiceList]&quot;,&quot;Cache Service Announcements&quot;]},&quot;sp-css-backgroundColor-BgMintGreen sp-css-color-MintGreenFont&quot;,{&quot;operator&quot;:&quot;:&quot;,&quot;operands&quot;:[{&quot;operator&quot;:&quot;==&quot;,&quot;operands&quot;:[&quot;[$ServiceList]&quot;,&quot;&quot;]},&quot;&quot;,&quot;sp-field-borderAllRegular sp-field-borderAllSolid sp-css-borderColor-neutralSecondary&quot;]}]}]}},&quot;txtContent&quot;:&quot;[$ServiceList]&quot;}],&quot;rulesOrder&quot;:[0,1,2,4],&quot;templateId&quot;:&quot;BgColorChoicePill&quot;}" DisplayName="ServiceList" FillInChoice="FALSE" Format="Dropdown" Name="ServiceList" Required="TRUE" Title="ServiceList" Type="Choice" ID="{01aca5fc-3e6a-4a9e-88e5-7a942e16ebdb}" Version="2" StaticName="ServiceList" SourceID="{{listid:Follow}}" ColName="nvarchar7" RowOrdinal="0">
+              <CHOICES>
+                <CHOICE>Cache Service Health</CHOICE>
+                <CHOICE>Cache Service Announcements</CHOICE>
+              </CHOICES>
+            </Field>
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="ServiceId" Format="Dropdown" MaxLength="255" Name="ServiceId" Required="TRUE" Title="ServiceId" Type="Text" ID="{4b696605-b654-4d73-8a03-85b44d5f693a}" Version="2" StaticName="ServiceId" SourceID="{{listid:Follow}}" ColName="nvarchar8" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" CommaSeparator="FALSE" CustomUnitOnRight="TRUE" Decimals="0" DisplayName="ServiceItemId" Format="Dropdown" Name="ServiceItemId" Percentage="FALSE" Required="TRUE" Title="ServiceItemId" Type="Number" Unit="None" ID="{09a9761d-4124-4d54-bde3-d4aa87402082}" Version="4" StaticName="ServiceItemId" SourceID="{{listid:Follow}}" ColName="float1" RowOrdinal="0" />
+            <Field ClientSideComponentId="00000000-0000-0000-0000-000000000000" DisplayName="ServiceFollowedByAADId" Format="Dropdown" MaxLength="255" Name="ServiceFollowedByAADId" Required="TRUE" Title="ServiceFollowedByAADId" Type="Text" ID="{ab4464c4-616e-419a-8d41-bfcce193dfa9}" Version="2" StaticName="ServiceFollowedByAADId" SourceID="{{listid:Follow}}" ColName="nvarchar9" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+          </pnp:FieldRefs>
+          <pnp:Webhooks>
+            <pnp:Webhook ServerNotificationUrl="https://ukwest1-0.pushnp.svc.ms/notifications?token=cb056806-0ed1-4a92-afd6-647acd53627c%2Fb!rs22v-21aEGHyWTrgZhOFUQ-TTrszHhFqeBERZ0SMiNZcKDv486LS5lfdrYSmY0Q" ExpiresInDays="1" />
+          </pnp:Webhooks>
         </pnp:ListInstance>
         <pnp:ListInstance Title="Form Templates" Description="This library contains administrator-approved form templates that were activated to this site collection." DocumentTemplate="" TemplateType="101" Url="FormServerTemplates" MinorVersionLimit="0" MaxVersionLimit="0" DraftVersionVisibility="0" TemplateFeatureID="00bfea71-e717-4e80-aa17-d0c71b360101" EnableAttachments="false" EnableFolderCreation="false" DefaultDisplayFormUrl="{site}/FormServerTemplates/Forms/DispForm.aspx" DefaultEditFormUrl="{site}/FormServerTemplates/Forms/EditForm.aspx" DefaultNewFormUrl="{site}/FormServerTemplates/Forms/Upload.aspx" ImageUrl="/_layouts/15/images/itdl.png?rev=47" IrmExpire="false" IrmReject="false" IsApplicationList="false" ValidationFormula="" ValidationMessage="">
           <pnp:ContentTypeBindings>

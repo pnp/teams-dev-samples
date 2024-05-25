@@ -14,5 +14,7 @@
   "StartDateTime": "2022-09-01T23:53:05Z",
   "EndDateTime": "2025-03-03T08:00:00Z",
   "LastModifiedDateTime": "2024-04-11T22:26:26Z",
-  "Category": "StayInformed"
+  "Category": "StayInformed",
+  "IsFollowing": false,
+  "ItemId": 123
 }

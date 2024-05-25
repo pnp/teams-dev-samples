@@ -9,14 +9,17 @@ This application is generated using Teams Toolkit, calling an API that provides 
 
 When the app is operational, you will see the following in the Teams Message Extension and Copilot for Microsoft 365:
 
-![Teams Message Extension & Copilot Output Example](docs/assets/output-example.png)/
+**Video Example:**
+
+![Teams Message Extension & Copilot Output Example](docs/assets/CopilotDemoMessageCentreSample.gif)
+
+> *Note: Portions of the video have been speed up for brevity.*
 
 ## Tools and Frameworks
 
 ![drop](https://img.shields.io/badge/Teams&nbsp;Toolkit&nbsp;for&nbsp;VS&nbsp;Code-5.8-green.svg)
 
 - PnP PowerShell (v2.4) used for Azure Functions and Azure Automation.
-
 
 ## Prerequisites
 

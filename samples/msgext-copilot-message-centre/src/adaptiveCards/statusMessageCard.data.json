@@ -10,5 +10,7 @@
   "StartDateTime": "2024-04-08T08:00:00Z",
   "EndDateTime": null,
   "IsResolved": "true",
-  "LastModifiedDateTime": "2024-05-10T23:52:05Z"
+  "LastModifiedDateTime": "2024-05-10T23:52:05Z",
+  "IsFollowing": true,
+  "ItemId": 456
 }
