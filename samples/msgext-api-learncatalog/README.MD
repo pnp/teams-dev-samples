@@ -48,3 +48,4 @@ Version|Date|Author|Comments
 2. Microsoft Learn Catalog Integration with Microsoft Teams
 3. No bot integration required
 
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-api-learncatalog" />
