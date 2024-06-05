@@ -1,0 +1,50 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
+    "manifestVersion": "devPreview",
+    "id": "${{TEAMS_APP_ID}}",
+    "packageName": "com.microsoft.teams.extension",
+    "version": "1.0.0",
+    "developer": {
+        "name": "Ejaz Hussain",
+        "websiteUrl": "https://www.office365clinic.com",
+        "privacyUrl": "https://office365clinic/privacy",
+        "termsOfUseUrl": "https://office365clinic/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "O365C Learn Catalog",
+        "full": "O365C Microsoft Learn Catalog API"
+    },
+    "description": {
+        "short": "REST-based API for Microsoft Learn Catalog",
+        "full": "The Microsoft Learn Catalog API is a REST-based Web API lets you send a web-based query to Microsoft Learn and get back details about the available training content and certification exams such as titles, products covered, levels, links to training, and other metadata and returns a JSON-encoded response with the information."
+    },
+    "accentColor": "#FFFFFF",
+    "composeExtensions": [{
+        "composeExtensionType": "apiBased",
+        "apiSpecificationFile": "apiSpecificationFile/learncatalog.api.yml",
+        "commands": [{
+            "id": "modules",
+            "type": "query",
+            "title": "Search for modules info",
+            "context": [
+                "compose",
+                "commandBox"
+            ],
+            "apiResponseRenderingTemplateFile": "responseTemplates/module.json",
+            "parameters": [{
+                "name": "title",
+                "title": "Title",
+                "description": "Filter modules by module title",
+                "inputType": "text"
+            }]
+        }]
+    }],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "version": "devPreview",
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.ResponseRenderingTemplate.schema.json",
+    "jsonPath": "results",
+    "responseLayout": "list",
+    "responseCardTemplate": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.5",
+        "body": [{
+                "type": "TextBlock",
+                "text": "MODULE",
+                "size": "Medium",
+                "isSubtle": true,
+                "fontType": "Monospace"
+            },
+            {
+                "type": "TextBlock",
+                "text": "[${title}](${url})",
+                "size": "large",
+                "weight": "Bolder",
+                "color": "Accent",
+                "wrap": true
+            },
+            {
+                "type": "TextBlock",
+                "text": "${summary}",
+                "size": "small",
+                "wrap": true,
+                "isSubtle": true,
+                "spacing": "none"
+            },
+            {
+                "type": "Container",
+                "separator": false
+            },
+            {
+                "type": "TextBlock",
+                "text": "**Roles**: ${roles}",
+                "wrap": true
+            },
+            {
+                "type": "Container",
+                "separator": false
+            },
+            {
+                "type": "ColumnSet",
+                "columns": [{
+                        "type": "Column",
+                        "width": "stretch",
+                        "items": [{
+                                "type": "TextBlock",
+                                "text": "**Duration**: 🕒 ${duration} mins",
+                                "size": "default"
+
+
+                            },
+                            {
+                                "type": "TextBlock",
+                                "text": "**Rating:** ⭐️⭐️⭐️⭐️",
+                                "wrap": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "Column",
+                        "items": [{
+                            "type": "Image",
+                            "url": "${image}",
+                            "horizontalAlignment": "Right"
+                        }],
+                        "width": "200px"
+                    }
+                ]
+            },
+            {
+                "type": "Container",
+                "separator": true
+            },
+            {
+                "type": "TextBlock",
+                "text": "[More info](${url})",
+                "size": "small",
+                "spacing": "none",
+                "color": "Accent"
+            }
+        ]
+    },
+    "previewCardTemplate": {
+        "title": "${if(title, title, 'N/A')}",
+        "subtitle": "${if(summary, summary, 'N/A')}",
+        "image": {
+            "url": "${if(icon, icon, image)}",
+            "alt": "${if(title, title, 'N/A')}"
+        }
+    }
+}
