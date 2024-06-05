@@ -22,7 +22,7 @@
         },
         {
           "key": "TEAMS-SAMPLE-TYPE",
-          "value": "sample"
+          "value": "demo"
         },
         {
           "key": "TEAMS-CLIENT-LANGUAGE",
@@ -61,8 +61,8 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://pnp.github.io/teams-dev-samples/img/thumbnails/msgext-bot-SPUploader.png",
-          "alt": "Provides a basis for building a digital asset / document repository management app."
+          "url": "https://github.com/pnp/teams-dev-samples/blob/main/samples/msgext-copilot-message-centre/docs/assets/CopilotDemoMessageCentreSample.gif?raw=true",
+          "alt": "App uses the Microsoft 365 Tenant Service Health and Announcements API to get the data and display it in Copilot and the Teams Message extension."
         }
       ],
       "authors": [

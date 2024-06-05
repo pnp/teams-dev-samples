@@ -89,6 +89,6 @@ Additional features include:
 
 - [Service Health and Announcements API | Microsoft Graph Documentation](https://learn.microsoft.com/en-us/graph/api/resources/service-communications-api-overview?view=graph-rest-1.0)
 
-<img src="https://m365-visitor-stats.azurewebsites.net/sp-dev-fx-webparts/samples/msgext-copilot-message-centre" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-copilot-message-centre" />
 
 ----
