@@ -1,0 +1,17 @@
+{
+  "type": "AdaptiveCard",
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "TextBlock",
+      "text": "✅ Success",
+      "size": "Large"
+    },
+    {
+      "type": "TextBlock",
+      "text": "You are now following issue **${Id}**, you will receive notifications when there are updates to this issue.",
+      "wrap": true
+    }
+  ]
+}

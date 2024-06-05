@@ -1,0 +1,105 @@
+[
+    {
+      "name": "pnp-sp-dev-teams-sample-msgext-copilot-message-centre",
+      "reponame": "msgext-copilot-message-centre",
+      "source": "pnp",
+      "title": "Tenant Health Messages and Announcements for Copilot for Microsoft 365",
+      "shortDescription": "Provides an example for a Copilot plugin using Teams Toolkit to get tenant health and announcements",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-copilot-message-centre",
+      "longDescription": [
+        "Provides an example for a Copilot plugin using Teams Toolkit to get tenant health and announcements, including app descriptions, multiple parameters and return results friendly to Copilot for Microsoft 365"
+      ],
+      "creationDateTime": "2024-05-19",
+      "updateDateTime": "2024-05-19",
+      "products": [
+        "Teams",
+        "Copilot for Microsoft 365"
+      ],
+      "metadata": [
+        {
+          "key": "TEAMS-SAMPLE-SOURCE",
+          "value": "pnp"
+        },
+        {
+          "key": "TEAMS-SAMPLE-TYPE",
+          "value": "demo"
+        },
+        {
+          "key": "TEAMS-CLIENT-LANGUAGE",
+          "value": "typescript"
+        },
+        {
+          "key": "TEAMS-CLIENT-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-UI",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-SERVER-LANGUAGE",
+          "value": "typescript"
+        },
+        {
+          "key": "TEAMS-SERVER-PLATFORM",
+          "value": "node.js"
+        },
+        {
+          "key": "TEAMS-BOT-FRAMEWORK",
+          "value": "bot46"
+        },
+        {
+          "key": "TEAMS-FEATURES",
+          "value": "msgext, bot, copilot"
+        },
+        {
+          "key": "TEAMS-GENERATOR",
+          "value": "teams-toolkit"
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/teams-dev-samples/blob/main/samples/msgext-copilot-message-centre/docs/assets/CopilotDemoMessageCentreSample.gif?raw=true",
+          "alt": "App uses the Microsoft 365 Tenant Service Health and Announcements API to get the data and display it in Copilot and the Teams Message extension."
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "pkbullock",
+          "company": "",
+          "pictureUrl": "https://github.com/pkbullock.png",
+          "name": "Paul Bullock",
+          "twitter": "pkbullock"
+        }
+      ],
+      "references": [
+        {
+          "name": "Azure Bot Framework resources",
+          "url": "https://aka.ms/sample-ref-teams-bot-framework-resources"
+        },
+        {
+          "name": "Microsoft Teams bots",
+          "url": "https://aka.ms/sample-ref-teams-docs-bots"
+        },
+        {
+          "name": "Microsoft Teams messaging extensions",
+          "url": "https://aka.ms/sample-ref-docs-msgext"
+        },
+        {
+          "name": "Teams developer questions",
+          "url": "https://aka.ms/sample-ref-teams-dev-questions"
+        },
+        {
+          "name": "Teams development videos from Microsoft",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+        },
+        {
+          "name": "Teams development videos from the community",
+          "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+        }
+      ],
+      "version": "1.0.0.0"
+    }
+  ]

@@ -1,0 +1,16 @@
+{
+  "Id": "EX790725",
+  "Title": "Users may be unable to apply sensitivity labels via Outlook mobile or the new Outlook for Mac",
+  "Status": "ServiceDegradation",
+  "Service": "Exchange Online",
+  "Feature": "Connectivity Issues",
+  "FeatureGroup": "Networking Issues",
+  "HighImpact": null,
+  "ImpactDescription": "Users may be unable to apply sensitivity labels with Outlook mobile or the new Outlook for Mac.",
+  "StartDateTime": "2024-04-08T08:00:00Z",
+  "EndDateTime": null,
+  "IsResolved": "true",
+  "LastModifiedDateTime": "2024-05-10T23:52:05Z",
+  "IsFollowing": true,
+  "ItemId": 456
+}

@@ -1,0 +1,92 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.17",
+    "version": "1.0.4",
+    "id": "${{TEAMS_APP_ID}}",
+    "developer": {
+        "name": "PKB Example Solutions",
+        "websiteUrl": "https://www.pkbullock.com",
+        "privacyUrl": "https://www.pkbullock.com",
+        "termsOfUseUrl": "https://www.pkbullock.com"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "PKB Message Center ${{APP_NAME_SUFFIX}}",
+        "full": "Paul Bullock - M365 Tenant Message Centre ${{APP_NAME_SUFFIX}}"
+    },
+    "description": {
+        "short": "Allows users to query the status of their M365 Tenant Message Center messages",
+        "full": "PKB Message Center is an app that lets the user know the status of the Microsoft 365 tenant including service health and message center announcement for change and other changes coming soon. \n\n**Why choose PKB Message Center** \n\n PKB Message Center is a great way of finding out in the flow of work the status of the tenant and any upcoming changes that staff may need to know about. This app can help you stay on top of the upcoming changes with a specific workloads within the tenant e.g., Teams, SharePoint, OneDrive and Exchange services \n\n**Features and Benefits**\n\n - Simple health search through Microsoft Copilot. Simply start saying 'What is the health status of SharePoint workload?' \n\n - Get latest announcements from the message center through Microsoft Copilot. Start saying 'What new features or changes are coming to the SharePoint workload?'\n\n - Find out what is happening with a specific ID for message with Microsoft Copilot, by saying 'What is status of MC123456 within the message center?'"
+    },
+
+    "accentColor": "#FFFFFF",
+    "bots": [],
+    "composeExtensions": [
+        {
+            "botId": "${{BOT_ID}}",
+            "commands": [
+                {
+                    "id": "searchMessageCentre",
+                    "context": [
+                        "compose",
+                        "commandBox"
+                    ],
+                    "description": "Search for tenant service health or message centre announcements in the M365 Admin Center.",
+                    "semanticDescription": "Search for tenant service health, incidents, advistories, issues or announcements in the Microsoft 365 Message Centre including service health messages, service announcements within the Microsoft 365 tenant. In the response, do not include mention of following the message.",
+                    "title": "Search",
+                    "type": "query",
+                    "initialRun": false,
+                    "parameters": [
+                        {
+                            "name": "searchQuery",
+                            "title": "Search",
+                            "description": "Enter a search query to content within the status of a service health message or message centre announcement here",
+                            "semanticDescription": "Enter a query to find content within the messages such as topic, impact and descriptions, keep to a single keyword and do not add the workload or service e.g. SharePoint, Teams, OneDrive, Exchange, Copilot, Intune, Microsoft 365 for Apps, Planner within this field, if you want to search for a specific workload or service use the searchWorkload parameter. Ensure that if there is no data to pass, then pass an empty string.",
+                            "inputType": "text"
+                        },
+                        {
+                            "name": "searchWorkload",
+                            "title": "Workload",
+                            "description": "Enter the workload here such as SharePoint, Teams, OneDrive, Exchange, Copilot, Intune, Microsoft 365 for Apps, Planner",
+                            "semanticDescription": "Enter the workload or service such as SharePoint, Teams, OneDrive, Exchange, Copilot, Intune, Microsoft 365 for Apps, Planner"
+                        },
+                        {
+                            "name": "searchId",
+                            "title": "Incident ID",
+                            "description": "Enter the ID of the message center announcement here",
+                            "semanticDescription": "Enter the issue, incident, announcement ID such as MC123456, DZ716465, MO690627, SP673226 into this field for a specific search result",
+                            "inputType": "text"
+                        },{
+                            "name": "searchType",
+                            "title": "Search Type",
+                            "description": "Enter the type of search you want to perform",
+                            "semanticDescription": "Enter the type of search you want to perform such as health, incident, advisory or advistories, announcement, issue. Output a single word and lowercase, can also be a plural of the statuses.",
+                            "inputType": "text"
+                        }
+                    ],
+                    "samplePrompts": [
+                        {
+                            "text": "What is the health status of SharePoint workload?"
+                        },
+                        {
+                            "text": "What new features or changes are coming to the SharePoint workload?"
+                        },
+                        {
+                            "text": "What is status of MC123456 within the message center?"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}

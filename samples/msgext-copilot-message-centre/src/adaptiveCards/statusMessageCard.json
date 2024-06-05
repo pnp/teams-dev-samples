@@ -1,0 +1,136 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "🩺 Service Health",
+              "size": "Large"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "ID: ${Id}",
+              "wrap": true,
+              "size": "Large",
+              "horizontalAlignment": "Right"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "${Title}",
+      "wrap": true,
+      "size": "Large",
+      "style": "heading",
+      "color": "Accent"
+    },
+    {
+      "type": "TextBlock",
+      "text": "${Status}",
+      "wrap": true,
+      "size": "Large",
+      "color": "Default",
+      "separator": true
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": "auto",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "Affecting: ${Service}",
+              "wrap": true,
+              "size": "Medium"
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": "stretch",
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "${if(IsResolved != 'True', 'UNRESOLVED', 'RESOLVED')}",
+              "wrap": true,
+              "color": "${if(IsResolved != 'True', 'attention', 'good')}",
+              "weight": "Bolder"
+            }
+          ],
+          "horizontalAlignment": "Right"
+        }
+      ]
+    },
+    {
+      "type": "TextBlock",
+      "text": "Specifically ${Feature} - ${FeatureGroup}",
+      "wrap": true,
+      "size": "Small",
+      "isSubtle": true
+    },
+    {
+      "type": "Container",
+      "separator": true,
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "Started at {{DATE(${StartDateTime}, SHORT)}} at {{TIME(${StartDateTime})}}",
+          "wrap": true,
+          "separator": true
+        },
+        {
+          "type": "TextBlock",
+          "text": "Last Updated: {{DATE(${LastModifiedDateTime}, LONG)}} at {{TIME(${LastModifiedDateTime})}}",
+          "wrap": true
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "items": [
+        {
+          "type": "ActionSet",
+          "isVisible": "${!IsFollowing}",
+          "actions": [
+            {
+              "type": "Action.Execute",
+              "title": "Follow this incident",
+              "verb": "follow",
+              "data": {
+                "issueId": "${Id}",
+                "issueType": "health",
+                "itemId": "${ItemId}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "TextBlock",
+          "isVisible": "${IsFollowing}",
+          "text": "You are following this incident",
+          "isSubtle": true,
+          "weight": "Bolder",
+          "color": "good"
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.6"
+}

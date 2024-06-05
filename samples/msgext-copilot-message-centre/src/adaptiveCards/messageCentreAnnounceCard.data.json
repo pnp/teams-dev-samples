@@ -1,0 +1,20 @@
+{
+  "Id": "MC424414",
+  "Title": "(Updated) Non-Native and Hybrid Microsoft Viva Engage (formerly Yammer) Networks are being upgraded",
+  "Services": [
+    "Microsoft Viva"
+  ],
+  "DetailSummary": "Non-Native and Hybrid Microsoft Viva Engage networks are being upgraded to Native Mode, which aligns with Azure Active Directory and Microsoft 365, offering benefits like hosting Live Events and supporting eDiscovery. Upgrades start December 2022 and continue through December 2024. Some features will be lost, but alternatives are provided. Organizations can self-initiate migration or allow Microsoft to manage it.",
+  "Tags": [
+    "Updated message",
+    "Admin impact",
+    "Retirement"
+  ],
+  "IsMajorChange": null,
+  "StartDateTime": "2022-09-01T23:53:05Z",
+  "EndDateTime": "2025-03-03T08:00:00Z",
+  "LastModifiedDateTime": "2024-04-11T22:26:26Z",
+  "Category": "StayInformed",
+  "IsFollowing": false,
+  "ItemId": 123
+}
