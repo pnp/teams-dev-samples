@@ -1,0 +1,69 @@
+[
+  {
+    "name": "officedev-copilot-for-m365-plugins-samples-msgext-classified-listings-ts",
+    "source": "officedev",
+    "title": "Classified Listings plugin for Copilot for Microsoft 365",
+    "shortDescription": "This sample implements a Teams message extension that can be used as a plugin for Microsoft Copilot for Microsoft 365.",
+    "url": "https://github.com/OfficeDev/Copilot-for-M365-Plugins-Samples/tree/main/samples/msgext-classified-listings-ts",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/OfficeDev/Copilot-for-M365-Plugins-Samples/tree/main/samples/msgext-classified-listings-ts",
+    "longDescription": [
+      "This sample implements a Teams message extension that can be used as a plugin for Microsoft Copilot for Microsoft 365. "
+    ],
+    "creationDateTime": "2024-06-12",
+    "updateDateTime": "2024-06-12",
+    "products": [
+      "Microsoft Teams",
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "PLATFORM",
+        "value": "Node.js"
+      },
+      {
+        "key": "LANGUAGE",
+        "value": "JavaScript"
+      },
+      {
+        "key": "SEARCH-RESULTS-CARD",
+        "value": "Yes"
+      },
+      {
+        "key": "TEAMS-PACKAGE",
+        "value": "Yes"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 50,
+        "url": "https://github.com/OfficeDev/Copilot-for-M365-Plugins-Samples/raw/main/samples/msgext-doc-search-js/assets/preview-teams.png",
+        "alt": "Screenshot of the sample extension working in Copilot in Microsoft Teams"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "nanddeepn",
+        "pictureUrl": "https://github.com/nanddeepn.png",
+        "name": "Nanddeep Nachan"
+      },
+      {
+        "gitHubAccount": "SmitaNachan",
+        "pictureUrl": "https://github.com/SmitaNachan.png",
+        "name": "Smita Nachan"
+      }
+    ],
+    "references": [
+      {
+        "name": "Extend Microsoft Copilot for Microsoft 365",
+        "description": "Learn more about how to extend Microsoft Copilot for Microsoft 365",
+        "url": "https://aka.ms/extendcopilotm365"
+      },
+      {
+        "name": "Teams Toolkit for Visual Studio Code",
+        "description": "Learn more about the Teams Toolkit for Visual Studio Code.",
+        "url": "https://learn.microsoft.com/microsoftteams/platform/toolkit/teams-toolkit-fundamentals?pivots=visual-studio-code-v5"
+      }
+    ]
+  }
+]
