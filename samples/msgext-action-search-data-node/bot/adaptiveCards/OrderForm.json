@@ -1,0 +1,145 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+      {
+        "type": "TextBlock",
+        "size": "Medium",
+        "weight": "Bolder",
+        "text": "${Name}"
+      },
+      {
+        "type": "TextBlock",
+        "text": "${Category}",
+        "wrap": true
+      },
+      {
+        "type": "ColumnSet",
+        "columns": [
+          {
+            "type": "Column",
+            "width": "auto",
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "Ordered by now: ",
+                "wrap": true
+              }
+            ]
+          },
+          {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "${Orders}",
+                "weight": "Bolder",
+                "wrap": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "ColumnSet",
+        "columns": [
+          {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+              {
+                "type": "TextBlock",
+                "text": "To Order:",
+                "wrap": true
+              }
+            ]
+          },
+          {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+              {
+                "type": "Input.Number",
+                "placeholder": "1",
+                "id": "orderId",
+                "label": "Mo",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+              {
+                "type": "Input.Number",
+                "placeholder": "1",
+                "id": "orderId2",
+                "value": 1,
+                "label": "Tu"
+              }
+            ]
+          },
+          {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+              {
+                "type": "Input.Number",
+                "placeholder": "1",
+                "id": "orderId3",
+                "value": 1,
+                "label": "We"
+              }
+            ]
+          },
+          {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+              {
+                "type": "Input.Number",
+                "placeholder": "1",
+                "id": "orderId4",
+                "value": 1,
+                "label": "Th"
+              }
+            ]
+          },
+          {
+            "type": "Column",
+            "width": "stretch",
+            "items": [
+              {
+                "type": "Input.Number",
+                "placeholder": "Placeholder text",
+                "id": "orderId5",
+                "value": 1,
+                "label": "Fr"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "type": "Action.Execute",
+        "title": "Order",
+        "verb": "order",
+        "data": {
+          "Id": "${Id}",
+          "Category": "${Category}",
+          "Name": "${Name}",
+          "Orders": "${Orders}"
+        }
+      },
+      {
+        "type": "Action.OpenUrl",
+        "title": "View orders",
+        "url": "https://adaptivecards.io"
+      }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5"
+  }

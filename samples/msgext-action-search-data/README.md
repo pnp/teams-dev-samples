@@ -42,6 +42,11 @@ For further details see the author's [blog post](https://mmsharepoint.wordpress.
 
 * [Office 365 tenant](https://dev.office.com/sharepoint/docs/spfx/set-up-your-development-environment)
 
+## Applies to
+
+This sample was created  [using the Teams Toolkit with Visual Studio 2022](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/toolkit-v4/teams-toolkit-fundamentals-vs?WT.mc_id=M365-MVP-5004617). Nearly the same [sample](https://github.com/pnp/teams-dev-samples/samples/msgext-action-search-data-node) was also realized [using the Teams Toolkit with Visual Studio Code](https://learn.microsoft.com/en-us/microsoftteams/platform/toolkit/teams-toolkit-fundamentals?WT.mc_id=M365-MVP-5004617).
+
+
 ## Version history
 
 Version|Date|Author|Comments
