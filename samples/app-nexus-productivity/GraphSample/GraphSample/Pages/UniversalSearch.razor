@@ -1,0 +1,414 @@
+@page "/Search"
+@using Microsoft.Graph
+@using Microsoft.Graph.Models
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+
+<style>
+
+    .dropdown-content {
+        display: none;
+        max-height: 80%;
+        overflow: scroll;
+        max-height: 50vh;
+        width: 100%;
+        background-color: white;
+    }
+
+    .dropdown-content::-webkit-scrollbar {
+        width: 10px;
+        height: 70%;
+        background-color: transparent;
+        height: calc(100% - 20px);
+        padding-left: 7px;
+    }
+
+    .dropdown-content::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 1.5rem;
+    }
+
+    .dropdown-content::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .dropdown-content div {
+        width: 98%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 1%;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        border-radius: 0.25rem;
+        height: 80px;
+    }
+
+    .dropdown-content div:hover {
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    }
+
+    a, a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .ProgressRing {
+        display: none;
+        width: 10%;
+        height: 10%;
+        margin-left: 45%;
+        margin-top: 25%;
+    }
+
+    .dropdown-content2{
+        max-width: 100%;
+    }
+
+</style>
+
+<AuthorizeView>
+    <Authorized>
+
+        <div class="dropdown-content2" style="@InputStyle" @onclick="HandleInputFocus" @onmouseleave="MouseOut">
+
+            <input class="form-control" type="search" placeholder="Search" bind-Value="searchValue" @oninput="HandleInput" @onkeypress="HandleKeyPress">
+
+            <FluentProgressRing class="ProgressRing" style="@ProgressStyle"></FluentProgressRing>
+
+            <div class="dropdown-content" style="@DropDownStyle">
+
+                @if (data_response.Count == 0)
+                {
+                    <div style="background-color: white;"> Nothing Found </div>
+                }
+
+                else
+                {
+                    @foreach (var data in data_response)
+                    {
+                        <a href="@data.Url" target="_blank">
+                            <div>
+                                @if (data.App == "Outlook")
+                                {
+                                    <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20221209.001/assets/brand-icons/product/svg/outlook_32x1.svg"
+                                         width="32"
+                                         height="32"
+                                         alt="Outlook" />
+                                }
+                                else if (data.App == "Teams")
+                                {
+                                    <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20221209.001/assets/brand-icons/product/svg/teams_32x1.svg"
+                                         width="32"
+                                         height="32"
+                                         alt="Teams" />
+                                }
+                                else
+                                {
+                                    <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20221209.001/assets/brand-icons/product/svg/onedrive_32x1.svg"
+                                         width="32"
+                                         height="32"
+                                         alt="OneDrive" />
+                                }
+
+                                @data.Sender
+                                @data.Title
+
+                            </div>
+
+
+                        </a>
+
+                    }
+                }
+
+
+            </div>
+
+        </div>
+
+    </Authorized>
+
+    <NotAuthorized>
+        <RedirectToLogin />
+    </NotAuthorized>
+</AuthorizeView>
+
+
+@code{
+
+    [CascadingParameter]
+    protected Task<AuthenticationState>? authenticationStateTask { get; set; }
+
+    protected string searchValue = string.Empty;
+    protected string DropDownStyle = string.Empty;
+    protected string ProgressStyle = "display: none;";
+    protected bool isSearching = false;
+    protected string InputStyle = "";
+
+    private GraphServiceClient? graphClient;
+    private List<Author> data_response = new List<Author>();
+
+
+    protected void HandleInputFocus()
+    {
+        InputStyle = "width:65vw;";
+    }
+
+
+    protected void MouseOut()
+    {
+        Console.WriteLine("mouse outside");
+        InputStyle = "";
+        data_response.Clear();
+        ToggleDropdown(false);
+    }
+
+    protected void ToggleDropdown(bool visibility)
+    {
+        if (visibility)
+        {
+            DropDownStyle = "display: block;";
+        }
+
+        else
+        {
+            DropDownStyle = "display: none;";
+        }
+    }
+
+    public class Author
+    {
+        public string Sender { get; }
+        public string Title { get; }
+        public string Url { get; }
+        public string App { get; }
+
+        public Author(string sender, string title, string webLink, string app)
+        {
+            Sender = sender;
+            Title = title;
+            Url = webLink;
+            App = app;
+        }
+    }
+
+
+    private void HandleInput(ChangeEventArgs e)
+    {
+        searchValue = e.Value.ToString();
+        data_response.Clear();
+        isSearching = false;
+        if (String.IsNullOrEmpty(searchValue))
+        {
+            ToggleDropdown(false);
+        }
+    }
+
+    private async Task HandleKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && (isSearching == false))
+        {
+            // call the async function from here
+            ProgressStyle = "display: block;";
+            string searchTerm = searchValue;
+            searchTerm += "*";
+            isSearching = true;
+            data_response.Clear();
+            await CallApiAsync(searchTerm);
+            ToggleDropdown(true);
+            Console.WriteLine("Search value: " + searchTerm);
+            ProgressStyle = "display: none;";
+        }
+    }
+
+
+    protected async Task CallApiAsync(string searchTerm)
+    {
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+                "Unable to access authentication state");
+        }
+
+        // Get the user
+        var user = (await authenticationStateTask).User;
+
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+
+        var requestBodyMail = new Microsoft.Graph.Search.Query.QueryPostRequestBody
+        {
+            Requests = new List<SearchRequest>
+                {
+                new SearchRequest
+                {
+                    EntityTypes = new List<EntityType?>
+                    {
+                        EntityType.Message,
+                    },
+                    Query = new SearchQuery
+                    {
+                        QueryString = searchTerm,
+                    },
+                    QueryAlterationOptions = new SearchAlterationOptions
+                    {
+                        EnableModification = true,
+                    },
+                    EnableTopResults = true,
+                },
+            },
+        };
+
+        var requestBodyTeams = new Microsoft.Graph.Search.Query.QueryPostRequestBody
+        {
+            Requests = new List<SearchRequest>
+            {
+                new SearchRequest
+                {
+                    EntityTypes = new List<EntityType?>
+                    {
+                        EntityType.ChatMessage,
+                    },
+                    Query = new SearchQuery
+                    {
+                        QueryString = searchTerm,
+                    },
+                    QueryAlterationOptions = new SearchAlterationOptions
+                    {
+                        EnableModification = true,
+                    },
+                },
+            },
+        };
+
+        var requestBodyDrive = new Microsoft.Graph.Search.Query.QueryPostRequestBody
+        {
+            Requests = new List<SearchRequest>
+            {
+                new SearchRequest
+                {
+                    EntityTypes = new List<EntityType?>
+                    {
+                        EntityType.DriveItem,
+                    },
+                    Query = new SearchQuery
+                    {
+                        QueryString = searchTerm,
+                    },
+                    QueryAlterationOptions = new SearchAlterationOptions
+                    {
+                        EnableModification = true,
+                    }
+                },
+            },
+        };
+
+
+        var batchRequestContent = new BatchRequestContent(graphClient);
+
+        var team = graphClient.Search.Query.ToPostRequestInformation(requestBodyTeams);
+        var mail = graphClient.Search.Query.ToPostRequestInformation(requestBodyMail);
+        var drive = graphClient.Search.Query.ToPostRequestInformation(requestBodyDrive);
+
+        var teamId = await batchRequestContent.AddBatchRequestStepAsync(team);
+        var mailId = await batchRequestContent.AddBatchRequestStepAsync(mail);
+        var driveId = await batchRequestContent.AddBatchRequestStepAsync(drive);
+
+        var returnedResponse = await graphClient.Batch.PostAsync(batchRequestContent);
+
+        // teams code
+        try
+        {
+
+            var user1 = await returnedResponse.GetResponseByIdAsync<Microsoft.Graph.Search.Query.QueryResponse>(teamId);
+            // check for hits is 0 or not then it is empty
+            if (user1?.Value?[0]?.HitsContainers?[0]?.Total == 0)
+            {
+                Console.WriteLine("Nothing found in Teams");
+            }
+
+            else
+            {
+                for (int i = 0; i < user1?.Value?[0]?.HitsContainers?[0]?.Hits?.Count; i++)
+                {
+                    var searchItems = user1?.Value?[0]?.HitsContainers?[0]?.Hits?[i]?.Resource?.AdditionalData;
+
+                    JsonElement fromMessage = (JsonElement)searchItems["from"];
+                    string teamName = fromMessage.GetProperty("emailAddress").GetProperty("name").GetString();
+
+                    data_response.Add(new Author(teamName, user1.Value[0].HitsContainers[0].Hits[0].Summary, searchItems["webLink"].ToString(), "Teams"));
+                    Console.WriteLine(" found in teams");
+                }
+
+            }
+
+        }
+        catch (ServiceException ex)
+        {
+            Console.WriteLine("Get Teams failed" + ex);
+        }
+
+        // mail code
+        try
+        {
+            var user1 = await returnedResponse.GetResponseByIdAsync<Microsoft.Graph.Search.Query.QueryResponse>(mailId);
+
+            if (user1?.Value?[0]?.HitsContainers?[0]?.Total == 0)
+            {
+                Console.WriteLine("Nothing found in Mail");
+            }
+
+            else
+            {
+
+                for (int i = 0; i < user1?.Value?[0]?.HitsContainers?[0]?.Hits?.Count; i++)
+                {
+                    var searchItems = user1?.Value?[0]?.HitsContainers?[0]?.Hits?[i]?.Resource?.AdditionalData;
+
+                    JsonElement fromMessage = (JsonElement)searchItems["from"];
+                    string messageName = fromMessage.GetProperty("emailAddress").GetProperty("name").GetString();
+
+                    data_response.Add(new Author(messageName, searchItems?["subject"].ToString(), searchItems["webLink"].ToString(), "Outlook"));
+                    Console.WriteLine(" found in outlook");
+                }
+            }
+
+
+        }
+        catch (ServiceException ex)
+        {
+            Console.WriteLine("Get Mail Failed" + ex);
+        }
+
+        // drive code
+        try
+        {
+            var user1 = await returnedResponse.GetResponseByIdAsync<Microsoft.Graph.Search.Query.QueryResponse>(driveId);
+
+            if (user1?.Value?[0]?.HitsContainers?[0]?.Total == 0)
+            {
+                Console.WriteLine("Nothing found in OneDrive");
+            }
+
+            else
+            {
+
+                for (int i = 0; i < user1?.Value?[0]?.HitsContainers?[0]?.Hits?.Count; i++)
+                {
+                    var searchItems = user1?.Value?[0]?.HitsContainers?[0]?.Hits?[i]?.Resource?.AdditionalData;
+
+                    JsonElement lastModifiedBy = (JsonElement)searchItems["lastModifiedBy"];
+                    string oneDriveCreator = lastModifiedBy.GetProperty("user").GetProperty("displayName").GetString();
+
+                    data_response.Add(new Author(oneDriveCreator, searchItems?["name"].ToString(), searchItems["webUrl"].ToString(), "OneDrive"));
+                    Console.WriteLine("found in drive");
+                }
+            }
+
+        }
+
+        catch (ServiceException ex)
+        {
+            Console.WriteLine("Get OneDrive Failed" + ex);
+        }
+
+    }
+}

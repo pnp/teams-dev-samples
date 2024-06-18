@@ -1,0 +1,305 @@
+﻿@using System.Security.Authentication
+@using System.IO;
+@using Azure
+@using Azure.AI.OpenAI
+@using System.Text
+@using Microsoft.Graph.Beta
+
+
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+@inject GraphSample.AI.OpenAIService OpenAIService
+
+@inject GraphSampleBeta.Graph.GraphClientFactoryBeta clientFactory
+
+<style>
+
+    .dropBox {
+        border: 2px solid red;
+    }
+
+    .dropdown-transcript {
+        max-height: 90%;
+        overflow: scroll;
+    }
+
+    .textboxTranscript {
+        min-height: 50vh;
+        min-width: 50vw;
+        max-height: 50vh;
+        max-width: 100vw;
+        background-color: ghostwhite;
+        color: black;
+        overflow: scroll;
+        border-radius: 0.25rem;
+    }
+
+    p{
+        padding: 1% 1% 1% 1%;
+    }
+
+</style>
+
+<AuthorizeView>
+    <Authorized>
+
+        <h3> Transcript.Ai </h3>
+
+        <div>
+            <FluentDialog @ref="MyFluentDialog" aria-label="Simple dialog" Modal=true @ondialogdismiss=OnDismiss>
+                <div class="dropdown-transcript">
+
+                    @foreach (var eventResponse in data_response)
+                    {
+                        if ((bool)eventResponse.IsOnlineMeeting)
+                        {
+                            DateTime response = DateTime.Parse(@eventResponse.End.DateTime);
+                            string readableEndDate = response.ToString("MMMM dd, yyyy HH:mm");
+                            <div class="dropBox" @onclick="() => GetContent(eventResponse.OnlineMeeting.JoinUrl)">
+                                <span> @eventResponse.Subject  --- </span>
+                                <span> @readableEndDate </span>
+                            </div>
+
+                        }
+                    }
+
+                </div>
+
+            </FluentDialog>
+        </div>
+
+        <div class="textboxTranscript">
+            <h3>Summary:</h3>
+            @if (!string.IsNullOrEmpty(summary))
+            {
+                <p>@summary</p>
+            }
+
+        </div>
+
+        <button class="btn btn-primary" type="button" aria-expanded="false" @onclick="OnOpen">
+            Magic
+        </button>
+
+    </Authorized>
+
+    <NotAuthorized>
+        <RedirectToLogin />
+    </NotAuthorized>
+</AuthorizeView>
+
+@code{
+
+    [CascadingParameter]
+    protected Task<AuthenticationState>? authenticationStateTask { get; set; }
+    private GraphServiceClient? graphClient;
+    protected string summary = "";
+
+    private FluentDialog? MyFluentDialog;
+    protected List<Microsoft.Graph.Beta.Models.Event> data_response = new List<Microsoft.Graph.Beta.Models.Event>();
+
+
+    protected async Task testing()
+    {
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+                "Unable to access authentication state");
+        }
+
+        var user = (await authenticationStateTask).User;
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+
+        var me = await graphClient.Me.GetAsync();
+
+        var user1 = await graphClient.Me.Events.GetAsync((requestConfiguration) =>
+        {
+            requestConfiguration.QueryParameters.Select = new string[] { "subject", "organizer", "isOnlineMeeting", "onlineMeeting,start,end" };
+        });
+
+        data_response = user1.Value;
+
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+            MyFluentDialog!.Hide();
+    }
+
+
+    private async void OnOpen()
+    {
+        await testing();
+        MyFluentDialog!.Show();
+    }
+
+    private void OnDismiss(DialogEventArgs args)
+    {
+        if (args is not null && args.Reason is not null && args.Reason == "dismiss")
+        {
+            MyFluentDialog!.Hide();
+        }
+    }
+
+    protected async void GetContent(string meetingLink)
+    {
+        var originalString = "JoinWebUrl eq '1234'";
+        string modifiedLink = originalString.Replace("'1234'", $"'{meetingLink}'");
+
+        Console.WriteLine(modifiedLink);
+
+        var me = await graphClient.Me.GetAsync();
+
+        var meetingInfo = await graphClient.Me.OnlineMeetings.GetAsync((requestConfiguration) =>
+        {
+            requestConfiguration.QueryParameters.Filter = modifiedLink;
+        });
+
+        var transcripts2 = await graphClient.Users[me.Id].OnlineMeetings[meetingInfo.Value[0].Id].Transcripts.GetAsync();
+
+        //Console.WriteLine(transcripts2.Value[0].Id);
+        //Console.WriteLine(transcripts2.Value[0].CreatedDateTime);
+
+        //Console.WriteLine(me.Id);
+        //Console.WriteLine(meetingInfo.Value[0].Id);
+        //Console.WriteLine(transcripts2.Value[0].Id);
+
+
+        var requestInformation = graphClient.Users[me.Id].OnlineMeetings[meetingInfo.Value[0].Id].Transcripts[transcripts2.Value[0].Id].Content.ToGetRequestInformation();
+        requestInformation.UrlTemplate += "{?format}"; // Add the format query parameter to the template and query parameter.
+        requestInformation.QueryParameters.Add("format", "text/vtt");
+        var content2 = await graphClient.RequestAdapter.SendPrimitiveAsync<Stream>(requestInformation);
+
+        var string2 = ConvertWebVttStreamToString(content2);
+
+        await SummarizeText(string2);
+        StateHasChanged();
+        //Console.WriteLine(summary);
+    }
+
+
+    protected string ConvertWebVttStreamToString(Stream? stream)
+    {
+        using (StreamReader reader = new StreamReader(stream, Encoding.UTF8))
+        {
+            return reader.ReadToEnd();
+        }
+    }
+
+    // Event handler for the "Summarize" button click
+    protected async Task SummarizeText(string content)
+    {
+
+        // Perform summarization until the overall summary is less than 3000 characters
+        var summaries = new List<string>();
+        var overallSummary = "";
+
+        // Split the content into smaller chunks
+        var chunkSize = 750; // Adjust this value as per your model's character limit
+        var chunks = SplitContentIntoChunks(content, chunkSize);
+
+        // Perform summarization for each chunk
+        foreach (var chunk in chunks)
+        {
+            string prompt = $"Summarize the following text for an executive summary and in detail:\n\n{chunk}\n";
+
+            var completionsResponse = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, prompt);
+            var completion = completionsResponse.Value.Choices[0].Text;
+
+            summaries.Add(completion);
+            string finish = $"Keep summarising in detail:\n\n{prompt}\n\nGave summary:\n\n{completion}";
+            var completionsResponseFinish = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish);
+            var completionFinish = completionsResponseFinish.Value.Choices[0].Text;
+
+            summaries.Add(completionFinish);
+            string finish2 = $"Keep summarising in detail:\n\n{prompt}\n\nGave summary:\n\n{completionFinish}";
+            var completionsResponseFinish2 = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish2);
+            var completionFinish2 = completionsResponseFinish2.Value.Choices[0].Text;
+
+            summaries.Add(completionFinish2);
+        }
+
+        // Combine the individual summaries into an overall summary
+        overallSummary = string.Join(" ", summaries);
+
+        //Break the loop if the overall summary exceeds 2500 characters
+        if (overallSummary.Length >= 5000)
+        {
+            summaries.Clear();
+
+            string prompt = $"This summary is slightly too long, please rewrite without losing any detail but in a more concise way:\n\n{overallSummary}\n";
+
+            var completionsResponse = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, prompt);
+            var completion = completionsResponse.Value.Choices[0].Text;
+
+            summaries.Add(completion);
+            string finish = $"Keep summarising in extreme detail:\n\n{prompt}\n\nGave summary:\n\n{completion}";
+            var completionsResponseFinish = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish);
+            var completionFinish = completionsResponseFinish.Value.Choices[0].Text;
+
+            summaries.Add(completionFinish);
+            string finish2 = $"Keep summarising in extreme detail:\n\n{prompt}\n\nGave summary:\n\n{completionFinish}";
+            var completionsResponseFinish2 = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish2);
+            var completionFinish2 = completionsResponseFinish2.Value.Choices[0].Text;
+
+            summaries.Add(completionFinish2);
+        }
+
+        //Break the loop if the overall summary exceeds 2500 characters
+        else if (overallSummary.Length <= 500)
+        {
+            summaries.Clear();
+
+            string prompt = $"This summary is slightly too short, please rewrite without losing any detail but in a more easy to understand way, including any extra details that would help:\n\n{overallSummary}\n";
+
+            var completionsResponse = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, prompt);
+            var completion = completionsResponse.Value.Choices[0].Text;
+
+            summaries.Add(completion);
+            string finish = $"Keep summarising:\n\n{prompt}\n\nGave summary:\n\n{completion}";
+            var completionsResponseFinish = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish);
+            var completionFinish = completionsResponseFinish.Value.Choices[0].Text;
+
+            summaries.Add(completionFinish);
+            string finish2 = $"Keep summarising in extreme detail:\n\n{prompt}\n\nGave summary:\n\n{completionFinish}";
+            var completionsResponseFinish2 = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish2);
+            var completionFinish2 = completionsResponseFinish2.Value.Choices[0].Text;
+
+            summaries.Add(completionFinish2);
+        }
+
+        overallSummary = string.Join(" ", summaries);
+        summaries.Clear();
+        summary = overallSummary;
+        Console.WriteLine("Generated AI summary");
+
+    }
+
+    // Helper method to split the content into smaller chunks
+    private IEnumerable<string> SplitContentIntoChunks(string content, int chunkSize)
+    {
+        var sentences = content.Split('.', '!', '?');
+        var currentChunk = new StringBuilder();
+
+        foreach (var sentence in sentences)
+        {
+            if (currentChunk.Length + sentence.Length + 1 <= chunkSize)
+            {
+                currentChunk.Append(sentence).Append('.');
+            }
+            else
+            {
+                yield return currentChunk.ToString();
+                currentChunk.Clear().Append(sentence).Append('.');
+            }
+        }
+
+        if (currentChunk.Length > 0)
+        {
+            yield return currentChunk.ToString();
+        }
+    }
+
+
+}

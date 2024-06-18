@@ -1,0 +1,26 @@
+.page[b-bl0j7m4p9v] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content[b-bl0j7m4p9v] {
+    width: 100%;
+}
+
+.outerSearch[b-bl0j7m4p9v] {
+    /* put this search bar in line with the nav bar */
+    position: fixed;
+    top: 20px;
+    left: 11rem;
+    z-index: 4;
+}
+
+.seperateNavBar[b-bl0j7m4p9v] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}

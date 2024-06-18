@@ -1,0 +1,115 @@
+# New Output Folder
+build/
+
+# Paket
+/.paket/
+/paket-files/*
+
+.config/
+.vscode/
+.vs/
+.obj/
+obj/
+bin/Debug/*
+bin/Debug/net7.0/*
+obj
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+
+#ignore dll files
+*.dll
+.obj/*
+
+
+*.gz
+*.dll.gz
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.log
+*.scc
+*.wasm
+
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Other Visual Studio data
+.vs/
+
+*bin/
+
+# Guidance Automation Toolkit
+*.gpState
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# TeamCity is a build add-in
+_TeamCity*
+
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+
+# Mac desktop service store files
+.DS_Store
+
+# FAKE build cache
+.fake/
+
+/bin/
+/dist/
+obj/Debug/net7.0/BlazorWebAssem.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs
+obj/Debug/net7.0/BlazorWebAssem.AssemblyInfoInputs.cache
+obj/Debug/net7.0/BlazorWebAssem.AssemblyInfo.cs
+.gitignore
+.gitignore
+obj/Debug/net7.0/BlazorWebAssem.csproj.AssemblyReference.cache
+obj/Debug/net7.0/BlazorWebAssem.GlobalUsings.g.cs
+bin/Debug/net7.0/Microsoft.Authentication.WebAssembly.Msal.dll
