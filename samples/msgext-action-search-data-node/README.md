@@ -53,11 +53,12 @@ Version|Date|Author|Comments
 - Clone the repository
     ```bash
     git clone https://github.com/pnp/teams-dev-samples.git
-
-1. First, select the Teams Toolkit icon on the left in the VS Code toolbar.
-2. In the Account section, sign in with your [Microsoft 365 account](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts) if you haven't already.
-3. Press F5 to start debugging which launches your app in Teams using a web browser. Select `Debug in Teams (Edge)` or `Debug in Teams (Chrome)`.
-4. When Teams launches in the browser, select the Add button in the dialog to install your app to Teams.
-5. Run the Messaging Extesion from the offered Chat window
+- In Azure create an Azure Table and fill in the Account name into .env.local (copy from .env.dev) AZURE_TABLE_ACCOUNTNAME
+- Fill in the Azure Table key into .env.local (copy from .env.dev) AZURE_TABLE_KEY
+- Select the Teams Toolkit icon on the left in the VS Code toolbar.
+- In the Account section, sign in with your [Microsoft 365 account](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts) if you haven't already.
+- Press F5 to start debugging which launches your app in Teams using a web browser. Select `Debug in Teams (Edge)` or `Debug in Teams (Chrome)`.
+- When Teams launches in the browser, select the Add button in the dialog to install your app to Teams.
+- Run the Messaging Extesion from the offered Chat window
 
 **Congratulations**! You are running an application that can now show a beautiful web page in Teams, Outlook and the Microsoft 365 app.
