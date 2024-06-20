@@ -13,7 +13,7 @@
       "updateDateTime": "2024-05-19",
       "products": [
         "Teams",
-        "Copilot for Microsoft 365"
+        "Microsoft 365 Copilot"
       ],
       "metadata": [
         {
@@ -61,7 +61,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/teams-dev-samples/blob/main/samples/msgext-copilot-message-centre/docs/assets/CopilotDemoMessageCentreSample.gif?raw=true",
+          "url": "https://github.com/pnp/teams-dev-samples/blob/a305594b965fd030ce001d5e7a50c15fba0da7a8/samples/msgext-copilot-message-centre/docs/assets/CopilotDemoMessageCentreSample.gif",
           "alt": "App uses the Microsoft 365 Tenant Service Health and Announcements API to get the data and display it in Copilot and the Teams Message extension."
         }
       ],
