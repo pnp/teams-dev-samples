@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: fit-content;
+  }
+}
+
+.tmContainer {
+  display: grid;
+  margin-top: 6px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.tmRow {
+  display: table-row;
+  margin-top: 6px;
+}
+.tmCol11 {
+  display: table-cell;
+  width: 92%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.tmCol9 {
+  display: table-cell;
+  width: 75%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.tmCol4 {
+  display: table-cell;
+  width: 33%;
+  padding-right: 8px;
+}
+.tmCol3 {
+  display: table-cell;
+  width: 25%;
+  padding-right: 8px;
+}
+.tmCol1 {
+  display: table-cell;
+  width: 8%;
+}
+.listHeader {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.listCol1 {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.sbmBtn {
+  min-height: 24px;
+  margin: 8px;
+}

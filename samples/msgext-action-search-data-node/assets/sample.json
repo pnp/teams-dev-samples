@@ -1,16 +1,16 @@
 [
   {
-    "name": "pnp-sp-dev-teams-sample-msgext-action-search-data",
-    "reponame": "msgext-action-search-data",
+    "name": "pnp-sp-dev-teams-sample-msgext-action-search-data-node",
+    "reponame": "msgext-action-search-data-node",
     "source": "pnp",
     "title": "Action-based Teams and M365 Messaging Extension",
     "shortDescription": "Sample is a Teams and M365 Messaging Extension handling (action-based) data retrieval and writing back",
-    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-action-search-data",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-action-search-data-node",
     "longDescription": [
-      "This sample is an action-based Teams and M365 Messaging Extension app created using the Teams Toolkit with Visual Studio 2022. It is also intended to be used in Copilot. It retrieves a list of products to be further dealt with"
+      "This sample is an action-based Teams and M365 Messaging Extension app created using the Teams Toolkit for Visual Studio Code. It is also intended to be used in Copilot. It retrieves a list of products to be further dealt with"
     ],
-    "creationDateTime": "2024-04-01",
-    "updateDateTime": "2024-04-01",
+    "creationDateTime": "2024-06-07",
+    "updateDateTime": "2024-06-07",
     "products": [
       "Teams"
     ],
@@ -33,15 +33,15 @@
       },
       {
         "key": "TEAMS-CLIENT-UI",
-        "value": ""
+        "value": "React"
       },
       {
         "key": "TEAMS-SERVER-LANGUAGE",
-        "value": "csharp"
+        "value": "Typescript"
       },
       {
         "key": "TEAMS-SERVER-PLATFORM",
-        "value": "dotnet"
+        "value": ""
       },
       {
         "key": "TEAMS-BOT-FRAMEWORK",
@@ -60,20 +60,20 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-action-search-data/assets/TaskModule1.png?raw=true",
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-action-search-data-node/assets/01InitialTaskModule.png?raw=true",
         "alt": "Task Module to select a product"
       },
       {
         "type": "image",
         "order": 101,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-action-search-data/assets/AdaptivecardResult1.png?raw=true",
-        "alt": "Order Card Result"
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-action-search-data-node/assets/02OrderAdativeCard.png?raw=true",
+        "alt": "Order Card for selected product"
       },
       {
         "type": "image",
         "order": 102,
-        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-action-search-data/assets/AdaptivecardResult4.png?raw=true",
-        "alt": "Order Card Result in Oùtlook with weekday order option"
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/msgext-action-search-data-node/assets/04msgext-action-search-action-node.gif?raw=true",
+        "alt": "Process in action"
       }
     ],
     "authors": [
