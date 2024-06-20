@@ -1,0 +1,147 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [
+    {
+      "type": "Container",
+      "style": "good",
+      "separator": true,
+      "items": [
+        {
+          "type": "TextBlock",
+          "text": "${message}",
+          "weight": "Bolder",
+          "size": "Medium",
+          "color": "Good"
+        }
+      ]
+    },
+    {
+      "type": "Container",
+      "separator": true,
+      "items": [
+        {
+          "type": "ColumnSet",
+          "columns": [
+            {
+              "type": "Column",
+              "items": [
+                {
+                  "type": "TextBlock",
+                  "size": "large",
+                  "weight": "bolder",
+                  "text": "📦 ${title}",
+                  "wrap": true,
+                  "style": "heading"
+                }
+              ],
+              "width": "60"
+            }
+          ]
+        }
+      ],
+      "bleed": true
+    },
+    {
+      "type": "Container",
+      "style": "emphasis",
+      "items": [
+        {
+          "type": "TextBlock",
+          "weight": "Bolder",
+          "text": "**📍Owner information**",
+          "wrap": true,
+          "size": "Medium",
+          "isSubtle": false
+        },
+        {
+          "type": "ColumnSet",
+          "separator": true,
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "FactSet",
+                  "spacing": "Large",
+                  "facts": [
+                    {
+                      "title": "Name:",
+                      "value": "${ownerName}"
+                    }
+                  ],
+                  "separator": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TextBlock",
+          "weight": "Bolder",
+          "text": "**🛒 Classified listing information**",
+          "wrap": true,
+          "size": "Medium",
+          "isSubtle": false
+        },
+        {
+          "type": "ColumnSet",
+          "separator": true,
+          "columns": [
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "FactSet",
+                  "spacing": "Large",
+                  "facts": [
+                    {
+                      "title": "Type:",
+                      "value": "${typeName}"
+                    },
+                    {
+                      "title": "Price:",
+                      "value": "${price}"
+                    }
+                  ],
+                  "separator": true
+                }
+              ]
+            },
+            {
+              "type": "Column",
+              "width": "stretch",
+              "items": [
+                {
+                  "type": "FactSet",
+                  "spacing": "Large",
+                  "facts": [
+                    {
+                      "title": "Location:",
+                      "value": "${cityName}"
+                    },
+                    {
+                      "title": "Posted on:",
+                      "value": "${timestamp}"
+                    }
+                  ],
+                  "separator": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "TextBlock",
+          "weight": "Bolder",
+          "text": "${description}",
+          "wrap": true,
+          "isSubtle": false
+        }
+      ]
+    }
+  ]
+}

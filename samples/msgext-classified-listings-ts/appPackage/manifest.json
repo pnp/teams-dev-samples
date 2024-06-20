@@ -1,0 +1,82 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
+    "manifestVersion": "devPreview",
+    "version": "1.0.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/termofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "Classified Listings",
+        "full": "Classified Listings App"
+    },
+    "description": {
+        "short": "App allows you to post classified listings and view listings posted by others.",
+        "full": "Classified Listings is the ultimate tool for users to post classified listings of items they want to sell, buy, or rent. Users can search listings posted by others. The message extension allows users to search for classified listings and post their own listings."
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [],
+    "composeExtensions": [
+        {
+            "botId": "${{BOT_ID}}",
+            "commands": [
+                {
+                    "id": "classifiedListingSearch",
+                    "context": [
+                        "compose",
+                        "commandBox"
+                    ],
+                    "description": "Post classified listings of items you want to sell, buy, or rent. Search listings posted by others.",
+                    "title": "Classified Listings",
+                    "type": "query",
+                    "semanticDescription": "This command allows users to post the classified listings of items they want to sell, buy, or rent. Users can also search listings posted by others. For e.g., Find bikes in classified listings at New York for sell under 60000",
+                    "parameters": [
+                        {
+                            "name": "itemName",
+                            "title": "Title of the listing item",
+                            "description": "The name or title of the listings item to be searched.",
+                            "inputType": "text",
+                            "semanticDescription": "This parameter is used to identify the specific classified item to be queried. Users should provide the exact name or title of the classified item they want to retrieve information for as the value of this parameter."
+                        },
+                        {
+                            "name": "location",
+                            "title": "Location of the listings item",
+                            "description": "The location of the listings items to be searched.",
+                            "inputType": "text",
+                            "semanticDescription": "This parameter is used to identify the location of items to be queried. Users should provide the value of this parameter as either city, state, or country to filter the classified items based on the location."
+                        },
+                        {
+                            "name": "type",
+                            "title": "Type of the listings item",
+                            "description": "The type of the listings items to be searched.",
+                            "inputType": "text",
+                            "semanticDescription": "This parameter is used to identify the type of items to be queried. Users should provide the value of this parameter as either 'sell', 'buy', or 'rent' to filter the classified items based on the type of transaction."
+                        },
+                        {
+                            "name": "price",
+                            "title": "Price of the listings item",
+                            "description": "The price range of the listings items to be searched.",
+                            "inputType": "text",
+                            "semanticDescription": "This parameter is used to specify the price range of the items to be queried. Users should provide the value of this parameter as price range to filter the classified items based on the price."
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}
