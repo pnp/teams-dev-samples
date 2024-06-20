@@ -130,4 +130,4 @@ The solution uses below 3 tables:
 
 ![Screenshot of the advanced prompt working in Copilot in Microsoft Teams](./assets/advanced-prompt-teams.png)
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/officedev-copilot-for-m365-plugins-samples-msgext-classified-listings-ts)
+![](https://m365-visitor-stats.azurewebsites.net/pnp/samples/msgext-classified-listings-ts)
