@@ -54,6 +54,7 @@ Version|Date|Author|Comments
     ```bash
     git clone https://github.com/pnp/teams-dev-samples.git
 - In Azure create an Azure Table and fill in the Account name into .env.local (copy from .env.dev) AZURE_TABLE_ACCOUNTNAME
+    - Columns: PartitionKey, RowKey, Orders, Category
 - Fill in the Azure Table key into .env.local (copy from .env.dev) AZURE_TABLE_KEY
 - Select the Teams Toolkit icon on the left in the VS Code toolbar.
 - In the Account section, sign in with your [Microsoft 365 account](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts) if you haven't already.
