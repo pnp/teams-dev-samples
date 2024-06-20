@@ -49,7 +49,7 @@
       {
         "type": "image",
         "order": 50,
-        "url": "https://github.com/pnp/tteams-dev-samples/raw/main/samples/mssgext-classified-listings-ts/assets/advanced-prompt-teams.png",
+        "url": "https://github.com/pnp/teams-dev-samples/blob/main/samples/msgext-classified-listings-ts/assets/basic-prompt-teams.png?raw=true",
         "alt": "Screenshot of the sample extension working in Copilot in Microsoft Teams"
       }
     ],
