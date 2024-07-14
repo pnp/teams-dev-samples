@@ -1,0 +1,86 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.17",
+    "version": "1.0.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/termofuse"
+    },
+    "icons": {
+        "color": "icon-color-productscatalog.png",
+        "outline": "icon-outline-productscatalog.png"
+    },
+    "name": {
+        "short": "[O365C] Products Catalog",
+        "full": "[O365C] Product & Services Microsoft Copilot Plugin"
+    },
+    "description": {
+        "short": "Access product and services information directly within Teams",
+        "full": "The Product and Services Copilot plugin is your one-stop solution for accessing and searching product and services data within Microsoft Teams. \n\nStored in a SharePoint list, this data is now at your fingertips without the need to switch applications. \n\n**The plugin allows you to conduct detailed searches based on Product Name, Product Description, Revenue Type, or Service Area**. \n\nFor example, a search for 'Azure Cloud Migration' could yield comprehensive details such as Product Description, Revenue Type, Service Area, Service Group, and Service Area Owner. The results are presented in a user-friendly tabular format for quick and easy access. The Product and Services Copilot plugin is designed to boost your productivity and empower you to make informed decisions with confidence.\n\n**What's New**\n\n [O365C] Products Catalog works with Microsoft 365 Chat"
+    },
+
+    "accentColor": "#FFFFFF",
+    "bots": [],
+    "composeExtensions": [{
+        "botId": "${{BOT_ID}}",
+        "commands": [{
+            "id": "productSearch",
+            "description": "Search products and services using natural language and keywords for quick, intuitive results.",
+            "title": "Product search",
+            "type": "query",
+            "initialRun": false,
+            "fetchTask": false,
+            "context": [
+                "commandBox",
+                "compose",
+                "message"
+            ],
+            "parameters": [{
+                    "name": "productName",
+                    "title": "Product Name",
+                    "description": "Search for products by name",
+                    "semanticDescription": "Search for products by name. This command allows you to find specific products within our catalogue by entering the product's name. You must use partial or full names to search. The command focuses on delivering results that closely match your search terms, providing a comprehensive list of products that align with your query. For example: show me all products with name as Azure Cloud Migration.",
+                    "inputType": "text"
+                },
+                {
+                    "name": "productDescription",
+                    "title": "Product Description",
+                    "description": "Searchfor products by description",
+                    "semanticDescription": "Search for products by description. This command allows you to find specific products within our catalogue by entering the product's description. You must use partial or full description to search. The command focuses on delivering results that closely match your search terms, providing a comprehensive list of products that align with your query. For example: show me products related bespoke development.",
+                    "inputType": "text"
+                },
+                {
+                    "name": "revenueType",
+                    "title": "Revenue Type",
+                    "description": "Search for products by revenue type",
+                    "semanticDescription": "Search for products by revenue type. This command allows you to find specific products within our catalogue by entering the revenue type. You must use partial or full revenue type to search. The command focuses on delivering results that closely match your search terms, providing a comprehensive list of products that align with your query. For example: show me all products with Revenue Type as Managed Services .",
+                    "inputType": "text"
+                },
+                {
+                    "name": "serviceArea",
+                    "title": "Service Area",
+                    "description": "Search for products by service area",
+                    "semanticDescription": "Search for products by service area. This command allows you to find specific products within our catalogue by entering the service area. You must use partial or full service area to search. The command focuses on delivering results that closely match your search terms, providing a comprehensive list of products that align with your query. For example: show me all products with Service Area as Cloud Services.",
+                    "inputType": "text"
+                },
+                {
+                    "name": "serviceAreaOwner",
+                    "title": "Service Area Owner",
+                    "description": "Search for products by service area owner",
+                    "semanticDescription": "Search for products by service area owner. This command allows you to find specific products within our catalogue by entering the service area owner. You must use full service area owner email address to search. The command focuses on delivering results that closely match your search terms, providing a comprehensive list of products that align with your query. For example: show me all products with Service Area Owner ejaz.hussain@ejazhussain.onmicrosoft.com.",
+                    "inputType": "text"
+                }
+            ]
+        }]
+    }],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": []
+}

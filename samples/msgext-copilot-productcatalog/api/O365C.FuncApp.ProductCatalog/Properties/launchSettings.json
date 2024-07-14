@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "O365C.FuncApp.ProductCatalog": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7114",
+      "launchBrowser": false
+    }
+  }
+}
