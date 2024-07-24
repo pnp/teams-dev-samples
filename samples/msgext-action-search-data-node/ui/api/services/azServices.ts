@@ -2,10 +2,11 @@ import { AzureNamedKeyCredential, TableClient, odata } from "@azure/data-tables"
 import IProduct from "../Model/IProduct";
 
 const getTableClient = (): TableClient  => {
+  const tableName: string = process.env.AZURE_TABLE_NAME!;
   const accountName: string = process.env.AZURE_TABLE_ACCOUNTNAME!;
-  const storageAccountKey: string = process.env.AZURE_TABLE_KEY!;
+  const storageAccountKey: string = process.env.AZURE_TABLE_ACCOUNT_KEY!;
   const storageUrl = `https://${accountName}.table.core.windows.net/`;
-  const tableClient = new TableClient(storageUrl, "Products2", new AzureNamedKeyCredential(accountName, storageAccountKey));
+  const tableClient = new TableClient(storageUrl, tableName, new AzureNamedKeyCredential(accountName, storageAccountKey));
   return tableClient;
 }
 

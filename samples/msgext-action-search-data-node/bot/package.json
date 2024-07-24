@@ -21,7 +21,6 @@
         "url": "https://github.com"
     },
     "dependencies": {
-        "@azure/data-tables": "^13.2.2",
         "adaptive-expressions": "^4.20.0",
         "adaptivecards": "^3.0.1",
         "adaptivecards-templating": "^2.3.1",
@@ -29,6 +28,7 @@
         "restify": "^10.0.0"
     },
     "devDependencies": {
+        "@azure/data-tables": "^13.2.2",
         "@types/node": "^16.0.0",
         "@types/restify": "^8.5.5",
         "env-cmd": "^10.1.0",
