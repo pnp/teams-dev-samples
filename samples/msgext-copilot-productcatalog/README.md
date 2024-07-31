@@ -164,4 +164,4 @@ FUNCTION_ENDPOINT=https://functionapp-productcatalog.azurewebsites.net/api/Produ
 
 - **Productivity Enhancement:** Designed to boost productivity by providing quick and easy access to essential information, empowering users to make informed decisions efficiently.
 
-
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-copilot-productcatalog/readme" />
