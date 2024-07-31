@@ -68,3 +68,6 @@ Version|Date|Author|Comments
 3. Press F5 to start debugging which launches your app in Teams using a web browser. Select `Debug in Teams (Edge)` or `Debug in Teams (Chrome)`.
 4. When Teams launches in the browser, select the Add button in the dialog to install your app to Teams.
 5. Run the Messaging Extension from the offered Chat window
+
+
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-action-search-data-node" />
