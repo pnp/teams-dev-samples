@@ -1,0 +1,92 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.4",
+    "body": [{
+            "type": "ColumnSet",
+            "columns": [{
+                    "type": "Column",
+                    "width": "stretch",
+                    "items": [{
+                        "type": "TextBlock",
+                        "text": "${productName}",
+                        "weight": "Bolder",
+                        "size": "ExtraLarge"
+                    }]
+                },
+                {
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [{
+                        "type": "TextBlock",
+                        "text": "${skuid}",
+                        "weight": "default",
+                        "size": "small"
+                    }]
+                }
+            ]
+        },
+        {
+            "type": "TextBlock",
+            "text": "${productDescription}",
+            "wrap": true,
+            "size": "Small"
+        },
+        {
+            "type": "FactSet",
+            "facts": [{
+                    "title": "Catalogue",
+                    "value": "${catalogue}"
+                },
+                {
+                    "title": "Revenue Type",
+                    "value": "${revenueType}"
+                },
+                {
+                    "title": "PL Posting Group",
+                    "value": "${plPostingGroup}"
+                },
+                {
+                    "title": "Service Area",
+                    "value": "${serviceArea}"
+                },
+                {
+                    "title": "Service Group",
+                    "value": "${serviceGroup}"
+                },
+                {
+                    "title": "Service Area Owner",
+                    "value": "${serviceAreaOwner}"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [{
+                "type": "TextBlock",
+                "text": "Related Documents",
+                "weight": "Bolder",
+                "color": "accent",
+                "size": "medium"
+            }]
+        },
+
+        {
+            "type": "Container",
+            "$data": "${documents}",
+            "items": [{
+                "type": "ColumnSet",
+                "columns": [{
+                    "type": "Column",
+                    "width": "auto",
+                    "items": [{
+                        "type": "TextBlock",
+                        "text": "[${name}](${url})",
+                        "size": "Small"
+                    }]
+                }]
+            }]
+        }
+
+    ]
+}

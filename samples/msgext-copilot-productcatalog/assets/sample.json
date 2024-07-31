@@ -1,0 +1,84 @@
+[
+    {
+      "name": "pnp-sp-dev-teams-sample-msgext-copilot-productcatalog",
+      "reponame": "msgext-copilot-productcatalog",
+      "source": "pnp",
+      "title": "Microsoft Copilot Product Catalog Plugin",
+      "shortDescription": "Copilot plugin backed by a SharePoint list and an Azure Function",
+      "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/msgext-copilot-productcatalog",
+      "longDescription": [
+        "Demo app that shows how to use a Teams Message extension and extend to Copilot for Microsoft 365. This app uses SharePoint list as the backend datasource to get the data and display it in Teams Messaging extension."
+      ],
+      "creationDateTime": "2024-07-24",
+      "updateDateTime": "2024-07-24",
+      "products": [
+        "Teams"
+      ],
+      "metadata": [
+        {
+          "key": "TEAMS-SAMPLE-SOURCE",
+          "value": "pnp"
+        },
+        {
+          "key": "TEAMS-SAMPLE-TYPE",
+          "value": "demo"
+        },
+        {
+          "key": "TEAMS-CLIENT-LANGUAGE",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-CLIENT-UI",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-SERVER-LANGUAGE",
+          "value": "typescript"
+        },
+        {
+          "key": "TEAMS-SERVER-PLATFORM",
+          "value": ""
+        },
+        {
+          "key": "TEAMS-BOT-FRAMEWORK",
+          "value": "bot46"
+        },
+        {
+          "key": "TEAMS-FEATURES",
+          "value": "msgext"
+        },
+        {
+          "key": "TEAMS-GENERATOR",
+          "value": "ttk"
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/msgext-copilot-productcatalog/assets/copilot-plugin-productcatalog.gif",
+          "alt": "Picture of Copilot querying a product catalog"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "ejazhussain",
+          "company": "",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/472320?v=4",
+          "name": "Ejaz Hussain",
+          "twitter": "EjazHussain_"
+        }
+      ],
+      "references": [
+        {
+          "name": "Office 365 Clinic (author's blog)",
+          "url": "https://www.office365clinic.com/"
+        }
+      ],
+      "version": "1.0.0.0"
+    }
+  ]
