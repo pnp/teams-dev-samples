@@ -1,0 +1,15 @@
+[
+  {
+    "id": "circle",
+    "name": "Circle",
+    "modeName": "tube",
+    "lineStatuses": [
+      {
+        "lineId": "circle",
+        "statusSeverity": 9,
+        "statusSeverityDescription": "Minor Delays",
+        "reason": "Circle Line: Minor delays due to train cancellations."
+      }
+    ]
+  }
+]

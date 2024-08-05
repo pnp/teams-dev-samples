@@ -1,0 +1,100 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.schema.json",
+  "manifestVersion": "devPreview",
+  "version": "1.1.0",
+  "id": "${{TEAMS_APP_ID}}",
+  "packageName": "com.microsoft.teams.extension",
+  "developer": {
+    "name": "Teams App, Inc.",
+    "websiteUrl": "https://www.example.com",
+    "privacyUrl": "https://www.example.com/privacy",
+    "termsOfUseUrl": "https://www.example.com/termofuse"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "TfL Line Status ${{APP_NAME_SUFFIX}}",
+    "full": "TfL Line Status"
+  },
+  "description": {
+    "short": "Transport for London line status",
+    "full": "Provides status of a line on the London Underground"
+  },
+  "accentColor": "#FFFFFF",
+  "composeExtensions": [
+    {
+      "composeExtensionType": "apiBased",
+      "apiSpecificationFile": "apiSpecificationFile/tfllinestatusopenapi.yaml",
+      "commands": [
+        {
+          "context": [
+            "compose"
+          ],
+          "type": "query",
+          "title": "Gets the status of a line",
+          "id": "LineStatusById",
+          "parameters": [
+            {
+              "name": "lineId",
+              "title": "Select a line",
+              "description": "Name of the line",
+              "inputType": "choiceset",
+              "isRequired": true,
+              "choices": [
+                {
+                  "title": "Bakerloo",
+                  "value": "bakerloo"
+                },
+                {
+                  "title": "Central",
+                  "value": "central"
+                },
+                {
+                  "title": "Circle",
+                  "value": "circle"
+                },
+                {
+                  "title": "District",
+                  "value": "district"
+                },
+                {
+                  "title": "Elizabeth",
+                  "value": "elizabeth"
+                },
+                {
+                  "title": "Jubilee",
+                  "value": "jubilee"
+                },
+                {
+                  "title": "Northern",
+                  "value": "northern"
+                },
+                {
+                  "title": "Piccadilly",
+                  "value": "piccadilly"
+                },
+                {
+                  "title": "Victoria",
+                  "value": "victoria"
+                },
+                {
+                  "title": "Waterloo & City",
+                  "value": "waterloo-city"
+                }
+              ]
+            }
+          ],
+          "description": "",
+          "apiResponseRenderingTemplateFile": "responseTemplates/LineStatusById.json"
+        }
+      ]
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": []
+}
