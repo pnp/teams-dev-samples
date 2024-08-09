@@ -1,0 +1,92 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-sso-graph-spo-refresh-node",
+    "reponame": "tab-sso-graph-spo-refresh-node",
+    "source": "pnp",
+    "title": "Tab SSO Graph SPO Refresh",
+    "shortDescription": "Sample is a Teams and M365 Messaging Extension handling (action-based) data retrieval and writing backThis app describes how to establish a Teams Tab as SSO solution including the generation of a second SharePoint access token.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-sso-graph-spo-refresh-node",
+    "longDescription": [
+      "This app describes how to establish a Teams Tab as SSO solution including the generation of a second SharePoint access token."
+    ],
+    "creationDateTime": "2024-08-09",
+    "updateDateTime": "2024-08-09",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "React"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "Typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": "bot46"
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "bot"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "teamstoolkit"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-sso-graph-spo-refresh-node/assets/Screenshot.png?raw=true",
+        "alt": "Task Module to select a product"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mmsharepoint",
+        "company": "Avanade ",
+        "pictureUrl": "https://github.com/mmsharepoint.png",
+        "name": "Markus Moeller",
+        "twitter": "moeller2_0"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]

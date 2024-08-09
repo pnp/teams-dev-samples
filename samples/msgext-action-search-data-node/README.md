@@ -54,7 +54,7 @@ Version|Date|Author|Comments
 - Create entities (PartitionKey becomes Id, RowKey becomes Name, Orders=int, Category=string)
 - Clone the repository
     ```bash
-    git clone https://github.com/mmsharepoint/msgext-action-search-data-node.git
+    git clone https://github.com/pnp/teams-dev-samples.git
     ```
 - Create .env.local from .env.dev
     ```bash
