@@ -1,0 +1,90 @@
+{
+  "version": "devPreview",
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/vDevPreview/MicrosoftTeams.ResponseRenderingTemplate.schema.json",
+  "jsonPath": "$",
+  "responseLayout": "list",
+  "responseCardTemplate": {
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5",
+    "body": [
+      {
+        "type": "Container",
+        "$data": "${$root}",
+        "items": [
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "items": [
+                  {
+                    "type": "Image",
+                    "size": "Small",
+                    "url": "data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='20 10 162 162'%3E%3Cpath d='M138.441 96.373c0 23.242-18.857 42.088-42.097 42.088-23.248 0-42.085-18.846-42.085-42.088 0-23.238 18.838-42.08 42.085-42.08 23.24 0 42.097 18.842 42.097 42.08zM96.344 31.15c-36.029 0-65.234 29.203-65.234 65.223 0 36.026 29.205 65.233 65.234 65.233 36.021 0 65.224-29.207 65.224-65.233 0-36.02-29.203-65.223-65.224-65.223z' fill='${if(id == 'bakerloo', '%23996633', if(id == 'central', '23FFCC00', if(id == 'circle', '%23FFCC00', if(id == 'district', '%23006633', if(id == 'dlr', '%23009999', if(id == 'hammersmith-city', '%23CC9999', if(id == 'jubilee', '%23868F98', if(id == 'london-overground', '%23FF6600', if(id == 'metropolitan', '%23660066', if(id == 'northern', '%23000000', if(id == 'piccadilly', '%23000099', if(id == 'tfl-rail', '%230019A8', if(id == 'tram', '%2366cc00', if(id == 'elizabeth', '%235e4890', if(id == 'victoria', '%230099CC', if(id == 'waterloo-city', '%2366CCCC', '%23000000'))))))))))))))))}'%3E%3C/path%3E %3E%3Cpath d='M16.257 83.205h160.241v26.387H16.257V83.205z' fill='${if(id == 'bakerloo', '%23996633', if(id == 'central', '23FFCC00', if(id == 'circle', '%23FFCC00', if(id == 'district', '%23006633', if(id == 'dlr', '%23009999', if(id == 'hammersmith-city', '%23CC9999', if(id == 'jubilee', '%23868F98', if(id == 'london-overground', '%23FF6600', if(id == 'metropolitan', '%23660066', if(id == 'northern', '%23000000', if(id == 'piccadilly', '%23000099', if(id == 'tfl-rail', '%230019A8', if(id == 'tram', '%2366cc00', if(id == 'elizabeth', '%235e4890', if(id == 'victoria', '%230099CC', if(id == 'waterloo-city', '%2366CCCC', '%23000000'))))))))))))))))}'%3E%3C/path%3E %3C/svg%3E",
+                    "altText": "TfL"
+                  }
+                ],
+                "width": "auto"
+              },
+              {
+                "type": "Column",
+                "verticalContentAlignment": "center",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "${name}",
+                    "wrap": true,
+                    "weight": "Bolder",
+                    "size": "Large"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "${lineStatuses[0].statusSeverityDescription}",
+                    "spacing": "None",
+                    "size": "Large",
+                    "color": "${if(lineStatuses[0].statusSeverity == 10, 'good', 'warning')}",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "width": "stretch",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "text": "${if(lineStatuses[0].reason, lineStatuses[0].reason, '')}",
+                    "spacing": "None",
+                    "color": "default",
+                    "wrap": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "previewCardTemplate": {
+    "title": "${if(name, name, 'N/A')}",
+    "subtitle": "${if(lineStatuses[0].statusSeverityDescription, lineStatuses[0].statusSeverityDescription, '--')}"
+  }
+}

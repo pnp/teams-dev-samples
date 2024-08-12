@@ -1,0 +1,62 @@
+openapi: 3.0.1
+info:
+  title: Transport for London Unified API
+  version: v1
+servers:
+  - url: https://api.tfl.gov.uk
+paths:
+  /Line/{lineId}/Status:
+    get:
+      tags:
+        - Line
+      summary: Gets the line status of for given line id e.g Minor Delays
+      operationId: LineStatusById
+      parameters:
+        - in: path
+          name: lineId
+          required: true
+          schema:
+            type: string
+          description: Id of the line
+        - in: query
+          name: app_key
+          schema:
+            type: string
+            default: ${{TFL_APP_KEY}}
+          description: The TfL app key
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &ref_1
+                  type: object
+                  properties:
+                    id:
+                      type: string
+                    name:
+                      type: string
+                    modeName:
+                      type: string
+                    lineStatuses:
+                      type: array
+                      items: &ref_0
+                        type: object
+                        properties:
+                          lineId:
+                            type: string
+                          statusSeverity:
+                            type: integer
+                            format: int32
+                          statusSeverityDescription:
+                            type: string
+                          reason:
+                            type: string
+      deprecated: false
+components:
+  schemas:
+    Tfl.Api.Presentation.Entities.LineStatus: *ref_0
+    Tfl.Api.Presentation.Entities.Line: *ref_1
+x-original-swagger-version: '2.0'
