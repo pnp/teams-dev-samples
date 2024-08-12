@@ -36,3 +36,5 @@ Version|Date|Author|Comments
 ## Addition information and references
 
 - [Extend Teams platform with APIs](https://aka.ms/teamsfx-api-plugin)
+
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-api-tflstatus" />
