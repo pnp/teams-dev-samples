@@ -1,0 +1,157 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\obj\\Debug\\net7.0\\build-gz\\rUmG1DOI.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\obj\\Debug\\net7.0\\scopedcss\\bundle\\GraphSample.styles.css",
+      "PackagePath": "staticwebassets\\GraphSample.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\TeamsLogin.js",
+      "PackagePath": "staticwebassets\\TeamsLogin.js"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\identityTeams.js",
+      "PackagePath": "staticwebassets\\identityTeams.js"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\img\\binder_RGB_logotype_white_transparent_1135x512.png",
+      "PackagePath": "staticwebassets\\img\\binder_RGB_logotype_white_transparent_1135x512.png"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\img\\bindercoloured.png",
+      "PackagePath": "staticwebassets\\img\\bindercoloured.png"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\img\\nexus.png",
+      "PackagePath": "staticwebassets\\img\\nexus.png"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\img\\no-profile-photo.png",
+      "PackagePath": "staticwebassets\\img\\no-profile-photo.png"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\img\\openai-white-logomark.png",
+      "PackagePath": "staticwebassets\\img\\openai-white-logomark.png"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\intro.jpg",
+      "PackagePath": "staticwebassets\\intro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\manifest.json",
+      "PackagePath": "staticwebassets\\manifest.json"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\mgtInterop.js",
+      "PackagePath": "staticwebassets\\mgtInterop.js"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\service-worker.js",
+      "PackagePath": "staticwebassets\\service-worker.js"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\service-worker.published.js",
+      "PackagePath": "staticwebassets\\service-worker.published.js"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\teamHelper.js",
+      "PackagePath": "staticwebassets\\teamHelper.js"
+    },
+    {
+      "Id": "C:\\Users\\mahas\\Downloads\\HackathonMicrosoft\\GraphSample\\GraphSample\\wwwroot\\windowResizeInterop.js",
+      "PackagePath": "staticwebassets\\windowResizeInterop.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.GraphSample.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.GraphSample.props",
+      "PackagePath": "build\\GraphSample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.GraphSample.props",
+      "PackagePath": "buildMultiTargeting\\GraphSample.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.GraphSample.props",
+      "PackagePath": "buildTransitive\\GraphSample.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

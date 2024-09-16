@@ -1,0 +1,647 @@
+﻿@page "/"
+@inject IJSRuntime JsRuntime
+@using System.Security.Authentication
+@using Microsoft.Graph
+@using Microsoft.Graph.Models
+@using TimeZoneConverter
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using Microsoft.JSInterop
+@using Microsoft.Fast.Components.FluentUI
+
+
+@inject IJSRuntime JSRuntime
+
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 300px 300px;
+        gap: 20px;
+        padding-left: 20px;
+    }
+
+    @@media (max-width: 767px) {
+        .grid-container {
+            grid-template-columns: 1fr; /* Display a single column on screens up to 767px */
+            grid-template-rows: auto; /* Reset the rows to adjust automatically */
+            padding-left: 0; /* Remove the left padding */
+        }
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        font-size: 1.1rem;
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        margin-bottom: 0%;
+        padding-right: 5px;
+        position: relative;
+        font-family: 'Pavanam', sans-serif;
+    }
+
+    .grid-item::-webkit-scrollbar {
+        width: 10px;
+        height: 70%;
+        background-color: transparent;
+        height: calc(100% - 20px);
+    }
+
+    .grid-item::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 1.5rem;
+    }
+
+    .grid-item::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .grid-container .grid-item a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    .grid-container .grid-item a:hover {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .grid-container .grid-item a:active {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .lists {
+        border: 1px solid rgba(190, 190, 190, 0.8);
+        background-color: #005C97;
+        padding: 3px;
+        border-radius: 3px;
+        margin-bottom: 2%;
+        font-size: small;
+    }
+
+    .glass-container {
+        background: none !important;
+    }
+
+    .tasks {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .default-button {
+        background-color: #0072b9;
+        border: 1px solid rgba(190, 190, 190, 0.8);
+        border-radius: 1rem;
+        padding: 5px;
+        margin: 5px;
+        color: white;
+        height: 30px;
+        width: 70px;
+    }
+
+    .default-button:hover {
+        background-color: rgb(64, 165, 216);
+    }
+
+    .clicked-button:hover {
+        background-color: rgb(64, 165, 216);
+    }
+
+    .subject h3 {
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+        float: left;
+    }
+
+    .organizer {
+        font-size: 0.8rem;
+        float: left;
+        clear: both;
+    }
+
+    .time {
+        font-size: 0.8rem;
+        float: right;
+    }
+
+    .cal {
+        border: 1px solid rgba(190, 190, 190, 0.8);
+        background-color: --webkit-linear-gradient(#005C97, #c9c9db);
+        padding: 5px;
+        border-radius: 1rem;
+        margin-bottom: 2%;
+        height: 60px;
+    }
+
+    .cal:hover {
+        box-shadow: 0 3px 7px rgb(64, 165, 216);
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    .group {
+        display: block;
+        width: 100%;
+    }
+
+
+    h4 {
+        font-weight: bold;
+    }
+
+    @*-----------------------Email--------------------------------------*@
+    .email {
+        padding: 10px;
+        margin: 8px 4px;
+        text-align: left;
+        border-radius: 1rem;
+        background: white;
+        border: 1px solid rgba(190, 190, 190, 0.8);
+    }
+
+    .email:hover {
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        margin: 8px 4px;
+    }
+
+    .email h3 {
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+
+    .email h4 {
+        font-size: 10px;
+        margin-top: 0px;
+        margin-bottom: 4px;
+
+    }
+
+    .email .preview {
+        font-size: 13px;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 2.8em;
+        line-height: 1.4em;
+    }
+
+    @*--------------------------------------------------------------------*@
+
+    h1 {
+        font-size: 55px !important;
+        background: white;
+        padding-left: 30px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    body {
+        font-family: 'Segoe UI', SegoeUI, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    @*------------------------------------------------Teams--------------------------------------------------*@
+    .team-circle {
+        width: 130px;
+        height: 100px;
+        border-radius: 0.35rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 14px;
+        font-weight: bold;
+        color: white;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.4px);
+        -webkit-backdrop-filter: blur(13.4px);
+    }
+
+    .grid-container-v2 {
+        display: grid;        
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+    }
+    @@media (max-width: 1023px) {
+        .grid-container-v2 {
+           grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    @@media (max-width: 700px) {
+        .grid-container-v2 {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+
+    @@media (max-width: 400px) {
+         .grid-container-v2 {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @* -------------------------------------------Chat Bot --------------------------------------------- *@
+    .chat-bot{
+        position: fixed;
+        bottom: 20px;
+        right: 20px !important;
+        z-index: 3;
+    }
+    
+    @* -----------------------------------smaller squares-------------------------------------------- *@
+    .square {
+        width: 150px;
+        height: 150px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .icon {
+        font-size: 40px;
+        color: #0078d4;
+        margin-bottom: 10px;
+    }
+
+    .label {
+        color: #0078d4;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    mgt-todo {
+    --tasks-new-button-background: #4385C7;
+       --tasks-background-color: white;
+       --background-color-sub1: none;
+       --tasks-header-padding: 0px;
+       --tasks-title-padding: 0px;
+    }
+
+    .welcome {
+        font-size: 1.6rem;
+
+        font-family: 'Pavanam', sans-serif;
+        color: black;
+        position: relative;
+        left: 20px !important;
+        top: 0px !important;
+    }
+
+</style>
+
+<link rel="stylesheet"
+    href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css" />
+
+<AuthorizeView>
+    <Authorized>
+        @if (DateTime.UtcNow.Hour >= 6 && DateTime.UtcNow.Hour < 11)
+        {
+            var name = context?.User?.Identity?.Name;
+            if (context?.User?.Identity?.Name.Length > 1)
+            {
+                name = context?.User?.Identity?.Name.Split(" ")[0];
+            }
+            <div class="welcome"> Good Morning, @name </div>
+        }
+        else if (DateTime.UtcNow.Hour >= 11 && DateTime.UtcNow.Hour < 18)
+        {
+            var name = context?.User?.Identity?.Name;
+            if (context?.User?.Identity?.Name.Length > 1)
+            {
+                name = context?.User?.Identity?.Name.Split(" ")[0];
+            }
+            <div class="welcome"> Good Afternoon, @name </div>
+        }
+        else
+        {
+            var name = context?.User?.Identity?.Name;
+            if (context?.User?.Identity?.Name.Length > 1)
+            {
+                name = context?.User?.Identity?.Name.Split(" ")[0];
+            }
+            <div class="welcome"> Good Evening, @name </div>
+        }
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <h4 style="color: #0078d4">To Do</h4>
+                <div class="glass-container">
+                    <mgt-todo></mgt-todo>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h4 style="color: #0078d4;">What have you missed?</h4>
+                @foreach (var mail in allMessages)
+                {
+                    @if (mail.IsRead == false)
+                    {
+                        string mailId = mail.Id;
+                        string url = "overview/mailid=" + mailId;
+                        <a href=@url>
+                            @* link to the *@
+                            <div class="email" href="https://localhost:7067/overview/menu">
+                                @if (mail.Subject.Length != 0)
+                                {
+                                    <h3>@mail.Subject</h3>
+                                }
+                                else
+                                {
+                                    <h3>(No Subject)</h3>
+                                }
+
+                                <h4>
+                                    From: @mail.Sender.EmailAddress.Name
+                                </h4>
+                                <div class="preview">
+                                    @mail.BodyPreview
+                                </div>
+                            </div>
+                        </a>
+                    }
+                }
+            </div>
+            <div class="grid-item" href="https://localhost:7067/calendar">
+                <h4 style="color: #0078d4;">Today</h4>
+                <mgt-agenda></mgt-agenda>
+            </div>
+            <div class="grid-item" href="https://localhost:7067/overview/menu">
+                <h4 style="color:#0078d4;">Teams</h4>
+                <mgt-get resource="/me/joinedTeams" scopes="TeamSettings.ReadWrite.All,Directory.ReadWrite.All">
+                    <template>
+                        <div class="grid-container-v2">
+                            <div data-for="team in value">
+                                <div class="team-circle">
+                                    <a href="overview/teamid={{team.id}}">
+                                        <img src="https://res-1.cdn.office.net/files/fabric-cdn-prod_20221209.001/assets/brand-icons/product/svg/teams_32x1.svg"
+                                             width="32"
+                                             height="32"
+                                             alt="Teams" />
+                                        <h5>{{ team.displayName }}</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </template>
+                </mgt-get>
+            </div>
+        </div>
+        <div class="chat-bot">
+            <Chat />
+        </div>
+
+        <br />
+
+    </Authorized>
+    <NotAuthorized>
+        <SignIn />
+    </NotAuthorized>
+
+</AuthorizeView>
+
+
+
+@code{
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+    private GraphServiceClient? graphClient;
+    private string? dateTimeFormat;
+    private IList<TodoTaskList> toDos = new List<TodoTaskList>();
+    Dictionary<string, TodoTaskCollectionResponse> TaskLists = new Dictionary<string, TodoTaskCollectionResponse>();
+    private IList<Message> allMessages = new List<Message>();
+    private IList<Event> events = new List<Event>();
+    private IList<Team> teams = new List<Team>();
+    private string status = string.Empty;
+    private string userTimeZone = string.Empty;
+    private string subject = string.Empty;
+    private string attendees = string.Empty;
+    private DateTime start = new DateTime(DateTime.Today.Ticks);
+    private DateTime end = new DateTime(DateTime.Today.Ticks);
+    private string body = string.Empty;
+
+    [Inject]
+    protected IAccessTokenProvider AccessTokenProvider { get; set; }
+    protected string? AccessToken { get; private set; }
+    public int count = 0;
+    public System.Security.Claims.ClaimsPrincipal user { get; set; }
+
+    [JSInvokable]
+    private async Task<String> GetAccessToken()
+    {
+        return this.AccessToken;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var tokenResult = await AccessTokenProvider.RequestAccessToken();
+        if (tokenResult.TryGetToken(out var accessToken))
+        {
+            AccessToken = accessToken.Value;
+            count += 1;
+        }
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+            "Unable to access authentication state");
+        }
+        user = (await authenticationStateTask).User;
+        graphClient = clientFactory.GetAuthenticatedClient();
+        await JSRuntime.InvokeVoidAsync("mgtInterop.configureProvider", AccessToken);
+        //await RerunToDo();
+        //await RerunCal();
+        await RerunEmail();
+        await BeginTeams();
+    }
+
+    public async Task BeginToDos()
+    {
+        if (count > 0)
+        {
+            var toDoList = await graphClient.Me.Todo.Lists.GetAsync(
+            config =>
+            {
+                config.QueryParameters.Top = 5;
+            }
+            );
+            toDos = toDoList?.Value ?? new List<TodoTaskList>();
+            foreach (var item in toDos)
+            {
+                if (item == null)
+                {
+                    throw new ArgumentNullException(nameof(item));
+                }
+                var resultTasks = await graphClient.Me.Todo.Lists[item.Id].Tasks.GetAsync();
+                var key = item.DisplayName + "|" + item.Id;
+                TaskLists[key] = resultTasks;
+            }
+        }
+    }
+
+    public async Task RerunToDo()
+    {
+        await BeginToDos();
+    }
+
+    public async Task BeginCal()
+    {
+        if (count > 0)
+        {
+            userTimeZone = user.GetUserGraphTimeZone() ?? "UTC";
+
+            if (authenticationStateTask == null)
+            {
+                throw new AuthenticationException(
+                "Unable to access authentication state");
+            }
+            var graphTimeZone = user.GetUserGraphTimeZone();
+            dateTimeFormat = $"{user.GetUserGraphDateFormat()} {user.GetUserGraphTimeFormat()}";
+            DateTime currentDate = DateTime.Now.Date;
+            DateTime nextDay = currentDate.AddDays(1).Date;
+            DateTime endDateTime = nextDay.AddSeconds(-1);
+
+            var eventPage = await graphClient.Me
+            .CalendarView
+            .GetAsync(config =>
+            {
+                // Send user time zone in request so date/time in
+                // response will be in preferred time zone
+                config.Headers.Add("Prefer", $"outlook.timezone=\"{graphTimeZone}\"");
+                // Specifies the start and end of the view on the calendar
+                // Translates to: ?startDateTime=""&endDateTime=""
+                config.QueryParameters.StartDateTime = currentDate.ToString("o");
+                config.QueryParameters.EndDateTime = endDateTime.ToString("o");
+                // Get max 50 per request
+                config.QueryParameters.Top = 50;
+                // Only return fields app will use
+                config.QueryParameters.Select = new[] { "subject", "organizer", "start", "end" };
+                // Order results chronologically
+                config.QueryParameters.Orderby = new[] { "start/dateTime" };
+            });
+
+            events = eventPage?.Value ?? new List<Event>();
+        }
+    }
+
+    public async Task RerunCal()
+    {
+        await BeginCal();
+    }
+    public async Task BeginEmail()
+    {
+        // Get the user
+        if (count > 0)
+        {
+            await Task.Delay(1000);
+            var graphTimeZone = user.GetUserGraphTimeZone();
+            dateTimeFormat = $"{user.GetUserGraphDateFormat()} {user.GetUserGraphTimeFormat()}";
+
+            //Get mail from inbox
+            var mailPage = await graphClient.Me
+            .MailFolders["Inbox"]
+            .Messages
+            .GetAsync(config =>
+            {
+                config.Headers.Add("Prefer", $"outlook.timezone=\"{graphTimeZone}\"");
+                config.QueryParameters.Select = new string[] { "subject", "sender", "bodyPreview", "receivedDateTime", "isRead" };
+                config.QueryParameters.Orderby = new string[] { "receivedDateTime desc" };
+            });
+
+            allMessages = mailPage?.Value ?? new List<Message>();
+        }
+    }
+
+    public async Task RerunEmail()
+    {
+        await BeginEmail();
+        StateHasChanged();
+    }
+
+    public async Task CompleteTask(string ListId, string TaskId)
+    {
+
+        var requestBody = new TodoTask
+            {
+                Status = Microsoft.Graph.Models.TaskStatus.Completed
+            };
+        var result = await graphClient.Me.Todo.Lists[ListId].Tasks[TaskId].PatchAsync(requestBody);
+
+        await BeginToDos();
+        Console.WriteLine(result.Status);
+        StateHasChanged();
+
+    }
+
+    public async Task DeleteTask(string ListId, string TaskId)
+    {
+
+        await graphClient.Me.Todo.Lists[ListId].Tasks[TaskId].DeleteAsync();
+        await BeginToDos();
+        StateHasChanged();
+
+    }
+
+    public async Task UnDoTask(string ListId, string TaskId)
+    {
+        var requestBody = new TodoTask
+            {
+                Status = Microsoft.Graph.Models.TaskStatus.NotStarted
+            };
+        var result = await graphClient.Me.Todo.Lists[ListId].Tasks[TaskId].PatchAsync(requestBody);
+
+        await BeginToDos();
+        Console.WriteLine(result.Status);
+        StateHasChanged();
+        //NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+    }
+
+    public async Task BeginTeams()
+    {
+        if (count > 0)
+        {
+
+            var teamsPage = await graphClient.Me.JoinedTeams
+            .GetAsync();
+
+            teams = teamsPage.Value;
+
+            //var res = await graphClient.Teams[teamsPage.Value.Id].Channels.GetAsync();
+
+            //Console.WriteLine(teamsPage.Value.Count);
+        }
+    }
+}
