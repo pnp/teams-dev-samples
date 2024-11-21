@@ -1,0 +1,59 @@
+@* @page "/onenote"
+@inject IJSRuntime JsRuntime
+@using System.Security.Authentication
+@using Microsoft.Graph
+@using Microsoft.Graph.Models
+@using TimeZoneConverter
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using Microsoft.JSInterop
+@using Microsoft.Fast.Components.FluentUI
+
+
+@using System.Text;
+
+<body>
+    Add to OneNote
+</body>
+
+@code{
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+
+    private GraphServiceClient? graphClient;
+
+    [Inject]
+    protected IAccessTokenProvider AccessTokenProvider { get; set; }
+    protected string? AccessToken { get; private set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var tokenResult = await AccessTokenProvider.RequestAccessToken();
+        if (tokenResult.TryGetToken(out var accessToken))
+        {
+            AccessToken = accessToken.Value;
+        }
+        
+
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+                "Unable to access authentication state");
+        }
+        var user = (await authenticationStateTask).User;
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+
+
+        var notebook = new Notebook
+        {
+            DisplayName = "My Notebook1"
+        };
+
+        var res = await graphClient.Me.Onenote.Notebooks.PatchAsync(notebook);
+
+        Console.WriteLine("notebook", res.Id);
+    }
+} *@

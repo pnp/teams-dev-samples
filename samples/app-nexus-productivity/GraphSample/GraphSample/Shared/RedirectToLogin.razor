@@ -1,0 +1,11 @@
+﻿<!-- Copyright (c) Microsoft Corporation.
+     Licensed under the MIT license. -->
+
+@inject NavigationManager Navigation
+
+@code {
+    protected override void OnInitialized()
+    {
+        Navigation.NavigateTo($"authentication/login?returnUrl={Uri.EscapeDataString(Navigation.Uri)}");
+    }
+}

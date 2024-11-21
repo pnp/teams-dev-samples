@@ -1,0 +1,235 @@
+@* <!-- Copyright (c) Microsoft Corporation.
+     Licensed under the MIT license. -->
+
+@page "/teams"
+@using System.Security.Authentication
+@using Microsoft.Graph
+@using Microsoft.Graph.Models
+@using TimeZoneConverter
+
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+
+<Style>
+    .container{
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+        border-radius: 0.7rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-bottom: 15px;
+        
+    }
+</Style>
+<div class="container">
+<AuthorizeView>
+    <Authorized>
+        <h1 class="mb-3">Teams</h1>
+       
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Sender</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var teamsChat in chats)
+                {
+                    <tr>
+                        <td>@teamsChat</td>
+                    </tr>
+                }
+            </tbody>
+        </table> 
+
+        <div class="grid-item">
+            <div class="header-bar">
+                <h4>To Do</h4>
+            </div>
+            @if (TaskLists.Count != 0)
+            {
+                @foreach (var key in TaskLists.Keys)
+                {
+                    @if (TaskLists[key].Value?.Count != 0){
+                        <div class="lists">
+                            <h4>@key.Split("|")[0]</h4>
+                            <hr>
+                            @foreach (var item in TaskLists[key].Value)
+                            {
+                                string ListId = @key.Split("|")[1];
+                                string TaskId = @item.Id;
+                            
+                                if (item.Status == Microsoft.Graph.Models.TaskStatus.Completed)
+                                {
+                                    <div class="tasks">
+                                        <span class="left-contentC">@item.Title</span>
+                                        <span class="right-content">
+
+                                            <button class="default-button" @onclick="() => { UnDoTask(ListId,TaskId); }">Undo</button>
+                                            <button class="default-button" @onclick="() => { DeleteTask(ListId,TaskId); }">Delete</button>
+                                        </span>
+                                    </div>
+                                }
+                                else if (item.Status == Microsoft.Graph.Models.TaskStatus.NotStarted){
+                                    <div class="tasks">
+                                        <span class="left-content">@item.Title</span>
+                                        <span class="right-content">
+
+                                            <button class="default-button" @onclick="() => { CompleteTask(ListId,TaskId); }">Complete</button>
+                                            <button class="default-button" @onclick="() => { DeleteTask(ListId,TaskId); }">Delete</button>
+                                        </span>
+                                    </div>
+                                }
+                                
+                            }
+                        </div>
+                    }
+                        
+                }
+            }
+            else
+            {
+                <p>No To Do's</p>
+            }
+            
+        </div>
+    </Authorized>
+    <NotAuthorized>
+        <RedirectToLogin />
+    </NotAuthorized>
+</AuthorizeView>
+</div>
+@code{
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+
+    private GraphServiceClient? graphClient;
+    private IList<Chat> chats = new List<Chat>();
+    private string? dateTimeFormat;
+
+    Dictionary<string, TodoTaskCollectionResponse> TaskLists = new Dictionary<string, TodoTaskCollectionResponse>();    
+
+    private IList<TodoTaskList> toDos = new List<TodoTaskList>();
+
+    private int count = 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+                "Unable to access authentication state");
+        }
+
+        // Get the user
+        var user = (await authenticationStateTask).User;
+        var graphTimeZone = user.GetUserGraphTimeZone();
+        dateTimeFormat = $"{user.GetUserGraphDateFormat()} {user.GetUserGraphTimeFormat()}";
+
+        // Calculate the start and end of the current week in user's time zone
+        var startOfWeek = GetUtcStartOfWeekInTimeZone(DateTime.Today, graphTimeZone);
+        var endOfWeek = startOfWeek.AddDays(7);
+
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+        var chatPage = await graphClient.Me
+            .Chats
+            .GetAsync(config =>
+            {
+                config.QueryParameters.Top = 50;
+                //config.Headers.Add("Prefer", $"outlook.timezone=\"{graphTimeZone}\"");
+                //config.QueryParameters.Select = new string[] { "subject", "sender"};
+                //config.QueryParameters.Orderby = new string[] { "receivedDateTime" };
+
+            });
+
+        chats = chatPage?.Value ?? new List<Chat>();
+
+        await BeginToDos();
+    }
+
+    private DateTime GetUtcStartOfWeekInTimeZone(DateTime today, string timeZoneId)
+    {
+        // Time zone returned by Graph could be Windows or IANA style
+        // TimeZoneConverter can take either
+        TimeZoneInfo userTimeZone = TZConvert.GetTimeZoneInfo(timeZoneId);
+
+        // Assumes Sunday as first day of week
+        int diff = System.DayOfWeek.Sunday - today.DayOfWeek;
+
+        // create date as unspecified kind
+        var unspecifiedStart = DateTime.SpecifyKind(today.AddDays(diff), DateTimeKind.Unspecified);
+
+        // convert to UTC
+        return TimeZoneInfo.ConvertTimeToUtc(unspecifiedStart, userTimeZone);
+    }
+
+
+    public async Task BeginToDos()
+    {   
+        if(count > 0) {
+            //await Task.Delay(1000);
+            //Console.WriteLine("Access  " + AccessToken);
+            //graphClient = clientFactory.GetAuthenticatedClient();
+
+            var toDoList = await graphClient.Me.Todo.Lists.GetAsync(
+                config=>{
+                    config.QueryParameters.Top = 5;
+                }
+            );
+
+            toDos = toDoList?.Value ?? new List<TodoTaskList>();
+
+            foreach(var item in toDos)
+            {
+                if (item == null)
+                {
+                    throw new ArgumentNullException(nameof(item));
+                }
+                var resultTasks = await graphClient.Me.Todo.Lists[item.Id].Tasks.GetAsync();
+                var key = item.DisplayName + "|" + item.Id;
+                TaskLists[key] = resultTasks;
+            }
+            
+        }
+    }
+
+
+
+    public async Task CompleteTask(string ListId, string TaskId){
+        
+        var requestBody = new TodoTask
+        {
+            Status = Microsoft.Graph.Models.TaskStatus.Completed
+        };
+        var result = await graphClient.Me.Todo.Lists[ListId].Tasks[TaskId].PatchAsync(requestBody);
+
+        await BeginToDos();
+        Console.WriteLine(result.Status);
+        StateHasChanged();
+        //NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+        
+    }
+
+    public async Task DeleteTask(string ListId, string TaskId){
+ 
+        await graphClient.Me.Todo.Lists[ListId].Tasks[TaskId].DeleteAsync();
+        await BeginToDos();
+        StateHasChanged();
+        //NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+
+    }
+
+    public async Task UnDoTask(string ListId, string TaskId){
+        var requestBody = new TodoTask
+        {
+            Status = Microsoft.Graph.Models.TaskStatus.NotStarted
+        };
+        var result = await graphClient.Me.Todo.Lists[ListId].Tasks[TaskId].PatchAsync(requestBody);
+
+        await BeginToDos();
+        Console.WriteLine(result.Status);
+        StateHasChanged();
+        //NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
+    }
+}  *@

@@ -1,0 +1,662 @@
+/* /Pages/Overview.razor.rz.scp.css */
+
+.chat-bot[b-omvmab0aii] {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+}
+
+/*
+*Generic
+*/
+ul[b-omvmab0aii] {
+    list-style-type: none;
+}
+
+.mainContent[b-omvmab0aii] {
+    display: flex;
+    z-index: 25;
+}
+
+.emailTeamsSection[b-omvmab0aii] {
+    width: 85%;
+}
+
+/*
+* EMAILS
+*/
+.mailPage[b-omvmab0aii] {
+    height: 70vh;
+    display: flex;
+}
+
+.emailBar[b-omvmab0aii] {
+    height: 100%;
+    width: 25%;
+    overflow-y: scroll;
+}
+
+.emailSelect[b-omvmab0aii] {
+}
+
+.emailSelectBox[b-omvmab0aii] {
+    font-family: 'Pavanam', sans-serif;
+    padding: 5px;
+    padding-left: 15px;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #cdd4d4;
+    background: #ffffff;
+}
+
+    .emailSelectBox:hover[b-omvmab0aii] {
+        border-radius: 10px;
+        box-shadow: 0 0 3px rgba(33,33,33,.2);
+    }
+
+.emailData[b-omvmab0aii] {
+    width: 70%;
+}
+
+    .emailData .sender[b-omvmab0aii] {
+        padding-right: 10px;
+        margin-bottom: 0;
+        font-size: large;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+    .emailData .subject[b-omvmab0aii] {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: small;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+    .emailData .content[b-omvmab0aii] {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: small;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+
+.emailRight[b-omvmab0aii] {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .emailRight .emailRightData[b-omvmab0aii] {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+.emailRightData .timing[b-omvmab0aii] {
+}
+
+.emailRightData .dotOn[b-omvmab0aii] {
+    height: 15px;
+    width: 15px;
+    background-color: #ADD8E6;
+    border: 1px solid #cdd4d4;
+    border-radius: 50%;
+}
+
+.emailRightData .dotOff[b-omvmab0aii] {
+    width: 10%;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #cdd4d4;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.emailRight .emailInteraction[b-omvmab0aii] {
+    display: flex;
+}
+
+
+$delete2-red: red;
+
+.btn[b-omvmab0aii] {
+}
+
+.btn-delete[b-omvmab0aii] {
+
+}
+
+.btn2[b-omvmab0aii] {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+    .btn2:focus[b-omvmab0aii] {
+        outline: none;
+        border: none;
+    }
+
+    .btn2 .mdi[b-omvmab0aii] {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .btn2 > .mdi-delete[b-omvmab0aii] {
+        color: red;
+    }
+
+    .btn2 > .mdi-reply-outline[b-omvmab0aii] {
+        color: dodgerblue;
+    }
+
+    .btn2 > .mdi-reply-all-outline[b-omvmab0aii] {
+        color: dodgerblue;
+    }
+
+    .btn2 > .mdi-send-outline[b-omvmab0aii] {
+        color: blue;
+    }
+
+    .btn2 > .mdi-close[b-omvmab0aii] {
+        color: black;
+    }
+
+.btn-delete2[b-omvmab0aii] {
+    font-size: 16px;
+}
+
+    .btn-delete2 > .mdi-delete-empty[b-omvmab0aii] {
+        display: none;
+        color: red;
+    }
+
+    .btn-delete2 > .mdi-reply[b-omvmab0aii] {
+        display: none;
+        color: dodgerblue;
+    }
+
+    .btn-delete2 > .mdi-reply-all[b-omvmab0aii] {
+        display: none;
+        color: dodgerblue;
+    }
+
+    .btn-delete2 > .mdi-send[b-omvmab0aii] {
+        display: none;
+        color: blue;
+    }
+
+    .btn-delete2 > .mdi-close-outline[b-omvmab0aii] {
+        display: none;
+        color: red;
+    }
+
+    .btn-delete2:hover[b-omvmab0aii] {
+        background-color: lighten(red, 48%);
+    }
+
+        .btn-delete2:hover > .mdi-delete-empty[b-omvmab0aii] {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-delete[b-omvmab0aii] {
+            display: none;
+        }
+
+        .btn-delete2:hover > .mdi-reply[b-omvmab0aii] {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-reply-outline[b-omvmab0aii] {
+            display: none;
+        }
+
+        .btn-delete2:hover > .mdi-reply-all[b-omvmab0aii] {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-reply-all-outline[b-omvmab0aii] {
+            display: none;
+        }
+
+        .btn-delete2:hover > .mdi-send[b-omvmab0aii] {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-send-outline[b-omvmab0aii] {
+            display: none;
+        }
+
+        .btn-delete2:hover > .mdi-close-outline[b-omvmab0aii] {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-close[b-omvmab0aii] {
+            display: none;
+        }
+
+    .btn-delete2:focus[b-omvmab0aii] {
+        box-shadow: 0px 0px 0px 4px lighten(red, 40%);
+    }
+
+.emailGap[b-omvmab0aii] {
+    padding-bottom: 5px;
+    opacity: 0;
+}
+
+.emailDisplay[b-omvmab0aii] {
+    width: 75%;
+    overflow-y: scroll;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.emailDisplayContent[b-omvmab0aii] {
+    font-family: 'Pavanam', sans-serif;
+    height: 100%;
+}
+
+    .emailDisplayContent .heading[b-omvmab0aii] {
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        box-shadow: 0 0 3px rgba(33,33,33,.2);
+        margin-bottom: 10px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+        .emailDisplayContent .heading .ccDetails[b-omvmab0aii] {
+            width: 85%;
+        }
+
+        .emailDisplayContent .heading .emailInteraction[b-omvmab0aii] {
+            width: 15%;
+            display: flex;
+        }
+
+        .emailDisplayContent .heading .ccDetails .subject[b-omvmab0aii] {
+            overflow-wrap: break-all;
+            font-size: large;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        .emailDisplayContent .heading .ccDetails .sender[b-omvmab0aii] {
+            padding-left: 10px;
+            margin-bottom: 0px;
+        }
+
+        .emailDisplayContent .heading .ccDetails .recipient[b-omvmab0aii] {
+            padding-left: 10px;
+            font-size: small;
+            margin-bottom: 0px;
+            padding-bottom: 15px;
+        }
+
+    .emailDisplayContent .content[b-omvmab0aii] {
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        box-shadow: 0 0 3px rgba(33,33,33,.2);
+        width: 100%;
+    }
+
+        .emailDisplayContent .content .body[b-omvmab0aii] {
+            word-wrap: break-word;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+        }
+
+        .emailDisplayContent .emailReply[b-omvmab0aii] {
+            width: 100%;
+            margin-top:10px;
+        }
+
+        .emailReply[b-omvmab0aii] {
+        }
+
+        .emailReply .heading[b-omvmab0aii] {
+            display:flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-bottom: 0px;
+        }
+            .heading .subject[b-omvmab0aii] {
+                font-size:large;
+                margin-bottom: 0px;
+            }
+            .heading .recipient[b-omvmab0aii] {
+                margin-bottom: 5px;
+            }
+
+        .emailReply .emailResponseContent[b-omvmab0aii]{
+            width: 100%;
+            display: flex;
+        }
+
+            .replyDetails[b-omvmab0aii] {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                border: none;
+                background: none;
+            }
+
+            .replyDetails .replyContent[b-omvmab0aii] {
+                padding: 0;
+                border: none;
+                background: none;
+            }
+
+            .replyDetails .mdi-close[b-omvmab0aii] {
+                padding: 0;
+                border: none;
+                background: none;
+                font-size: large;
+            }
+
+
+            .emailResponseContent .mdi-send[b-omvmab0aii] {
+                padding: 0;
+                border: none;
+                background: none;
+                font-size: large;
+            }
+
+            .emailResponseContent .responseBox[b-omvmab0aii] {
+                margin-top: 20px;
+                width:100px;
+            }
+/*
+* TEAMS
+*/
+
+.teamsPage[b-omvmab0aii] {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+}
+
+.teamsBar[b-omvmab0aii] {
+    height: 100%;
+    width: 20%;
+    margin-left: 0px;
+    padding-top: 5px;
+}
+
+.teamsSelectBox[b-omvmab0aii] {
+    width: 100%;
+    font-family: 'Pavanam', sans-serif;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #cdd4d4;
+    background: #ffffff;
+    margin-bottom: 5px;
+}
+    .teamName[b-omvmab0aii] {
+        width: 90%;
+        padding-bottom: 5px;
+        font-size: large;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+.channelBar[b-omvmab0aii] {
+    height: 100%;
+    width: 15%;
+    margin-left: 10px;
+    margin-top: 0;
+    padding-top: 5px;
+}
+    .channelSelectBox[b-omvmab0aii] {
+        width: 100%;
+        font-family: 'Pavanam', sans-serif;
+        padding-left: 15px;
+        padding-top: 5px;
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        background: #ffffff;
+        margin-bottom: 5px;
+    }
+
+    .channelName[b-omvmab0aii] {
+        width: 90%;
+        padding-bottom: 5px;
+        font-size: large;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+.teamChatBar[b-omvmab0aii] {
+    width: 65%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin-left: 10px;
+}
+
+.teamsMessageBlock[b-omvmab0aii] {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #cdd4d4;
+    box-shadow: 0 0 3px rgba(33,33,33,.2);
+}
+
+.nestedMessages[b-omvmab0aii] {
+    padding: 10px;
+}
+
+.teamMessageBlock[b-omvmab0aii] {
+    font-family: 'Pavanam', sans-serif;
+
+    border-radius: 10px;
+    border: 1px solid #cdd4d4;
+    background: #ffffff;
+
+    margin-top: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.teamChatInital[b-omvmab0aii] {
+    display:flex;
+    justify-content:space-between;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+    .teamChatInital .details[b-omvmab0aii] {
+        width: 90%;
+    }
+    .teamChatInital .interact[b-omvmab0aii] {
+        width: 10%;
+    }
+
+.teamChatName[b-omvmab0aii] {
+    width: 90%;
+    padding-bottom: 5px;
+    font-size: large;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+.teamChatContent[b-omvmab0aii] {
+    width: 100%;
+    padding-bottom: 5px;
+    font-size:medium;
+}
+
+.teamReplySection[b-omvmab0aii] {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.teamInteract[b-omvmab0aii] {
+    display: flex;
+}
+
+.teamMsgInteract[b-omvmab0aii] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*
+* Chats
+*/
+.chatsPage[b-omvmab0aii] {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+}
+
+.mypChats[b-omvmab0aii] {
+    width: 20%;
+    height: 100%;
+    margin-left: 0px;
+    padding-top: 5px;
+}
+
+    .chatSelectBox[b-omvmab0aii] {
+        width: 100%;
+        font-family: 'Pavanam', sans-serif;
+        padding-left: 15px;
+        padding-top: 5px;
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        background: #ffffff;
+        margin-bottom: 5px;
+    }
+    .chatName[b-omvmab0aii] {
+        width: 90%;
+        padding-bottom: 5px;
+        font-size: large;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+.myChatBar[b-omvmab0aii] {
+    width: 80%;
+}
+
+
+/*
+* Calendar section
+*/
+.calendarSection[b-omvmab0aii] {
+    font-family: 'Pavanam', sans-serif;
+    width: 15%;
+    height: 70vh;
+    flex-direction: column;
+    display: flex;
+    overflow-y: scroll;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+    .calendarSection .event[b-omvmab0aii] {
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        background: #ffffff;
+        padding: 10px;
+        margin-top:5px;
+    }
+        .event .subject[b-omvmab0aii] {
+            font-size:large;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        .event .timing[b-omvmab0aii] {
+        }
+            .event .timing .date[b-omvmab0aii] {
+                margin-bottom: 0px;
+            }
+
+            .event .timing .time[b-omvmab0aii] {
+                margin-bottom: 0px;
+            }
+
+        .event .organiser[b-omvmab0aii] {
+            margin-bottom: 0px;
+        }
+
+/*
+* Group settings
+*/
+.groupSec[b-omvmab0aii] {
+    display: flex;
+}
+
+.groupSettings[b-omvmab0aii] {
+    display: flex;
+}
+
+.addGroup[b-omvmab0aii] {
+    display: flex;
+}
+
+.testing1[b-omvmab0aii] {
+    position: absolute;
+    z-index: 99;
+}
+/* /Pages/SummarizeFiles.razor.rz.scp.css */
+[b-8cwxo513pf] > fluent-dialog::part(control) {
+    --dialog-width: 45%;
+    --dialog-height: 65%;
+    border: 2px ridge black;
+}
+/* /Shared/MainLayout.razor.rz.scp.css */
+.page[b-bl0j7m4p9v] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content[b-bl0j7m4p9v] {
+    width: 100%;
+}
+
+.outerSearch[b-bl0j7m4p9v] {
+    /* put this search bar in line with the nav bar */
+    position: fixed;
+    top: 20px;
+    left: 11rem;
+    z-index: 4;
+}
+
+.seperateNavBar[b-bl0j7m4p9v] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}

@@ -1,0 +1,157 @@
+@page "/testai"
+
+@using System.Security.Authentication
+@using System.Text
+@using Microsoft.Graph
+@using Microsoft.Graph.Models
+@using TimeZoneConverter
+@using Microsoft.Extensions.Logging
+@using GrapeCity.Documents.Pdf
+@using Azure
+@using Azure.AI.OpenAI
+@using static System.Environment
+@using Microsoft.Fast.Components.FluentUI
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+
+
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+
+
+<h1>Todo</h1>
+
+@* <FluentTextArea>
+        <span>Type your plans for the day...</span>
+    </FluentTextArea> *@
+
+<FluentTextArea @bind-Value="textValue">
+</FluentTextArea>
+
+<button @onclick="ConvertTasks">Extract Text</button>
+
+<p>
+    <h3> @todoStart :: @todoEnd </h3>
+</p>
+
+<form>
+    <div class="form-group">
+        <label for="activity">Activity:</label>
+        <InputSelect id="activity" @bind-Value="selectedList">
+            @foreach (var item in toDos)
+            {
+                <option value="@item.DisplayName">@item.DisplayName</option>
+            }
+        </InputSelect>
+        
+    </div>
+    <button class="btn btn-primary" @onclick="ConvertTasks">Submit</button>
+</form>
+
+
+@code{
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+    private GraphServiceClient? graphClient;
+    private string? textValue;
+    private string[]? todolist;
+    private string? todoStart;
+    private string? todoEnd;
+    private string todoTasks;
+    private IList<TodoTaskList> toDos = new List<TodoTaskList>();
+    private string selectedList = "Tasks";
+    Dictionary<string, string> TaskLists = new Dictionary<string, string>();    
+
+    public System.Security.Claims.ClaimsPrincipal? user { get; set; }
+
+    private OpenAIService? openAIService;
+
+    [Inject]
+    protected IAccessTokenProvider? AccessTokenProvider { get; set; }
+    protected string? AccessToken { get; private set; }
+
+    protected override async Task OnInitializedAsync()
+    {   
+        var tokenResult = await AccessTokenProvider.RequestAccessToken();
+        if (tokenResult.TryGetToken(out var accessToken))
+        {
+            AccessToken = accessToken.Value;
+        }
+
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+                "Unable to access authentication state");
+        }
+
+        //user = (await authenticationStateTask).User;
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+        openAIService = new OpenAIService(); // Create an instance of the 'OpenAIService'
+        var getLists = await graphClient.Me.Todo.Lists.GetAsync();
+        toDos = getLists?.Value ?? new List<TodoTaskList>();
+
+        foreach(var item in toDos)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException(nameof(item));
+            }
+            if (item.DisplayName != null){
+                TaskLists[item.DisplayName] = item.Id;
+            }
+        }
+    }
+
+
+    private void ExtractText()
+    {
+        string extractedText = textValue;
+        Console.WriteLine(extractedText);
+    }
+
+    private async Task ConvertToDo()
+    {
+        Console.WriteLine("Converting to do list to a schedule...");
+        //string agenda = "Wake up, make my bed and eat breakfast";
+        string prompt = $"Can you create a to-do list including start time and end time in the form of hh:mm - hh:mm for today according to my plans below, it is not always written in chronological order. List each todo task with a '+' where the time is written first and the task is written next to it, separated by ':' and rewrite some tasks to make them clearer and more precise: \n {textValue}";
+        Console.Write($"Input: {prompt}\n");
+
+        var completionsResponse = await openAIService.client.GetCompletionsAsync(openAIService.engine, prompt);
+        var completion = completionsResponse.Value.Choices[0].Text;
+        Console.Write($"Completion: {completion}\n");
+    }
+
+    private async Task ConvertTasks()
+    {
+        string completion = "+10:00 - 11:00> Reply to emails +11:00 - 12:00> Schedule a meeting +12:00 - 12:30> Grab morning coffee +12:30 - 13:30> Meet colleague at cafe for lunch +19:00 - 20:00> Meet friend for dinner";
+        todolist = completion.Split("+");
+        foreach (string todo in todolist)
+        {
+            if (todo.Length > 0)
+            {
+                todoStart = todo.Split("- ")[0];
+                todoEnd = todo.Split("- ")[1].Split("> ")[0];
+                todoTasks = todo.Split("- ")[1].Split("> ")[1];
+
+                DateTime startTime = DateTime.UtcNow; // Example DateTime object representing the start time
+
+                DateTimeTimeZone dateTimeTimeZone = new DateTimeTimeZone
+                {
+                    DateTime = startTime.ToString("yyyy-MM-ddTHH:mm:ss"),
+                    TimeZone = TimeZoneInfo.Utc.Id
+                };
+
+
+                var requestBody = new TodoTask
+                {
+                    Title = todoTasks,
+                    ReminderDateTime = dateTimeTimeZone,
+                };
+
+                var todoTask = await graphClient.Me.Todo.Lists[TaskLists[selectedList]].Tasks
+                    .PostAsync(requestBody);
+
+            }
+        }
+    }
+}

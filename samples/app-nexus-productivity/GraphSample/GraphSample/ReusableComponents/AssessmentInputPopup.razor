@@ -1,0 +1,145 @@
+﻿@using Microsoft.AspNetCore.Components.Forms
+@using SharedModels.Models
+@using Microsoft.Fast.Components.FluentUI
+
+<style>
+    .form-line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .sub-button{
+        background-color: #1b6ec2;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .sub-button:hover{
+        background-color: #1b6ec2c7;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .can-button{
+        background-color: #f44336;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    
+    .can-button:hover{
+        background-color: #f44336c7;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .form-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-line{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    select{
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+</style>
+
+
+<div>
+    <EditForm Model="_form" OnValidSubmit="SubmitForm">
+        <div class="form-line">
+            <label for="date">Date</label>
+            <InputDate Type="InputDateType.DateTimeLocal"
+                    @bind-Value="_form.date"/>
+        </div>
+        <div class="form-line">
+            <label for="type">Type</label>
+            <div class="form-row">
+                <select id="type" @bind="_form.type" style="margin-bottom: 2px;">
+                    <option value="">Select Type</option>
+                    @foreach (var option in Enum.GetValues(typeof(AssessmentType)))
+                    {
+                        <option value="@option">@option</option>
+                    }
+                </select>
+                @if(_form.type == AssessmentType.Custom){
+                    <input type="text" @bind="_form.customDescription" placeholder="Enter custom type" />
+                }
+            </div>
+        </div>
+
+        <div class="form-line">
+            <label for="status">Status</label>
+                <select id="status" @bind="_form.status">
+                    <option value="">Select Status</option>
+                    @foreach (var option in Enum.GetValues(typeof(AssessmentStatus)))
+                    {
+                        <option value="@option">@option</option>
+                    }
+                </select>
+        </div>
+        <div class="button-line">
+            <button class="sub-button" type="submit">Submit</button>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    public Assessment _form = new();
+
+    [CascadingParameter] BlazoredModalInstance BlazoredAssessmentModal { get; set; } = default!;
+
+    protected override void OnInitialized(){
+        BlazoredAssessmentModal.SetTitle("Enter The Assessment Details");
+        _form.date = DateTime.Now.Date.AddHours(DateTime.Now.Hour + 1).AddMinutes(0).AddSeconds(0);
+    }
+
+    private async Task SubmitForm()
+    {
+        Console.WriteLine("Confirmed");
+        _form.date = _form.date.AddHours(1);
+        await BlazoredAssessmentModal.CloseAsync(ModalResult.Ok(_form));
+    }
+
+    private async Task Cancel() {
+        Console.WriteLine("Cancelled");
+        await BlazoredAssessmentModal.CancelAsync();
+    }
+}
+

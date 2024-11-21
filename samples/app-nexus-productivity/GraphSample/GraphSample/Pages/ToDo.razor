@@ -1,0 +1,297 @@
+@page "/todo"
+
+@using System.Security.Authentication
+@using System.Text
+@using Microsoft.Graph
+@using Microsoft.Graph.Models
+@using TimeZoneConverter
+@using Microsoft.Extensions.Logging
+@using GrapeCity.Documents.Pdf
+@using Azure
+@using Azure.AI.OpenAI
+@using static System.Environment
+@using Microsoft.Fast.Components.FluentUI
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+
+
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+
+<style>
+
+    .form-input{
+        padding: 5%;
+        border-style: solid;
+        border-color: rgb(222, 222, 222);
+        box-shadow: inset;
+        border-radius: 3px;
+        margin-bottom: 20px;
+        width: 500px;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: 500px 500px;
+        height: 100%;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 15px;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 1px;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 1.1rem;
+        height: 100%;
+        width: 100%; 
+        overflow-y: scroll;
+        margin-bottom: 0%;
+    }
+
+</style>
+
+<body>
+<h1>Todo</h1>
+
+<div class=grid-container>
+    <div class=grid-item>
+        <div class=form-input>
+            <FluentTextArea @bind-Value="textValue" Placeholder="Type your plans for today..." style="width:90%;">
+            </FluentTextArea>
+            <br>
+            <br>
+            <form>
+                <label for="taskList">Task List</label>
+                <FluentSelect 
+                        Items="@toDos"
+                        Id="taskList"
+                        OptionValue="@(t => t.DisplayName)"
+                        OptionText="@(t => t.DisplayName)"
+                        @bind-Value="@selectedList"
+                        />
+            </form>
+
+            <br>
+            <FluentButton @onclick="ConvertTasks">Create To Do List</FluentButton>
+        </div>
+
+        @if (creating){
+            <FluentProgressRing></FluentProgressRing>
+        }
+    </div>
+
+    @* <FluentTextArea @bind-Value="tasknew" style="width: 100%; height: 100%;" @onchange="Print"></FluentTextArea> *@
+
+    @* <div class=grid-item>
+        <table>
+            <tr>
+                <td> Task </td>
+                <td> Time </td>
+                <td> Confirm </td>
+            </tr>
+            @foreach (var key in TaskDict.Keys)
+            {
+                string time = key.Remove(key.Length - 1, 1);
+                <tr>
+                    <td>
+                        <form>
+                            @tasknew = TaskDict[key];
+                            <FluentTextArea @bind-Value="tasknew" style="width: 50%;"></FluentTextArea>
+                        </form>
+                    </td>
+                    <td>
+                        <form>
+                            @timenew = time;
+                            <FluentTextArea @bind-Value="timenew" style="width: 50%;"></FluentTextArea>
+                            <input type="time" id=time @bind-value="timenew">
+                        </form>
+                    </td>
+                    <td>
+                        <button @onclick="() => { SendToDo(tasknew,timenew); }">Confirm</button>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div> *@
+</div>
+
+@* <mgt-ToDo></mgt-ToDo> *@
+
+@* <form>
+    @foreach (var key in TaskDict.Keys){
+        string time = key.Remove(key.Length - 1, 1);
+        <div class="form-input">
+            <input type="time" value="@time" id=time bind-value="@key">
+            <input type="text" value="@TaskDict[key]" style="width: 100%;" bind-value="@TaskDict[key]">
+        </div>
+    }
+</form> *@
+
+@* @for (int i = 0; i < TaskDict.Count; i++){
+    string time = TaskDict.Keys.ElementAt(i).Remove(TaskDict.Keys.ElementAt(i).Length - 1, 1);
+    <div class="form-input">
+        <input type="time" value="@time" id=time bind-value="@TaskDict.Keys.ElementAt(i)">
+        <input type="text" value="@TaskDict.Values.ElementAt(i)" style="width: 100%;" bind-value="@title">
+    </div>
+}
+<button @onclick="Print"> Print </button> *@
+
+</body>
+@code{
+    
+    string? tasknew;
+
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+    private GraphServiceClient? graphClient;
+    private string? textValue;
+    private string[]? todolist;
+    private string? todoStart;
+    private string? todoEnd;
+    private string todoTasks;
+    private IList<TodoTaskList> toDos = new List<TodoTaskList>();
+    private string selectedList = "Tasks";
+    
+    private string timenew = "09:00";
+    private TimeOnly startTime;
+    Dictionary<string,string> TaskDict = new Dictionary<string, string>();
+
+    Dictionary<string, string> TaskLists = new Dictionary<string, string>();    
+
+    public System.Security.Claims.ClaimsPrincipal? user { get; set; }
+
+    private OpenAIService? openAIService;
+
+    public bool creating = false;
+
+    public List<string> tas = new List<string>();
+
+    [Inject]
+    protected IAccessTokenProvider? AccessTokenProvider { get; set; }
+    protected string? AccessToken { get; private set; }
+
+    public void Print(){
+        tas.Add(tasknew);
+        foreach (var item in tas){
+            Console.WriteLine(item);
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {   
+        var tokenResult = await AccessTokenProvider.RequestAccessToken();
+        if (tokenResult.TryGetToken(out var accessToken))
+        {
+            AccessToken = accessToken.Value;
+        }
+
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+                "Unable to access authentication state");
+        }
+
+        //user = (await authenticationStateTask).User;
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+        openAIService = new OpenAIService(); // Create an instance of the 'OpenAIService'
+        var getLists = await graphClient.Me.Todo.Lists.GetAsync();
+        toDos = getLists?.Value ?? new List<TodoTaskList>();
+
+        foreach(var item in toDos)
+        {
+            if (item == null)
+            {
+                throw new ArgumentNullException(nameof(item));
+            }
+            if (item.DisplayName != null){
+                TaskLists[item.DisplayName] = item.Id;
+            }
+        }
+    }
+
+
+    private void ExtractText()
+    {
+        string extractedText = textValue;
+        Console.WriteLine(extractedText);
+    }
+
+    private async Task ConvertToDo()
+    {
+        Console.WriteLine("Converting to do list to a schedule...");
+        //string agenda = "Wake up, make my bed and eat breakfast";
+        string prompt = $"Can you create a to-do list including start time in the form of hh:mm for today according to my plans below, it is not always written in chronological order. List each todo task with a ‘+’ where the time is written first and the task is written next to it, separated by ‘>’ and rewrite some tasks to make them clearer and more precise: \n {textValue}";
+        Console.Write($"Input: {prompt}\n");
+
+        var completionsResponse = await openAIService.client.GetCompletionsAsync(openAIService.engine, prompt);
+        var completion = completionsResponse.Value.Choices[0].Text;
+        Console.Write($"Completion: {completion}\n");
+    }
+
+    private async Task ConvertTasks()
+    {
+        creating = true;
+        //string completion = "+10:00 - 11:00> Reply to emails +11:00 - 12:00> Schedule a meeting +12:00 - 12:30> Grab morning coffee +12:30 - 13:30> Meet colleague at cafe for lunch +19:00 - 20:00> Meet friend for dinner"; *@
+        string prompt = $"Can you create a to-do list including start time in the form of hh:mm for today according to my plans below, it is not always written in chronological order. List each todo task with a ‘+’ where the time is written first and the task is written next to it, separated by ‘>’ and rewrite some tasks to make them clearer and more precise: \n {textValue}";
+        //Console.Write($"Input: {prompt}\n");
+
+        var completionsResponse = await openAIService.client.GetCompletionsAsync(openAIService.engine, prompt);
+        var completion = completionsResponse.Value.Choices[0].Text;
+        //string completion = "+06:00 > Grab morning coffee +08:00 > Reply to emails +12:00 > Meet colleague at cafe for lunch +18:00 > Meet friend for dinner +20:00 > Schedule meeting with someone in Toronto";
+        Console.WriteLine(completion);
+        todolist = completion.Split("\n");
+        //todolist = completion.Split("+");
+
+        foreach (string todo in todolist)
+        {
+            if (todo.Length > 2)
+            {
+                todoStart = todo.Split(">")[0].Split("+")[1];
+                //todoStart = todo.Split(">")[0];
+                todoTasks = todo.Split(">")[1];
+
+                TaskDict[todoStart] = todoTasks;
+                await SendToDo(todoTasks, todoStart);
+            }
+        }  
+        creating = false;
+        
+    }
+
+    private async Task SendToDo(string todoTasks, string todoStart){
+        Console.WriteLine(todoStart);
+        Console.WriteLine("Sending");
+        DateTime now = DateTime.UtcNow.Date; // Get the current date in UTC
+
+        // Split the time string into hours and minutes
+        string[] timeParts = todoStart.Split(':');
+        int hours = int.Parse(timeParts[0]);
+        int minutes = int.Parse(timeParts[1]);
+
+        // Create a new DateTime object with the current date and the specified time
+        DateTime startTime = now.AddHours(hours).AddMinutes(minutes);
+
+        DateTimeTimeZone dateTimeTimeZone = new DateTimeTimeZone
+        {
+            DateTime = startTime.ToString("yyyy-MM-ddTHH:mm:ss"),
+            TimeZone = TimeZoneInfo.Local.Id
+        };
+
+        var requestBody = new TodoTask
+        {
+            Title = todoTasks,
+            ReminderDateTime = dateTimeTimeZone,
+        };
+
+        var todoTask = await graphClient.Me.Todo.Lists[TaskLists[selectedList]].Tasks
+            .PostAsync(requestBody);
+        Console.WriteLine("Sent");
+
+    }
+
+
+}

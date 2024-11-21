@@ -1,0 +1,107 @@
+@using Microsoft.AspNetCore.Components.Forms
+@using SharedModels.Models
+
+<style>
+    .sub-button{
+        background-color: #1b6ec2;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    .sub-button:hover{
+        background-color: #1b6ec2c7;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .can-button{
+        background-color: #f44336;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    
+    .can-button:hover{
+        background-color: #f44336c7;
+        border: none;
+        color: white;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+    }
+
+    .button-line{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+</style>
+
+<div>
+    <EditForm Model="_form" OnValidSubmit="SubmitForm">
+        <div class = "form-line">
+            <label for="custom-text">Custom Description</label>
+            <div>
+                <input id="custom-text" type="text" @bind="_form.customDescription"/>
+            </div>
+        </div>
+        
+        <div class="button-line">
+            <button class="sub-button" type="submit">Submit</button>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    public Form _form = new();
+
+        [CascadingParameter] BlazoredModalInstance BlazoredAssessmentModal { get; set; } = default!;
+
+        protected override void OnInitialized() => BlazoredAssessmentModal.SetTitle("Enter Custom Description");
+
+        private async Task SubmitForm()
+        {
+            await BlazoredAssessmentModal.CloseAsync(ModalResult.Ok(_form.customDescription));
+        }
+
+        private async Task Cancel() {
+            await BlazoredAssessmentModal.CancelAsync();
+            }
+
+        public class Form{
+            public string? customDescription { get; set; } = string.Empty;
+        }
+
+    }

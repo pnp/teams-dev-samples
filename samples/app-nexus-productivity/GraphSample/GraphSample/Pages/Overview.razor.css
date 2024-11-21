@@ -1,0 +1,628 @@
+﻿
+.chat-bot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+}
+
+/*
+*Generic
+*/
+ul {
+    list-style-type: none;
+}
+
+.mainContent {
+    display: flex;
+    z-index: 25;
+}
+
+.emailTeamsSection {
+    width: 85%;
+}
+
+/*
+* EMAILS
+*/
+.mailPage {
+    height: 70vh;
+    display: flex;
+}
+
+.emailBar {
+    height: 100%;
+    width: 25%;
+    overflow-y: scroll;
+}
+
+.emailSelect {
+}
+
+.emailSelectBox {
+    font-family: 'Pavanam', sans-serif;
+    padding: 5px;
+    padding-left: 15px;
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #cdd4d4;
+    background: #ffffff;
+}
+
+    .emailSelectBox:hover {
+        border-radius: 10px;
+        box-shadow: 0 0 3px rgba(33,33,33,.2);
+    }
+
+.emailData {
+    width: 70%;
+}
+
+    .emailData .sender {
+        padding-right: 10px;
+        margin-bottom: 0;
+        font-size: large;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+    .emailData .subject {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: small;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+    .emailData .content {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: small;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+
+.emailRight {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+    .emailRight .emailRightData {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+.emailRightData .timing {
+}
+
+.emailRightData .dotOn {
+    height: 15px;
+    width: 15px;
+    background-color: #ADD8E6;
+    border: 1px solid #cdd4d4;
+    border-radius: 50%;
+}
+
+.emailRightData .dotOff {
+    width: 10%;
+    height: 15px;
+    width: 15px;
+    border: 1px solid #cdd4d4;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.emailRight .emailInteraction {
+    display: flex;
+}
+
+
+$delete2-red: red;
+
+.btn {
+}
+
+.btn-delete {
+
+}
+
+.btn2 {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+    .btn2:focus {
+        outline: none;
+        border: none;
+    }
+
+    .btn2 .mdi {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .btn2 > .mdi-delete {
+        color: red;
+    }
+
+    .btn2 > .mdi-reply-outline {
+        color: dodgerblue;
+    }
+
+    .btn2 > .mdi-reply-all-outline {
+        color: dodgerblue;
+    }
+
+    .btn2 > .mdi-send-outline {
+        color: blue;
+    }
+
+    .btn2 > .mdi-close {
+        color: black;
+    }
+
+.btn-delete2 {
+    font-size: 16px;
+}
+
+    .btn-delete2 > .mdi-delete-empty {
+        display: none;
+        color: red;
+    }
+
+    .btn-delete2 > .mdi-reply {
+        display: none;
+        color: dodgerblue;
+    }
+
+    .btn-delete2 > .mdi-reply-all {
+        display: none;
+        color: dodgerblue;
+    }
+
+    .btn-delete2 > .mdi-send {
+        display: none;
+        color: blue;
+    }
+
+    .btn-delete2 > .mdi-close-outline {
+        display: none;
+        color: red;
+    }
+
+    .btn-delete2:hover {
+        background-color: lighten(red, 48%);
+    }
+
+        .btn-delete2:hover > .mdi-delete-empty {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-delete {
+            display: none;
+        }
+
+        .btn-delete2:hover > .mdi-reply {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-reply-outline {
+            display: none;
+        }
+
+        .btn-delete2:hover > .mdi-reply-all {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-reply-all-outline {
+            display: none;
+        }
+
+        .btn-delete2:hover > .mdi-send {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-send-outline {
+            display: none;
+        }
+
+        .btn-delete2:hover > .mdi-close-outline {
+            display: block;
+        }
+
+        .btn-delete2:hover > .mdi-close {
+            display: none;
+        }
+
+    .btn-delete2:focus {
+        box-shadow: 0px 0px 0px 4px lighten(red, 40%);
+    }
+
+.emailGap {
+    padding-bottom: 5px;
+    opacity: 0;
+}
+
+.emailDisplay {
+    width: 75%;
+    overflow-y: scroll;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.emailDisplayContent {
+    font-family: 'Pavanam', sans-serif;
+    height: 100%;
+}
+
+    .emailDisplayContent .heading {
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        box-shadow: 0 0 3px rgba(33,33,33,.2);
+        margin-bottom: 10px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+        .emailDisplayContent .heading .ccDetails {
+            width: 85%;
+        }
+
+        .emailDisplayContent .heading .emailInteraction {
+            width: 15%;
+            display: flex;
+        }
+
+        .emailDisplayContent .heading .ccDetails .subject {
+            overflow-wrap: break-all;
+            font-size: large;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        .emailDisplayContent .heading .ccDetails .sender {
+            padding-left: 10px;
+            margin-bottom: 0px;
+        }
+
+        .emailDisplayContent .heading .ccDetails .recipient {
+            padding-left: 10px;
+            font-size: small;
+            margin-bottom: 0px;
+            padding-bottom: 15px;
+        }
+
+    .emailDisplayContent .content {
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        box-shadow: 0 0 3px rgba(33,33,33,.2);
+        width: 100%;
+    }
+
+        .emailDisplayContent .content .body {
+            word-wrap: break-word;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 15px;
+        }
+
+        .emailDisplayContent .emailReply {
+            width: 100%;
+            margin-top:10px;
+        }
+
+        .emailReply {
+        }
+
+        .emailReply .heading {
+            display:flex;
+            flex-direction: column;
+            padding: 20px;
+            margin-bottom: 0px;
+        }
+            .heading .subject {
+                font-size:large;
+                margin-bottom: 0px;
+            }
+            .heading .recipient {
+                margin-bottom: 5px;
+            }
+
+        .emailReply .emailResponseContent{
+            width: 100%;
+            display: flex;
+        }
+
+            .replyDetails {
+                display: flex;
+                justify-content: space-between;
+                padding: 0;
+                border: none;
+                background: none;
+            }
+
+            .replyDetails .replyContent {
+                padding: 0;
+                border: none;
+                background: none;
+            }
+
+            .replyDetails .mdi-close {
+                padding: 0;
+                border: none;
+                background: none;
+                font-size: large;
+            }
+
+
+            .emailResponseContent .mdi-send {
+                padding: 0;
+                border: none;
+                background: none;
+                font-size: large;
+            }
+
+            .emailResponseContent .responseBox {
+                margin-top: 20px;
+                width:100px;
+            }
+/*
+* TEAMS
+*/
+
+.teamsPage {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+}
+
+.teamsBar {
+    height: 100%;
+    width: 20%;
+    margin-left: 0px;
+    padding-top: 5px;
+}
+
+.teamsSelectBox {
+    width: 100%;
+    font-family: 'Pavanam', sans-serif;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #cdd4d4;
+    background: #ffffff;
+    margin-bottom: 5px;
+}
+    .teamName {
+        width: 90%;
+        padding-bottom: 5px;
+        font-size: large;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+.channelBar {
+    height: 100%;
+    width: 15%;
+    margin-left: 10px;
+    margin-top: 0;
+    padding-top: 5px;
+}
+    .channelSelectBox {
+        width: 100%;
+        font-family: 'Pavanam', sans-serif;
+        padding-left: 15px;
+        padding-top: 5px;
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        background: #ffffff;
+        margin-bottom: 5px;
+    }
+
+    .channelName {
+        width: 90%;
+        padding-bottom: 5px;
+        font-size: large;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+.teamChatBar {
+    width: 65%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+
+    margin-left: 10px;
+}
+
+.teamsMessageBlock {
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #cdd4d4;
+    box-shadow: 0 0 3px rgba(33,33,33,.2);
+}
+
+.nestedMessages {
+    padding: 10px;
+}
+
+.teamMessageBlock {
+    font-family: 'Pavanam', sans-serif;
+
+    border-radius: 10px;
+    border: 1px solid #cdd4d4;
+    background: #ffffff;
+
+    margin-top: 20px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.teamChatInital {
+    display:flex;
+    justify-content:space-between;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+    .teamChatInital .details {
+        width: 90%;
+    }
+    .teamChatInital .interact {
+        width: 10%;
+    }
+
+.teamChatName {
+    width: 90%;
+    padding-bottom: 5px;
+    font-size: large;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}
+
+.teamChatContent {
+    width: 100%;
+    padding-bottom: 5px;
+    font-size:medium;
+}
+
+.teamReplySection {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.teamInteract {
+    display: flex;
+}
+
+.teamMsgInteract {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*
+* Chats
+*/
+.chatsPage {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+}
+
+.mypChats {
+    width: 20%;
+    height: 100%;
+    margin-left: 0px;
+    padding-top: 5px;
+}
+
+    .chatSelectBox {
+        width: 100%;
+        font-family: 'Pavanam', sans-serif;
+        padding-left: 15px;
+        padding-top: 5px;
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        background: #ffffff;
+        margin-bottom: 5px;
+    }
+    .chatName {
+        width: 90%;
+        padding-bottom: 5px;
+        font-size: large;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 90%;
+    }
+
+.myChatBar {
+    width: 80%;
+}
+
+
+/*
+* Calendar section
+*/
+.calendarSection {
+    font-family: 'Pavanam', sans-serif;
+    width: 15%;
+    height: 70vh;
+    flex-direction: column;
+    display: flex;
+    overflow-y: scroll;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+    .calendarSection .event {
+        border-radius: 10px;
+        border: 1px solid #cdd4d4;
+        background: #ffffff;
+        padding: 10px;
+        margin-top:5px;
+    }
+        .event .subject {
+            font-size:large;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        .event .timing {
+        }
+            .event .timing .date {
+                margin-bottom: 0px;
+            }
+
+            .event .timing .time {
+                margin-bottom: 0px;
+            }
+
+        .event .organiser {
+            margin-bottom: 0px;
+        }
+
+/*
+* Group settings
+*/
+.groupSec {
+    display: flex;
+}
+
+.groupSettings {
+    display: flex;
+}
+
+.addGroup {
+    display: flex;
+}
+
+.testing1 {
+    position: absolute;
+    z-index: 99;
+}

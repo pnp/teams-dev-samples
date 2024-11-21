@@ -1,0 +1,26 @@
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content {
+    width: 100%;
+}
+
+.outerSearch {
+    /* put this search bar in line with the nav bar */
+    position: fixed;
+    top: 20px;
+    left: 11rem;
+    z-index: 4;
+}
+
+.seperateNavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}

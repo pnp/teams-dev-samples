@@ -1,0 +1,744 @@
+@page "/NotesPro"
+
+@using System.Security.Authentication
+@using System.IO;
+@using GrapeCity.Documents.Pdf;
+@using DocumentFormat.OpenXml.Packaging;
+@using Azure
+@using Azure.AI.OpenAI
+@using System.Text
+@using Microsoft.Graph
+@using Microsoft.Graph.Models
+@using Microsoft.Graph.Models.ODataErrors
+@using Microsoft.Kiota.Abstractions
+@using Microsoft.Kiota.Abstractions.Serialization
+@using Microsoft.Fast.Components.FluentUI
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+@inject GraphSample.AI.OpenAIService OpenAIService
+
+
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+@*@inject ILogger<SummariseFiles> Logger*@
+@inject GraphSample.AI.OpenAIService OpenAIService
+
+<style>
+
+    h3, p {
+        padding: 1% 1% 1% 1%;
+
+    }
+    .containerFiles {
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+        padding: 20px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        height: 86vh;
+        width: 96vw;
+        font-family: 'Pavanam', sans-serif;
+    }
+
+    .dropdown-contentMGT {
+        max-height: 330px;
+        overflow-y: scroll;
+        max-width: 99%;
+    }
+
+    @* make the scroll bar glass *@
+       .dropdown-contentMGT::-webkit-scrollbar {
+        width: 10px;
+        height: 70%;
+        background-color: transparent;
+        height: calc(100% - 20px);
+    }
+
+    .dropdown-contentMGT::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 1.5rem;
+    }
+
+    .dropdown-contentMGT::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .textbox {
+        min-height: 50vh;
+        min-width: 50vw;
+        max-height: 50vh;
+        max-width: 100vw;
+        background-color: ghostwhite;
+        color: black;
+        overflow: scroll;
+        border-radius: 0.25rem;
+    }
+
+    .textbox::-webkit-scrollbar {
+        width: 10px;
+        height: 70%;
+        background-color: transparent;
+        height: calc(100% - 20px);
+    }
+
+    .textbox::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 1.5rem;
+    }
+
+    .textbox::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .chat-bot {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 3;
+    }
+
+    .dropzone {
+        border: 3px dashed gray;
+        padding: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #eee;
+        box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+        color: #444;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        height: 310px;
+    }
+
+    .dropzone:hover {
+        background-color: #f3f3f3;
+        color: #333;
+    }
+
+    .sum-btn {
+        margin: 10px;
+        background-color: #1D6F42;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .onenote-btn {
+        margin: 10px;
+        background-color: #AE4BD5;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .sum-btn:hover {
+        background-color: #1a673d;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .onenote-btn:hover {
+        background-color: #a246c7;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .file-label {
+        margin: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+</style>
+
+
+<AuthorizeView>
+
+    <Authorized>
+
+        <div class="containerFiles">
+            <div>
+                <button class="btn btn-primary" @onclick="OnOpen" style="margin: 10px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6 20q-.825 0-1.413-.588T4 18v-3h2v3h12v-3h2v3q0 .825-.588 1.413T18 20H6Zm5-4V7.85l-2.6 2.6L7 9l5-5l5 5l-1.4 1.45l-2.6-2.6V16h-2Z" /></svg> Select File
+                </button>
+
+                <FluentDialog @ref="MyFluentDialog" aria-label="Simple dialog" Modal=true @ondialogdismiss=OnDismiss>
+                    <FluentTabs OnTabChange="HandleOnTabChange">
+                        <FluentTab Text="Browse Files" style="font-size: 18px; padding:20px;"></FluentTab>
+                        <FluentTab Text="Upload from OneDrive" style="font-size: 18px; padding:20px;" />
+                        <FluentTabPanel>
+                            <div class="dropzone @dropClass rounded">
+                                <InputFile id="fileInput" multiple title=""
+                                        OnChange="@LoadFile"
+                                        @ondragenter="HandleDragEnter"
+                                        @ondragleave="HandleDragLeave" />
+                            </div>
+                        </FluentTabPanel>
+                        <FluentTabPanel>
+                            <div class="dropdown-contentMGT">
+                                @foreach (var file in data_response)
+                                {
+                                    string npath = path + file.Id;
+
+                                    <mgt-file file-query="@npath" @onclick="() => GetContent(file.Id, file.Name)"></mgt-file>
+                                }
+                            </div>
+                        </FluentTabPanel>
+                    </FluentTabs>
+                </FluentDialog>
+
+
+                <div class="file-label">
+                    File Chosen: @fileName
+                    @if (fileName != String.Empty)
+                    {
+                        <i class="fa-regular fa-circle-check fa-beat fa-xl" style="color: #77bb41; margin-left:1%;"></i>
+                    }
+                    
+                </div>
+
+                <button class="sum-btn" @onclick="SummariseFile"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256"><path fill="currentColor" d="m227.32 73.37l-44.69-44.68a16 16 0 0 0-22.63 0L36.69 152A15.86 15.86 0 0 0 32 163.31V208a16 16 0 0 0 16 16h168a8 8 0 0 0 0-16H115.32l112-112a16 16 0 0 0 0-22.63ZM136 75.31L152.69 92L68 176.69L51.31 160ZM48 208v-28.69L76.69 208Zm48-3.31L79.32 188L164 103.31L180.69 120Zm96-96L147.32 64l24-24L216 84.69Z" /></svg> Summarise </button>
+                <button class="onenote-btn" @onclick="WriteToOneNote"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="#733781" d="M16.621 2.326h1.9v2.547c2.976.114 5.988-.242 8.942.2c.1.337.216.671.328 1c.75.134 1.959.041 2.077 1.059a28.973 28.973 0 0 1-.048 5.606a22.957 22.957 0 0 1-.057 5.962a21.112 21.112 0 0 1 .1 5.52c-.137.989-1.31.919-2.051 1.059a4.73 4.73 0 0 1-.378 1.549a3.8 3.8 0 0 1-1.921.3c-2.331-.022-4.662-.013-6.99-.013v2.547h-1.991C11.7 28.787 6.846 27.976 2 27.13V4.876c4.875-.849 9.75-1.682 14.621-2.55Z" /><path fill="#fff" d="M18.523 5.821h8.271v1.266c.731 0 1.463.016 2.2.048c.041 1.673.057 3.345-.013 5.018c-.728.025-1.46.038-2.185.041v13.985h-8.271v-2.55h6.042v-1.266h-6.042v-1.6h6.042v-1.266h-6.042V17.9h6.042v-1.266h-6.042v-1.6h6.039v-1.266h-6.042v-1.6h6.042v-1.266h-6.042v-1.6h6.042V8.036h-6.042V5.821Zm-6.697 4.846c.633-.035 1.269-.07 1.908-.1V21.1c-.687-.029-1.367-.067-2.048-.1c-1.266-2.433-2.636-4.811-3.86-7.266c.07 2.353.029 4.71.035 7.063c-.579-.038-1.151-.073-1.727-.108q.014-4.846 0-9.7l1.965-.1c1.243 2.277 2.506 4.544 3.714 6.843c.026-2.355 0-4.712.013-7.065Z" /><path fill="#fff" d="M27.742 13.122c.413.016.827.035 1.243.054a65.438 65.438 0 0 1-.01 5.012c-.413.019-.824.038-1.234.054q-.004-2.562.001-5.12Zm0 6.039c.413.019.83.041 1.25.064a89.23 89.23 0 0 1 0 4.989l-1.25.076q-.005-2.566 0-5.129Z" /></svg> Write To OneNote </button>
+            </div>
+            @if (isLoading)
+            {
+                <p>Uploading...</p>
+            }
+
+            <div class="textbox">
+                @if (isSummarising)
+                {
+                    <p>Summarising...</p>
+                    <FluentProgressRing></FluentProgressRing>
+                }
+
+                else if (isWriting)
+                {
+                    <p>Writing to OneNote...</p>
+                    <FluentProgressRing></FluentProgressRing>
+                    <h3>Summary:</h3>
+                    <p>@summary</p>
+                }
+
+                else if (!string.IsNullOrEmpty(summary))
+                {
+                    <h3>Summary:</h3>
+                    <p>@summary</p>
+                }
+            </div>
+
+        </div>
+
+
+
+    </Authorized>
+
+    <NotAuthorized>
+        <RedirectToLogin />
+    </NotAuthorized>
+
+</AuthorizeView>
+
+<div class="chat-bot">
+    <Chat />
+</div>
+
+@code{
+
+    //ToDo:
+    //    1.  Return tuple instead for PDF/DOC/ppt to refactor
+    //    2. Apply error handling to GetContent so folders not clicked
+    //    3. Clean up the AI function too bulky
+
+
+    [CascadingParameter]
+    protected Task<AuthenticationState>? authenticationStateTask { get; set; }
+    private FluentDialog? MyFluentDialog;
+    public bool Modal = true;
+    private GraphServiceClient? graphClient;
+    private List<DriveItem> data_response = new List<DriveItem>();
+    protected const string path = "/me/drive/items/";
+    protected string driveId = "";
+    protected string itemId = "";
+    protected string summary = "";
+    protected bool uploadMethod = true; // true for file upload, false for M365
+
+    //File Upload variables
+    private List<IBrowserFile> loadedFile = new();
+    private long maxFileSize = 1024 * 100000;
+    private int maxAllowedFiles = 1;
+    private bool isLoading;
+    private bool isSummarising;
+    private bool isWriting;
+    private bool noSummary = true;
+
+    FluentTab? changedto;
+    private string dropClass = "";
+    public string fileName = "";
+
+    private async void HandleOnTabChange(FluentTab tab)
+    {
+        changedto = tab;
+        if (tab.Text == "Upload from OneDrive")
+        {
+            uploadMethod = false;
+            await listFiles();
+        }
+    }
+
+    private void HandleDragEnter()
+    {
+        dropClass = "dropzone-drag";
+    }
+
+    private void HandleDragLeave()
+    {
+        dropClass = "";
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            MyFluentDialog!.Hide();
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await listFiles();
+    }
+
+    private async void OnOpen()
+    {
+        MyFluentDialog!.Show();
+        Console.WriteLine("Clicked");
+        //uploadMethod = false;
+        //await listFiles();
+
+    }
+
+    private void OnDismiss(DialogEventArgs args)
+    {
+        if (args is not null && args.Reason is not null && args.Reason == "dismiss")
+        {
+            MyFluentDialog!.Hide();
+        }
+    }
+
+    // Loading files
+    private void LoadFile(InputFileChangeEventArgs e)
+    {
+        isLoading = true;
+        loadedFile.Clear();
+
+        foreach (var file in e.GetMultipleFiles(maxAllowedFiles))
+        {
+            loadedFile.Add(file);
+            fileName = file.Name;
+        }
+
+        isLoading = false;
+        MyFluentDialog!.Hide();
+    }
+
+
+    // apply error handling to not click on folders
+    // Can do regex to check if path is folder
+    protected void GetContent(string path, string name)
+    {
+
+        Console.WriteLine("Clicked on: " + path);
+        itemId = path;
+        fileName = name;
+        MyFluentDialog!.Hide();
+
+    }
+
+    public async Task<Stream> ConvertToStream(IBrowserFile file)
+    {
+        var memoryStream = new MemoryStream();
+        await file.OpenReadStream(maxFileSize).CopyToAsync(memoryStream);
+        memoryStream.Seek(0, SeekOrigin.Begin);
+        return memoryStream;
+    }
+
+
+    private async Task SummariseFile()
+    {
+        summary = "";
+        var content = "";
+        isSummarising = true; // Set the flag to indicate that summarization is in progress
+
+        if (uploadMethod)
+        {
+            if (loadedFile.Count == 0)
+            {
+                isSummarising = false;
+                return;
+            }
+
+            // Read the content of the file
+            var file = loadedFile[0];
+            Stream stream = await ConvertToStream(file);
+            fileName = file.Name;
+            content = ExtractTextFromStream(stream);
+
+            Console.WriteLine("Extracted text");
+        }
+
+        else
+        {
+            if (authenticationStateTask == null)
+            {
+                throw new AuthenticationException(
+                    "Unable to access authentication state");
+            }
+
+            var user = (await authenticationStateTask).User;
+            var contentStream = await graphClient.Drives[driveId].Items[itemId].Content.GetAsync();
+            content = ExtractTextFromStream(contentStream);
+            var fileItem = await graphClient.Drives[driveId].Items[itemId].GetAsync();
+            fileName = fileItem.Name;
+
+            Console.WriteLine("Got text response");
+        }
+
+
+        await SummariseText(content);
+        noSummary = false;
+        isSummarising = false;
+        Console.WriteLine(summary);
+    }
+
+
+    // Event handler for the "Summarise" button click
+    protected async Task SummariseText(string content)
+    {
+
+        // Perform summarization until the overall summary is less than 3000 characters
+        var summaries = new List<string>();
+        var overallSummary = "";
+        Console.WriteLine("Inside ai: " + content);
+
+        // Split the content into smaller chunks
+        var chunkSize = 750; // Adjust this value as per your model's character limit
+        var chunks = SplitContentIntoChunks(content, chunkSize);
+
+        // Perform summarization for each chunk
+        foreach (var chunk in chunks)
+        {
+            string prompt = $"Summarise the following text in a professional and business like manner and in extreme detail (Include any equations mentioned):\n\n{chunk}\n";
+            //Console.Write($"Input: {prompt}\n");
+
+            var completionsResponse = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, prompt);
+            var completion = completionsResponse.Value.Choices[0].Text;
+            //Console.Write($"Completion: {completion}\n");
+            summaries.Add(completion);
+            string finish = $"Keep summarising in extreme detail:\n\n{prompt}\n\nGave summary:\n\n{completion}";
+            var completionsResponseFinish = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish);
+            var completionFinish = completionsResponseFinish.Value.Choices[0].Text;
+            //Console.Write($"Completion: {completionFinish}\n");
+            summaries.Add(completionFinish);
+            string finish2 = $"Keep summarising in extreme detail:\n\n{prompt}\n\nGave summary:\n\n{completionFinish}";
+            var completionsResponseFinish2 = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish2);
+            var completionFinish2 = completionsResponseFinish2.Value.Choices[0].Text;
+            //Console.Write($"Completion: {completionFinish}\n");
+            summaries.Add(completionFinish2);
+        }
+
+        // Combine the individual summaries into an overall summary
+        overallSummary = string.Join(" ", summaries);
+
+        //Break the loop if the overall summary exceeds 2500 characters
+        if (overallSummary.Length >= 5000)
+        {
+            summaries.Clear();
+
+            string prompt = $"This summary is slightly too long, please rewrite without losing any detail but in a more concise way:\n\n{overallSummary}\n";
+            //Console.Write($"Input: {prompt}\n");
+            var completionsResponse = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, prompt);
+            var completion = completionsResponse.Value.Choices[0].Text;
+            //Console.Write($"Completion: {completion}");
+            summaries.Add(completion);
+            string finish = $"Keep summarising in extreme detail:\n\n{prompt}\n\nGave summary:\n\n{completion}";
+            var completionsResponseFinish = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish);
+            var completionFinish = completionsResponseFinish.Value.Choices[0].Text;
+            //Console.Write($"Completion: {completionFinish}\n");
+            summaries.Add(completionFinish);
+            string finish2 = $"Keep summarising in extreme detail:\n\n{prompt}\n\nGave summary:\n\n{completionFinish}";
+            var completionsResponseFinish2 = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish2);
+            var completionFinish2 = completionsResponseFinish2.Value.Choices[0].Text;
+            //Console.Write($"Completion: {completionFinish}\n");
+            summaries.Add(completionFinish2);
+        }
+
+        //Break the loop if the overall summary exceeds 2500 characters
+        else if (overallSummary.Length <= 500)
+        {
+            summaries.Clear();
+
+            string prompt = $"This summary is slightly too short, please rewrite without losing any detail but in a more easy to understand way, including any extra details that would help:\n\n{overallSummary}\n";
+            //Console.Write($"Input: {prompt}\n");
+            var completionsResponse = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, prompt);
+            var completion = completionsResponse.Value.Choices[0].Text;
+            //Console.Write($"Completion: {completion}");
+            summaries.Add(completion);
+            string finish = $"Keep summarising:\n\n{prompt}\n\nGave summary:\n\n{completion}";
+            var completionsResponseFinish = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish);
+            var completionFinish = completionsResponseFinish.Value.Choices[0].Text;
+            //Console.Write($"Completion: {completionFinish}\n");
+            summaries.Add(completionFinish);
+            string finish2 = $"Keep summarising in extreme detail:\n\n{prompt}\n\nGave summary:\n\n{completionFinish}";
+            var completionsResponseFinish2 = await OpenAIService.client.GetCompletionsAsync(OpenAIService.engine, finish2);
+            var completionFinish2 = completionsResponseFinish2.Value.Choices[0].Text;
+            //Console.Write($"Completion: {completionFinish}\n");
+            summaries.Add(completionFinish2);
+        }
+
+        overallSummary = string.Join(" ", summaries);
+        summaries.Clear();
+        summary = overallSummary;
+        Console.WriteLine("Generated AI summary");
+
+    }
+
+    // Helper method to split the content into smaller chunks
+    private IEnumerable<string> SplitContentIntoChunks(string content, int chunkSize)
+    {
+        var sentences = content.Split('.', '!', '?');
+        var currentChunk = new StringBuilder();
+
+        foreach (var sentence in sentences)
+        {
+            if (currentChunk.Length + sentence.Length + 1 <= chunkSize)
+            {
+                currentChunk.Append(sentence).Append('.');
+            }
+            else
+            {
+                yield return currentChunk.ToString();
+                currentChunk.Clear().Append(sentence).Append('.');
+            }
+        }
+
+        if (currentChunk.Length > 0)
+        {
+            yield return currentChunk.ToString();
+        }
+    }
+
+    // Maybe return tuple instead
+    protected string ExtractTextFromStream(Stream input)
+    {
+        string text = "";
+
+        if (IsPDF(input))
+        {
+            text = ExtractTextFromPDF(input);
+            Console.WriteLine("Is PDF");
+        }
+        else if (IsWordDocument(input))
+        {
+            text = ExtractTextFromWord(input);
+            Console.WriteLine("Is Word");
+        }
+        else if (IsPowerPointDocument(input))
+        {
+            text = ExtractTextFromPowerPoint(input);
+            Console.WriteLine("Is PPT");
+        }
+
+        return text;
+    }
+
+    private bool IsPDF(Stream stream)
+    {
+        try
+        {
+            var document = new GcPdfDocument();
+            document.Load(stream);
+            return true;
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    public string ExtractTextFromPDF(Stream stream)
+    {
+
+        var document = new GcPdfDocument();
+        document.Load(stream);
+        var text = document.GetText();
+
+        return text;
+    }
+
+    private bool IsWordDocument(Stream stream)
+    {
+        try
+        {
+            using (var document = WordprocessingDocument.Open(stream, false))
+            {
+                return true;
+            }
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    private string ExtractTextFromWord(Stream stream)
+    {
+        var text = "";
+
+        using (var document = WordprocessingDocument.Open(stream, false))
+        {
+            var body = document.MainDocumentPart.Document.Body;
+            text = body.InnerText;
+        }
+
+        return text;
+    }
+
+    private bool IsPowerPointDocument(Stream stream)
+    {
+        try
+        {
+            using (var presentation = PresentationDocument.Open(stream, false))
+            {
+                return true;
+            }
+        }
+        catch
+        {
+            return false;
+        }
+    }
+
+    private string ExtractTextFromPowerPoint(Stream stream)
+    {
+        var text = "";
+
+        using (var presentation = PresentationDocument.Open(stream, false))
+        {
+            var slideText = "";
+
+            foreach (var slidePart in presentation.PresentationPart.SlideParts)
+            {
+                var slide = slidePart.Slide;
+                var paragraphs = slide.Descendants<DocumentFormat.OpenXml.Drawing.Paragraph>();
+
+                foreach (var paragraph in paragraphs)
+                {
+                    slideText += paragraph.InnerText + " ";
+                }
+            }
+
+            text = slideText.Trim();
+        }
+
+        return text;
+    }
+
+
+    protected async Task listFiles()
+    {
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+                "Unable to access authentication state");
+        }
+
+        // Get the user
+        var user = (await authenticationStateTask).User;
+
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+        var driveItem = await graphClient.Me.Drive.GetAsync();
+        driveId = driveItem.Id;
+
+        // List children in the drive
+        var files = await graphClient.Drives[driveId].Items["root"].Children.GetAsync();
+        Console.WriteLine("Getting files...");
+        data_response = files.Value;
+        StateHasChanged();
+
+        // The type of files is Microsoft.Graph.Models.DriveItem
+    }
+
+    private async Task WriteToOneNote()
+    {
+        if (summary == "")
+        {
+            noSummary = true;
+            return;
+        }
+        noSummary = false;
+        if (fileName == "")
+        {
+            fileName = "summary";
+        }
+        isWriting = true; // Set the flag to indicate that writing to OneNote is in progress
+        var user = (await authenticationStateTask).User;
+        graphClient = clientFactory.GetAuthenticatedClient();
+        var requestBody = new Notebook
+        {
+            //set the displayName to the name of the uploaded file witha unique ID
+            DisplayName = $"{fileName} {DateTime.Now.ToString("yyyyMMddHHmmss")}"
+        };
+        var result = await graphClient.Me.Onenote.Notebooks.PostAsync(requestBody);
+
+        // Get the ID of the newly created notebook
+        var notebookId = result.Id;
+        // create a new section in the notebook
+        var section = new OnenoteSection
+        {
+            DisplayName = "Summarised Notes"
+        };
+        var sectionResult = await graphClient.Me.Onenote.Notebooks[notebookId].Sections.PostAsync(section);
+        // Get the ID of the newly created section
+        var sectionId = sectionResult.Id;
+
+        // Create the title of the page
+        string pageTitle = $"Summary of {fileName}";
+
+        // Create the HTML body content
+        string htmlContent = "<!DOCTYPE html>\n" +
+                              "<html>\n" +
+                              "    <head>\n" +
+                              "         <title>" + pageTitle + "</title>\n" +
+                              "         <meta name=\"" + pageTitle + $"\" content=\"{DateTime.Now.ToString("yyyy-MM-dd")}T{DateTime.Now.ToString("HH:mm:ss")}Z\" />\n" +
+                              "     </head>\n" +
+                              "     <body>\n" +
+                              "         <p>" + summary + "</p>\n" +
+                              "     </body>\n" +
+                              "</html>";
+
+        // Convert the HTML string to a byte array using UTF-8 encoding
+        byte[] contentBytes = Encoding.UTF8.GetBytes(htmlContent);
+
+        // Create multipart object with the relevant content
+        var multipartContent = new MultipartFormDataContent();
+        var htmlString = htmlContent;
+        var presentation = new StringContent(htmlString, Encoding.UTF8, "text/html");
+        multipartContent.Add(presentation, "Presentation");//needs a name
+
+        // We can add more httpcontent instance here if we wish to
+
+        // create a request information instance and make a request.
+        var requestInformation = graphClient.Me.Onenote.Sections[sectionId].Pages.ToGetRequestInformation();
+        requestInformation.Headers.Add("Content-Type", multipartContent.Headers.ContentType.ToString());
+        requestInformation.HttpMethod = Method.POST;
+        requestInformation.Content = await multipartContent.ReadAsStreamAsync();
+        var errorMapping = new Dictionary<string, ParsableFactory<IParsable>> {
+              {"4XX", ODataError.CreateFromDiscriminatorValue},
+              {"5XX", ODataError.CreateFromDiscriminatorValue},
+            };
+        var pageResult = await graphClient.RequestAdapter.SendAsync<OnenotePage>(requestInformation, OnenotePage.CreateFromDiscriminatorValue, errorMapping);
+        isWriting = false; // Set the flag to indicate that writing to OneNote is complete
+        Console.WriteLine("Done");
+    }
+}

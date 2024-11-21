@@ -1,0 +1,936 @@
+@page "/overview/{ids}"
+@using System.Security.Authentication
+@using Microsoft.Graph
+@using Microsoft.Graph.Models
+@using TimeZoneConverter
+@using Microsoft.Fast.Components.FluentUI
+
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+
+
+<AuthorizeView>
+    <Authorized>
+            <link href="https://cdn.jsdelivr.net/npm/@@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
+            <link href="GraphSample.styles.css" rel="stylesheet">
+            <link href="Overview.razor.css" rel="stylesheet">
+            <link rel="stylesheet" href="~/@(nameof(GraphSample)).styles.css" />
+
+            <div class="groupSec">
+                <div class="seeGroups">
+                    <FluentSelect Id="state" name="state" TOption="GroupItem" @onchange="UpdateGroup" @bind-Value="selectedGroupValue">
+                        <FluentOption Selected="true" Value="@null">All</FluentOption>
+                        @foreach (var group in myGroups)
+                        {
+                            <FluentOption Value="@(group.mailName+';'+group.teamName+';'+group.calName)">@group.Name</FluentOption>
+                        }
+                    </FluentSelect>
+
+                </div>
+
+                <div class="addGroup">
+                    <div class="groupSettings">
+
+                        <div class="nameBox">
+                            <FluentTextField Style="z-index: 20;" @bind-Value=placename Placeholder="Group Name"></FluentTextField>
+                        </div>
+
+                        <div class="searchBoxes">
+                            <FluentSearch @ref=mailSearchTest
+                                          @oninput=handleMailSearchInput
+                                          @onchange=handleMailSearchInput
+                                          @bind-Value="@mailListValue"
+                                          Placeholder="Mailing account" />
+                            <br />
+                            <FluentListbox Items=@mailResults TOption="string" SelectedOptionChanged="@(e => mailListValue = (e != defaultResultsText ? e : string.Empty) )" />
+                        </div>
+
+                        <div class="searchBoxes">
+                            <FluentSearch @ref=teamSearchTest
+                                          @oninput=handleTeamSearchInput
+                                          @onchange=handleTeamSearchInput
+                                          @bind-Value="@teamNameValue"
+                                          Placeholder="Team Chat" />
+                            <br />
+                            <FluentListbox Items=@teamResults TOption="string" SelectedOptionChanged="@(e => teamNameValue = (e != defaultResultsText ? e : string.Empty) )" />
+                        </div>
+
+                        <div class="searchBoxes">
+                            <FluentSearch @ref=calSearchTest
+                                          @oninput=handleCalSearchInput
+                                          @onchange=handleCalSearchInput
+                                          @bind-Value="@calendarValue"
+                                          Placeholder="Calendar" />
+                            <br />
+                            <FluentListbox Items=@calResults TOption="string" SelectedOptionChanged="@(e => calendarValue = (e != defaultResultsText ? e : string.Empty) )" />
+                        </div>
+                    </div>
+
+                    <div class="groupAdd">
+                        <FluentButton Appearance="Appearance.Accent" @onclick="() => addToGroup(mailListValue, teamNameValue, calendarValue)">Add Filter</FluentButton>
+                    </div>
+                </div>
+            </div>
+
+          
+            <div class="mainContent">
+                <div class="emailTeamsSection">
+                    <FluentTabs ActiveId="myActiveId" OnTabChange="HandleOnTabChange">
+                        <FluentTab Text="Mail" />
+                        <FluentTab Text="Teams" />
+                        <FluentTab Text="Chats" />
+
+                        @* OUTLOOK TAB *@
+                        <FluentTabPanel>
+                            <div class="mailPage">
+                                <div class="emailBar">
+                                    <div class="emailSelect">
+                                        @foreach (var mail in myMessages)
+                                        {
+                                            <div class="emailGap"></div>
+                                            <div class="emailSelectBox" @onclick="() => ToggleMail(mail)">
+                                                <div class="emailData">
+                                                    <p class="sender">@mail?.Sender?.EmailAddress?.Name</p>
+                                                    <p class="subject">@mail?.Subject</p>
+                                                    <p class="content">@mail?.BodyPreview</p>
+                                                </div>
+
+
+                                                <div class="emailRight">
+                                                    <div class="emailRightData">
+                                                        <div class="timing">3:30PM</div>
+                                                        @if (@mail?.IsRead == false) {<span class="dotOn">&nbsp;</span> }
+                                                        else { <span class="dotOff">&nbsp;</span>}
+                                                    </div>
+
+                                                    <div class="emailInteraction">
+                                                        <button class="btn2 btn-delete2" @onclick="() => deleteMail(currentEmail)">
+                                                            <span class="mdi mdi-delete mdi-16px"></span>
+                                                            <span class="mdi mdi-delete-empty mdi-16px"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+
+                                <div class="emailDisplay">
+                                    @if (currentEmail != null)
+                                    {
+                                        <div class="emailDisplayContent">
+                                            <div class="heading">
+                                                <div class="ccDetails">
+                                                    <p class="subject">@currentEmail?.Subject</p>
+                                                    <p class="sender">From: @currentEmail?.Sender?.EmailAddress?.Name</p>
+                                                    <p class="recipient">To: @currentEmail?.ToRecipients?[0].EmailAddress?.Address</p>
+                                                </div>
+
+                                                <div class="emailInteraction">
+                                                    <button class="btn2 btn-delete2" @onclick="() => deleteMail(currentEmail)">
+                                                         <span class="mdi mdi-delete mdi-16px"></span>
+                                                         <span class="mdi mdi-delete-empty mdi-16px"></span>
+                                                    </button>
+                                                    <button class="btn2 btn-delete2" @onclick="() => replyToEmail(true)">
+                                                         <span class="mdi mdi-reply-outline mdi-16px"></span>
+                                                         <span class="mdi mdi-reply mdi-16px"></span>
+                                                    </button>
+                                                    <button class="btn2 btn-delete2" @onclick="() => replyToEmail(true)">
+                                                        <span class="mdi mdi-reply-all-outline mdi-16px"></span>
+                                                        <span class="mdi mdi-reply-all mdi-16px"></span>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="body">@((MarkupString)currentEmail?.Body?.Content)</div>
+                                            </div>
+
+                                            <div class="emailReply" hidden="@(!emailReply)">
+                                                
+                                                <div class="heading">
+                                                    <div class="replyDetails">
+                                                        <div class="replyContent">
+                                                            <p class="subject">Re: @currentEmail?.Subject</p>
+                                                            <p class="recipient">To: @currentEmail?.Sender?.EmailAddress?.Name</p>
+                                                        </div>
+                                                        <button class="btn2 btn-delete2" @onclick="() => replyToEmail(false)">
+                                                            <span class="mdi mdi-close mdi-20px"></span>
+                                                            <span class="mdi mdi-close-outline mdi-20px"></span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="emailResponseContent">
+                                                        <FluentTextArea style="width: 95%;" size="large" class="reponseBox" @bind-Value=emailContent></FluentTextArea>
+
+                                                        <div>
+                                                            <button class="btn2 btn-delete2" @onclick="() => sendEmail(currentEmail, emailContent)">
+                                                                <span class="mdi mdi-send-outline mdi-20px"></span>
+                                                                <span class="mdi mdi-send mdi-20px"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </FluentTabPanel>
+
+                        @* TEAMS TAB *@
+                        <FluentTabPanel>
+                            <div class="teamsPage">
+                                <div class="teamsBar">
+                                    @foreach (var team in myTeams)
+                                    {
+                                        <div class="teamsSelectBox" @onclick="() => ToggleTeam(team)">
+                                            <div class="teamName">&nbsp;@team?.DisplayName</div>
+                                        </div>
+                                    }
+                                </div>
+
+                                <div class="channelBar">
+                                        @foreach (var channel in myChannels)
+                                        {
+                                            <div class="channelSelectBox" @onclick="() => {ToggleChannel(channel); displayChannelData(); }">
+                                                <div class="channelName">&nbsp;@channel?.DisplayName</div>
+                                            </div>
+                                        }
+                                </div>
+
+                                <div class="teamChatBar">
+                                    @if (currentChannel != null)
+                                    {
+                                        <div class="teamsMessageBlock">
+                                            <ul class="nestedMessages">
+                                                @foreach (var full in fullPage)
+                                                {
+                                                    <li class="teamMessageBlock">
+                                                        <div class="teamChatInital">
+                                                            <div class="details">
+                                                                <div class="teamChatName">@full?.mainMessage?.From?.User?.DisplayName</div>
+                                                                <div>@full?.mainMessage?.CreatedDateTime</div>
+                                                                @if (full?.mainMessage?.DeletedDateTime != null) { <div class="teamChatContent"><i>This message has been deleted</i></div> }
+                                                                else { <div class="teamChatContent">@((MarkupString)full?.mainMessage?.Body?.Content)</div> }
+                                                            </div>
+
+                                                            <div class="interact">
+                                                                @if (full?.mainMessage?.From.User.Id == myID)
+                                                                {
+                                                                    <button class="btn2 btn-delete2" @onclick="() => delChannelMessage(full?.mainMessage)">
+                                                                        <span class="mdi mdi-delete mdi-16px"></span>
+                                                                        <span class="mdi mdi-delete-empty mdi-16px"></span>
+                                                                    </button>
+                                                                }
+                                                                <button class="btn2 btn-delete2" @onclick="() => replyToChannelMsg(true)">
+                                                                    <span class="mdi mdi-reply-outline mdi-16px"></span>
+                                                                    <span class="mdi mdi-reply mdi-16px"></span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <ul>
+                                                            @foreach (var reply in full?.replies)
+                                                            {
+                                                                <li>
+                                                                    <div class="teamReplySection">
+                                                                        <div class="teamChatName">@reply?.From?.User?.DisplayName</div>
+                                                                        <div>@reply?.CreatedDateTime</div>
+
+                                                                        @if (reply?.DeletedDateTime != null) { <div class="teamChatContent"><i>This message has been deleted</i></div> }
+                                                                        else { <div class="teamChatContent">@((MarkupString)reply?.Body?.Content)</div> }
+                                                                        
+                                                                    </div>
+                                                                </li>
+                                                            }
+                                                        </ul>
+                                                    </li>
+                                                }
+                                            </ul>
+                                            <div class="teamInteract" hidden="@(!newChannelMessageBool)">
+
+                                                <FluentTextArea @bind-Value=newChannelMessageContent style="width: 95%;" size="large"></FluentTextArea>
+
+                                                <div class="teamMsgInteract">
+                                                    <button class="btn2 btn-delete2" @onclick="() => sendChannelMessage(false)">
+                                                        <span class="mdi mdi-close mdi-20px"></span>
+                                                        <span class="mdi mdi-close-outline mdi-20px"></span>
+                                                    </button>
+
+                                                    <button class="btn2 btn-delete2" @onclick="() => newChannelMessage(newChannelMessageContent)">
+                                                        <span class="mdi mdi-send-outline mdi-20px"></span>
+                                                        <span class="mdi mdi-send mdi-20px"></span>
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                            <span class="mdi mdi-plus-circle" style="color: blue; font-size: 40px;" @onclick="() => sendChannelMessage(true)" hidden="@newChannelMessageBool"></span>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </FluentTabPanel>
+
+                        @* CHATS TAB *@
+                        <FluentTabPanel>
+                            <div class="chatsPage">
+                                <div class="mypChats">
+                                    @foreach (var myChat in myChats)
+                                    {
+                                        @if(myChat?.Topic == null)
+                                        {
+                                            <div class="chatSelectBox">
+                                                <div class="chatName">@myChat?.ChatType</div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="chatSelectBox">
+                                                <div class="chatName">@myChat?.Topic</div>
+                                            </div>
+                                        }
+                                    }
+                                </div>
+
+                                <div class="myChatBar">
+
+                                </div>
+
+                            </div>
+
+                        </FluentTabPanel>
+
+                    </FluentTabs>
+                </div>
+
+                <div class="calendarSection">
+                    @foreach (var calendarEvent in myEvents)
+                    {
+                        <div class="event">
+                            <p class="subject">@calendarEvent?.Subject</p>
+
+                            <div class="timing">
+                                <p class="date">@FormatIso8601DateTime(calendarEvent?.Start?.DateTime).Substring(0, 10)</p>
+                                    <p class="time">@FormatIso8601DateTime(calendarEvent?.Start?.DateTime).Substring(11, 5) - @FormatIso8601DateTime(calendarEvent?.Start?.DateTime).Substring(11, 5)</p>
+                            </div>
+
+                            <p class="organiser">@calendarEvent?.Organizer?.EmailAddress?.Name</p>
+
+                        </div>
+                    }
+                </div>
+            </div>
+
+    </Authorized>
+
+    <NotAuthorized>
+        <RedirectToLogin />
+    </NotAuthorized>
+
+</AuthorizeView>
+
+
+<div class="chat-bot">
+    <Chat />
+</div>
+
+@code{
+    [Parameter]
+    public string ids{ get; set; }
+
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+
+    private GraphServiceClient? graphClient;
+    private string? myID;
+
+    private string? dateTimeFormat;
+    private string? oldData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+                "Unable to access authentication state");
+        }
+
+        if (ids != null) { await initialLayout(); }
+
+        graphClient = clientFactory.GetAuthenticatedClient();
+        var me = await graphClient.Me.GetAsync();
+        myID = me?.Id;
+        await refreshContent(4);
+    }
+
+    /*
+    * REFRESH EVERY 10s
+    */
+    private static System.Timers.Timer _timer;
+    private int counter = 60;
+
+    protected override void OnInitialized()
+    {
+        StartTimer();
+    }
+
+    public void StartTimer()
+    {
+        _timer = new System.Timers.Timer(5000);
+        _timer.Elapsed += CountDownTimer;
+        _timer.Enabled = true;
+    }
+
+    public async void CountDownTimer(Object source, System.Timers.ElapsedEventArgs e)
+    {
+        if (counter > 0)
+        {
+            counter -= 1;
+        }
+        else
+        {
+            _timer.Enabled = false;
+        }
+
+        await refreshContent(4);
+    }
+
+    public async Task initialLayout()
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+        string idss = ids;
+        string[] idArray = idss.Split('=', 2);
+
+        if (idArray[0] == "mailid")
+        {
+            myActiveId = "Mail";
+            var initMail = await graphClient.Me.Messages[idArray[1]].GetAsync();
+            currentEmail = initMail;
+        }
+        else if (idArray[0] == "teamid")
+        {
+            myActiveId = "Teams";
+            var initTeam = await graphClient.Teams[idArray[1]].GetAsync();
+            currentTeam = initTeam;
+        }
+        StateHasChanged();
+    }
+
+    /*
+    * Refresh the screen
+    */
+    public async Task refreshContent(int page)
+    {
+        if (page == 0)      { await getMail(mailQuery); }
+        else if (page == 1)
+        {
+            //await getTeams(teamQuery);
+            //await getChannels();
+            await displayChannelData();
+        }
+        else if (page == 2) { await getChats("hi"); }
+        else if (page == 3) { }
+        else
+        {
+            await getMail(mailQuery);
+            await getTeams(teamQuery);
+            await getChats("hi");
+        }
+        await getCal(calQuery);
+        StateHasChanged();
+    }
+
+    /*
+    * GET MAIL EVENTS
+    */
+    /* MAIL LIST */
+    private IList<Message> myMessages = new List<Message>();
+
+    /* ASYNCHRONOUSLY GET MAIL */
+    public async Task getMail(string addresses)
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+        var result = await graphClient.Me.MailFolders.GetAsync();
+
+        var mailPage = await graphClient.Me
+            .MailFolders["Inbox"]
+            .Messages
+            .GetAsync(config =>
+            {
+                //config.Headers.Add("Prefer", "outlook.body-content-type='text'");
+                //config.Headers.Add("Prefer", $"outlook.timezone=\"{graphTimeZone}\"");
+
+                if (addresses != "All") { config.QueryParameters.Filter = "(from/emailAddress/address) eq '" + addresses; }
+
+                config.QueryParameters.Select = new string[] { "subject", "sender", "body", "isRead", "bodyPreview" };
+                //config.QueryParameters.Orderby = new string[] { "receivedDateTime desc" };
+            });
+
+        /*
+        * Set to non-async variable. Can then be accessed in html.
+        */
+        myMessages = mailPage?.Value ?? new List<Message>();
+    }
+
+    // REPLY TO EMAILS    
+    string? emailContent;
+    private bool emailReply { get; set; } = false;
+    private void replyToEmail(bool change) { emailReply = change; }
+
+    public async void sendEmail(Message originEmail, string content)
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+        var recipients = originEmail.ToRecipients;
+        var mainAddress = originEmail?.Sender?.EmailAddress?.Address;
+
+        if (recipients == null) { recipients = new List<Recipient> { new Recipient { EmailAddress = new EmailAddress { Address = mainAddress, }, }, }; }
+        else
+        {
+            var mainAddressSend = new Recipient { EmailAddress = new EmailAddress { Address = mainAddress, }, };
+            recipients.Add(mainAddressSend);
+        }
+
+        var requestBody = new Microsoft.Graph.Me.Messages.Item.Reply.ReplyPostRequestBody
+        {
+            Message = new Message
+            {
+                ToRecipients = recipients,
+            },
+            Comment = content,
+        };
+        emailContent = String.Empty;
+        emailReply = false;
+
+        await graphClient.Me.Messages[originEmail?.Id].Reply.PostAsync(requestBody);
+        await refreshContent(1);
+    }
+
+    public async Task deleteMail(Message email)
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+        await graphClient.Me.Messages[email.Id].DeleteAsync();
+
+        if(email == currentEmail) { currentEmail = null; }
+        await refreshContent(0);
+    }
+
+    /*
+    * GET TEAM EVENTS
+    */
+    /* TEAMS LIST */
+    private IList<Team> myTeams = new List<Team>();
+
+    /* ASYNCHRONOUSLY GET TEAMS */
+    public async Task getTeams(string addresses)
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+        var teamPage = await graphClient.Me.JoinedTeams.GetAsync();
+        myTeams = teamPage?.Value ?? new List<Team>();
+    }
+
+    /*
+    * GET CHANNEL EVENTS
+    */
+    /* CHANNEL LIST */
+    private IList<Channel> myChannels = new List<Channel>();
+
+    /* ASYNCHRONOUSLY GET CHANNELS */
+    public async Task getChannels()
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+        var channelPage = await graphClient.Teams[currentTeam.Id].Channels.GetAsync();
+        myChannels = channelPage?.Value ?? new List<Channel>();
+    }
+
+    /*
+    * GET ALL CHANNEL CHATS
+    */
+    public class messageBlock
+    {
+        public ChatMessage? mainMessage { get; set; }
+        public IList<ChatMessage>? replies { get; set; }
+    }
+
+    private IList<messageBlock> fullPage = new List<messageBlock>();
+    private IList<ChatMessage> myConvos = new List<ChatMessage>();
+    private IList<ChatMessage> myReplies = new List<ChatMessage>();
+
+    public async Task displayChannelData()
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+        var fullPageLocal = new List<messageBlock>();
+
+        if (currentChannel != null)
+        {
+            var convoPageTest = await graphClient.Teams[currentTeam.Id].Channels[currentChannel.Id].Messages.GetAsync();
+            myConvos = convoPageTest?.Value ?? new List<ChatMessage>();
+
+            foreach (var conversation in myConvos)
+            {
+                var replyPageTest = await graphClient.Teams[currentTeam.Id].Channels[currentChannel.Id].Messages[conversation.Id].Replies.GetAsync();
+                myReplies = replyPageTest?.Value ?? new List<ChatMessage>();
+
+                fullPageLocal.Add(new messageBlock { mainMessage = conversation, replies = myReplies });
+            }
+        }
+
+        fullPageLocal.Reverse();
+        fullPage = fullPageLocal;
+        await refreshContent(1);
+    }
+
+    // Create new channel message
+    string? newChannelMessageContent;
+    private bool newChannelMessageBool { get; set; } = false;
+    private void sendChannelMessage(bool change) { newChannelMessageBool = change; }
+
+    public async void newChannelMessage(string content)
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+        var requestBody = new ChatMessage
+        {
+            Body = new ItemBody
+            {
+                Content = content,
+            },
+        };
+
+        newChannelMessageContent = String.Empty;
+        newChannelMessageBool = false;
+
+        var result = await graphClient.Teams[currentTeam.Id].Channels[currentChannel.Id].Messages.PostAsync(requestBody);
+        await refreshContent(1);
+    }
+
+    // Delete Channel message
+    public async void delChannelMessage(ChatMessage currMessage)
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+        await graphClient.Teams[currentTeam.Id].Channels[currentChannel.Id].Messages[currMessage.Id].SoftDelete.PostAsync();
+        await refreshContent(1);
+    }
+
+    // Reply to a message account
+    string? messageContent;
+    private bool messageReply { get; set; } = false;
+    private void replyToChannelMsg(bool change) { messageReply = change; }
+
+    public async void replyChannelMessage(ChatMessage currMessage)
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+        var requestBody = new ChatMessage
+        {
+            Body = new ItemBody
+            {
+                ContentType = BodyType.Html,
+                Content = "Hello World",
+            },
+        };
+        var result = await graphClient.Teams[currentTeam.Id].Channels[currentChannel.Id].Messages[currMessage.Id].Replies.PostAsync(requestBody);
+        await refreshContent(1);
+    }
+
+    /*
+    * GET PERSONAL CHATS
+    */
+    /* CHAT LIST */
+    private IList<Microsoft.Graph.Models.Chat> myChats = new List<Microsoft.Graph.Models.Chat>();
+    private IList<ChatMessage> myChatReplies = new List<ChatMessage>();
+
+    /* ASYNCHRONOUSLY GET CHATS */
+    public async Task getChats(string addresses)
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+        var chatPage = await graphClient.Me.Chats.GetAsync();
+
+        myChats = chatPage?.Value ?? new List<Microsoft.Graph.Models.Chat>();
+
+        foreach (var c in myChats)
+        {
+
+        }
+    }
+
+
+    /*
+    * GET CALENDAR EVENTS
+    */
+    /* EVENTS LIST */
+    private IList<Event> myEvents = new List<Event>();
+
+    /* ASYNCHRONOUSLY GET EVENTs */
+    public async Task getCal(string addresses)
+    {
+        // Get the user
+        //var user = (await authenticationStateTask).User;
+        //var graphTimeZone = user.GetUserGraphTimeZone();
+        //dateTimeFormat = $"{user.GetUserGraphDateFormat()} {user.GetUserGraphTimeFormat()}";
+
+        // Calculate the start and end of the current week in user's time zone
+        //var startOfWeek = GetUtcStartOfWeekInTimeZone(DateTime.Today, graphTimeZone);
+        //var endOfWeek = startOfWeek.AddDays(7);
+
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+        /*
+        * GET ALL CALENDAR EVENTS
+        */
+        /*var eventPage = await graphClient.Me
+        .CalendarView
+        .GetAsync(config =>
+        {
+        //config.Headers.Add("Prefer", $"outlook.timezone=\"{graphTimeZone}\"");
+        //config.QueryParameters.StartDateTime = startOfWeek.ToString("o");
+        //config.QueryParameters.EndDateTime = endOfWeek.ToString("o");
+        config.QueryParameters.Top = 50;
+        config.QueryParameters.Select = new[] { "subject", "organizer", "start", "end" };
+        config.QueryParameters.Orderby = new[] { "start/dateTime" };
+    });*/
+
+        var eventPage = await graphClient.Me.Calendar.Events.GetAsync();
+
+        myEvents = eventPage?.Value ?? new List<Event>();
+    }
+
+    /*
+    * NEW GROUP ADDED - UPDATE ASYNC
+    */
+    public string mailQuery { get; set; } = "All";
+    public string teamQuery { get; set; } = "All";
+    public string calQuery { get; set; } = "All";
+
+    async void UpdateGroup(ChangeEventArgs args)
+    {
+        if (args is not null && !string.IsNullOrWhiteSpace(args.Value.ToString()))
+        {
+            string searchTerm = args.Value.ToString()!.ToLower();
+            if (searchTerm == "all")
+            {
+                mailQuery = "All";
+                teamQuery = "All";
+                calQuery = "All";
+                await refreshContent(4);
+            }
+            else
+            {
+                mailQuery = searchTerm.Split(';')[0] + "'";
+                teamQuery = searchTerm.Split(';')[1] + "'";
+                calQuery = searchTerm.Split(';')[2] + "'";
+
+                await refreshContent(4);
+            }
+        }
+    }
+
+    /*
+    * DATE-TIME STUFF
+    */
+    private DateTime GetUtcStartOfWeekInTimeZone(DateTime today, string timeZoneId)
+    {
+        // Time zone returned by Graph could be Windows or IANA style
+        // TimeZoneConverter can take either
+        TimeZoneInfo userTimeZone = TZConvert.GetTimeZoneInfo(timeZoneId);
+
+        // Assumes Sunday as first day of week
+        int diff = System.DayOfWeek.Sunday - today.DayOfWeek;
+
+        // create date as unspecified kind
+        var unspecifiedStart = DateTime.SpecifyKind(today.AddDays(diff), DateTimeKind.Unspecified);
+
+        // convert to UTC
+        return TimeZoneInfo.ConvertTimeToUtc(unspecifiedStart, userTimeZone);
+    }
+
+    private string FormatIso8601DateTime(string? iso8601DateTime)
+    {
+        if (string.IsNullOrEmpty(iso8601DateTime))
+        {
+            return string.Empty;
+        }
+
+        // Load into a DateTime
+        var dateTime = DateTime.Parse(iso8601DateTime);
+
+        if (!string.IsNullOrWhiteSpace(dateTimeFormat))
+        {
+            // Format it using the user's settings
+            return dateTime.ToString(dateTimeFormat);
+        }
+
+        // Fallback to return original value
+        return iso8601DateTime;
+    }
+
+    /*
+    * HANDLE WHICH TAB IS BEING PRESENTED
+    */
+    string? myActiveId;
+    FluentTab? changedto;
+    private void HandleOnTabChange(FluentTab tab) { changedto = tab; }
+
+    /*
+    * SHOW THE DETAILS OF THE CURRENT EMAIL/TEAM/CHANNEL/CHAT
+    */
+    private Message currentEmail { get; set; } = null;
+    private async void ToggleMail(Message email)
+    {
+        graphClient = clientFactory.GetAuthenticatedClient();
+
+        currentEmail = (currentEmail == email) ? null : email;
+
+
+        //Set to read.
+        if(currentEmail?.IsRead == false)
+        {
+            var requestBody = new Message
+            {
+                IsRead = true,
+            };
+            await graphClient.Me.Messages[currentEmail.Id].PatchAsync(requestBody);
+            await getMail("All");
+            StateHasChanged();
+        }
+
+        emailContent = String.Empty;
+        emailReply = false;
+    }
+
+    private Team currentTeam { get; set; } = null;
+    private async void ToggleTeam(Team teamsChat)
+    {
+        currentTeam = (currentTeam == teamsChat) ? null : teamsChat;
+        currentChannel = null;
+        await getChannels();
+        StateHasChanged();
+    }
+
+    private Channel currentChannel { get; set; } = null;
+    private async void ToggleChannel(Channel channelChat)
+    {
+        currentChannel = (currentChannel == channelChat) ? null : channelChat;
+        StateHasChanged();
+    }
+
+    private Chat currentChat { get; set; } = null;
+    private void ToggleChat(Chat chat)
+    {
+        currentChat = (currentChat == chat) ? null : chat;
+    }
+
+    /*
+    * ALL INPUT BOXES TO CREATE GROUPS
+    * GETTING DATA FROM GRAPH TO FILL SEARCH BOXES
+    */
+    FluentSearch? mailSearchTest;
+    FluentSearch? teamSearchTest;
+    FluentSearch? calSearchTest;
+    string? mailListValue = string.Empty;
+    string? teamNameValue = string.Empty;
+    string? calendarValue = string.Empty;
+
+    List<string> searchData = new()
+    {
+        "ajp20@7qp7mb.onmicrosoft.com",
+        "Brendon",
+        "Charmaine",
+        "Indraneel",
+        "Konstantinos",
+        "Mahanoor"
+    };
+
+    List<string> mailResults = defaultResults();
+    List<string> teamResults = defaultResults();
+    List<string> calResults = defaultResults();
+    static string defaultResultsText = "no results";
+
+    static List<string> defaultResults()
+    {
+        return new() { defaultResultsText };
+    }
+
+    void handleMailSearchInput(ChangeEventArgs args)
+    {
+        if (args is not null && !string.IsNullOrWhiteSpace(args.Value.ToString()))
+        {
+            string searchTerm = args.Value.ToString()!.ToLower();
+
+            if (searchTerm.Length > 0)
+            {
+                List<string> temp = searchData.Where(str => str.ToLower().Contains(searchTerm)).Select(str => str).ToList();
+                if (temp.Count() > 0) { mailResults = temp; }
+            }
+        }
+        else
+        {
+            mailResults = defaultResults();
+            mailListValue = string.Empty;
+        }
+    }
+
+    void handleTeamSearchInput(ChangeEventArgs args)
+    {
+        if (args is not null && !string.IsNullOrWhiteSpace(args.Value.ToString()))
+        {
+            string searchTerm = args.Value.ToString()!.ToLower();
+
+            if (searchTerm.Length > 0)
+            {
+                List<string> temp = searchData.Where(str => str.ToLower().Contains(searchTerm)).Select(str => str).ToList();
+                if (temp.Count() > 0) { teamResults = temp; }
+            }
+        }
+        else
+        {
+            teamResults = defaultResults();
+            teamNameValue = string.Empty;
+        }
+    }
+
+    void handleCalSearchInput(ChangeEventArgs args)
+    {
+        if (args is not null && !string.IsNullOrWhiteSpace(args.Value.ToString()))
+        {
+            string searchTerm = args.Value.ToString()!.ToLower();
+
+            if (searchTerm.Length > 0)
+            {
+                List<string> temp = searchData.Where(str => str.ToLower().Contains(searchTerm)).Select(str => str).ToList();
+                if (temp.Count() > 0) { calResults = temp; }
+            }
+        }
+        else
+        {
+            calResults = defaultResults();
+            calendarValue = string.Empty;
+        }
+    }
+
+    /*
+    * CREATE LOCAL CLASS TO STORE GROUPS.
+    * ALSO SEND TO API MONGO DB
+    */
+    public class GroupItem
+    {
+        public string? Name { get; set; }
+        public string? mailName { get; set; }
+        public string? teamName { get; set; }
+        public string? calName { get; set; }
+    }
+
+    string? placename { get; set; } = string.Empty;
+    string? selectedGroupValue;
+    private List<GroupItem> myGroups = new();
+
+    void addToGroup(string m, string t, string c)
+    {
+        if (!string.IsNullOrWhiteSpace(placename) && !string.IsNullOrWhiteSpace(m) && !string.IsNullOrWhiteSpace(t) && !string.IsNullOrWhiteSpace(c))
+        {
+            myGroups.Add(new GroupItem { Name = placename, mailName = m, teamName = t, calName = c });
+        }
+    }
+
+
+}

@@ -1,0 +1,71 @@
+@inherits LayoutComponentBase
+
+@using System.Security.Authentication
+@using Microsoft.Graph
+@using Microsoft.Graph.Models
+@using TimeZoneConverter
+@inject GraphSample.Graph.GraphClientFactory clientFactory
+@inject NavigationManager NavigationManager
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using Microsoft.JSInterop
+@using Microsoft.Fast.Components.FluentUI
+
+@inject IJSRuntime JSRuntime
+
+
+
+<div class="page">
+    <main>
+        <div class="seperateNavBar">
+            <LoginDisplay />
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="outerSearch">
+            <GraphSample.Pages.UniversalSearch />
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code{
+    [CascadingParameter]
+    private Task<AuthenticationState>? authenticationStateTask { get; set; }
+    private GraphServiceClient? graphClient;
+
+    [Inject]
+    protected IAccessTokenProvider AccessTokenProvider { get; set; }
+    protected string? AccessToken { get; private set; }
+    public int count = 0;
+    public System.Security.Claims.ClaimsPrincipal user { get; set; }
+
+
+    [JSInvokable]
+    private async Task<String> GetAccessToken()
+    {
+        return this.AccessToken;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var tokenResult = await AccessTokenProvider.RequestAccessToken();
+        if (tokenResult.TryGetToken(out var accessToken))
+        {
+            AccessToken = accessToken.Value;
+            count += 1;
+        }
+        if (authenticationStateTask == null)
+        {
+            throw new AuthenticationException(
+            "Unable to access authentication state");
+        }
+        user = (await authenticationStateTask).User;
+        graphClient = clientFactory.GetAuthenticatedClient();
+        await JSRuntime.InvokeVoidAsync("mgtInterop.configureProvider", AccessToken);
+    }
+}
