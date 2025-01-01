@@ -1,0 +1,100 @@
+[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-planner-timeline",
+    "reponame": "tab-planner-timeline",
+    "source": "pnp",
+    "title": "Planner Timeline",
+    "shortDescription": "Teams tab to display a planner task in a vertical timeline.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-planner-timeline",
+    "longDescription": [
+      "Render a group plan in tab displaying the tasks in a vertical timeline. You can filters the task for all tasks (include completed tasks) or just active tasks and select the task bucket in for the plan.",
+      "You select the plan on the configuration page that tab will display the tasks from.",
+      "Each task has an (i), you can click on it to see the details of the task.",
+      "The tab uses the Microsoft Teams JavaScript SDK to interact with the Teams client and the Microsoft Graph to interact with the planner tasks."
+    ],
+    "creationDateTime": "2025-01-15",
+    "updateDateTime": "2025-01-15",
+    "products": [
+      "Teams",
+      "Teams Toolkit"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "solution"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "spa"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "teamstoolkit"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,        
+        "url": "https://github.com/pnp/teams-dev-samples/raw/main/samples/tab-planner-timeline/assets/tab.gif",
+        "alt": "Tab to display planner tasks in a vertical timeline."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Billbrockbank",
+        "company": "",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/12452362?v=4",
+        "name": "Bill Brockbank",
+        "twitter": ""
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams JavaScript SDK",
+        "url": "https://aka.ms/sample-ref-teams-javascript-sdk"
+      },
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]
