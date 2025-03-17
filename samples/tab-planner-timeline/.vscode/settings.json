@@ -1,0 +1,18 @@
+{
+    "debug.onTaskErrors": "abort",
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/aad.*.json"
+            ],
+            "schema": {}
+        }
+    ],
+    "azureFunctions.stopFuncTaskPostDebug": false,
+    "azureFunctions.showProjectWarning": false,
+    "csharp.suppressDotnetRestoreNotification": true,
+    "cSpell.words": [
+        "calloutsettings",
+        "paddingleft"
+    ]
+}
