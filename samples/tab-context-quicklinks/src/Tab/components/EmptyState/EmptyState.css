@@ -1,0 +1,36 @@
+﻿.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.empty-state-icon {
+  font-size: 40px;
+  color: var(--empty-icon);
+  margin-bottom: 12px;
+}
+
+.empty-state-title {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.empty-state-message {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  max-width: 400px;
+}
+
+@media (max-width: 480px) {
+  .empty-state {
+    padding: 32px 16px;
+  }
+
+  .empty-state-icon {
+    font-size: 32px;
+  }
+}

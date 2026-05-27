@@ -1,0 +1,104 @@
+﻿[
+  {
+    "name": "pnp-sp-dev-teams-sample-tab-context-quicklinks",
+    "reponame": "tab-context-quicklinks",
+    "source": "pnp",
+    "title": "Teams QuickLinks — Context-Aware Quick Links Tab",
+    "shortDescription": "A lightweight Microsoft Teams Tab that displays context-aware quick links per team and channel, driven by a static JSON config — no backend, no database, no Graph permissions required.",
+    "url": "https://github.com/pnp/teams-dev-samples/tree/main/samples/tab-context-quicklinks",
+    "longDescription": [
+      "A lightweight Microsoft Teams Tab application that displays context-aware quick links based on the current team and channel.",
+      "Links are resolved from a static JSON configuration, supporting team-level, channel-level, and default fallback link sets.",
+      "Users can search, pin, and unpin links — all without a backend, database, or Microsoft Graph permissions."
+    ],
+    "creationDateTime": "2026-05-27",
+    "updateDateTime": "2026-05-27",
+    "products": [
+      "Teams"
+    ],
+    "metadata": [
+      {
+        "key": "TEAMS-SAMPLE-SOURCE",
+        "value": "pnp"
+      },
+      {
+        "key": "TEAMS-SAMPLE-TYPE",
+        "value": "demo"
+      },
+      {
+        "key": "TEAMS-CLIENT-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-CLIENT-PLATFORM",
+        "value": "react"
+      },
+      {
+        "key": "TEAMS-CLIENT-UI",
+        "value": "fluentui"
+      },
+      {
+        "key": "TEAMS-SERVER-LANGUAGE",
+        "value": "typescript"
+      },
+      {
+        "key": "TEAMS-SERVER-PLATFORM",
+        "value": "express"
+      },
+      {
+        "key": "TEAMS-BOT-FRAMEWORK",
+        "value": ""
+      },
+      {
+        "key": "TEAMS-FEATURES",
+        "value": "tab"
+      },
+      {
+        "key": "TEAMS-GENERATOR",
+        "value": "teams-toolkit"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/tab-context-quicklinks/assets/personal-and-channel-tab.gif",
+        "alt": "Teams QuickLinks tab showing personal and channel context"
+      },
+      {
+        "type": "image",
+        "order": 200,
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/tab-context-quicklinks/assets/search-links.gif",
+        "alt": "Searching links in Teams QuickLinks"
+      },
+      {
+        "type": "image",
+        "order": 300,
+        "url": "https://raw.githubusercontent.com/pnp/teams-dev-samples/main/samples/tab-context-quicklinks/assets/pin-links.gif",
+        "alt": "Pinning and unpinning links"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rwenz02",
+        "pictureUrl": "https://github.com/rwenz02.png",
+        "name": "Rick Wenz"
+      }
+    ],
+    "references": [
+      {
+        "name": "Teams developer questions",
+        "url": "https://aka.ms/sample-ref-teams-dev-questions"
+      },
+      {
+        "name": "Teams development videos from Microsoft",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-microsoft"
+      },
+      {
+        "name": "Teams development videos from the community",
+        "url": "https://aka.ms/sample-ref-teams-vids-from-community"
+      }
+    ],
+    "version": "1.0.0.0"
+  }
+]
