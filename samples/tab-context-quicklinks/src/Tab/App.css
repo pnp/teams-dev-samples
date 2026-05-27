@@ -1,0 +1,136 @@
+/* --- Theme tokens --- */
+:root,
+[data-theme="light"] {
+  --background: #ffffff;
+  --text-primary: #323130;
+  --text-secondary: #605e5c;
+  --surface: #ffffff;
+  --surface-hover: #f5f5f5;
+  --border: #edebe9;
+  --border-hover: #c8c6c4;
+  --accent: #0078d4;
+  --icon-bg: #f3f2f1;
+  --badge-team-bg: #e1dfdd;
+  --badge-team-text: #323130;
+  --badge-channel-bg: #deecf9;
+  --badge-channel-text: #0078d4;
+  --badge-default-bg: #f3f2f1;
+  --badge-default-text: #605e5c;
+  --empty-icon: #a19f9d;
+  --error-color: #d13438;
+  --shadow-hover: rgba(0, 0, 0, 0.08);
+  --focus-ring: #0078d4;
+}
+
+[data-theme="dark"] {
+  --background: #1f1f1f;
+  --text-primary: #ffffff;
+  --text-secondary: #c8c6c4;
+  --surface: #292929;
+  --surface-hover: #333333;
+  --border: #3b3a39;
+  --border-hover: #605e5c;
+  --accent: #479ef5;
+  --icon-bg: #3b3a39;
+  --badge-team-bg: #3b3a39;
+  --badge-team-text: #ffffff;
+  --badge-channel-bg: #1a3a5c;
+  --badge-channel-text: #479ef5;
+  --badge-default-bg: #3b3a39;
+  --badge-default-text: #c8c6c4;
+  --empty-icon: #605e5c;
+  --error-color: #f1707b;
+  --shadow-hover: rgba(0, 0, 0, 0.24);
+  --focus-ring: #479ef5;
+}
+
+[data-theme="contrast"] {
+  --background: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #ffffff;
+  --surface: #000000;
+  --surface-hover: #1aebff;
+  --border: #ffffff;
+  --border-hover: #1aebff;
+  --accent: #1aebff;
+  --icon-bg: #000000;
+  --badge-team-bg: #000000;
+  --badge-team-text: #ffffff;
+  --badge-channel-bg: #000000;
+  --badge-channel-text: #1aebff;
+  --badge-default-bg: #000000;
+  --badge-default-text: #ffffff;
+  --empty-icon: #ffffff;
+  --error-color: #ff0000;
+  --shadow-hover: none;
+  --focus-ring: #1aebff;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+.app {
+  padding: 16px 24px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.app-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.app-message {
+  max-width: 600px;
+  margin: 24px auto;
+}
+
+.app-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.app-search {
+  margin-bottom: 16px;
+}
+
+.app-pinned-section {
+  margin-bottom: 20px;
+}
+
+.app-section-title {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 14px 20px;
+  }
+
+  .app-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 12px 12px;
+  }
+
+  .app-search {
+    margin-bottom: 12px;
+  }
+
+  .app-pinned-section {
+    margin-bottom: 16px;
+  }
+}

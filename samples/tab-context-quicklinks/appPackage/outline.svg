@@ -1,0 +1,22 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 32 32">
+    <!-- Outline icon: transparent background, single color (#FFFFFF for Teams outline) -->
+    <g transform="translate(16,16)"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <!-- Left link -->
+        <path d="M-2,-4 L-6,-4 A5,5 0 0,0 -6,4 L-2,4"/>
+        <!-- Right link -->
+        <path d="M2,-4 L6,-4 A5,5 0 0,1 6,4 L2,4"/>
+        <!-- Connection bar -->
+        <line x1="-2"
+            y1="0"
+            x2="2"
+            y2="0"/>
+    </g>
+</svg>
