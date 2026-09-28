@@ -87,6 +87,6 @@ This Web Part illustrates the following concepts on top of the SharePoint Framew
 * topic 2
 * topic 3
 
-_Below there is a clear image used for telemetry. Please change "readme-template" to your sample name._
+_Keep the image below as the final line in the sample-root README. Replace `{sample-path}` with the repository-relative path to the sample folder, for example `samples/bot-todo`._
 
-<img src="https://m365-visitor-stats.azurewebsites.net/sp-dev-fx-webparts/samples/readme-template" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/{sample-path}" />

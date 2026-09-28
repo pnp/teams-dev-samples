@@ -60,4 +60,4 @@ Version|Date|Author|Comments
 - [TeamsFx SDK](https://docs.microsoft.com/microsoftteams/platform/toolkit/teamsfx-sdk)
 - [Teams Toolkit Samples](https://github.com/OfficeDev/TeamsFx-Samples)
 
-<img src="https://pnptelemetry.azurewebsites.net/teams-dev-samples/samples/tab-mindmap-fluid" />
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/tab-mindmap-fluid" />

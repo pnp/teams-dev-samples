@@ -19,6 +19,7 @@
 > 
 > *Please target your PR to `main` branch.*
 >
+> *For new samples, include both a sample-root `README.md` and `assets/sample.json`. End the root README with the visitor-tracking image for the sample's repository-relative path, as described in the [contribution guidance](/CONTRIBUTING.md).*
+>
 > *Remember that this repository is maintained by community members who volunteer their time to help. Be courteous and patient.*
 > _(DELETE THIS SECTION AFTER READING)_
-
