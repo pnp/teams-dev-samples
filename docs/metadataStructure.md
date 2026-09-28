@@ -1,121 +1,41 @@
-# Metadata Structure
+# Sample metadata
 
-There are too many variations in Teams samples to easily find them through simple navigation. The intention is for people to locate the sample they need through the [Teams Sample Navigator](http://aka.ms/pnpteams)
+The [Microsoft 365 Sample Solution Gallery](https://adoption.microsoft.com/sample-solution-gallery/) uses metadata from each sample to support discovery and filtering.
 
-This page describes the metadata that makes the Sample Navigator work. Each sample should be in its own folder with a README.md file that begins with the metadata in YAML format. Here is the entire YAML structure, with all the value options shown. Simply paste it to the top of your README.md file and delete the options that don't apply.
+Every new sample must include both of these files:
 
-~~~YAML
----
-page_type: sample
-products:
-- teams
-languages:
-- csharp
-- java
-- javascript
-- powerapps
-- powerautomate
-- python
-- typescript
-extensions:
-  contentType: samples
-  app_features:
-  - Bot
-  - Connector
-  - Messaging Extension
-  - Tab
-  - Task Module
-  technologies:
-  - AngularJS
-  - Angular
-  - Bot Framework SDK v3
-  - Bot Framework SDK v4
-  - jQuery
-  - Knockout
-  - React
-  - VueJS
-  platforms:
-  - ASP.NET Core MVC
-  - Express
-  - None
-  - Restify
-  - SPFx
-  origin:
-  - Community
-  - Microsoft
-createdDate: 5/1/2019 12:00:00 AM
----
-~~~
+- `samples/{sample-folder}/README.md`
+- `samples/{sample-folder}/assets/sample.json`
 
-## Key to Metadata
+The README and `assets` folder must be at the sample root. A README inside a nested project, API, infrastructure, or dependency folder does not replace the sample-root README.
 
-#### page_type
+## Creating `assets/sample.json`
 
-In this repo, should always be "sample"
+Copy `assets/sample.json` from a similar current sample and update all sample-specific values. The file contains a JSON array with one sample object.
 
-### products
+At minimum, verify these fields:
 
-In this repo, should always be "teams"
+- `name` is unique and follows the existing `pnp-sp-dev-teams-sample-*` pattern.
+- `reponame` exactly matches the sample folder name.
+- `title`, `shortDescription`, and `longDescription` describe this sample.
+- `url` points to `https://github.com/pnp/teams-dev-samples/tree/main/samples/{sample-folder}`.
+- `creationDateTime` and `updateDateTime` use `YYYY-MM-DD`.
+- `products` and each `metadata` value accurately describe the sample.
+- `thumbnails` points to an image that exists and includes meaningful alternative text.
+- `authors` identifies the sample authors.
+- `references` contains relevant documentation links.
+- `version` matches the submitted sample version.
 
-### languages
+Keep `assets/sample.json`, the sample folder name, and the sample-root README consistent when updating or renaming a sample.
 
-One or more languages may be used in solutions, including:
+## Sample-root README
 
-- csharp
-- java
-- javascript
-- powerapps
-- powerautomate
-- python
-- typescript
+Use the appropriate template from [`samples/_SAMPLE_templates`](../samples/_SAMPLE_templates/). The README must include the sample summary, screenshot, prerequisites, setup and usage instructions, features, version history, and disclaimer described in the [contribution guidance](../CONTRIBUTING.md).
 
-### extensions:contentType
+End the README with the visitor-tracking image, replacing `{sample-path}` with the repository-relative sample folder path:
 
-In this repo, should always be "samples"
+```html
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/{sample-path}" />
+```
 
-### extensions:app_features
-
-One or more Teams application features included in the sample:
-
-  - Bot
-  - Connector
-  - Messaging Extension
-  - Tab
-  - Task Module
-
-### extensions:technologies
-
-One or more frameworks or libraries used in the sample:
-
-  - AngularJS
-  - Angular
-  - Bot Framework SDK v3
-  - Bot Framework SDK v4
-  - React
-  - VueJS
-
-### extensions:platforms
-
-One or more service platforms required by the solutions. This may include REST API service platforms, web server platforms, and hosted platforms like Power Apps, Power Automate, or SharePoint.
-
-  - ASP.NET Core MVC
-  - Express
-  - None
-  - PowerApps
-  - PowerAutomate
-  - Restify
-  - SPFx
-
-### extensions:origin
-
-In the samples folder of this repo, should always be set to "Community"
-
-### createdDate
-
-The date the sample was created, in US style 
-
-~~~JSON
-  m/d/yyyy hh:mm:ss AM/PM
-~~~
-
-such as 5/1/2019 12:00:00 AM
+For a sample in `samples/bot-todo`, the suffix is `samples/bot-todo`.

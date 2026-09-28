@@ -217,3 +217,4 @@ or
 
 Of course, you can deploy to wherever you like other than Microsoft Azure!
 
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/msgext-httpstatuscats" />

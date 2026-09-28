@@ -6,7 +6,7 @@ Recently, Microsoft has enabled some of the features in Teams applications to wo
 
 This repository contains community samples that demonstrate different usage patterns for developing on Microsoft Teams as a platform. Samples are generally not production-ready, but are intended to show developers patterns and use cases for use in complete applications. Some samples are very bare bones to show how to do something specific, while others are partial or complete applications. Many are useful on their own, but it's up to you to check that they're secure and meet your standards.
 
-This repo is maintained by the [Microsoft 365 & Power Platform Community](https://pnp.github.io/); please join our [community calls](https://pnp.github.io/#community) for announcements and sample demos every other Thursday. The "pnp" in the URL is for "Patterns and Practices", and it's all about sharing our patterns and practices for building solutions on Microsoft 365.
+This repo is maintained by the [Microsoft 365 & Power Platform Community](https://pnp.github.io/). The "pnp" in the URL is for "Patterns and Practices", and it's all about sharing our patterns and practices for building solutions on Microsoft 365.
 
 If you're looking for Teams development samples, here's a handy guide:
 
@@ -15,11 +15,9 @@ If you're looking for Teams development samples, here's a handy guide:
 * Samples using Teams Toolkit live [in this repo](https://github.com/officedev/teamsfx-samples)
 * Power Platform samples from the community - including some Teams samples - can be found in [this repo](https://github.com/pnp/powerplatform-samples)
 
-The easy way to browse through all the samples is to visit the [Microsoft 365 Sample Solution Gallery](https://adoption.microsoft.com/en-us/sample-solution-gallery/).
-
 ## Using the samples
 
-To search all the samples, please visit our [Sample Browser](){target=_blank}, which aggreagates samples from this and other repositories.
+To search all the samples, visit the [Microsoft 365 Sample Solution Gallery](https://adoption.microsoft.com/sample-solution-gallery/), which aggregates samples from this and other repositories.
 
 To browse the samples in this repo, please visit the [/samples](/samples) folder. It contains a child folder for each sample, named with a prefix as follows:
 
@@ -28,7 +26,7 @@ To browse the samples in this repo, please visit the [/samples](/samples) folder
 | app- | These are samples of apps that have multiple Teams app capabilities such as a tab and a bot |
 | bot- | These are apps that contain a chatbot for use in Teams |
 | msgext- | These are apps that contain one or more messaging extensions, including link unfurling, search, and action message extensions |
-| tabs- | These are apps that contain one or more tabs, including personal, group, channel, and meeting tabs |
+| tab- | These are apps that contain one or more tabs, including personal, group, channel, and meeting tabs |
 
 Due to the diversity of the samples and technologies, there are no fixed instructions for building or using the samples. Each sample includes a readme file with a description, screen shot(s), requirements, and build instructions.
 
@@ -36,6 +34,14 @@ Due to the diversity of the samples and technologies, there are no fixed instruc
 
 We welcome community contributions to the samples folder in this repository! If you've built something cool, or figured out how to do something that's usable by others, consider sharing it as a sample. 
 Please see our [contribution guidelines](./CONTRIBUTING.md) for details. 
+
+> Sharing is caring!
+
+## Community calls and demos
+
+Join the weekly [community calls](https://aka.ms/community/calls) for Copilot, Microsoft 365, and Power Platform updates. Everyone is welcome.
+
+Want to share your learnings or input with the community? [Sign up for a demo](https://aka.ms/community/request/demo).
 
 ## Questions or Problems?
 
@@ -50,14 +56,6 @@ If you have questions about how to develop Teams applications or any of the prov
 | Microsoft Graph | [Microsoft Graph Support](https://developer.microsoft.com/en-us/graph/support)  |
 | Microsoft Teams JavaScript SDK | Use the feedback link at the footer of the [docs page](https://docs.microsoft.com/en-us/javascript/api/overview/msteams-client?view=msteams-client-js-latest) |
 | SharePoint Framework with Teams | [sp-dev-docs repository issue list](https://github.com/SharePoint/sp-dev-docs/issues) |
-
-## Contributions
-
-These samples are from the Microsoft 365 developer community. We welcome your samples and suggestions for new ones.
-
-Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Thx.
-
-> Sharing is caring!
 
 ## Additional resources
 

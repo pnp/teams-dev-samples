@@ -12,11 +12,11 @@ Remember that this repository is maintained by community members who volunteer t
 
 ## How to submit or update a sample
 
-If you're new to Github and open source, a good place to start is with a [Sharing is Caring session](https://pnp.github.io/sharing-is-caring/). These are small group sessions that aren't recorded and where no question is too basic. During the session you'll learn how to fork a Github repo, add or modify some content, and submit a pull request (PR). These sessions are a lot of fun and everyone is invited!
+If you're new to GitHub and open source, a good place to start is with a [Sharing is Caring session](https://pnp.github.io/sharing-is-caring/). These are small group sessions that aren't recorded and where no question is too basic. During the session you'll learn how to fork a GitHub repo, add or modify some content, and submit a pull request (PR). These sessions are a lot of fun and everyone is invited!
 
 Once you know the basics, here are the guidelines for submitting to the repo:
 
-* Always fork the repository to your own Github account before making your modifications
+* Always fork the repository to your own GitHub account before making your modifications
 * If your pull request shows merge conflicts, make sure to update your forked branch to be a mirror of  the main branch of the main repo before making your modifications. 
 * If you are submitting multiple samples, please create a specific PR (from a different branch in your forked repository) for each of them
 * If you are submitting typo or documentation fixes, you can combine modifications to single PR where suitable
@@ -44,7 +44,7 @@ Each sample should be in its own folder within the /samples directory. Your fold
 | app- | These are samples of apps that have multiple Teams app capabilities such as a tab and a bot |
 | bot- | These are apps that contain a chatbot for use in Teams |
 | msgext- | These are apps that contain one or more messaging extensions, including link unfurling, search, and action message extensions |
-| tabs- | These are apps that contain one or more tabs, including personal, group, channel, and meeting tabs |
+| tab- | These are apps that contain one or more tabs, including personal, group, channel, and meeting tabs |
 
 ### 2. README.md file
 
@@ -61,9 +61,9 @@ Your sample folder should contain a `README.md` file for your contribution. Plea
 | a Web service based on nodeJS | [README.md](/samples/_SAMPLE_templates/node-sample/README.md) |
 | something else | [README.md](/samples/_SAMPLE_templates/any-sample/README.md) |
 
-Please copy the template to your project and update it accordingly. Your `README.md` must be named exactly `README.md` -- with capital letters -- as this is the information we use to make your sample public.
+Please copy the template to the root of your sample folder and update it accordingly. Your `README.md` must be named exactly `README.md` -- with capital letters -- as this is the information we use to make your sample public. Nested project, API, infrastructure, or dependency READMEs do not replace the sample-root README.
 
-Each README.md file must contain detailed build and use instructions.
+Each sample-root `README.md` must contain detailed build and use instructions. New samples must also include `assets/sample.json` with the sample gallery metadata described in [Metadata Structure](docs/metadataStructure.md). Keep the metadata URL and repository name aligned with the sample's folder under `samples/`.
 
 ### 3. .gitignore
 
@@ -132,11 +132,15 @@ Your sample should include a clearly marked folder containing a Teams `manifest.
 
  * If the `manifest.json` requires modification before use, please do not include a zip archive. Instead, include instructions in your `README.md` file explaining how to modify the manifest and create the Teams application package
 
-### 7. Telemetry
+### 7. Visitor tracking
 
-Each `README` template contains a specific tracking image at the bottom of the file with an `img` tag, where the `src` attribute points to `https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/xxx`. This is a transparent image which is used to track viewership of individual samples in GitHub. We only count the number of times each page is accessed, and capture no personal information or correlation with other pages.
+End the sample-root `README.md` with this tracking image:
 
-Please update the image `src` attribute according with the repository name and folder information. For example, if your sample is named `bot-todo` in the `samples` folder, you should update the `src` attribute to `https://m365-visitor-stats.azurewebsites.net/sp-dev-fx-webparts/samples/bot-todo`.
+```html
+<img src="https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/{sample-path}" />
+```
+
+Replace `{sample-path}` with the repository-relative path to the sample folder, using forward slashes and no leading slash. For example, `samples/bot-todo` becomes `https://m365-visitor-stats.azurewebsites.net/teams-dev-samples/samples/bot-todo`. The transparent image counts README views without capturing personal information or correlating activity with other pages.
 
 ## Detailed steps for submitting pull requests
 
@@ -166,30 +170,29 @@ Before you submit your pull request consider the following guidelines:
   git remote add upstream https://github.com/PnP/teams-dev-samples.git
   ```
 
-* Make your a new git branch in your local git repo:
+* Create a new branch in your local git repository:
 
   ```shell
-  git checkout -b mysamplebranch main
+  git switch -c mysamplebranch main
   ```
 
 * Ensure your fork is updated and not behind the upstream **teams-dev-samples** repo. Refer to these resources for more information on syncing your repo:
 
-  * [GitHub Help: Syncing a Fork](https://help.github.com/articles/syncing-a-fork/)
-  * [Keep Your Forked Git Repo Updated with Changes from the Original Upstream Repo](http://www.andrewconnell.com/blog/keep-your-forked-git-repo-updated-with-changes-from-the-original-upstream-repo)
+  * [GitHub Docs: Syncing a fork](https://docs.github.com/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork)
   * For a quick cheat sheet:
 
     ```shell
     # assuming you are in the folder of your locally cloned fork....
     git checkout main
 
-    # assuming you have a remote named `upstream` pointing official **sp-dev-fx-webparts** repo
+    # assuming you have a remote named `upstream` pointing to the official teams-dev-samples repo
     git fetch upstream
 
     # update your local main to be a mirror of what's in the main repo
     git pull --rebase upstream main
 
-    # switch to your branch where you are working, say "react-taxonomypicker"
-    git checkout react-taxonomypicker
+    # switch to your contribution branch
+    git switch mysamplebranch
 
     # update your branch to update it's fork point to the current tip of main & put your changes on top of it
     git rebase main
@@ -198,7 +201,7 @@ Before you submit your pull request consider the following guidelines:
 * Push your branch to GitHub:
 
   ```shell
-  git push origin react-taxonomypicker
+  git push origin mysamplebranch
   ```
 
 ## Merging your Existing GitHub Projects with this Repository
@@ -237,7 +240,7 @@ If the sample you wish to contribute is stored in your own GitHub repository, yo
 
 Before we can accept your pull requests you will be asked to sign electronically Contributor License Agreement (CLA), which is a pre-requisite for any contributions all PnP repositories. This will be one-time process, so for any future contributions you will not be asked to re-sign anything. After the CLA has been signed, our PnP core team members will have a look at your submission for a final verification of the submission. Please do not delete your development branch until the submission has been closed.
 
-You can find Microsoft CLA from the following address - https://cla.microsoft.com.
+You can find the Microsoft CLA at https://cla.opensource.microsoft.com/.
 
 Thank you for your contribution.
 
