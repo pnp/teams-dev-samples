@@ -37,11 +37,11 @@ Please see our [contribution guidelines](./CONTRIBUTING.md) for details.
 
 > Sharing is caring!
 
-## Community calls and demos
+## Join the community calls
 
-Join the weekly [community calls](https://aka.ms/community/calls) for Copilot, Microsoft 365, and Power Platform updates. Everyone is welcome.
+Stay up to date with the latest Copilot, Microsoft 365, and Power Platform topics by joining our weekly community calls. Everyone is welcome—come to learn, ask questions, and connect with the community.
 
-Want to share your learnings or input with the community? [Sign up for a demo](https://aka.ms/community/request/demo).
+[View the call schedule and download the recurring invites](https://aka.ms/community/calls) so you don't miss an upcoming call.
 
 ## Questions or Problems?
 
