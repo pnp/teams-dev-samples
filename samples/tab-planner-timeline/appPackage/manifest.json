@@ -1,0 +1,46 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.17",
+    "version": "1.6.0",
+    "id": "${{TEAMS_APP_ID}}",
+    "developer": {
+      "name": "Bill Brockbank",
+      "websiteUrl": "${{TAB_ENDPOINT}}",
+      "privacyUrl": "${{TAB_ENDPOINT}}/index.html#/privacy",
+      "termsOfUseUrl": "${{TAB_ENDPOINT}}/index.html#/termsofuse"
+    },
+    "icons": {
+      "color": "color.png",
+      "outline": "outline.png"
+    },
+    "name": {
+      "short": "Planner Timeline ${{APP_NAME_SUFFIX}}",
+      "full": "Planner Timeline"
+    },
+    "description": {
+      "short": "Render Planner tasks in a timeline.",
+      "full": "Render Planner tasks in a timeline."
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [],
+    "composeExtensions": [],
+    "configurableTabs": [
+      {
+        "configurationUrl": "${{TAB_ENDPOINT}}/index.html#/Timeline-config",
+        "canUpdateConfiguration": false,
+        "scopes": ["team"]
+      }
+    ],
+    "staticTabs": [ ],
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": [
+      "${{TAB_HOSTNAME}}"
+    ],
+    "webApplicationInfo": {
+      "id": "${{AAD_APP_CLIENT_ID}}",
+      "resource": "api://${{TAB_DOMAIN}}/${{AAD_APP_CLIENT_ID}}"
+    }
+}
