@@ -1,0 +1,62 @@
+﻿.header {
+  margin-bottom: 16px;
+}
+
+.header-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.header-title {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.header-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.header-badge--team {
+  background-color: var(--badge-team-bg);
+  color: var(--badge-team-text);
+}
+
+.header-badge--channel {
+  background-color: var(--badge-channel-bg);
+  color: var(--badge-channel-text);
+}
+
+.header-badge--default {
+  background-color: var(--badge-default-bg);
+  color: var(--badge-default-text);
+}
+
+.header-description {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .header-title-row {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .header-title {
+    word-break: break-word;
+  }
+
+  .header-description {
+    font-size: 0.8125rem;
+  }
+}

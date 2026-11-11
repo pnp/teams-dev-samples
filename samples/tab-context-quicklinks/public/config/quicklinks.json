@@ -1,0 +1,182 @@
+﻿{
+  "default": {
+    "title": "Personal QuickLinks",
+    "description": "Useful resources for this team.",
+    "links": [
+      {
+        "id": "company-intranet",
+        "title": "Company Intranet",
+        "description": "Open the central company intranet.",
+        "url": "https://contoso.sharepoint.com",
+        "icon": "Globe",
+        "pinnedByDefault": true
+      },
+      {
+        "id": "office-365",
+        "title": "Office 365",
+        "description": "Access your Office 365 apps and services.",
+        "url": "https://www.office.com",
+        "icon": "OfficeLogo"
+      },
+      {
+        "id": "helpdesk",
+        "title": "IT Helpdesk",
+        "description": "Submit a support ticket to the IT helpdesk.",
+        "url": "https://helpdesk.contoso.com",
+        "icon": "Headset"
+      },
+      {
+        "id": "teams-admin",
+        "title": "Microsoft Teams Admin",
+        "description": "Manage Teams settings and policies.",
+        "url": "https://admin.teams.microsoft.com",
+        "icon": "Settings"
+      },
+      {
+        "id": "sharepoint-home",
+        "title": "SharePoint Home",
+        "description": "Browse your SharePoint sites and content.",
+        "url": "https://contoso.sharepoint.com/_layouts/15/sharepoint.aspx",
+        "icon": "SharepointLogo"
+      },
+      {
+        "id": "outlook-calendar",
+        "title": "Outlook Calendar",
+        "description": "View your calendar and upcoming meetings.",
+        "url": "https://outlook.office.com/calendar",
+        "icon": "Calendar"
+      },
+      {
+        "id": "planner",
+        "title": "Microsoft Planner",
+        "description": "Manage tasks and plans for your team.",
+        "url": "https://tasks.office.com",
+        "icon": "ClipboardList"
+      },
+      {
+        "id": "power-automate",
+        "title": "Power Automate",
+        "description": "Create and manage automated workflows.",
+        "url": "https://make.powerautomate.com",
+        "icon": "Flow"
+      }
+    ]
+  },
+  "teams": {
+    "00000000-0000-0000-0000-000000000001": {
+      "title": "Sales QuickLinks",
+      "description": "Tools and resources for the Sales team.",
+      "links": [
+        {
+          "id": "dynamics-sales",
+          "title": "Dynamics 365 Sales",
+          "description": "Manage leads, opportunities and customer accounts.",
+          "url": "https://contoso.crm.dynamics.com",
+          "icon": "Briefcase",
+          "pinnedByDefault": true
+        },
+        {
+          "id": "linkedin-sales-nav",
+          "title": "LinkedIn Sales Navigator",
+          "description": "Find and engage with prospects on LinkedIn.",
+          "url": "https://www.linkedin.com/sales",
+          "icon": "People",
+          "pinnedByDefault": true
+        },
+        {
+          "id": "power-bi-sales",
+          "title": "Sales Pipeline Dashboard",
+          "description": "View pipeline health, forecasts and win rates.",
+          "url": "https://app.powerbi.com/groups/contoso-sales",
+          "icon": "BarChartVertical"
+        },
+        {
+          "id": "sales-playbook",
+          "title": "Sales Playbook",
+          "description": "Access sales scripts, battle cards and enablement material.",
+          "url": "https://contoso.sharepoint.com/sites/sales-playbook",
+          "icon": "ReadingMode"
+        },
+        {
+          "id": "docusign",
+          "title": "DocuSign",
+          "description": "Send and track contracts for e-signature.",
+          "url": "https://app.docusign.com",
+          "icon": "EditMirrored"
+        },
+        {
+          "id": "sales-copilot",
+          "title": "Copilot for Sales",
+          "description": "AI-assisted meeting prep, email drafts and CRM updates.",
+          "url": "https://copilot.cloud.microsoft/sales",
+          "icon": "Lightbulb"
+        },
+        {
+          "id": "highspot",
+          "title": "Highspot",
+          "description": "Browse sales content, pitch decks and competitive intel.",
+          "url": "https://contoso.highspot.com",
+          "icon": "FavoriteStar"
+        }
+      ],
+      "channels": {
+        "19:example-channel-id@thread.tacv2": {
+          "title": "Enterprise Sales QuickLinks",
+          "description": "Resources for enterprise deal management.",
+          "links": [
+            {
+              "id": "enterprise-pricing",
+              "title": "Enterprise Pricing Calculator",
+              "description": "Calculate custom pricing for enterprise deals.",
+              "url": "https://pricing.contoso.com",
+              "icon": "Calculator",
+              "pinnedByDefault": true
+            },
+            {
+              "id": "enterprise-contracts",
+              "title": "Contract Templates",
+              "description": "Access MSA, SOW and NDA templates for enterprise customers.",
+              "url": "https://contoso.sharepoint.com/sites/contracts",
+              "icon": "DocumentSet"
+            },
+            {
+              "id": "account-planning",
+              "title": "Account Planning",
+              "description": "Open strategic account plans and org charts.",
+              "url": "https://contoso.sharepoint.com/sites/account-plans",
+              "icon": "Org"
+            }
+          ]
+        }
+      }
+    },
+    "00000000-0000-0000-0000-000000000002": {
+      "title": "Development QuickLinks",
+      "description": "Engineering tools and technical documentation.",
+      "links": [
+        {
+          "id": "azure-devops",
+          "title": "Azure DevOps",
+          "description": "Open boards, repositories and pipelines.",
+          "url": "https://dev.azure.com/contoso",
+          "icon": "Code",
+          "pinnedByDefault": true
+        },
+        {
+          "id": "dev-docs",
+          "title": "Developer Documentation",
+          "description": "Browse the internal developer knowledge base.",
+          "url": "https://docs.contoso.com",
+          "icon": "Dictionary"
+        },
+        {
+          "id": "staging-env",
+          "title": "Staging Environment",
+          "description": "Open the staging environment for testing.",
+          "url": "https://staging.contoso.com",
+          "icon": "TestBeaker"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg"
+    width="192"
+    height="192"
+    viewBox="0 0 192 192">
+    <defs>
+        <linearGradient id="bg-gradient"
+            x1="0%"
+            y1="0%"
+            x2="100%"
+            y2="100%">
+            <stop offset="0%"
+                stop-color="#6264A7"/>
+            <stop offset="100%"
+                stop-color="#4F6BED"/>
+        </linearGradient>
+    </defs>
+    <!-- Background rounded square -->
+    <rect width="192"
+        height="192"
+        rx="32"
+        ry="32"
+        fill="url(#bg-gradient)"/>
+    <!-- Chain link icon representing QuickLinks -->
+    <g transform="translate(96,96)"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round">
+        <!-- Left link -->
+        <path d="M-14,-20 L-30,-20 A22,22 0 0,0 -30,20 L-14,20"/>
+        <!-- Right link -->
+        <path d="M14,-20 L30,-20 A22,22 0 0,1 30,20 L14,20"/>
+        <!-- Connection bar -->
+        <line x1="-12"
+            y1="0"
+            x2="12"
+            y2="0"/>
+    </g>
+</svg>
